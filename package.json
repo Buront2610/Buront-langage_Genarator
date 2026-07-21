@@ -1,0 +1,18 @@
+{
+  "name": "buront-language-generator",
+  "version": "0.2.0",
+  "private": true,
+  "description": "普通の日本語をブロント語へ変換するローカルWebアプリ",
+  "scripts": {
+    "analyze:novel": "node scripts/analyze-novel.js",
+    "analyze:grammar": "node scripts/analyze-phrase-grammar.js",
+    "build:corpus": "node scripts/prepare-corpora.js && node scripts/prepare-archive-series.js",
+    "build:series": "node scripts/prepare-archive-series.js",
+    "build:quotes": "node scripts/prepare-quote-corpus.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

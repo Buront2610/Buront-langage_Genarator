@@ -1,0 +1,88 @@
+{
+  "source": "今日は寒い",
+  "classifiedPostCount": 2379,
+  "unclassifiedPostCount": 73,
+  "profiles": [
+    {
+      "id": "roto",
+      "label": "ロト時代＋暗黒騎士系",
+      "postCount": 1023,
+      "sourcePage": "roto.html",
+      "expectedSignature": "roto_decided",
+      "allSignatures": ["roto_decided", "roto_no_objection", "roto_understood"],
+      "candidate": "どう考えても\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\nこれで決まってるべ？"
+    },
+    {
+      "id": "yorusama",
+      "label": "グラットンスレ系",
+      "postCount": 395,
+      "sourcePage": "yorusama.html",
+      "expectedSignature": "yorusama_elite_proof",
+      "allSignatures": ["yorusama_elite_proof", "yorusama_admiration", "yorusama_authority"],
+      "candidate": "ちなみに俺はこの話を見切ってるんだが\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\nこれが一級廃人の証"
+    },
+    {
+      "id": "saiko",
+      "label": "最高の騎士系",
+      "postCount": 132,
+      "sourcePage": "saiko.html",
+      "expectedSignature": "saiko_needed",
+      "allSignatures": ["saiko_needed", "saiko_in_demand", "saiko_entry"],
+      "candidate": "どうやら俺の力が必要らしい\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\n最高のナイトならではの出来事というリアル話"
+    },
+    {
+      "id": "night",
+      "label": "名無し系（2003～2004）",
+      "postCount": 108,
+      "sourcePage": "night.html",
+      "expectedSignature": "night_iron",
+      "allSignatures": ["night_win_confirming", "night_iron", "night_superlative"],
+      "candidate": "俺はただの通りすがりの古代からいるナイトだが\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\n黄金の鉄の塊なら遅れをとるはずは無い"
+    },
+    {
+      "id": "puronohito",
+      "label": "鯖スレ系",
+      "postCount": 89,
+      "sourcePage": "puronohito.html",
+      "expectedSignature": "puronohito_guidance",
+      "allSignatures": ["puronohito_gear_gap", "puronohito_guidance", "puronohito_proof"],
+      "candidate": "ほう、おまえは少しは力をわかってるようだな\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\nもっと上を目指すべき"
+    },
+    {
+      "id": "nega",
+      "label": "ネガ侍系",
+      "postCount": 236,
+      "sourcePage": "nega.html",
+      "expectedSignature": "nega_campaign",
+      "allSignatures": ["nega_campaign", "nega_top_ranker", "nega_no_risk"],
+      "candidate": "たいがいにしろ\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\nこれ以上のネガキャンは見苦しい＾＾；；"
+    },
+    {
+      "id": "katuru",
+      "label": "謙虚な騎士系",
+      "postCount": 247,
+      "sourcePage": "katuru.html",
+      "expectedSignature": "katuru_witness",
+      "allSignatures": ["katuru_witness", "katuru_victory", "katuru_urgent"],
+      "candidate": "俺はその場にいたんだが\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\n案の定この結果"
+    },
+    {
+      "id": "gg",
+      "label": "ギルティギア系",
+      "postCount": 34,
+      "sourcePage": "gg.html",
+      "expectedSignature": "gg_experience",
+      "allSignatures": ["gg_experience", "gg_victory_condition", "gg_timeup"],
+      "candidate": "何いきなり話かけて来てるわけ？と言われたが\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\nほう、経験が生きたな"
+    },
+    {
+      "id": "sonota",
+      "label": "その他",
+      "postCount": 115,
+      "sourcePage": "sonota.html",
+      "expectedSignature": "sonota_objective",
+      "allSignatures": ["sonota_objective", "sonota_no_assumption", "sonota_true_form"],
+      "candidate": "客観的に見て\n今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？\nこれは中立の超客観的意見"
+    }
+  ]
+}

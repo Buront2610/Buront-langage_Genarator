@@ -1,0 +1,710 @@
+const test = require("node:test");
+const assert = require("node:assert/strict");
+const { CorpusEngine } = require("../lib/corpus-engine");
+const { splitSentences } = require("../lib/text-analysis");
+const { createRandom } = require("../lib/variation-grammar");
+
+const engine = new CorpusEngine();
+
+test("ログ・倉庫・改変集・名言集を読み込み、LLMを使用しない", () => {
+  const status = engine.status();
+  assert.equal(status.usesLlm, false);
+  assert.equal(status.posts, 2452);
+  assert.equal(status.sentences, 9591);
+  assert.equal(status.localMatches, 2379);
+  assert.equal(status.archiveSupplements, 73);
+  assert.equal(status.novelChapters, 23);
+  assert.equal(status.comparisonStages, 5);
+  assert.equal(status.quoteHeadings, 165);
+  assert.equal(status.quoteExcerpts, 839);
+  assert.equal(status.quotePatterns, 51);
+  assert.equal(status.quoteHeadingsWithContext, 141);
+  assert.equal(status.quoteContextLinks, 152);
+  assert.equal(status.quoteSourceUrl, "https://kenkyonanight.xxxxxxxx.jp/goroku.html");
+  assert.equal(status.anchorConstructions, 10);
+  assert.equal(status.observedAnchors, 979);
+  assert.equal(status.faithfulQuoteExpressions, 33);
+  assert.equal(status.faithfulQuoteRecognizers, 33);
+  assert.equal(status.faithfulQuoteFunctionalRoles, 32);
+  assert.equal(status.faithfulQuoteEvidenceLinks, 33);
+});
+
+test("段階的な文章比較を使い、行動と反応を構造ごと改変する", () => {
+  const source = "昨日、仕事で急いで資料を提出したら、上司がとても驚きました。";
+  const result = engine.convert(source, { level: 2 });
+  const structuralCandidates = engine.comparisonDrivenCandidates(source, () => 0.5).join("\n");
+
+  assert.match(result.text, /昨日/);
+  assert.match(result.text, /提出/);
+  assert.match(result.text, /ｶｶッっと/);
+  assert.match(structuralCandidates, /圧倒的な速度/);
+  assert.match(structuralCandidates, /リアルでビビった/);
+  assert.doesNotMatch(result.text, /話なんだが急いの話/);
+  assert.equal(result.comparisons[0].validation.passed, true);
+  assert.ok(result.comparisons[0].candidateCount >= 10);
+  assert.ok(result.comparisons[0].references.length >= 1);
+});
+
+test("代表句だけでなく候補比較で文章全体を選ぶ", () => {
+  const source = "私はこの計画がとても良いと思います。全員で協力すれば成功できます。";
+  const result = engine.convert(source, { level: 2 });
+
+  assert.equal(result.comparisons.length, 2);
+  assert.match(result.text, /かなり良い|確定的に明らか|という事実|格の違い/);
+  assert.match(result.text, /ぜいいん|成功できる|という事実/);
+  assert.equal(result.summary.passedCount, 2);
+  assert.ok(result.summary.averageSemantic >= 0.8);
+});
+
+test("数値、URL、メールアドレスを検証で保持する", () => {
+  const source = "333円を777円に変更し、https://example.com と user@example.com を確認します。";
+  const result = engine.convert(source, { level: 2 });
+
+  assert.match(result.text, /333円/);
+  assert.match(result.text, /777円/);
+  assert.match(result.text, /https:\/\/example\.com/);
+  assert.match(result.text, /user@example\.com/);
+  assert.equal(result.comparisons[0].validation.passed, true);
+  assert.doesNotMatch(result.comparisons[0].validation.warnings.join(" "), /保持できなかった値/);
+});
+
+test("否定を含む文章では肯定・否定の検証結果を返す", () => {
+  const source = "この方法では成功できないと思います。";
+  const result = engine.convert(source, { level: 2 });
+
+  assert.match(result.text, /ない/);
+  assert.equal(result.comparisons[0].validation.polarity, 1);
+  assert.equal(result.comparisons[0].validation.passed, true);
+});
+
+test("標準レベルでも語彙、表記、構造を複数次元で変換する", () => {
+  const source = "あまりにもずるいので、私は怒っています。";
+  const result = engine.convert(source, { level: 2 });
+  const validation = result.comparisons[0].validation;
+
+  assert.match(result.text, /あもりにも/);
+  assert.match(result.text, /怒りが有頂天/);
+  assert.ok(validation.styleDimensions.length >= 3);
+  assert.equal(validation.passed, true);
+});
+
+test("追加辞書を候補へ適用してから同じ検証を通す", () => {
+  const source = "猫はとても強いと思います。";
+  const result = engine.convert(source, {
+    level: 2,
+    customRules: [{ from: "猫", to: "黄金の鉄の猫" }],
+  });
+
+  assert.match(result.text, /黄金の鉄の猫/);
+  assert.equal(result.comparisons[0].validation.passed, true);
+});
+
+test("長文でも未検証の補完を足さず、各文の丁寧形を断定句へ正しく接続する", () => {
+  const source = "私は昨日、新しい道具を使って作業しました。普通なら一時間かかる仕事ですが、急いで終わらせたので三十分で完成しました。同僚はその速さにとても驚き、良い仕事だと褒めてくれました。";
+  const result = engine.convert(source, { level: 3 });
+
+  assert.equal(result.comparisons.length, 3);
+  assert.equal(result.summary.sentenceCount, 3);
+  assert.equal(result.summary.passedCount, 3);
+  assert.doesNotMatch(result.text, /(?:です|ます|でした|ました)(?:のは|ことは|という事実)/);
+  assert.doesNotMatch(result.text, /です(?:が|けど|けれど)/);
+  assert.doesNotMatch(result.text, /昨日に求められる/);
+  assert.doesNotMatch(result.text, /周りからの信頼も高い状態/);
+  assert.match(result.text, /一時間/);
+  assert.match(result.text, /三十分/);
+});
+
+test("実ログの終端傾向に合わせて句点を補わず、複数文は改行で区切る", () => {
+  const single = engine.convert("今日は寒い。", { level: 2 });
+  const multiple = engine.convert("今日は寒い。明日は休みです。", { level: 2 });
+
+  assert.doesNotMatch(single.text, /。/);
+  assert.doesNotMatch(multiple.text, /。/);
+  assert.match(multiple.text, /\n/);
+  assert.equal(multiple.comparisons.length, 2);
+});
+
+test("短い寒さの報告は悲嘆へ誤分類せず、機能の異なる状態構文を3案返す", () => {
+  const first = engine.convert("今日は寒い", { level: 2, seed: "repeatable" });
+  const repeated = engine.convert("今日は寒い", { level: 2, seed: "repeatable" });
+  const runs = Array.from({ length: 10 }, (_, index) => (
+    engine.convert("今日は寒い", { level: 2, seed: `variation-${index}` })
+  ));
+  const outputs = new Set(runs.map((result) => result.text));
+  const options = runs.flatMap((result) => result.comparisons[0].options);
+  const signatures = new Set(options.flatMap((option) => option.validation.faithfulQuoteSignatures));
+  const candidates = options.map((option) => option.text).join("\n");
+
+  assert.deepEqual(first.suggestions, repeated.suggestions);
+  assert.ok(outputs.size >= 3);
+  assert.ok(runs.every((result) => result.suggestions.length >= 3));
+  assert.deepEqual(signatures, new Set([
+    "state_threshold",
+    "state_ordinary_damage",
+    "state_knight_resistance",
+  ]));
+  assert.ok(options.every((option) => option.validation.faithfulQuoteCount === 1));
+  assert.ok(options.every((option) => option.validation.faithfulContextMatch));
+  assert.doesNotMatch(candidates, /深い悲しみ|ゲームオーバー|手遅れ/);
+  assert.ok(runs.every((result) => result.suggestions.every((suggestion) => suggestion.averageSemantic >= 0.62)));
+});
+
+test("寒さ以外の短文も固定結果にせず、確率的に候補を組み替える", () => {
+  const runs = Array.from({ length: 8 }, (_, index) => (
+    engine.convert("このゲームは面白い", { level: 2, seed: `general-${index}` })
+  ));
+  const outputs = new Set(runs.map((result) => result.text));
+  const candidates = runs.flatMap((result) => result.suggestions.map((suggestion) => suggestion.text)).join("\n");
+
+  assert.ok(outputs.size >= 3);
+  assert.match(candidates, /驚き|一般人|格の違い|破壊力|真似できない/);
+  assert.ok(runs.every((result) => result.summary.passedCount === 1));
+});
+
+test("実ログでの出現回数を抽選重みに使わず、文末型を均等な袋から一巡させる", () => {
+  const nextEnding = engine.variationGrammar.createEndingBag(createRandom("balanced-endings"));
+  const generated = Array.from({ length: engine.variationGrammar.endings.length * 3 }, () => nextEnding("候補"));
+  const counts = new Map(engine.variationGrammar.endings.map((ending) => [ending.evidence, 0]));
+
+  for (const ending of engine.variationGrammar.endings) {
+    counts.set(ending.evidence, generated.filter((text) => ending.pattern.test(text)).length);
+  }
+  assert.deepEqual(new Set(counts.values()), new Set([3]));
+});
+
+test("通常変換では使い切るまで直近の同一機能構文を避ける", () => {
+  const isolatedEngine = new CorpusEngine();
+  const results = Array.from({ length: 3 }, () => isolatedEngine.convert("今日は寒い", { level: 2 }).text);
+
+  assert.equal(new Set(results).size, 3);
+});
+
+test("形容詞の丁寧形と否定過去を壊さず、接続語の前へ反応語を置かない", () => {
+  const source = "この武器は初心者でも扱いやすいです。電車が遅れて時間に間に合いませんでした。ただし、保存できない問題があります。";
+  const result = engine.convert(source, { level: 2, seed: "conjugation-regression" });
+  const suggestions = result.suggestions.map((suggestion) => suggestion.text).join("\n");
+
+  assert.doesNotMatch(suggestions, /扱いやすいだ|ませんだった|アワレにもただし/);
+  assert.match(suggestions, /扱いやすい/);
+  assert.match(suggestions, /間に合わなかった/);
+  assert.equal(result.summary.passedCount, 3);
+});
+
+test("入力にない否定を付け足した候補は検証不通過にする", () => {
+  const validation = engine.validate("来週に修正版を公開する予定です。", "来週に修正版を公開する予定だという時点で貧弱一般人には真似できない", 2);
+
+  assert.equal(validation.polarity, 0.72);
+  assert.equal(validation.passed, false);
+});
+
+test("完全ブロントナイズでは長文を自慢話の段落へ再構成する", () => {
+  const source = "昨日、開発チームに新しい管理ツールを導入しました。以前は報告書の作成に2時間かかっていましたが、今日は45分で完了しました。ただし、通信が切れると編集中の内容を保存できない問題が残っています。明日の会議では3人の担当者と対策を確認し、来週までに修正版を公開する予定です。";
+  const result = engine.convert(source, { level: 3, contextMode: "full", seed: "full-context" });
+  const candidates = result.suggestions.map((suggestion) => suggestion.text).join("\n---\n");
+
+  assert.equal(result.contextMode, "full");
+  assert.equal(result.summary.unit, "paragraph");
+  assert.equal(result.summary.passedCount, 1);
+  assert.equal(result.comparisons[0].unit, "paragraph");
+  assert.ok(result.comparisons[0].candidateCount >= 20);
+  assert.ok(result.comparisons[0].validation.narrativeScore >= 5 / 6);
+  assert.equal(result.suggestions.length, 3);
+  assert.match(candidates, /知り合いのﾅｲﾄ|俺のフレ|一級と言われ/);
+  assert.match(candidates, /LSで|最初に結果だけ|その場にいた|証拠から先に|何いきなり|英語でいうと|後になって|予知夢/);
+  assert.match(candidates, /2時間/);
+  assert.match(candidates, /45分/);
+  assert.match(candidates, /3人/);
+  assert.match(candidates, /保存できない/);
+  assert.doesNotMatch(candidates, /LSでLSで|扱いやすいだ|ませんだった/);
+});
+
+test("完全モードと原文寄りモードを同じ入力で分離する", () => {
+  const source = "仕事で新しい資料を作成しました。同僚がとても驚きました。";
+  const faithful = engine.convert(source, { level: 2, contextMode: "faithful", seed: "mode-test" });
+  const full = engine.convert(source, { level: 2, contextMode: "full", seed: "mode-test" });
+
+  assert.equal(faithful.contextMode, "faithful");
+  assert.equal(full.contextMode, "full");
+  assert.equal(faithful.comparisons.length, 2);
+  assert.equal(full.comparisons.length, 1);
+  assert.ok(full.text.length > faithful.text.length * 1.5);
+  assert.match(full.text, /参戦|本気を出|手を出|封印がとけ|カウンター|ｶｳﾝﾀｰ|準備運動|シュミレート|ﾉｰﾘｽｸ|武の心|一手だけ|扱えない.*さばき/);
+});
+
+test("天候・障害・料理・対戦・長文業務でも成果を取り違えず重複させない", () => {
+  const cases = [
+    {
+      seed: 25,
+      source: "今朝は気温が氷点下3度まで下がり、駅まで歩いただけで手がかじかんだ。それでも8時の会議には間に合った。",
+      achievement: "8時の会議には間に合った",
+      values: ["氷点下3度", "8時"],
+    },
+    {
+      seed: 5,
+      source: "昨夜22時、社内サーバーが停止し、営業部の12人が顧客データを確認できなくなった。原因は更新処理の設定ミスだった。担当者が復旧作業を行い、23時10分にはすべての機能が使える状態に戻った。再発防止のため、明日までに監視項目を追加する。",
+      achievement: "23時10分にはすべての機能が使える状態に戻った",
+      values: ["22時", "12人", "23時10分"],
+    },
+    {
+      seed: 11,
+      source: "家族4人分のカレーを作った。玉ねぎを40分炒めたので甘みが出て、全員がおかわりした。ただし鍋の底が少し焦げたため、次は火力を弱くする。",
+      achievement: "玉ねぎを40分炒めたので甘みが出て、ぜいいんがおかわりした",
+      values: ["4人", "40分"],
+    },
+    {
+      seed: 8,
+      source: "昨日の対戦では序盤に味方が2人倒され、拠点も奪われた。残り30秒で裏道から相手陣地に入り、拠点を取り返して逆転勝利した。試合後、仲間から判断が早かったと言われた。",
+      achievement: "残り30秒で裏道から相手陣地に入り、拠点を取り返して逆転勝利した",
+      values: ["2人", "30秒"],
+    },
+    {
+      seed: 7,
+      source: "今月の問い合わせは先月より28件増え、担当5人では返信が遅れ始めていた。そこで回答履歴を分類し、よくある質問への下書きを自動作成するツールを金曜日に導入した。平均返信時間は18分から6分に短縮され、未処理件数も42件から7件まで減った。一方で専門用語を含む質問では誤った候補が出ることがある。来週は担当者2人で内容を確認し、誤りが多い分野を除外する予定だ。",
+      achievement: "平均返信時間は18分から6分に短縮され、未処理件数も42件から7件まで減った",
+      values: ["28件", "5人", "18分", "6分", "42件", "7件", "2人"],
+    },
+    {
+      seed: 9,
+      source: "昨日、在庫表を確認すると商品が17個不足していた。倉庫を調べ、30分で入力ミスを修正した。明日は担当者2人と確認手順を見直す。",
+      achievement: "倉庫を調べ、30分で入力ミスを修正した",
+      values: ["17個", "30分", "2人"],
+    },
+  ];
+
+  for (const item of cases) {
+    const result = engine.convert(item.source, { contextMode: "full", seed: item.seed });
+    assert.equal(result.comparisons[0].validation.passed, true);
+    assert.ok(result.comparisons[0].candidateCount >= 20);
+    assert.equal(result.text.split(item.achievement).length - 1, 1);
+    for (const value of item.values) assert.match(result.text, new RegExp(value));
+    assert.doesNotMatch(result.text, /しかもただし|ｶｶッっとそこで|だが一方で|最初に結果だけ言うと原因|手を出すと俺が/);
+  }
+});
+
+test("異なる入力を連続変換しても名言群と段落構造を連投しない", () => {
+  const previousRandom = Math.random;
+  Math.random = createRandom("quote-diversity-regression");
+  try {
+    const diversityEngine = new CorpusEngine();
+    const sources = [
+      "今朝は氷点下3度だったが8時の会議には間に合った。",
+      "家族4人分の夕食を40分で作り、全員がおかわりした。",
+      "残り30秒で拠点を取り返して逆転勝利し、仲間に褒められた。",
+      "停止したサーバーを23時10分に復旧し、12人が再び利用できた。",
+      "売上表の集計を2時間から15分に短縮した。明日、担当者3人へ説明する。",
+      "雨の中を5キロ走り、予定より10分早く到着した。",
+      "壊れた棚を1時間で修理したが、塗装が少し剥がれている。",
+      "試験で100点を取り、先生から学年で一番だと言われた。",
+    ];
+    const validations = sources.map((source) => diversityEngine.convert(source, {
+      contextMode: "full",
+    }).comparisons[0].validation);
+    const uniquePatterns = new Set(validations.flatMap((validation) => validation.quoteSignatures));
+    const adjacentOverlaps = validations.slice(1).map((validation, index) => (
+      validation.quoteSignatures.filter((signature) => validations[index].quoteSignatures.includes(signature)).length
+    ));
+
+    assert.ok(validations.every((validation) => validation.passed));
+    assert.ok(validations.every((validation) => validation.quotePatternCount >= 3));
+    assert.ok(validations.every((validation) => validation.repeatedFactCount === 0));
+    assert.ok(uniquePatterns.size >= 18);
+    assert.ok(adjacentOverlaps.every((overlap) => overlap <= 1));
+  } finally {
+    Math.random = previousRandom;
+  }
+});
+
+test("同じ長文を連続変換しても直前の名言群を再利用しない", () => {
+  const previousRandom = Math.random;
+  Math.random = createRandom("same-source-diversity");
+  try {
+    const diversityEngine = new CorpusEngine();
+    const source = "昨夜22時、社内サーバーが停止し、営業部の12人が顧客データを確認できなくなった。原因は更新処理の設定ミスだった。担当者が復旧作業を行い、23時10分にはすべての機能が使える状態に戻った。再発防止のため、明日までに監視項目を追加する。";
+    const results = Array.from({ length: 4 }, () => diversityEngine.convert(source, { contextMode: "full" }));
+    const validations = results.map((result) => result.comparisons[0].validation);
+    const firstLines = results.map((result) => result.text.split("\n")[0]);
+    const adjacentOverlaps = validations.slice(1).map((validation, index) => (
+      validation.quoteSignatures.filter((signature) => validations[index].quoteSignatures.includes(signature)).length
+    ));
+
+    assert.equal(new Set(firstLines).size, 4);
+    assert.ok(validations.every((validation) => validation.passed));
+    assert.ok(validations.every((validation) => validation.repeatedFactCount === 0));
+    assert.ok(adjacentOverlaps.every((overlap) => overlap === 0));
+  } finally {
+    Math.random = previousRandom;
+  }
+});
+
+test("牙を抜いてきたは対抗者への返答だけに使う", () => {
+  const nonChallengeSources = [
+    "停止したサーバーを23時10分に復旧し、12人が再び利用できた。",
+    "今朝は氷点下3度だったが8時の会議には間に合った。",
+    "家族4人分の夕食を40分で作り、全員がおかわりした。",
+  ];
+  for (const source of nonChallengeSources) {
+    const facts = source.split("。").filter(Boolean);
+    const candidates = engine.contextNarrative.candidates(source, {
+      random: createRandom(`no-fangs:${source}`),
+      plainFacts: facts,
+    });
+    assert.doesNotMatch(candidates.join("\n"), /牙抜いてきた/);
+  }
+
+  assert.match(engine.contextNarrative.quoteGrammar.render("retort_fangs", {
+    hero: "俺",
+    hasChallenge: true,
+    replyTarget: "60",
+  }), /なんだ急に牙抜いてきた　>>60\n勝手にライバル視するな/);
+  assert.equal(engine.contextNarrative.quoteGrammar.render("retort_fangs", {
+    hero: "俺",
+    hasChallenge: false,
+    replyTarget: "60",
+  }), "");
+  assert.equal(engine.contextNarrative.quoteGrammar.render("retort_fangs", {
+    hero: "俺",
+    hasChallenge: true,
+    replyTarget: null,
+  }), "");
+});
+
+test("牙を抜いてきたはレスアンカーまで一体で生成し数値・文字アンカーを保持する", () => {
+  for (const target of ["412", "社員"]) {
+    const source = `>>${target} 同僚が俺の方が仕事が速いと言って勝負を挑んできた。俺は先に報告書を提出した。`;
+    const candidates = engine.contextNarrative.candidates(source, {
+      random: () => 0,
+      plainFacts: splitSentences(source),
+    });
+    const fangs = candidates.filter((candidate) => candidate.includes("牙抜いてきた"));
+
+    assert.ok(fangs.length > 0);
+    assert.ok(fangs.every((candidate) => candidate.includes(`なんだ急に牙抜いてきた　>>${target}`)));
+    assert.ok(fangs.every((candidate) => !/なんだ急に牙抜いてきた(?![　 ]*>>[^\s\n]+)/.test(candidate)));
+  }
+});
+
+test("自動アンカーは原文の対抗者から選び、無関係な固定対象を足さない", () => {
+  const source = "営業部の田中が自分の方が速いと言って俺に勝負を挑んできた。俺は先に報告書を提出した。";
+  const model = engine.contextNarrative.extractModel(source, splitSentences(source));
+  const role = engine.contextNarrative.replyAnchor(model, () => 0);
+  const noTarget = engine.contextNarrative.replyAnchor({
+    replyTarget: null,
+    replyTargets: [],
+    goroTargets: [],
+  }, () => 0.5);
+
+  assert.deepEqual(model.replyTargets, ["営業部の田中"]);
+  assert.deepEqual(role, { target: "営業部の田中", coda: null, family: "context" });
+  assert.deepEqual(noTarget, { target: null, coda: null, family: "none" });
+  assert.match(engine.contextNarrative.quoteGrammar.render("retort_fangs", {
+    hero: "俺",
+    hasChallenge: true,
+    replyTarget: role.target,
+  }), /なんだ急に牙抜いてきた　>>営業部の田中/);
+});
+
+test("数字の語呂は固定語彙表ではなく原文中のかな語から組み立てる", () => {
+  const source = "同僚が負けたらなくと言って俺に勝負を挑んできた。俺は先に報告書を提出した。";
+  const model = engine.contextNarrative.extractModel(source, splitSentences(source));
+  const anchor = engine.contextNarrative.replyAnchor(model, () => 0.999);
+
+  assert.ok(model.goroTargets.some((candidate) => candidate.target === "79" && candidate.word === "なく"));
+  assert.deepEqual(anchor, {
+    target: "79",
+    coda: "なくとか言ってる時点で勝てない勝負なのは確定的に明らか",
+    family: "goro",
+  });
+});
+
+test("状態描写を架空の事件解決へ変えず専用の自慢型で展開する", () => {
+  const source = "今日は寒い。風が強く、駅まで歩いただけで手が冷たくなった。";
+  const result = engine.convert(source, {
+    contextMode: "full",
+    level: 3,
+    seed: "state-frame-regression",
+  });
+
+  assert.equal(result.comparisons[0].validation.passed, true);
+  assert.match(result.text, /今日は寒い/);
+  assert.match(result.text, /風が強く、駅まで歩いただけで手が冷たくなった/);
+  assert.match(result.text, /黄金の鉄の塊|ノーダメージ|防御もかなりかたい|ダイヤモンド・パワー|長寿ﾀｲﾌﾟ|生まれもった光属性/);
+  assert.doesNotMatch(result.text, /問題は(?:一瞬で終了|静かになった)|問題はｶｶッっと片付いた|牙抜いてきた|闇系の仕事/);
+});
+
+test("冒頭の達成事実を介入場面で二重使用せず目的語を片付けた扱いにしない", () => {
+  const source = "今日は家族のためにカレーを作った。みんながおいしいと言ってくれた。";
+  const result = engine.convert(source, {
+    contextMode: "full",
+    level: 3,
+    seed: "achievement-first-regression",
+  });
+
+  assert.equal(result.comparisons[0].validation.passed, true);
+  assert.equal(result.text.split("今日は家族のためにカレーを作った").length - 1, 1);
+  assert.doesNotMatch(result.text, /カレーはｶｶッっと片付いた/);
+});
+
+test(">>感謝は理解の更新と特定できる情報源が両方ある時だけ使う", () => {
+  const localEngine = new CorpusEngine();
+  const source = "田中の説明で原因がわかった。作業が進んで助かった。";
+  const result = localEngine.convert(source, {
+    contextMode: "full",
+    level: 3,
+    seed: "fused-gratitude-frame",
+  });
+  const noSource = "原因がわかったので作業が進んで助かった。";
+  const noSourceCandidates = localEngine.contextNarrative.candidates(noSource, {
+    plainFacts: splitSentences(noSource),
+    random: createRandom("no-fake-gratitude-target"),
+  });
+
+  assert.equal(result.comparisons[0].validation.passed, true);
+  assert.match(result.text, /今回のでそれが良くわかったよ>>田中感謝/);
+  assert.deepEqual(result.comparisons[0].validation.anchorSignatures, ["fused_performative"]);
+  assert.doesNotMatch(noSourceCandidates.join("\n"), />>[^\s\n]+感謝/);
+});
+
+test("賛同先と証拠元を同じ固定アンカーにせず入力の役割から選ぶ", () => {
+  const localEngine = new CorpusEngine();
+  const agreement = localEngine.convert(
+    "佐藤の意見に賛成した。計画はこの方針で進める。",
+    { contextMode: "full", level: 3, seed: "agreement-role" },
+  );
+  const evidence = localEngine.convert(
+    "田中のログで障害の原因を確認できた。記録には23時の停止が残っている。",
+    { contextMode: "full", level: 3, seed: "evidence-role" },
+  );
+
+  assert.equal(agreement.comparisons[0].validation.passed, true);
+  assert.match(agreement.text, /俺は>>佐藤の意見に賛成だな/);
+  assert.deepEqual(agreement.comparisons[0].validation.anchorSignatures, ["agreement_target"]);
+  assert.equal(evidence.comparisons[0].validation.passed, true);
+  assert.match(evidence.text, /これは>>田中が証明しているとおり/);
+  assert.deepEqual(evidence.comparisons[0].validation.anchorSignatures, ["evidence_source"]);
+  assert.doesNotMatch(`${agreement.text}\n${evidence.text}`, />>社員|>>感謝/);
+});
+
+test("アンカー構文台帳は原ログで観測した10構文と出現数を保持する", () => {
+  const status = engine.contextNarrative.anchorGrammar.status();
+  assert.equal(status.constructionCount, 10);
+  assert.equal(status.observedAnchorCount, 979);
+  assert.deepEqual(new Set(status.constructions), new Set([
+    "standalone_reply",
+    "prefixed_clause",
+    "coordination",
+    "evaluation_target",
+    "embedded_argument",
+    "evidence_source",
+    "agreement_target",
+    "sentence_tail_reference",
+    "vocative",
+    "fused_performative",
+  ]));
+});
+
+test("複数の参照先がある時は対抗者評価・情報源参照・並列を役割別に展開する", () => {
+  const source = "田中が俺の方が速いと言って勝負を挑んできた。佐藤の説明で手順が分かった。俺は先に報告書を提出した。";
+  const candidates = engine.contextNarrative.candidates(source, {
+    plainFacts: splitSentences(source),
+    random: createRandom("typed-multi-anchor"),
+  }).join("\n---\n");
+
+  assert.match(candidates, />>田中は.*勝負を挑むにはかなり準備不足/);
+  assert.match(candidates, />>佐藤の言うようにこの判断が正しいという事実/);
+  assert.match(candidates, />>田中と>>佐藤は/);
+  assert.doesNotMatch(candidates, />>佐藤は.*勝負を挑むにはかなり準備不足/);
+});
+
+test("原文寄りモードは語録を積み重ねず、別の機能構文を複数案として返す", () => {
+  const localEngine = new CorpusEngine();
+  const result = localEngine.convert(
+    "駅前のパン屋で新作のカレーパンを焼いて常連客に褒められた。",
+    { contextMode: "faithful", level: 3, seed: "faithful-quote-bridge" },
+  );
+  const options = result.comparisons[0].options;
+  const signatures = options.map((option) => option.validation.faithfulQuoteSignatures[0]);
+  const roles = options.map((option) => option.validation.faithfulQuoteRoles[0]);
+
+  assert.ok(result.comparisons.every((comparison) => comparison.validation.passed));
+  assert.equal(result.comparisons[0].requiredFaithfulQuoteCount, 1);
+  assert.ok(options.every((option) => option.validation.faithfulQuoteCount === 1));
+  assert.ok(options.every((option) => option.validation.faithfulContextMatch));
+  assert.equal(new Set(signatures).size, 3);
+  assert.equal(new Set(roles).size, 3);
+  assert.equal(result.suggestions.length, 3);
+  assert.match(options.map((option) => option.text).join("\n"), /予知夢|どこもおかしくはない|一般人と同じ|それほどでもない/);
+  assert.doesNotMatch(options.map((option) => option.text).join("\n"), /ノンフィクション[\s\S]*リアル話[\s\S]*でしょう/);
+});
+
+test("適当な観察文でも事実を保ったまま3候補を異なる機能構文にする", () => {
+  const localEngine = new CorpusEngine();
+  const result = localEngine.convert(
+    "公園の池でカモが三羽泳いでいた。",
+    { contextMode: "faithful", level: 3, seed: "arbitrary-multi-pattern" },
+  );
+  const options = result.comparisons[0].options;
+  const signatureBatches = options.map((option) => (
+    option.validation.faithfulQuoteSignatures.slice().sort().join("+")
+  ));
+
+  assert.equal(result.comparisons[0].validation.passed, true);
+  assert.equal(result.comparisons[0].validation.faithfulQuoteCount, 1);
+  assert.equal(options.length, 3);
+  assert.ok(options.every((option) => option.validation.faithfulQuoteCount === 1));
+  assert.ok(options.every((option) => /公園/.test(option.text) && /カモ/.test(option.text) && /三羽/.test(option.text)));
+  assert.ok(options.every((option) => option.validation.faithfulContextMatch));
+  assert.equal(new Set(signatureBatches).size, 3);
+  assert.equal(result.suggestions.length, 3);
+  assert.doesNotMatch(options.map((option) => option.text).join("\n"), /勝負|感謝|深い悲しみ|一般人との格の違い/);
+});
+
+test("評価・危機・対抗・感謝・賛同・証拠を役割別の3構文へ振り分ける", () => {
+  const cases = [
+    {
+      source: "このゲームは面白い。",
+      expected: ["evaluation_rank", "evaluation_impact", "evaluation_elite"],
+      forbidden: /深い悲しみ|>>|ノーダメージ/,
+    },
+    {
+      source: "報告書が締切に間に合わず担当者が困っていた。",
+      expected: ["crisis_time_over", "crisis_deep_sorrow", "crisis_game_over"],
+      forbidden: /牙抜いてきた|それほどでもない/,
+    },
+    {
+      source: "田中が俺の方が速いと言って勝負を挑んできた。",
+      expected: ["challenge_fangs", "challenge_prefixed", "challenge_vocative"],
+      forbidden: />>社員|>>感謝/,
+    },
+    {
+      source: "田中の説明で原因がわかって助かった。",
+      expected: ["gratitude_fused", "gratitude_value", "gratitude_extended"],
+      forbidden: />>社員|牙抜いてきた/,
+    },
+    {
+      source: "佐藤の意見に賛成した。",
+      expected: ["agreement_target", "agreement_reason", "agreement_value"],
+      forbidden: />>社員|>>感謝/,
+    },
+    {
+      source: "田中のログで障害の原因を確認できた。",
+      expected: ["evidence_source", "evidence_embedded", "evidence_tail"],
+      forbidden: />>社員|牙抜いてきた/,
+    },
+  ];
+
+  for (const [index, item] of cases.entries()) {
+    const localEngine = new CorpusEngine();
+    const result = localEngine.convert(item.source, {
+      contextMode: "faithful",
+      level: 3,
+      seed: `functional-frame-${index}`,
+    });
+    const options = result.comparisons[0].options;
+    const signatures = new Set(options.flatMap((option) => option.validation.faithfulQuoteSignatures));
+    const combined = options.map((option) => option.text).join("\n");
+
+    assert.deepEqual(signatures, new Set(item.expected));
+    assert.equal(new Set(options.map((option) => option.validation.faithfulQuoteRoles[0])).size, 3);
+    assert.ok(options.every((option) => option.validation.passed));
+    assert.ok(options.every((option) => option.validation.faithfulContextMatch));
+    assert.doesNotMatch(combined, item.forbidden);
+  }
+});
+
+test("中立観察の完全モードは事件解決や耐性へ捏造せず観察自慢へ再構成する", () => {
+  const source = "公園の池でカモが三羽泳いでいた。";
+  const result = engine.convert(source, {
+    contextMode: "full",
+    level: 3,
+    seed: "full-observation-regression",
+  });
+  const validation = result.comparisons[0].validation;
+
+  assert.equal(validation.passed, true);
+  assert.equal(validation.repeatedFactCount, 0);
+  assert.ok(validation.quoteFunctionalRoleCount >= 3);
+  assert.match(result.text, /公園/);
+  assert.match(result.text, /カモ/);
+  assert.match(result.text, /三羽/);
+  assert.match(result.text, /見切|細部|見落と/);
+  assert.doesNotMatch(result.text, /問題は一瞬で終了|復旧|ノーダメージ|深い悲しみ|ゲームオーバー/);
+  assert.equal(validation.repeatedRhetoricalMoveCount, 0);
+});
+
+test("利用不能の『なくなった』を物品紛失へ誤分類しない", () => {
+  const unavailable = engine.contextNarrative.extractModel(
+    "営業部の12人が顧客データを確認できなくなった。",
+    splitSentences("営業部の12人が顧客データを確認できなくなった。"),
+  );
+  const missing = engine.contextNarrative.extractModel(
+    "棚に置いたファイルがなくなった。",
+    splitSentences("棚に置いたファイルがなくなった。"),
+  );
+
+  assert.equal(unavailable.hasMissing, false);
+  assert.equal(missing.hasMissing, true);
+});
+
+test("締切危機を手遅れ語録へ到達させ生成表現も正しく検出する", () => {
+  const source = "報告書が締切に間に合わず担当者が困っていた。俺がツールを作成して45分で完了した。";
+  const candidates = engine.contextNarrative.candidates(source, {
+    plainFacts: splitSentences(source),
+    random: createRandom("deadline-quote-reachability"),
+  });
+  const combined = candidates.join("\n");
+
+  assert.match(combined, /手遅れになるのではままるな/);
+  assert.ok(candidates.some((candidate) => (
+    engine.contextNarrative.quoteGrammar.signatures(candidate).includes("crisis_too_late")
+  )));
+  assert.deepEqual(engine.contextNarrative.quoteGrammar.signatures(
+    "まぁこうなることはわかってた（予知夢）\n普通は普通なので一般人が普通なら仕事の難しさがわかるはず\nおいィ？お前らは今の結果が見えたか？\n何故そんなに必死だったのかバレてる証拠に笑顔が出てしまった",
+  ).filter((id) => [
+    "opener_prophecy",
+    "contrast_ordinary",
+    "reaction_heard",
+    "reaction_bared",
+  ].includes(id)).sort(), [
+    "contrast_ordinary",
+    "opener_prophecy",
+    "reaction_bared",
+    "reaction_heard",
+  ]);
+});
+
+test("代表文候補から51展開型と10アンカー構文すべてへ到達できる", () => {
+  const sources = [
+    ["state", "今日は寒い。風が強く手が冷たくなった。"],
+    ["achievement", "仕事で新しい資料を作成した。同僚が驚いた。"],
+    ["rescue", "サーバーが停止して12人が確認できなくなった。担当者が復旧し23時10分に使える状態へ戻った。"],
+    ["deadline", "報告書が締切に間に合わず担当者が困っていた。俺がツールを作成して45分で完了した。"],
+    ["missing", "商品が17個不足して行方が分からなかった。30分で入力ミスを修正した。"],
+    ["danger", "通信障害で保存できない問題が起きた。俺が修正して復旧した。"],
+    ["challenge", "田中が俺に文句を言って勝負を挑んできた。俺は先に報告書を提出した。"],
+    ["dialogue", "同僚が「俺の方が速い」と言って張り合ってきた。俺は15分で作業を完成した。"],
+    ["gratitude", "田中の説明で原因が分かった。作業が進んで助かった。"],
+    ["agreement", "佐藤の意見に賛成した。計画はこの方針で進める。"],
+    ["evidence", "田中のログで原因を確認できた。記録には23時の停止が残っている。"],
+    ["multi", "田中が勝負を挑んできた。佐藤の説明で手順が分かった。俺は先に資料を提出した。"],
+  ];
+  const quoteSignatures = new Set();
+  const anchorSignatures = new Set();
+
+  for (const [name, source] of sources) {
+    for (let seed = 0; seed < 40; seed += 1) {
+      const candidates = engine.contextNarrative.candidates(source, {
+        plainFacts: splitSentences(source),
+        random: createRandom(`${name}:${seed}`),
+      });
+      for (const candidate of candidates) {
+        engine.contextNarrative.quoteGrammar.signatures(candidate).forEach((id) => quoteSignatures.add(id));
+        engine.contextNarrative.anchorGrammar.signatures(candidate).forEach((id) => anchorSignatures.add(id));
+      }
+    }
+  }
+
+  assert.equal(quoteSignatures.size, 51);
+  assert.deepEqual(quoteSignatures, new Set(Object.values(engine.contextNarrative.quoteGrammar.active).flat().map((item) => item.id)));
+  assert.equal(anchorSignatures.size, 10);
+  assert.deepEqual(anchorSignatures, new Set(engine.contextNarrative.anchorGrammar.status().constructions));
+});

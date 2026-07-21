@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="普通の日本語を、ブロント語ログ由来の規則でブロント語へ変換します。">
+    <title>ブロント語変換機</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inputText">入力欄へ移動</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="ブロント語変換機 トップ">
+          <span class="brand-mark" aria-hidden="true">B</span>
+          <span>ブロント語変換機</span>
+        </a>
+        <button class="text-button" id="themeButton" type="button" aria-label="表示テーマを切り替える">
+          表示: 自動
+        </button>
+      </div>
+    </header>
+
+    <main id="top" class="app-shell">
+      <section class="intro" aria-labelledby="pageTitle">
+        <p class="eyebrow">Buront language generator</p>
+        <h1 id="pageTitle">普通の文章が、最強に近い文章になる。</h1>
+        <p>実ログから近い文を探し、複数の改変候補を比較・検証して選びます。LLMは使わず、入力内容は外部へ送信しません。</p>
+      </section>
+
+      <section class="controls" aria-label="変換設定">
+        <fieldset class="level-control">
+          <legend>変換の濃さ</legend>
+          <div class="segmented" role="group" aria-label="変換の濃さ">
+            <button type="button" data-level="1" aria-pressed="false">謙虚</button>
+            <button type="button" data-level="2" aria-pressed="true">標準</button>
+            <button type="button" data-level="3" aria-pressed="false">有頂天</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="context-control">
+          <legend>文章の組み替え</legend>
+          <div class="segmented" role="group" aria-label="文章の組み替え方">
+            <button type="button" data-context-mode="faithful" aria-pressed="true">原文寄り</button>
+            <button type="button" data-context-mode="full" aria-pressed="false">完全ブロントナイズ</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="series-control">
+          <legend>ログ倉庫の系列</legend>
+          <select id="seriesSelect" aria-label="適用するログ倉庫の系列">
+            <option value="all">全系列</option>
+            <option value="roto">ロト時代＋暗黒騎士系</option>
+            <option value="yorusama">グラットンスレ系</option>
+            <option value="saiko">最高の騎士系</option>
+            <option value="night">名無し系（2003～2004）</option>
+            <option value="puronohito">鯖スレ系</option>
+            <option value="nega">ネガ侍系</option>
+            <option value="katuru">謙虚な騎士系</option>
+            <option value="gg">ギルティギア系</option>
+            <option value="sonota">その他</option>
+          </select>
+        </fieldset>
+
+        <div id="engineStatus" class="engine-status" role="status" aria-live="polite">
+          <span aria-hidden="true"></span>
+          コーパスを確認中
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="文章変換">
+        <article class="editor-panel input-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-kicker">入力</p>
+              <h2>普通の文章</h2>
+            </div>
+            <span id="inputCount" class="count" aria-live="polite">0文字</span>
+          </div>
+
+          <label class="sr-only" for="inputText">変換したい普通の文章</label>
+          <textarea id="inputText" maxlength="5000" spellcheck="true" placeholder="例: 私はこの方法がとても良いと思います。"></textarea>
+
+          <div class="sample-row" aria-label="入力例">
+            <span>入力例</span>
+            <button type="button" data-sample="work">仕事</button>
+            <button type="button" data-sample="game">ゲーム</button>
+            <button type="button" data-sample="daily">日常</button>
+          </div>
+
+          <div class="panel-actions">
+            <button class="secondary-button" id="clearButton" type="button">消去</button>
+            <button class="primary-button" id="convertButton" type="button">
+              ブロント語に変換
+              <kbd>Ctrl Enter</kbd>
+            </button>
+          </div>
+        </article>
+
+        <article class="editor-panel output-panel" aria-live="polite">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-kicker">出力</p>
+              <h2>ブロント語</h2>
+            </div>
+            <button class="copy-button" id="copyButton" type="button" disabled>コピー</button>
+          </div>
+
+          <div id="emptyOutput" class="empty-output">
+            <span class="empty-glyph" aria-hidden="true">「」</span>
+            <p>文章を入力して変換すると、ここに結果が表示されます。</p>
+          </div>
+
+          <div id="resultArea" class="result-area" hidden>
+            <label class="sr-only" for="outputText">変換結果</label>
+            <textarea id="outputText" readonly></textarea>
+            <div id="suggestionList" class="suggestion-list" aria-label="検証を通過した変換候補"></div>
+            <div class="result-meta">
+              <span id="outputCount">0文字</span>
+              <span id="changeCount">0文を検証</span>
+            </div>
+            <div id="techniqueList" class="technique-list" aria-label="使用した変換技法"></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="comparisonPanel" class="comparison-panel" aria-labelledby="comparisonTitle" hidden>
+        <div class="comparison-heading">
+          <div>
+            <p class="panel-kicker">Comparison and verification</p>
+            <h2 id="comparisonTitle">文章比較と検証</h2>
+          </div>
+          <p id="verificationSummary"></p>
+        </div>
+        <div id="comparisonList" class="comparison-list"></div>
+      </section>
+
+      <details class="dictionary-panel">
+        <summary>
+          <span>
+            <strong>自分の変換辞書</strong>
+            <small>1行に「変換前=変換後」の形式で追加できます</small>
+          </span>
+          <span class="summary-action">編集する</span>
+        </summary>
+        <div class="dictionary-body">
+          <label for="customDictionary">追加ルール</label>
+          <textarea id="customDictionary" rows="5" spellcheck="false" placeholder="すばらしい=見事な仕事だと感心する&#10;急ぐ=ｶｶッっと移動する"></textarea>
+          <p id="dictionaryStatus" class="helper-text">この端末のブラウザ内にだけ保存されます。</p>
+        </div>
+      </details>
+
+      <section class="rule-notes" aria-labelledby="ruleTitle">
+        <div>
+          <h2 id="ruleTitle">変換に使う四つの資料</h2>
+          <p>ログ本文、名言集、段階的な文章比較、長文改変の統計を別々に保持しています。</p>
+        </div>
+        <dl>
+          <div><dt>実ログ</dt><dd id="corpusLogStat">投稿と文型を読み込み中</dd></div>
+          <div><dt>名言集</dt><dd id="corpusQuoteStat">展開型を読み込み中</dd></div>
+          <div><dt>文章比較</dt><dd id="corpusComparisonStat">改変段階を読み込み中</dd></div>
+          <div><dt>長文改変</dt><dd id="corpusNovelStat">作品統計を読み込み中</dd></div>
+          <div><dt>系列別</dt><dd id="corpusEraStat">倉庫系列プロファイルを読み込み中</dd></div>
+          <div><dt>選択方法</dt><dd>候補生成、比較採点、基準未達時の再検証</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

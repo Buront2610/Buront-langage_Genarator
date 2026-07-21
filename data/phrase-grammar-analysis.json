@@ -1,0 +1,5906 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-20T08:04:39.824Z",
+  "sources": {
+    "logPath": "C:\\Users\\Glutt\\OneDrive\\デスクトップ\\burontlog.txt",
+    "logPosts": 2452,
+    "logSentences": 9591,
+    "quoteHeadings": 165,
+    "quoteExcerpts": 839,
+    "contextBackedHeadings": 141,
+    "novelChapters": 23
+  },
+  "anchors": {
+    "occurrences": 979,
+    "lines": 971,
+    "placementCounts": [
+      {
+        "value": "standalone",
+        "count": 883
+      },
+      {
+        "value": "prefix",
+        "count": 58
+      },
+      {
+        "value": "inline",
+        "count": 28
+      },
+      {
+        "value": "suffix",
+        "count": 10
+      }
+    ],
+    "constructionCounts": [
+      {
+        "value": "standalone_reply",
+        "count": 883
+      },
+      {
+        "value": "prefixed_clause",
+        "count": 29
+      },
+      {
+        "value": "coordination",
+        "count": 16
+      },
+      {
+        "value": "evaluation_target",
+        "count": 15
+      },
+      {
+        "value": "embedded_argument",
+        "count": 14
+      },
+      {
+        "value": "evidence_source",
+        "count": 7
+      },
+      {
+        "value": "agreement_target",
+        "count": 5
+      },
+      {
+        "value": "sentence_tail_reference",
+        "count": 5
+      },
+      {
+        "value": "vocative",
+        "count": 4
+      },
+      {
+        "value": "fused_performative",
+        "count": 1
+      }
+    ],
+    "examplesByConstruction": {
+      "standalone_reply": [
+        {
+          "lineNumber": 75,
+          "target": "911",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>911"
+        },
+        {
+          "lineNumber": 99,
+          "target": "50",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>50"
+        },
+        {
+          "lineNumber": 118,
+          "target": "155",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>155"
+        },
+        {
+          "lineNumber": 138,
+          "target": "216",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>216"
+        },
+        {
+          "lineNumber": 166,
+          "target": "305",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>305"
+        },
+        {
+          "lineNumber": 182,
+          "target": "352",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>352"
+        },
+        {
+          "lineNumber": 190,
+          "target": "382",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>382"
+        },
+        {
+          "lineNumber": 216,
+          "target": "455",
+          "placement": "standalone",
+          "construction": "standalone_reply",
+          "before": "",
+          "after": "",
+          "line": ">>455"
+        }
+      ],
+      "prefixed_clause": [
+        {
+          "lineNumber": 306,
+          "target": "665",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "だった馬鹿は",
+          "line": ">>665だった馬鹿は"
+        },
+        {
+          "lineNumber": 4990,
+          "target": "748",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "でおまえ自信がそう認めてるんだが？",
+          "line": ">>748でおまえ自信がそう認めてるんだが？"
+        },
+        {
+          "lineNumber": 5049,
+          "target": "748",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "でおまえ自信がそう認めてるんだが？",
+          "line": ">>748でおまえ自信がそう認めてるんだが？"
+        },
+        {
+          "lineNumber": 5227,
+          "target": "1",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "さんも言うように、バーバリアンはかなり出回ってるわけだが",
+          "line": ">>1さんも言うように、バーバリアンはかなり出回ってるわけだが"
+        },
+        {
+          "lineNumber": 8837,
+          "target": "257",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "は趣味が合いそうだ",
+          "line": ">>257は趣味が合いそうだ"
+        },
+        {
+          "lineNumber": 9511,
+          "target": "214",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "＝zLmpDFOL",
+          "line": ">>214＝zLmpDFOL"
+        },
+        {
+          "lineNumber": 9905,
+          "target": "555",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "さんは気にしないで下さい",
+          "line": ">>555さんは気にしないで下さい"
+        },
+        {
+          "lineNumber": 10088,
+          "target": "84",
+          "placement": "prefix",
+          "construction": "prefixed_clause",
+          "before": "",
+          "after": "とかウソいっているしベジータかよしねよ",
+          "line": ">>84とかウソいっているしベジータかよしねよ"
+        }
+      ],
+      "coordination": [
+        {
+          "lineNumber": 3778,
+          "target": "318",
+          "placement": "prefix",
+          "construction": "coordination",
+          "before": "",
+          "after": "と>>320は賢い",
+          "line": ">>318と>>320は賢い"
+        },
+        {
+          "lineNumber": 3778,
+          "target": "320",
+          "placement": "inline",
+          "construction": "coordination",
+          "before": ">>318と",
+          "after": "は賢い",
+          "line": ">>318と>>320は賢い"
+        },
+        {
+          "lineNumber": 6796,
+          "target": "671",
+          "placement": "prefix",
+          "construction": "coordination",
+          "before": "",
+          "after": "＝>>676",
+          "line": ">>671＝>>676"
+        },
+        {
+          "lineNumber": 6796,
+          "target": "676",
+          "placement": "suffix",
+          "construction": "coordination",
+          "before": ">>671＝",
+          "after": "",
+          "line": ">>671＝>>676"
+        },
+        {
+          "lineNumber": 8360,
+          "target": "91",
+          "placement": "prefix",
+          "construction": "coordination",
+          "before": "",
+          "after": ">>92",
+          "line": ">>91>>92"
+        },
+        {
+          "lineNumber": 8360,
+          "target": "92",
+          "placement": "suffix",
+          "construction": "coordination",
+          "before": ">>91",
+          "after": "",
+          "line": ">>91>>92"
+        },
+        {
+          "lineNumber": 8703,
+          "target": "91",
+          "placement": "prefix",
+          "construction": "coordination",
+          "before": "",
+          "after": "→>>88",
+          "line": ">>91→>>88"
+        },
+        {
+          "lineNumber": 8703,
+          "target": "88",
+          "placement": "suffix",
+          "construction": "coordination",
+          "before": ">>91→",
+          "after": "",
+          "line": ">>91→>>88"
+        }
+      ],
+      "evaluation_target": [
+        {
+          "lineNumber": 2190,
+          "target": "372",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "が馬鹿が悪いせいでおまえら全員殺す",
+          "line": ">>372が馬鹿が悪いせいでおまえら全員殺す"
+        },
+        {
+          "lineNumber": 2400,
+          "target": "161",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は賢い",
+          "line": ">>161は賢い"
+        },
+        {
+          "lineNumber": 3412,
+          "target": "886",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は死ぬ",
+          "line": ">>886は死ぬ"
+        },
+        {
+          "lineNumber": 3649,
+          "target": "85",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は偽者",
+          "line": ">>85は偽者"
+        },
+        {
+          "lineNumber": 5118,
+          "target": "17",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は賢い",
+          "line": ">>17は賢い"
+        },
+        {
+          "lineNumber": 6369,
+          "target": "298",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は馬鹿だな",
+          "line": ">>298は馬鹿だな"
+        },
+        {
+          "lineNumber": 6579,
+          "target": "485",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は偽者",
+          "line": ">>485は偽者"
+        },
+        {
+          "lineNumber": 7215,
+          "target": "505",
+          "placement": "prefix",
+          "construction": "evaluation_target",
+          "before": "",
+          "after": "は賢い",
+          "line": ">>505は賢い"
+        }
+      ],
+      "embedded_argument": [
+        {
+          "lineNumber": 5230,
+          "target": "1",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "これは",
+          "after": "さんの言うようにバーバリアンが大量に出回ってる証拠だべな",
+          "line": "これは>>1さんの言うようにバーバリアンが大量に出回ってる証拠だべな"
+        },
+        {
+          "lineNumber": 7125,
+          "target": "450",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "つまり",
+          "after": "さんの圧勝が決定",
+          "line": "つまり>>450さんの圧勝が決定"
+        },
+        {
+          "lineNumber": 9575,
+          "target": "238",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "結局",
+          "after": "には誰も反論できなかったようだな",
+          "line": "結局>>238には誰も反論できなかったようだな"
+        },
+        {
+          "lineNumber": 12516,
+          "target": "155",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "あと",
+          "after": "ﾊﾞｶみたいにageるなよお前の意見は誰からも支持されていない恥を知れよ・・",
+          "line": "あと>>155ﾊﾞｶみたいにageるなよお前の意見は誰からも支持されていない恥を知れよ・・"
+        },
+        {
+          "lineNumber": 13160,
+          "target": "485",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "（",
+          "after": "みたいな騙りは論外）",
+          "line": "（>>485みたいな騙りは論外）"
+        },
+        {
+          "lineNumber": 13364,
+          "target": "615",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "ダイヤモンドという英語使ったせいでオツムが弱い",
+          "after": "が意味不明的だったようなので",
+          "line": "ダイヤモンドという英語使ったせいでオツムが弱い>>615が意味不明的だったようなので"
+        },
+        {
+          "lineNumber": 13899,
+          "target": "25",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "いい加減にしろよ",
+          "after": "・・ナイトはいるでＦＡ",
+          "line": "いい加減にしろよ>>25・・ナイトはいるでＦＡ"
+        },
+        {
+          "lineNumber": 14352,
+          "target": "1",
+          "placement": "inline",
+          "construction": "embedded_argument",
+          "before": "さきにいっておくが俺は",
+          "after": "じゃないぞ",
+          "line": "さきにいっておくが俺は>>1じゃないぞ"
+        }
+      ],
+      "evidence_source": [
+        {
+          "lineNumber": 6273,
+          "target": "15",
+          "placement": "prefix",
+          "construction": "evidence_source",
+          "before": "",
+          "after": "に証拠が出てる",
+          "line": ">>15に証拠が出てる"
+        },
+        {
+          "lineNumber": 6323,
+          "target": "95",
+          "placement": "prefix",
+          "construction": "evidence_source",
+          "before": "",
+          "after": "を見て笑ってる奴は何がおかしいんだ？",
+          "line": ">>95を見て笑ってる奴は何がおかしいんだ？"
+        },
+        {
+          "lineNumber": 8165,
+          "target": "726",
+          "placement": "inline",
+          "construction": "evidence_source",
+          "before": "そうだろうか？俺は",
+          "after": "のはかなり信頼性が高いと思うぞ",
+          "line": "そうだろうか？俺は>>726のはかなり信頼性が高いと思うぞ"
+        },
+        {
+          "lineNumber": 9559,
+          "target": "1",
+          "placement": "prefix",
+          "construction": "evidence_source",
+          "before": "",
+          "after": "の内容が本当だという証拠はないだろ",
+          "line": ">>1の内容が本当だという証拠はないだろ"
+        },
+        {
+          "lineNumber": 15052,
+          "target": "210",
+          "placement": "inline",
+          "construction": "evidence_source",
+          "before": "これは住民の相違であることは",
+          "after": "が証明しているとおり。",
+          "line": "これは住民の相違であることは>>210が証明しているとおり。"
+        },
+        {
+          "lineNumber": 15531,
+          "target": "499",
+          "placement": "prefix",
+          "construction": "evidence_source",
+          "before": "",
+          "after": "で光の友人の証言から光の無実が証明されたので",
+          "line": ">>499で光の友人の証言から光の無実が証明されたので"
+        },
+        {
+          "lineNumber": 15606,
+          "target": "636",
+          "placement": "inline",
+          "construction": "evidence_source",
+          "before": "おそらく",
+          "after": "を見てびびったのが決定打といえる",
+          "line": "おそらく>>636を見てびびったのが決定打といえる"
+        }
+      ],
+      "agreement_target": [
+        {
+          "lineNumber": 6152,
+          "target": "903",
+          "placement": "inline",
+          "construction": "agreement_target",
+          "before": "いや、俺も",
+          "after": "の意見に同意だな",
+          "line": "いや、俺も>>903の意見に同意だな"
+        },
+        {
+          "lineNumber": 10148,
+          "target": "1",
+          "placement": "inline",
+          "construction": "agreement_target",
+          "before": "俺は",
+          "after": "に賛成だな",
+          "line": "俺は>>1に賛成だな"
+        },
+        {
+          "lineNumber": 10479,
+          "target": "891",
+          "placement": "inline",
+          "construction": "agreement_target",
+          "before": "いや自分も",
+          "after": "に賛成",
+          "line": "いや自分も>>891に賛成"
+        },
+        {
+          "lineNumber": 11008,
+          "target": "446",
+          "placement": "inline",
+          "construction": "agreement_target",
+          "before": "狩人より遅ければ溜まるの遅いですか？",
+          "after": "の意見は禿同",
+          "line": "狩人より遅ければ溜まるの遅いですか？>>446の意見は禿同"
+        },
+        {
+          "lineNumber": 15570,
+          "target": "580",
+          "placement": "prefix",
+          "construction": "agreement_target",
+          "before": "",
+          "after": "に超賛成",
+          "line": ">>580に超賛成"
+        }
+      ],
+      "sentence_tail_reference": [
+        {
+          "lineNumber": 9275,
+          "target": "60",
+          "placement": "suffix",
+          "construction": "sentence_tail_reference",
+          "before": "なんだ急に牙抜いてきた",
+          "after": "",
+          "line": "なんだ急に牙抜いてきた>>60"
+        },
+        {
+          "lineNumber": 10058,
+          "target": "6",
+          "placement": "suffix",
+          "construction": "sentence_tail_reference",
+          "before": "調子こくなよ？",
+          "after": "",
+          "line": "調子こくなよ？>>6"
+        },
+        {
+          "lineNumber": 10547,
+          "target": "935",
+          "placement": "suffix",
+          "construction": "sentence_tail_reference",
+          "before": "あとバカみたいにageるなよ",
+          "after": "",
+          "line": "あとバカみたいにageるなよ>>935"
+        },
+        {
+          "lineNumber": 13751,
+          "target": "362",
+          "placement": "suffix",
+          "construction": "sentence_tail_reference",
+          "before": "ブ",
+          "after": "",
+          "line": "ブ>>362"
+        },
+        {
+          "lineNumber": 14323,
+          "target": "57",
+          "placement": "suffix",
+          "construction": "sentence_tail_reference",
+          "before": "お前いい加減にしておけよ",
+          "after": "",
+          "line": "お前いい加減にしておけよ>>57"
+        }
+      ],
+      "vocative": [
+        {
+          "lineNumber": 10155,
+          "target": "64",
+          "placement": "prefix",
+          "construction": "vocative",
+          "before": "",
+          "after": "お前はかなりののう力者だろうな",
+          "line": ">>64お前はかなりののう力者だろうな"
+        },
+        {
+          "lineNumber": 10899,
+          "target": "450",
+          "placement": "prefix",
+          "construction": "vocative",
+          "before": "",
+          "after": "お前からはﾏｼﾞなオーラが感じられねーよ。冷やかしだろうが？オ？",
+          "line": ">>450 お前からはﾏｼﾞなオーラが感じられねーよ。冷やかしだろうが？オ？"
+        },
+        {
+          "lineNumber": 11419,
+          "target": "121122",
+          "placement": "prefix",
+          "construction": "vocative",
+          "before": "",
+          "after": "お前がただにﾊﾞｶだと思うぞ？ﾊﾞｶか？自分から墓掘ってるしな、、俺は今日来たのが初めてきたから俺と同意見の人がいると言う事は",
+          "line": ">>121122 お前がただにﾊﾞｶだと思うぞ？ﾊﾞｶか？自分から墓掘ってるしな、、俺は今日来たのが初めてきたから俺と同意見の人がいると言う事は"
+        },
+        {
+          "lineNumber": 12048,
+          "target": "161",
+          "placement": "prefix",
+          "construction": "vocative",
+          "before": "",
+          "after": "よ、相手にしてるとﾊﾞｶがうつるぞ（苦笑）",
+          "line": ">>161よ、相手にしてるとﾊﾞｶがうつるぞ（苦笑）"
+        }
+      ],
+      "fused_performative": [
+        {
+          "lineNumber": 15139,
+          "target": "199",
+          "placement": "inline",
+          "construction": "fused_performative",
+          "before": "今回のでそれが良くわかったよ",
+          "after": "感謝",
+          "line": "今回のでそれが良くわかったよ>>199感謝"
+        }
+      ]
+    },
+    "fusedPerformativeExamples": [
+      {
+        "lineNumber": 15139,
+        "target": "199",
+        "placement": "inline",
+        "construction": "fused_performative",
+        "before": "今回のでそれが良くわかったよ",
+        "after": "感謝",
+        "line": "今回のでそれが良くわかったよ>>199感謝"
+      }
+    ]
+  },
+  "quoteFunctions": {
+    "headingCount": 165,
+    "contextBackedCount": 141,
+    "exactContextMatches": 141,
+    "unclassifiedCount": 0,
+    "actCounts": [
+      {
+        "id": "power_action",
+        "label": "能力・攻撃の誇張",
+        "count": 38,
+        "examples": [
+          "怒りのパワーの力が全快",
+          "ギガトンパンチとメガトンパンチ",
+          "グラットン使いは知力パワーも高い",
+          "グラットンスウィフト",
+          "リアルではモンクタイプ",
+          "ダークパワー",
+          "エクスカリバーで骨になる",
+          "四天王№１の攻撃力と言われてるイフリート",
+          "生半可なナイトでは使えないホーリを使って敵を掃除していたら３回連続見つめられた",
+          "黄金の鉄の塊で出来ているナイト"
+        ]
+      },
+      {
+        "id": "pseudo_logic",
+        "label": "擬似論理・因果の増築",
+        "count": 36,
+        "examples": [
+          "グラットン所持＝装備が良い＝上手い",
+          "リアルではモンクタイプ",
+          "どうやって○○って証拠だよ",
+          "廃人だから頭が良い",
+          "対等な誓いなので守られなければならない",
+          "謙虚だからほめられても自慢はしない",
+          "女王の守りというのが女なので弱々しい",
+          "生半可なナイトでは使えないホーリを使って敵を掃除していたら３回連続見つめられた",
+          "俺にとっては神の贈物だがお前等にとっては地獄の宴だからな",
+          "ワンパンでＫＯ"
+        ]
+      },
+      {
+        "id": "opponent_evaluation",
+        "label": "相手の格下げ・類型化",
+        "count": 31,
+        "examples": [
+          "ギガは雷って意味",
+          "おい、やめろ馬鹿",
+          "廃人だから頭が良い",
+          "それほどでもない",
+          "女王の守りというのが女なので弱々しい",
+          "おれはＰスキルの高い最高のナイトだ",
+          "エクスカリバーで骨になる",
+          "ナイトは生まれもった光属性の者しか扱い切れない",
+          "ワンパンでＫＯ",
+          "本能的に長寿タイプ"
+        ]
+      },
+      {
+        "id": "self_rank",
+        "label": "自己格付け・自慢",
+        "count": 27,
+        "examples": [
+          "持ってる人憧れちゃうなー",
+          "それほどでもない",
+          "ダークパワー",
+          "おれはＰスキルの高い最高のナイトだ",
+          "こう誘いがあっては一人の時間も作れない（リアル話）",
+          "自分の心に広さが怖い",
+          "エクスカリバーで骨になる",
+          "黄金の鉄の塊で出来ているナイト",
+          "お前はまだ成長するﾌﾞﾛﾝﾄさんに少しでも近づけるように",
+          "「最　　　　　強　　　　　だ　　　　ど　　　　か　　　　言　　　　う　　　　前　　　に」"
+        ]
+      },
+      {
+        "id": "denial_disclaimer",
+        "label": "否認・切断",
+        "count": 24,
+        "examples": [
+          "タイマンは真剣な喧嘩の意味",
+          "見事な仕事だと関心",
+          "それほどでもない",
+          "あまりにも酷いから完全な怒りになった",
+          "はげていない",
+          "俺は狩る側であって狩られる側じゃない",
+          "リアル世界よりも充実したヴァナ生活が認可される",
+          "俺の怒りは有頂天",
+          "ヴァナのイチロー",
+          "ﾄｯﾎﾟ連合"
+        ]
+      },
+      {
+        "id": "social_typing",
+        "label": "人物・陣営の類型化",
+        "count": 20,
+        "examples": [
+          "喧嘩チームＤＲＡＫ～ダーク～",
+          "リアルではモンクタイプ",
+          "それほどでもない",
+          "ででお四天王",
+          "四天王№１の攻撃力と言われてるイフリート",
+          "本能的に長寿タイプ",
+          "ﾄｯﾎﾟ連合",
+          "３人のミニオン",
+          "忍者は性格が悪いのでムシしててたまに話しかけてやると勝手に俺の家来になる",
+          "オーラ的に武力に突出しているので不良に近い"
+        ]
+      },
+      {
+        "id": "threat_warning",
+        "label": "威嚇・警告",
+        "count": 18,
+        "examples": [
+          "グラットンスウィフト",
+          "おい、やめろ馬鹿",
+          "仏の顔を三度まで",
+          "手遅れになるのではままるな",
+          "エクスカリバーで骨になる",
+          "あまり調子に乗ってると裏世界でひっそり幕を閉じる",
+          "早く謝るべき死にたくないなら謝るべき",
+          "とんずら不意だまスウィスト",
+          "病院で栄養食を食べる事になる",
+          "ﾏｼﾞで親のﾀﾞｲﾔの結婚指輪のﾈｯｸﾚｽを指にはめてぶん殴るぞ"
+        ]
+      },
+      {
+        "id": "instruction",
+        "label": "命令・教訓",
+        "count": 15,
+        "examples": [
+          "おい、やめろ馬鹿",
+          "もう悪い事は改心した",
+          "なんだ急に牙抜いてきた",
+          "早く謝るべき死にたくないなら謝るべき",
+          "ヨミヨミですよ？",
+          "勝負には勝ったが嬉しくないけど勝てない勝負をするなと言いたい墓穴を掘る",
+          "ﾎﾞｺらるる前に注意するんだな",
+          "俺はひひょうものじゃないのでﾈｶﾞﾈｶﾞしない",
+          "ネガはやめておけといっているサル",
+          "捏造するなよ前歯へし折られたいのかおまえ"
+        ]
+      },
+      {
+        "id": "lament_crisis",
+        "label": "悲嘆・危機",
+        "count": 13,
+        "examples": [
+          "手遅れになるのではままるな",
+          "俺の寿命がストレスでﾏｯﾊ",
+          "お前らにブロントの悲しみの何がわかるってんだよ",
+          "ブロントは深い悲しみに包まれた",
+          "想像を絶する悲しみがブロントを襲った",
+          "ダイヤモンド・パワーの精神力",
+          "親とか呼ばれて一巻の終わり",
+          "人生がｹﾞｰﾑｵｰﾊﾞｰになる",
+          "いくえ不明",
+          "英語でいうとノンフィクション"
+        ]
+      },
+      {
+        "id": "evidence",
+        "label": "証拠・事実化",
+        "count": 12,
+        "examples": [
+          "どうやって○○って証拠だよ",
+          "見事な仕事だと関心",
+          "それほどでもない",
+          "最初から俺の勝率は１００％だった",
+          "勝負には勝ったが嬉しくないけど勝てない勝負をするなと言いたい墓穴を掘る",
+          "ﾉｰﾘｽｸで加速する",
+          "多勢に風情",
+          "ﾄｯﾎﾟ連合",
+          "ほらみたことかいきなり侍の卑劣な行動が始ってしまった",
+          "何故そんな必死なのかバレてる証拠に笑顔が出てしまう"
+        ]
+      },
+      {
+        "id": "lexical_reanalysis",
+        "label": "語の取り違え・再解釈",
+        "count": 11,
+        "examples": [
+          "名誉既存",
+          "女王の守りというのが女なので弱々しい",
+          "太公望は釣竿だろ",
+          "ぎゃくりんに触れる",
+          "怒りのだんぺんをみる",
+          "ぜいいん＋じょうずく",
+          "ヨミヨミですよ？",
+          "多勢に風情",
+          "真骨董",
+          "侍のイメージが悪くなっている"
+        ]
+      },
+      {
+        "id": "praise_humility",
+        "label": "称賛・謙遜",
+        "count": 11,
+        "examples": [
+          "持ってる人憧れちゃうなー",
+          "見事な仕事だと関心",
+          "それほどでもない",
+          "謙虚だからほめられても自慢はしない",
+          "（この辺の心配りが人気の秘訣）",
+          "（心が広大）",
+          "お前はまだ成長するﾌﾞﾛﾝﾄさんに少しでも近づけるように",
+          "見ろ、見事なカウンターで返した",
+          "謙虚なﾅｲﾄで人気者",
+          "どちかというと大反対"
+        ]
+      },
+      {
+        "id": "metalinguistic",
+        "label": "言葉・意味の再定義",
+        "count": 10,
+        "examples": [
+          "ギガは雷って意味",
+          "名誉既存",
+          "そもそもその安易な名前に寒気すら感じる始末",
+          "ほらみたことかいきなり侍の卑劣な行動が始ってしまった",
+          "おっととグーの音も出ないくらいに凹ませてしまった感",
+          "お前学校にいってべんきょうすろ",
+          "おまえもし化して文字が、読めない馬鹿ですか？",
+          "英語でいうとノンフィクション",
+          "ただブロントとか関係ない人の名前出すのは止めよう（しきたり）",
+          "サイバーネットポリス"
+        ]
+      },
+      {
+        "id": "grievance",
+        "label": "不公平・被害の訴え",
+        "count": 9,
+        "examples": [
+          "黒魔が魔法使えるのはずるい",
+          "ちょとｓＹレならんしょこれは・・？",
+          "汚いなさすが忍者きたない",
+          "名実ともに唯一ぬにの盾",
+          "お前忍者だろさすが忍者だ、思わずボコにしてやりたくなる",
+          "非常に人をふるかいにする",
+          "鎧が盾なら盾は剣の地位にあるだろ？",
+          "恥知らずなカイ使いがいた！！",
+          "俺にも一撃を入れさせろ"
+        ]
+      },
+      {
+        "id": "apology_contract",
+        "label": "謝罪・約束・契約",
+        "count": 8,
+        "examples": [
+          "対等な誓いなので守られなければならない",
+          "謝罪を宣言",
+          "もう悪い事は改心した",
+          "俺の狩りの邪魔はしないふぇ下さい（約束）",
+          "早く謝るべき死にたくないなら謝るべき",
+          "親とか呼ばれて一巻の終わり",
+          "捏造するなよ前歯へし折られたいのかおまえ",
+          "俺にも一撃を入れさせろ"
+        ]
+      },
+      {
+        "id": "fear_submission",
+        "label": "恐怖・降伏・反論不能",
+        "count": 8,
+        "examples": [
+          "自分の心に広さが怖い",
+          "ワンパンでＫＯ",
+          "おっととグーの音も出ないくらいに凹ませてしまった感",
+          "これで勝つる！",
+          "必死に回転させたが言い返す言葉が出なかった",
+          "前門の虎前門の王神状態でなす術なし",
+          "雷属性の左",
+          "ﾏｼﾞで震えてきやがった…怖いです…"
+        ]
+      },
+      {
+        "id": "victory_result",
+        "label": "勝利・結果確定",
+        "count": 8,
+        "examples": [
+          "おい、やめろ馬鹿",
+          "最初から俺の勝率は１００％だった",
+          "完　　全　　論　　破",
+          "これで勝つる！",
+          "見ろ、見事なカウンターで返した",
+          "名実ともに唯一ぬにの盾",
+          "非常に人をふるかいにする",
+          "多分不良界で伝説になってる"
+        ]
+      },
+      {
+        "id": "prediction_certainty",
+        "label": "予知・必然化",
+        "count": 8,
+        "examples": [
+          "まぁわかってた（予知夢）",
+          "黄金の鉄の塊で出来ているナイト",
+          "最初から俺の勝率は１００％だった",
+          "ヨミヨミですよ？",
+          "ﾎﾞｺらるる前に注意するんだな",
+          "じゃあなｶｽ猿",
+          "人工的に淘汰されるのが目に見えている",
+          "常に自然と頭の中でシュミレートしてるくらい格闘に精通してる"
+        ]
+      },
+      {
+        "id": "reaction_inference",
+        "label": "他者反応の推測",
+        "count": 7,
+        "examples": [
+          "なんで心を読まれたのかとギクッとしてびびっただろ",
+          "常識の人もいかついて拳を上げかけていたな",
+          "何故そんな必死なのかバレてる証拠に笑顔が出てしまう",
+          "おっととグーの音も出ないくらいに凹ませてしまった感",
+          "これで勝つる！",
+          "肩に暖かなものを感じ振り向くとそこには笑顔でナイトが待っていた",
+          "「誰それ？」「外人？」「歌？」"
+        ]
+      },
+      {
+        "id": "paradox_repetition",
+        "label": "矛盾・反復による強調",
+        "count": 6,
+        "examples": [
+          "怒りのパワーの力が全快",
+          "稀にだがよくある",
+          "最強の義務は最強のプレッシャーとなって襲いかかってくる",
+          "名実ともに唯一ぬにの盾",
+          "前門の虎前門の王神状態でなす術なし",
+          "普通は普通お前が普通なら普通がわかるはず"
+        ]
+      },
+      {
+        "id": "withdrawal_closure",
+        "label": "撤退・話題の打ち切り",
+        "count": 6,
+        "examples": [
+          "あまり調子に乗ってると裏世界でひっそり幕を閉じる",
+          "じゃあなｶｽ猿",
+          "闇系の仕事",
+          "完全にシャッタアウト",
+          "ここで一歩引くのが大人の醍醐味",
+          "このスレはしんだ結局スレ主の悩みは解決出来ないままスレは死んだ"
+        ]
+      },
+      {
+        "id": "challenge_retort",
+        "label": "挑発への返答",
+        "count": 6,
+        "examples": [
+          "なんだ急に牙抜いてきた",
+          "相手にならないって言ってるの読まませんか？",
+          "勝負には勝ったが嬉しくないけど勝てない勝負をするなと言いたい墓穴を掘る",
+          "ﾉｰﾘｽｸで加速する",
+          "見ろ、見事なカウンターで返した",
+          "口だけデコピンで人を倒せると思ってるのか？"
+        ]
+      },
+      {
+        "id": "attention_call",
+        "label": "注意喚起・呼び止め",
+        "count": 4,
+        "examples": [
+          "ﾋｯﾄした頭を冷やせ！",
+          "ほらみたことかいきなり侍の卑劣な行動が始ってしまった",
+          "見ろ、見事なカウンターで返した",
+          "おいィ？お前らは今の言葉聞こえたか？"
+        ]
+      },
+      {
+        "id": "agreement",
+        "label": "同意・陣営化",
+        "count": 3,
+        "examples": [
+          "激しく同意ですね",
+          "「」確かにな",
+          "鎧が盾なら盾は剣の地位にあるだろ？"
+        ]
+      },
+      {
+        "id": "gratitude",
+        "label": "感謝・返礼",
+        "count": 1,
+        "examples": [
+          "それほどでもない"
+        ]
+      },
+      {
+        "id": "repair_correction",
+        "label": "訂正・自己修復",
+        "count": 1,
+        "examples": [
+          "ヨミヨミですよ？"
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "id": "heading_001",
+        "heading": "黒魔が魔法使えるのはずるい",
+        "acts": [
+          "grievance"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 320,
+            "threadTitle": "戦士を語るスレ",
+            "postUrl": "http://yasai.5ch.net/test/read.cgi/ogame/1021844081/320",
+            "excerpt": "おまえ頭悪ぃな 黒魔が魔法使えるのはずるい"
+          }
+        ]
+      },
+      {
+        "id": "heading_002",
+        "heading": "喧嘩チームＤＲＡＫ～ダーク～",
+        "acts": [
+          "social_typing"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_003",
+        "heading": "タイマンは真剣な喧嘩の意味",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 391,
+            "threadTitle": "戦士を語るスレ",
+            "postUrl": "http://yasai.5ch.net/test/read.cgi/ogame/1021844081/391",
+            "excerpt": "タイマンは真剣な喧嘩の意味だ おまえら不良じゃないから知らないのか"
+          }
+        ]
+      },
+      {
+        "id": "heading_004",
+        "heading": "怒りのパワーの力が全快",
+        "acts": [
+          "paradox_repetition",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 426,
+            "threadTitle": "戦士を語るスレ",
+            "postUrl": "http://yasai.5ch.net/test/read.cgi/ogame/1021844081/426",
+            "excerpt": "今切れた 怒りのパワーの力が全快になったからおまえらもう謝っても遅い"
+          }
+        ]
+      },
+      {
+        "id": "heading_005",
+        "heading": "ギガトンパンチとメガトンパンチ",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_006",
+        "heading": "ギガは雷って意味",
+        "acts": [
+          "opponent_evaluation",
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 426,
+            "threadTitle": "【全裸で】SRWインパクト181【スパロボ】",
+            "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021935264/426",
+            "excerpt": "ギガは雷って意味なのが知らない奴がいたらしいのは馬鹿だべな ギガデイン知らないのかよ？"
+          }
+        ]
+      },
+      {
+        "id": "heading_007",
+        "heading": "なんで心を読まれたのかとギクッとしてびびっただろ",
+        "acts": [
+          "reaction_inference"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 559,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/559",
+            "excerpt": "かっこつけて２点とか言ってるがその内心 なんで心を読まれたのかとギクッとしてびびっただろ おまえらが嫉妬してるのはお見通しなんだよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_008",
+        "heading": "グラットン使いは知力パワーも高い",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 590,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/590",
+            "excerpt": "そうやってごまかすしかできないとはあわれなやつ グラットン使いは知力パワーも高いから 真面目な討論で絶対におまえらは勝てないのは同情するけどよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_009",
+        "heading": "持ってる人憧れちゃうなー",
+        "acts": [
+          "self_rank",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 16,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/16",
+            "excerpt": "一級廃人の証っていうだけの事はあるよな 持ってる人憧れちゃうなー"
+          }
+        ]
+      },
+      {
+        "id": "heading_010",
+        "heading": "グラットン所持＝装備が良い＝上手い",
+        "acts": [
+          "pseudo_logic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 52,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/52",
+            "excerpt": "そう言う奴に限って下手だよな グラットン所持＝装備が良い＝上手い この公式が成り立つ"
+          }
+        ]
+      },
+      {
+        "id": "heading_011",
+        "heading": "グラットンスウィフト",
+        "acts": [
+          "threat_warning",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 190,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/190",
+            "excerpt": "まともに討論してるところにゴミが現れたか グラットンスウィフトでバラバラに引き裂いてやろうか？"
+          }
+        ]
+      },
+      {
+        "id": "heading_012",
+        "heading": "リアルではモンクタイプ",
+        "acts": [
+          "social_typing",
+          "pseudo_logic",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 241,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/241",
+            "excerpt": "リアルでは俺は武器なんか持たなくても素手で怪力だから強い ＦＦではナイトだがリアルではモンクタイプだからな"
+          }
+        ]
+      },
+      {
+        "id": "heading_013",
+        "heading": "おい、やめろ馬鹿",
+        "acts": [
+          "opponent_evaluation",
+          "threat_warning",
+          "victory_result",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 3,
+            "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/3",
+            "excerpt": "おい、やめろ馬鹿 このスレは早くも終了ですね"
+          }
+        ]
+      },
+      {
+        "id": "heading_014",
+        "heading": "どうやって○○って証拠だよ",
+        "acts": [
+          "pseudo_logic",
+          "evidence"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_015",
+        "heading": "激しく同意ですね",
+        "acts": [
+          "agreement"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 63,
+            "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/63",
+            "excerpt": "激しく同意ですね 私も最近グラットン取ったんだがやはりうらやましがられた"
+          }
+        ]
+      },
+      {
+        "id": "heading_016",
+        "heading": "見事な仕事だと関心",
+        "acts": [
+          "denial_disclaimer",
+          "evidence",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 112,
+            "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/112",
+            "excerpt": "ちゃんと無実を証明してログを公開しただけじゃん 見事な仕事だと関心はするがどこもおかしくはない"
+          }
+        ]
+      },
+      {
+        "id": "heading_017",
+        "heading": "廃人だから頭が良い",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 127,
+            "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/127",
+            "excerpt": "馬鹿はおまえだろ グラットン持ってる人は廃人だから頭が良い人が多いんだよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_018",
+        "heading": "対等な誓いなので守られなければならない",
+        "acts": [
+          "apology_contract",
+          "pseudo_logic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 982,
+            "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/982",
+            "excerpt": "そしてこのスレはageは禁止 これは対等な誓いなので守られなければならない わかったな"
+          }
+        ]
+      },
+      {
+        "id": "heading_019",
+        "heading": "それほどでもない",
+        "acts": [
+          "gratitude",
+          "opponent_evaluation",
+          "social_typing",
+          "denial_disclaimer",
+          "evidence",
+          "self_rank",
+          "praise_humility"
+        ],
+        "contextCount": 4,
+        "contexts": [
+          {
+            "responseNumber": 210,
+            "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/210",
+            "excerpt": "それほどでもないが一級廃人として 一般人から見ると憧れの的なんだろうな"
+          },
+          {
+            "responseNumber": 95,
+            "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/95",
+            "excerpt": "俺＞ そうですかありがとうグラットンすごいですね Buront＞それほどでもない やはり無実だった"
+          },
+          {
+            "responseNumber": 462,
+            "threadTitle": "【最狂の証】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最強3【Burontの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056507334/462",
+            "excerpt": "本人に聞いたがおまえは偽者だ それにそれほどでもないと言うのは謙虚に謙遜して言ってる言葉 おまえが言うなよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_020",
+        "heading": "名誉既存",
+        "acts": [
+          "lexical_reanalysis",
+          "metalinguistic"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_021",
+        "heading": "稀にだがよくある",
+        "acts": [
+          "paradox_repetition"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 544,
+            "threadTitle": "【最狂の証】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最強3【Burontの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056507334/544",
+            "excerpt": "IDはたまたま同じになる事が稀にだがよくあるらしい 逆にID違ってても自演の可能性はある"
+          }
+        ]
+      },
+      {
+        "id": "heading_022",
+        "heading": "仏の顔を三度まで",
+        "acts": [
+          "threat_warning"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 619,
+            "threadTitle": "【最狂の証】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最強3【Burontの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056507334/619",
+            "excerpt": "おまえらのあまりの粘着ぶりに完全な怒りとなった 仏の顔を三度までという名セリフを知らないのかよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_023",
+        "heading": "謝罪を宣言",
+        "acts": [
+          "apology_contract"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_024",
+        "heading": "あまりにも酷いから完全な怒りになった",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 594,
+            "threadTitle": "【名誉既存】ﾌﾞﾛｯﾄﾝｿｰﾄﾞは最強4【仏の顔を三度】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057117163/594",
+            "excerpt": "俺が誰だかは関係ないでしょう おまえらがあまりにも酷いから完全な怒りになった 通りすがりだがこういう何もしてないのに粘着に被害を受けるのは見逃せない"
+          }
+        ]
+      },
+      {
+        "id": "heading_025",
+        "heading": "もう悪い事は改心した",
+        "acts": [
+          "apology_contract",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 104,
+            "threadTitle": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057589376/104",
+            "excerpt": "垢バンになった もう悪い事は改心した"
+          }
+        ]
+      },
+      {
+        "id": "heading_026",
+        "heading": "謙虚だからほめられても自慢はしない",
+        "acts": [
+          "pseudo_logic",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 151,
+            "threadTitle": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057589376/151",
+            "excerpt": "俺：やっぱりそうでしたかすごいですね Buront：謙虚だからほめられても自慢はしない"
+          }
+        ]
+      },
+      {
+        "id": "heading_027",
+        "heading": "女王の守りというのが女なので弱々しい",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic",
+          "lexical_reanalysis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 184,
+            "threadTitle": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057589376/184",
+            "excerpt": "強そうなキャラの固有名詞でかっこいいのだが セイブザクイーンというのは女王の守りというのが女なので弱々しい"
+          }
+        ]
+      },
+      {
+        "id": "heading_028",
+        "heading": "ダークパワー",
+        "acts": [
+          "self_rank",
+          "power_action"
+        ],
+        "contextCount": 2,
+        "contexts": [
+          {
+            "responseNumber": 210,
+            "threadTitle": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057589376/210",
+            "excerpt": "しかしグラットンは尖った部分が多くあの部分でさらに敵に致命的な致命傷を与えられる 色も黒っぽいのでダークパワーが宿ってそうで強い"
+          },
+          {
+            "responseNumber": 213,
+            "threadTitle": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057589376/213",
+            "excerpt": "ちなみにダークパワーっぽいのはナイトが持つと 光と闇が両方そなわり最強に見える"
+          }
+        ]
+      },
+      {
+        "id": "heading_029",
+        "heading": "太公望は釣竿だろ",
+        "acts": [
+          "lexical_reanalysis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 259,
+            "threadTitle": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1057589376/259",
+            "excerpt": "誰というのは人に対する言い方 太公望は釣竿だろ"
+          }
+        ]
+      },
+      {
+        "id": "heading_030",
+        "heading": "おれはＰスキルの高い最高のナイトだ",
+        "acts": [
+          "opponent_evaluation",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 36,
+            "threadTitle": "そろそろ竜騎士の時代だろ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1059355743/36",
+            "excerpt": "そもそも誰だよって感じだバカ おれはＰスキルの高い最高のナイトだ"
+          }
+        ]
+      },
+      {
+        "id": "heading_031",
+        "heading": "（この辺の心配りが人気の秘訣）",
+        "acts": [
+          "praise_humility"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_032",
+        "heading": "こう誘いがあっては一人の時間も作れない（リアル話）",
+        "acts": [
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 93,
+            "threadTitle": "そろそろ竜騎士の時代だろ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1059355743/93",
+            "excerpt": "いい加減お前らもＰスキル上げて俺を楽にしてくれ こう誘いがあっては一人の時間も作れない（リアル話）"
+          }
+        ]
+      },
+      {
+        "id": "heading_033",
+        "heading": "自分の心に広さが怖い",
+        "acts": [
+          "fear_submission",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 112,
+            "threadTitle": "そろそろ竜騎士の時代だろ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1059355743/112",
+            "excerpt": "せっかくそっとしといてやったのに 自分の心に広さが怖い 最高の騎士はヴァージョンアップして至高の騎士に進化した"
+          }
+        ]
+      },
+      {
+        "id": "heading_034",
+        "heading": "そもそもその安易な名前に寒気すら感じる始末",
+        "acts": [
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 140,
+            "threadTitle": "そろそろ竜騎士の時代だろ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1059355743/140",
+            "excerpt": "究極は調子こきすぎ そもそもその安易な名前に寒気すら感じる始末"
+          }
+        ]
+      },
+      {
+        "id": "heading_035",
+        "heading": "はげていない",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 179,
+            "threadTitle": "そろそろ竜騎士の時代だろ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1059355743/179",
+            "excerpt": "はげていない お前はなにかハゲヒュムに恨みがあるようだが"
+          }
+        ]
+      },
+      {
+        "id": "heading_036",
+        "heading": "俺は狩る側であって狩られる側じゃない",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 22,
+            "threadTitle": "【合法】天下一武装会【ＭＰＫ】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1061179222/22",
+            "excerpt": "かたずけられる 俺は狩る側であって狩られる側じゃないから 心配は要らない（リアル話）"
+          }
+        ]
+      },
+      {
+        "id": "heading_037",
+        "heading": "手遅れになるのではままるな",
+        "acts": [
+          "threat_warning",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 51,
+            "threadTitle": "【取るな】天然素材【ころすぞ】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1061442635/51",
+            "excerpt": "そんなに怒ったおれが見たいのか 手遅れになるのではままるな"
+          }
+        ]
+      },
+      {
+        "id": "heading_038",
+        "heading": "俺の狩りの邪魔はしないふぇ下さい（約束）",
+        "acts": [
+          "apology_contract"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 71,
+            "threadTitle": "【取るな】天然素材【ころすぞ】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1061442635/71",
+            "excerpt": "これでひがんでる奴らの気は晴れたと思うので 俺の狩りの邪魔はしないふぇ下さい（約束）"
+          }
+        ]
+      },
+      {
+        "id": "heading_039",
+        "heading": "（心が広大）",
+        "acts": [
+          "praise_humility"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_040",
+        "heading": "エクスカリバーで骨になる",
+        "acts": [
+          "opponent_evaluation",
+          "threat_warning",
+          "self_rank",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "【最高武器】ナイトの時代【最強盾】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1071026938/1",
+            "excerpt": "その圧倒的な力を振るうことが叶わなかったために長生きさせてついには騎士をバカにしだす始末 だがそれもここまでだった次回からはその圧倒的なＰスキルと最強の防御力とエクスカリバーで骨になる"
+          }
+        ]
+      },
+      {
+        "id": "heading_041",
+        "heading": "なんだ急に牙抜いてきた",
+        "acts": [
+          "challenge_retort",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 64,
+            "threadTitle": "【最高武器】ナイトの時代【最強盾】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1071026938/64",
+            "excerpt": "なんだ急に牙抜いてきた>>60 勝手にライバル視するなオレの圧倒的なＰスキルの前におまえの命は長くない（不快）"
+          }
+        ]
+      },
+      {
+        "id": "heading_042",
+        "heading": "まぁわかってた（予知夢）",
+        "acts": [
+          "prediction_certainty"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "【迷惑】低ﾚﾍﾞﾙはﾏｼﾞ糞【考えるべき】",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1098755797/1",
+            "excerpt": "しばらく待ってるとピッキーン！邪視発動（期待） しばらく待ってると黄色 赤を経過して灰色になって白死亡 まぁわかってた（予知夢） 白／ｔ「レイズくださいますか＾＾；」"
+          }
+        ]
+      },
+      {
+        "id": "heading_043",
+        "heading": "ででお四天王",
+        "acts": [
+          "social_typing"
+        ],
+        "contextCount": 2,
+        "contexts": [
+          {
+            "responseNumber": 195,
+            "threadTitle": "【祭り好き共】でで汚祭り再び【ついに来た】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1065888624/195",
+            "excerpt": "そろそろ明かそうと思ってたがやはり気づく奴もいたか 俺は実はででお四天王の一人 前におまえらがこういったくだらん騒ぎをした時"
+          },
+          {
+            "responseNumber": 258,
+            "threadTitle": "【祭り好き共】でで汚祭り再び【ついに来た】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1065888624/258",
+            "excerpt": "ででお四天王と言うのはででおさんの1000人の弟子の中でも特に ででおさんに信頼されてて強い者達"
+          }
+        ]
+      },
+      {
+        "id": "heading_044",
+        "heading": "四天王№１の攻撃力と言われてるイフリート",
+        "acts": [
+          "social_typing",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 254,
+            "threadTitle": "【祭り好き共】でで汚祭り再び【ついに来た】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1065888624/254",
+            "excerpt": "さっき密かに正体を明かす伏線を書いたのに気づかなかったのか？ 実は俺は四天王№１の攻撃力と言われてるイフリート 正体知ったからといって恐れて逃げるなよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_045",
+        "heading": "リアル世界よりも充実したヴァナ生活が認可される",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 5,
+            "threadTitle": "【フレ♀】５００万の破壊スキル【沈黙】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1067482222/5",
+            "excerpt": "圧倒的な生命維持能力を保持するナイトと赤の組み合わせは獣使いじゃないにに巣も他の者をを魅了するほど 何度も見つめられ装備の貴重さを世に広めることでリアル世界よりも充実したヴァナ生活が認可される"
+          }
+        ]
+      },
+      {
+        "id": "heading_046",
+        "heading": "生半可なナイトでは使えないホーリを使って敵を掃除していたら３回連続見つめられた",
+        "acts": [
+          "pseudo_logic",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 23,
+            "threadTitle": "【フレ♀】５００万の破壊スキル【沈黙】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1067482222/23",
+            "excerpt": "ロンフォでウサギNMを待つ間に生半可なナイトでは使えないホーリを使って敵を掃除していたら３回連続見つめられたから 「抵レベル体では見たことの無いものだから覗きたかったのもわかるが魔法であって武具は無関係」"
+          }
+        ]
+      },
+      {
+        "id": "heading_047",
+        "heading": "ナイトは生まれもった光属性の者しか扱い切れない",
+        "acts": [
+          "opponent_evaluation"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 50,
+            "threadTitle": "【フレ♀】５００万の破壊スキル【沈黙】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1067482222/50",
+            "excerpt": "今必死になってナイト上げてる奴らは先行のおれから見ればださいとしかいえない ナイトは生まれもった光属性の者しか扱い切れない そう言う能無しの雑魚どもが増えるとナイトの質が落ちる"
+          }
+        ]
+      },
+      {
+        "id": "heading_048",
+        "heading": "俺の怒りは有頂天",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 116,
+            "threadTitle": "そろそろ竜騎士の時代だろ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1059355743/116",
+            "excerpt": "それどころじゃない 俺の怒りは有頂天！ ｽｰﾊﾟｰサイヤ人からスーパー大猿になった感覚"
+          }
+        ]
+      },
+      {
+        "id": "heading_049",
+        "heading": "黄金の鉄の塊で出来ているナイト",
+        "acts": [
+          "self_rank",
+          "power_action",
+          "prediction_certainty"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 889,
+            "threadTitle": "ナイト弱体スレ",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1077998459/889",
+            "excerpt": "ナイトが強いのは当然に決まっている 黄金の鉄の塊で出来ているナイトが皮装備のｼﾞｮﾌﾞに遅れをとるはずは無い 確実にナイトはエクスカリバを手に入れたら高確率で一番最強になる"
+          }
+        ]
+      },
+      {
+        "id": "heading_050",
+        "heading": "あまり調子に乗ってると裏世界でひっそり幕を閉じる",
+        "acts": [
+          "withdrawal_closure",
+          "threat_warning",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 11,
+            "threadTitle": "【弱体】ま　た　ナ　イ　ト　か【必須】",
+            "postUrl": null,
+            "excerpt": "ナイトが盾じゃなければすぐ死ぬくせに調子こき過ぎ あまり調子に乗ってると裏世界でひっそり幕を閉じる"
+          }
+        ]
+      },
+      {
+        "id": "heading_051",
+        "heading": "早く謝るべき死にたくないなら謝るべき",
+        "acts": [
+          "apology_contract",
+          "threat_warning",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 51,
+            "threadTitle": "【弱体】ま　た　ナ　イ　ト　か【必須】",
+            "postUrl": null,
+            "excerpt": "こんな恐ろしいい敵を作りたくないので僕はあやまりますごめんなさい 他の人も早く謝るべき死にたくないなら謝るべき ごめんなさい経験値ロストしたくないんです"
+          }
+        ]
+      },
+      {
+        "id": "heading_052",
+        "heading": "ヴァナのイチロー",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 100,
+            "threadTitle": "【弱体】ま　た　ナ　イ　ト　か【必須】",
+            "postUrl": null,
+            "excerpt": "俺はクジャクも持ってるので外れる事が珍しいくらい 自慢じゃないがPT組んでる時に「ヴァナのイチローですね」と言われた事もある"
+          }
+        ]
+      },
+      {
+        "id": "heading_053",
+        "heading": "お前はまだ成長するﾌﾞﾛﾝﾄさんに少しでも近づけるように",
+        "acts": [
+          "self_rank",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 85,
+            "threadTitle": "【廃人の証】ナイトメアソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1078312673/85",
+            "excerpt": "俺の鯖のナイトもブロントさんに憧れてる お前はまだ成長するﾌﾞﾛﾝﾄさんに少しでも近づけるように"
+          }
+        ]
+      },
+      {
+        "id": "heading_054",
+        "heading": "俺にとっては神の贈物だがお前等にとっては地獄の宴だからな",
+        "acts": [
+          "pseudo_logic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 144,
+            "threadTitle": "【廃人の証】ナイトメアソードは最強【ナイトの宝】",
+            "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1078312673/144",
+            "excerpt": "俺は逃げも隠れもしてない お前ら覚えてろよ？PvP機能は俺にとっては神の贈物だがお前等にとっては地獄の宴だからな せいぜい裏世界で後ろに怯えながら遊ぶんだな"
+          }
+        ]
+      },
+      {
+        "id": "heading_055",
+        "heading": "ワンパンでＫＯ",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic",
+          "fear_submission",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "【せＹで話すな】常識無いｶｽ【ｔｅｌでこいよ】",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1090126547/1",
+            "excerpt": "タイマンで話すのがそんなに怖いのか？俺はいつでもケンカ上等でいちもく置かれるほどに攻撃的だから ザコがいきがってるとワンパンでＫＯだろうな テルで話しかけられたらテルで答えろよ周りを巻き込むなよｶｽ"
+          }
+        ]
+      },
+      {
+        "id": "heading_056",
+        "heading": "パンチングマシンで１００とか普通に出すし",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 82,
+            "threadTitle": "【せＹで話すな】常識無いｶｽ【ｔｅｌでこいよ】",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1090126547/82",
+            "excerpt": "口で説明するくらいならおれは牙をむくだろうな おれパンチングマシンで１００とか普通に出すし"
+          }
+        ]
+      },
+      {
+        "id": "heading_057",
+        "heading": "本能的に長寿タイプ",
+        "acts": [
+          "opponent_evaluation",
+          "social_typing"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 122,
+            "threadTitle": "【せＹで話すな】常識無いｶｽ【ｔｅｌでこいよ】",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1090126547/122",
+            "excerpt": "俺は別に強さをアッピルなどしてはいない 俺を強いと感じてしまってるやつは本能的に長寿タイプ 自分がリアルモンクとかいっていきがってる馬鹿がいるけどリアルモンクが一人だけだと思うなよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_058",
+        "heading": "とんずら不意だまスウィスト",
+        "acts": [
+          "threat_warning",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 589,
+            "threadTitle": "【３日前から張ってます】08:ValeforVol.6【遠慮しろ！】",
+            "postUrl": null,
+            "excerpt": "魔法なしでやってみろよ？超装備の前で必死にグラビデ逃走してる姿が目に浮かぶ レジストされた瞬間とんずら不意だまスウィストでズタズタなのはあきらか"
+          }
+        ]
+      },
+      {
+        "id": "heading_059",
+        "heading": "病院で栄養食を食べる事になる",
+        "acts": [
+          "threat_warning"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 666,
+            "threadTitle": "【３日前から張ってます】08:ValeforVol.6【遠慮しろ！】",
+            "postUrl": null,
+            "excerpt": "なんだおまえら？ズタズタに引き裂いてやってもいいんだぞ あまり調子こくとリアルで痛い目を見て病院で栄養食を食べる事になる"
+          }
+        ]
+      },
+      {
+        "id": "heading_060",
+        "heading": "ぎゃくりんに触れる",
+        "acts": [
+          "lexical_reanalysis"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_061",
+        "heading": "怒りのだんぺんをみる",
+        "acts": [
+          "pseudo_logic",
+          "lexical_reanalysis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 935,
+            "threadTitle": "【３日前から張ってます】08:ValeforVol.6【遠慮しろ！】",
+            "postUrl": null,
+            "excerpt": "ただあおりあってるだけだから正体を明かす意味はない ただ釣りだとしても人の本名をつかう事は怒りのだんぺんをみる"
+          }
+        ]
+      },
+      {
+        "id": "heading_062",
+        "heading": "ぜいいん＋じょうずく",
+        "acts": [
+          "lexical_reanalysis"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_063",
+        "heading": "相手にならないって言ってるの読まませんか？",
+        "acts": [
+          "opponent_evaluation",
+          "challenge_retort"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 50,
+            "threadTitle": "【ぜいいん】08:Valefor鯖総合スレ Vol.18【じょうずく】",
+            "postUrl": null,
+            "excerpt": "装備とか種族もふつうは見た目でわかるけどもしかしたら種族の適性とか優劣を理解してない新人がいるかもしれないし なんか人のアゲアシとって喜んでるバカがいるみたいだけど相手にならないって言ってるの読まませんか？ｗ"
+          }
+        ]
+      },
+      {
+        "id": "heading_064",
+        "heading": "「最　　　　　強　　　　　だ　　　　ど　　　　か　　　　言　　　　う　　　　前　　　に」",
+        "acts": [
+          "self_rank"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_065",
+        "heading": "ﾏｼﾞで親のﾀﾞｲﾔの結婚指輪のﾈｯｸﾚｽを指にはめてぶん殴るぞ",
+        "acts": [
+          "threat_warning"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 522,
+            "threadTitle": "【もう】侍【無理】",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1102568202/522",
+            "excerpt": "たいがいにしろよｶｽが ﾏｼﾞで親のﾀﾞｲﾔの結婚指輪のﾈｯｸﾚｽを指にはめてぶん殴るぞ 多分奥歯が揺れるくらいの威力はあるはずだしね"
+          }
+        ]
+      },
+      {
+        "id": "heading_066",
+        "heading": "破壊力ばつ牛ﾝ",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 104,
+            "threadTitle": "どのジョブも認める最不遇ジョブとは",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1102828895/104",
+            "excerpt": "侍は黙想で敵のTPを溜めないでも TP１００～３００のWSで自由自在の破壊力ばつ牛ﾝの連携を決めれる しかも他前衛と比べて見劣りするどころかﾄｯﾌﾟﾗﾝｶｰの削り能力も併せ持つ"
+          }
+        ]
+      },
+      {
+        "id": "heading_067",
+        "heading": "最初から俺の勝率は１００％だった",
+        "acts": [
+          "pseudo_logic",
+          "evidence",
+          "victory_result",
+          "prediction_certainty"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 174,
+            "threadTitle": "どのジョブも認める最不遇ジョブとは",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1102828895/174",
+            "excerpt": "まぁ仕方ないかな、だって侍強いしな、 弱いという証拠を出せといわれても出せるわけがないと言う理屈で最初から俺の勝率は１００％だった"
+          }
+        ]
+      },
+      {
+        "id": "heading_068",
+        "heading": "ヨミヨミですよ？",
+        "acts": [
+          "pseudo_logic",
+          "lexical_reanalysis",
+          "self_rank",
+          "prediction_certainty",
+          "instruction",
+          "repair_correction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 75,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/75",
+            "excerpt": "何が言いたいんだ・・？ 「侍は弱いから人気が無く、人が少ない。もっと強化しろ！！」ってとこか？頭わりいな。ヨミヨミですよ？お前らの作戦は。ﾈｶﾞｷｬﾝは氏ねマジ氏ね 安心しろ、間違いなく侍は前衛最強ﾗﾝｸだから。だからもう氏んでﾈｶﾞｷｬﾝするな。"
+          }
+        ]
+      },
+      {
+        "id": "heading_069",
+        "heading": "キラーマッシン",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 114,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/114",
+            "excerpt": "自在に繰り出されるＷＳは様々な連携に対応でき、侍は連携優遇ｼﾞｮﾌﾞでも在る。 しかし一皮剥けばこの明鏡止水でＰＴの力を借りずとも光・闇連携をも自在にこなすキラーマッシンだった！ さらに何故かイメージに無い回避Ｂ+受け流しＡ等の信じられない程高い超ｽﾃｰﾀｽ能力を誇る。"
+          }
+        ]
+      },
+      {
+        "id": "heading_070",
+        "heading": "勝負には勝ったが嬉しくないけど勝てない勝負をするなと言いたい墓穴を掘る",
+        "acts": [
+          "pseudo_logic",
+          "challenge_retort",
+          "evidence",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 135,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/135",
+            "excerpt": "３０分待ったが結局証拠は出なかったな。 勝負には勝ったが嬉しくないけど勝てない勝負をするなと言いたい墓穴を掘る ﾈｶﾞｷｬﾝしても他ｼﾞｮﾌﾞの怒りを買うだけだってなんでわからない"
+          }
+        ]
+      },
+      {
+        "id": "heading_071",
+        "heading": "ﾎﾞｺらるる前に注意するんだな",
+        "acts": [
+          "pseudo_logic",
+          "threat_warning",
+          "power_action",
+          "prediction_certainty",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 152,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/152",
+            "excerpt": "お前らしらないと思うが殴るほうも結構いたいし俺はコブシ封印してるので運が良かった。 ま、警察にも知り合いがいるからお前らもﾎﾞｺらるる前に注意するんだな。勝敗は決まってるからこれ以上は時間の無駄なので消えるわ"
+          }
+        ]
+      },
+      {
+        "id": "heading_072",
+        "heading": "じゃあなｶｽ猿",
+        "acts": [
+          "opponent_evaluation",
+          "withdrawal_closure",
+          "prediction_certainty"
+        ],
+        "contextCount": 2,
+        "contexts": [
+          {
+            "responseNumber": 164,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/164",
+            "excerpt": "侍が不要な強化を求めてる事に怒りに火が着いただけ 別に最初から相手にしてない事に気付いたほうがいいな、じゃあなｶｽ猿"
+          },
+          {
+            "responseNumber": 442,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/442",
+            "excerpt": "たいがいにしないと他ｼﾞｮﾌﾞ全域から敵の目で見られて総スカン食らう目に合う 俺はお前らを放置していてやっても良いんだが無用な強化は避けたいんで一言言わせてもらっただけじゃあなｶｽ猿！"
+          }
+        ]
+      },
+      {
+        "id": "heading_073",
+        "heading": "ﾉｰﾘｽｸで加速する",
+        "acts": [
+          "challenge_retort",
+          "evidence",
+          "power_action"
+        ],
+        "contextCount": 2,
+        "contexts": [
+          {
+            "responseNumber": 158,
+            "threadTitle": "侍神化計画",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111654743/158",
+            "excerpt": "手数で勝負のはずのｼｰﾌですら全く話にならないほどの鬼の手数！正直信じられない攻撃力と速度。これは明らかにＴＰ特化を超えてしまっている異常な超状現状 さらにｻﾎﾟシにより圧倒的Ｄ値を誇る鬼の攻撃力が不意打ちによりさらにﾉｰﾘｽｸで加速する さらにＷＳをダマシにより超攻撃力のＷＳをなんとﾉｰﾘｽｸで発動！いわゆる点でﾉｰﾘｽｸのﾉｰﾘｽｸﾊｲﾘﾀｰﾝｼﾞｮﾌﾞであった！ﾏｼﾞで消えろよ消すぞ"
+          },
+          {
+            "responseNumber": 818,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/818",
+            "excerpt": "ｻﾎﾟ戦によってなんと信じられない事に４回攻撃という両手武器にあってはならない手数で他を圧倒 手数で勝負のはずのｼｰﾌですら全く話にならないほどの鬼の手数！正直信じられない攻撃力と速度。これは明らかにＴＰ特化を超えてしまっている異常な超状現状さらにｻﾎﾟシにより圧倒的Ｄ値を誇る鬼の攻撃力が不意打ちによりさらにﾉｰﾘｽｸで加速する さらにＷＳをダマシにより超攻撃力のＷＳをなんとﾉｰﾘｽｸで発動！いわゆる点でﾉｰﾘｽｸのﾉｰﾘｽｸﾊｲﾘﾀｰﾝｼﾞｮﾌﾞであった！ﾏｼﾞで消えろよ消すぞ"
+          }
+        ]
+      },
+      {
+        "id": "heading_074",
+        "heading": "俺の寿命がストレスでﾏｯﾊ",
+        "acts": [
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 849,
+            "threadTitle": "【残心】LV4 SAM【斬新】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/849",
+            "excerpt": "正直お前らのいちゃもんつけにはﾑｶﾑｶしてるから黙ってｽﾚ落してくれるか？ このままでは俺の寿命がストレスでﾏｯﾊなんだが・・"
+          }
+        ]
+      },
+      {
+        "id": "heading_075",
+        "heading": "「」確かにな",
+        "acts": [
+          "agreement"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_076",
+        "heading": "ﾋｯﾄした頭を冷やせ！",
+        "acts": [
+          "attention_call",
+          "opponent_evaluation"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 78,
+            "threadTitle": "【FF11】侍5【真骨董】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1113462880/78",
+            "excerpt": "ﾏｼﾞできもいぞ、見てて気分が悪くなる先に言っておくが俺は結構気が早いからな 言葉よりも暴力が先に出る事もたまにある、俺が冷静なうちにいい加減お前らのﾊﾞｶみたいにﾋｯﾄした頭を冷やせ！"
+          }
+        ]
+      },
+      {
+        "id": "heading_077",
+        "heading": "烏合の民",
+        "acts": [
+          "opponent_evaluation"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_078",
+        "heading": "多勢に風情",
+        "acts": [
+          "pseudo_logic",
+          "lexical_reanalysis",
+          "evidence",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 211,
+            "threadTitle": "【FF11】侍5【真骨董】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1113462880/211",
+            "excerpt": "お前ら話ごまかすのへたくそだよな、残念ながらそんなのでごﾏ化されるわけがない お前らは真実の伝道者を多勢に風情でうそつきにするひひょう者だと証明しているわけだが。 いくら数でウソを付き通そうとフレの評価の「侍は強すぎた」という「真実」は語り告げられる"
+          }
+        ]
+      },
+      {
+        "id": "heading_079",
+        "heading": "ﾄｯﾎﾟ連合",
+        "acts": [
+          "social_typing",
+          "denial_disclaimer",
+          "evidence",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 625,
+            "threadTitle": "【みんな】SAMURAI　侍6【興味なし？】",
+            "postUrl": null,
+            "excerpt": "俺はまだ今の鯖では最強ではないがやはり鯖のﾄｯﾌﾟ会談は背中がひえる ﾄｯﾌﾟ連中は目つきが鋭く隙がないな。俺も鯖のﾄｯﾎﾟ連合に入っているがやはり一般人とは違うな 明らかに誇りを持ってるのが分かる。鯖のﾄｯﾌﾟｸﾗｽﾌﾟﾚｲﾔｰは事実上ＧＭになれるのであまりなめないほうがいいだろうな"
+          }
+        ]
+      },
+      {
+        "id": "heading_080",
+        "heading": "真骨董",
+        "acts": [
+          "lexical_reanalysis"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_081",
+        "heading": "Ｐｽｷﾙを上げただけで十分一般社会で頼りにされる",
+        "acts": [
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 288,
+            "threadTitle": "侍神化計画",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1111654743/288",
+            "excerpt": "侍が強いのはすでにＦＡでている、侍で弱いと思っているやつはまずは自分のＰｽｷﾙを上げるところからはじめた方がいいな Ｐｽｷﾙを上げただけで十分一般社会で頼りにされる状態になれる つぎのﾗﾝｸに上がるのは装備に力を入れるとさらに鬼になる。"
+          }
+        ]
+      },
+      {
+        "id": "heading_082",
+        "heading": "完　　全　　論　　破",
+        "acts": [
+          "power_action",
+          "victory_result"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_083",
+        "heading": "闇系の仕事",
+        "acts": [
+          "withdrawal_closure"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 52,
+            "threadTitle": "【三騎士】不遇ジョブを愛する人のスレ【シ詩召】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1123038648/52",
+            "excerpt": "じゃ闇系の仕事が今からあるからこれで あんま調子こいてると泣かすから"
+          }
+        ]
+      },
+      {
+        "id": "heading_084",
+        "heading": "常識の人もいかついて拳を上げかけていたな",
+        "acts": [
+          "reaction_inference"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 93,
+            "threadTitle": "【三騎士】不遇ジョブを愛する人のスレ【シ詩召】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1123038648/93",
+            "excerpt": "そうえば昔も「不遇は竜召侍」とか言ってたこれ見た瞬間から結構侍が皆から嫌われだした 誰か常識人が何度もﾈｶﾞｷｬﾝはやめなさいと言ったしかし侍はやめなかったからついには常識の人もいかついて拳を上げかけていたな 止める方の身にもなれｶｽほんとうに不遇の他ｼﾞｮﾌﾞが何で優遇ｼﾞｮﾌﾞのﾈｶﾞｷｬﾝ侍にために助けなければならないのか？"
+          }
+        ]
+      },
+      {
+        "id": "heading_085",
+        "heading": "俺はひひょうものじゃないのでﾈｶﾞﾈｶﾞしない",
+        "acts": [
+          "denial_disclaimer",
+          "power_action",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 715,
+            "threadTitle": "レベルキャップまで育てると激しく後悔するジョブ",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1130299182/715",
+            "excerpt": "弱体は好きじゃないけど侍は弱体されてもじゅうぶん強いから気にならないな侍７５だが むしろ弱体されてバランスが取れるなら弱体すべきだし俺はひひょうものじゃないのでﾈｶﾞﾈｶﾞしない 覚悟はずっとしてたしな強すぎるから侍いつか来るとは覚悟は終わっていた"
+          }
+        ]
+      },
+      {
+        "id": "heading_086",
+        "heading": "侍のイメージが悪くなっている",
+        "acts": [
+          "lexical_reanalysis",
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 129,
+            "threadTitle": "サムライサイコ～スレ999",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1130598475/129",
+            "excerpt": "侍はへいきとうそをつくんだよな・・逆に彼は一人でも侍のﾈｶﾞｷｬﾝに挑んで勝ったんだよな ぜいいんがうそを付いてるわけじゃないがﾈｶﾞ侍は平気でうそをつくので侍のイメージが悪くなっている 同じ侍として強いと言うことは認めるべきだとおもうむだな強化の願いは止めておこう他ｼﾞｮﾌﾞの怒りをかったら本当は強い侍は弱体されてしまう"
+          }
+        ]
+      },
+      {
+        "id": "heading_087",
+        "heading": "侍　　　は　　　つ　　　よ　　　す　　　ぎ　　　た",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_088",
+        "heading": "たまに危ない攻撃も「ほう・・」て刀で受け流す",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_089",
+        "heading": "ほらみたことかいきなり侍の卑劣な行動が始ってしまった",
+        "acts": [
+          "attention_call",
+          "pseudo_logic",
+          "evidence",
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 132,
+            "threadTitle": "ソロ黒で時給6000だというのにお前らは",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1130906081/132",
+            "excerpt": "俺が黒魔だとか言ってタゲ外しの侍さんばれてるんだが・・ ほらみたことかいきなり侍の卑劣な行動が始ってしまった証拠のログは確保したからな言い逃れは出来ない 122 名前：既にその名前は使われています ：2005/11/02(水) 17:45:32 ID:jz4MWz4P"
+          }
+        ]
+      },
+      {
+        "id": "heading_090",
+        "heading": "何故そんな必死なのかバレてる証拠に笑顔が出てしまう",
+        "acts": [
+          "pseudo_logic",
+          "evidence",
+          "reaction_inference"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 116,
+            "threadTitle": "侍強すぎ",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1135872563/116",
+            "excerpt": "おれが書いてるのはこれ以上の強化は必要ないと言う事誘ってくれなどと一言もいっていない必然的に誘われてしまうが お前の書きこみ見てると他ジョブ（ホントはネガ侍だが）なのに何故そんな必死なのかバレてる証拠に笑顔が出てしまう あといいかげんにageるなお前は恥をしらないのか"
+          }
+        ]
+      },
+      {
+        "id": "heading_091",
+        "heading": "その威力も火ではない威力というあるさま！",
+        "acts": [
+          "denial_disclaimer",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 240,
+            "threadTitle": "とうとう侍までもがﾈｶﾞｷｬﾝ工作に参戦してきたか",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1154193408/240",
+            "excerpt": "さらに不意とダマをメインシーフ以上に有効活用でき その威力も火ではない威力というあるさま！ 両手武器は手数が少ないと過去にネガってついには片手武器の特徴であるゆういつの利点であったところすらも両手武器に吸収"
+          }
+        ]
+      },
+      {
+        "id": "heading_092",
+        "heading": "気がひゅんひゅん行く",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 245,
+            "threadTitle": "とうとう侍までもがﾈｶﾞｷｬﾝ工作に参戦してきたか",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1154193408/245",
+            "excerpt": "おっと攻撃性能ばかりに強すぎて気がひゅんひゅん行くが 防御性能も鬼の能力と言う事もつけくわえないとダメだな"
+          }
+        ]
+      },
+      {
+        "id": "heading_093",
+        "heading": "ネガはやめておけといっているサル",
+        "acts": [
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 247,
+            "threadTitle": "とうとう侍までもがﾈｶﾞｷｬﾝ工作に参戦してきたか",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1154193408/247",
+            "excerpt": "ネガはやめておけといっているサル 侍に強化は不要仮にするなら他ジョブの強化はそれ以上の強化をしなければならないだろ？"
+          }
+        ]
+      },
+      {
+        "id": "heading_094",
+        "heading": "おっととグーの音も出ないくらいに凹ませてしまった感",
+        "acts": [
+          "fear_submission",
+          "reaction_inference",
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 265,
+            "threadTitle": "とうとう侍までもがﾈｶﾞｷｬﾝ工作に参戦してきたか",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1154193408/265",
+            "excerpt": "おっととグーの音も出ないくらいに凹ませてしまった感 誰か知らんが人の名前あげてスレスト狙いかな逃げんなよネガ侍"
+          }
+        ]
+      },
+      {
+        "id": "heading_095",
+        "heading": "これで勝つる！",
+        "acts": [
+          "fear_submission",
+          "power_action",
+          "victory_result",
+          "reaction_inference"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/1",
+            "excerpt": "どうやら忍者がたよりないらしく「はやくきて～はやくきて～」と泣き叫んでいるＬＳメンバーのために俺はとんずらを使って普通ならまだ付かない時間できょうきょ参戦すると 「もうついたのか！」「はやい！」「きた！盾きた！」「メイン盾きた！」「これで勝つる！」と大歓迎状態だった忍者はアワレにも盾の役目を果たせず死んでいた近くですばやくフラッシュを使い盾をした 忍者から裏テルで「勝ったと思うなよ・・・」ときたがＬＳメンバーがどっちの見方だかは一瞬でわからないみたいだった"
+          }
+        ]
+      },
+      {
+        "id": "heading_096",
+        "heading": "お前らにブロントの悲しみの何がわかるってんだよ",
+        "acts": [
+          "opponent_evaluation",
+          "denial_disclaimer",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 441,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/441",
+            "excerpt": "そんな真のブロントを知らないお前らが偽者だの本物だの言ってネタにしてる事は大変失礼 お前らにブロントの悲しみの何がわかるってんだよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_097",
+        "heading": "浅はかさは愚かしい",
+        "acts": [
+          "opponent_evaluation"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 448,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/448",
+            "excerpt": "またageてやがる メール欄に何か入れてればageを見破れないとでも思った浅はかさは愚かしい"
+          }
+        ]
+      },
+      {
+        "id": "heading_098",
+        "heading": "間接的とはいえ殺人罪と同様だろ",
+        "acts": [
+          "pseudo_logic",
+          "threat_warning"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 455,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/455",
+            "excerpt": "お前らがこういう風にネタにしたりして騒いだからブロントはキャラ消して鯖変えたんだぞ あれって間接的とはいえ殺人罪と同様だろ・・・ そんなお前らがなんでこっちを悪いように責めてんのかわけわからん"
+          }
+        ]
+      },
+      {
+        "id": "heading_099",
+        "heading": "ブロントは深い悲しみに包まれた",
+        "acts": [
+          "pseudo_logic",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 468,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/468",
+            "excerpt": "ブロントは鯖のトップに立つ大物だから特に嫉妬がすごかったらしい きっと鬼の首取ったように周囲が騒ぎブロントは深い悲しみに包まれた"
+          }
+        ]
+      },
+      {
+        "id": "heading_100",
+        "heading": "見ろ、見事なカウンターで返した",
+        "acts": [
+          "attention_call",
+          "challenge_retort",
+          "evidence",
+          "victory_result",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 471,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/471",
+            "excerpt": "大体そう言うお前は学校行かないのかよ 見ろ、見事なカウンターで返した 調子に乗ってるからこうやって痛い目に遭う"
+          }
+        ]
+      },
+      {
+        "id": "heading_101",
+        "heading": "想像を絶する悲しみがブロントを襲った",
+        "acts": [
+          "opponent_evaluation",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 501,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/501",
+            "excerpt": "特にブロントの場合は、そこらの一般プレイヤーの雑魚いキャラじゃなくて鯖で一番のキャラ 想像を絶する悲しみがブロントを襲った"
+          }
+        ]
+      },
+      {
+        "id": "heading_102",
+        "heading": "３人のミニオン",
+        "acts": [
+          "social_typing"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 514,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/514",
+            "excerpt": "何がどう無理なのか論理的に言えよ 俺は自分で言うのもなんだが３人のミニオンの中では一番知能が高いと評価されてる （それに一応３人同格だけど実際のブロントからの信頼は一番高いと思う）"
+          }
+        ]
+      },
+      {
+        "id": "heading_103",
+        "heading": "まずは準備運動に軽く論破",
+        "acts": [
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 597,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/597",
+            "excerpt": "俺のIDは見ての通りSNevJGFgで変幻自在で全然別人なんだが？ と、まずは準備運動に軽く論破しといた"
+          }
+        ]
+      },
+      {
+        "id": "heading_104",
+        "heading": "ダイヤモンド・パワーの精神力",
+        "acts": [
+          "pseudo_logic",
+          "power_action",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 613,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/613",
+            "excerpt": "もしブロント氏がまたキャラ削除になるような悲しい事件になったら今度こそ本当にお前ら訴えられるぞ もっとも、彼はダイヤモンド・パワーの精神力なのでお前らごときの攻撃くらいでそう簡単にはくじけないだろうけど"
+          }
+        ]
+      },
+      {
+        "id": "heading_105",
+        "heading": "親とか呼ばれて一巻の終わり",
+        "acts": [
+          "apology_contract",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 718,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/718",
+            "excerpt": "このｽﾚも満が一のために落として置いた方がいいだろうなあまりにもリスクが膨大過ぎる 警察に捕まったら普通にあやまって許してもらえないぞ親とか呼ばれて一巻の終わり"
+          }
+        ]
+      },
+      {
+        "id": "heading_106",
+        "heading": "忍者は性格が悪いのでムシしててたまに話しかけてやると勝手に俺の家来になる",
+        "acts": [
+          "opponent_evaluation",
+          "social_typing"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 740,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/740",
+            "excerpt": "少なくとも俺のところのＬＳではそれほど忍者に発言力は全くないかな 忍者は性格が悪いのでムシしててたまに話しかけてやると勝手に俺の家来になる >>739意味不明お前は馬鹿か？無駄に上げるな捕まりたいのか？"
+          }
+        ]
+      },
+      {
+        "id": "heading_107",
+        "heading": "最強の義務は最強のプレッシャーとなって襲いかかってくる",
+        "acts": [
+          "paradox_repetition",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 769,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/769",
+            "excerpt": "最強のナイトをＰＴに招き入れられたと思う 最強の義務は最強のプレッシャーとなって襲いかかってくる"
+          }
+        ]
+      },
+      {
+        "id": "heading_108",
+        "heading": "人生がｹﾞｰﾑｵｰﾊﾞｰになる",
+        "acts": [
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 864,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/864",
+            "excerpt": "精神的苦痛になると言う事をわからないか 訴えられたら色々調べられて人生がｹﾞｰﾑｵｰﾊﾞｰになる 彼はみていないが常識のある人がいつ通報しててもおかしくない"
+          }
+        ]
+      },
+      {
+        "id": "heading_109",
+        "heading": "オーラ的に武力に突出しているので不良に近い",
+        "acts": [
+          "social_typing",
+          "pseudo_logic",
+          "denial_disclaimer",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 879,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/879",
+            "excerpt": "一般人とオーラが違うので一般人はなかなか話し掛けにくい オーラ的に武力に突出しているので不良に近い よって不良にはよく話し掛けられる＝スカウト"
+          }
+        ]
+      },
+      {
+        "id": "heading_110",
+        "heading": "もう結構ウデとか血管血走ってるから騒ぐと危険",
+        "acts": [
+          "threat_warning"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_111",
+        "heading": "捏造するなよ前歯へし折られたいのかおまえ",
+        "acts": [
+          "apology_contract",
+          "denial_disclaimer",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 927,
+            "threadTitle": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1114655142/927",
+            "excerpt": "捏造するなよ前歯へし折られたいのかおまえﾈｯﾄ番長ならいい加減にしておけよ こっちにはいろんな山脈があるからお前の謝罪地を教えてもらうことも可能かもな"
+          }
+        ]
+      },
+      {
+        "id": "heading_112",
+        "heading": "お前学校にいってべんきょうすろ",
+        "acts": [
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 86,
+            "threadTitle": "拝啓■e様、もはやナイト弱体は避けられません。",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1117624611/86",
+            "excerpt": "人に勝手に名前つけてちょうしこくなよ お前学校にいってべんきょうすろ"
+          }
+        ]
+      },
+      {
+        "id": "heading_113",
+        "heading": "ちょとｓＹレならんしょこれは・・？",
+        "acts": [
+          "grievance",
+          "pseudo_logic",
+          "threat_warning",
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "勝手に名前晒すヤツは豚糞",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1119416657/1",
+            "excerpt": "人の意見に流される糞ばかりなので本人の意見が遅れると捏造で好き放題叩かれまくられてﾏｼﾞで殺す。 ちょとｓＹレならんしょこれは・・？晒すなら本人に断ってやれよ。 これからはそれが出来ないやつが悪者でＦＡ！それくらいも出来ない卑怯者はﾏｼﾞでかなぐり捨てﾝぞ？"
+          }
+        ]
+      },
+      {
+        "id": "heading_114",
+        "heading": "人工的に淘汰されるのが目に見えている",
+        "acts": [
+          "pseudo_logic",
+          "prediction_certainty"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 360,
+            "threadTitle": "【追加NM】NM76匹目【徹底解明】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1121892972/360",
+            "excerpt": "今回のパッチで忍が激減しナイトの需要は上がるばかりの最中にそんな事を言っても念仏状態 今後そんなレスをしてもここはNMスレなので人工的に淘汰されるのが目に見えている"
+          }
+        ]
+      },
+      {
+        "id": "heading_115",
+        "heading": "おいィ？お前らは今の言葉聞こえたか？",
+        "acts": [
+          "attention_call"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "さすがにナイトは格が違った",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1123059108/1",
+            "excerpt": "ナイトはどこでも引張りたこでつい先日もＨＮＭＬＳに勧誘されていた リーダーに「何か言う事はないか？」というとリーダーはテルで「もう残る気はないのか？；」と言ってきたが俺は「おいィ？お前らは今の言葉聞こえたか？」といったら 「聞こえてない」「何か言ったの？」「俺のログには何もないな」という返事"
+          }
+        ]
+      },
+      {
+        "id": "heading_116",
+        "heading": "いくえ不明",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 35,
+            "threadTitle": "さすがにナイトは格が違った",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1123059108/35",
+            "excerpt": "・豪華なＨＮＭＬＳ→装備が充実→心が豊かなので性格も良い→彼女ができる ・せこいＬＳ→装備が雑魚→心が狭く顔にまででてくる→いくえ不明"
+          }
+        ]
+      },
+      {
+        "id": "heading_117",
+        "heading": "防御もかなりかたい",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic",
+          "self_rank",
+          "power_action"
+        ],
+        "contextCount": 2,
+        "contexts": [
+          {
+            "responseNumber": 122,
+            "threadTitle": "【せＹで話すな】常識無いｶｽ【ｔｅｌでこいよ】",
+            "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1090126547/122",
+            "excerpt": "自分がリアルモンクとかいっていきがってる馬鹿がいるけどリアルモンクが一人だけだと思うなよ 俺は防御もかなりかたい"
+          },
+          {
+            "responseNumber": 190,
+            "threadTitle": "ナイトはヴァナ最強であるべき part2",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1123170067/190",
+            "excerpt": "俺はグラットンソード盛ってるからLSでは一級廃人と崇められてるしお世辞もすごい 次に大切なのはリアルでの強さ俺はリアルモンクだからかなりもてるし防御もかなりかたい"
+          }
+        ]
+      },
+      {
+        "id": "heading_118",
+        "heading": "謙虚なﾅｲﾄで人気者",
+        "acts": [
+          "social_typing",
+          "self_rank",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 229,
+            "threadTitle": "ナイトはヴァナ最強であるべき part2",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1123170067/229",
+            "excerpt": "詩人はそこで溜めてたトカゲの皮を１Ｄトレードしたが９枚で良いといわれたらしい 今のＬＳではそのﾅｲﾄは謙虚なﾅｲﾄで人気者"
+          }
+        ]
+      },
+      {
+        "id": "heading_119",
+        "heading": "完全にシャッタアウト",
+        "acts": [
+          "opponent_evaluation",
+          "withdrawal_closure"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 24,
+            "threadTitle": "【ナイト】メリポで時給７０００切った【樽前衛】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1135816818/24",
+            "excerpt": "ナイトをバカにする奴はたぶんＬＳで地位の低い雑魚 偶然にも１みたいなこうゆう奴みたいなのがいるんだが俺のＬＳでは完全にシャッタアウトされていた BCなどでナイトがチヤホヤされているのだが俺もナイトの派閥に入っている"
+          }
+        ]
+      },
+      {
+        "id": "heading_120",
+        "heading": "汚いなさすが忍者きたない",
+        "acts": [
+          "grievance"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 52,
+            "threadTitle": "【ナイト】メリポで時給７０００切った【樽前衛】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1135816818/52",
+            "excerpt": "これ立てたの絶対忍者だろ･･汚いなさすが忍者きたない 俺はこれで忍者きらいになったなあもりにもひきょう過ぎるでしょう？"
+          }
+        ]
+      },
+      {
+        "id": "heading_121",
+        "heading": "名実ともに唯一ぬにの盾",
+        "acts": [
+          "grievance",
+          "pseudo_logic",
+          "paradox_repetition",
+          "denial_disclaimer",
+          "self_rank",
+          "power_action",
+          "victory_result"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 149,
+            "threadTitle": "【ナイト】メリポで時給７０００切った【樽前衛】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1135816818/149",
+            "excerpt": "ナイトと組めたらその日の狩りは成功したもも同然 攻撃はヒキョウ者ではないから正正堂堂と避けないが現在失われし財産である盾を使って名実ともに唯一ぬにの盾 しかも敵は攻撃を空蝉で避けられると「これはヒキョウ技なので仕方がない」と言う事になるが"
+          }
+        ]
+      },
+      {
+        "id": "heading_122",
+        "heading": "孤高の騎士",
+        "acts": [
+          "social_typing",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 83,
+            "threadTitle": "一般的に言ってナイトが最強か",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1143791427/83",
+            "excerpt": "俺はああヒーローは本当に偶然常に近くを通りかかるもんだなと納得した しかもヒュム♀白だけにレイズして「もう大丈夫だな」といって必要最低限の施しだけしていった姿に孤高の騎士だったな 一般人はすぐに全部を頼ろうとするところがだめ"
+          }
+        ]
+      },
+      {
+        "id": "heading_123",
+        "heading": "どちかというと大反対",
+        "acts": [
+          "denial_disclaimer",
+          "self_rank",
+          "power_action",
+          "praise_humility"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 91,
+            "threadTitle": "一般的に言ってナイトが最強か",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1143791427/91",
+            "excerpt": "俺はナイトではないがナイト弱体したらまわりが騒ぎだろうな 俺はナイト弱体にはどちかというと大反対だな ナイト自体は強いがやっぱりナイトの性格のよさが武器だよなー憧れる"
+          }
+        ]
+      },
+      {
+        "id": "heading_124",
+        "heading": "口だけデコピンで人を倒せると思ってるのか？",
+        "acts": [
+          "opponent_evaluation",
+          "challenge_retort"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 128,
+            "threadTitle": "一般的に言ってナイトが最強か",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1143791427/128",
+            "excerpt": "ライオンは手を出さないということ >>123は口だけデコピンで人を倒せると思ってるのか？ あんまほらふいてっとほねへし折るぞぼけが"
+          }
+        ]
+      },
+      {
+        "id": "heading_125",
+        "heading": "お前忍者だろさすが忍者だ、思わずボコにしてやりたくなる",
+        "acts": [
+          "grievance",
+          "pseudo_logic",
+          "threat_warning"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 133,
+            "threadTitle": "一般的に言ってナイトが最強か",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1143791427/133",
+            "excerpt": "お前忍者だろさすが忍者だ、思わずボコにしてやりたくなる ナイトが柄が悪いように見えるのはお前が汚い人種だからだな"
+          }
+        ]
+      },
+      {
+        "id": "heading_126",
+        "heading": "封印がとけられた！",
+        "acts": [
+          "pseudo_logic",
+          "self_rank",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 633,
+            "threadTitle": "シ　ー　フ　お　わ　っ　た　な 2",
+            "postUrl": null,
+            "excerpt": "俺はＬＳでシーフに「今回あきらめ顔になってるので全力出しても良いぞ」というと 「やっと許しが出たか！」「封印がとけられた！」と仲間がもじもじしだしたので急に入ったメンバーは何が起きようとしてるのか謎みたいだった 戦闘に入ると忍者とかとは別次元のナイトが最強の挑発の持ち主なので後衛にタゲが行く事はないので後衛も本気の力が出せる"
+          }
+        ]
+      },
+      {
+        "id": "heading_127",
+        "heading": "俺は俺を殺す気か？",
+        "acts": [
+          "pseudo_logic",
+          "threat_warning",
+          "power_action",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 199,
+            "threadTitle": "【豆腐】ナイトはサポ戦肉盾を今すぐやめろ【白身】",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1149585042/199",
+            "excerpt": "「空蝉あるから分散させた方が良い」といったので「じゃ挑発はするな」といった するとどうだろう俺からタゲが剥がれないという事件が起きた「俺は俺を殺す気か？」と裏テルすると 忍者は「ナイトの攻撃が強くて挑発なしではタゲが取れない」すると戦士が「しかも固いので敵の恨みが発散していない」といわれた"
+          }
+        ]
+      },
+      {
+        "id": "heading_128",
+        "heading": "俺は関係ないから何を言われても関係ないからノーダメージだから",
+        "acts": [
+          "pseudo_logic",
+          "denial_disclaimer",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 7,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/7",
+            "excerpt": "ま俺は関係ないから何を言われても関係ないからノーダメージだから ただ一言いうとやっぱりナイトは頼りにされるってことだな"
+          }
+        ]
+      },
+      {
+        "id": "heading_129",
+        "heading": "隠された力を発揮する披露宴となる",
+        "acts": [
+          "self_rank",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 23,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/23",
+            "excerpt": "通常攻撃はフラッシュや盾で完全に見切り敵も青ざめてたんだが最強のタゲ取りの宝庫であるナイトは 黒も最大火力を使えて殲滅速度もそうとう上昇する忍者みたいに遠慮する必要が無いので隠された力を発揮する披露宴となる"
+          }
+        ]
+      },
+      {
+        "id": "heading_130",
+        "heading": "おまえもし化して文字が、読めない馬鹿ですか？",
+        "acts": [
+          "opponent_evaluation",
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 94,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/94",
+            "excerpt": "さきにいった上で言っておくが創立記念日とか色々休みがあるからあまり人に学校とか言うことは言わない方が良い 話は戻すしおまえもし化して文字が、読めない馬鹿ですか？ 俺は>>1をほめてるだけで一度も俺が>>1だと言った覚えはないんだが？"
+          }
+        ]
+      },
+      {
+        "id": "heading_131",
+        "heading": "おまえの目は意味ないな後ろから破壊してやろうか？",
+        "acts": [
+          "denial_disclaimer",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 99,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/99",
+            "excerpt": "このＩＤは結構ぱそこんとかに精通してるハッカークラスで無いと簡単じゃない 俺のＩＤが>>１のＩＤと同じに見えるならおまえの目は意味ないな後ろから破壊してやろうか？ >>９７"
+          }
+        ]
+      },
+      {
+        "id": "heading_132",
+        "heading": "ここで一歩引くのが大人の醍醐味",
+        "acts": [
+          "opponent_evaluation",
+          "withdrawal_closure"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 109,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/109",
+            "excerpt": "あまり強く言うとやっと俺が>>1だという誤解が解けたのにまたいちゃもんつけてくる雑魚が出て来るしな ここで一歩引くのが大人の醍醐味"
+          }
+        ]
+      },
+      {
+        "id": "heading_133",
+        "heading": "必死に回転させたが言い返す言葉が出なかった",
+        "acts": [
+          "fear_submission"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 123,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/123",
+            "excerpt": "彼はナイトでは無いみたいだったが論理的に説明されていた 俺も言い返そうと必死に回転させたが言い返す言葉が出なかった これが完敗ってヤツだろうないい加減俺達も認めようぜ"
+          }
+        ]
+      },
+      {
+        "id": "heading_134",
+        "heading": "非常に人をふるかいにする",
+        "acts": [
+          "grievance",
+          "victory_result"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 133,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/133",
+            "excerpt": "勝手な勝利宣言とかしても勝ちにならない 逆に逃げたとか相手を挑発する言葉は非常に人をふるかいにするので俺の勝ちという話になる このスレはもう落としてください"
+          }
+        ]
+      },
+      {
+        "id": "heading_135",
+        "heading": "鎧が盾なら盾は剣の地位にあるだろ？",
+        "acts": [
+          "agreement",
+          "grievance",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 204,
+            "threadTitle": "空蝉＝ナイトなのに忍者は余計",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1151891228/204",
+            "excerpt": "俺はナイトでは無いが>>1の意見には大賛成だななぜらば盾が盾もって無いとおかしいし 盾といえばぼうぎょの基本であって鎧が盾なら盾は剣の地位にあるだろ？ 基本なのにそれを所持していない時点でダメだろ俺なら恥かしくてそろりと生きるな・・"
+          }
+        ]
+      },
+      {
+        "id": "heading_136",
+        "heading": "ナイトは何よりもみためが重要だと知らないか？",
+        "acts": [
+          "pseudo_logic",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 179,
+            "threadTitle": "守りイージスフルケーニヒないナイトは解約しろ",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1157091206/179",
+            "excerpt": "ナイトならフルAF2にフロッティもってリッターシルトかケーニヒシールドだろうが ナイトは何よりもみためが重要だと知らないか？ イージスとかいくら性能が良くても変なヒョウタン形に金ピカでオジサンの顔つきだからダサくて恥ずかしいな"
+          }
+        ]
+      },
+      {
+        "id": "heading_137",
+        "heading": "世界観的にノーなんでナッシング",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 293,
+            "threadTitle": "ナイズルアサルトに既存NM/HNM配置",
+            "postUrl": "https://live25.5ch.net/test/read.cgi/ogame/1173304774/293",
+            "excerpt": "世界観的にノーなんでナッシングともいう"
+          }
+        ]
+      },
+      {
+        "id": "heading_138",
+        "heading": "英語でいうとノンフィクション",
+        "acts": [
+          "evidence",
+          "lament_crisis",
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 444,
+            "threadTitle": "ナイズルアサルトに既存NM/HNM配置",
+            "postUrl": "https://live25.5ch.net/test/read.cgi/ogame/1173304774/444",
+            "excerpt": "なんとＨＮＭファヴとか大幅弱体で魔法の世界なのになんということだもうモンスター達を狩るのはできないかわいそうだよといったので俺はここで普通ならなぐさめるのそんなことないよとか普通だがきつくいっといた免罪装備欲しさの自己中でこの結果だよ ナイズルアサルトは失敗に終わったヴァナディールには悲しみとかだけがのこったちなみにこの話は実際にあった内容で英語でいうとノンフィクション"
+          }
+        ]
+      },
+      {
+        "id": "heading_139",
+        "heading": "肩に暖かなものを感じ振り向くとそこには笑顔でナイトが待っていた",
+        "acts": [
+          "lament_crisis",
+          "reaction_inference"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "【世界】守りのナイト・攻撃の黒【ＰＴ】",
+            "postUrl": "https://live25.5ch.net/test/read.cgi/ogame/1186117603/1",
+            "excerpt": "おれは仲間から外された事に競売前で絶望を感じていたんだがテルで「放置ジョブ君ＰＴはー？」とＰＴの勧誘・・・黒魔からのお誘いだった 直後肩に暖かなものを感じ振り向くとそこには笑顔でナイトが待っていた"
+          }
+        ]
+      },
+      {
+        "id": "heading_140",
+        "heading": "おもわずいさぎよい武の心がでてしまった結果だった",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 73,
+            "threadTitle": "【世界】守りのナイト・攻撃の黒【ＰＴ】",
+            "postUrl": "https://live25.5ch.net/test/read.cgi/ogame/1186117603/73",
+            "excerpt": "あの時おれがとどめさすように言わなかったらきっととどめさされてたんだろうが おもわずいさぎよい武の心がでてしまった結果だった だが忍は本当に人の嫌がることしかやらない雑魚だろそれに従う赤詩人も共犯だという結論がバリスタの野良ＰＴでも話題になってた"
+          }
+        ]
+      },
+      {
+        "id": "heading_141",
+        "heading": "ただブロントとか関係ない人の名前出すのは止めよう（しきたり）",
+        "acts": [
+          "social_typing",
+          "denial_disclaimer",
+          "self_rank",
+          "metalinguistic"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 80,
+            "threadTitle": "布団の中で全体サーチをしてしまう",
+            "postUrl": "https://live27.5ch.net/test/read.cgi/ogame/1203323218/80",
+            "excerpt": "別に俺は廃人とか準廃とか一般人とかで区別したりしないけど ただブロントとか関係ない人の名前出すのは止めよう（しきたり） 自分らが日本語読めないのをそういうので茶化されたりすると本気で悩んでる俺の意見が流されてしまう"
+          }
+        ]
+      },
+      {
+        "id": "heading_142",
+        "heading": "このスレはしんだ結局スレ主の悩みは解決出来ないままスレは死んだ",
+        "acts": [
+          "withdrawal_closure"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 152,
+            "threadTitle": "布団の中で全体サーチをしてしまう",
+            "postUrl": "https://live27.5ch.net/test/read.cgi/ogame/1203323218/152",
+            "excerpt": "お前が言ってしまった事で微妙な誤字も許されない緊張感が生まれた このスレはしんだ結局スレ主の悩みは解決出来ないままスレは死んだ"
+          }
+        ]
+      },
+      {
+        "id": "heading_143",
+        "heading": "恥知らずなカイ使いがいた！！",
+        "acts": [
+          "grievance",
+          "social_typing"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_144",
+        "heading": "多分不良界で伝説になってる",
+        "acts": [
+          "social_typing",
+          "threat_warning",
+          "self_rank",
+          "victory_result"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 254,
+            "threadTitle": "【ギルティ】恥知らずなカイ使いがいた！！【ギア】",
+            "postUrl": "https://game10.5ch.net/test/read.cgi/arc/1116227644/254",
+            "excerpt": "その後ボコボコにして圧勝してやった 変な空間になったので俺はミステリーを残す為勝ちの画面になったと同時に家に帰ったが多分不良界で伝説になってる"
+          }
+        ]
+      },
+      {
+        "id": "heading_145",
+        "heading": "俺にも一撃を入れさせろ",
+        "acts": [
+          "apology_contract",
+          "grievance"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 199,
+            "threadTitle": "ギルティギアやってる奴ちょっと来い　in ネ実",
+            "postUrl": null,
+            "excerpt": "一撃モードのカイのゲージが見る見るうちに削られていく（さてそろそろか）とバンデット～の空中連続キックでトドメをさそうとしたが一撃を決められた 「他人との対戦で一撃使うなよ・・」というとあやまってきたが俺にも一撃を入れさせろと言うと断わってきたヒキョウ者それがカイ"
+          }
+        ]
+      },
+      {
+        "id": "heading_146",
+        "heading": "前門の虎前門の王神状態でなす術なし",
+        "acts": [
+          "social_typing",
+          "paradox_repetition",
+          "fear_submission",
+          "self_rank"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 203,
+            "threadTitle": "ギルティギアやってる奴ちょっと来い　in ネ実",
+            "postUrl": null,
+            "excerpt": "ここもすでにボルカニックの射程内 敵は画面端から逃げ出したそうにしてるが後ろがないので前門の虎前門の王神状態でなす術なしだしな はっきりいって200-202は情報に躍らされてる可哀想な一般人"
+          }
+        ]
+      },
+      {
+        "id": "heading_147",
+        "heading": "ソルのガトリングガン",
+        "acts": [
+          "self_rank",
+          "power_action"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 105,
+            "threadTitle": "アトルガンと間違えてガトリングガン買ってきた",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1145532332/105",
+            "excerpt": "ガトリングガンに対抗出来るのはポチョムキンのバスターくらいかなあれは破壊力だけなら始めて見た人はポチョムキンが最強かと思うけど 使い手のスピードとパワーのソルのガトリングガンをうけるとだいたい一緒に来てる上手いやつにかわる"
+          }
+        ]
+      },
+      {
+        "id": "heading_148",
+        "heading": "カイ使う奴は雑魚狩り専門",
+        "acts": [
+          "opponent_evaluation",
+          "social_typing"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_149",
+        "heading": "実はお前は弱かった",
+        "acts": [
+          "opponent_evaluation"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 25,
+            "threadTitle": "2D格ゲーの最高作はギルティ",
+            "postUrl": "https://changi.5ch.net/test/read.cgi/ogame/1218414169/25",
+            "excerpt": "レベルが低すぎてそのあとわざと２ラウンド取らせてやってから連取 おわってから「実はお前は弱かった」と伝えてやったらスト2の方に逃げていったよ"
+          }
+        ]
+      },
+      {
+        "id": "heading_150",
+        "heading": "常に自然と頭の中でシュミレートしてるくらい格闘に精通してる",
+        "acts": [
+          "pseudo_logic",
+          "prediction_certainty"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 615,
+            "threadTitle": "最近の格ゲーって何でつまんないの？",
+            "postUrl": "https://changi.5ch.net/test/read.cgi/ogame/1219648192/615",
+            "excerpt": "乗りかかった船なので相手してやったんだが相変らずけん制無視だったのでローと見せ掛けての間合い踏み込みで背負い投げ 身体が勝手に動いたんだが今思い起こしてみるとオリンピックで見た技だったんだが常に自然と頭の中でシュミレートしてるくらい格闘に精通してる"
+          }
+        ]
+      },
+      {
+        "id": "heading_151",
+        "heading": "サイバーネットポリス",
+        "acts": [
+          "opponent_evaluation",
+          "pseudo_logic",
+          "instruction",
+          "metalinguistic"
+        ],
+        "contextCount": 4,
+        "contexts": [
+          {
+            "responseNumber": 132,
+            "threadTitle": "ブロント最強伝説",
+            "postUrl": null,
+            "excerpt": "これはさすがの俺も警察を頼らざるをいなくなった今手続きしてるところだが最近の警察はやばいな サイバーネットポリスとか言うのが署内でも権力の猛威を振るっているらしい サイバーネットポリスは捕まえた犯人は結構罪が重いらしい。"
+          },
+          {
+            "responseNumber": 139,
+            "threadTitle": "ブロント最強伝説",
+            "postUrl": null,
+            "excerpt": "警察の結構偉い人とうちの父親が知り合いだから サイバーネットポリスの力を借りれるかもしれない 「不特定多数が掲示板に人の名前を不許可で上げている」というと"
+          },
+          {
+            "responseNumber": 262,
+            "threadTitle": "【ギルティ】恥知らずなカイ使いがいた！！【ギア】",
+            "postUrl": "https://game10.5ch.net/test/read.cgi/arc/1116227644/262",
+            "excerpt": "ついに逮捕者が出たらしいぞ このスレで不用意に人物名を連呼してageていたネ実の雑魚がサイバーネットポリスのぎゃく鱗に触れたらしい 俺は逮捕されたくないのでsageるが逮捕されたくなければ早くこのスレを落とすべきだろうな・・"
+          }
+        ]
+      },
+      {
+        "id": "heading_152",
+        "heading": "○○美",
+        "acts": [
+          "social_typing"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_153",
+        "heading": "そういう悪口は名誉毀損で犯罪行為だからお前は死ぬ",
+        "acts": [
+          "pseudo_logic",
+          "threat_warning"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 605,
+            "threadTitle": "◆神羅万象チョコ◇80枚目◆",
+            "postUrl": "https://hobby8.5ch.net/test/read.cgi/collect/1125338038/605",
+            "excerpt": "そういう悪口は名誉毀損で犯罪行為だからお前は死ぬ"
+          }
+        ]
+      },
+      {
+        "id": "heading_154",
+        "heading": "古来から法律",
+        "acts": [
+          "opponent_evaluation",
+          "lament_crisis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 437,
+            "threadTitle": "国際ブロント検定",
+            "postUrl": "https://live19.5ch.net/test/read.cgi/ogame/1132490955/437",
+            "excerpt": "メール蘭にsageと書くだけ犯罪者になりたくないでしょう？ 人の真似で遊ぶやつは名誉破損で逮捕と言うことが古来から法律なのは知らない 雑魚は逮捕されて親が悲しむことになる"
+          }
+        ]
+      },
+      {
+        "id": "heading_155",
+        "heading": "「誰それ？」「外人？」「歌？」",
+        "acts": [
+          "reaction_inference"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_156",
+        "heading": "エアリス使う奴は心が醜い",
+        "acts": [
+          "opponent_evaluation",
+          "social_typing"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_157",
+        "heading": "雷属性の左",
+        "acts": [
+          "fear_submission",
+          "power_action",
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 1,
+            "threadTitle": "もてない奴は根性からしてダメだった",
+            "postUrl": "https://etc6.5ch.net/test/read.cgi/motenai/1176905759/1",
+            "excerpt": "と怒りをこめて言い放つと｢言っとくが俺は空手二段だ。そこに転がってる奴みたくなりたくなかったらうせろ｣と息巻いてきたので スキだらけだったので雷属性の左をジョーにヒットさせてやって｢口で語るひまがあるなら手を出すべきだったな｣と言ってＫＯした 自称空手二段は何がおこったのか分からずブザマにもプルプル足震えて倒れた"
+          }
+        ]
+      },
+      {
+        "id": "heading_158",
+        "heading": "反乱者として軽蔑される",
+        "acts": [
+          "opponent_evaluation",
+          "social_typing"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 494,
+            "threadTitle": "(DDR)AC版DanceDanceRevolution SuperNOVA2 Part80",
+            "postUrl": "https://game11.5ch.net/test/read.cgi/otoge/1187749913/494",
+            "excerpt": "以上を理解して弱者は今後のプレイを控えるように。 理解しないでプレイし続ければ周りから反乱者として軽蔑される。 あとはお前ら次第だ。"
+          }
+        ]
+      },
+      {
+        "id": "heading_159",
+        "heading": "お前の人生では連コインをするような人生ではないでしょう？",
+        "acts": [
+          "denial_disclaimer"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 3,
+            "threadTitle": "最近のゲーセンではマナーが最悪なやつが多い",
+            "postUrl": "https://game13.5ch.net/test/read.cgi/otoge/1216121106/3",
+            "excerpt": "そのまま演説のEXを選んでノルマに９００００点以上を選ぶと相当なビビリっ気が伝わってきたので 「お前の人生では連コインをするような人生ではないでしょう？」と言ってやると一目さんに逃げ出した 俺はというともう彼が連コインをするようなことをしなくなってくれればよいのだが、と平和を願っていた"
+          }
+        ]
+      },
+      {
+        "id": "heading_160",
+        "heading": "ﾏｼﾞで震えてきやがった…怖いです…",
+        "acts": [
+          "fear_submission"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 365,
+            "threadTitle": "【DQ5】NDS雑談163【キター】",
+            "postUrl": "https://changi.5ch.net/test/read.cgi/download/1216213130/365",
+            "excerpt": "通報とかﾏｼﾞで震えてきやがった…怖いです…辞めてください…"
+          }
+        ]
+      },
+      {
+        "id": "heading_161",
+        "heading": "その絶望が健康賢者の第一ぴを踏み出すリアルの苦しみの味だよ？",
+        "acts": [
+          "lament_crisis"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_162",
+        "heading": "恋愛がホイッスル",
+        "acts": [
+          "lexical_reanalysis"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 429,
+            "threadTitle": "つまらない小説を無理矢理褒めちぎるスレ10",
+            "postUrl": "https://love6.5ch.net/test/read.cgi/magazin/1233719438/429",
+            "excerpt": "弁当の賞味期限とか見ながらはなしてたらやたら距離が近いから俺に惚れｔﾝのかと思ったら 案の定目がうるんでて恋愛がホイッスルな感じだったし俺が「遊んでやろうか？」と聞くと腰をすりよせてきた やっぱり不良はモテるな小食系男子じゃこうはいかないすぐにおれたちは昔の小学校に入りこんで"
+          }
+        ]
+      },
+      {
+        "id": "heading_163",
+        "heading": "普通は普通お前が普通なら普通がわかるはず",
+        "acts": [
+          "paradox_repetition"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 655,
+            "threadTitle": "Odin鯖のTsukasaooを垢バンに追い込むスレ",
+            "postUrl": "http://dubai.2ch.net/test/read.cgi/ogame/1240803268/655",
+            "excerpt": "654 普通は普通お前が普通なら普通がわかるはず"
+          }
+        ]
+      },
+      {
+        "id": "heading_164",
+        "heading": "god job!",
+        "acts": [
+          "praise_humility"
+        ],
+        "contextCount": 0,
+        "contexts": []
+      },
+      {
+        "id": "heading_165",
+        "heading": "200円やるからすぐやめろ",
+        "acts": [
+          "instruction"
+        ],
+        "contextCount": 1,
+        "contexts": [
+          {
+            "responseNumber": 880,
+            "threadTitle": "【完全】Quest of D part396【終了】",
+            "postUrl": "https://toki.5ch.net/test/read.cgi/arc/1283866049/880",
+            "excerpt": "しかたないので俺は「これ終わったら帰るから」と後ろに言ったけど 常連は「200円やるからすぐやめろ」とかいってきた そこまでいやならしかたないとしかたなくゲームを終わらせた"
+          }
+        ]
+      }
+    ],
+    "excerptCount": 839,
+    "unclassifiedExcerptCount": 393,
+    "excerptActCounts": [
+      {
+        "id": "power_action",
+        "label": "能力・攻撃の誇張",
+        "count": 97,
+        "examples": [
+          "怒りのパワーの力が全快になったからおまえらもう謝っても遅い",
+          "ギガトンパンチ食らったら即死で瞬殺される",
+          "ギガトンパンチは雷の力を持ったすごいパンチ",
+          "このパンチで北海道の多くの不良を殺して来た",
+          "パワーを上げすぎたため雷属性はなくなったけど無属性の威力が高い最強のパンチ",
+          "グラットン使いは知力パワーも高いから",
+          "グラットンスウィフトでバラバラに引き裂いてやろうか？",
+          "属性一緒なのは回復するかもしれないし仮に少し通っても鍛えられてる筋肉でインビン防御が発動予定（脱帽）"
+        ]
+      },
+      {
+        "id": "pseudo_logic",
+        "label": "擬似論理・因果の増築",
+        "count": 84,
+        "examples": [
+          "俺は不良だからよ",
+          "ライ＝雷だから合ってるべ？",
+          "グラットン所持＝装備が良い＝上手い",
+          "この公式が成り立つ",
+          "ＦＦではナイトだがリアルではモンクタイプだからな",
+          "そもそもおれは光属性のリアルモンクだからあんまり効かないことは予想済み（リアル主義）",
+          "リアルで痛い目を見たいのかおれはリアルでモンク属性だから相当の力持ち",
+          "おれは光属性のリアルモンク属性だから一目置かれる存在"
+        ]
+      },
+      {
+        "id": "self_rank",
+        "label": "自己格付け・自慢",
+        "count": 64,
+        "examples": [
+          "俺は北海道最強って言われてる",
+          "地元で伝説の不良と恐れられてる",
+          "パワーを上げすぎたため雷属性はなくなったけど無属性の威力が高い最強のパンチ",
+          "一級廃人の証っていうだけの事はあるよな",
+          "持ってる人憧れちゃうなー",
+          "光と闇が両方そなわり最強に見える",
+          "おれはＰスキルの高い最高のナイトだ",
+          "こう誘いがあっては一人の時間も作れない（リアル話）"
+        ]
+      },
+      {
+        "id": "threat_warning",
+        "label": "威嚇・警告",
+        "count": 49,
+        "examples": [
+          "相手は５０人だけど俺なら瞬殺で勝つ",
+          "ギガトンパンチ食らったら即死で瞬殺される",
+          "ロトさんの必殺技の中で一番有名な技だべ",
+          "このパンチで北海道の多くの不良を殺して来た",
+          "グラットンスウィフトでバラバラに引き裂いてやろうか？",
+          "おい、やめろ馬鹿",
+          "あんまりしつこいとバラバラに引き裂くぞ",
+          "しつこいとぶ殺すぞ"
+        ]
+      },
+      {
+        "id": "opponent_evaluation",
+        "label": "相手の格下げ・類型化",
+        "count": 43,
+        "examples": [
+          "おい、やめろ馬鹿",
+          "セイブザクイーンというのは女王の守りというのが女なので弱々しい",
+          "竜騎士をバカにするな",
+          "ってこれまで騎士連盟がバカにしてきた他のジョブどもを",
+          "その圧倒的な力を振るうことが叶わなかったために長生きさせてついには騎士をバカにしだす始末",
+          "なぜならびゃ黒はデジョンするにけっていしてる（雑魚）",
+          "てはじめにソロムグでコカ肉乱獲してる一般人の雑魚から",
+          "フレ♀は感動の沈黙で心地も良かったが雑魚の負け犬沈黙は沈黙させた自分も一般人に悪いことしたかもと思うから一般人でも常に最強の装備は要求"
+        ]
+      },
+      {
+        "id": "denial_disclaimer",
+        "label": "否認・切断",
+        "count": 36,
+        "examples": [
+          "言っとくけど俺はBurontじゃないから",
+          "やはり無実だった",
+          "もちろん俺は自慢野郎じゃないからそれほどでもないと謙虚に言う",
+          "はげていない",
+          "俺は狩る側であって狩られる側じゃないから",
+          "シーフはそれほどではないが今まで仲良く組んできただけにとどめを刺すのをためらう（雄大）",
+          "それに俺は俺はﾌﾞﾛﾝﾄではない",
+          "圧倒的な生命維持能力を保持するナイトと赤の組み合わせは獣使いじゃないにに巣も他の者をを魅了するほど"
+        ]
+      },
+      {
+        "id": "social_typing",
+        "label": "人物・陣営の類型化",
+        "count": 33,
+        "examples": [
+          "俺は北海道のＤＲＡＫ～ダーク～っていう喧嘩チームの頭だべ",
+          "ＦＦではナイトだがリアルではモンクタイプだからな",
+          "ただのモンクﾀｲﾌﾟだと思ってたら",
+          "てはじめにソロムグでコカ肉乱獲してる一般人の雑魚から",
+          "おれは出来れば一般人には手を出したくないから言葉使いに気をつけるべき（リアル話）",
+          "俺は実はででお四天王の一人",
+          "実は俺は四天王№１の攻撃力と言われてるイフリート",
+          "ででお四天王と言うのはででおさんの1000人の弟子の中でも特に"
+        ]
+      },
+      {
+        "id": "praise_humility",
+        "label": "称賛・謙遜",
+        "count": 25,
+        "examples": [
+          "持ってる人憧れちゃうなー",
+          "見事な仕事だと関心はするがどこもおかしくはない",
+          "俺も謙虚だから「すごいですね」と尊敬されて誉められた時は",
+          "それほどでもないと言う時もある",
+          "俺＞ そうですかありがとうグラットンすごいですね",
+          "Buront＞それほどでもない",
+          "しかもグラットン持ってるのに謙虚にそれほどでもないと言った",
+          "それにそれほどでもないと言うのは謙虚に謙遜して言ってる言葉"
+        ]
+      },
+      {
+        "id": "lament_crisis",
+        "label": "悲嘆・危機",
+        "count": 21,
+        "examples": [
+          "手遅れになるのではままるな",
+          "絶望的な破壊力も誇る破壊力を持つことになった",
+          "僕は絶望的な戦いはしたくないです",
+          "おれはＬＳでは結構クールでＨＮＭなんかの絶望液な戦いでも我がベビーキュライスが圧倒的な防御力を発揮する",
+          "このままでは俺の寿命がストレスでﾏｯﾊなんだが・・",
+          "お前らにブロントの悲しみの何がわかるってんだよ",
+          "きっと鬼の首取ったように周囲が騒ぎブロントは深い悲しみに包まれた",
+          "想像を絶する悲しみがブロントを襲った"
+        ]
+      },
+      {
+        "id": "instruction",
+        "label": "命令・教訓",
+        "count": 21,
+        "examples": [
+          "おい、やめろ馬鹿",
+          "ズタズタにされたいのか？調子こいてるとリアルで痛い目に会う事になるから注意すべき",
+          "もう悪い事は改心した",
+          "竜騎士をバカにするな",
+          "勝手にライバル視するなオレの圧倒的なＰスキルの前におまえの命は長くない（不快）",
+          "他の人も早く謝るべき死にたくないなら謝るべき",
+          "ﾘｱﾙでのﾀｲﾌﾟが似ているみたいだしな俺も格闘かなりの使い手だから用心すべき",
+          "いい加減そのはずべきこういを治さないとおれのぎゃくりんに触れてしまうから注意"
+        ]
+      },
+      {
+        "id": "evidence",
+        "label": "証拠・事実化",
+        "count": 20,
+        "examples": [
+          "赤字・・試験にでるのは確定的に明らか",
+          "俺がどうやってBurontだって証拠だよ",
+          "グラットン持ってる事がすごいのは事実なんだから",
+          "今回は神様が見逃さなかった勝手に人の沸かせたＮＭを奪うやつは万死に値する事実（リアル話）",
+          "おれに文句言われてるやつはそうとうのキチガイだという事実（リアル話）",
+          "ウザイなおまえケンカ売ってるのか？ボディブローとか言ってる時点で相手にならないことは証明されたな",
+          "俺は事実と証拠を出したぞ？もしお前等が事実と証拠出さなかったら俺の勝ちだから慎重に出せよ？捏造しても俺の勝ちという念押し",
+          "俺の意見が間違っていなかったと言う証拠にもなるな"
+        ]
+      },
+      {
+        "id": "reaction_inference",
+        "label": "他者反応の推測",
+        "count": 20,
+        "examples": [
+          "なんで心を読まれたのかとギクッとしてびびっただろ",
+          "誰か常識人が何度もﾈｶﾞｷｬﾝはやめなさいと言ったしかし侍はやめなかったからついには常識の人もいかついて拳を上げかけていたな",
+          "お前の書きこみ見てると他ジョブ（ホントはネガ侍だが）なのに何故そんな必死なのかバレてる証拠に笑顔が出てしまう",
+          "おっととグーの音も出ないくらいに凹ませてしまった感",
+          "どうやら忍者がたよりないらしく「はやくきて～はやくきて～」と泣き叫んでいるＬＳメンバーのために俺はとんずらを使って普通ならまだ付かない時間できょうきょ参戦すると",
+          "「もう勝負ついてるから」というと黙ったので戦士サポ忍の後ろに回り不意だまスフィストを打つと何回かしてたらキングベヒんもスは倒された",
+          "こういう晒し厨の糞ガキがまじゃっているため常に晒しの恐怖を持ってストレスが溜まる。",
+          "ナイトは忍者よりも高みにいるからお前らのイタズラにも笑顔だったがいい加減にしろよ"
+        ]
+      },
+      {
+        "id": "grievance",
+        "label": "不公平・被害の訴え",
+        "count": 19,
+        "examples": [
+          "黒魔が魔法使えるのはずるい",
+          "忍が複数攻撃なのでﾅｲﾄも常時複数回攻撃できないとおかしいはず",
+          "反論できなくなるとｺﾋﾟﾍﾟと言う言葉で得意の回避をしようとするのもいつもの汚い手だなヨミヨミだった",
+          "そういう卑怯な手を使わないと勝負しないで正々堂々勝負しろ",
+          "これからはそれが出来ないやつが悪者でＦＡ！それくらいも出来ない卑怯者はﾏｼﾞでかなぐり捨てﾝぞ？",
+          "これ立てたの絶対忍者だろ･･汚いなさすが忍者きたない",
+          "攻撃はヒキョウ者ではないから正正堂堂と避けないが現在失われし財産である盾を使って名実ともに唯一ぬにの盾",
+          "しかも敵は攻撃を空蝉で避けられると「これはヒキョウ技なので仕方がない」と言う事になるが"
+        ]
+      },
+      {
+        "id": "metalinguistic",
+        "label": "言葉・意味の再定義",
+        "count": 17,
+        "examples": [
+          "名誉既存で訴えられて逮捕になる",
+          "大体名前からして負けてるでしょう",
+          "そもそもその安易な名前に寒気すら感じる始末",
+          "しかもＴＰが溜まりしだい不意だまスフィストが炸裂するのでお前では役不足",
+          "名前出す奴は国家戦力を舐めすぎ",
+          "ﾘｱﾙでもかなりの力を保有してるからあまり名前を出すのは感心しない",
+          "リアルで俺が怖くないなら鯖と名前あかしてみろよ雑魚！出来ないんなら俺の勝ち",
+          "鋼のように硬い精神力って意味だよ"
+        ]
+      },
+      {
+        "id": "challenge_retort",
+        "label": "挑発への返答",
+        "count": 16,
+        "examples": [
+          "なんだ急に牙抜いてきた>>60",
+          "勝手にライバル視するなオレの圧倒的なＰスキルの前におまえの命は長くない（不快）",
+          "自分から墓にいきたがる奴は久々だなだがすでに勝負は決まっている（リアル話）",
+          "ウザイなおまえケンカ売ってるのか？ボディブローとか言ってる時点で相手にならないことは証明されたな",
+          "なんか人のアゲアシとって喜んでるバカがいるみたいだけど相手にならないって言ってるの読まませんか？ｗ",
+          "勝負には勝ったが嬉しくないけど勝てない勝負をするなと言いたい墓穴を掘る",
+          "警察とか言われると面倒だし、だけど俺は勝負に勝ったしあんまゴチャゴチャうるさいとマジひねられる覚悟は出来てて文句言えよ？",
+          "クッティカル（3倍）のカウンターつけろとかもう糞の真骨董を発揮してるだろうがﾊﾞｶが"
+        ]
+      },
+      {
+        "id": "lexical_reanalysis",
+        "label": "語の取り違え・再解釈",
+        "count": 15,
+        "examples": [
+          "名誉既存で訴えられて逮捕になる",
+          "セイブザクイーンというのは女王の守りというのが女なので弱々しい",
+          "太公望は釣竿だろ",
+          "しかもＴＰが溜まりしだい不意だまスフィストが炸裂するのでお前では役不足",
+          "いい加減そのはずべきこういを治さないとおれのぎゃくりんに触れてしまうから注意",
+          "ただ釣りだとしても人の本名をつかう事は怒りのだんぺんをみる",
+          "じょうずく",
+          "ぜいいん"
+        ]
+      },
+      {
+        "id": "victory_result",
+        "label": "勝利・結果確定",
+        "count": 14,
+        "examples": [
+          "１0０％の確率でナイトが勝つと勝率が出たんだがな",
+          "このスレは早くも終了ですね",
+          "こちらの勝利ポイントが貯まってる事に気付けよ",
+          "弱いという証拠を出せといわれても出せるわけがないと言う理屈で最初から俺の勝率は１００％だった",
+          "完　　全　　論　　破",
+          "舐めすぎたな完全勝利",
+          "１２／３０　　完全勝利",
+          "「もうついたのか！」「はやい！」「きた！盾きた！」「メイン盾きた！」「これで勝つる！」と大歓迎状態だった忍者はアワレにも盾の役目を果たせず死んでいた近くですばやくフラッシュを使い盾をした"
+        ]
+      },
+      {
+        "id": "apology_contract",
+        "label": "謝罪・約束・契約",
+        "count": 13,
+        "examples": [
+          "これは対等な誓いなので守られなければならない",
+          "俺は謝罪をおまえらに宣言する",
+          "もう悪い事は改心した",
+          "俺の狩りの邪魔はしないふぇ下さい（約束）",
+          "あの時のコカトリスは許してやっても良い（心が広大）",
+          "騎士連盟の前に謝ることになる（実写）",
+          "こんな恐ろしいい敵を作りたくないので僕はあやまりますごめんなさい",
+          "他の人も早く謝るべき死にたくないなら謝るべき"
+        ]
+      },
+      {
+        "id": "fear_submission",
+        "label": "恐怖・降伏・反論不能",
+        "count": 12,
+        "examples": [
+          "自分の心に広さが怖い",
+          "おっととグーの音も出ないくらいに凹ませてしまった感",
+          "どうやら忍者がたよりないらしく「はやくきて～はやくきて～」と泣き叫んでいるＬＳメンバーのために俺はとんずらを使って普通ならまだ付かない時間できょうきょ参戦すると",
+          "「もう勝負ついてるから」というと黙ったので戦士サポ忍の後ろに回り不意だまスフィストを打つと何回かしてたらキングベヒんもスは倒された",
+          "盾で受け流されるととてとての敵であるはずなのに潜在能力の桁違いの才能に「これほど才能があると勝てるわけがない」と諦め表情になる",
+          "俺も言い返そうと必死に回転させたが言い返す言葉が出なかった",
+          "逆にお前らは無実の、人一人を相手にタイマンが怖いからと言って多勢に無勢という大罪",
+          "俺は「うるさい、気が散る。一瞬の油断が命取り」というとｷﾞｬﾗﾘｰは黙った"
+        ]
+      },
+      {
+        "id": "paradox_repetition",
+        "label": "矛盾・反復による強調",
+        "count": 10,
+        "examples": [
+          "怒りのパワーの力が全快になったからおまえらもう謝っても遅い",
+          "IDはたまたま同じになる事が稀にだがよくあるらしい",
+          "絶望的な破壊力も誇る破壊力を持つことになった",
+          "単純にその破壊力は計り知れない破壊力",
+          "最強の義務は最強のプレッシャーとなって襲いかかってくる",
+          "攻撃はヒキョウ者ではないから正正堂堂と避けないが現在失われし財産である盾を使って名実ともに唯一ぬにの盾",
+          "その点やっぱりナイトはえごいぞ、普通の防御力もナンバー１で最強なのに盾の能力も最強",
+          "するとつぎは攻撃の番なのだが暗黒の最強Ｄ値の鎌と最強の盾能力でありながら攻撃も一流のナイト（攻撃力も一流なのがタゲ取り能力もさされてる）"
+        ]
+      },
+      {
+        "id": "prediction_certainty",
+        "label": "予知・必然化",
+        "count": 10,
+        "examples": [
+          "赤字・・試験にでるのは確定的に明らか",
+          "自分から墓にいきたがる奴は久々だなだがすでに勝負は決まっている（リアル話）",
+          "しばらく待ってると黄色　赤を経過して灰色になって白死亡　まぁわかってた（予知夢）",
+          "ナイトが強いのは当然に決まっている",
+          "月光に嫉妬するのは良いとしても現時点で最強なのは間違いなく総合ﾄｯﾌﾟでムーンライト",
+          "弱いという証拠を出せといわれても出せるわけがないと言う理屈で最初から俺の勝率は１００％だった",
+          "ま、警察にも知り合いがいるからお前らもﾎﾞｺらるる前に注意するんだな。勝敗は決まってるからこれ以上は時間の無駄なので消えるわ",
+          "次見に来た時もしそのどっちが実現してたら通報が確定的"
+        ]
+      },
+      {
+        "id": "attention_call",
+        "label": "注意喚起・呼び止め",
+        "count": 7,
+        "examples": [
+          "ﾏｼﾞできもいぞ、見てて気分が悪くなる先に言っておくが俺は結構気が早いからな",
+          "ほらみたことかいきなり侍の卑劣な行動が始ってしまった証拠のログは確保したからな言い逃れは出来ない",
+          "見ろ、見事なカウンターで返した",
+          "（先に言っておくが四天王とかそういう幼稚なネタはないから）",
+          "肝に覚えておけ",
+          "リーダーに「何か言う事はないか？」というとリーダーはテルで「もう残る気はないのか？；」と言ってきたが俺は「おいィ？お前らは今の言葉聞こえたか？」といったら",
+          "俺はソルを使い手なんだが相手が残念な事にカイを使ってきたので「お前それで良いのか？」と言うと「何いきなり話かけて来てるわけ？」と言われた。"
+        ]
+      },
+      {
+        "id": "repair_correction",
+        "label": "訂正・自己修復",
+        "count": 7,
+        "examples": [
+          "月光に嫉妬するのは良いとしても現時点で最強なのは間違いなく総合ﾄｯﾌﾟでムーンライト",
+          "俺の意見が間違っていなかったと言う証拠にもなるな",
+          "人が間違ってりみたいに言うなよら、証拠見せてみろよ？",
+          "「最強ですね」とか「侍つよすぐる」とかいつも言われてたから間違いない、侍は強すぎた。",
+          "勘違いしている物がいるがナイトは盾としても最高級だが",
+          "お前らに相談したのが間違いだったと気付かせてもらったしお礼は生傷でいいらしいな",
+          "おれはしゃがみダストで回避、これは一歩間違えるとｶｳﾝﾀｰで大ﾀﾞﾒｰｼﾞを受ける隠し技なので後ろのギャラリーが拍手し出した。"
+        ]
+      },
+      {
+        "id": "agreement",
+        "label": "同意・陣営化",
+        "count": 6,
+        "examples": [
+          "激しく同意ですね",
+          "ただ俺と同じ意見の人がいたと言うことは",
+          "自分から墓掘ってるしな、、俺は今日来たのが初めてきたから俺と同意見の人がいると言う事は",
+          "俺は「」確かになとみとめているが「俺が望んだ事ではない」という意見",
+          "俺はナイトでは無いが>>1の意見には大賛成だななぜらば盾が盾もって無いとおかしいし",
+          "衝撃的同意"
+        ]
+      },
+      {
+        "id": "withdrawal_closure",
+        "label": "撤退・話題の打ち切り",
+        "count": 6,
+        "examples": [
+          "あまり調子に乗ってると裏世界でひっそり幕を閉じる",
+          "じゃあなｶｽ猿",
+          "じゃ闇系の仕事が今からあるからこれで",
+          "偶然にも１みたいなこうゆう奴みたいなのがいるんだが俺のＬＳでは完全にシャッタアウトされていた",
+          "ここで一歩引くのが大人の醍醐味",
+          "このスレはしんだ結局スレ主の悩みは解決出来ないままスレは死んだ"
+        ]
+      },
+      {
+        "id": "gratitude",
+        "label": "感謝・返礼",
+        "count": 4,
+        "examples": [
+          "俺＞ そうですかありがとうグラットンすごいですね",
+          "黒達は「今まで魔法を抑えて来てた」「本気を出せない辛いレベル上げだった」と感謝の言葉が思わず出ていた・・",
+          "お前らに相談したのが間違いだったと気付かせてもらったしお礼は生傷でいいらしいな",
+          "今回のでそれが良くわかったよ>>199感謝"
+        ]
+      }
+    ]
+  },
+  "moveSequences": {
+    "postsWithMultipleMoves": 897,
+    "topTransitions": [
+      {
+        "value": "power_action -> pseudo_logic",
+        "count": 57
+      },
+      {
+        "value": "opponent_evaluation -> pseudo_logic",
+        "count": 47
+      },
+      {
+        "value": "pseudo_logic -> opponent_evaluation",
+        "count": 40
+      },
+      {
+        "value": "denial_disclaimer -> pseudo_logic",
+        "count": 35
+      },
+      {
+        "value": "power_action -> self_rank",
+        "count": 35
+      },
+      {
+        "value": "opponent_evaluation -> power_action",
+        "count": 31
+      },
+      {
+        "value": "self_rank -> power_action",
+        "count": 25
+      },
+      {
+        "value": "opponent_evaluation -> self_rank",
+        "count": 24
+      },
+      {
+        "value": "opponent_evaluation -> threat_warning",
+        "count": 24
+      },
+      {
+        "value": "power_action -> opponent_evaluation",
+        "count": 24
+      },
+      {
+        "value": "power_action -> threat_warning",
+        "count": 21
+      },
+      {
+        "value": "pseudo_logic -> power_action",
+        "count": 21
+      },
+      {
+        "value": "pseudo_logic -> social_typing",
+        "count": 21
+      },
+      {
+        "value": "self_rank -> pseudo_logic",
+        "count": 21
+      },
+      {
+        "value": "social_typing -> power_action",
+        "count": 21
+      },
+      {
+        "value": "opponent_evaluation -> denial_disclaimer",
+        "count": 20
+      },
+      {
+        "value": "pseudo_logic -> self_rank",
+        "count": 20
+      },
+      {
+        "value": "denial_disclaimer -> opponent_evaluation",
+        "count": 19
+      },
+      {
+        "value": "pseudo_logic -> denial_disclaimer",
+        "count": 19
+      },
+      {
+        "value": "threat_warning -> opponent_evaluation",
+        "count": 18
+      },
+      {
+        "value": "threat_warning -> pseudo_logic",
+        "count": 17
+      },
+      {
+        "value": "denial_disclaimer -> power_action",
+        "count": 15
+      },
+      {
+        "value": "denial_disclaimer -> self_rank",
+        "count": 12
+      },
+      {
+        "value": "pseudo_logic -> evidence",
+        "count": 12
+      },
+      {
+        "value": "pseudo_logic -> threat_warning",
+        "count": 12
+      },
+      {
+        "value": "power_action -> denial_disclaimer",
+        "count": 11
+      },
+      {
+        "value": "self_rank -> opponent_evaluation",
+        "count": 11
+      },
+      {
+        "value": "social_typing -> opponent_evaluation",
+        "count": 11
+      },
+      {
+        "value": "metalinguistic -> opponent_evaluation",
+        "count": 10
+      },
+      {
+        "value": "opponent_evaluation -> social_typing",
+        "count": 10
+      },
+      {
+        "value": "threat_warning -> power_action",
+        "count": 10
+      },
+      {
+        "value": "challenge_retort -> power_action",
+        "count": 9
+      },
+      {
+        "value": "evidence -> power_action",
+        "count": 9
+      },
+      {
+        "value": "opponent_evaluation -> evidence",
+        "count": 9
+      },
+      {
+        "value": "power_action -> challenge_retort",
+        "count": 9
+      },
+      {
+        "value": "denial_disclaimer -> evidence",
+        "count": 8
+      },
+      {
+        "value": "evidence -> opponent_evaluation",
+        "count": 8
+      },
+      {
+        "value": "metalinguistic -> pseudo_logic",
+        "count": 8
+      },
+      {
+        "value": "opponent_evaluation -> instruction",
+        "count": 8
+      },
+      {
+        "value": "social_typing -> pseudo_logic",
+        "count": 8
+      }
+    ],
+    "examples": [
+      {
+        "postId": "post_00038_4d9314da20098a0d",
+        "responseNumber": 496,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/496",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "metalinguistic",
+          "threat_warning"
+        ],
+        "excerpt": "じゃあおまえはもっとカッコイイ名前なのかよ 調子こいてると殺すべ？"
+      },
+      {
+        "postId": "post_00046_66f0b2638673ed1c",
+        "responseNumber": 530,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/530",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "opponent_evaluation",
+          "threat_warning"
+        ],
+        "excerpt": "てめえら、偽者やめろ 殺すぞ"
+      },
+      {
+        "postId": "post_00047_322613e1128b42c2",
+        "responseNumber": 555,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/555",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "opponent_evaluation",
+          "denial_disclaimer"
+        ],
+        "excerpt": "これで偽者は出ないべ？ おまえらとは頭の出来が違うべ？"
+      },
+      {
+        "postId": "post_00068_2a9c7823d2211c6f",
+        "responseNumber": 762,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/762",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "threat_warning",
+          "opponent_evaluation"
+        ],
+        "excerpt": "本当は殺されるのが怖くなっただけだろ 馬鹿"
+      },
+      {
+        "postId": "post_00075_4f53a6e17c0f0a34",
+        "responseNumber": 841,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/841",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "opponent_evaluation",
+          "fear_submission"
+        ],
+        "excerpt": "みんなロト馬鹿にしてるけど 本当に不良だったら怖いよな もし会ったら誰も文句言えないぞ"
+      },
+      {
+        "postId": "post_00085_83974181ddeea376",
+        "responseNumber": 921,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/921",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "opponent_evaluation"
+        ],
+        "excerpt": "偽者だぞこいつ 馬鹿だな"
+      },
+      {
+        "postId": "post_00097_ea74bb006a71ff91",
+        "responseNumber": 982,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021186573/982",
+        "threadTitle": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+        "moves": [
+          "opponent_evaluation",
+          "threat_warning"
+        ],
+        "excerpt": "偽者はおまえだろ 勝手にURL出すな馬鹿 殺す"
+      },
+      {
+        "postId": "post_00105_d47a9d04a4d7f265",
+        "responseNumber": 84,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021194561/84",
+        "threadTitle": "【ブーブーと】ｽﾊﾟﾛﾎﾞIMNACT142【夜は更けて】",
+        "moves": [
+          "opponent_evaluation"
+        ],
+        "excerpt": "馬鹿はおまえだろ 俺のどこが馬鹿だよ？ 調子こくな"
+      },
+      {
+        "postId": "post_00107_8de696882bf4e623",
+        "responseNumber": 94,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021194561/94",
+        "threadTitle": "【ブーブーと】ｽﾊﾟﾛﾎﾞIMNACT142【夜は更けて】",
+        "moves": [
+          "opponent_evaluation"
+        ],
+        "excerpt": "偽者発見 こいつは馬鹿だ"
+      },
+      {
+        "postId": "post_00111_6ec7eb25d77ffb66",
+        "responseNumber": 130,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021194561/130",
+        "threadTitle": "【ブーブーと】ｽﾊﾟﾛﾎﾞIMNACT142【夜は更けて】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "メガトンパンチもあるぞ ギガトンパンチのパワーアップした技だ"
+      },
+      {
+        "postId": "post_00131_5a2310ec15e6e767",
+        "responseNumber": 473,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/473",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "opponent_evaluation",
+          "self_rank"
+        ],
+        "excerpt": "おまえらロトさん馬鹿にしてると死ぬぞ ロトさんは喧嘩が最強に強いからよ"
+      },
+      {
+        "postId": "post_00135_d0d23d4e68c12cfa",
+        "responseNumber": 498,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/498",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "instruction",
+          "prediction_certainty",
+          "power_action"
+        ],
+        "excerpt": "おまえらロトさんの怖さ知らないから調子こいてるけど 喧嘩が強いから会ったらびびるに決まってる ロトさんのギガトンパンチは強くて強力なパワーだ"
+      },
+      {
+        "postId": "post_00156_04b91a7bc481851b",
+        "responseNumber": 699,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/699",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "social_typing",
+          "self_rank"
+        ],
+        "excerpt": "ロト 格闘 250 射撃 200 命中 150 回避 150 技量 140 ＳＰ 150 奇襲 鼓舞 見切り 覚醒 魂 奇跡 ニュータイプ ２回行動 集中力 起死回生 搭乗ユニット 全てのロボットを乗りこなす超天才パイロット 登場作品 伝説の勇者ロト"
+      },
+      {
+        "postId": "post_00157_0cfb540f90200599",
+        "responseNumber": 703,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/703",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "social_typing",
+          "self_rank"
+        ],
+        "excerpt": "ロト 格闘 250 射撃 200 命中 150 回避 150 技量 140 ＳＰ 150 奇襲 鼓舞 見切り 覚醒 魂 奇跡 ニュータイプ ２回行動 集中力 起死回生 搭乗ユニット 全てのロボットを乗りこなす超天才パイロット 登場作品 伝説の勇者ロト"
+      },
+      {
+        "postId": "post_00158_b07b45e6619691b7",
+        "responseNumber": 705,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/705",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "social_typing",
+          "self_rank"
+        ],
+        "excerpt": "ロト 格闘 250 射撃 200 命中 150 回避 150 技量 140 ＳＰ 150 奇襲 鼓舞 見切り 覚醒 魂 奇跡 ニュータイプ ２回行動 集中力 起死回生 搭乗ユニット 全てのロボットを乗りこなす超天才パイロット 登場作品 伝説の勇者ロト"
+      },
+      {
+        "postId": "post_00159_36ebb22614cbb081",
+        "responseNumber": 712,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/712",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action",
+          "self_rank"
+        ],
+        "excerpt": "ロトさん強すぎだよな これでゼータツー乗ったら最強だべ？"
+      },
+      {
+        "postId": "post_00161_f40b099f2186554f",
+        "responseNumber": 752,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/752",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00163_843cf46ec0a2dc43",
+        "responseNumber": 766,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/766",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00164_90e66a7a84fda662",
+        "responseNumber": 770,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/770",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00165_54edf9168d0ff4fd",
+        "responseNumber": 772,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/772",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00166_001d209892081a6f",
+        "responseNumber": 784,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/784",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00167_837110065af4e4c3",
+        "responseNumber": 789,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/789",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00168_0de237067ae712a5",
+        "responseNumber": 801,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/801",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ ＨＰ ９００００ ＥＮ １０００ 運動性 ３００ 装甲 ３５００ 限界 ９９９ 移動力 ２０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガトンパンチｐ １～６ ８０００ メガトンパンチｐ １～１０ １００００"
+      },
+      {
+        "postId": "post_00169_aa564512a17d2b4a",
+        "responseNumber": 816,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/816",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２（強化型） ＨＰ １６００００ ＥＮ ２５００ 運動性 ６００ 装甲 ９０００ 限界 ５０００ 移動力 ５０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガデインmap １～１２ ７５００ ギガスラッシュｐ １～３ ９０００ 超ギガトンパンチｐ １～６ １２０００ 超メガトンパンチｐ １～１０ １５０００ 真ギガスラッシュｐ １～１５ ２００００"
+      },
+      {
+        "postId": "post_00170_a72d151a8a3ce60a",
+        "responseNumber": 820,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/820",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２（強化型） ＨＰ １６００００ ＥＮ ２５００ 運動性 ６００ 装甲 ９０００ 限界 ５０００ 移動力 ５０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガデインmap １～１２ ７５００ ギガスラッシュｐ １～３ ９０００ 超ギガトンパンチｐ １～６ １２０００ 超メガトンパンチｐ １～１０ １５０００ 真ギガスラッシュｐ １～１５ ２００００"
+      },
+      {
+        "postId": "post_00173_28c4a6a04dec9850",
+        "responseNumber": 846,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/846",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２（強化型） ＨＰ １６００００ ＥＮ ２５００ 運動性 ６００ 装甲 ９０００ 限界 ５０００ 移動力 ５０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガデインmap １～１２ ７５００ ギガスラッシュｐ １～３ ９０００ 超ギガトンパンチｐ １～６ １２０００ 超メガトンパンチｐ １～１０ １５０００ 真ギガスラッシュｐ １～１５ ２００００"
+      },
+      {
+        "postId": "post_00174_5bb1b40db39a81b7",
+        "responseNumber": 876,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/876",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２（強化型） ＨＰ １６００００ ＥＮ ２５００ 運動性 ６００ 装甲 ９０００ 限界 ５０００ 移動力 ５０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガデインmap １～１２ ７５００ ギガスラッシュｐ １～３ ９０００ 超ギガトンパンチｐ １～６ １２０００ 超メガトンパンチｐ １～１０ １５０００ 真ギガスラッシュｐ １～１５ ２００００"
+      },
+      {
+        "postId": "post_00175_102aa8d957456761",
+        "responseNumber": 898,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021266040/898",
+        "threadTitle": "【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２（強化型） ＨＰ １６００００ ＥＮ ２５００ 運動性 ６００ 装甲 ９０００ 限界 ５０００ 移動力 ５０ バルカン １～３ ３０００ メガビームライフル ２～１０ ４０００ スーパーソードｐ １～２ ５０００ ロトの剣ｐ １～３ ６０００ ギガデインmap １～１２ ７５００ ギガスラッシュｐ １～３ ９０００ 超ギガトンパンチｐ １～６ １２０００ 超メガトンパンチｐ １～１０ １５０００ 真ギガスラッシュｐ １～１５ ２００００"
+      },
+      {
+        "postId": "post_00204_712b8647b3966056",
+        "responseNumber": 564,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021294905/564",
+        "threadTitle": "【ｲｹｲｹﾎﾞｸﾗﾉ】スパロボインパクト148【ﾄﾘﾌﾟﾙｼﾞﾑ】",
+        "moves": [
+          "agreement",
+          "opponent_evaluation"
+        ],
+        "excerpt": "激しく同意 馬鹿だよな５５５は"
+      },
+      {
+        "postId": "post_00240_d1ded8ac7fee1f35",
+        "responseNumber": 750,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021377581/750",
+        "threadTitle": "【君が望む】スパロボインパクト152【ﾌｫﾙﾂｧ!】",
+        "moves": [
+          "opponent_evaluation",
+          "threat_warning"
+        ],
+        "excerpt": "ちっげーよ馬鹿 俺は不良だぞ 適当言ってっと殺すべ"
+      },
+      {
+        "postId": "post_00243_7cd73eee27ca32d4",
+        "responseNumber": 560,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/560",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝900） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00244_d61c5a71df2351bf",
+        "responseNumber": 575,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/575",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00247_f06f015e8b602c6c",
+        "responseNumber": 589,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/589",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1100） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00248_08e3f95b9d995f22",
+        "responseNumber": 591,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/591",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00253_2f49140430f15eb7",
+        "responseNumber": 616,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/616",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00254_edeae9b278aec3a3",
+        "responseNumber": 618,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/618",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00257_b0dd2bbde2a90909",
+        "responseNumber": 639,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/639",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00258_8fd22f7604b151fb",
+        "responseNumber": 640,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/640",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00260_e138a54643f8efef",
+        "responseNumber": 650,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021420985/650",
+        "threadTitle": "【逝け！】スパロボインパクト155【グローバイン】",
+        "moves": [
+          "metalinguistic",
+          "denial_disclaimer"
+        ],
+        "excerpt": "ギガって雷って意味だべ？ ギガデインは雷の呪文じゃねーか？ メガとは関係ないべ？"
+      },
+      {
+        "postId": "post_00332_35d04697aa01c479",
+        "responseNumber": 593,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021445035/593",
+        "threadTitle": "【燃えろ！】スパロボＩＭＰＡＣＴ156【ｲｲｵﾄｺ】",
+        "moves": [
+          "metalinguistic",
+          "pseudo_logic"
+        ],
+        "excerpt": "おまえら頭悪ぃから教えてやる メガは強いという意味だ メガビームライフルは強いビームライフルだべ？ ギガはギガデインっていうくらいだから雷って意味"
+      },
+      {
+        "postId": "post_00338_66efdc82b69c1dbf",
+        "responseNumber": 769,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/769",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00339_99333cd6a9a3cdeb",
+        "responseNumber": 773,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/773",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00343_e3446426fd4ff949",
+        "responseNumber": 814,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/814",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00344_895455b5f115fe47",
+        "responseNumber": 837,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/837",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "スーパー・ロト専用ゼータ２ HP：１６００００ EN：２０００ 装甲：５５００ 運動性：６５０ 限 界 ：２０００ 移動力： ２０ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ ライデイン 3500 １～１０ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ スーパーソード[P] 4800 １～３ スーパーメガビームライフル"
+      },
+      {
+        "postId": "post_00345_7a95e57f05185894",
+        "responseNumber": 853,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/853",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "スーパー・ロト専用ゼータ２ HP：１６００００ EN：２０００ 装甲：５５００ 運動性：６５０ 限 界 ：２０００ 移動力： ２０ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ ライデイン 3500 １～１０ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ スーパーソード[P] 4800 １～３ スーパーメガビームライフル"
+      },
+      {
+        "postId": "post_00346_2a8e8e4c88e46742",
+        "responseNumber": 874,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/874",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "denial_disclaimer",
+          "opponent_evaluation"
+        ],
+        "excerpt": "ギガとメガは関係ないべ？ まだ言ってるのかよ 頭悪ぃな ギガデインはあるけどメガデインはないだろ ギガスラッシュはあるけどメガスラッシュはないだろ 馬鹿"
+      },
+      {
+        "postId": "post_00349_2c6bedda93972fb7",
+        "responseNumber": 953,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021457919/953",
+        "threadTitle": "【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト（生身） HP：８０００ EN：５００ 装甲：１０００ 運動性：３５０ 限 界 ：１０００ 移動力： １０ サイズ ： S 地形適応：陸/S 水中/S 空/S 宇宙/S パンチ[P] 1000 １～３ キック[P] 1100 １～４ サンダーキック[P] 1500 １～５ ダークアタック[P] 1800 １ ロトの剣[P] 2500 １～２ 回転ソード斬りアタック 3200 １～８ ギガトンパンチ[P] 4000 １～２ メガトンパンチ[P] 5000 １～３ ギガスラッ"
+      },
+      {
+        "postId": "post_00350_895efdb5984583d5",
+        "responseNumber": 19,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/19",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト（生身） HP：８０００ EN：５００ 装甲：１０００ 運動性：３５０ 限 界 ：１０００ 移動力： １０ サイズ ： S 地形適応：陸/S 水中/S 空/S 宇宙/S パンチ[P] 1000 １～３ キック[P] 1100 １～４ サンダーキック[P] 1500 １～５ ダークアタック[P] 1800 １ ロトの剣[P] 2500 １～２ 回転ソード斬りアタック 3200 １～８ ギガトンパンチ[P] 4000 １～２ メガトンパンチ[P] 5000 １～３ ギガスラッ"
+      },
+      {
+        "postId": "post_00351_f3148d83c01dbfbc",
+        "responseNumber": 23,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/23",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00352_df9ef702df56c5dd",
+        "responseNumber": 25,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/25",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00353_88d921592d5bf7fd",
+        "responseNumber": 26,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/26",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00354_b041581f2a485cc2",
+        "responseNumber": 27,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/27",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "スーパー・ロト専用ゼータ２ HP：１６００００ EN：２０００ 装甲：５５００ 運動性：６５０ 限 界 ：２０００ 移動力： ２０ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ ライデイン 3500 １～１０ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ スーパーソード[P] 4800 １～３ スーパーメガビームライフル"
+      },
+      {
+        "postId": "post_00359_96d9141e74e70f88",
+        "responseNumber": 82,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/82",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "challenge_retort",
+          "denial_disclaimer"
+        ],
+        "excerpt": "ロトの剣で勝負だ ゼータ２は伊達じゃない"
+      },
+      {
+        "postId": "post_00362_fe4a64596b0a22ba",
+        "responseNumber": 129,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/129",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "俺のパンチ力ってすごいぜ おまえらひきこもりだから腕力の力が弱いだべな？"
+      },
+      {
+        "postId": "post_00363_00029770676a5734",
+        "responseNumber": 140,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/140",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action",
+          "threat_warning"
+        ],
+        "excerpt": "俺はパンチ力６０以上はあるしよ おまえら殴ったら即死で瞬殺で倒せるべ？"
+      },
+      {
+        "postId": "post_00364_0ced2420aa08bd59",
+        "responseNumber": 334,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/334",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00365_b2e9c77d579d854b",
+        "responseNumber": 460,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/460",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00366_1b9de798820905a5",
+        "responseNumber": 466,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021468785/466",
+        "threadTitle": "【ﾄﾞﾘﾙ】スパロボＩＭＰＡＣＴ158【ちんちん】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00373_5fb7ecb98cf4945b",
+        "responseNumber": 138,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/138",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00374_a382f9c2f4fcb423",
+        "responseNumber": 143,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/143",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00376_3070c9564b4f8b27",
+        "responseNumber": 160,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/160",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00380_578aaef7005e8747",
+        "responseNumber": 176,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/176",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "threat_warning"
+        ],
+        "excerpt": "俺はパンチ力の力が強いべ おまえら殴ったら死ぬぞ"
+      },
+      {
+        "postId": "post_00381_2ec010be497d064c",
+        "responseNumber": 185,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/185",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "threat_warning"
+        ],
+        "excerpt": "おまえら腕力パワーがないからパンチ力弱いべ？ 俺は６０あるからよおまえら瞬殺だべな"
+      },
+      {
+        "postId": "post_00385_ebaaad38ab43c67c",
+        "responseNumber": 200,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/200",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "repair_correction",
+          "opponent_evaluation"
+        ],
+        "excerpt": "１９９は間違い 偽者 馬鹿だな"
+      },
+      {
+        "postId": "post_00387_3e0d342ede30e13f",
+        "responseNumber": 214,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/214",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "pseudo_logic",
+          "opponent_evaluation"
+        ],
+        "excerpt": "俺は不良だからよ 敵が多いべ？ 雑魚が何人いようと俺は勝つけどよ"
+      },
+      {
+        "postId": "post_00389_4b7e20f3ab8bf6f4",
+        "responseNumber": 227,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/227",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "self_rank",
+          "victory_result"
+        ],
+        "excerpt": "隠しシナリオは伝説のロト編だべ？ シャアを倒したあとの俺の活躍が話になっている"
+      },
+      {
+        "postId": "post_00397_e7a75cf8c468a8ca",
+        "responseNumber": 273,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/273",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "self_rank",
+          "power_action"
+        ],
+        "excerpt": "ロンドベルと合流した伝説のロトだがよ 俺が強すぎるから仲間じゃなくてロンドベル全員が俺の部下になるのがロト編"
+      },
+      {
+        "postId": "post_00400_9bf2b976d7cfd4ba",
+        "responseNumber": 296,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/296",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00401_19215688d4df6642",
+        "responseNumber": 298,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/298",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00406_0259b4f0cbff6063",
+        "responseNumber": 350,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/350",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "pseudo_logic",
+          "denial_disclaimer"
+        ],
+        "excerpt": "だから同じだって言ってるべ どう違うんだよ"
+      },
+      {
+        "postId": "post_00412_ad00a21ebe27eab3",
+        "responseNumber": 385,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/385",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00413_30182c37b0f9d976",
+        "responseNumber": 392,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/392",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00416_feb7f84f9e30e1fc",
+        "responseNumber": 498,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/498",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action",
+          "pseudo_logic",
+          "social_typing"
+        ],
+        "excerpt": "勇者ロト レベル 99 ＥＸＰ 49000 気力 150 ＮＥＸＴ 0 性格 超強気 精神コマンド ＳＰ 999/999 奇襲 魂 気合 見切り 覚醒 奇跡 格闘 300 技量 250 射撃 300 防御 250 命中 350 回避 350 （+650＝1000） 特殊技能 ニュータイプＬ９ 予知能力 先手必勝 ２回行動"
+      },
+      {
+        "postId": "post_00417_aeb419202aad50ad",
+        "responseNumber": 499,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021544158/499",
+        "threadTitle": "【逝って】スパロボインパクト161【しまえぇぇ】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ロト専用ゼータ２ HP：９００００ EN：１０００ 装甲：３０００ 運動性：６５０ 限 界 ：２０００ 移動力： １５ サイズ ： M 地形適応：陸/S 水中/S 空/S 宇宙/S バルカン[P] 2500 1～３ ビールライフル[P] 3000 １～４ ロトの剣[P] 3000 １～２ メガビームライフル 4000 １～８ ギガデイン[MAP] 4200 １～１２ ギガトンパンチ[P] 5000 １～４ ギガスラッシュ[MAP] 6500 １～９ メガトンパンチ[P] 99"
+      },
+      {
+        "postId": "post_00437_cddae00639a261ba",
+        "responseNumber": 182,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/182",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "pseudo_logic"
+        ],
+        "excerpt": "俺の乗ってるバイクもゼータ２だべ？ 俺は不良だからヘルメットかぶらないしよ だから５００キロ出るべ"
+      },
+      {
+        "postId": "post_00439_d2cd5da4c205a8a4",
+        "responseNumber": 197,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/197",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "social_typing"
+        ],
+        "excerpt": "ＤＲＡＫは喧嘩チームだべ？ 暴走族みたいなダサイチームは違う 喧嘩のマスターした達人が強いのが集まる"
+      },
+      {
+        "postId": "post_00453_abfd0bf2d9ad9e83",
+        "responseNumber": 295,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/295",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "pseudo_logic"
+        ],
+        "excerpt": "公式は測ってないだから関係ない 俺は不良だから"
+      },
+      {
+        "postId": "post_00454_71bdde470d13501d",
+        "responseNumber": 301,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/301",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "opponent_evaluation"
+        ],
+        "excerpt": "馬鹿だな 俺は本気出せば１００億万になる おまえ負け認ろよ 馬鹿"
+      },
+      {
+        "postId": "post_00458_c7c789e4ccbf9651",
+        "responseNumber": 337,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/337",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "threat_warning"
+        ],
+        "excerpt": "まずサンダーキックで雷のダメージで蹴る その次はダークアタックで大きなダメージで倒す そのあと起き上がったらロトの剣でギガスラッシュの技を撃って斬る とどめでギガトンパンチで殴って殺す"
+      },
+      {
+        "postId": "post_00459_70e5a5d3fb5537f1",
+        "responseNumber": 342,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/342",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "threat_warning",
+          "opponent_evaluation"
+        ],
+        "excerpt": "これでおまえは死ぬ おまえは口だけだからどうやって殺すんだよ"
+      },
+      {
+        "postId": "post_00465_3a5ad052dd86cfa3",
+        "responseNumber": 370,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/370",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "pseudo_logic",
+          "threat_warning"
+        ],
+        "excerpt": "無理だからやめろ 殺すのはおまえが俺を殺すからおまえは死ぬしかない"
+      },
+      {
+        "postId": "post_00467_2998faee866afd6a",
+        "responseNumber": 386,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/386",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "pseudo_logic",
+          "threat_warning",
+          "opponent_evaluation"
+        ],
+        "excerpt": "だからしつこいんだよおまえ おまえが俺に勝てなくておまえが死ぬ 馬鹿"
+      },
+      {
+        "postId": "post_00469_ee0181551ce0032d",
+        "responseNumber": 406,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021649289/406",
+        "threadTitle": "【タカラ】スパロボインパクト166【暴走】",
+        "moves": [
+          "repair_correction",
+          "opponent_evaluation"
+        ],
+        "excerpt": "必死なのはおまえだろ 変換間違えてるしよ 頭悪ぃな 馬鹿"
+      },
+      {
+        "postId": "post_00476_1f76c2e8071d58cf",
+        "responseNumber": 377,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021735561/377",
+        "threadTitle": "【ほとんど】スパロボインパクト170【雑談】",
+        "moves": [
+          "opponent_evaluation",
+          "threat_warning"
+        ],
+        "excerpt": "おまえ馬鹿だな おまえは今死ぬぞ"
+      },
+      {
+        "postId": "post_00481_9393b67b2357f3fa",
+        "responseNumber": 411,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021735561/411",
+        "threadTitle": "【ほとんど】スパロボインパクト170【雑談】",
+        "moves": [
+          "opponent_evaluation",
+          "threat_warning"
+        ],
+        "excerpt": "なんなんだよ おまえは馬鹿だな ロトさんを切れたら死ぬ"
+      },
+      {
+        "postId": "post_00497_0751f3ed1838d751",
+        "responseNumber": 995,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021735599/995",
+        "threadTitle": "【大人になれよ】ＳＲＷ１７０【みんな】",
+        "moves": [
+          "pseudo_logic",
+          "reaction_inference"
+        ],
+        "excerpt": "俺は不良だからよ びびってないべ"
+      },
+      {
+        "postId": "post_00501_0bff7c1295d78f91",
+        "responseNumber": 30,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021788288/30",
+        "threadTitle": "【線路は続くよ】ＳＲＷ１７１【どこまでも】",
+        "moves": [
+          "threat_warning",
+          "power_action"
+        ],
+        "excerpt": "おまえ死ぬべ？ ギガトンパンチ使うぞ"
+      },
+      {
+        "postId": "post_00504_98dbb86e4db6e505",
+        "responseNumber": 54,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021788288/54",
+        "threadTitle": "【線路は続くよ】ＳＲＷ１７１【どこまでも】",
+        "moves": [
+          "challenge_retort",
+          "opponent_evaluation"
+        ],
+        "excerpt": "ロトの剣で勝負だべ かかってこいよ 馬鹿が"
+      },
+      {
+        "postId": "post_00514_aac2a2df30806227",
+        "responseNumber": 121,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021788288/121",
+        "threadTitle": "【線路は続くよ】ＳＲＷ１７１【どこまでも】",
+        "moves": [
+          "pseudo_logic",
+          "opponent_evaluation"
+        ],
+        "excerpt": "だから俺が別人じゃなくても荒らすのはやめろと言ってるべ？ なぜ荒らしをするんだ馬鹿"
+      },
+      {
+        "postId": "post_00520_5c15fc8dd2dc9326",
+        "responseNumber": 154,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021788288/154",
+        "threadTitle": "【線路は続くよ】ＳＲＷ１７１【どこまでも】",
+        "moves": [
+          "pseudo_logic",
+          "opponent_evaluation"
+        ],
+        "excerpt": "じゃあおまえは俺が112だってどういう証拠があるのかよ ないだろ馬鹿"
+      },
+      {
+        "postId": "post_00540_eeb84e96dd1bb5ce",
+        "responseNumber": 646,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/646",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝９４２）"
+      },
+      {
+        "postId": "post_00542_a413be631f4c3605",
+        "responseNumber": 661,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/661",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率 回避 ３７２（＋６５０＝１０４２）"
+      },
+      {
+        "postId": "post_00543_b3653d84418d656c",
+        "responseNumber": 667,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/667",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率 回避 ３７２（＋６５０＝９４２）"
+      },
+      {
+        "postId": "post_00544_539b15700521c50f",
+        "responseNumber": 670,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/670",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０４２）"
+      },
+      {
+        "postId": "post_00548_8311bc0f06f23dae",
+        "responseNumber": 807,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/807",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00549_3f2628593b1bd531",
+        "responseNumber": 818,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/818",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０４２）"
+      },
+      {
+        "postId": "post_00550_7275904dcda95948",
+        "responseNumber": 824,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/824",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00552_cde840d80dfd1968",
+        "responseNumber": 862,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/862",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00553_e87e6fef89985d09",
+        "responseNumber": 866,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/866",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00554_d5b92ba7b04cc8e6",
+        "responseNumber": 893,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/893",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00555_122013213c723456",
+        "responseNumber": 900,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/900",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00556_df5c753386f00cc0",
+        "responseNumber": 909,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/909",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00557_cfbacba06160e78d",
+        "responseNumber": 914,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/914",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00558_b46096b6e972c8bc",
+        "responseNumber": 921,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/921",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00559_80d97d2d529c2c27",
+        "responseNumber": 925,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/925",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00560_412f7be94ab215d4",
+        "responseNumber": 931,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/931",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00561_65297fbf59b82e40",
+        "responseNumber": 934,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/934",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00562_65d469ae5281acc3",
+        "responseNumber": 937,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/937",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00563_d34841c2f0211c48",
+        "responseNumber": 940,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/940",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00564_3c8c20e36784b154",
+        "responseNumber": 952,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/952",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00565_4b771f4c16c66ee3",
+        "responseNumber": 957,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/957",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00566_f48483545cc4dd27",
+        "responseNumber": 959,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021810538/959",
+        "threadTitle": "【ﾌﾟﾙ&ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00595_3d5c5bcb6a528141",
+        "responseNumber": 767,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021887946/767",
+        "threadTitle": "【ご奉仕】スパロボＩＭＰＡＣＴ178【するにゃん】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00597_0397029ff18486d4",
+        "responseNumber": 771,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021887946/771",
+        "threadTitle": "【ご奉仕】スパロボＩＭＰＡＣＴ178【するにゃん】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00604_8ae601c76b51dc13",
+        "responseNumber": 805,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021887946/805",
+        "threadTitle": "【ご奉仕】スパロボＩＭＰＡＣＴ178【するにゃん】",
+        "moves": [
+          "social_typing",
+          "self_rank"
+        ],
+        "excerpt": "現実じゃ北海道最強で喧嘩チームの総長 ネットゲーじゃ伝説のＰＫ 俺は何をやっても目立っちまうべ？"
+      },
+      {
+        "postId": "post_00615_664524480fd8b68d",
+        "responseNumber": 331,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021935264/331",
+        "threadTitle": "【全裸で】SRWインパクト181【スパロボ】",
+        "moves": [
+          "threat_warning"
+        ],
+        "excerpt": "ムツゴロウはもうすぐ死ぬ 俺がファイヤーキックの炎の火で燃やして蹴る"
+      },
+      {
+        "postId": "post_00620_77d0dee3db0fcf1d",
+        "responseNumber": 356,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021935264/356",
+        "threadTitle": "【全裸で】SRWインパクト181【スパロボ】",
+        "moves": [
+          "threat_warning"
+        ],
+        "excerpt": "亞理亞とムツゴロウは殺す まとめてタイマンでダークアタックを使ってまとめて倒して殺す"
+      },
+      {
+        "postId": "post_00626_096685d9a28e6a5c",
+        "responseNumber": 396,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021935264/396",
+        "threadTitle": "【全裸で】SRWインパクト181【スパロボ】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      },
+      {
+        "postId": "post_00627_2b6083cb3731e68f",
+        "responseNumber": 399,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021935264/399",
+        "threadTitle": "【全裸で】SRWインパクト181【スパロボ】",
+        "moves": [
+          "power_action"
+        ],
+        "excerpt": "ゼータ２（ロト） 修理費 １００００００ ＨＰ ９００００/９００００ サイズ Ｍ ＥＮ １０００/１０００ 移動力 １２ 運動性 ６５０ 装甲 ３５００ 移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ 限界 ２０００ 地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ ビーム・ライフル[P][B] ２５００ １～５ ライデイン[MAP] ２８００ １～７ サンダー・キック[P] ２９００ ２～６ ファイヤー・キック[P] ３０００ １～２ スーパー・ソード[P] ３５００ １～３ ロトの剣[P] ３８"
+      },
+      {
+        "postId": "post_00635_415634c5ee60a489",
+        "responseNumber": 444,
+        "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021935264/444",
+        "threadTitle": "【全裸で】SRWインパクト181【スパロボ】",
+        "moves": [
+          "social_typing",
+          "power_action",
+          "pseudo_logic"
+        ],
+        "excerpt": "勇者・ロト レベル ９９ ＥＸＰ ４９０００ 気力 １５０ ＮＥＸＴ ０ 性格 超強気 精神コマンド ＳＰ ９９９/９９９ 奇襲 気合 魂 見切り 覚醒 奇跡 特殊技能 戦闘能力 ニュータイプＬ９ 格闘 ４００ 技量 ３６２ ２回行動 射撃 ３８８ 防御 ３５５ 先手必勝 命中 ３９６ 統率Ｌ９ 回避 ３７２（＋６５０＝１０２２）"
+      }
+    ]
+  },
+  "surface": {
+    "parentheticalCount": 494,
+    "topParentheticals": [
+      {
+        "value": "リアル話",
+        "count": 85
+      },
+      {
+        "value": "苦笑",
+        "count": 24
+      },
+      {
+        "value": "笑",
+        "count": 16
+      },
+      {
+        "value": "ロト",
+        "count": 14
+      },
+      {
+        "value": "+650＝1000",
+        "count": 12
+      },
+      {
+        "value": "＋６５０＝１０２２",
+        "count": 10
+      },
+      {
+        "value": "リアル主義",
+        "count": 10
+      },
+      {
+        "value": "捏造",
+        "count": 8
+      },
+      {
+        "value": "怒",
+        "count": 6
+      },
+      {
+        "value": "強化型",
+        "count": 5
+      },
+      {
+        "value": "驚愕",
+        "count": 5
+      },
+      {
+        "value": "激怒",
+        "count": 5
+      },
+      {
+        "value": "切実",
+        "count": 5
+      },
+      {
+        "value": "賢者",
+        "count": 4
+      },
+      {
+        "value": "正義",
+        "count": 4
+      },
+      {
+        "value": "＋６５０＝１０４２",
+        "count": 3
+      },
+      {
+        "value": "苦笑；",
+        "count": 3
+      },
+      {
+        "value": "警告",
+        "count": 3
+      },
+      {
+        "value": "月",
+        "count": 3
+      },
+      {
+        "value": "謙虚",
+        "count": 3
+      },
+      {
+        "value": "証明",
+        "count": 3
+      },
+      {
+        "value": "法廷",
+        "count": 3
+      },
+      {
+        "value": "用心",
+        "count": 3
+      },
+      {
+        "value": "※",
+        "count": 2
+      },
+      {
+        "value": "＋６５０＝９４２",
+        "count": 2
+      },
+      {
+        "value": "４回攻撃",
+        "count": 2
+      },
+      {
+        "value": "ゲージの無駄",
+        "count": 2
+      },
+      {
+        "value": "ナイト別格",
+        "count": 2
+      },
+      {
+        "value": "パワーアップ後",
+        "count": 2
+      },
+      {
+        "value": "核心",
+        "count": 2
+      },
+      {
+        "value": "期待",
+        "count": 2
+      },
+      {
+        "value": "脅迫",
+        "count": 2
+      },
+      {
+        "value": "最悪",
+        "count": 2
+      },
+      {
+        "value": "最強攻撃",
+        "count": 2
+      },
+      {
+        "value": "思い遣り",
+        "count": 2
+      },
+      {
+        "value": "実証",
+        "count": 2
+      },
+      {
+        "value": "宿命",
+        "count": 2
+      },
+      {
+        "value": "勝訴",
+        "count": 2
+      },
+      {
+        "value": "生身",
+        "count": 2
+      },
+      {
+        "value": "不思議",
+        "count": 2
+      }
+    ],
+    "discourseMarkers": [
+      {
+        "marker": "だから",
+        "count": 433
+      },
+      {
+        "marker": "だが",
+        "count": 416
+      },
+      {
+        "marker": "しかも",
+        "count": 82
+      },
+      {
+        "marker": "やはり",
+        "count": 76
+      },
+      {
+        "marker": "まぁ",
+        "count": 36
+      },
+      {
+        "marker": "そもそも",
+        "count": 25
+      },
+      {
+        "marker": "ちなみに",
+        "count": 24
+      },
+      {
+        "marker": "ところが",
+        "count": 19
+      },
+      {
+        "marker": "つまり",
+        "count": 16
+      },
+      {
+        "marker": "なぜなら",
+        "count": 3
+      },
+      {
+        "marker": "因みに",
+        "count": 0
+      }
+    ],
+    "contentLineCount": 9232,
+    "finalPunctuationCount": 1021,
+    "finalPunctuationRate": 0.110594,
+    "firstPersonCounts": [
+      {
+        "value": "俺",
+        "count": 1259
+      },
+      {
+        "value": "おれ",
+        "count": 198
+      },
+      {
+        "value": "自分",
+        "count": 97
+      },
+      {
+        "value": "私",
+        "count": 38
+      },
+      {
+        "value": "僕",
+        "count": 11
+      },
+      {
+        "value": "オレ",
+        "count": 8
+      }
+    ],
+    "secondPersonCounts": [
+      {
+        "value": "おまえら",
+        "count": 292
+      },
+      {
+        "value": "おまえ",
+        "count": 284
+      },
+      {
+        "value": "お前",
+        "count": 266
+      },
+      {
+        "value": "お前ら",
+        "count": 164
+      }
+    ]
+  },
+  "novelStructure": {
+    "totals": {
+      "characterCount": 135114,
+      "paragraphCount": 4021,
+      "sentenceCount": 4530
+    },
+    "structure": {
+      "paragraphCount": 4021,
+      "dialogueCount": 499,
+      "narrativeCount": 3522,
+      "dialogueRate": 0.124098,
+      "paragraphLength": {
+        "minimum": 1,
+        "q25": 20,
+        "median": 30,
+        "q75": 41,
+        "maximum": 623,
+        "mean": 32.6
+      }
+    },
+    "motifs": {
+      "storyLead": 4,
+      "contrast": 408,
+      "selfRank": 135,
+      "reactionInference": 17,
+      "evidenceClaim": 142,
+      "expansion": 181,
+      "realWorldBridge": 150,
+      "aside": 203
+    }
+  }
+}
