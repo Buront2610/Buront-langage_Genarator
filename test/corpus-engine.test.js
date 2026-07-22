@@ -23,10 +23,10 @@ test("ログ・倉庫・改変集・名言集を読み込み、LLMを使用し�
   assert.equal(status.quoteSourceUrl, "https://kenkyonanight.xxxxxxxx.jp/goroku.html");
   assert.equal(status.anchorConstructions, 10);
   assert.equal(status.observedAnchors, 979);
-  assert.equal(status.faithfulQuoteExpressions, 33);
-  assert.equal(status.faithfulQuoteRecognizers, 33);
-  assert.equal(status.faithfulQuoteFunctionalRoles, 32);
-  assert.equal(status.faithfulQuoteEvidenceLinks, 33);
+  assert.equal(status.faithfulQuoteExpressions, 36);
+  assert.equal(status.faithfulQuoteRecognizers, 36);
+  assert.equal(status.faithfulQuoteFunctionalRoles, 35);
+  assert.equal(status.faithfulQuoteEvidenceLinks, 36);
 });
 
 test("段階的な文章比較を使い、行動と反応を構造ごと改変する", () => {
@@ -558,8 +558,13 @@ test("適当な観察文でも事実を保ったまま3候補を異なる機能�
   assert.doesNotMatch(options.map((option) => option.text).join("\n"), /勝負|感謝|深い悲しみ|一般人との格の違い/);
 });
 
-test("評価・危機・対抗・感謝・賛同・証拠を役割別の3構文へ振り分ける", () => {
+test("未来・評価・危機・対抗・感謝・賛同・証拠を役割別の3構文へ振り分ける", () => {
   const cases = [
+    {
+      source: "来月、端末12台を更新する予定だ。",
+      expected: ["future_preparation", "future_restraint", "future_certainty"],
+      forbidden: /更新した|見事な仕事|どこもおかしくはない/,
+    },
     {
       source: "このゲームは面白い。",
       expected: ["evaluation_rank", "evaluation_impact", "evaluation_elite"],
@@ -707,4 +712,176 @@ test("代表文候補から51展開型と10アンカー構文すべてへ到達�
   assert.deepEqual(quoteSignatures, new Set(Object.values(engine.contextNarrative.quoteGrammar.active).flat().map((item) => item.id)));
   assert.equal(anchorSignatures.size, 10);
   assert.deepEqual(anchorSignatures, new Set(engine.contextNarrative.anchorGrammar.status().constructions));
+});
+
+test("監査用のURLクエリを壊さず3候補すべてで完全保持する", () => {
+  const source = "結果をhttps://example.com/a?q=7へ送り、dev@example.jpに連絡した。";
+  const result = engine.convert(source, {
+    contextMode: "faithful",
+    level: 3,
+    seed: "audit-url-query",
+  });
+
+  assert.equal(result.suggestions.length, 3);
+  assert.ok(result.comparisons[0].options.every((option) => option.validation.passed));
+  assert.ok(result.suggestions.every((suggestion) => (
+    suggestion.text.includes("https://example.com/a?q=7")
+      && suggestion.text.includes("dev@example.jp")
+  )));
+});
+
+test("否定済み事故・未解決事故・未来予定・中立観察を別の出来事型へ分類する", () => {
+  const safeSource = "バックアップは失敗せず、顧客データも消えなかった。";
+  const unresolvedSource = "決済サービスの遅延が続き、26件の注文が処理待ちになっている。原因はまだ分からず、復旧予定も決まっていない。";
+  const futureSource = "来月、データベースを新しいサーバーへ移設する。対象は40台で、作業は二日間を予定している。";
+  const observationSource = "図書館の窓辺で猫が一匹眠っていた。";
+  const safe = engine.contextNarrative.extractModel(safeSource, splitSentences(safeSource));
+  const unresolved = engine.contextNarrative.extractModel(unresolvedSource, splitSentences(unresolvedSource));
+  const future = engine.contextNarrative.extractModel(futureSource, splitSentences(futureSource));
+  const observation = engine.contextNarrative.extractModel(observationSource, splitSentences(observationSource));
+
+  assert.equal(safe.eventFrame, "observation");
+  assert.equal(safe.hasCrisis, false);
+  assert.equal(safe.hasAchievement, false);
+  assert.equal(unresolved.eventFrame, "crisis");
+  assert.equal(unresolved.hasUnresolved, true);
+  assert.equal(unresolved.hasAchievement, false);
+  assert.equal(future.eventFrame, "future");
+  assert.equal(future.hasFuture, true);
+  assert.equal(future.hasAchievement, false);
+  assert.equal(observation.eventFrame, "observation");
+});
+
+test("否定の言い換え・未解決の言い換え・位置を表す『一番』を誤分類しない", () => {
+  const cases = [
+    ["observation", "バックアップに失敗することはなかった。"],
+    ["observation", "通信障害は発生しなかった。"],
+    ["crisis", "復旧の目処はまだ立っていない。"],
+    ["crisis", "解決の見通しがなく、原因も分かっていない。"],
+    ["observation", "一番左の棚に本が三冊並んでいた。"],
+    ["achievement", "全員の中で一番早く報告書を提出した。"],
+  ];
+
+  for (const [expected, source] of cases) {
+    const model = engine.contextNarrative.extractModel(source, splitSentences(source));
+    assert.equal(model.eventFrame, expected, source);
+  }
+});
+
+test("自然文から対抗者・感謝元・賛同先・証拠元を役割付きで抽出する", () => {
+  const cases = [
+    {
+      source: "田中が自分の方が速いと言い、作業時間は田中が22分で私は18分だった。",
+      expected: ["challenge_fangs", "challenge_prefixed", "challenge_vocative"],
+      anchor: />>田中/,
+    },
+    {
+      source: "中村の解説で仕組みが理解できたので礼を言った。",
+      expected: ["gratitude_fused", "gratitude_value", "gratitude_extended"],
+      anchor: />>中村/,
+    },
+    {
+      source: "鈴木の案に同意し、この方針で計画を進めることにした。",
+      expected: ["agreement_target", "agreement_reason", "agreement_value"],
+      anchor: />>鈴木/,
+    },
+    {
+      source: "監視ログには23時10分の停止記録が残っており、障害の原因を確認できた。",
+      expected: ["evidence_source", "evidence_embedded", "evidence_tail"],
+      anchor: />>監視ログ/,
+    },
+  ];
+
+  for (const [index, item] of cases.entries()) {
+    const result = engine.convert(item.source, {
+      contextMode: "faithful",
+      level: 3,
+      seed: `audit-natural-role-${index}`,
+    });
+    const options = result.comparisons.flatMap((comparison) => comparison.options);
+    const signatures = new Set(options.flatMap((option) => option.validation.faithfulQuoteSignatures));
+
+    assert.deepEqual(signatures, new Set(item.expected), item.source);
+    assert.ok(options.every((option) => item.anchor.test(option.text)), item.source);
+    assert.ok(options.every((option) => option.validation.passed), item.source);
+  }
+});
+
+test("未来と未解決の完全モードは完了や成功を捏造せず別々の3案を返す", () => {
+  const cases = [
+    {
+      source: "来月、データベースを新しいサーバーへ移設する。対象は40台で、作業は二日間を予定している。",
+      seed: "audit-full-future",
+      required: /手順|段取り|準備|実行前|始まっていない|シュミレート/,
+      forbidden: /移設した|完全\s*解決|今の結果が見えた|証明された/,
+    },
+    {
+      source: "決済サービスの遅延が続き、26件の注文が処理待ちになっている。原因はまだ分からず、復旧予定も決まっていない。",
+      seed: "audit-full-unresolved",
+      required: /未解決|復旧していない|決着はついていない|原因が確定していない|解決したふり/,
+      forbidden: /見事な仕事だと感心|どこもおかしくはない|完全\s*解決|今の結果が見えた|証明された/,
+    },
+  ];
+
+  for (const item of cases) {
+    const result = engine.convert(item.source, {
+      contextMode: "full",
+      level: 3,
+      seed: item.seed,
+    });
+    const options = result.comparisons[0].options;
+
+    assert.equal(options.length, 3, item.source);
+    assert.equal(new Set(options.map((option) => option.text)).size, 3, item.source);
+    assert.ok(options.every((option) => option.validation.passed), item.source);
+    assert.ok(options.every((option) => item.required.test(option.text)), item.source);
+    assert.ok(options.every((option) => !item.forbidden.test(option.text)), item.source);
+  }
+});
+
+test("時間文脈の検証器は未来・未解決を完了扱いした候補を不合格にする", () => {
+  const future = engine.validate(
+    "来月サーバーを移設する予定だ。",
+    "来月サーバーを移設する予定だったが移設した。見事な仕事だ。",
+    3,
+  );
+  const unresolved = engine.validate(
+    "障害の原因はまだ分からず復旧時刻も未定だ。",
+    "障害は完全解決した。見事な仕事だと感心はするがどこもおかしくはない。",
+    3,
+  );
+  const mixedSource = "前回は端末を更新した。来月はサーバーを切り替える予定だ。";
+  const retainedPast = engine.validate(
+    mixedSource,
+    `${mixedSource}\n俺は実行前から必要な手順まで見切っている`,
+    3,
+  );
+  const inventedDifferentCompletion = engine.validate(
+    mixedSource,
+    `${mixedSource}\nサーバーを切り替えた`,
+    3,
+  );
+
+  assert.equal(future.temporalContextMatch, false);
+  assert.equal(future.passed, false);
+  assert.equal(unresolved.temporalContextMatch, false);
+  assert.equal(unresolved.passed, false);
+  assert.equal(retainedPast.temporalContextMatch, true);
+  assert.equal(inventedDifferentCompletion.temporalContextMatch, false);
+  assert.match(`${future.warnings.join(" ")} ${unresolved.warnings.join(" ")}`, /完了済み/);
+});
+
+test("穏やかな風を含む中立観察は寒さ耐性や架空の解決へ変えない", () => {
+  const source = "公園の池で白い鳥が二羽泳ぎ、穏やかな風で水面が揺れていた。";
+  const result = engine.convert(source, {
+    contextMode: "full",
+    level: 3,
+    seed: "audit-neutral-wind",
+  });
+  const combined = result.comparisons[0].options.map((option) => option.text).join("\n");
+
+  assert.equal(result.suggestions.length, 3);
+  assert.ok(result.comparisons[0].options.every((option) => option.validation.passed));
+  assert.match(combined, /見切|細部|見落と/);
+  assert.doesNotMatch(combined, /ノーダメージ|黄金の鉄の塊|防御もかなりかたい|問題は一瞬で終了|完全\s*解決/);
 });

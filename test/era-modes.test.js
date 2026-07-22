@@ -130,3 +130,25 @@ test("長文の完全ブロントナイズでも各倉庫系列3構文と原文�
     assert.ok(options.every((option) => !option.text.includes("。")), profile.id);
   }
 });
+
+test("未来予定の完全モードでも9系列を使い分け、完了済みの武勇伝へ変えない", () => {
+  const source = "来月、端末12台を更新する予定だ。";
+
+  for (const profile of oracle.profiles) {
+    const result = engine.convert(source, {
+      contextMode: "full",
+      level: 3,
+      seed: `future-series-${profile.id}`,
+      series: profile.id,
+    });
+    const options = result.comparisons[0].options;
+    const eraSignatures = new Set(options.flatMap((option) => option.validation.eraSignatures));
+
+    assert.equal(options.length, 3, profile.id);
+    assert.deepEqual(eraSignatures, new Set(profile.allSignatures), profile.id);
+    assert.ok(options.every((option) => option.validation.passed), profile.id);
+    assert.ok(options.every((option) => option.validation.temporalContextMatch), profile.id);
+    assert.ok(options.every((option) => option.text.includes("12台")), profile.id);
+    assert.ok(options.every((option) => !/(?:端末12台を更新|作業)(?:した|済み|できた)/.test(option.text)), profile.id);
+  }
+});

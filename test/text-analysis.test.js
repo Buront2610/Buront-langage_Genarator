@@ -49,3 +49,13 @@ test("検証対象の数値と識別子を抽出する", () => {
   assert.ok(values.includes("https://example.com"));
   assert.ok(values.includes("API123"));
 });
+
+test("URLのクエリ記号を文末と誤認せず後続の日本語とメールを分離して保持する", () => {
+  const source = "結果をhttps://example.com/a?q=7へ送り、dev@example.jpに連絡した。";
+  const values = extractProtectedValues(source);
+
+  assert.deepEqual(splitSentences(source), [source]);
+  assert.ok(values.includes("https://example.com/a?q=7"));
+  assert.ok(values.includes("dev@example.jp"));
+  assert.ok(!values.includes("https://example.com/a?q=7へ送り、dev@example.jpに連絡した。"));
+});
