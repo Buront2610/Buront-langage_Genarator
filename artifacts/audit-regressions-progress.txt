@@ -1,0 +1,14 @@
+✔ A8 known temporal mismatch survives an unrelated unknown completion (2825.076ms)
+✔ A2 compiler assertion cannot approve itself by updating core and allowed text (3336.6584ms)
+✔ A1 changing source participants changes the recoverable metaphor relation (694.6346ms)
+✔ A3 supported dictionary edit reaches selected candidates; unknown stays reviewable; assertion is rejected (845.871ms)
+✔ A5 features depend exclusively on actual output and ignore declared operator/input syntax (2.6753ms)
+✔ A7 mixed sentence has separate event units without severing conditions or quotations (134.1832ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8425.3027

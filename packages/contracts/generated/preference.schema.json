@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "comparisonId",
+    "annotatorId",
+    "dimension",
+    "choice",
+    "reason"
+  ],
+  "properties": {
+    "comparisonId": {
+      "minLength": 1,
+      "maxLength": 128,
+      "type": "string"
+    },
+    "annotatorId": {
+      "minLength": 1,
+      "maxLength": 64,
+      "type": "string"
+    },
+    "dimension": {
+      "anyOf": [
+        {
+          "const": "S",
+          "type": "string"
+        },
+        {
+          "const": "Q",
+          "type": "string"
+        },
+        {
+          "const": "C",
+          "type": "string"
+        }
+      ]
+    },
+    "choice": {
+      "anyOf": [
+        {
+          "const": "left",
+          "type": "string"
+        },
+        {
+          "const": "right",
+          "type": "string"
+        },
+        {
+          "const": "tie",
+          "type": "string"
+        },
+        {
+          "const": "both_bad",
+          "type": "string"
+        },
+        {
+          "const": "cannot_judge",
+          "type": "string"
+        }
+      ]
+    },
+    "reason": {
+      "maxLength": 2000,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+✔ T-12: HTTP経由でも候補ID・検証・原文保持が整合する (10220.4761ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10302.3261

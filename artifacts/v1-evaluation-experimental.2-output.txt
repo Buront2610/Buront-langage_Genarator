@@ -1,0 +1,484 @@
+
+> buront-language-generator@1.0.0-experimental.2 evaluate:planning
+> node dist/scripts/v1/evaluate-planning.js
+
+{
+  "schemaVersion": 1,
+  "packageVersion": "1.0.0-experimental.2",
+  "engine": {
+    "schemaVersion": 1,
+    "sourceHash": "dd1044404bdf9d10fe548ee0be221df41c2d911e45646db04daeb2d2329e3e84",
+    "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "datasetId": "b00a3658f19baf8144b9be0919f1ba753eec5fbaa676854c82eef07d64072053",
+  "parserVersion": "spacy=3.8.16/ginza=5.2.1/ja-ginza=5.2.0/SudachiPy=0.6.11/SudachiDict-core=20260723/rapidfuzz=3.14.6",
+  "series": [
+    {
+      "id": "all",
+      "originalPosts": 2433,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 429
+        },
+        {
+          "id": "parenthetical",
+          "posts": 249
+        },
+        {
+          "id": "explanation",
+          "posts": 228
+        },
+        {
+          "id": "be_question",
+          "posts": 219
+        },
+        {
+          "id": "digression",
+          "posts": 33
+        },
+        {
+          "id": "inference",
+          "posts": 16
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "plain",
+        "plain",
+        "plain"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "roto",
+      "originalPosts": 1021,
+      "attestedConstructions": [
+        {
+          "id": "be_question",
+          "posts": 216
+        },
+        {
+          "id": "question",
+          "posts": 91
+        },
+        {
+          "id": "parenthetical",
+          "posts": 57
+        },
+        {
+          "id": "explanation",
+          "posts": 20
+        },
+        {
+          "id": "digression",
+          "posts": 1
+        },
+        {
+          "id": "inference",
+          "posts": 1
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "parenthetical",
+        "question",
+        "be_question"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "yorusama",
+      "originalPosts": 395,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 84
+        },
+        {
+          "id": "explanation",
+          "posts": 54
+        },
+        {
+          "id": "digression",
+          "posts": 9
+        },
+        {
+          "id": "inference",
+          "posts": 9
+        },
+        {
+          "id": "parenthetical",
+          "posts": 2
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "question",
+        "digression",
+        "question"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "saiko",
+      "originalPosts": 132,
+      "attestedConstructions": [
+        {
+          "id": "parenthetical",
+          "posts": 99
+        },
+        {
+          "id": "explanation",
+          "posts": 11
+        },
+        {
+          "id": "question",
+          "posts": 10
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "question",
+        "question",
+        "explanation"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "night",
+      "originalPosts": 108,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 21
+        },
+        {
+          "id": "explanation",
+          "posts": 9
+        },
+        {
+          "id": "parenthetical",
+          "posts": 5
+        },
+        {
+          "id": "digression",
+          "posts": 1
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "explanation",
+        "question",
+        "question"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "puronohito",
+      "originalPosts": 88,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 23
+        },
+        {
+          "id": "parenthetical",
+          "posts": 8
+        },
+        {
+          "id": "explanation",
+          "posts": 6
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "question",
+        "explanation",
+        "explanation"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "nega",
+      "originalPosts": 236,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 81
+        },
+        {
+          "id": "explanation",
+          "posts": 66
+        },
+        {
+          "id": "parenthetical",
+          "posts": 44
+        },
+        {
+          "id": "digression",
+          "posts": 4
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "parenthetical",
+        "question",
+        "question"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "katuru",
+      "originalPosts": 247,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 85
+        },
+        {
+          "id": "explanation",
+          "posts": 40
+        },
+        {
+          "id": "parenthetical",
+          "posts": 17
+        },
+        {
+          "id": "digression",
+          "posts": 11
+        },
+        {
+          "id": "inference",
+          "posts": 1
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "question",
+        "question",
+        "question"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "gg",
+      "originalPosts": 34,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 15
+        },
+        {
+          "id": "explanation",
+          "posts": 13
+        },
+        {
+          "id": "parenthetical",
+          "posts": 8
+        },
+        {
+          "id": "inference",
+          "posts": 4
+        },
+        {
+          "id": "digression",
+          "posts": 1
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "parenthetical",
+        "parenthetical",
+        "question"
+      ],
+      "withinSeries": true
+    },
+    {
+      "id": "sonota",
+      "originalPosts": 115,
+      "attestedConstructions": [
+        {
+          "id": "question",
+          "posts": 18
+        },
+        {
+          "id": "explanation",
+          "posts": 9
+        },
+        {
+          "id": "digression",
+          "posts": 6
+        },
+        {
+          "id": "parenthetical",
+          "posts": 4
+        },
+        {
+          "id": "inference",
+          "posts": 1
+        }
+      ],
+      "candidates": 3,
+      "usedConstructions": [
+        "question",
+        "digression",
+        "explanation"
+      ],
+      "withinSeries": true
+    }
+  ],
+  "counterexamples": [
+    {
+      "id": "T-01-money",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-01-count",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-02-sign",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-02-role",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-03-roles",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-04-scope",
+      "failed": [
+        "S-polarity",
+        "S-temporal"
+      ],
+      "unknown": []
+    },
+    {
+      "id": "T-05-nouns",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-06-completion",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-07-mixed",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-08-attribution",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ],
+      "unknown": [
+        "S-temporal"
+      ]
+    }
+  ],
+  "performance": [
+    {
+      "sourceScalars": 500,
+      "milliseconds": 1130.8009000000002,
+      "candidates": 3,
+      "reanalysis": true
+    },
+    {
+      "sourceScalars": 5000,
+      "milliseconds": 11244.0977,
+      "candidates": 3,
+      "reanalysis": true
+    }
+  ],
+  "nodeMemory": {
+    "rss": 288444416,
+    "heapTotal": 206036992,
+    "heapUsed": 72414528,
+    "external": 3368561,
+    "arrayBuffers": 1341643
+  },
+  "humanQuality": null,
+  "limitations": [
+    "One observation per length; neither a p95 nor a stable speed guarantee.",
+    "Fixed ten-counterexample rejection does not establish general semantic equivalence.",
+    "Series frames are corpus-attested experimental generalizations; no human style acceptance.",
+    "Parser agreement supplements the finite preservation proof and does not permit free factual paraphrases."
+  ]
+}

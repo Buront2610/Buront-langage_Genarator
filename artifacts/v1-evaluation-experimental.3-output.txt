@@ -1,0 +1,169 @@
+
+> buront-language-generator@1.0.0-experimental.3 evaluate:audit
+> node scripts/evaluate-audit-fixes.cjs
+
+{
+  "report": "artifacts/v1-evaluation-experimental.3/report.json",
+  "roleSensitivity": {
+    "plans": 9,
+    "identical": 0,
+    "examples": [
+      "田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+      "佐藤から田中へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。"
+    ]
+  },
+  "dictionary": [
+    {
+      "to": "冷え込み",
+      "candidates": 3,
+      "review": 0,
+      "reason": null
+    },
+    {
+      "to": "冷気",
+      "candidates": 0,
+      "review": 3,
+      "reason": "dictionary_needs_review"
+    },
+    {
+      "to": "実際には佐藤が田中を助けた。",
+      "candidates": 0,
+      "review": 0,
+      "reason": "dictionary_rejected"
+    }
+  ],
+  "compilerRegression": "rejected",
+  "temporal": "fail",
+  "counterexamples": 10,
+  "comparisonPairs": 63,
+  "featureCounts": [
+    44
+  ],
+  "series": [
+    {
+      "id": "all",
+      "candidates": 3,
+      "frames": [
+        "plain"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "roto",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "be_question"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "yorusama",
+      "candidates": 3,
+      "frames": [
+        "digression",
+        "explanation"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "saiko",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "parenthetical",
+        "explanation"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "night",
+      "candidates": 3,
+      "frames": [
+        "explanation",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "puronohito",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "nega",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "katuru",
+      "candidates": 3,
+      "frames": [
+        "explanation",
+        "parenthetical"
+      ],
+      "discourse": [
+        "criterion_first",
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "gg",
+      "candidates": 3,
+      "frames": [
+        "explanation",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "sonota",
+      "candidates": 3,
+      "frames": [
+        "digression",
+        "question"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    }
+  ],
+  "timing": [
+    {
+      "size": 500,
+      "milliseconds": 1607.6388000000006,
+      "candidates": 3,
+      "sampleCount": 1
+    },
+    {
+      "size": 5000,
+      "milliseconds": 15056.582199999997,
+      "candidates": 3,
+      "sampleCount": 1
+    }
+  ]
+}

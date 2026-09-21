@@ -1,0 +1,4034 @@
+[
+  {
+    "comparisonId": "3f6cd059d3f9d428f7e9c34a",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "right": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "dfff22fa0f63d530d0765d42",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "right": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e64553a90b75bdfd94cec327",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "right": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7060015dedf3badaf886f0c7",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "27e92f98126ce92b8b87e2ef",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "right": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "366d285943aacd731b09a997",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "right": "今日は寒い。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "207f046d926db99a8f4d8277",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、鎧で寒さを測るつもりが、鎧の器を測る話になる。",
+    "right": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9e3b28f8d69749469bc03bc5",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "right": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7b498dcec7827240f597d6dc",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "right": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0d4e4485ee33ccac6a5bab57",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。",
+    "right": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "23ac94c26fa4d9cfd9b3ed52",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "right": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "bbf905f8a850238b45569d68",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 説明書にも説明書が必要だ。",
+    "right": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3569ddf9ab1c4e21672684de",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを鎧で測るな。物差しのほうに剣が必要になる。",
+    "right": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "287728058df2d14e0107548c",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "right": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b360f8e4783371ee113cba31",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ec7cbe294e347fdb0ab6ac89",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "right": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "5521d43d9f297a3416eea102",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "right": "今日は寒い。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0ee933996ec1b00c75dddb3d",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さに力を装備させると、説明のほうが重装備になる。",
+    "right": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "793cc586f8cdee362c545149",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7d317eacb66383cdcab394f8",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "right": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e9f07233f025a44462bfdd93",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 説明書にも説明書が必要だ。",
+    "right": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b19ff4b404dc2a97ae97f7b2",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+    "right": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6d95232198bcba54e237e46b",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "cda9e24394dda678ab435d41",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。",
+    "right": "今日は寒い。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4cad145da899d35cdccc4263",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。",
+    "right": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7c5c50321fdff8ccda4c94a6",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "right": "今日は寒い。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f93735493bc5db8ade14eb4b",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "right": "今日は寒い。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "12c0c813f6eda14f47b69741",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。 逆さの意味が意味して椅子する。",
+    "right": "今日は寒い。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "260d55704a119592e8ac7cfc",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3dc9ee00c576196a1eb231b7",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "28480310f08fb7157b4e5e21",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "right": "田中が佐藤を助けたという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a4b836580bd044774fd1b75a",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a46c126cd5e8ceeccf8355db",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "right": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "28d1fc8791f9403d1bce0dd7",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "right": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b038b2fc804bbd6ae5e8dc1a",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることを力で測るな。物差しのほうに盾が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e8fdbc2bbbd93c78d85bcfb7",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "46b230a742ade017578568ca",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けたという事実は確定的に明らか",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0521a35c9918ccf0df9ae611",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a2192bd6354f20eff6bf0ecb",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "94129959ad025ced49b2ce43",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "82e60da9705048e7c273a257",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることへ向かう力が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0b5dba0936acea0a47862569",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けたという事実は確定的に明らか",
+    "right": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2d9db47bd5225da411a015aa",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "be6e0ec6f71bac5e57b781de",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "right": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "389d19394f0f33787fca78e5",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "right": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4a7fb57a099d8bf7a12c96ef",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、助けることは速度という名前の服を着た説明。",
+    "right": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9f63e1360acbfd5e664d550a",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けたという事実は確定的に明らか",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "5d3bcd93eb4675c874372b85",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "right": "田中が佐藤を助けたという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9668edf6eba65b4c658bb4da",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "right": "田中が佐藤を助けたという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "365a11a3fcfb369223af06b1",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けたという事実は確定的に明らか",
+    "right": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f98b481fccde73bf7bb40c69",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。",
+    "right": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a89239450f74fe5098060d6c",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。",
+    "right": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "cc542fbdd8f9f80f8de676ff",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f0290ae1d9719dfb112d2f38",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "right": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0fa04a9408c4297d9f1358e0",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 それほどでもない。確定的に明らか。",
+    "right": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "073e6b510f4ab090990baa1d",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。 逆さの意味が意味して椅子する。",
+    "right": "田中が佐藤を助けた。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d079bb1042887a734ca20377",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e6e4f6a93a003a08a88e2b13",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "right": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "673ee1f2577bbe30f5f45e6e",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更したという事実は確定的に明らか",
+    "right": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "86373c10e16f1df160e01222",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。",
+    "right": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f859c9303dbe53525cb5a1a0",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "right": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d8d2421bcbf967968fa8620b",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "right": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4e7285eec9f17f670422c6f0",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、力で変更を測るつもりが、力の器を測る話になる。",
+    "right": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "95390edb722ceabf310413e0",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c239ca7c134d576dc7d08faf",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更したという事実は確定的に明らか",
+    "right": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3f66ea361d8234c3905034a9",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "right": "100円を300円に変更した。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "59f352d3bc1f0a4e3992b006",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1546e64d6eecc39e404438d6",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9175339e03f4b4737e490e64",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更のために勝利を磨きすぎると、勝利を磨くための変更になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "79d56d73202dd263953056c4",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "right": "100円を300円に変更したという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7b87e516fae6f40004a739a3",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "right": "100円を300円に変更した。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a913575bfb2e160a702e922f",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "347c3497b1d70c211309f259",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b0748776d1844fa2011ceb24",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "right": "100円を300円に変更した。\nたとえるなら、変更に速度を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b1779774bd6ed211f62a7406",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更したという事実は確定的に明らか",
+    "right": "100円を300円に変更した。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "338e5e463d155a05bb744fd1",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "right": "100円を300円に変更したという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7007f09471d6002255990fea",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "right": "100円を300円に変更したという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ea936f0ecc48343f02d31cdb",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "right": "100円を300円に変更したという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a673c1f9efb6db1f345724e6",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "right": "100円を300円に変更した。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "18da1a28530853745ec0a590",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "right": "100円を300円に変更した。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "531c68999f88a79160fd8ea8",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "right": "100円を300円に変更した。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f3bce4c491f5c42c2b345dbf",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "right": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "faf3ee68e61d6b1514f1c269",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "right": "100円を300円に変更した。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "82bbba44c197ed68185dce24",
+    "source": "100円を300円に変更した。",
+    "left": "100円を300円に変更した。 説明書にも説明書が必要だ。",
+    "right": "100円を300円に変更した。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "07c561162c696da37d53394d",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ccfcf184b73f6ff44d29ee66",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d2caa5b1581fba114ac34807",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b1d357a019bc8d4f880e3909",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "right": "田中は承認した。佐藤は承認していない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "428ff23bd23dceed54e65828",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d06d8862bc78dfce0e41277c",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "right": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "327cd3c9acedd467657c97b8",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、盾で承認を測るつもりが、盾の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b66897c8e816402ff9baa478",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1b6b8b49af6a911f47dd943b",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "391bf4f4bc2e57aa33fc2191",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4786af0e5437b5d93b7e2737",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e32b4911e13d3300ad4ecede",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "411384253f018e78e6e70ff5",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認のために練習を磨きすぎると、練習を磨くための承認になる。",
+    "right": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "70d654c70a02c05d5bb9ef47",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "8a6628bde2b9952bedeb2774",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中は承認した。佐藤は承認していない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "8f3c2f6c1bfeebb972632038",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "right": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "dcdb3fcbe414e788a18b5fa6",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f1d6dc5e4d8174a84d7e520b",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。\nたとえるなら、承認を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "bb3a5b909bf9a0db80031ee1",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "right": "田中は承認した。佐藤は承認していない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6eb8872cd358af21d75504f6",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "right": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "47f9173790cf169cfd2be9e5",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "right": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "aedf5c7330eb92b43e53ccd7",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認したという事実は確定的に明らか\n佐藤は承認していない（ﾘｱﾙ話）",
+    "right": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "fbca0999caca50a662ef5ede",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。",
+    "right": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d77c9bc517c8031aa28f44d2",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "right": "田中は承認した。佐藤は承認していない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ef5384f7d34910a7c7909e62",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "right": "田中は承認した。佐藤は承認していない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "aed964756d4f5cc7f022a181",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "right": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "75f2ab2a8ddb43b20c53e9de",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "right": "田中は承認した。佐藤は承認していない。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2acaa8c8e52e2cee9e8c01c8",
+    "source": "田中は承認した。佐藤は承認していない。",
+    "left": "田中は承認した。佐藤は承認していない。 逆さの意味が意味して椅子する。",
+    "right": "田中は承認した。佐藤は承認していない。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "37a39798f14b9ea54b52d4a0",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e26ba4461288d6dac4bcad5a",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a31750bc5f5a490f43175daa",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "90394efc40fc0b80e24631ab",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2249af784344cc8bbfd247a7",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "415536645dc301dc4646b6d3",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9b7c22721be065e0d6b2b164",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を盾で測るな。物差しのほうに剣が必要になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "19a8d4030cf624e9ce071f56",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0f243b7f6e8a58caba0710fb",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "fa0ae75a461ce5d36ea134e7",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9c311a941b3913a22839f56e",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9410b1d8f1a6a5fd1642a504",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "517a78d2bca541e9b44a79ee",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に鎧を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c70984ceb71c16080db2eb8a",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4e89376dffb5a4a8efb477e6",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f474424da872e4b22fe7b356",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "5d9da3c53db14a7c4c015138",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1afc7b6094f3a036efac0070",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧へ向かう盾が立派すぎて、目的地より道具を説明してしまう。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "37537985dd02b1d1303ccda5",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2379ec5768a2a654a3c06c32",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "right": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "374596d2459e74e68033728d",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "317211cefded952e59ed981a",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した\n一般人と同じようにやってこの結果は出ない\nBは停止中で、俺は明日確認する\nこのままでは一般人どもの仕事がｹﾞｰﾑｵｰﾊﾞｰになる",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ebdd8c03572ed33d17a41fdc",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6c1841bb002010ceb6e9b453",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "89a63d2fb06a4ac5be55a1b6",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "68cf4a8b118ec3c4917f95ba",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9b47eba44bdbd715eda45308",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 それほどでもない。確定的に明らか。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "74a318823663ce141887eb24",
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "left": "田中がAを復旧した。Bは停止中で、私は明日確認する。 逆さの意味が意味して椅子する。",
+    "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f82d163aea2a3a7fa3742125",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a3b9cc955b628677d7eee062",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6af3cc41f698db2913136aa0",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "right": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "35cce18fd68c3e18cdd85976",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "right": "田中が確認したと佐藤が言った。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6e6905b459b5b530547f6272",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "right": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "976e7345251f8522f92b2ddb",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "18cecf3bbab103cff4ad3061",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことのために勝利を磨きすぎると、勝利を磨くための言うことになる。",
+    "right": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "75ff50c6fc8bb2181a142fd6",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "680a81a512bd794205458e2b",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "right": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "efb80520e67be9e3ccb57e56",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2f3c0a62d56b081afd2860d2",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "right": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ebc3c68ba90dbb47975d2cce",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7cf53788022fdaac8d58cdbd",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、力で言うことを測るつもりが、力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "54747f6840df8edd059cbec3",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "right": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9b1de31b4ef2c96a59ec093f",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f01ee3d7e0cc00d85b279838",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "482cf75f88296807bd666aac",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "right": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3dede16261c8d120610712d2",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。\nたとえるなら、言うことの重さを力で測ったら、単位のほうが音を上げる。",
+    "right": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1ffde9dd3efc126e9266c032",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。",
+    "right": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9db7249b79cbad9d94c14a80",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "right": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "be2c0db3e15e209ff7a120d3",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "right": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e0f58294f326fdf236f2c8b9",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言ったという事実は確定的に明らか",
+    "right": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6c45d9b57a86ef98d13c907f",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "right": "田中が確認したと佐藤が言った。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "80d9c7ab0ad78f8d8a425db6",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。",
+    "right": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "03abefe7046d269c7b8adade",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。",
+    "right": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "421659d55db5557846e85d1b",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "right": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f6fe265c7f81d60fce7ab7d5",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "right": "田中が確認したと佐藤が言った。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4e9eefb05b5fa538679c8963",
+    "source": "田中が確認したと佐藤が言った。",
+    "left": "田中が確認したと佐藤が言った。 説明書にも説明書が必要だ。",
+    "right": "田中が確認したと佐藤が言った。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0c0397b05ee0ce51a9e3c558",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "right": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c6733f92d30a35991994a84c",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "right": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0bc8805cb34dff8b5e55df6f",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "right": "猫（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4260506887f84b326e7a9713",
+    "source": "猫",
+    "left": "猫",
+    "right": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c02bd63e0a202e2363edc184",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "right": "猫 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "111c57ca0a8c400e9d6baf3f",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "right": "猫 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e43879c744e018de203530ab",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫が速度を評価する側に回ったら、採点表のほうが緊張する。",
+    "right": "猫 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "dcfe6947e032ecfb1e98ff67",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "right": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "fd204660919330361829ce35",
+    "source": "猫",
+    "left": "猫（ﾘｱﾙ話）",
+    "right": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c3fc85e2b11972da20c8f0e4",
+    "source": "猫",
+    "left": "猫",
+    "right": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "70bc538171e85df2d828c77c",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "right": "猫 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a70ce71d2b6ea7a2346a317c",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "right": "猫 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "783a584e575d8276e9577934",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫に力を装備させると、説明のほうが重装備になる。",
+    "right": "猫 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "72106941d3c94bf0d86fa23e",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "right": "猫（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6463d0d538e0a9b878db993d",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "right": "猫",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1663b7bb4e8d599dbb5b1f62",
+    "source": "猫",
+    "left": "猫 それほどでもない。確定的に明らか。",
+    "right": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4ec90a9df704f92943fc91d7",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "right": "猫 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c62f2d688c53811d3eb4903e",
+    "source": "猫",
+    "left": "猫\nたとえるなら、猫と力を同じ目盛りに並べると、目盛りだけが忙しい。",
+    "right": "猫 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ecb7c3b6c0835ec33f86ad06",
+    "source": "猫",
+    "left": "猫（ﾘｱﾙ話）",
+    "right": "猫",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1c133ed9f6d793b7f88b2255",
+    "source": "猫",
+    "left": "猫 それほどでもない。確定的に明らか。",
+    "right": "猫（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7e73bba0d259ffaf0da91951",
+    "source": "猫",
+    "left": "猫 説明書にも説明書が必要だ。",
+    "right": "猫（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "381ee10c55e4098d475c6a9c",
+    "source": "猫",
+    "left": "猫 逆さの意味が意味して椅子する。",
+    "right": "猫（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0c7051603e4e746a43a0c748",
+    "source": "猫",
+    "left": "猫",
+    "right": "猫 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "8d906c1e46867d12083708ad",
+    "source": "猫",
+    "left": "猫 説明書にも説明書が必要だ。",
+    "right": "猫",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2e7675f829257d4f6cd7862b",
+    "source": "猫",
+    "left": "猫",
+    "right": "猫 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b60947014229f899e49515df",
+    "source": "猫",
+    "left": "猫 説明書にも説明書が必要だ。",
+    "right": "猫 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d7222ed60368ddce556fc5e8",
+    "source": "猫",
+    "left": "猫 逆さの意味が意味して椅子する。",
+    "right": "猫 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "fcac464196ac1cf48564dc5b",
+    "source": "猫",
+    "left": "猫 逆さの意味が意味して椅子する。",
+    "right": "猫 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "80664a155f38a441f7de9cff",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "cbc048c25ac97467d4eb95f4",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3438f4fd45751b1a3b2e37e1",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "right": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "eb2e3b6b729ca2da54a7ab48",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e0f5f000823168283736dd6e",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "right": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b7cac432f3f6638518b4d4e9",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "right": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b6c60dbb0198eeaef00b3568",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、追加は練習という名前の服を着た説明。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e836d1a8ffe3ec22b04c3005",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "532d579ca731650075f14b92",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "right": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3f2b9197b481bb4561fcb206",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "right": "明日は監視項目を追加する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "feacfc36a625bab0dc99c793",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "right": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f23b8353fa8c83ee5ad69795",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "right": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "946775be77b4958824ea5015",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、追加の重さを努力で測ったら、単位のほうが音を上げる。",
+    "right": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "82e432bc7fb97ee3e830b51c",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "right": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1851e38643a79a425ca5ea79",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ceafe880795be821773dcc7b",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9e60ce290db5e16d285338a7",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "right": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e008884e2fb646a44a73f692",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。\nたとえるなら、努力で追加を測るつもりが、努力の器を測る話になる。",
+    "right": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f4057a74dafbf0b1e96278de",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "right": "明日は監視項目を追加する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2760761dba58e37f1a6113ae",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "right": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "abeda146dd2b100eb635999b",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "right": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b88f3e35a912ed0072095136",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する\nだが実行前から勝利扱いするのは三流",
+    "right": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "924cdbfdec6ffa99d976d9ce",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "right": "明日は監視項目を追加する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "baedddccf2224f9a296a67d9",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。",
+    "right": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "6798e102182d2d21728edc96",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "right": "明日は監視項目を追加する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "296fba256d7209b8fd2dbdd0",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "right": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "24e87f1b3d36d37eeb053d70",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "right": "明日は監視項目を追加する。 それほどでもない。確定的に明らか。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "8b362dbe4179f870684e3310",
+    "source": "明日は監視項目を追加する。",
+    "left": "明日は監視項目を追加する。 説明書にも説明書が必要だ。",
+    "right": "明日は監視項目を追加する。 逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  }
+]

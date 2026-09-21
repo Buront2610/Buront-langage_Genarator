@@ -7,6 +7,7 @@
     <title>ブロント語変換機</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
+    <script src="request-state.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -82,7 +83,7 @@
           </div>
 
           <label class="sr-only" for="inputText">変換したい普通の文章</label>
-          <textarea id="inputText" maxlength="5000" spellcheck="true" placeholder="例: 私はこの方法がとても良いと思います。"></textarea>
+          <textarea id="inputText" maxlength="10000" spellcheck="true" placeholder="例: 私はこの方法がとても良いと思います。"></textarea>
 
           <div class="sample-row" aria-label="入力例">
             <span>入力例</span>
@@ -117,7 +118,7 @@
           <div id="resultArea" class="result-area" hidden>
             <label class="sr-only" for="outputText">変換結果</label>
             <textarea id="outputText" readonly></textarea>
-            <div id="suggestionList" class="suggestion-list" aria-label="検証を通過した変換候補"></div>
+            <div id="suggestionList" class="suggestion-list" aria-label="現行の規則検査を通過した変換候補"></div>
             <div class="result-meta">
               <span id="outputCount">0文字</span>
               <span id="changeCount">0文を検証</span>

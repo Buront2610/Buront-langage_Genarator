@@ -1,0 +1,160 @@
+
+added 88 packages, and audited 89 packages in 5s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Using CPython 3.11.15
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+Resolved 62 packages in 53ms
+Installed 62 packages in 2.07s
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anyio==4.15.1
+ + attrs==26.1.0
+ + blis==1.3.3
+ + catalogue==2.0.10
+ + certifi==2026.7.22
+ + charset-normalizer==3.5.1
+ + click==8.5.0
+ + cloudpathlib==0.25.0
+ + cloudpickle==3.1.2
+ + colorama==0.4.6
+ + confection==1.3.3
+ + cymem==2.0.13
+ + ginza==5.2.1
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + idna==3.20
+ + ja-ginza==5.2.0
+ + jinja2==3.1.6
+ + joblib==1.6.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mdurl==0.1.2
+ + murmurhash==1.0.15
+ + narwhals==2.26.0
+ + numpy==2.4.6
+ + packaging==26.3
+ + plac==1.4.7
+ + preshed==3.0.13
+ + pydantic==2.13.5
+ + pydantic-core==2.46.5
+ + pygments==2.21.0
+ + rapidfuzz==3.14.6
+ + referencing==0.37.0
+ + requests==2.34.2
+ + rich==15.0.0
+ + rpds-py==2026.6.3
+ + scikit-learn==1.9.1
+ + scipy==1.17.1
+ + setuptools==84.0.0
+ + shellingham==1.5.4
+ + smart-open==8.0.1
+ + spacy==3.8.16
+ + spacy-legacy==3.0.12
+ + spacy-loggers==1.0.5
+ + srsly==2.5.3
+ + sudachidict-core==20260723
+ + sudachipy==0.6.11
+ + thinc==8.3.13
+ + threadpoolctl==3.7.0
+ + tqdm==4.70.1
+ + typer==0.27.2
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.4
+ + urllib3==2.8.0
+ + wasabi==1.1.3
+ + weasel==1.0.0
+ + wrapt==2.4.1
+
+> buront-language-generator@1.0.0-experimental.1 build
+> npm run build:engine && npm run build:web
+
+
+> buront-language-generator@1.0.0-experimental.1 build:engine
+> tsc && node dist/scripts/v1/export-schemas.js && node scripts/build-info.js
+
+
+> buront-language-generator@1.0.0-experimental.1 build:web
+> vite build --config apps/web/vite.config.mjs
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 15 modules transformed.
+rendering chunks...
+computing gzip size...
+apps/web/dist/index.html                   0.53 kB │ gzip:  0.42 kB
+apps/web/dist/assets/index-CrFGMYvT.css   20.61 kB │ gzip:  5.07 kB
+apps/web/dist/assets/index-B1kA-B8c.js   237.25 kB │ gzip: 75.01 kB
+
+✓ built in 1.65s
+
+> buront-language-generator@1.0.0-experimental.1 build:assets
+> node dist/scripts/v1/build-assets.js
+
+{"datasetId":"0d3ba28ea4039b68d6e2733dd6998650b35c45b6013e33f11f6c686b55b50508","path":"C:\\Users\\Glutt\\Documents\\Buront_language_genelator\\artifacts\\buront-local-1.0.0-experimental.1\\.runtime\\assets\\0d3ba28ea4039b68d6e2733dd6998650b35c45b6013e33f11f6c686b55b50508.json","evidence":10595,"lexicon":11,"rights":"unverified-local-only"}
+
+> buront-language-generator@1.0.0-experimental.1 diagnose
+> node scripts/diagnose.js
+
+{
+  "platform": "win32",
+  "architecture": "x64",
+  "checks": [
+    {
+      "name": "Node.js 24",
+      "ok": true,
+      "version": "v24.15.0",
+      "repair": "Node.js 24系をインストールしてください。"
+    },
+    {
+      "name": "node_modules/fastify/package.json",
+      "ok": true,
+      "repair": "setup.ps1 を実行してください。データは元のローカル資産を使います。"
+    },
+    {
+      "name": "dist/apps/server/index.js",
+      "ok": true,
+      "repair": "setup.ps1 を実行してください。データは元のローカル資産を使います。"
+    },
+    {
+      "name": "apps/web/dist/index.html",
+      "ok": true,
+      "repair": "setup.ps1 を実行してください。データは元のローカル資産を使います。"
+    },
+    {
+      "name": "data/log-corpus.json",
+      "ok": true,
+      "repair": "setup.ps1 を実行してください。データは元のローカル資産を使います。"
+    },
+    {
+      "name": "data/quote-corpus.json",
+      "ok": true,
+      "repair": "setup.ps1 を実行してください。データは元のローカル資産を使います。"
+    },
+    {
+      "name": "data/archive-series.json",
+      "ok": true,
+      "repair": "setup.ps1 を実行してください。データは元のローカル資産を使います。"
+    },
+    {
+      "name": "Python 3.11 / GiNZA",
+      "ok": true,
+      "versions": {
+        "python": "3.11.15",
+        "ginza": "5.2.1",
+        "model": "5.2.0",
+        "dictionary": "20260723"
+      },
+      "repair": "setup.ps1 で固定依存をインストールしてください。起動時にモデル取得は行いません。"
+    }
+  ],
+  "ready": true
+}
+準備完了。npm start で起動してください。通常起動にはネットワーク接続は不要です。

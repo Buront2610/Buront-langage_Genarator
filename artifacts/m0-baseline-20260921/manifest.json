@@ -1,0 +1,284 @@
+{
+  "capturedAt": "2026-09-21T00:52:19.8836669+09:00",
+  "head": "4989292a142a6803d35f05f3266281d488d9e729",
+  "designCommit": "9e70ac3408a68584fbe53cea176a2e9616a1ff7b",
+  "nodeVersion": "v24.15.0",
+  "platform": "Microsoft Windows 10.0.26220",
+  "status": [
+    " M lib/context-narrative.js",
+    " M lib/corpus-engine.js",
+    " M lib/grammar/anchor-frames.js",
+    " M lib/grammar/anchor-grammar.js",
+    " M lib/grammar/context-model.js",
+    " M lib/grammar/observation-frames.js",
+    " M lib/grammar/pending-frames.js",
+    " M lib/text-analysis.js",
+    " M test/corpus-engine.test.js",
+    " M test/text-analysis.test.js",
+    "?? artifacts/m0-baseline-20260921/",
+    "?? docs/implementation-tasks-v1.0.md",
+    "?? lib/grammar/buront-surface.js",
+    "?? lib/grammar/discourse-graph.js",
+    "?? lib/grammar/discourse-planner.js",
+    "?? lib/grammar/fact-paraphraser.js",
+    "?? lib/grammar/long-form-planner.js"
+  ],
+  "designToHead": "fatal: bad object 9e70ac3408a68584fbe53cea176a2e9616a1ff7b\r\n",
+  "files": [
+    {
+      "path": "docs/implementation-tasks-v1.0.md",
+      "bytes": 38173,
+      "sha256": "660e169dbd2b29d3d1d5becf92bcf0635c0d1cfa19f04afb8726629c0dd10903"
+    },
+    {
+      "path": "lib/grammar/buront-surface.js",
+      "bytes": 8961,
+      "sha256": "c42df749e9e8d2055d0b0bd22d1abc06b52dd6fb359d52d74a41bed26eb0d627"
+    },
+    {
+      "path": "lib/grammar/discourse-graph.js",
+      "bytes": 5190,
+      "sha256": "8c924129e7addcf12869048559326e6b23296f4aa0a108c9af3856b04f8d8b00"
+    },
+    {
+      "path": "lib/grammar/discourse-planner.js",
+      "bytes": 4001,
+      "sha256": "3e8ce80e08d977d1966807a0e978846eb3a24dd5f3cc36df7bd4dc3047e26cde"
+    },
+    {
+      "path": "lib/grammar/fact-paraphraser.js",
+      "bytes": 28500,
+      "sha256": "2d0a321d98266c1f822c9a5f1bc011e6f665add3545b54f1d640063016a3287a"
+    },
+    {
+      "path": "lib/grammar/long-form-planner.js",
+      "bytes": 7845,
+      "sha256": "5b47ab9d2c6e9d3af75d72e5d7b1bbf9e60835f865bee1a6b02f300524cb3a16"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 84,
+      "sha256": "b3413df55267d500aa9f52c804d13b03af7dc97b2cfdf789e97b2df4f9a0154c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12015,
+      "sha256": "9832b2ef76eeca023165ad9b82e0e71cdcc919afa1d4af56cb3e23bdf43e846f"
+    },
+    {
+      "path": "app.js",
+      "bytes": 23064,
+      "sha256": "474d17e6a489a57dbad3ecc30177b355b57555db6feb884d6ad01c14fefb37f4"
+    },
+    {
+      "path": "data/archive-series.json",
+      "bytes": 75847,
+      "sha256": "271646e323a081f5f3ab32547c56eb8faf98f8397762929b181dc7d383121879"
+    },
+    {
+      "path": "data/log-corpus.json",
+      "bytes": 5826981,
+      "sha256": "7911160cbf8240a42072f3bbf99258211d606ffbc9238e3072e76b45501ebdd8"
+    },
+    {
+      "path": "data/novel-model.json",
+      "bytes": 574925,
+      "sha256": "2912afb0ec73c015b1a3188803784556948617ebcfb101b6eed80232b957d857"
+    },
+    {
+      "path": "data/phrase-grammar-analysis.json",
+      "bytes": 266901,
+      "sha256": "bde0d49f7be66ddc3395ba3599c95bd74d0bc4b5d1503e8add0a95d3e314b811"
+    },
+    {
+      "path": "data/quote-corpus.json",
+      "bytes": 181044,
+      "sha256": "c25d033ff9d631e5467ee4acb392f6e45eea12f4fa94d21c1f476cd0167b49df"
+    },
+    {
+      "path": "data/style-model.json",
+      "bytes": 545701,
+      "sha256": "87e0e6acc8c7703b64864e5b97c6b713d68bd788ff3ae3b0c4c473269979d6e3"
+    },
+    {
+      "path": "docs/algorithm.md",
+      "bytes": 12120,
+      "sha256": "c1900330d8a7a526c2b94ac7889e05097b900c10d835858ad61fd468ba198b81"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 6300,
+      "sha256": "11a9b33e42431200ebbbc2897213632c94fb25cac21e6e63173e136769200f2f"
+    },
+    {
+      "path": "docs/corpus-notes.md",
+      "bytes": 1134,
+      "sha256": "0182f1a6ceca042c454122f6fa84ce83ed519d069388c7b0155ea02d3bc74c32"
+    },
+    {
+      "path": "docs/phrase-grammar-analysis.md",
+      "bytes": 11684,
+      "sha256": "2b54c9045c116629a4ca06aa4fb2ee8c22381929036f64fa4749941bc9368f20"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8200,
+      "sha256": "0faf3765cc9c044580175123fe86797c0a2379497c1272f26c6ec45dafd97783"
+    },
+    {
+      "path": "lib/context-narrative.js",
+      "bytes": 21373,
+      "sha256": "5e7ff9ab3c848ab53301aa3b97c678938aec8af34ea18a6c5ddc84388038fc60"
+    },
+    {
+      "path": "lib/corpus-engine.js",
+      "bytes": 90868,
+      "sha256": "2c2a88b3eec0fbe393995306adb7e7e8ca2932dc5cf1d4641599b63890d7c50b"
+    },
+    {
+      "path": "lib/era-profiles.js",
+      "bytes": 4583,
+      "sha256": "7ccb5a996a21cdace0c9ea6dd53c23835bbe7b4f9d878f05bec99fa4399429bf"
+    },
+    {
+      "path": "lib/grammar/anchor-frames.js",
+      "bytes": 2139,
+      "sha256": "4089103e6fdf664023bb4405d34cdacb30360d78e9ce9f12f6512998a25528f3"
+    },
+    {
+      "path": "lib/grammar/anchor-grammar.js",
+      "bytes": 10911,
+      "sha256": "6bec8484171d4523284a0d551ba38fd16a6ff22cbe50caa278293fc03d53814c"
+    },
+    {
+      "path": "lib/grammar/context-model.js",
+      "bytes": 13787,
+      "sha256": "028c53c5f010f507a410c45118a41df186aabaf6c7934e817869dd66df800b8f"
+    },
+    {
+      "path": "lib/grammar/era-grammar.js",
+      "bytes": 11936,
+      "sha256": "d63f8df8b9b7f1a44f881f50b0708e894233d1268539700151e87a3de5dbf901"
+    },
+    {
+      "path": "lib/grammar/faithful-quote-grammar.js",
+      "bytes": 17739,
+      "sha256": "c0e8fe8f9f8f39bfc7b987e4d8c4948445f2fb73768ce0b90599767b4015890c"
+    },
+    {
+      "path": "lib/grammar/observation-frames.js",
+      "bytes": 2938,
+      "sha256": "0c1692d67750f090a7c7d4133b51b2f36e08551982b887c98a375698811ba7fb"
+    },
+    {
+      "path": "lib/grammar/pending-frames.js",
+      "bytes": 3936,
+      "sha256": "e1ae71c1081a7437aef808b71dab17e683ad7f34c91e59a41cbcc0c3917dfb8e"
+    },
+    {
+      "path": "lib/grammar/phrase-constructions.js",
+      "bytes": 2779,
+      "sha256": "cbb7c15f8b642a5a452042c1473b5a5dd0d744be2b47e57b46dcc58e98fc0362"
+    },
+    {
+      "path": "lib/grammar/random-utils.js",
+      "bytes": 487,
+      "sha256": "e6458f979731935371b8b9f4426f07b2efc07635adbca075fb2a649110efcbdd"
+    },
+    {
+      "path": "lib/quote-grammar.js",
+      "bytes": 18417,
+      "sha256": "6c08f93c1c349a119148667b3189cdb5740cb3d94c01ef3c6ba1f30db9056158"
+    },
+    {
+      "path": "lib/text-analysis.js",
+      "bytes": 9433,
+      "sha256": "186ef90af75cc4941b3ba38ee508f882c1819588a1e7e00ebb08c2d58301a92e"
+    },
+    {
+      "path": "lib/variation-grammar.js",
+      "bytes": 6898,
+      "sha256": "ad3166ce80e6dc5ef3c29d3f37b7d05d5ebcfaf08039d592f99a3e6ca46e077a"
+    },
+    {
+      "path": "lib/vector-space.js",
+      "bytes": 6866,
+      "sha256": "20dc0485fcdb6285f051f56446018b22f30b521451ae1e5b5e020cb9652dd937"
+    },
+    {
+      "path": "package.json",
+      "bytes": 633,
+      "sha256": "d8944c50b8757d61ea07f27fdeca48cc9f97b751b86aa5f9b3f317eeeebe307d"
+    },
+    {
+      "path": "scripts/analyze-novel.js",
+      "bytes": 6785,
+      "sha256": "08a68ddc5e417e73ee67b06e08682f77fbe3899a263ab237e8598f78302b5f18"
+    },
+    {
+      "path": "scripts/analyze-phrase-grammar.js",
+      "bytes": 24593,
+      "sha256": "c3fccb658883bc34b813663f737378702f6c7f585596cea376d73003b8e4bda0"
+    },
+    {
+      "path": "scripts/prepare-archive-series.js",
+      "bytes": 5207,
+      "sha256": "762a698ef1219572a9d4525b177095b655f250c586a0d0a3bf7f5753ea9405a9"
+    },
+    {
+      "path": "scripts/prepare-corpora.js",
+      "bytes": 9164,
+      "sha256": "9632e0e719d564074feec5652b1bf0368bbfbdd57977281f92f7043bd8201c15"
+    },
+    {
+      "path": "scripts/prepare-quote-corpus.js",
+      "bytes": 5565,
+      "sha256": "11a214de57aa194108c033a2aa5933464e2a1a6be19f713e8175e67bd92209f2"
+    },
+    {
+      "path": "server.js",
+      "bytes": 4212,
+      "sha256": "33bdfc6f97220c8f0f81f604ebe2f68e3579e7307e1b81d1f34dfd0546402070"
+    },
+    {
+      "path": "start.bat",
+      "bytes": 78,
+      "sha256": "28639265705492769ac8d187ab672b7a2e07a6b4c7319359d97ed449a9de59f2"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 19813,
+      "sha256": "6d0abff3cdb69797c397b7c06fbc824ab58417ce76ef3042012d577bd7a96f54"
+    },
+    {
+      "path": "test/corpus-engine.test.js",
+      "bytes": 64878,
+      "sha256": "16e0461f54f98aab64b485ce0af1725745cbccd5af583dbf8e643247a036f78f"
+    },
+    {
+      "path": "test/era-modes.test.js",
+      "bytes": 7049,
+      "sha256": "f4444a1790d9939d575cfdcebf2bf8d0bcb38eb1a624d3347daf1525711eb04e"
+    },
+    {
+      "path": "test/fixtures/era-oracles.json",
+      "bytes": 4184,
+      "sha256": "472910211b1ac901d758b0bdae358eb73e55803157ed804ded824cfba70113e9"
+    },
+    {
+      "path": "test/text-analysis.test.js",
+      "bytes": 3005,
+      "sha256": "f6e1b37ed6f1d25b9cacd2c720f18e4d5e2988e8f2c60fd7e3d8ec560f0870fc"
+    },
+    {
+      "path": "test/vector-randomness.test.js",
+      "bytes": 3430,
+      "sha256": "a1fcee211ae3c9076b13958fa46956680f32f28e4b9d6c00984fbf1a5265edb5"
+    },
+    {
+      "path": "test/vector-space.test.js",
+      "bytes": 1911,
+      "sha256": "f12a5b79cfa42ac016c6868fd5951740ed8e586bb1eee7a3d9face1595bfed48"
+    }
+  ]
+}

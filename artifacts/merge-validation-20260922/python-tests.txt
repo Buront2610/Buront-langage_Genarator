@@ -1,0 +1,16 @@
+..F..
+======================================================================
+FAIL: test_projection_scope_and_saved_output_provenance (test.fulltext_analysis_test.FulltextAnalysisTest.test_projection_scope_and_saved_output_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Glutt\Documents\Buront_language_genelator\test\fulltext_analysis_test.py", line 58, in test_projection_scope_and_saved_output_provenance
+    self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), digest)
+AssertionError: '5951a3ba42455c974a59657071c53d8e81bc2a93f9578062970b01723fd8cefe' != '70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c'
+- 5951a3ba42455c974a59657071c53d8e81bc2a93f9578062970b01723fd8cefe
++ 70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.894s
+
+FAILED (failures=1)

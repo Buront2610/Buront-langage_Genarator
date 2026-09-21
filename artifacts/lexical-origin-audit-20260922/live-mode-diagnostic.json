@@ -1,0 +1,82 @@
+[
+  {
+    "request": {
+      "source": "私は処理の速度をアピールしました。全員に助言したが、雰囲気は悪かった。",
+      "task": "rewrite",
+      "contextMode": "faithful",
+      "noveltyMode": "canonical",
+      "intensity": 3,
+      "series": "all",
+      "backend": "structured",
+      "clientRevision": 1,
+      "seed": "mode-diagnostic"
+    },
+    "generated": 5,
+    "selected": 3,
+    "shortfallReason": null,
+    "candidates": [
+      {
+        "text": "俺は処理の速さとスピードをアッピルしたからな\n全員にアドバイスを助言したが雰囲気は悪かった",
+        "classification": "adaptation"
+      },
+      {
+        "text": "俺は処理の速さとスピードをアッピルしました\n全員にアドバイスを助言したが雰囲気は悪かった",
+        "classification": "adaptation"
+      },
+      {
+        "text": "俺は処理の速度をアッピルしたからな\n全員にアドバイスを助言したが雰囲気は悪かった",
+        "classification": "adaptation"
+      }
+    ],
+    "engine": "fcc74e14041931bcd44ad1563662088b9cf63f4125a285e54ba8415fe17c0a0f"
+  },
+  {
+    "request": {
+      "source": "私は処理の速度をアピールしました。全員に助言したが、雰囲気は悪かった。",
+      "task": "rewrite",
+      "contextMode": "full",
+      "noveltyMode": "canonical",
+      "intensity": 3,
+      "series": "all",
+      "backend": "structured",
+      "clientRevision": 1,
+      "seed": "mode-diagnostic"
+    },
+    "generated": 5,
+    "selected": 3,
+    "shortfallReason": null,
+    "candidates": [
+      {
+        "text": "俺は処理の速さとスピードをアッピルしたからな\n全員にアドバイスを助言したが雰囲気は悪かった",
+        "classification": "adaptation"
+      },
+      {
+        "text": "俺は処理の速さとスピードをアッピルしました\n全員にアドバイスを助言したが雰囲気は悪かった",
+        "classification": "adaptation"
+      },
+      {
+        "text": "俺は処理の速度をアッピルしたからな\n全員にアドバイスを助言したが雰囲気は悪かった",
+        "classification": "adaptation"
+      }
+    ],
+    "engine": "fcc74e14041931bcd44ad1563662088b9cf63f4125a285e54ba8415fe17c0a0f"
+  },
+  {
+    "request": {
+      "source": "私は処理の速度をアピールしました。全員に助言したが、雰囲気は悪かった。",
+      "task": "rewrite",
+      "contextMode": "full",
+      "noveltyMode": "invent",
+      "intensity": 3,
+      "series": "all",
+      "backend": "structured",
+      "clientRevision": 1,
+      "seed": "mode-diagnostic"
+    },
+    "generated": 5,
+    "selected": 0,
+    "shortfallReason": "no_novel_candidate",
+    "candidates": [],
+    "engine": "fcc74e14041931bcd44ad1563662088b9cf63f4125a285e54ba8415fe17c0a0f"
+  }
+]

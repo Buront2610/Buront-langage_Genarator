@@ -1,0 +1,78 @@
+{
+  "recordedAt": "2026-09-22T01:01:54.6139839+09:00",
+  "objective": "Fix generated punctuation and verify rebuilt running application with the original input",
+  "engine": {
+    "schemaVersion": 1,
+    "sourceHash": "c19d37ba78631337c610a5f1eeda778ae38d18a56cfbbce9c922fd61af483ad7",
+    "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "hashes": {
+    "test/v1/api.test.js": "5d2e42e782630f535c751c1ff889b48fb065aec40cf43ce76b87432dc2400564",
+    "test/v1/style-regressions.test.js": "db24b98a645def1200ce111b123572b8d5b24c52aa73f20ea411e69f97fa9793",
+    "packages/core/rewrite-rules.ts": "d33ca3d4553aa5b6ba49306b5553f24926617c60ca3f7291cdf4e85ab9a1064b",
+    "docs/punctuation-fix-20260922.md": "7043a6567cf49330feb4c2b2ccccd19fce711879834b78e8a281fe8b983ac57c",
+    "test/v1/planning.test.js": "a2863c6396f123e5fbcf96533d5eaf58967570b139e0dd371e5fcdc775715281",
+    "apps/web/src/main.tsx": "32d6b33057c7eb89b29d83824ce2181d684a63c615074cdf2ee84dcb1723994a",
+    "test/v1/core.test.js": "a244e3e9b8ab193b1f7479fdc66375e5294a04dfeda9d8d8bab16ffeae6aef2f",
+    "test/v1/punctuation-regressions.test.js": "cbc1112a2559026cc85c05c1d48e3b905e37bf256f096a0b134872955db97292",
+    "artifacts/punctuation-fix-20260922/outputs-final.json": "d0078e9a9c561c960dcf27aae5f0d22d7aef3b5ef4ce2a8497398946382f73b7",
+    "packages/core/rewrite.ts": "2478987060c49f327503e1b6047081d8a217bcf6bb3986e5f0be531ccdf0d317",
+    "build-info.json": "c5795c1de83ea278d3f5def4db3d20a17904cde97047c40022f8697c209df9e3",
+    "packages/core/rewrite-validation.ts": "f99ef37458a41f88fee0009ea098bb8ea48e4bf36ca548880dfee6e052ab7548",
+    "apps/web/dist/assets/index-CA5cgGiO.js": "0a479dcb4939c5067e278b356d661a1ec8e8306eac029aea32ae783ed1da4a88"
+  },
+  "checks": [
+    {
+      "scope": "engine and web build; engine subsequently rebuilt",
+      "exitCode": 0,
+      "log": "build.log"
+    },
+    {
+      "scope": "final engine build",
+      "exitCode": 0,
+      "log": "build-engine-02.log"
+    },
+    {
+      "scope": "backend and web TypeScript",
+      "exitCode": 0,
+      "log": "typecheck-final.log"
+    },
+    {
+      "passedScope": "10 API and 8 style tests; production implementation unchanged afterwards",
+      "exitCode": 1,
+      "log": "regressions-02.log",
+      "failures": "24 core setup timeouts under parallel model startups; 2 outdated expectations subsequently corrected"
+    },
+    {
+      "passedScope": "22 core, 14 planning and 6 punctuation tests, serial execution",
+      "exitCode": 1,
+      "log": "regressions-final.log",
+      "failures": "2 core test fixtures subsequently corrected"
+    },
+    {
+      "passedScope": "2 corrected core tests: schema maxItems boundary and register endings",
+      "exitCode": 0,
+      "log": "core-focused-final.log"
+    }
+  ],
+  "passedTestUnion": 62,
+  "note": "62 distinct tests passed across scoped runs, not one successful 62-test run. Prior failed logs retained. Changed JavaScript test files passed node --check. TypeScript sources passed typecheck.",
+  "liveVerification": {
+    "humanRatingsSubmitted": false,
+    "source": "私は処理の速度をアピールしました。全員に助言したが、雰囲気は悪かった。",
+    "selectedText": "俺は処理の速さとスピードをアッピルしたからな\nぜいいんにアドバイスを助言したがふいんきは悪かった",
+    "observed": [
+      "Period between sentences rendered as line break",
+      "Terminal period removed",
+      "Comma after したが removed",
+      "Edit history displays 改行 and 削除",
+      "Browser screenshot confirms visible line boundary"
+    ],
+    "pid": 28424,
+    "status": "ready and generated 3 candidates in browser",
+    "url": "http://127.0.0.1:4173/#generator"
+  },
+  "remainingRisk": "Punctuation behavior verified; overall stylistic quality remains for user evaluation."
+}

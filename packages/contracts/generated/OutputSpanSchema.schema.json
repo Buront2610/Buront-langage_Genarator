@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "span",
+    "nodeId",
+    "origin",
+    "factIds",
+    "evidenceIds"
+  ],
+  "properties": {
+    "span": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "nodeId": {
+      "type": "string"
+    },
+    "origin": {
+      "anyOf": [
+        {
+          "const": "source_fact",
+          "type": "string"
+        },
+        {
+          "const": "paraphrase",
+          "type": "string"
+        },
+        {
+          "const": "rhetoric",
+          "type": "string"
+        },
+        {
+          "const": "direct_quote",
+          "type": "string"
+        },
+        {
+          "const": "unresolved_copy",
+          "type": "string"
+        }
+      ]
+    },
+    "sourceSpan": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "factIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "evidenceIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    }
+  }
+}

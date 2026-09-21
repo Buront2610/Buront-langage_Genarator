@@ -1,0 +1,242 @@
+[
+  {
+    "id": "narrator-watashi",
+    "from": "私",
+    "to": "俺",
+    "evidenceId": "post_00016_82d78e65bd643a54_22",
+    "needle": "俺は",
+    "text": "俺は不良だからな",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "narrator-boku",
+    "from": "僕",
+    "to": "俺",
+    "evidenceId": "post_00016_82d78e65bd643a54_22",
+    "needle": "俺は",
+    "text": "俺は不良だからな",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "fuinki",
+    "from": "雰囲気",
+    "to": "ふいんき",
+    "evidenceId": "post_02212_b32699bc7773619d_8422",
+    "needle": "ふいんき",
+    "text": "俺はナイトしかＰＴさそわないな忍者いれるとまずふいんきが絶対悪くなる",
+    "enabled": false,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "zei-in",
+    "from": "全員",
+    "to": "ぜいいん",
+    "evidenceId": "post_01694_7cde927e1222c449_5687",
+    "needle": "ぜいいん",
+    "text": "Fulioは結構いいやつだと言う事はぜいいん知ってること",
+    "enabled": false,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "appiru",
+    "from": "アピール",
+    "to": "アッピル",
+    "evidenceId": "post_01729_3578425f6701ad48_5839",
+    "needle": "アッピル",
+    "text": "俺は別に強さをアッピルなどしてはいない",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "ikue",
+    "from": "行方不明",
+    "to": "いくえ不明",
+    "evidenceId": "post_02081_5ca60ec0410b726f_7787",
+    "needle": "いくえ不明",
+    "text": "・せこいＬＳ→装備が雑魚→心が狭く顔にまででてくる→いくえ不明",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "shinkotto",
+    "from": "真骨頂",
+    "to": "真骨董",
+    "evidenceId": "post_01882_872015ebf79b88bf_6682",
+    "needle": "真骨董",
+    "text": "残心で良くてミス、ヒット、ミス、ヒットとかﾊﾞｶの真骨董だしな（苦笑）",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "muchiron",
+    "from": "もちろん",
+    "to": "むちろん",
+    "evidenceId": "post_02189_550fd44ba9504790_8266",
+    "needle": "むちろん",
+    "text": "むちろん攻撃能力が非情に高いがだからと言って防御能力が低いかと言うとこれが最強ﾗﾝｸに高い！",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "dochika",
+    "from": "どちらかというと",
+    "to": "どちかというと",
+    "evidenceId": "post_02225_3cdc00b977942e5b_8505",
+    "needle": "どちかというと",
+    "text": "俺はナイト弱体にはどちかというと大反対だな",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "speed-doubling",
+    "from": "速さ",
+    "to": "速さとスピード",
+    "evidenceId": "post_02421_ef97fdc26a351d5a_9490",
+    "needle": "速さとスピード",
+    "text": "何故なら闇慈は速さとスピードとパワーのバランスがとれてないから",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "velocity-doubling",
+    "from": "速度",
+    "to": "速さとスピード",
+    "evidenceId": "post_02421_ef97fdc26a351d5a_9490",
+    "needle": "速さとスピード",
+    "text": "何故なら闇慈は速さとスピードとパワーのバランスがとれてないから",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "advice-doubling",
+    "from": "助言",
+    "to": "アドバイスを助言",
+    "evidenceId": "post_01805_0227b0b27aaf7c48_6214",
+    "needle": "アドバイスを助言",
+    "text": "だから効率的になるようにアドバイスを助言すると顔真っ赤にして晒されるしな",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "precious-doubling",
+    "from": "貴重",
+    "to": "貴重に大切",
+    "evidenceId": "post_01561_67ee10dc8b7f3d90_5087",
+    "needle": "貴重に大切",
+    "text": "コカ肉は調理に使うにで貴重に大切（リアル話）",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "negative-doubling",
+    "from": "全然",
+    "to": "全然全く",
+    "evidenceId": "post_02029_95798251b01b7494_7533",
+    "needle": "全然全く",
+    "text": "なんつーか全然全く不遇でもなくむしろ実用的な固有ｱﾋﾞが多過ぎる。",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "anger-peak",
+    "from": "怒りが頂点に達した",
+    "to": "怒りが有頂天になった",
+    "evidenceId": "post_01635_41e56849e981c8e0_5432",
+    "needle": "怒りが有頂天になった",
+    "text": "その一般人どもが一級廃人のおれに対してナメタ言葉を使うことでおれの怒りが有頂天になった",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "anger-peak-present",
+    "from": "怒りが頂点に達する",
+    "to": "怒りが有頂天になる",
+    "evidenceId": "post_01635_41e56849e981c8e0_5432",
+    "needle": "怒りが有頂天になった",
+    "text": "その一般人どもが一級廃人のおれに対してナメタ言葉を使うことでおれの怒りが有頂天になった",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "deep-sadness",
+    "from": "とても悲しかった",
+    "to": "深い悲しみに包まれた",
+    "evidenceId": "post_01958_a99dd6788275096d_7231",
+    "needle": "深い悲しみに包まれた",
+    "text": "きっと鬼の首取ったように周囲が騒ぎブロントは深い悲しみに包まれた",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "definite",
+    "from": "確実",
+    "to": "確定的",
+    "evidenceId": "post_01674_cb7c3a70cfcf77ea_5602",
+    "needle": "確定的",
+    "text": "この事からやはり忍者の弱体は確定的",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "suguru",
+    "from": "すぎる",
+    "to": "すぐる",
+    "evidenceId": "post_01653_8e421a4e4cb481c1_5516",
+    "needle": "すぐる",
+    "text": "お前らは馬鹿すぐる",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "strongest-doubling",
+    "from": "最強だ",
+    "to": "最強に強い",
+    "evidenceId": "post_00131_5a2310ec15e6e767_195",
+    "needle": "最強に強い",
+    "text": "ロトさんは喧嘩が最強に強いからよ",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "strongest-polite-doubling",
+    "from": "最強です",
+    "to": "最強に強い",
+    "evidenceId": "post_00131_5a2310ec15e6e767_195",
+    "needle": "最強に強い",
+    "text": "ロトさんは喧嘩が最強に強いからよ",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "instant-doubling",
+    "from": "瞬殺した",
+    "to": "瞬殺で倒した",
+    "evidenceId": "post_00183_b6f4c9698d481765_516",
+    "needle": "瞬殺で倒した",
+    "text": "さらに８人ギガスラッシュで命中されて瞬殺で倒した",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "presence-doubling",
+    "from": "存在感が桁外れ",
+    "to": "存在感が桁外れな存在感",
+    "evidenceId": "post_02043_9c60365c91c5d963_7604",
+    "needle": "存在感が桁外れな存在感",
+    "text": "存在感が桁外れな存在感なのでたびたび人と",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  },
+  {
+    "id": "time-doubling",
+    "from": "すでに時間切れ",
+    "to": "時既に時間切れ",
+    "evidenceId": "post_01944_f7cb32dab8e25e5a_7155",
+    "needle": "時既に時間切れ",
+    "text": "カイは必死にやってくるが、時既に時間切れ、下段ｶﾞｰﾄﾞを固めた俺にｽｷはなかった",
+    "enabled": true,
+    "origin": "not-established-by-log-attestation"
+  }
+]

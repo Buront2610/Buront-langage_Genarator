@@ -1,0 +1,497 @@
+[
+  {
+    "expression": "んだが",
+    "group": "original",
+    "counts": {
+      "comma": 6,
+      "question_exclaim": 31,
+      "continuation": 113,
+      "end_of_post": 6,
+      "newline": 41,
+      "period": 2
+    },
+    "examples": [
+      {
+        "id": "raw-L04861",
+        "line": 4862,
+        "context": "その分隔の差がでかいだろ\nだからこの二つで比較したんだが、頭平気か？\n\nおまえこそ釣りだろ",
+        "following": "comma"
+      },
+      {
+        "id": "raw-L04986",
+        "line": 4987,
+        "context": "ログ読んでからレスしてくんない？\n>>748でおまえ自信がそう認めてるんだが？\nもはや勝負あった\nこれ以上無駄なレスしないで、荒れるから",
+        "following": "question_exclaim"
+      },
+      {
+        "id": "raw-L05045",
+        "line": 5046,
+        "context": "ログ読んでからレスしてくんない？\n>>748でおまえ自信がそう認めてるんだが？\nもはや勝負あった\nこれ以上無駄なレスしないで、荒れるから",
+        "following": "question_exclaim"
+      },
+      {
+        "id": "raw-L05053",
+        "line": 5054,
+        "context": "スレ一通り読んだんだが、JePYCAbkさんがなぜ叩かれてるのかわからんな\n俺もファルカスとバーバリアン持ってるがファルカスを使っている\nデモスラ＞ファ",
+        "following": "comma"
+      },
+      {
+        "id": "raw-L05122",
+        "line": 5124,
+        "context": "ここみるのは始めてなんだがアフォばっかりか？\nいいか、命中-5とDEX＋４じゃ　　レベル２個分以上の差が有るんだよ！！\nDEX＋４＝命中＋２だから、実に命中",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L05330",
+        "line": 5332,
+        "context": "前々から思ってたんだが威風なるって意味わからんよな\n無敵なる大暗黒騎士のがカッコイイと思う\n■のセンスの無さにがっくりした",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L05440",
+        "line": 5442,
+        "context": "はわかるけど\n\n何を根拠にそう言うのか\n俺はリアルでも喧嘩はかなり強いんだが",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L05626",
+        "line": 5627,
+        "context": "だろう\nあれじゃあうらやましがられないぞ\nちなみに俺はグラットン使いなんだが\nかなりうらやましがられてる",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L05728",
+        "line": 5729,
+        "context": "俺もグラットンをこの前２００万で運良く買えたんだが\nやはりこれがあると破壊力がまるで桁違いだぞ\nパワーもスピードも大幅に上がった",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L05994",
+        "line": 5995,
+        "context": "俺はシーフなんだが友達のナイトがグラットン持っててすごく強い\nＰスキルも高いし性格も良い\nこの前野良で組んだ内藤はグラットン持ってなかったがこいつは",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L06008",
+        "line": 6009,
+        "context": "ュミレーションしてみたところ\n１0０％の確率でナイトが勝つと勝率が出たんだがな\n暗黒は防御力が低いからナイトのグラットンパワーには耐えられんよ\nそにうえナイトは回復も使えるし",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L06129",
+        "line": 6130,
+        "context": "値がわかる人は頭が良い\n狼鯖で俺が尊敬してるエルヴァ－ンのナイトがいるんだが\nその人もグラットンはすごいと言ってた\nしかもその人ベヒーモスマントも持ってた\n迷惑かかるといけないから名前は出さないけど",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L06138",
+        "line": 6139,
+        "context": "俺も実は偶然狼鯖なんだがその人は俺も尊敬してる人かも\nグラットンとベヒーモスマントという超一流装備に\n見合ったＰスキルだよな、あの人は",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L06174",
+        "line": 6175,
+        "context": "俺はまだバスタードソードなんだが\nこのスレ見て目から涙が出て改心してグラットン取るまでレベル上げを\n中断することにしたぞ\nグラットン持って一級の強さでＰＴのために",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L06281",
+        "line": 6282,
+        "context": "激しく同意ですね\n私も最近グラットン取ったんだがやはりうらやましがられた\nもしこれで自慢してると思われるとむかつくよ\nグラットン持ってる事がすごいのは事実なんだから",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L06344",
+        "line": 6345,
+        "context": "たまたまこのスレ通りがかったんだが\nグラットンは持ってない人のが多いと思うぞ\n実際グラットン持ってないナイトはたくさんいるだろ\nこれはグラットンはすごいという証拠",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L06378",
+        "line": 6379,
+        "context": "\nここのスレはそれの主旨だろ\nグラットン装備してダメージを検証してみたんだが\n食らうダメージも受けるダメージも３０以上減ってた",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L06386",
+        "line": 6387,
+        "context": "きから同じ奴がしつこく名前出してるBurontって誰？\n聞いた事もないんだが\nそれとこのスレはage禁止だぞ\nマナー違反は死ね",
+        "following": "newline"
+      }
+    ],
+    "scope": "literal substring, not a morphological ending label; からな includes わからない"
+  },
+  {
+    "expression": "んだが",
+    "group": "generated",
+    "counts": {
+      "period": 25
+    },
+    "examples": [
+      {
+        "id": "4eb0e5a37acadbed160cea90",
+        "line": null,
+        "context": "時既に時間切れだったんだが。",
+        "following": "period"
+      },
+      {
+        "id": "a28e9f1e2d71f81ea8268408",
+        "line": null,
+        "context": "俺は動かないんだが。",
+        "following": "period"
+      },
+      {
+        "id": "7c9b4c03ada1c799a5d763ac",
+        "line": null,
+        "context": "存在感が桁外れな存在感なんだが。",
+        "following": "period"
+      },
+      {
+        "id": "4146e1acb40acb3dccaa7bda",
+        "line": null,
+        "context": "今日は寒いんだが。",
+        "following": "period"
+      },
+      {
+        "id": "8b227ab3d843d610524e7a8e",
+        "line": null,
+        "context": "今日は寒いんだが。",
+        "following": "period"
+      },
+      {
+        "id": "a85b95ccde49e8eafad4ab2e",
+        "line": null,
+        "context": "田中が佐藤を助けたんだが。",
+        "following": "period"
+      },
+      {
+        "id": "b0fa7fdcfd7067cb5a38f21b",
+        "line": null,
+        "context": "田中がAを復旧したんだが。Bは停止中で、俺は明日確認する。",
+        "following": "period"
+      },
+      {
+        "id": "2e8c9dfce853e882911a0600",
+        "line": null,
+        "context": "俺は処理の速さとスピードをアッピルしたんだが。",
+        "following": "period"
+      },
+      {
+        "id": "f9cf994c482f1a6f7c768535",
+        "line": null,
+        "context": "ぜいいんにアドバイスを助言したが、ふいんきは悪かったんだが。",
+        "following": "period"
+      },
+      {
+        "id": "daebc811f9093435b78c99db",
+        "line": null,
+        "context": "全然全く動かないんだが。",
+        "following": "period"
+      },
+      {
+        "id": "e692b8eaec24c06b189d8b7b",
+        "line": null,
+        "context": "それは確定的なんだが。",
+        "following": "period"
+      },
+      {
+        "id": "c2bfcb86bf2ccdbbe7bf07a3",
+        "line": null,
+        "context": "ぜいいんが速さとスピードを比較したんだが。",
+        "following": "period"
+      },
+      {
+        "id": "1d2fd3e1a0aee85c3f141d2d",
+        "line": null,
+        "context": "速度制限を確認したんだが。",
+        "following": "period"
+      },
+      {
+        "id": "630baea60fceeb0578858b08",
+        "line": null,
+        "context": "俺は確認しなかったんだが。",
+        "following": "period"
+      },
+      {
+        "id": "f2f92e2f8191ddcd5fac1dfe",
+        "line": null,
+        "context": "俺は100件の記録を確認したんだが。",
+        "following": "period"
+      },
+      {
+        "id": "a97417e9ea3aea4c342759f7",
+        "line": null,
+        "context": "俺はAからBへ3個を渡したんだが。",
+        "following": "period"
+      },
+      {
+        "id": "18c27da631462029ab0e6038",
+        "line": null,
+        "context": "私立学校でふいんきを調べたんだが。",
+        "following": "period"
+      },
+      {
+        "id": "5e277fb454994996df935fe9",
+        "line": null,
+        "context": "田中がAを復旧したんだが。",
+        "following": "period"
+      }
+    ],
+    "scope": "literal substring, not a morphological ending label; からな includes わからない"
+  },
+  {
+    "expression": "からな",
+    "group": "original",
+    "counts": {
+      "end_of_post": 31,
+      "continuation": 102,
+      "newline": 51,
+      "comma": 7,
+      "period": 3
+    },
+    "examples": [
+      {
+        "id": "raw-L00130",
+        "line": 131,
+        "context": "北海道なめると痛い目見るべ？\n俺は不良だからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L00273",
+        "line": 274,
+        "context": "言っておくけど荒らしたら殺すからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L00308",
+        "line": 309,
+        "context": "俺は警察より強いからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L00600",
+        "line": 601,
+        "context": "おまえら何言ってるかわけわからないんだよ\n適当ばっか言ってるけどなめるな",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L00615",
+        "line": 616,
+        "context": "ネラーどもは弱いからな\nロトさんは強すぎるけどよ",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L00873",
+        "line": 874,
+        "context": "さっきからなんなんだよおまえら\nわけわかんねーよ",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L01251",
+        "line": 1252,
+        "context": "１００万円は盗んだべ？\n不良だからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L01350",
+        "line": 1351,
+        "context": "俺を攻略とかわけがわからないべ\n俺は最強に強いから無敵だべ",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L01769",
+        "line": 1770,
+        "context": "そのロトは偽者だぞ\nそんなこともわからないのか\n頭悪ぃな",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L02107",
+        "line": 2108,
+        "context": "風の属性のパンチもあるぞ\nでも風って英語で意味がわからない",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L02601",
+        "line": 2602,
+        "context": "世界１だからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L02639",
+        "line": 2640,
+        "context": "ちくしょ\nロトさんに言ってこらしめてもらうからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L02746",
+        "line": 2747,
+        "context": "北海道は不良のレベルが強いからな\n北海道で最強の俺は伝説の不良でレベルが高すぎる",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L03472",
+        "line": 3473,
+        "context": "\nやったら殺す\n前のＨＰ荒らした奴は全員住んでる住所をつきとめて殺したからな",
+        "following": "end_of_post"
+      },
+      {
+        "id": "raw-L03712",
+        "line": 3713,
+        "context": "マンの意味知らないのかよ\n頭悪ぃな\n不良の言葉だからおまえら馬鹿にはわからないのか",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L03790",
+        "line": 3791,
+        "context": "おまえら調子こいてると殺すぞ\n俺は不良だからなめないほうがいい",
+        "following": "continuation"
+      },
+      {
+        "id": "raw-L03890",
+        "line": 3891,
+        "context": "俺は不良だからな\n私怨は多いけどよ",
+        "following": "newline"
+      },
+      {
+        "id": "raw-L04190",
+        "line": 4191,
+        "context": "ちくしょう\nおまえらだけは絶対に許さないからな\nアクさんに報告してやる",
+        "following": "newline"
+      }
+    ],
+    "scope": "literal substring, not a morphological ending label; からな includes わからない"
+  },
+  {
+    "expression": "からな",
+    "group": "generated",
+    "counts": {
+      "period": 30
+    },
+    "examples": [
+      {
+        "id": "5068b5d2023ea1d0e6dc14a0",
+        "line": null,
+        "context": "俺は最強だからな。",
+        "following": "period"
+      },
+      {
+        "id": "d9234388e3e491bf2349cbc8",
+        "line": null,
+        "context": "時既に時間切れだったからな。",
+        "following": "period"
+      },
+      {
+        "id": "3b37fb0f431270d49cc1fe42",
+        "line": null,
+        "context": "敵を瞬殺したからな。",
+        "following": "period"
+      },
+      {
+        "id": "904087b6c682009ce696fdc3",
+        "line": null,
+        "context": "俺は動かないからな。",
+        "following": "period"
+      },
+      {
+        "id": "bd08c302a3e84ba876c0bb16",
+        "line": null,
+        "context": "存在感が桁外れな存在感だからな。",
+        "following": "period"
+      },
+      {
+        "id": "4658cf1c15ce08ebe796b5d6",
+        "line": null,
+        "context": "今日は寒いからな。",
+        "following": "period"
+      },
+      {
+        "id": "c0aec3982d3b6fe609a40709",
+        "line": null,
+        "context": "今日は寒いからな。",
+        "following": "period"
+      },
+      {
+        "id": "dc2a59036253e31e340b435f",
+        "line": null,
+        "context": "田中が佐藤を助けたからな。",
+        "following": "period"
+      },
+      {
+        "id": "24dae526f57096afb10db831",
+        "line": null,
+        "context": "田中がAを復旧したからな。Bは停止中で、俺は明日確認する。",
+        "following": "period"
+      },
+      {
+        "id": "33e9c0376b866baac9fb4bf1",
+        "line": null,
+        "context": "俺は処理の速さとスピードをアッピルしたからな。",
+        "following": "period"
+      },
+      {
+        "id": "b75deb4cca8e208ba922162e",
+        "line": null,
+        "context": "ぜいいんにアドバイスを助言したが、ふいんきは悪かったからな。",
+        "following": "period"
+      },
+      {
+        "id": "9c9765a81213f9aa1b2c5570",
+        "line": null,
+        "context": "ぜいいんに助言したが、ふいんきは悪かったからな。",
+        "following": "period"
+      },
+      {
+        "id": "f0c669b452d59066f503ccc5",
+        "line": null,
+        "context": "俺は怒りが頂点に達したからな。",
+        "following": "period"
+      },
+      {
+        "id": "341f741ec31fce94d49ce80c",
+        "line": null,
+        "context": "俺はとても悲しかったからな。",
+        "following": "period"
+      },
+      {
+        "id": "0ad409ec053a0184986ba60e",
+        "line": null,
+        "context": "全然全く動かないからな。",
+        "following": "period"
+      },
+      {
+        "id": "1c35b460c04544efe79d2884",
+        "line": null,
+        "context": "それは確定的だからな。",
+        "following": "period"
+      },
+      {
+        "id": "8fb7d6cd490dbad2d8374588",
+        "line": null,
+        "context": "ぜいいんが速さとスピードを比較したからな。",
+        "following": "period"
+      },
+      {
+        "id": "3d3e7d66562d700e6d922c29",
+        "line": null,
+        "context": "速度制限を確認したからな。",
+        "following": "period"
+      }
+    ],
+    "scope": "literal substring, not a morphological ending label; からな includes わからない"
+  },
+  {
+    "expression": "ここ大事",
+    "group": "original",
+    "counts": {},
+    "examples": [],
+    "scope": "literal substring, not a morphological ending label; からな includes わからない"
+  },
+  {
+    "expression": "ここ大事",
+    "group": "generated",
+    "counts": {},
+    "examples": [],
+    "scope": "literal substring, not a morphological ending label; からな includes わからない"
+  }
+]

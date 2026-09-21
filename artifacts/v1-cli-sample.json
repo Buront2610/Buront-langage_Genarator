@@ -1,0 +1,1585 @@
+{
+  "inputHash": "4ca5f92030430f7208658a1db6736d46aceec111c6b33c0df7de159026be2b04",
+  "clientRevision": 1,
+  "selectedCandidateId": "19417b699462f34befa43a44",
+  "candidates": [
+    {
+      "id": "19417b699462f34befa43a44",
+      "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧の評価を盾に任せた結果、審査されるのは物差し。",
+      "plan": {
+        "id": "536aaa3ec9284ba0e47067a0",
+        "intent": "unresolved",
+        "mainOperator": "OP-06",
+        "auxiliaryOperators": [],
+        "family": "evaluation_reverse",
+        "mapping": {
+          "source": "unresolved",
+          "target": "defense",
+          "relation": "evaluation_reverse"
+        },
+        "backTranslation": "「復旧」についての比喩。盾は実物や実際の行為を意味しない。原文の事実・極性・完了は変更しない。",
+        "evidenceIds": [
+          "post_00267_2c7fa52c23802566_759",
+          "post_00307_5b22fef469cfd921_821",
+          "post_00311_ee38cac6a989a651_827",
+          "post_00402_24609f6c07a0fc7e_1232"
+        ],
+        "forbiddenEffects": [
+          "replace_actor",
+          "change_quantity",
+          "promote_completion",
+          "invent_opponent",
+          "invent_cause"
+        ],
+        "nodes": [
+          {
+            "id": "fact-node-0",
+            "type": "FactClause",
+            "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+            "sourceSpan": {
+              "start": 0,
+              "end": 26
+            },
+            "factIds": [
+              "fact-0",
+              "fact-1",
+              "fact-2"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "id": "connector",
+            "type": "Connective",
+            "text": "\n",
+            "factIds": [],
+            "evidenceIds": []
+          },
+          {
+            "id": "main-quote",
+            "type": "RhetoricalClause",
+            "text": "たとえるなら、復旧の評価を盾に任せた結果、審査されるのは物差し。",
+            "factIds": [],
+            "evidenceIds": [
+              "post_00267_2c7fa52c23802566_759",
+              "post_00307_5b22fef469cfd921_821",
+              "post_00311_ee38cac6a989a651_827",
+              "post_00402_24609f6c07a0fc7e_1232"
+            ]
+          }
+        ],
+        "experimental": true,
+        "linguisticFeatures": {
+          "pos:PROPN": 0.05263157894736842,
+          "dep:nsubj": 0.15789473684210525,
+          "pos:ADP": 0.2631578947368421,
+          "dep:case": 0.2631578947368421,
+          "pos:NOUN": 0.15789473684210525,
+          "dep:obj": 0.05263157894736842,
+          "pos:VERB": 0.10526315789473684,
+          "dep:ROOT": 0.10526315789473684,
+          "pos:AUX": 0.15789473684210525,
+          "dep:aux": 0.15789473684210525,
+          "pos:PUNCT": 0.15789473684210525,
+          "dep:punct": 0.15789473684210525,
+          "dep:obl": 0.05263157894736842,
+          "pos:PRON": 0.05263157894736842,
+          "pos:ADV": 0.05263157894736842,
+          "dep:advmod": 0.05263157894736842
+        }
+      },
+      "spans": [
+        {
+          "span": {
+            "start": 0,
+            "end": 26
+          },
+          "nodeId": "fact-node-0",
+          "origin": "source_fact",
+          "sourceSpan": {
+            "start": 0,
+            "end": 26
+          },
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "evidenceIds": []
+        },
+        {
+          "span": {
+            "start": 26,
+            "end": 27
+          },
+          "nodeId": "connector",
+          "origin": "rhetoric",
+          "factIds": [],
+          "evidenceIds": []
+        },
+        {
+          "span": {
+            "start": 27,
+            "end": 59
+          },
+          "nodeId": "main-quote",
+          "origin": "rhetoric",
+          "factIds": [],
+          "evidenceIds": [
+            "post_00267_2c7fa52c23802566_759",
+            "post_00307_5b22fef469cfd921_821",
+            "post_00311_ee38cac6a989a651_827",
+            "post_00402_24609f6c07a0fc7e_1232"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "code": "V-span",
+          "status": "pass",
+          "explanation": "出力全体の範囲分割・対応するAST型・一意なnode IDからの再構築を照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-coverage",
+          "status": "pass",
+          "explanation": "採用対象の原文範囲が一度ずつ現れ、欠落も事実の二重記載もないことを照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-quantity",
+          "status": "pass",
+          "explanation": "原値・符号・比較条件・単位・出現順・役割を事実節ごとに独立抽出して照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-roles",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-polarity",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-temporal",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-attribution",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-rhetoric",
+          "status": "pass",
+          "explanation": "許可した比喩節または出典と一致する別文の引用を検査",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        }
+      ],
+      "verificationStatus": "passed",
+      "verificationScope": "原文を保持した事実節・型付き修辞の構成検査（修辞の品質は実験段階）",
+      "scores": {
+        "S": null,
+        "Q": null,
+        "C": 1,
+        "R": 1
+      },
+      "novelty": {
+        "classification": "candidate_novel",
+        "text": 0.9272727272727272,
+        "structure": 0.3793103448275862,
+        "concept": null,
+        "nearestIds": [
+          "post_02082_32bb94bd2f68a725_7792",
+          "post_02216_6103baffc443da98_8453",
+          "post_02052_861a131609c7f167_7639"
+        ],
+        "datasetId": "dfdae7e4306ec244a5681ab8172642b45d26ba5ce200227c77dad501af15b40e",
+        "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "window": "原ログ・語録の近傍30件と保存履歴0件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。"
+      },
+      "evidence": [
+        {
+          "id": "post_00267_2c7fa52c23802566_759",
+          "kind": "related_example",
+          "text": "ロトの盾でダメージを防ぐしよ",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021420985/687"
+        },
+        {
+          "id": "post_00307_5b22fef469cfd921_821",
+          "kind": "related_example",
+          "text": "ロトの盾という１フィールドみたいなバリアがあるから防御いらないべ？",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021445035/388"
+        },
+        {
+          "id": "post_00311_ee38cac6a989a651_827",
+          "kind": "related_example",
+          "text": "ロトの盾はダメージを１０００００減らせるバリアだべ",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021445035/435"
+        },
+        {
+          "id": "post_00402_24609f6c07a0fc7e_1232",
+          "kind": "related_example",
+          "text": "ゼータ２にはロトの盾っていうバリアがついてる",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021544158/304"
+        }
+      ]
+    },
+    {
+      "id": "1fb7f5d2c95739466f0a1db6",
+      "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧を努力で測るな。物差しのほうに盾が必要になる。",
+      "plan": {
+        "id": "fa25dad5b2fac4225fdc18ac",
+        "intent": "unresolved",
+        "mainOperator": "OP-02",
+        "auxiliaryOperators": [],
+        "family": "scale_conflict",
+        "mapping": {
+          "source": "unresolved",
+          "target": "means",
+          "relation": "scale_conflict"
+        },
+        "backTranslation": "「復旧」についての比喩。努力は実物や実際の行為を意味しない。原文の事実・極性・完了は変更しない。",
+        "evidenceIds": [
+          "post_01153_3ab11daa35433ccf_3648",
+          "post_01744_6ce5458bed060cca_5927",
+          "post_01847_7cba0a14c0c43fae_6384",
+          "post_01894_f72a64a54f05dcff_6791"
+        ],
+        "forbiddenEffects": [
+          "replace_actor",
+          "change_quantity",
+          "promote_completion",
+          "invent_opponent",
+          "invent_cause"
+        ],
+        "nodes": [
+          {
+            "id": "fact-node-0",
+            "type": "FactClause",
+            "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+            "sourceSpan": {
+              "start": 0,
+              "end": 26
+            },
+            "factIds": [
+              "fact-0",
+              "fact-1",
+              "fact-2"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "id": "connector",
+            "type": "Connective",
+            "text": "\n",
+            "factIds": [],
+            "evidenceIds": []
+          },
+          {
+            "id": "main-quote",
+            "type": "RhetoricalClause",
+            "text": "たとえるなら、復旧を努力で測るな。物差しのほうに盾が必要になる。",
+            "factIds": [],
+            "evidenceIds": [
+              "post_01153_3ab11daa35433ccf_3648",
+              "post_01744_6ce5458bed060cca_5927",
+              "post_01847_7cba0a14c0c43fae_6384",
+              "post_01894_f72a64a54f05dcff_6791"
+            ]
+          }
+        ],
+        "experimental": true,
+        "linguisticFeatures": {
+          "pos:PROPN": 0.05263157894736842,
+          "dep:nsubj": 0.15789473684210525,
+          "pos:ADP": 0.2631578947368421,
+          "dep:case": 0.2631578947368421,
+          "pos:NOUN": 0.15789473684210525,
+          "dep:obj": 0.05263157894736842,
+          "pos:VERB": 0.10526315789473684,
+          "dep:ROOT": 0.10526315789473684,
+          "pos:AUX": 0.15789473684210525,
+          "dep:aux": 0.15789473684210525,
+          "pos:PUNCT": 0.15789473684210525,
+          "dep:punct": 0.15789473684210525,
+          "dep:obl": 0.05263157894736842,
+          "pos:PRON": 0.05263157894736842,
+          "pos:ADV": 0.05263157894736842,
+          "dep:advmod": 0.05263157894736842
+        }
+      },
+      "spans": [
+        {
+          "span": {
+            "start": 0,
+            "end": 26
+          },
+          "nodeId": "fact-node-0",
+          "origin": "source_fact",
+          "sourceSpan": {
+            "start": 0,
+            "end": 26
+          },
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "evidenceIds": []
+        },
+        {
+          "span": {
+            "start": 26,
+            "end": 27
+          },
+          "nodeId": "connector",
+          "origin": "rhetoric",
+          "factIds": [],
+          "evidenceIds": []
+        },
+        {
+          "span": {
+            "start": 27,
+            "end": 59
+          },
+          "nodeId": "main-quote",
+          "origin": "rhetoric",
+          "factIds": [],
+          "evidenceIds": [
+            "post_01153_3ab11daa35433ccf_3648",
+            "post_01744_6ce5458bed060cca_5927",
+            "post_01847_7cba0a14c0c43fae_6384",
+            "post_01894_f72a64a54f05dcff_6791"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "code": "V-span",
+          "status": "pass",
+          "explanation": "出力全体の範囲分割・対応するAST型・一意なnode IDからの再構築を照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-coverage",
+          "status": "pass",
+          "explanation": "採用対象の原文範囲が一度ずつ現れ、欠落も事実の二重記載もないことを照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-quantity",
+          "status": "pass",
+          "explanation": "原値・符号・比較条件・単位・出現順・役割を事実節ごとに独立抽出して照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-roles",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-polarity",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-temporal",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-attribution",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-rhetoric",
+          "status": "pass",
+          "explanation": "許可した比喩節または出典と一致する別文の引用を検査",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        }
+      ],
+      "verificationStatus": "passed",
+      "verificationScope": "原文を保持した事実節・型付き修辞の構成検査（修辞の品質は実験段階）",
+      "scores": {
+        "S": null,
+        "Q": null,
+        "C": 1,
+        "R": 1
+      },
+      "novelty": {
+        "classification": "candidate_novel",
+        "text": 0.9259259259259259,
+        "structure": 0.5172413793103448,
+        "concept": null,
+        "nearestIds": [
+          "post_01757_de764d6603ad877f_5985",
+          "post_01894_f72a64a54f05dcff_6791",
+          "post_02316_3e83e13581ab54ec_8988"
+        ],
+        "datasetId": "dfdae7e4306ec244a5681ab8172642b45d26ba5ce200227c77dad501af15b40e",
+        "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "window": "原ログ・語録の近傍30件と保存履歴0件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。"
+      },
+      "evidence": [
+        {
+          "id": "post_01153_3ab11daa35433ccf_3648",
+          "kind": "related_example",
+          "text": "俺も苦労して手に入れたがその努力の甲斐があった",
+          "url": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/935"
+        },
+        {
+          "id": "post_01744_6ce5458bed060cca_5927",
+          "kind": "related_example",
+          "text": "少しは自分たちで立ち回り努力しろ",
+          "url": "https://game7.5ch.net/test/read.cgi/ogame/1102568202/411"
+        },
+        {
+          "id": "post_01847_7cba0a14c0c43fae_6384",
+          "kind": "related_example",
+          "text": "しょせん頭がたりん馬鹿は何持ってても一緒だって事だろ、着替えその他努力すれば？",
+          "url": "https://live19.5ch.net/test/read.cgi/ogame/1111173182/66"
+        },
+        {
+          "id": "post_01894_f72a64a54f05dcff_6791",
+          "kind": "related_example",
+          "text": "努力もせずに最強目指す奴が多過ぎるよな、ﾏｼﾞで終わってる。",
+          "url": "https://live19.5ch.net/test/read.cgi/ogame/1111654743/176"
+        }
+      ]
+    },
+    {
+      "id": "26e0f450cf133b22215eee41",
+      "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nたとえるなら、復旧に盾を装備させると、説明のほうが重装備になる。",
+      "plan": {
+        "id": "3756f897d4416538e4658c32",
+        "intent": "unresolved",
+        "mainOperator": "OP-01",
+        "auxiliaryOperators": [],
+        "family": "domain_transfer",
+        "mapping": {
+          "source": "unresolved",
+          "target": "defense",
+          "relation": "domain_transfer"
+        },
+        "backTranslation": "「復旧」についての比喩。盾は実物や実際の行為を意味しない。原文の事実・極性・完了は変更しない。",
+        "evidenceIds": [
+          "post_00267_2c7fa52c23802566_759",
+          "post_00307_5b22fef469cfd921_821",
+          "post_00311_ee38cac6a989a651_827",
+          "post_00402_24609f6c07a0fc7e_1232"
+        ],
+        "forbiddenEffects": [
+          "replace_actor",
+          "change_quantity",
+          "promote_completion",
+          "invent_opponent",
+          "invent_cause"
+        ],
+        "nodes": [
+          {
+            "id": "fact-node-0",
+            "type": "FactClause",
+            "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+            "sourceSpan": {
+              "start": 0,
+              "end": 26
+            },
+            "factIds": [
+              "fact-0",
+              "fact-1",
+              "fact-2"
+            ],
+            "evidenceIds": []
+          },
+          {
+            "id": "connector",
+            "type": "Connective",
+            "text": "\n",
+            "factIds": [],
+            "evidenceIds": []
+          },
+          {
+            "id": "main-quote",
+            "type": "RhetoricalClause",
+            "text": "たとえるなら、復旧に盾を装備させると、説明のほうが重装備になる。",
+            "factIds": [],
+            "evidenceIds": [
+              "post_00267_2c7fa52c23802566_759",
+              "post_00307_5b22fef469cfd921_821",
+              "post_00311_ee38cac6a989a651_827",
+              "post_00402_24609f6c07a0fc7e_1232"
+            ]
+          }
+        ],
+        "experimental": true,
+        "linguisticFeatures": {
+          "pos:PROPN": 0.05263157894736842,
+          "dep:nsubj": 0.15789473684210525,
+          "pos:ADP": 0.2631578947368421,
+          "dep:case": 0.2631578947368421,
+          "pos:NOUN": 0.15789473684210525,
+          "dep:obj": 0.05263157894736842,
+          "pos:VERB": 0.10526315789473684,
+          "dep:ROOT": 0.10526315789473684,
+          "pos:AUX": 0.15789473684210525,
+          "dep:aux": 0.15789473684210525,
+          "pos:PUNCT": 0.15789473684210525,
+          "dep:punct": 0.15789473684210525,
+          "dep:obl": 0.05263157894736842,
+          "pos:PRON": 0.05263157894736842,
+          "pos:ADV": 0.05263157894736842,
+          "dep:advmod": 0.05263157894736842
+        }
+      },
+      "spans": [
+        {
+          "span": {
+            "start": 0,
+            "end": 26
+          },
+          "nodeId": "fact-node-0",
+          "origin": "source_fact",
+          "sourceSpan": {
+            "start": 0,
+            "end": 26
+          },
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "evidenceIds": []
+        },
+        {
+          "span": {
+            "start": 26,
+            "end": 27
+          },
+          "nodeId": "connector",
+          "origin": "rhetoric",
+          "factIds": [],
+          "evidenceIds": []
+        },
+        {
+          "span": {
+            "start": 27,
+            "end": 59
+          },
+          "nodeId": "main-quote",
+          "origin": "rhetoric",
+          "factIds": [],
+          "evidenceIds": [
+            "post_00267_2c7fa52c23802566_759",
+            "post_00307_5b22fef469cfd921_821",
+            "post_00311_ee38cac6a989a651_827",
+            "post_00402_24609f6c07a0fc7e_1232"
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "code": "V-span",
+          "status": "pass",
+          "explanation": "出力全体の範囲分割・対応するAST型・一意なnode IDからの再構築を照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-coverage",
+          "status": "pass",
+          "explanation": "採用対象の原文範囲が一度ずつ現れ、欠落も事実の二重記載もないことを照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-quantity",
+          "status": "pass",
+          "explanation": "原値・符号・比較条件・単位・出現順・役割を事実節ごとに独立抽出して照合",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-roles",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-polarity",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-temporal",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-attribution",
+          "status": "pass",
+          "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        },
+        {
+          "code": "V-rhetoric",
+          "status": "pass",
+          "explanation": "許可した比喩節または出典と一致する別文の引用を検査",
+          "required": true,
+          "factIds": [
+            "fact-0",
+            "fact-1",
+            "fact-2"
+          ],
+          "checkerVersion": "literal-proof-and-plan-v1"
+        }
+      ],
+      "verificationStatus": "passed",
+      "verificationScope": "原文を保持した事実節・型付き修辞の構成検査（修辞の品質は実験段階）",
+      "scores": {
+        "S": null,
+        "Q": null,
+        "C": 1,
+        "R": 1
+      },
+      "novelty": {
+        "classification": "candidate_novel",
+        "text": 0.9148936170212766,
+        "structure": 0.5384615384615384,
+        "concept": null,
+        "nearestIds": [
+          "post_01933_c388215f524a2830_7060",
+          "excerpt_347",
+          "post_01701_e49e952f3ae7ba0e_5723"
+        ],
+        "datasetId": "dfdae7e4306ec244a5681ab8172642b45d26ba5ce200227c77dad501af15b40e",
+        "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "window": "原ログ・語録の近傍30件と保存履歴0件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。"
+      },
+      "evidence": [
+        {
+          "id": "post_00267_2c7fa52c23802566_759",
+          "kind": "related_example",
+          "text": "ロトの盾でダメージを防ぐしよ",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021420985/687"
+        },
+        {
+          "id": "post_00307_5b22fef469cfd921_821",
+          "kind": "related_example",
+          "text": "ロトの盾という１フィールドみたいなバリアがあるから防御いらないべ？",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021445035/388"
+        },
+        {
+          "id": "post_00311_ee38cac6a989a651_827",
+          "kind": "related_example",
+          "text": "ロトの盾はダメージを１０００００減らせるバリアだべ",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021445035/435"
+        },
+        {
+          "id": "post_00402_24609f6c07a0fc7e_1232",
+          "kind": "related_example",
+          "text": "ゼータ２にはロトの盾っていうバリアがついてる",
+          "url": "http://game.5ch.net/test/read.cgi/gameover/1021544158/304"
+        }
+      ]
+    }
+  ],
+  "reviewCandidates": [],
+  "fallback": null,
+  "shortfallReason": null,
+  "ir": {
+    "source": {
+      "raw": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+      "inputHash": "4ca5f92030430f7208658a1db6736d46aceec111c6b33c0df7de159026be2b04",
+      "scalarToUtf16": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "normalized": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+      "normalizationMap": [
+        {
+          "start": 0,
+          "end": 1
+        },
+        {
+          "start": 1,
+          "end": 2
+        },
+        {
+          "start": 2,
+          "end": 3
+        },
+        {
+          "start": 3,
+          "end": 4
+        },
+        {
+          "start": 4,
+          "end": 5
+        },
+        {
+          "start": 5,
+          "end": 6
+        },
+        {
+          "start": 6,
+          "end": 7
+        },
+        {
+          "start": 7,
+          "end": 8
+        },
+        {
+          "start": 8,
+          "end": 9
+        },
+        {
+          "start": 9,
+          "end": 10
+        },
+        {
+          "start": 10,
+          "end": 11
+        },
+        {
+          "start": 11,
+          "end": 12
+        },
+        {
+          "start": 12,
+          "end": 13
+        },
+        {
+          "start": 13,
+          "end": 14
+        },
+        {
+          "start": 14,
+          "end": 15
+        },
+        {
+          "start": 15,
+          "end": 16
+        },
+        {
+          "start": 16,
+          "end": 17
+        },
+        {
+          "start": 17,
+          "end": 18
+        },
+        {
+          "start": 18,
+          "end": 19
+        },
+        {
+          "start": 19,
+          "end": 20
+        },
+        {
+          "start": 20,
+          "end": 21
+        },
+        {
+          "start": 21,
+          "end": 22
+        },
+        {
+          "start": 22,
+          "end": 23
+        },
+        {
+          "start": 23,
+          "end": 24
+        },
+        {
+          "start": 24,
+          "end": 25
+        },
+        {
+          "start": 25,
+          "end": 26
+        }
+      ],
+      "protectedValues": [
+        {
+          "id": "pv-3",
+          "kind": "identifier",
+          "raw": "A",
+          "span": {
+            "start": 3,
+            "end": 4
+          },
+          "role": "を"
+        },
+        {
+          "id": "pv-10",
+          "kind": "identifier",
+          "raw": "B",
+          "span": {
+            "start": 10,
+            "end": 11
+          },
+          "role": "は"
+        }
+      ],
+      "opaqueSpans": []
+    },
+    "parserVersion": "spacy=3.8.16/ginza=5.2.1/ja-ginza=5.2.0/SudachiPy=0.6.11/SudachiDict-core=20260723/rapidfuzz=3.14.6",
+    "facts": [
+      {
+        "id": "fact-0",
+        "sourceSpan": {
+          "start": 0,
+          "end": 10
+        },
+        "predicateLemma": "復旧",
+        "arguments": [
+          {
+            "role": "agent",
+            "text": "田中",
+            "span": {
+              "start": 0,
+              "end": 2
+            },
+            "entityId": "entity-0"
+          },
+          {
+            "role": "patient",
+            "text": "A",
+            "span": {
+              "start": 3,
+              "end": 4
+            },
+            "entityId": "entity-1"
+          }
+        ],
+        "polarity": "positive",
+        "realization": "actual",
+        "completion": "completed",
+        "attribution": {
+          "kind": "narrator",
+          "speaker": null
+        },
+        "protectedValueIds": [
+          "pv-3"
+        ],
+        "resolution": "resolved"
+      },
+      {
+        "id": "fact-1",
+        "sourceSpan": {
+          "start": 10,
+          "end": 17
+        },
+        "predicateLemma": "停止中",
+        "arguments": [
+          {
+            "role": "agent",
+            "text": "B",
+            "span": {
+              "start": 10,
+              "end": 11
+            },
+            "entityId": "entity-2"
+          }
+        ],
+        "polarity": "positive",
+        "realization": "actual",
+        "completion": "not_completed",
+        "attribution": {
+          "kind": "narrator",
+          "speaker": null
+        },
+        "protectedValueIds": [
+          "pv-10"
+        ],
+        "resolution": "opaque"
+      },
+      {
+        "id": "fact-2",
+        "sourceSpan": {
+          "start": 17,
+          "end": 26
+        },
+        "predicateLemma": "確認",
+        "arguments": [
+          {
+            "role": "agent",
+            "text": "私",
+            "span": {
+              "start": 17,
+              "end": 18
+            },
+            "entityId": "entity-3"
+          }
+        ],
+        "polarity": "positive",
+        "realization": "prospective",
+        "completion": "unknown",
+        "attribution": {
+          "kind": "narrator",
+          "speaker": null
+        },
+        "protectedValueIds": [],
+        "resolution": "resolved"
+      }
+    ],
+    "entities": [
+      {
+        "id": "entity-0",
+        "text": "田中",
+        "mentions": [
+          {
+            "start": 0,
+            "end": 2
+          }
+        ]
+      },
+      {
+        "id": "entity-1",
+        "text": "A",
+        "mentions": [
+          {
+            "start": 3,
+            "end": 4
+          }
+        ]
+      },
+      {
+        "id": "entity-2",
+        "text": "B",
+        "mentions": [
+          {
+            "start": 10,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "id": "entity-3",
+        "text": "私",
+        "mentions": [
+          {
+            "start": 17,
+            "end": 18
+          }
+        ]
+      }
+    ],
+    "tokens": [
+      {
+        "id": 0,
+        "text": "田中",
+        "lemma": "田中",
+        "reading": "タナカ",
+        "pos": "PROPN",
+        "tag": "名詞-固有名詞-人名-姓",
+        "dep": "nsubj",
+        "head": 4,
+        "span": {
+          "start": 0,
+          "end": 2
+        },
+        "morphology": [
+          "Reading=タナカ"
+        ]
+      },
+      {
+        "id": 1,
+        "text": "が",
+        "lemma": "が",
+        "reading": "ガ",
+        "pos": "ADP",
+        "tag": "助詞-格助詞",
+        "dep": "case",
+        "head": 0,
+        "span": {
+          "start": 2,
+          "end": 3
+        },
+        "morphology": [
+          "Reading=ガ"
+        ]
+      },
+      {
+        "id": 2,
+        "text": "A",
+        "lemma": "a",
+        "reading": "アール",
+        "pos": "NOUN",
+        "tag": "名詞-普通名詞-助数詞可能",
+        "dep": "obj",
+        "head": 4,
+        "span": {
+          "start": 3,
+          "end": 4
+        },
+        "morphology": [
+          "Reading=アール"
+        ]
+      },
+      {
+        "id": 3,
+        "text": "を",
+        "lemma": "を",
+        "reading": "ヲ",
+        "pos": "ADP",
+        "tag": "助詞-格助詞",
+        "dep": "case",
+        "head": 2,
+        "span": {
+          "start": 4,
+          "end": 5
+        },
+        "morphology": [
+          "Reading=ヲ"
+        ]
+      },
+      {
+        "id": 4,
+        "text": "復旧",
+        "lemma": "復旧",
+        "reading": "フッキュウ",
+        "pos": "VERB",
+        "tag": "名詞-普通名詞-サ変可能",
+        "dep": "ROOT",
+        "head": 4,
+        "span": {
+          "start": 5,
+          "end": 7
+        },
+        "morphology": [
+          "Reading=フッキュウ"
+        ]
+      },
+      {
+        "id": 5,
+        "text": "し",
+        "lemma": "する",
+        "reading": "シ",
+        "pos": "AUX",
+        "tag": "動詞-非自立可能",
+        "dep": "aux",
+        "head": 4,
+        "span": {
+          "start": 7,
+          "end": 8
+        },
+        "morphology": [
+          "Inflection=サ行変格;連用形-一般",
+          "Reading=シ"
+        ]
+      },
+      {
+        "id": 6,
+        "text": "た",
+        "lemma": "た",
+        "reading": "タ",
+        "pos": "AUX",
+        "tag": "助動詞",
+        "dep": "aux",
+        "head": 4,
+        "span": {
+          "start": 8,
+          "end": 9
+        },
+        "morphology": [
+          "Inflection=助動詞-タ;終止形-一般",
+          "Reading=タ"
+        ]
+      },
+      {
+        "id": 7,
+        "text": "。",
+        "lemma": "。",
+        "reading": "。",
+        "pos": "PUNCT",
+        "tag": "補助記号-句点",
+        "dep": "punct",
+        "head": 4,
+        "span": {
+          "start": 9,
+          "end": 10
+        },
+        "morphology": [
+          "Reading=。"
+        ]
+      },
+      {
+        "id": 8,
+        "text": "B",
+        "lemma": "b",
+        "reading": "b",
+        "pos": "NOUN",
+        "tag": "名詞-普通名詞-一般",
+        "dep": "nsubj",
+        "head": 10,
+        "span": {
+          "start": 10,
+          "end": 11
+        },
+        "morphology": [
+          "Reading=b"
+        ]
+      },
+      {
+        "id": 9,
+        "text": "は",
+        "lemma": "は",
+        "reading": "ハ",
+        "pos": "ADP",
+        "tag": "助詞-係助詞",
+        "dep": "case",
+        "head": 8,
+        "span": {
+          "start": 11,
+          "end": 12
+        },
+        "morphology": [
+          "Reading=ハ"
+        ]
+      },
+      {
+        "id": 10,
+        "text": "停止中",
+        "lemma": "停止中",
+        "reading": "テイシチュウ",
+        "pos": "NOUN",
+        "tag": "名詞-普通名詞-一般",
+        "dep": "obl",
+        "head": 16,
+        "span": {
+          "start": 12,
+          "end": 15
+        },
+        "morphology": [
+          "Reading=テイシチュウ"
+        ]
+      },
+      {
+        "id": 11,
+        "text": "で",
+        "lemma": "だ",
+        "reading": "デ",
+        "pos": "ADP",
+        "tag": "助動詞",
+        "dep": "case",
+        "head": 10,
+        "span": {
+          "start": 15,
+          "end": 16
+        },
+        "morphology": [
+          "Inflection=助動詞-ダ;連用形-一般",
+          "Reading=デ"
+        ]
+      },
+      {
+        "id": 12,
+        "text": "、",
+        "lemma": "、",
+        "reading": "、",
+        "pos": "PUNCT",
+        "tag": "補助記号-読点",
+        "dep": "punct",
+        "head": 10,
+        "span": {
+          "start": 16,
+          "end": 17
+        },
+        "morphology": [
+          "Reading=、"
+        ]
+      },
+      {
+        "id": 13,
+        "text": "私",
+        "lemma": "私",
+        "reading": "ワタクシ",
+        "pos": "PRON",
+        "tag": "代名詞",
+        "dep": "nsubj",
+        "head": 16,
+        "span": {
+          "start": 17,
+          "end": 18
+        },
+        "morphology": [
+          "Reading=ワタクシ"
+        ]
+      },
+      {
+        "id": 14,
+        "text": "は",
+        "lemma": "は",
+        "reading": "ハ",
+        "pos": "ADP",
+        "tag": "助詞-係助詞",
+        "dep": "case",
+        "head": 13,
+        "span": {
+          "start": 18,
+          "end": 19
+        },
+        "morphology": [
+          "Reading=ハ"
+        ]
+      },
+      {
+        "id": 15,
+        "text": "明日",
+        "lemma": "明日",
+        "reading": "アス",
+        "pos": "ADV",
+        "tag": "名詞-普通名詞-副詞可能",
+        "dep": "advmod",
+        "head": 16,
+        "span": {
+          "start": 19,
+          "end": 21
+        },
+        "morphology": [
+          "Reading=アス"
+        ]
+      },
+      {
+        "id": 16,
+        "text": "確認",
+        "lemma": "確認",
+        "reading": "カクニン",
+        "pos": "VERB",
+        "tag": "名詞-普通名詞-サ変可能",
+        "dep": "ROOT",
+        "head": 16,
+        "span": {
+          "start": 21,
+          "end": 23
+        },
+        "morphology": [
+          "Reading=カクニン"
+        ]
+      },
+      {
+        "id": 17,
+        "text": "する",
+        "lemma": "する",
+        "reading": "スル",
+        "pos": "AUX",
+        "tag": "動詞-非自立可能",
+        "dep": "aux",
+        "head": 16,
+        "span": {
+          "start": 23,
+          "end": 25
+        },
+        "morphology": [
+          "Inflection=サ行変格;終止形-一般",
+          "Reading=スル"
+        ]
+      },
+      {
+        "id": 18,
+        "text": "。",
+        "lemma": "。",
+        "reading": "。",
+        "pos": "PUNCT",
+        "tag": "補助記号-句点",
+        "dep": "punct",
+        "head": 16,
+        "span": {
+          "start": 25,
+          "end": 26
+        },
+        "morphology": [
+          "Reading=。"
+        ]
+      }
+    ],
+    "times": [
+      {
+        "text": "明日",
+        "span": {
+          "start": 19,
+          "end": 21
+        }
+      }
+    ],
+    "conditions": [],
+    "relations": [],
+    "adoptedSpans": [
+      {
+        "start": 0,
+        "end": 26
+      }
+    ],
+    "omittedSpans": [],
+    "topicOnly": false
+  },
+  "replayManifest": {
+    "schemaVersion": 1,
+    "request": {
+      "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+      "task": "rewrite",
+      "contextMode": "faithful",
+      "noveltyMode": "invent",
+      "intensity": 2,
+      "series": "all",
+      "backend": "structured",
+      "clientRevision": 1,
+      "seed": "design-v1"
+    },
+    "seed": "design-v1",
+    "inputHash": "4ca5f92030430f7208658a1db6736d46aceec111c6b33c0df7de159026be2b04",
+    "candidateSetHash": "863a643ccf75cd677aa85e9101e54bb59db664abbf255a1c0e616b997ccaccfb",
+    "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "history": [],
+    "datasetId": "dfdae7e4306ec244a5681ab8172642b45d26ba5ce200227c77dad501af15b40e",
+    "assets": {
+      "schemaVersion": 1,
+      "files": {
+        "log-corpus.json": "7911160cbf8240a42072f3bbf99258211d606ffbc9238e3072e76b45501ebdd8",
+        "quote-corpus.json": "c25d033ff9d631e5467ee4acb392f6e45eea12f4fa94d21c1f476cd0167b49df",
+        "archive-series.json": "271646e323a081f5f3ab32547c56eb8faf98f8397762929b181dc7d383121879",
+        "style-model.json": "87e0e6acc8c7703b64864e5b97c6b713d68bd788ff3ae3b0c4c473269979d6e3",
+        "novel-model.json": "2912afb0ec73c015b1a3188803784556948617ebcfb101b6eed80232b957d857"
+      },
+      "compiledEvidence": "0e3e025422cb5404cf4251fda406fa6c4f04c3736d962c24e400f0635ad6e4c8",
+      "engine": {
+        "schemaVersion": 1,
+        "sourceHash": "6b6cd18eec3b9d7034b0d0adf4a9b400b8d252d3801e1aa3d0185bd5adb7d7f8",
+        "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+        "runtime": "node24-python3.11",
+        "safetyContract": "v1"
+      },
+      "parser": "ja_ginza",
+      "dictionary": "f38a5f15f39720eda3295310b20e129bd6638d2d0c6b2448e7c0bfcd06ea2fa2",
+      "rules": "3c2d10feb8f699e1300163a2ca077518594c03a43705c7f1c58d812705c28742",
+      "index": "minisearch-7/intl-word-nfkc-v1",
+      "annotations": "none",
+      "evaluator": "untrained",
+      "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+      "sourceMetadata": {
+        "localLog": {
+          "filename": "burontlog.txt",
+          "bytes": 873652,
+          "sha256": "983ba86ddf086d7bc842d91c66a4bc1bab940c126682b436538d5df7a68df752"
+        },
+        "archive": {
+          "baseUrl": "https://kenkyonanight.xxxxxxxx.jp/",
+          "partHashes": {
+            "buront3_posts_01.js": "22dcae4d06ec9156c5a5bc2fb7755063faeab0fcc9b915559790a47cd6fcbb81",
+            "buront3_posts_02.js": "a1a2badfce760133dc80b2031bc06700796177eb7d36545e1c8e464fe5f1bba2",
+            "buront3_posts_03.js": "33bf0249848a7d538bccb971a4589ba7b4acacdeba259f29b07a2f438a340272",
+            "buront3_posts_04.js": "1a3aebc7e5d8e188065e89be653caf56ca7eae983a5a48fe93a102e24bf4a462",
+            "buront3_posts_05.js": "e5aec590de38eb6b6d637fbae1c8294a76871a2f2100e97e4d4848cc879a3803"
+          }
+        }
+      },
+      "quoteSource": {
+        "url": "https://kenkyonanight.xxxxxxxx.jp/goroku.html",
+        "title": "名言集っぽいの",
+        "encoding": "Shift_JIS",
+        "bytes": 238943,
+        "sha256": "a6df656487b9fe7f8b78c39632319c124bdcd06baa0262650420b7eb4bbefecf"
+      },
+      "rights": "unverified-local-only",
+      "sourceTypes": [
+        "original_posts",
+        "quote_headings",
+        "adaptation_works"
+      ],
+      "reproducible": true
+    },
+    "parserVersion": "spacy=3.8.16/ginza=5.2.1/ja-ginza=5.2.0/SudachiPy=0.6.11/SudachiDict-core=20260723/rapidfuzz=3.14.6",
+    "engineVersion": "6b6cd18eec3b9d7034b0d0adf4a9b400b8d252d3801e1aa3d0185bd5adb7d7f8",
+    "backend": "structured",
+    "profile": "bounded-12plans-36drafts-3results",
+    "deterministic": true,
+    "generated": 12,
+    "replayDepth": 0,
+    "experimentalOperators": false,
+    "regeneration": null,
+    "evaluator": {
+      "S": "untrained",
+      "Q": "untrained",
+      "C": "literal-preservation",
+      "R": "rules-v1"
+    },
+    "experimental": true
+  }
+}

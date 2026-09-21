@@ -1,0 +1,1912 @@
+{
+  "schemaVersion": 1,
+  "title": "生成文体の人間チェック",
+  "engineHash": "1630127de449bf5ff5926ef40caecc974064a8e01a00f3262dd7f53315134545",
+  "datasetId": "fe61ce839094c7468fd52d13f8692a758105c544eef7604e717d3529914892e7",
+  "vectorReportHash": "2b9b11bb70443db452af88e588ddfaa89fac673e86f0a7382ebfd3f0bf365104",
+  "items": [
+    {
+      "id": "pair-1",
+      "source": "今日は寒い。",
+      "left": "寒さは、装備に採点を付けに来る試験官みたいなものなんだが。受け止める構えまで試験範囲とか聞いてないんだが？寒さのくせに試験官の仕事まで取るとか汚い。（ここ大事）\n今日は寒い。\n",
+      "right": "今日は寒い。",
+      "private": {
+        "methods": [
+          "current_generator",
+          "plain"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.1493383628793514,
+              "coverage": 0.18032786885245902,
+              "neighbors": [
+                {
+                  "id": "post_02297_532d0c0146f34c61_8939",
+                  "cosine": 0.18431592509398084
+                },
+                {
+                  "id": "post_01387_af80eee896f6ee04_4353",
+                  "cosine": 0.16107589468685607
+                },
+                {
+                  "id": "post_01048_f1b0b28dabadbe7c_3261",
+                  "cosine": 0.1607403666843339
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.2532723711570409,
+              "coverage": 0.4587628865979381,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.21905407174456099
+                },
+                {
+                  "id": "post_02297_532d0c0146f34c61_8939",
+                  "cosine": 0.19482071613686192
+                },
+                {
+                  "id": "post_01431_5a844e1172315f02_4485",
+                  "cosine": 0.17641728768787
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.25329777582567425,
+              "coverage": 0.4587628865979381,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.21905811768062036
+                },
+                {
+                  "id": "post_02297_532d0c0146f34c61_8939",
+                  "cosine": 0.19482431448202964
+                },
+                {
+                  "id": "post_01431_5a844e1172315f02_4485",
+                  "cosine": 0.1764205461210964
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.012997456432990486,
+              "coverage": 0.08333333333333333,
+              "neighbors": [
+                {
+                  "id": "post_01894_f72a64a54f05dcff_6794",
+                  "cosine": 0.21922732782646237
+                },
+                {
+                  "id": "post_01848_8c3e3a7966defaa9_6395",
+                  "cosine": 0.20806349929045728
+                },
+                {
+                  "id": "post_02373_a562ac2e38c1ddee_9248",
+                  "cosine": 0.19233961468850208
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.13455076079747283,
+              "coverage": 0.7777777777777778,
+              "neighbors": [
+                {
+                  "id": "post_01848_8c3e3a7966defaa9_6395",
+                  "cosine": 0.333145966156093
+                },
+                {
+                  "id": "post_01894_f72a64a54f05dcff_6794",
+                  "cosine": 0.280393075886567
+                },
+                {
+                  "id": "post_02238_9574cac606b26d59_8565",
+                  "cosine": 0.26448550529372244
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.13461397076595888,
+              "coverage": 0.7777777777777778,
+              "neighbors": [
+                {
+                  "id": "post_01848_8c3e3a7966defaa9_6395",
+                  "cosine": 0.3334155083744426
+                },
+                {
+                  "id": "post_01894_f72a64a54f05dcff_6794",
+                  "cosine": 0.280393075886567
+                },
+                {
+                  "id": "post_02238_9574cac606b26d59_8565",
+                  "cosine": 0.26449908404115446
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "a9c69076b1ea5703c39de6f609d1e25fbdc493c34004c65254b98249d7ef4d1b",
+        "split": "pilot",
+        "candidateSetHash": "4cac3bafbb2c571d3d929ec32fc3208e9b98d88bc1a309eb1339afe5a85cb008"
+      }
+    },
+    {
+      "id": "pair-2",
+      "source": "田中が佐藤を助けた。",
+      "left": "田中から佐藤へ届いた助力は、防御を渡す側と守られる側の二人組みたいなものなんだが。重さを量れば誰を助けたかまで分かるなら体重計が恩人を名乗り出すぞ。（ここ大事）\n田中が佐藤を助けた。\n",
+      "right": "田中が佐藤を助けた。\nおいィ？確定的に明らか。それほどでもない。",
+      "private": {
+        "methods": [
+          "current_generator",
+          "pasted_quotes"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.14015080183607367,
+              "coverage": 0.13513513513513514,
+              "neighbors": [
+                {
+                  "id": "post_01981_712d5d2dd08200c1_7331",
+                  "cosine": 0.13381213698147323
+                },
+                {
+                  "id": "post_02297_532d0c0146f34c61_8939",
+                  "cosine": 0.10941762486115791
+                },
+                {
+                  "id": "post_02179_12f40177fbceb152_8203",
+                  "cosine": 0.10873021227202792
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.2464803558040036,
+              "coverage": 0.505,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.280777873373305
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.20817821255410152
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.17759944961700633
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.24658264248121775,
+              "coverage": 0.505,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.28080148442969016
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.20813297411488416
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.17520299011191104
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.078389453579554,
+              "coverage": 0.1797752808988764,
+              "neighbors": [
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.43890054296526454
+                },
+                {
+                  "id": "post_01105_e3e837b12d216d35_3484",
+                  "cosine": 0.1468820946456201
+                },
+                {
+                  "id": "post_01894_f72a64a54f05dcff_6794",
+                  "cosine": 0.12560594783357903
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.15281824079209275,
+              "coverage": 0.47297297297297297,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.3350848260963613
+                },
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.3139652145523868
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.17757822709457924
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.11449194511969567,
+              "coverage": 0.7142857142857143,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.482612854777807
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.22511020039988439
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.19855559642604356
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "a45ecc8c1fd88da0f089423da08d2f210a19f30c602be9eb7e409cb309c97bfc",
+        "split": "pilot",
+        "candidateSetHash": "61a2b1705f7c48dbdc0a7bca6302758bc06ecaea08acce5a0eb4310fd4dcb11f"
+      }
+    },
+    {
+      "id": "pair-3",
+      "source": "田中がAを復旧した。",
+      "left": "田中によるAの過去の復旧は、通れない道に通行許可を出す力みたいなものなんだが。力だけで通れる道が決まるなら力自慢が道路地図になるんだが？あもりにも地理をなめすぐでしょう。（ここ大事）\n田中がAを復旧した。\n",
+      "right": "田中がAを復旧した。\nこの状況を理解するには、出来事とその評価を分けて考える必要があります。ある性質が優れているという説明だけでは、別の性質についても優れているとは限りません。判断の尺度を混同しないことが重要です。",
+      "private": {
+        "methods": [
+          "current_generator",
+          "ordinary_explanation"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.1750103238929581,
+              "coverage": 0.17346938775510204,
+              "neighbors": [
+                {
+                  "id": "post_01980_30902da73df439aa_7326",
+                  "cosine": 0.22420010363726744
+                },
+                {
+                  "id": "post_02327_e940a090bcacff0d_9024",
+                  "cosine": 0.168078140494287
+                },
+                {
+                  "id": "post_02175_badff31c0611e93b_8172",
+                  "cosine": 0.15323173385061759
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.29398838607598765,
+              "coverage": 0.5431034482758621,
+              "neighbors": [
+                {
+                  "id": "post_01922_36a16239d738b2e2_6970",
+                  "cosine": 0.2878758745302446
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.21669309598298359
+                },
+                {
+                  "id": "post_01980_30902da73df439aa_7326",
+                  "cosine": 0.21529819197350245
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.29180205244814533,
+              "coverage": 0.5529953917050692,
+              "neighbors": [
+                {
+                  "id": "post_01922_36a16239d738b2e2_6970",
+                  "cosine": 0.27766642809381775
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.22196872798282727
+                },
+                {
+                  "id": "post_01980_30902da73df439aa_7326",
+                  "cosine": 0.22055125408129977
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.20213642488296021,
+              "coverage": 0.19798657718120805,
+              "neighbors": [
+                {
+                  "id": "post_01034_700c6df6b11bbbc9_3185",
+                  "cosine": 0.3667858667148445
+                },
+                {
+                  "id": "post_01873_1b88b9f418c2457c_6592",
+                  "cosine": 0.33400744484289596
+                },
+                {
+                  "id": "post_02190_93727e77307ae77d_8270",
+                  "cosine": 0.18948409551333728
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.293614340333741,
+              "coverage": 0.5720720720720721,
+              "neighbors": [
+                {
+                  "id": "post_01034_700c6df6b11bbbc9_3185",
+                  "cosine": 0.2945599132266392
+                },
+                {
+                  "id": "post_01873_1b88b9f418c2457c_6592",
+                  "cosine": 0.28378538735435793
+                },
+                {
+                  "id": "post_00922_920d56f81f3c1795_2739",
+                  "cosine": 0.20619943209873537
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.29356467477288184,
+              "coverage": 0.5720720720720721,
+              "neighbors": [
+                {
+                  "id": "post_01034_700c6df6b11bbbc9_3185",
+                  "cosine": 0.2945499937377915
+                },
+                {
+                  "id": "post_01873_1b88b9f418c2457c_6592",
+                  "cosine": 0.28375691697935107
+                },
+                {
+                  "id": "post_00922_920d56f81f3c1795_2739",
+                  "cosine": 0.20620187027590675
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "7a575e160609013a47360bba78cf985b1745f2921bd7a56d0ec6302182c0d477",
+        "split": "pilot",
+        "candidateSetHash": "32bedb97214b766e0c2f3286a404e21a8caaffbb75da722538a81a1ac024cac9"
+      }
+    },
+    {
+      "id": "pair-4",
+      "source": "Bは停止中だ。",
+      "left": "Bは停止中だ。\nこれマジ？さすがに草。いやもうどうしてこうなったｗ　想像の斜め上すぎて笑うしかない件。",
+      "right": "Bの停止中という状況は、装備だけ先に到着して道が置いてけぼりの状態みたいなものなんだが。力と通りやすさを同じ目盛りで量れば停止だけ消えるという計算になるが動いたのは目盛りだけなんだが？（ここ大事）\nBは停止中だ。\n",
+      "private": {
+        "methods": [
+          "other_internet_register",
+          "current_generator"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.11688627995444181,
+              "coverage": 0.16551724137931034,
+              "neighbors": [
+                {
+                  "id": "post_02333_fbb5c7ec8b3b8aa1_9068",
+                  "cosine": 0.1773905770702002
+                },
+                {
+                  "id": "post_02168_0eaf6b3b9cf2a794_8123",
+                  "cosine": 0.16568423688053566
+                },
+                {
+                  "id": "post_02142_967820c9ba395bcb_7967",
+                  "cosine": 0.15440184755735822
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.19223744706608162,
+              "coverage": 0.3779527559055118,
+              "neighbors": [
+                {
+                  "id": "post_02333_fbb5c7ec8b3b8aa1_9068",
+                  "cosine": 0.18199351801221875
+                },
+                {
+                  "id": "post_02168_0eaf6b3b9cf2a794_8123",
+                  "cosine": 0.1608589229237569
+                },
+                {
+                  "id": "post_02386_79f23d1749269e32_9325",
+                  "cosine": 0.15273427005744045
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.192187376920521,
+              "coverage": 0.3779527559055118,
+              "neighbors": [
+                {
+                  "id": "post_02333_fbb5c7ec8b3b8aa1_9068",
+                  "cosine": 0.1819862036749258
+                },
+                {
+                  "id": "post_02168_0eaf6b3b9cf2a794_8123",
+                  "cosine": 0.16083875437605732
+                },
+                {
+                  "id": "post_02386_79f23d1749269e32_9325",
+                  "cosine": 0.15272813165218516
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.2024090701945684,
+              "coverage": 0.1360544217687075,
+              "neighbors": [
+                {
+                  "id": "post_02179_12f40177fbceb152_8203",
+                  "cosine": 0.16879810105819693
+                },
+                {
+                  "id": "post_02149_f5f30eac2863fdac_8012",
+                  "cosine": 0.16111406171304843
+                },
+                {
+                  "id": "post_01618_55d2f88d427e7ff9_5378",
+                  "cosine": 0.1565212270103467
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.3026596962000871,
+              "coverage": 0.4666666666666667,
+              "neighbors": [
+                {
+                  "id": "post_01350_547694ccacd4b586_4257",
+                  "cosine": 0.2996910561363656
+                },
+                {
+                  "id": "post_02083_135c04358134386e_7796",
+                  "cosine": 0.19791068476103285
+                },
+                {
+                  "id": "post_02243_b664977951084119_8608",
+                  "cosine": 0.18440666530417113
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.3027984962169327,
+              "coverage": 0.4666666666666667,
+              "neighbors": [
+                {
+                  "id": "post_01350_547694ccacd4b586_4257",
+                  "cosine": 0.29963434833962144
+                },
+                {
+                  "id": "post_02083_135c04358134386e_7796",
+                  "cosine": 0.19783228065236597
+                },
+                {
+                  "id": "post_02243_b664977951084119_8608",
+                  "cosine": 0.18431014647184144
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "079abde833d2b0c37aad2ce463f55e5412ef06345572672bb4ee1bf1842acf7d",
+        "split": "pilot",
+        "candidateSetHash": "4bd418ca6f435a101bda97bdf4d046a2ecf2a43ac6172dd351736595079854c7"
+      }
+    },
+    {
+      "id": "pair-5",
+      "source": "私は明日確認する。",
+      "left": "私は明日確認する。\n意味の青さが昨日の未来を食べた。説明の右側が椅子しているので、結論だけが三角になったんだが？",
+      "right": "つまり私によるこれから行う確認は、知識を持って分からなさに殴り込みをかける作業みたいなものなんだが。道具の自慢より分からなさを減らすべきそうすべき？疑問だけ無傷で帰したら道具の面目が丸つぶれになる。\n私は明日確認する。\n",
+      "private": {
+        "methods": [
+          "incoherent",
+          "current_generator"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.18024957389900886,
+              "coverage": 0.19254658385093168,
+              "neighbors": [
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.28334149610234216
+                },
+                {
+                  "id": "post_01934_e3e9bef54277cadf_7070",
+                  "cosine": 0.2592537251776049
+                },
+                {
+                  "id": "post_02368_215a2e846c653a12_9200",
+                  "cosine": 0.22386959088744876
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.302389699129909,
+              "coverage": 0.5862068965517241,
+              "neighbors": [
+                {
+                  "id": "post_02075_6936c569801837e8_7739",
+                  "cosine": 0.31649962858279707
+                },
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.2496977418468888
+                },
+                {
+                  "id": "post_01495_c49ed24b6768ca29_4727",
+                  "cosine": 0.2340054046056639
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.30234339177708514,
+              "coverage": 0.5862068965517241,
+              "neighbors": [
+                {
+                  "id": "post_02075_6936c569801837e8_7739",
+                  "cosine": 0.31649962858279707
+                },
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.2496655696663695
+                },
+                {
+                  "id": "post_01495_c49ed24b6768ca29_4727",
+                  "cosine": 0.2340054046056639
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.1851988244748494,
+              "coverage": 0.18211920529801323,
+              "neighbors": [
+                {
+                  "id": "post_02037_429cfa476830638d_7580",
+                  "cosine": 0.185325044727649
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.13530333683608894
+                },
+                {
+                  "id": "post_01343_9fc2cb71983418af_4220",
+                  "cosine": 0.1204865868571579
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.3198420317801738,
+              "coverage": 0.48046875,
+              "neighbors": [
+                {
+                  "id": "post_00422_7c5c51dea8af5611_1313",
+                  "cosine": 0.2133622066884768
+                },
+                {
+                  "id": "post_00392_2fac1cf6cd36f705_1188",
+                  "cosine": 0.19670449411895805
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.19447760010167467
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.3303915984287535,
+              "coverage": 0.502092050209205,
+              "neighbors": [
+                {
+                  "id": "post_00422_7c5c51dea8af5611_1313",
+                  "cosine": 0.22360190955114112
+                },
+                {
+                  "id": "post_00392_2fac1cf6cd36f705_1188",
+                  "cosine": 0.2059111607241848
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.20376811131735745
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "17de5547aab9f66ddb35a22d726e7536441e455410b61ee71d35773b727d9ea2",
+        "split": "pilot",
+        "candidateSetHash": "64f36b0ee5ceafcdd3418cb73a7ada473418c2e76780be90d20314a73fc1b42b"
+      }
+    },
+    {
+      "id": "pair-6",
+      "source": "田中は佐藤を助けなかった。",
+      "left": "田中は佐藤を助けなかった。",
+      "right": "田中から佐藤へ届かなかった助力は、装備を渡す側と守られる側の二人組みたいなものなんだが。道具が自分で満点を付けても意味ないからな？守られる側に届いて初めて見事な仕事になる。（ここ大事）\n田中は佐藤を助けなかった。\n",
+      "private": {
+        "methods": [
+          "plain",
+          "current_generator"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.08298337602510639,
+              "coverage": 0.2727272727272727,
+              "neighbors": [
+                {
+                  "id": "post_02396_29b4cda9a1da63c3_9366",
+                  "cosine": 0.34829793640499035
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.2987408238404535
+                },
+                {
+                  "id": "post_01988_2bd3569126dd1055_7357",
+                  "cosine": 0.27575725217688696
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.1410215511644188,
+              "coverage": 0.7777777777777778,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.2656733499632611
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.23009395783127307
+                },
+                {
+                  "id": "post_02396_29b4cda9a1da63c3_9366",
+                  "cosine": 0.2281694977504464
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.14100359689708816,
+              "coverage": 0.7777777777777778,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.2656733499632611
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.2300099813121297
+                },
+                {
+                  "id": "post_02396_29b4cda9a1da63c3_9366",
+                  "cosine": 0.22817620374003061
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.20714284452867934,
+              "coverage": 0.20408163265306123,
+              "neighbors": [
+                {
+                  "id": "post_01058_475ed4ebc1554027_3305",
+                  "cosine": 0.22517085658336433
+                },
+                {
+                  "id": "post_02396_29b4cda9a1da63c3_9366",
+                  "cosine": 0.21085495411490615
+                },
+                {
+                  "id": "post_02372_7785672e8b2e472f_9237",
+                  "cosine": 0.18115597782765705
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.3128117680857434,
+              "coverage": 0.5879828326180258,
+              "neighbors": [
+                {
+                  "id": "post_01058_475ed4ebc1554027_3305",
+                  "cosine": 0.22083476728167006
+                },
+                {
+                  "id": "post_02372_7785672e8b2e472f_9237",
+                  "cosine": 0.21990801299749346
+                },
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.17938577983590986
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.3129690865780069,
+              "coverage": 0.5879828326180258,
+              "neighbors": [
+                {
+                  "id": "post_01058_475ed4ebc1554027_3305",
+                  "cosine": 0.2206457329806578
+                },
+                {
+                  "id": "post_02372_7785672e8b2e472f_9237",
+                  "cosine": 0.21992022271163286
+                },
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.1793957396780394
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "ef257bdf56d0671d14cd88bd84b6e5c58aea52aa34bec8a605be7f1d0a737be1",
+        "split": "pilot",
+        "candidateSetHash": "207bacc3b96fdf2f50b738cca40b69cd9a1ca0475cc9f562a010cb5dda642d50"
+      }
+    },
+    {
+      "id": "pair-7",
+      "source": "担当者が100件の記録を確認した。",
+      "left": "つまり担当者による記録の過去の確認は、知識を持って分からなさに殴り込みをかける作業みたいなものなんだが。道具を増やすだけで答えまで増えるなら調べる前に物知りになれるな？それは知識ではなく持ち物検査だろう。\n担当者が100件の記録を確認した。\n",
+      "right": "担当者が100件の記録を確認した。\nおいィ？確定的に明らか。それほどでもない。",
+      "private": {
+        "methods": [
+          "current_generator",
+          "pasted_quotes"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.20982970035515283,
+              "coverage": 0.1994219653179191,
+              "neighbors": [
+                {
+                  "id": "post_01925_99097ab5f8644c00_6994",
+                  "cosine": 0.15555556077822633
+                },
+                {
+                  "id": "post_01343_9fc2cb71983418af_4220",
+                  "cosine": 0.1311377677301714
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.1292701574629451
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.3299063733881164,
+              "coverage": 0.5335820895522388,
+              "neighbors": [
+                {
+                  "id": "post_01922_36a16239d738b2e2_6970",
+                  "cosine": 0.25605022770915753
+                },
+                {
+                  "id": "post_02424_dc33ace264e07c93_9525",
+                  "cosine": 0.20083826776380845
+                },
+                {
+                  "id": "post_02200_13ca24afe21445ab_8332",
+                  "cosine": 0.19969879256345638
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.3298089961234634,
+              "coverage": 0.5335820895522388,
+              "neighbors": [
+                {
+                  "id": "post_01922_36a16239d738b2e2_6970",
+                  "cosine": 0.25601416153703865
+                },
+                {
+                  "id": "post_02424_dc33ace264e07c93_9525",
+                  "cosine": 0.20080735236154887
+                },
+                {
+                  "id": "post_02200_13ca24afe21445ab_8332",
+                  "cosine": 0.19968635814732197
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.11517221958996277,
+              "coverage": 0.19090909090909092,
+              "neighbors": [
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.39509353224983834
+                },
+                {
+                  "id": "post_00547_a77878cf99445090_1589",
+                  "cosine": 0.15583751090819825
+                },
+                {
+                  "id": "post_00953_f12b87c99ecd5674_2827",
+                  "cosine": 0.14275799243062973
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.22330876468057323,
+              "coverage": 0.525,
+              "neighbors": [
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.3135624815024789
+                },
+                {
+                  "id": "post_00922_920d56f81f3c1795_2739",
+                  "cosine": 0.21423388305297955
+                },
+                {
+                  "id": "post_02179_12f40177fbceb152_8196",
+                  "cosine": 0.20150090915724625
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.22563701305114467,
+              "coverage": 0.8148148148148148,
+              "neighbors": [
+                {
+                  "id": "post_00922_920d56f81f3c1795_2739",
+                  "cosine": 0.33804224519330894
+                },
+                {
+                  "id": "post_02179_12f40177fbceb152_8196",
+                  "cosine": 0.2944779463491176
+                },
+                {
+                  "id": "post_01740_ae281d472cfba75b_5897",
+                  "cosine": 0.2764856367516907
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "9d1c70713b03a82a5de7e2dd066b5811e44b19886d97badfcf230ac2c197773f",
+        "split": "pilot",
+        "candidateSetHash": "72726631dd99565611174190fbec4b7c8a58fa54bb882f65dfe9fd9b05437a3e"
+      }
+    },
+    {
+      "id": "pair-8",
+      "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+      "left": "つまりBの停止中という状況は、装備だけ先に到着して道が置いてけぼりの状態みたいなものなんだが。力があるから通れると言い張っても道は空気を読まないからな？説明だけ先にゴールしても本体は置いてけぼりという有様。\n【成果】\n田中がAを復旧した。\n【残件】\nBは停止中だ。\n【予定】\n私は明日確認する。\n\n",
+      "right": "田中がAを復旧した。Bは停止中で、私は明日確認する。\nこの状況を理解するには、出来事とその評価を分けて考える必要があります。ある性質が優れているという説明だけでは、別の性質についても優れているとは限りません。判断の尺度を混同しないことが重要です。",
+      "private": {
+        "methods": [
+          "current_generator",
+          "ordinary_explanation"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.2572922555300115,
+              "coverage": 0.15288220551378445,
+              "neighbors": [
+                {
+                  "id": "post_02423_7d6caf85a4ecb53d_9517",
+                  "cosine": 0.19239674089823963
+                },
+                {
+                  "id": "post_00875_e1de5e592e55d6d2_2598",
+                  "cosine": 0.17453709809340673
+                },
+                {
+                  "id": "post_01357_7483ad1e3f6fac60_4275",
+                  "cosine": 0.15992543054712008
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.36833306989512626,
+              "coverage": 0.5584905660377358,
+              "neighbors": [
+                {
+                  "id": "post_01350_547694ccacd4b586_4257",
+                  "cosine": 0.21830836745106
+                },
+                {
+                  "id": "post_02423_7d6caf85a4ecb53d_9517",
+                  "cosine": 0.21247522214405032
+                },
+                {
+                  "id": "post_02083_135c04358134386e_7796",
+                  "cosine": 0.19347413208018543
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.3684370744700892,
+              "coverage": 0.5584905660377358,
+              "neighbors": [
+                {
+                  "id": "post_01350_547694ccacd4b586_4257",
+                  "cosine": 0.21827525451847896
+                },
+                {
+                  "id": "post_02423_7d6caf85a4ecb53d_9517",
+                  "cosine": 0.21250225560623562
+                },
+                {
+                  "id": "post_02083_135c04358134386e_7796",
+                  "cosine": 0.19341945563244975
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.20347888005821343,
+              "coverage": 0.17681159420289855,
+              "neighbors": [
+                {
+                  "id": "post_01034_700c6df6b11bbbc9_3185",
+                  "cosine": 0.35779868589331754
+                },
+                {
+                  "id": "post_01873_1b88b9f418c2457c_6592",
+                  "cosine": 0.3258234182078866
+                },
+                {
+                  "id": "post_02190_93727e77307ae77d_8270",
+                  "cosine": 0.1848412562337481
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.31622926292347386,
+              "coverage": 0.5469387755102041,
+              "neighbors": [
+                {
+                  "id": "post_01034_700c6df6b11bbbc9_3185",
+                  "cosine": 0.2839046407937496
+                },
+                {
+                  "id": "post_01873_1b88b9f418c2457c_6592",
+                  "cosine": 0.27351986757737723
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.2224001114424119
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.31619417186593846,
+              "coverage": 0.5469387755102041,
+              "neighbors": [
+                {
+                  "id": "post_01034_700c6df6b11bbbc9_3185",
+                  "cosine": 0.28389484165897166
+                },
+                {
+                  "id": "post_01873_1b88b9f418c2457c_6592",
+                  "cosine": 0.2734921973456323
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.22241152002680062
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "4ca5f92030430f7208658a1db6736d46aceec111c6b33c0df7de159026be2b04",
+        "split": "pilot",
+        "candidateSetHash": "ae5cb4c649d3992c2d19dac2695e6fe8b49a452dcc2edd2df3a14203305ac18d"
+      }
+    },
+    {
+      "id": "pair-9",
+      "source": "今日は雨が降っている。",
+      "left": "今日は雨が降っている。\nこれマジ？さすがに草。いやもうどうしてこうなったｗ　想像の斜め上すぎて笑うしかない件。",
+      "right": "今日は雨が降っている。",
+      "private": {
+        "methods": [
+          "other_internet_register",
+          "abstention"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.1566635444820334,
+              "coverage": 0.19745222929936307,
+              "neighbors": [
+                {
+                  "id": "post_02032_280fea87da2a83c9_7565",
+                  "cosine": 0.17172108334265931
+                },
+                {
+                  "id": "post_02333_fbb5c7ec8b3b8aa1_9068",
+                  "cosine": 0.16761552991776282
+                },
+                {
+                  "id": "post_02168_0eaf6b3b9cf2a794_8123",
+                  "cosine": 0.1520861031203524
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.23845346489606362,
+              "coverage": 0.4507042253521127,
+              "neighbors": [
+                {
+                  "id": "post_02201_6e6addb32444f7ec_8339",
+                  "cosine": 0.28511690131571643
+                },
+                {
+                  "id": "post_02413_68d55d0d4afe87d6_9422",
+                  "cosine": 0.1846827295218665
+                },
+                {
+                  "id": "post_02333_fbb5c7ec8b3b8aa1_9068",
+                  "cosine": 0.17926156502552
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.23838434394746785,
+              "coverage": 0.4507042253521127,
+              "neighbors": [
+                {
+                  "id": "post_02201_6e6addb32444f7ec_8339",
+                  "cosine": 0.2851077334887709
+                },
+                {
+                  "id": "post_02413_68d55d0d4afe87d6_9422",
+                  "cosine": 0.18467856208275454
+                },
+                {
+                  "id": "post_02333_fbb5c7ec8b3b8aa1_9068",
+                  "cosine": 0.1792558009371809
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.1244376248521297,
+              "coverage": 0.25925925925925924,
+              "neighbors": [
+                {
+                  "id": "post_02201_6e6addb32444f7ec_8339",
+                  "cosine": 0.2946215904051181
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9184",
+                  "cosine": 0.27188770422409414
+                },
+                {
+                  "id": "post_02373_a562ac2e38c1ddee_9249",
+                  "cosine": 0.2691521014246041
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.20777302087565053,
+              "coverage": 0.9166666666666666,
+              "neighbors": [
+                {
+                  "id": "post_02201_6e6addb32444f7ec_8339",
+                  "cosine": 0.4511622468849938
+                },
+                {
+                  "id": "post_02177_2067b4ca84650943_8181",
+                  "cosine": 0.2792601643288786
+                },
+                {
+                  "id": "post_02413_68d55d0d4afe87d6_9422",
+                  "cosine": 0.24004359433148872
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.2077638001216134,
+              "coverage": 0.9166666666666666,
+              "neighbors": [
+                {
+                  "id": "post_02201_6e6addb32444f7ec_8339",
+                  "cosine": 0.4511622468849938
+                },
+                {
+                  "id": "post_02177_2067b4ca84650943_8181",
+                  "cosine": 0.2792601643288786
+                },
+                {
+                  "id": "post_02413_68d55d0d4afe87d6_9422",
+                  "cosine": 0.240045896238178
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "6382478e05016204afd717ce122b2d906234def8ff37b35708d49c6f78e600c5",
+        "split": "pilot",
+        "candidateSetHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "id": "pair-10",
+      "source": "会議が長くて疲れた。",
+      "left": "会議が長くて疲れた。\n意味の青さが昨日の未来を食べた。説明の右側が椅子しているので、結論だけが三角になったんだが？",
+      "right": "会議が長くて疲れた。",
+      "private": {
+        "methods": [
+          "incoherent",
+          "abstention"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.17938081637060685,
+              "coverage": 0.1901840490797546,
+              "neighbors": [
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.2749967425691412
+                },
+                {
+                  "id": "post_01934_e3e9bef54277cadf_7070",
+                  "cosine": 0.25161838595291924
+                },
+                {
+                  "id": "post_02368_215a2e846c653a12_9200",
+                  "cosine": 0.21727635768570294
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.2850958945996069,
+              "coverage": 0.6033057851239669,
+              "neighbors": [
+                {
+                  "id": "post_02075_6936c569801837e8_7739",
+                  "cosine": 0.3150919368567374
+                },
+                {
+                  "id": "post_00723_5479a8dd122fc1dc_2264",
+                  "cosine": 0.2688236653922606
+                },
+                {
+                  "id": "post_00827_d623d865988ac9da_2485",
+                  "cosine": 0.22985784459413952
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.285025158396906,
+              "coverage": 0.6033057851239669,
+              "neighbors": [
+                {
+                  "id": "post_02075_6936c569801837e8_7739",
+                  "cosine": 0.3150919368567374
+                },
+                {
+                  "id": "post_00723_5479a8dd122fc1dc_2264",
+                  "cosine": 0.2688236653922606
+                },
+                {
+                  "id": "post_00827_d623d865988ac9da_2485",
+                  "cosine": 0.2298211006194509
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.052238686420463816,
+              "coverage": 0.125,
+              "neighbors": [
+                {
+                  "id": "post_01818_59499dcf198bb96c_6285",
+                  "cosine": 0.16254073082535928
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.15630604204216564
+                },
+                {
+                  "id": "post_00827_d623d865988ac9da_2485",
+                  "cosine": 0.12634951631087538
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.11530409193490826,
+              "coverage": 0.7619047619047619,
+              "neighbors": [
+                {
+                  "id": "post_00827_d623d865988ac9da_2485",
+                  "cosine": 0.4780520915565138
+                },
+                {
+                  "id": "post_00723_5479a8dd122fc1dc_2264",
+                  "cosine": 0.3695995567199068
+                },
+                {
+                  "id": "post_00663_9bca19fbb0703f2d_2151",
+                  "cosine": 0.3261116443027077
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.11526257299469601,
+              "coverage": 0.7619047619047619,
+              "neighbors": [
+                {
+                  "id": "post_00827_d623d865988ac9da_2485",
+                  "cosine": 0.47797567243763184
+                },
+                {
+                  "id": "post_00723_5479a8dd122fc1dc_2264",
+                  "cosine": 0.3695995567199068
+                },
+                {
+                  "id": "post_00663_9bca19fbb0703f2d_2151",
+                  "cosine": 0.32604623856697545
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "4c240f3329174f9e0e0cde4c4dade424651e2e22a1ffe24fba365a81be4672b5",
+        "split": "pilot",
+        "candidateSetHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "id": "pair-11",
+      "source": "念のため資料を何度も見直したので提出が遅れた。",
+      "left": "念のため資料を何度も見直したので提出が遅れた。",
+      "right": "念のため資料を何度も見直したので提出が遅れた。",
+      "private": {
+        "methods": [
+          "abstention",
+          "plain"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.07545394288852056,
+              "coverage": 0.1746031746031746,
+              "neighbors": [
+                {
+                  "id": "post_02451_9651ef342af8bbd1_9582",
+                  "cosine": 0.2653297917094595
+                },
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8139",
+                  "cosine": 0.19087145791053967
+                },
+                {
+                  "id": "post_00998_3ea9e5e439a40cd0_3022",
+                  "cosine": 0.17243060768274926
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.17660855309853676,
+              "coverage": 0.6862745098039216,
+              "neighbors": [
+                {
+                  "id": "post_02451_9651ef342af8bbd1_9582",
+                  "cosine": 0.30759242300687506
+                },
+                {
+                  "id": "post_01060_816c6a9c9d4188f6_3311",
+                  "cosine": 0.2843961141384377
+                },
+                {
+                  "id": "post_02362_8a1b44a1cb1bb971_9153",
+                  "cosine": 0.25072310565636385
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.17656679762314756,
+              "coverage": 0.6862745098039216,
+              "neighbors": [
+                {
+                  "id": "post_02451_9651ef342af8bbd1_9582",
+                  "cosine": 0.30760745130917533
+                },
+                {
+                  "id": "post_01060_816c6a9c9d4188f6_3311",
+                  "cosine": 0.28437839215410793
+                },
+                {
+                  "id": "post_02362_8a1b44a1cb1bb971_9153",
+                  "cosine": 0.2508330885101949
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.07545394288852056,
+              "coverage": 0.1746031746031746,
+              "neighbors": [
+                {
+                  "id": "post_02451_9651ef342af8bbd1_9582",
+                  "cosine": 0.2653297917094595
+                },
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8139",
+                  "cosine": 0.19087145791053967
+                },
+                {
+                  "id": "post_00998_3ea9e5e439a40cd0_3022",
+                  "cosine": 0.17243060768274926
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.17660855309853676,
+              "coverage": 0.6862745098039216,
+              "neighbors": [
+                {
+                  "id": "post_02451_9651ef342af8bbd1_9582",
+                  "cosine": 0.30759242300687506
+                },
+                {
+                  "id": "post_01060_816c6a9c9d4188f6_3311",
+                  "cosine": 0.2843961141384377
+                },
+                {
+                  "id": "post_02362_8a1b44a1cb1bb971_9153",
+                  "cosine": 0.25072310565636385
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.17656679762314756,
+              "coverage": 0.6862745098039216,
+              "neighbors": [
+                {
+                  "id": "post_02451_9651ef342af8bbd1_9582",
+                  "cosine": 0.30760745130917533
+                },
+                {
+                  "id": "post_01060_816c6a9c9d4188f6_3311",
+                  "cosine": 0.28437839215410793
+                },
+                {
+                  "id": "post_02362_8a1b44a1cb1bb971_9153",
+                  "cosine": 0.2508330885101949
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "fe7430f001e073b00b7fe74c876601f70b61caa258f82ae36015bf6af6c92c8e",
+        "split": "pilot",
+        "candidateSetHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "id": "pair-12",
+      "source": "田中が確認したと佐藤が言った。",
+      "left": "田中が確認したと佐藤が言った。\nおいィ？確定的に明らか。それほどでもない。",
+      "right": "田中が確認したと佐藤が言った。",
+      "private": {
+        "methods": [
+          "pasted_quotes",
+          "abstention"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.1127917631781027,
+              "coverage": 0.20192307692307693,
+              "neighbors": [
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.3994168942447102
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.1379665564624663
+                },
+                {
+                  "id": "post_01105_e3e837b12d216d35_3484",
+                  "cosine": 0.13366852924616732
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.19029657694418523,
+              "coverage": 0.4819277108433735,
+              "neighbors": [
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.3029066856311694
+                },
+                {
+                  "id": "post_01798_ff8e25272ecc7ace_6188",
+                  "cosine": 0.15822301090559976
+                },
+                {
+                  "id": "post_01339_617da6702b648092_4206",
+                  "cosine": 0.15708064091402937
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.16768431341880902,
+              "coverage": 0.6666666666666666,
+              "neighbors": [
+                {
+                  "id": "post_01798_ff8e25272ecc7ace_6188",
+                  "cosine": 0.23188771298956606
+                },
+                {
+                  "id": "post_00965_74b9b6af683b8d53_2881",
+                  "cosine": 0.19844675700745737
+                },
+                {
+                  "id": "post_01339_617da6702b648092_4206",
+                  "cosine": 0.19151100213400418
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.09196931484243905,
+              "coverage": 0.1794871794871795,
+              "neighbors": [
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.26184730802706935
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9184",
+                  "cosine": 0.22094396011958956
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.21703390803930062
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.16772247694398718,
+              "coverage": 0.7407407407407407,
+              "neighbors": [
+                {
+                  "id": "post_01798_ff8e25272ecc7ace_6188",
+                  "cosine": 0.23188771298956606
+                },
+                {
+                  "id": "post_00965_74b9b6af683b8d53_2881",
+                  "cosine": 0.19844675700745737
+                },
+                {
+                  "id": "post_01339_617da6702b648092_4206",
+                  "cosine": 0.19157248806533828
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.16768431341880902,
+              "coverage": 0.7407407407407407,
+              "neighbors": [
+                {
+                  "id": "post_01798_ff8e25272ecc7ace_6188",
+                  "cosine": 0.23188771298956606
+                },
+                {
+                  "id": "post_00965_74b9b6af683b8d53_2881",
+                  "cosine": 0.19844675700745737
+                },
+                {
+                  "id": "post_01339_617da6702b648092_4206",
+                  "cosine": 0.19151100213400418
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "b226605f86020a5f2393dba2a39cb37f91c94a5ccb3ddf6f8abf194ec6293c68",
+        "split": "pilot",
+        "candidateSetHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "id": "repeat-1",
+      "source": "田中が佐藤を助けた。",
+      "left": "田中が佐藤を助けた。\nおいィ？確定的に明らか。それほどでもない。",
+      "right": "田中から佐藤へ届いた助力は、防御を渡す側と守られる側の二人組みたいなものなんだが。重さを量れば誰を助けたかまで分かるなら体重計が恩人を名乗り出すぞ。（ここ大事）\n田中が佐藤を助けた。\n",
+      "private": {
+        "methods": [
+          "pasted_quotes",
+          "current_generator"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.078389453579554,
+              "coverage": 0.1797752808988764,
+              "neighbors": [
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.43890054296526454
+                },
+                {
+                  "id": "post_01105_e3e837b12d216d35_3484",
+                  "cosine": 0.1468820946456201
+                },
+                {
+                  "id": "post_01894_f72a64a54f05dcff_6794",
+                  "cosine": 0.12560594783357903
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.15281824079209275,
+              "coverage": 0.47297297297297297,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.3350848260963613
+                },
+                {
+                  "id": "post_01309_8c6dc8c23e4f2d30_4103",
+                  "cosine": 0.3139652145523868
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.17757822709457924
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.11449194511969567,
+              "coverage": 0.7142857142857143,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.482612854777807
+                },
+                {
+                  "id": "post_01917_0dc7b2916c774c3d_6915",
+                  "cosine": 0.22511020039988439
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.19855559642604356
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.14015080183607367,
+              "coverage": 0.13513513513513514,
+              "neighbors": [
+                {
+                  "id": "post_01981_712d5d2dd08200c1_7331",
+                  "cosine": 0.13381213698147323
+                },
+                {
+                  "id": "post_02297_532d0c0146f34c61_8939",
+                  "cosine": 0.10941762486115791
+                },
+                {
+                  "id": "post_02179_12f40177fbceb152_8203",
+                  "cosine": 0.10873021227202792
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.2464803558040036,
+              "coverage": 0.505,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.280777873373305
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.20817821255410152
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.17759944961700633
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.24658264248121775,
+              "coverage": 0.505,
+              "neighbors": [
+                {
+                  "id": "post_00070_105ac27117b51e09_103",
+                  "cosine": 0.28080148442969016
+                },
+                {
+                  "id": "post_01997_e82921bacc4a9e0b_7394",
+                  "cosine": 0.20813297411488416
+                },
+                {
+                  "id": "post_02367_d618e7fb911033bf_9194",
+                  "cosine": 0.17520299011191104
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "a45ecc8c1fd88da0f089423da08d2f210a19f30c602be9eb7e409cb309c97bfc",
+        "split": "pilot",
+        "candidateSetHash": "61a2b1705f7c48dbdc0a7bca6302758bc06ecaea08acce5a0eb4310fd4dcb11f",
+        "repeatOf": "pair-2",
+        "reversed": true
+      }
+    },
+    {
+      "id": "repeat-4",
+      "source": "私は明日確認する。",
+      "left": "つまり私によるこれから行う確認は、知識を持って分からなさに殴り込みをかける作業みたいなものなんだが。道具の自慢より分からなさを減らすべきそうすべき？疑問だけ無傷で帰したら道具の面目が丸つぶれになる。\n私は明日確認する。\n",
+      "right": "私は明日確認する。\n意味の青さが昨日の未来を食べた。説明の右側が椅子しているので、結論だけが三角になったんだが？",
+      "private": {
+        "methods": [
+          "current_generator",
+          "incoherent"
+        ],
+        "vectors": [
+          {
+            "raw": {
+              "cosine": 0.1851988244748494,
+              "coverage": 0.18211920529801323,
+              "neighbors": [
+                {
+                  "id": "post_02037_429cfa476830638d_7580",
+                  "cosine": 0.185325044727649
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.13530333683608894
+                },
+                {
+                  "id": "post_01343_9fc2cb71983418af_4220",
+                  "cosine": 0.1204865868571579
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.3198420317801738,
+              "coverage": 0.48046875,
+              "neighbors": [
+                {
+                  "id": "post_00422_7c5c51dea8af5611_1313",
+                  "cosine": 0.2133622066884768
+                },
+                {
+                  "id": "post_00392_2fac1cf6cd36f705_1188",
+                  "cosine": 0.19670449411895805
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.19447760010167467
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.3303915984287535,
+              "coverage": 0.502092050209205,
+              "neighbors": [
+                {
+                  "id": "post_00422_7c5c51dea8af5611_1313",
+                  "cosine": 0.22360190955114112
+                },
+                {
+                  "id": "post_00392_2fac1cf6cd36f705_1188",
+                  "cosine": 0.2059111607241848
+                },
+                {
+                  "id": "post_01346_e8b2d2fda892ec46_4240",
+                  "cosine": 0.20376811131735745
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          },
+          {
+            "raw": {
+              "cosine": 0.18024957389900886,
+              "coverage": 0.19254658385093168,
+              "neighbors": [
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.28334149610234216
+                },
+                {
+                  "id": "post_01934_e3e9bef54277cadf_7070",
+                  "cosine": 0.2592537251776049
+                },
+                {
+                  "id": "post_02368_215a2e846c653a12_9200",
+                  "cosine": 0.22386959088744876
+                }
+              ],
+              "modelId": "cef880a6b3c16b27ada0357e0c2867fb096e72d1567b552ac28480d1642084c3"
+            },
+            "script_masked": {
+              "cosine": 0.302389699129909,
+              "coverage": 0.5862068965517241,
+              "neighbors": [
+                {
+                  "id": "post_02075_6936c569801837e8_7739",
+                  "cosine": 0.31649962858279707
+                },
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.2496977418468888
+                },
+                {
+                  "id": "post_01495_c49ed24b6768ca29_4727",
+                  "cosine": 0.2340054046056639
+                }
+              ],
+              "modelId": "4d84a98a263a9efcd8ae2ccb5d54c0ce99315568b5963e6fcefef6dcdc09efbb"
+            },
+            "phrase_masked": {
+              "cosine": 0.30234339177708514,
+              "coverage": 0.5862068965517241,
+              "neighbors": [
+                {
+                  "id": "post_02075_6936c569801837e8_7739",
+                  "cosine": 0.31649962858279707
+                },
+                {
+                  "id": "post_02171_e81fd65eccf72c02_8156",
+                  "cosine": 0.2496655696663695
+                },
+                {
+                  "id": "post_01495_c49ed24b6768ca29_4727",
+                  "cosine": 0.2340054046056639
+                }
+              ],
+              "modelId": "aabcabf3044a936565186bdd7b025c9c8c1c4a8c6fed35510650828b890479bf"
+            }
+          }
+        ],
+        "group": "17de5547aab9f66ddb35a22d726e7536441e455410b61ee71d35773b727d9ea2",
+        "split": "pilot",
+        "candidateSetHash": "64f36b0ee5ceafcdd3418cb73a7ada473418c2e76780be90d20314a73fc1b42b",
+        "repeatOf": "pair-5",
+        "reversed": true
+      }
+    }
+  ],
+  "manifest": {
+    "seed": "vector-review-20260921-v1",
+    "split": "pilot",
+    "selection": "round-robin-with-failures-not-score-selected",
+    "sourceHash": "de5045d570b17396f229ae4b090b574295df38b7ea647943b3d18a304710ddbd",
+    "repeats": 2,
+    "humanLabels": 0
+  },
+  "batchId": "5eb7ccf3a4d0587c9a6349bc520bccf8fd3be0fc4b5fccdc7a5102d8bbbaefcf"
+}

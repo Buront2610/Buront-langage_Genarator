@@ -1,0 +1,9 @@
+{
+  "packages/core/rewrite-rules.ts": "70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c",
+  "packages/core/rewrite.ts": "959fe0978dbbeb0336c70ed60e25be1bc79069d92d5464671f042e2014c6da4f",
+  "packages/core/rewrite-validation.ts": "ccea464449f3aa6ebb7a703115305edb4b23d9ebe68a49a0b8e7b32cf0a65da3",
+  "packages/core/engine.ts": "b20613913b9dd4b84183ebc66851e00f81ab64869d57246f00e2de2c4dcf6959",
+  "packages/core/validator.ts": "0e4399fb17e0cad2df685207198e259d19b4c20464e755b1c43a83be4d61036e",
+  "packages/core/evaluation.ts": "49d96f163b715aee06c795007da91768ebe2134ad0d4ef046d94c7d200f0ae84",
+  "packages/core/semantic.ts": "2e7cc470a1cd63937d4a666ba931e43133d136d408cc07b86f18c9f2c1099d16"
+}

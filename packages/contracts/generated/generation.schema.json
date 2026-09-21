@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "buront:generation-request:v1",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "source",
+    "task",
+    "contextMode",
+    "noveltyMode",
+    "intensity",
+    "series",
+    "backend",
+    "clientRevision"
+  ],
+  "properties": {
+    "source": {
+      "minLength": 1,
+      "maxLength": 5000,
+      "type": "string"
+    },
+    "task": {
+      "anyOf": [
+        {
+          "const": "rewrite",
+          "type": "string"
+        },
+        {
+          "const": "quote",
+          "type": "string"
+        }
+      ]
+    },
+    "contextMode": {
+      "anyOf": [
+        {
+          "const": "faithful",
+          "type": "string"
+        },
+        {
+          "const": "full",
+          "type": "string"
+        }
+      ]
+    },
+    "noveltyMode": {
+      "anyOf": [
+        {
+          "const": "canonical",
+          "type": "string"
+        },
+        {
+          "const": "blend",
+          "type": "string"
+        },
+        {
+          "const": "invent",
+          "type": "string"
+        }
+      ]
+    },
+    "intensity": {
+      "minimum": 1,
+      "maximum": 3,
+      "type": "integer"
+    },
+    "series": {
+      "anyOf": [
+        {
+          "const": "all",
+          "type": "string"
+        },
+        {
+          "const": "roto",
+          "type": "string"
+        },
+        {
+          "const": "yorusama",
+          "type": "string"
+        },
+        {
+          "const": "saiko",
+          "type": "string"
+        },
+        {
+          "const": "night",
+          "type": "string"
+        },
+        {
+          "const": "puronohito",
+          "type": "string"
+        },
+        {
+          "const": "nega",
+          "type": "string"
+        },
+        {
+          "const": "katuru",
+          "type": "string"
+        },
+        {
+          "const": "gg",
+          "type": "string"
+        },
+        {
+          "const": "sonota",
+          "type": "string"
+        }
+      ]
+    },
+    "focusSpans": {
+      "maxItems": 64,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "seed": {
+      "maxLength": 128,
+      "type": "string"
+    },
+    "backend": {
+      "anyOf": [
+        {
+          "const": "structured",
+          "type": "string"
+        },
+        {
+          "const": "model",
+          "type": "string"
+        }
+      ]
+    },
+    "customRules": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "from",
+          "to",
+          "priority"
+        ],
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "maxLength": 64,
+            "type": "string"
+          },
+          "from": {
+            "minLength": 1,
+            "maxLength": 128,
+            "type": "string"
+          },
+          "to": {
+            "maxLength": 128,
+            "type": "string"
+          },
+          "priority": {
+            "minimum": 0,
+            "maximum": 1000,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "clientRevision": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  }
+}

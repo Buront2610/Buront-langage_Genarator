@@ -1,0 +1,615 @@
+TAP version 13
+# Subtest: cancellation releases a request even while analyzer startup has not returned a ready frame
+ok 1 - cancellation releases a request even while analyzer startup has not returned a ready frame
+  ---
+  duration_ms: 23.046
+  type: 'test'
+  ...
+# Subtest: request deadline covers analyzer startup, and already-cancelled requests do not start it
+ok 2 - request deadline covers analyzer startup, and already-cancelled requests do not start it
+  ---
+  duration_ms: 38.3184
+  type: 'test'
+  ...
+# Subtest: T-22 only built web files; Host/Origin/token/session boundaries
+ok 3 - T-22 only built web files; Host/Origin/token/session boundaries
+  ---
+  duration_ms: 32932.9366
+  type: 'test'
+  ...
+# Subtest: M4 API separates invalid input, capacity and unavailable capability
+ok 4 - M4 API separates invalid input, capacity and unavailable capability
+  ---
+  duration_ms: 91.2537
+  type: 'test'
+  ...
+# Subtest: T-12/19 generation result has revision, selected ID, replay, matching spans and no private access
+ok 5 - T-12/19 generation result has revision, selected ID, replay, matching spans and no private access
+  ---
+  duration_ms: 953.2307
+  type: 'test'
+  ...
+# Subtest: Partial regeneration authenticates analysis and validates locked plan conflicts
+ok 6 - Partial regeneration authenticates analysis and validates locked plan conflicts
+  ---
+  duration_ms: 379.1866
+  type: 'test'
+  ...
+# Subtest: M3 API completes bounded body proof and preserves its signed partial replay
+ok 7 - M3 API completes bounded body proof and preserves its signed partial replay
+  ---
+  duration_ms: 3879.8679
+  type: 'test'
+  ...
+# Subtest: T-20 cancellation during source analysis cannot publish a late completed result
+ok 8 - T-20 cancellation during source analysis cannot publish a late completed result
+  ---
+  duration_ms: 104.5164
+  type: 'test'
+  ...
+# Subtest: T-20 queued/running cancellation and completion have a single terminal state
+ok 9 - T-20 queued/running cancellation and completion have a single terminal state
+  ---
+  duration_ms: 161.7848
+  type: 'test'
+  ...
+# Subtest: T-21 finite queue and one running request per session; status stays responsive
+ok 10 - T-21 finite queue and one running request per session; status stays responsive
+  ---
+  duration_ms: 407.545
+  type: 'test'
+  ...
+# Subtest: Only explicit preferences are stored; blind comparisons omit source method/rank/scores
+ok 11 - Only explicit preferences are stored; blind comparisons omit source method/rank/scores
+  ---
+  duration_ms: 64.1503
+  type: 'test'
+  ...
+# Subtest: A3 HTTP body dictionary requests remain reviewable and unapplied
+ok 12 - A3 HTTP body dictionary requests remain reviewable and unapplied
+  ---
+  duration_ms: 20062.8926
+  type: 'test'
+  ...
+# Subtest: A8 known temporal mismatch survives an unrelated unknown completion
+ok 13 - A8 known temporal mismatch survives an unrelated unknown completion
+  ---
+  duration_ms: 24682.6133
+  type: 'test'
+  ...
+# Subtest: A2 changing declared body output cannot approve itself
+ok 14 - A2 changing declared body output cannot approve itself
+  ---
+  duration_ms: 30174.4293
+  type: 'test'
+  ...
+# Subtest: A1 changing source participants changes the rewritten body
+ok 15 - A1 changing source participants changes the rewritten body
+  ---
+  duration_ms: 644.7351
+  type: 'test'
+  ...
+# Subtest: A3 free dictionaries do not bypass the bounded body proof
+ok 16 - A3 free dictionaries do not bypass the bounded body proof
+  ---
+  duration_ms: 601.3931
+  type: 'test'
+  ...
+# Subtest: A5 features depend exclusively on actual output and ignore declared operator/input syntax
+ok 17 - A5 features depend exclusively on actual output and ignore declared operator/input syntax
+  ---
+  duration_ms: 24.5647
+  type: 'test'
+  ...
+# Subtest: A7 mixed sentence has separate event units without severing conditions or quotations
+ok 18 - A7 mixed sentence has separate event units without severing conditions or quotations
+  ---
+  duration_ms: 970.722
+  type: 'test'
+  ...
+# Subtest: A1 operator applicability and source state affect generation, not just metadata
+not ok 19 - A1 operator applicability and source state affect generation, not just metadata
+  ---
+  duration_ms: 1345.4931
+  type: 'test'
+  location: 'C:\\Users\\Glutt\\Documents\\Buront_language_genelator\\test\\v1\\audit-regressions.test.js:73:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    田中が佐藤を助けたと鈴木が言った。
+    
+    1 !== 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:83:12)
+    process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: Legacy A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations
+ok 20 - Legacy A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations
+  ---
+  duration_ms: 46.1975
+  type: 'test'
+  ...
+# Subtest: A1/A2 past ongoing actions never become present ongoing or completed rhetoric
+not ok 21 - A1/A2 past ongoing actions never become present ongoing or completed rhetoric
+  ---
+  duration_ms: 944.2447
+  type: 'test'
+  location: 'C:\\Users\\Glutt\\Documents\\Buront_language_genelator\\test\\v1\\audit-regressions.test.js:106:1'
+  failureType: 'testCodeFailure'
+  error: '担当者が状況を確認していました。'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:109:12)
+    process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: A4 selection respects Pareto preference axes and rejects low-quality novel candidates
+ok 22 - A4 selection respects Pareto preference axes and rejects low-quality novel candidates
+  ---
+  duration_ms: 655.5516
+  type: 'test'
+  ...
+# Subtest: A5 blind pairs recompute a dense common feature schema regardless of supplied method features
+ok 23 - A5 blind pairs recompute a dense common feature schema regardless of supplied method features
+  ---
+  duration_ms: 9.5397
+  type: 'test'
+  ...
+# Subtest: A5 old feature data/models are refused and no model is trained without real labels
+ok 24 - A5 old feature data/models are refused and no model is trained without real labels
+  ---
+  duration_ms: 24058.6573
+  type: 'test'
+  ...
+# Subtest: A6 discourse selection changes clause order only with eligible corpus evidence
+ok 25 - A6 discourse selection changes clause order only with eligible corpus evidence
+  ---
+  duration_ms: 195.2129
+  type: 'test'
+  ...
+# Subtest: A7 body rewriting keeps linked clauses and every original event
+not ok 26 - A7 body rewriting keeps linked clauses and every original event
+  ---
+  duration_ms: 522.3778
+  type: 'test'
+  location: 'C:\\Users\\Glutt\\Documents\\Buront_language_genelator\\test\\v1\\audit-regressions.test.js:167:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(result.candidates.some(candidate => candidate.text.includes('Bは停止中で、')))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:170:10)
+    process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    async Test.run (node:internal/test_runner/test:1208:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:831:7)
+  ...
+# Subtest: T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace
+ok 27 - T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace
+  ---
+  duration_ms: 52408.8043
+  type: 'test'
+  ...
+# Subtest: T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion
+ok 28 - T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion
+  ---
+  duration_ms: 8.2196
+  type: 'test'
+  ...
+# Subtest: Protected comparison and range values retain parent-child occurrences and immutable original text
+ok 29 - Protected comparison and range values retain parent-child occurrences and immutable original text
+  ---
+  duration_ms: 18.6392
+  type: 'test'
+  ...
+# Subtest: T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap
+ok 30 - T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap
+  ---
+  duration_ms: 24.1353
+  type: 'test'
+  ...
+# Subtest: Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text
+ok 31 - Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text
+  ---
+  duration_ms: 16.4801
+  type: 'test'
+  ...
+# Subtest: Python validates the same exported Draft 2020-12 schema type boundaries
+ok 32 - Python validates the same exported Draft 2020-12 schema type boundaries
+  ---
+  duration_ms: 6355.174
+  type: 'test'
+  ...
+# Subtest: T-07 independent fact scopes keep achievement, unresolved and prospective distinct
+ok 33 - T-07 independent fact scopes keep achievement, unresolved and prospective distinct
+  ---
+  duration_ms: 2.2838
+  type: 'test'
+  ...
+# Subtest: T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained
+ok 34 - T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained
+  ---
+  duration_ms: 1391.997
+  type: 'test'
+  ...
+# Subtest: T-13 bounded applicable operators, no forced means/end operation and untrained S/Q
+ok 35 - T-13 bounded applicable operators, no forced means/end operation and untrained S/Q
+  ---
+  duration_ms: 42.2096
+  type: 'test'
+  ...
+# Subtest: T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass
+ok 36 - T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass
+  ---
+  duration_ms: 175.1615
+  type: 'test'
+  ...
+# Subtest: T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations
+ok 37 - T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations
+  ---
+  duration_ms: 2.8175
+  type: 'test'
+  ...
+# Subtest: T-24 stage RNG, input/assets/history and candidate set reproduce exactly
+ok 38 - T-24 stage RNG, input/assets/history and candidate set reproduce exactly
+  ---
+  duration_ms: 385.8954
+  type: 'test'
+  ...
+# Subtest: Partial replay reconstructs trusted parent candidates and rejects forged locked text
+ok 39 - Partial replay reconstructs trusted parent candidates and rejects forged locked text
+  ---
+  duration_ms: 1646.4211
+  type: 'test'
+  ...
+# Subtest: Whitespace and symbols with no dictionary reading still satisfy the analysis contract
+ok 40 - Whitespace and symbols with no dictionary reading still satisfy the analysis contract
+  ---
+  duration_ms: 217.1041
+  type: 'test'
+  ...
+# Subtest: T-15 noun replacement has an identical abstract structure, not unique novelty
+ok 41 - T-15 noun replacement has an identical abstract structure, not unique novelty
+  ---
+  duration_ms: 3.9794
+  type: 'test'
+  ...
+# Subtest: T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected
+ok 42 - T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected
+  ---
+  duration_ms: 729.3102
+  type: 'test'
+  ...
+# Subtest: Grouped split prevents thread/family/near duplicate leakage before generation
+ok 43 - Grouped split prevents thread/family/near duplicate leakage before generation
+  ---
+  duration_ms: 6.6752
+  type: 'test'
+  ...
+# Subtest: Finite cache evicts by bytes/count and inactive TTL
+ok 44 - Finite cache evicts by bytes/count and inactive TTL
+  ---
+  duration_ms: 5.4302
+  type: 'test'
+  ...
+# Subtest: Optional model rejects prose, fabricated IDs and excessive retries
+ok 45 - Optional model rejects prose, fabricated IDs and excessive retries
+  ---
+  duration_ms: 10.0702
+  type: 'test'
+  ...
+# Subtest: Register changes retain negative tense, quoted text and URL originals
+ok 46 - Register changes retain negative tense, quoted text and URL originals
+  ---
+  duration_ms: 529.296
+  type: 'test'
+  ...
+# Subtest: Full mode retains source order and every fact span without appended rhetoric
+ok 47 - Full mode retains source order and every fact span without appended rhetoric
+  ---
+  duration_ms: 368.2496
+  type: 'test'
+  ...
+# Subtest: Quote focus does not borrow a topic from an omitted fact
+ok 48 - Quote focus does not borrow a topic from an omitted fact
+  ---
+  duration_ms: 354.5451
+  type: 'test'
+  ...
+# Subtest: Canonical permits adaptations; untransformable topics and invent mode abstain
+ok 49 - Canonical permits adaptations; untransformable topics and invent mode abstain
+  ---
+  duration_ms: 654.8935
+  type: 'test'
+  ...
+# Subtest: Connective and reference tags cannot conceal an unsupported factual assertion
+ok 50 - Connective and reference tags cannot conceal an unsupported factual assertion
+  ---
+  duration_ms: 41.6698
+  type: 'test'
+  ...
+# Subtest: blind review reads have no default answers or private diagnostics; all dimensions require an explicit value
+ok 51 - blind review reads have no default answers or private diagnostics; all dimensions require an explicit value
+  ---
+  duration_ms: 101.2409
+  type: 'test'
+  ...
+# Subtest: explicit ratings survive a new store instance; revisions preserve disagreements without automatic approval
+ok 52 - explicit ratings survive a new store instance; revisions preserve disagreements without automatic approval
+  ---
+  duration_ms: 220.6856
+  type: 'test'
+  ...
+# Subtest: review HTTP routes keep diagnostics hidden and reject incomplete or stale submissions
+ok 53 - review HTTP routes keep diagnostics hidden and reject incomplete or stale submissions
+  ---
+  duration_ms: 1200.6796
+  type: 'test'
+  ...
+# Subtest: changing reviewed text invalidates the frozen batch instead of attaching old answers
+ok 54 - changing reviewed text invalidates the frozen batch instead of attaching old answers
+  ---
+  duration_ms: 36.17
+  type: 'test'
+  ...
+# Subtest: T-03 explicit passive participants have semantic roles; ambiguous potential stays unknown
+ok 55 - T-03 explicit passive participants have semantic roles; ambiguous potential stays unknown
+  ---
+  duration_ms: 26010.6184
+  type: 'test'
+  ...
+# Subtest: T-04 temporal scope distinguishes past negation, ongoing work, and the name Tanaka
+ok 56 - T-04 temporal scope distinguishes past negation, ongoing work, and the name Tanaka
+  ---
+  duration_ms: 1038.3555
+  type: 'test'
+  ...
+# Subtest: M3 explicit anchors retain numeric target, utterance, use and fact bindings
+ok 57 - M3 explicit anchors retain numeric target, utterance, use and fact bindings
+  ---
+  duration_ms: 254.4844
+  type: 'test'
+  ...
+# Subtest: M3 independent sentences get a stable status order and exactly one primary fact mention
+ok 58 - M3 independent sentences get a stable status order and exactly one primary fact mention
+  ---
+  duration_ms: 29962.0605
+  type: 'test'
+  ...
+# Subtest: M3 pronouns, quotes, causal links and omitted participants keep source order
+ok 59 - M3 pronouns, quotes, causal links and omitted participants keep source order
+  ---
+  duration_ms: 1182.3907
+  type: 'test'
+  ...
+# Subtest: M1 explicit speech acts choose a factual target and never invent an addressee
+ok 60 - M1 explicit speech acts choose a factual target and never invent an addressee
+  ---
+  duration_ms: 837.9975
+  type: 'test'
+  ...
+# Subtest: M3 every series has corpus-backed vocabulary and frames; citations stay inside the series
+ok 61 - M3 every series has corpus-backed vocabulary and frames; citations stay inside the series
+  ---
+  duration_ms: 1366.3383
+  type: 'test'
+  ...
+# Subtest: M3 lexical evidence matches a whole word, not the sword character inside serious
+ok 62 - M3 lexical evidence matches a whole word, not the sword character inside serious
+  ---
+  duration_ms: 639.6921
+  type: 'test'
+  ...
+# Subtest: M3 repeated source facts are preserved and are not scored as generated rhetoric repetition
+ok 63 - M3 repeated source facts are preserved and are not scored as generated rhetoric repetition
+  ---
+  duration_ms: 7982.0777
+  type: 'test'
+  ...
+# Subtest: Legacy relation frames still reject forged provenance; frame-only changes have identical novelty
+ok 64 - Legacy relation frames still reject forged provenance; frame-only changes have identical novelty
+  ---
+  duration_ms: 606.3945
+  type: 'test'
+  ...
+# Subtest: M3 changed narrative order and status labels cannot be self-certified
+ok 65 - M3 changed narrative order and status labels cannot be self-certified
+  ---
+  duration_ms: 77.5651
+  type: 'test'
+  ...
+# Subtest: M3 independent reanalysis rejects every fixed design counterexample using real parsed source and output
+ok 66 - M3 independent reanalysis rejects every fixed design counterexample using real parsed source and output
+  ---
+  duration_ms: 5262.6986
+  type: 'test'
+  ...
+# Subtest: M3 independent checks identify roles, scoped polarity, negative tense and missing reported speaker
+ok 67 - M3 independent checks identify roles, scoped polarity, negative tense and missing reported speaker
+  ---
+  duration_ms: 406.0751
+  type: 'test'
+  ...
+# Subtest: M3 bounded body proof is explicit and reproduced on replay without claiming a reparse
+ok 68 - M3 bounded body proof is explicit and reproduced on replay without claiming a reparse
+  ---
+  duration_ms: 1098.6685
+  type: 'test'
+  ...
+# Subtest: prose full stops become line boundaries; terminal full stop is removed and んだが is not manufactured
+ok 69 - prose full stops become line boundaries; terminal full stop is removed and んだが is not manufactured
+  ---
+  duration_ms: 51165.624
+  type: 'test'
+  ...
+# Subtest: short plain sentences can change punctuation alone
+ok 70 - short plain sentences can change punctuation alone
+  ---
+  duration_ms: 688.2304
+  type: 'test'
+  ...
+# Subtest: existing line and paragraph boundaries survive without doubled newlines
+ok 71 - existing line and paragraph boundaries survive without doubled newlines
+  ---
+  duration_ms: 1518.8313
+  type: 'test'
+  ...
+# Subtest: quotes, parenthesized content, question marks, URLs and values keep their punctuation
+ok 72 - quotes, parenthesized content, question marks, URLs and values keep their punctuation
+  ---
+  duration_ms: 2248.3674
+  type: 'test'
+  ...
+# Subtest: list commas and nested/unclosed quotation punctuation are not stripped
+ok 73 - list commas and nested/unclosed quotation punctuation are not stripped
+  ---
+  duration_ms: 1482.6728
+  type: 'test'
+  ...
+# Subtest: forged period removal inside a quote is rejected by independent rewrite validation
+ok 74 - forged period removal inside a quote is rejected by independent rewrite validation
+  ---
+  duration_ms: 428.1294
+  type: 'test'
+  ...
+# Subtest: T-22 an assets directory junction cannot escape the public root
+ok 75 - T-22 an assets directory junction cannot escape the public root
+  ---
+  duration_ms: 63.3873
+  type: 'test'
+  ...
+# Subtest: T-23 immutable content-addressed snapshots support atomic activation and rollback
+ok 76 - T-23 immutable content-addressed snapshots support atomic activation and rollback
+  ---
+  duration_ms: 5124.3006
+  type: 'test'
+  ...
+# Subtest: T-21 invalid analyzer stdout is rejected and the persistent process can restart
+ok 77 - T-21 invalid analyzer stdout is rejected and the persistent process can restart
+  ---
+  duration_ms: 50593.032
+  type: 'test'
+  ...
+# Subtest: T-20/21 deadline fails once while status remains available; retained results obey count and TTL
+ok 78 - T-20/21 deadline fails once while status remains available; retained results obey count and TTL
+  ---
+  duration_ms: 38771.0647
+  type: 'test'
+  ...
+# Subtest: parentheses in source evidence do not license an invented parenthetical annotation
+ok 79 - parentheses in source evidence do not license an invented parenthetical annotation
+  ---
+  duration_ms: 32.105
+  type: 'test'
+  ...
+# Subtest: source wording is preserved; removing an invented frame is not a blacklist
+ok 80 - source wording is preserved; removing an invented frame is not a blacklist
+  ---
+  duration_ms: 2.0951
+  type: 'test'
+  ...
+# Subtest: general readings are not injected as distinctive spelling at any intensity
+ok 81 - general readings are not injected as distinctive spelling at any intensity
+  ---
+  duration_ms: 47973.2634
+  type: 'test'
+  ...
+# Subtest: withdrawn spelling edits cannot be reinstated by supplying their real archived evidence
+ok 82 - withdrawn spelling edits cannot be reinstated by supplying their real archived evidence
+  ---
+  duration_ms: 467.2188
+  type: 'test'
+  ...
+# Subtest: body rewriting composes attested vocabulary and semantic doubling without appended metaphors
+ok 83 - body rewriting composes attested vocabulary and semantic doubling without appended metaphors
+  ---
+  duration_ms: 724.838
+  type: 'test'
+  ...
+# Subtest: ordinary inputs produce short rewrites without invented people, analogies or lessons
+ok 84 - ordinary inputs produce short rewrites without invented people, analogies or lessons
+  ---
+  duration_ms: 1279.2261
+  type: 'test'
+  ...
+# Subtest: uncertainty, questions, gratitude and quotations are not turned into boasting or certainty
+ok 85 - uncertainty, questions, gratitude and quotations are not turned into boasting or certainty
+  ---
+  duration_ms: 2566.7008
+  type: 'test'
+  ...
+# Subtest: negation, past tense, numbers, roles and compound words survive body edits
+ok 86 - negation, past tense, numbers, roles and compound words survive body edits
+  ---
+  duration_ms: 3635.6891
+  type: 'test'
+  ...
+# Subtest: forged text, edit destinations, offsets, rule IDs and evidence cannot self-certify
+ok 87 - forged text, edit destinations, offsets, rule IDs and evidence cannot self-certify
+  ---
+  duration_ms: 763.4687
+  type: 'test'
+  ...
+# Subtest: invent abstains from finite adaptations and dictionaries cannot silently change facts
+ok 88 - invent abstains from finite adaptations and dictionaries cannot silently change facts
+  ---
+  duration_ms: 1295.2703
+  type: 'test'
+  ...
+# Subtest: rules have original-post evidence in the requested series; unavailable rules abstain
+ok 89 - rules have original-post evidence in the requested series; unavailable rules abstain
+  ---
+  duration_ms: 567.7824
+  type: 'test'
+  ...
+# Subtest: regeneration retains locked body edits and deterministic requests reproduce
+ok 90 - regeneration retains locked body edits and deterministic requests reproduce
+  ---
+  duration_ms: 3058.7777
+  type: 'test'
+  ...
+# Subtest: vector cosine is normalized, symmetric, finite; absent vocabulary is not zero-quality evidence
+ok 91 - vector cosine is normalized, symmetric, finite; absent vocabulary is not zero-quality evidence
+  ---
+  duration_ms: 195.5263
+  type: 'test'
+  ...
+# Subtest: a frozen vector basis cannot learn from candidates; script ablation declares its kana limitation
+ok 92 - a frozen vector basis cannot learn from candidates; script ablation declares its kana limitation
+  ---
+  duration_ms: 25.3717
+  type: 'test'
+  ...
+# Subtest: phrase ablation removes known slogans and AUC counts ties without inventing labels
+ok 93 - phrase ablation removes known slogans and AUC counts ties without inventing labels
+  ---
+  duration_ms: 4.7073
+  type: 'test'
+  ...
+1..93
+# tests 93
+# suites 0
+# pass 90
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 553949.9186

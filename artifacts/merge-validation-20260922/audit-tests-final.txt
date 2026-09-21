@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: A8 known temporal mismatch survives an unrelated unknown completion
+ok 1 - A8 known temporal mismatch survives an unrelated unknown completion
+  ---
+  duration_ms: 25648.3354
+  type: 'test'
+  ...
+# Subtest: A2 changing declared body output cannot approve itself
+ok 2 - A2 changing declared body output cannot approve itself
+  ---
+  duration_ms: 28652.0707
+  type: 'test'
+  ...
+# Subtest: A1 changing source participants changes the rewritten body
+ok 3 - A1 changing source participants changes the rewritten body
+  ---
+  duration_ms: 854.7363
+  type: 'test'
+  ...
+# Subtest: A3 free dictionaries do not bypass the bounded body proof
+ok 4 - A3 free dictionaries do not bypass the bounded body proof
+  ---
+  duration_ms: 777.0084
+  type: 'test'
+  ...
+# Subtest: A5 features depend exclusively on actual output and ignore declared operator/input syntax
+ok 5 - A5 features depend exclusively on actual output and ignore declared operator/input syntax
+  ---
+  duration_ms: 26.2531
+  type: 'test'
+  ...
+# Subtest: A7 mixed sentence has separate event units without severing conditions or quotations
+ok 6 - A7 mixed sentence has separate event units without severing conditions or quotations
+  ---
+  duration_ms: 1112.5838
+  type: 'test'
+  ...
+# Subtest: A1 operator applicability and source state affect generation, not just metadata
+ok 7 - A1 operator applicability and source state affect generation, not just metadata
+  ---
+  duration_ms: 1490.544
+  type: 'test'
+  ...
+# Subtest: Legacy A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations
+ok 8 - Legacy A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations
+  ---
+  duration_ms: 41.0805
+  type: 'test'
+  ...
+# Subtest: A1/A2 past ongoing actions never become present ongoing or completed rhetoric
+ok 9 - A1/A2 past ongoing actions never become present ongoing or completed rhetoric
+  ---
+  duration_ms: 1441.7692
+  type: 'test'
+  ...
+# Subtest: A4 selection respects Pareto preference axes and rejects low-quality novel candidates
+ok 10 - A4 selection respects Pareto preference axes and rejects low-quality novel candidates
+  ---
+  duration_ms: 699.7402
+  type: 'test'
+  ...
+# Subtest: A5 blind pairs recompute a dense common feature schema regardless of supplied method features
+ok 11 - A5 blind pairs recompute a dense common feature schema regardless of supplied method features
+  ---
+  duration_ms: 9.8968
+  type: 'test'
+  ...
+# Subtest: A5 old feature data/models are refused and no model is trained without real labels
+ok 12 - A5 old feature data/models are refused and no model is trained without real labels
+  ---
+  duration_ms: 19498.5861
+  type: 'test'
+  ...
+# Subtest: A6 discourse selection changes clause order only with eligible corpus evidence
+ok 13 - A6 discourse selection changes clause order only with eligible corpus evidence
+  ---
+  duration_ms: 176.5449
+  type: 'test'
+  ...
+# Subtest: A7 body rewriting keeps linked clauses and every original event
+ok 14 - A7 body rewriting keeps linked clauses and every original event
+  ---
+  duration_ms: 357.6984
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 87776.2572

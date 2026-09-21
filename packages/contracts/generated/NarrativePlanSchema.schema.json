@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "strategy",
+    "units",
+    "sourceOrder",
+    "displayOrder",
+    "preservedRelations",
+    "orderingReason"
+  ],
+  "properties": {
+    "strategy": {
+      "anyOf": [
+        {
+          "const": "source_order",
+          "type": "string"
+        },
+        {
+          "const": "status_order",
+          "type": "string"
+        }
+      ]
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "sourceSpan",
+          "factIds",
+          "role"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sourceSpan": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "factIds": {
+            "maxItems": 12000,
+            "type": "array",
+            "items": {
+              "maxLength": 12000,
+              "type": "string"
+            }
+          },
+          "role": {
+            "anyOf": [
+              {
+                "const": "achievement",
+                "type": "string"
+              },
+              {
+                "const": "unresolved",
+                "type": "string"
+              },
+              {
+                "const": "prospect",
+                "type": "string"
+              },
+              {
+                "const": "observation",
+                "type": "string"
+              },
+              {
+                "const": "reported",
+                "type": "string"
+              },
+              {
+                "const": "conditional",
+                "type": "string"
+              },
+              {
+                "const": "gratitude",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sourceOrder": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "displayOrder": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "preservedRelations": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "orderingReason": {
+      "type": "string"
+    }
+  }
+}

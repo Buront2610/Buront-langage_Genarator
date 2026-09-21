@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sourceHash": "967854963ccf27c5344409a036cff4acbb2858c6ebb979ee5d22f136969e4a8e",
+  "method": "connected-post-thread-near-duplicate-family-before-generation-v1",
+  "groups": 8,
+  "examples": [
+    {
+      "id": "case-0",
+      "text": "今日は寒い。",
+      "postId": "manual-0",
+      "threadId": "manual-0",
+      "family": "manual-0",
+      "group": "bffe2ac928c96458985ba53fc73136a0981e7a8c87badc5de3db201cc3d50925",
+      "split": "train"
+    },
+    {
+      "id": "case-1",
+      "text": "田中が佐藤を助けた。",
+      "postId": "manual-1",
+      "threadId": "manual-1",
+      "family": "manual-1",
+      "group": "889da7f9efa8b13f96cf761dde0d18d3df83275ea3b3f573588e1c7719778f96",
+      "split": "test"
+    },
+    {
+      "id": "case-2",
+      "text": "100円を300円に変更した。",
+      "postId": "manual-2",
+      "threadId": "manual-2",
+      "family": "manual-2",
+      "group": "55d6776958c28cf097f3850034b1ca4950a5caf278a5a595a10ba0405091ac35",
+      "split": "train"
+    },
+    {
+      "id": "case-3",
+      "text": "田中は承認した。佐藤は承認していない。",
+      "postId": "manual-3",
+      "threadId": "manual-3",
+      "family": "manual-3",
+      "group": "55d010cb4ba83631fa69b763971ff43488f4e67d9ff63facf3c4757b16d3647c",
+      "split": "validation"
+    },
+    {
+      "id": "case-4",
+      "text": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+      "postId": "manual-4",
+      "threadId": "manual-4",
+      "family": "manual-4",
+      "group": "bfef8ddb53915f16d983bc70fbf92c16459ef9763719e192f1f78756a2217535",
+      "split": "train"
+    },
+    {
+      "id": "case-5",
+      "text": "田中が確認したと佐藤が言った。",
+      "postId": "manual-5",
+      "threadId": "manual-5",
+      "family": "manual-5",
+      "group": "91f9974c45ffc42c2c3269c004754a2ac0faf2383b1fbb60ecf9d3a7a27f1f15",
+      "split": "train"
+    },
+    {
+      "id": "case-6",
+      "text": "猫",
+      "postId": "manual-6",
+      "threadId": "manual-6",
+      "family": "manual-6",
+      "group": "1773bfe90d8a55828b1cb6d6eefafea5677270c6b794282d04d9bf64e7f31273",
+      "split": "validation"
+    },
+    {
+      "id": "case-7",
+      "text": "明日は監視項目を追加する。",
+      "postId": "manual-7",
+      "threadId": "manual-7",
+      "family": "manual-7",
+      "group": "6c6a1dd8675548529d36cd5ff4141edf687315bb79862e91f0e9eb7a768de77c",
+      "split": "train"
+    }
+  ],
+  "frozenBeforeGeneration": true
+}

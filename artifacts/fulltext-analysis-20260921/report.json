@@ -1,0 +1,1356 @@
+{
+  "manifest": {
+    "raw_path": "C:\\Users\\Glutt\\OneDrive\\デスクトップ\\burontlog.txt",
+    "raw_sha256": "983ba86ddf086d7bc842d91c66a4bc1bab940c126682b436538d5df7a68df752",
+    "raw_bytes": 873652,
+    "line_segments": 16311,
+    "physical_lines": 16310,
+    "nonempty_lines": 11837,
+    "categories": {
+      "section_title": 137,
+      "blank": 4474,
+      "post_header": 2407,
+      "body": 8282,
+      "anchor": 892,
+      "quoted_line": 114,
+      "embedded_quote_header": 4,
+      "editorial_note": 1
+    },
+    "posts": 2407,
+    "analyzed_nonempty_posts": 2405,
+    "empty_or_anchor_only_posts": [
+      "raw-L05242",
+      "raw-L05666"
+    ],
+    "exact_unique_posts": 2363,
+    "duplicate_posts": 42,
+    "flagged_source_posts": 7,
+    "embedded_quote_headers": [
+      5702,
+      11033,
+      12238,
+      15647
+    ],
+    "non_gregorian_header_lines": [
+      11674,
+      11683
+    ],
+    "raw_punctuation": {
+      "～": 205,
+      "\n": 16310,
+      "：": 4983,
+      "(": 2377,
+      ")": 2377,
+      ":": 4546,
+      ".": 914,
+      "、": 748,
+      "。": 486,
+      "！": 286,
+      "？": 980,
+      "【": 141,
+      "】": 141,
+      "[": 3655,
+      "]": 3655,
+      "ー": 1551,
+      "（": 451,
+      "）": 445,
+      "!": 7,
+      "・": 760,
+      "「": 309,
+      "」": 309,
+      "?": 6,
+      "―": 2,
+      "；": 97,
+      ";": 2,
+      "…": 12,
+      "『": 2,
+      "』": 2
+    },
+    "archive_sha256": "7911160cbf8240a42072f3bbf99258211d606ffbc9238e3072e76b45501ebdd8",
+    "generated_sha256": "a7e66aec20411300543d68222f179fc288903772f207db84132b27204c17ef3d",
+    "script_sha256": "308ba94d6b2c9022bf3adc18e22d328316952c3d82d6a213fb90dfe8d36f6bdf",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2"
+    },
+    "style_features": [
+      "log_chars",
+      "log_lines",
+      "log_mean_line",
+      "log_max_line",
+      "periods_100",
+      "commas_100",
+      "question_100",
+      "exclaim_100",
+      "newline_100",
+      "no_stop_line_ratio",
+      "no_jp_punct_line_ratio",
+      "terminal_period_ratio",
+      "quote_100",
+      "parenthesis_100",
+      "ellipsis_100",
+      "repeat_symbol_100",
+      "comma_ascii_100",
+      "space_100",
+      "hiragana_ratio",
+      "kanji_ratio",
+      "katakana_ratio",
+      "half_kana_ratio",
+      "latin_ratio",
+      "digit_ratio",
+      "polite_100",
+      "first_person_100",
+      "second_person_100",
+      "connective_100",
+      "quotative_100",
+      "hedge_100",
+      "nda_ga_100",
+      "karana_100",
+      "be_100"
+    ],
+    "seed": 1729,
+    "original_only_fitting": true,
+    "quote_mask": "Japanese brackets and > block lines only; parentheses retained",
+    "constant_features_after_clipping": [
+      "comma_ascii_100"
+    ],
+    "authorship_labels_available": false,
+    "human_ratings_submitted": false,
+    "provenance": {
+      "output_engine": {
+        "schemaVersion": 1,
+        "sourceHash": "b57f2b7ec999bd260c9e15aa098f949ec33bcc4cc8ab4660ac2a851997c46270",
+        "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+        "runtime": "node24-python3.11",
+        "safetyContract": "v1"
+      },
+      "previous_source_hash_record": {
+        "packages/core/rewrite-rules.ts": "70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c",
+        "packages/core/rewrite.ts": "959fe0978dbbeb0336c70ed60e25be1bc79069d92d5464671f042e2014c6da4f",
+        "packages/core/rewrite-validation.ts": "ccea464449f3aa6ebb7a703115305edb4b23d9ebe68a49a0b8e7b32cf0a65da3",
+        "packages/core/engine.ts": "b20613913b9dd4b84183ebc66851e00f81ab64869d57246f00e2de2c4dcf6959",
+        "packages/core/validator.ts": "0e4399fb17e0cad2df685207198e259d19b4c20464e755b1c43a83be4d61036e",
+        "packages/core/evaluation.ts": "49d96f163b715aee06c795007da91768ebe2134ad0d4ef046d94c7d200f0ae84",
+        "packages/core/semantic.ts": "2e7cc470a1cd63937d4a666ba931e43133d136d408cc07b86f18c9f2c1099d16"
+      },
+      "current_source_hashes": {
+        "packages/core/rewrite-rules.ts": "70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c",
+        "packages/core/rewrite.ts": "959fe0978dbbeb0336c70ed60e25be1bc79069d92d5464671f042e2014c6da4f",
+        "packages/core/rewrite-validation.ts": "ccea464449f3aa6ebb7a703115305edb4b23d9ebe68a49a0b8e7b32cf0a65da3",
+        "packages/core/engine.ts": "b20613913b9dd4b84183ebc66851e00f81ab64869d57246f00e2de2c4dcf6959",
+        "packages/core/validator.ts": "0e4399fb17e0cad2df685207198e259d19b4c20464e755b1c43a83be4d61036e",
+        "packages/core/evaluation.ts": "49d96f163b715aee06c795007da91768ebe2134ad0d4ef046d94c7d200f0ae84",
+        "packages/core/semantic.ts": "2e7cc470a1cd63937d4a666ba931e43133d136d408cc07b86f18c9f2c1099d16"
+      },
+      "generation_sources_match": true
+    }
+  },
+  "groups": {
+    "all_raw_posts": {
+      "posts": 2405,
+      "chars": 205347,
+      "lines": 8396,
+      "median_chars": 49.0,
+      "median_line_chars": 19.0,
+      "periods": 483,
+      "commas": 746,
+      "period_per_100": 0.23521161740858157,
+      "comma_per_100": 0.3632875084612875,
+      "newline_per_100": 3.0046701437079677,
+      "no_jp_punct_posts": 0.8261954261954262,
+      "final_period_posts": 0.027442827442827444,
+      "no_stop_lines": 0.8766079085278704,
+      "outside_period_per_100": 0.23238426253359468,
+      "outside_comma_per_100": 0.34706084426212946,
+      "question_per_100": 0.4767539822836467
+    },
+    "unique_raw_posts": {
+      "posts": 2363,
+      "chars": 203009,
+      "lines": 8196,
+      "median_chars": 50.0,
+      "median_line_chars": 19.0,
+      "periods": 483,
+      "commas": 745,
+      "period_per_100": 0.23792048628385934,
+      "comma_per_100": 0.3669788038953938,
+      "newline_per_100": 2.954548813106808,
+      "no_jp_punct_posts": 0.8235294117647058,
+      "final_period_posts": 0.0279305966991113,
+      "no_stop_lines": 0.8738408979990239,
+      "outside_period_per_100": 0.23513535617894823,
+      "outside_comma_per_100": 0.35065837899730107,
+      "question_per_100": 0.48125945155140903
+    },
+    "narration_only": {
+      "posts": 2401,
+      "chars": 197554,
+      "lines": 8268,
+      "median_chars": 49.0,
+      "median_line_chars": 19.0,
+      "periods": 460,
+      "commas": 669,
+      "period_per_100": 0.23284772770989198,
+      "comma_per_100": 0.338641586604169,
+      "newline_per_100": 3.078145722182289,
+      "no_jp_punct_posts": 0.8309037900874635,
+      "final_period_posts": 0.027072053311120368,
+      "no_stop_lines": 0.877237542331882,
+      "outside_period_per_100": 0.23284772770989198,
+      "outside_comma_per_100": 0.338641586604169,
+      "question_per_100": 0.45354687832187657
+    },
+    "archived_posts": {
+      "posts": 2452,
+      "chars": 214580,
+      "lines": 9232,
+      "median_chars": 51.0,
+      "median_line_chars": 18.666666666666668,
+      "periods": 472,
+      "commas": 736,
+      "period_per_100": 0.2199645819740889,
+      "comma_per_100": 0.3429956193494268,
+      "newline_per_100": 3.2980706496411596,
+      "no_jp_punct_posts": 0.833605220228385,
+      "final_period_posts": 0.02569331158238173,
+      "no_stop_lines": 0.8897313691507799,
+      "outside_period_per_100": 0.21681603955806228,
+      "outside_comma_per_100": 0.32691416209534113,
+      "question_per_100": 0.4501817503961227
+    },
+    "inputs": {
+      "posts": 37,
+      "chars": 458,
+      "lines": 37,
+      "median_chars": 11.0,
+      "median_line_chars": 11.0,
+      "periods": 37,
+      "commas": 2,
+      "period_per_100": 8.078602620087336,
+      "comma_per_100": 0.4366812227074236,
+      "newline_per_100": 0.0,
+      "no_jp_punct_posts": 0.02702702702702703,
+      "final_period_posts": 0.972972972972973,
+      "no_stop_lines": 0.0,
+      "outside_period_per_100": 8.295964125560538,
+      "outside_comma_per_100": 0.4484304932735426,
+      "question_per_100": 0.2183406113537118
+    },
+    "generated": {
+      "posts": 75,
+      "chars": 1134,
+      "lines": 75,
+      "median_chars": 13.0,
+      "median_line_chars": 13.0,
+      "periods": 78,
+      "commas": 6,
+      "period_per_100": 6.878306878306878,
+      "comma_per_100": 0.5291005291005291,
+      "newline_per_100": 0.0,
+      "no_jp_punct_posts": 0.0,
+      "final_period_posts": 1.0,
+      "no_stop_lines": 0.0,
+      "outside_period_per_100": 6.878306878306878,
+      "outside_comma_per_100": 0.5291005291005291,
+      "question_per_100": 0.0
+    },
+    "year_2001": {
+      "posts": 2,
+      "chars": 22,
+      "lines": 2,
+      "median_chars": 11.0,
+      "median_line_chars": 11.0,
+      "periods": 0,
+      "commas": 0,
+      "period_per_100": 0.0,
+      "comma_per_100": 0.0,
+      "newline_per_100": 0.0,
+      "no_jp_punct_posts": 1.0,
+      "final_period_posts": 0.0,
+      "no_stop_lines": 1.0,
+      "outside_period_per_100": 0.0,
+      "outside_comma_per_100": 0.0,
+      "question_per_100": 0.0
+    },
+    "year_2002": {
+      "posts": 916,
+      "chars": 28071,
+      "lines": 2108,
+      "median_chars": 23.0,
+      "median_line_chars": 13.0,
+      "periods": 12,
+      "commas": 31,
+      "period_per_100": 0.04274874425563749,
+      "comma_per_100": 0.11043425599373019,
+      "newline_per_100": 4.417370239749207,
+      "no_jp_punct_posts": 0.9672489082969432,
+      "final_period_posts": 0.002183406113537118,
+      "no_stop_lines": 0.8638519924098672,
+      "outside_period_per_100": 0.0428709227966132,
+      "outside_comma_per_100": 0.11074988389125076,
+      "question_per_100": 1.004595490007481
+    },
+    "year_2003": {
+      "posts": 675,
+      "chars": 51317,
+      "lines": 2591,
+      "median_chars": 65.0,
+      "median_line_chars": 19.0,
+      "periods": 43,
+      "commas": 174,
+      "period_per_100": 0.08379289514196075,
+      "comma_per_100": 0.3390689245279342,
+      "newline_per_100": 3.829140440789602,
+      "no_jp_punct_posts": 0.8429629629629629,
+      "final_period_posts": 0.005925925925925926,
+      "no_stop_lines": 0.9579313006561173,
+      "outside_period_per_100": 0.07376542594549333,
+      "outside_comma_per_100": 0.32696026635299746,
+      "question_per_100": 0.1812264941442407
+    },
+    "year_2004": {
+      "posts": 148,
+      "chars": 17743,
+      "lines": 615,
+      "median_chars": 107.0,
+      "median_line_chars": 27.583333333333336,
+      "periods": 14,
+      "commas": 50,
+      "period_per_100": 0.07890435664769205,
+      "comma_per_100": 0.2818012737417573,
+      "newline_per_100": 2.671476075071859,
+      "no_jp_punct_posts": 0.8040540540540541,
+      "final_period_posts": 0.006756756756756757,
+      "no_stop_lines": 0.9024390243902439,
+      "outside_period_per_100": 0.051819438046982955,
+      "outside_comma_per_100": 0.24758175955780745,
+      "question_per_100": 0.541058445584174
+    },
+    "year_2005": {
+      "posts": 411,
+      "chars": 67099,
+      "lines": 1906,
+      "median_chars": 122.0,
+      "median_line_chars": 32.0,
+      "periods": 283,
+      "commas": 426,
+      "period_per_100": 0.42176485491587057,
+      "comma_per_100": 0.6348827851383776,
+      "newline_per_100": 2.295116171626999,
+      "no_jp_punct_posts": 0.5644768856447688,
+      "final_period_posts": 0.07785888077858881,
+      "no_stop_lines": 0.7922350472193075,
+      "outside_period_per_100": 0.4306754059194291,
+      "outside_comma_per_100": 0.605146099558322,
+      "question_per_100": 0.5126753006751218
+    },
+    "year_2006": {
+      "posts": 125,
+      "chars": 21488,
+      "lines": 641,
+      "median_chars": 133.0,
+      "median_line_chars": 30.0,
+      "periods": 46,
+      "commas": 15,
+      "period_per_100": 0.21407297096053612,
+      "comma_per_100": 0.06980640357408786,
+      "newline_per_100": 2.475800446760983,
+      "no_jp_punct_posts": 0.736,
+      "final_period_posts": 0.152,
+      "no_stop_lines": 0.8471138845553822,
+      "outside_period_per_100": 0.21761709283347347,
+      "outside_comma_per_100": 0.07418764528413868,
+      "question_per_100": 0.43279970215934477
+    },
+    "year_2007": {
+      "posts": 46,
+      "chars": 8223,
+      "lines": 200,
+      "median_chars": 80.5,
+      "median_line_chars": 33.75,
+      "periods": 57,
+      "commas": 25,
+      "period_per_100": 0.6931776723823422,
+      "comma_per_100": 0.30402529490453606,
+      "newline_per_100": 1.9944059345737566,
+      "no_jp_punct_posts": 0.6086956521739131,
+      "final_period_posts": 0.10869565217391304,
+      "no_stop_lines": 0.75,
+      "outside_period_per_100": 0.7290717354511131,
+      "outside_comma_per_100": 0.3124593151933342,
+      "question_per_100": 0.4013133892739876
+    },
+    "year_2008": {
+      "posts": 47,
+      "chars": 7000,
+      "lines": 199,
+      "median_chars": 122.0,
+      "median_line_chars": 33.4,
+      "periods": 22,
+      "commas": 17,
+      "period_per_100": 0.3142857142857143,
+      "comma_per_100": 0.24285714285714285,
+      "newline_per_100": 2.1714285714285713,
+      "no_jp_punct_posts": 0.6170212765957447,
+      "final_period_posts": 0.06382978723404255,
+      "no_stop_lines": 0.8542713567839196,
+      "outside_period_per_100": 0.3196745132229003,
+      "outside_comma_per_100": 0.24702121476315025,
+      "question_per_100": 0.4
+    },
+    "year_2009": {
+      "posts": 30,
+      "chars": 2546,
+      "lines": 85,
+      "median_chars": 18.5,
+      "median_line_chars": 13.333333333333332,
+      "periods": 3,
+      "commas": 1,
+      "period_per_100": 0.1178318931657502,
+      "comma_per_100": 0.03927729772191673,
+      "newline_per_100": 2.199528672427337,
+      "no_jp_punct_posts": 0.9333333333333333,
+      "final_period_posts": 0.0,
+      "no_stop_lines": 0.9647058823529412,
+      "outside_period_per_100": 0.12160518848804215,
+      "outside_comma_per_100": 0.040535062829347386,
+      "question_per_100": 0.31421838177533384
+    },
+    "year_2010": {
+      "posts": 3,
+      "chars": 1167,
+      "lines": 35,
+      "median_chars": 266.0,
+      "median_line_chars": 33.25,
+      "periods": 0,
+      "commas": 1,
+      "period_per_100": 0.0,
+      "comma_per_100": 0.0856898029134533,
+      "newline_per_100": 2.9991431019708656,
+      "no_jp_punct_posts": 0.6666666666666666,
+      "final_period_posts": 0.0,
+      "no_stop_lines": 1.0,
+      "outside_period_per_100": 0.0,
+      "outside_comma_per_100": 0.10526315789473684,
+      "question_per_100": 0.0856898029134533
+    },
+    "year_non_gregorian": {
+      "posts": 2,
+      "chars": 671,
+      "lines": 14,
+      "median_chars": 335.5,
+      "median_line_chars": 47.92857142857143,
+      "periods": 3,
+      "commas": 6,
+      "period_per_100": 0.44709388971684055,
+      "comma_per_100": 0.8941877794336811,
+      "newline_per_100": 1.7883755588673622,
+      "no_jp_punct_posts": 0.0,
+      "final_period_posts": 0.0,
+      "no_stop_lines": 0.7142857142857143,
+      "outside_period_per_100": 0.5102040816326531,
+      "outside_comma_per_100": 1.0204081632653061,
+      "question_per_100": 0.14903129657228018
+    },
+    "chars_1_39": {
+      "posts": 1019,
+      "chars": 21818,
+      "lines": 1763,
+      "median_chars": 21.0,
+      "median_line_chars": 12.0,
+      "periods": 12,
+      "commas": 39,
+      "period_per_100": 0.05500045833715281,
+      "comma_per_100": 0.17875148959574663,
+      "newline_per_100": 3.4375286460720504,
+      "no_jp_punct_posts": 0.9558390578999019,
+      "final_period_posts": 0.007850834151128557,
+      "no_stop_lines": 0.8496880317640386,
+      "outside_period_per_100": 0.05542469170015242,
+      "outside_comma_per_100": 0.18013024802549535,
+      "question_per_100": 1.1962599688330735
+    },
+    "chars_40_99": {
+      "posts": 723,
+      "chars": 47054,
+      "lines": 2311,
+      "median_chars": 63.0,
+      "median_line_chars": 20.5,
+      "periods": 62,
+      "commas": 112,
+      "period_per_100": 0.13176350575934034,
+      "comma_per_100": 0.23802439750074383,
+      "newline_per_100": 3.46835550643941,
+      "no_jp_punct_posts": 0.8395573997233748,
+      "final_period_posts": 0.022130013831258646,
+      "no_stop_lines": 0.9073993942016443,
+      "outside_period_per_100": 0.13114895080839353,
+      "outside_comma_per_100": 0.24079807361541108,
+      "question_per_100": 0.48454966634079993
+    },
+    "chars_100_249": {
+      "posts": 504,
+      "chars": 76001,
+      "lines": 2856,
+      "median_chars": 140.0,
+      "median_line_chars": 28.708333333333336,
+      "periods": 175,
+      "commas": 266,
+      "period_per_100": 0.23026012815620847,
+      "comma_per_100": 0.34999539479743685,
+      "newline_per_100": 3.2236417941869187,
+      "no_jp_punct_posts": 0.6607142857142857,
+      "final_period_posts": 0.04563492063492063,
+      "no_stop_lines": 0.8932072829131653,
+      "outside_period_per_100": 0.22036556348691325,
+      "outside_comma_per_100": 0.3298723772442137,
+      "question_per_100": 0.39999473691135645
+    },
+    "chars_250_99999": {
+      "posts": 159,
+      "chars": 60474,
+      "lines": 1466,
+      "median_chars": 341.0,
+      "median_line_chars": 42.4375,
+      "periods": 234,
+      "commas": 329,
+      "period_per_100": 0.3869431491219367,
+      "comma_per_100": 0.5440354532526375,
+      "newline_per_100": 2.2125210834408175,
+      "no_jp_punct_posts": 0.4591194968553459,
+      "final_period_posts": 0.11949685534591195,
+      "no_stop_lines": 0.8281036834924966,
+      "outside_period_per_100": 0.40131142841786555,
+      "outside_comma_per_100": 0.5231381120447176,
+      "question_per_100": 0.3075701954558984
+    },
+    "without_flagged_sections": {
+      "posts": 2398,
+      "chars": 203653,
+      "lines": 8350,
+      "median_chars": 49.0,
+      "median_line_chars": 19.0,
+      "periods": 476,
+      "commas": 745,
+      "period_per_100": 0.2337309050198131,
+      "comma_per_100": 0.36581832823479155,
+      "newline_per_100": 3.0085488551604938,
+      "no_jp_punct_posts": 0.8273561301084237,
+      "final_period_posts": 0.027105921601334446,
+      "no_stop_lines": 0.8770059880239521,
+      "outside_period_per_100": 0.23070929101456067,
+      "outside_comma_per_100": 0.3493743347372817,
+      "question_per_100": 0.4743362484225619
+    },
+    "reference_lines_12990_13006": {
+      "posts": 2,
+      "chars": 758,
+      "lines": 13,
+      "median_chars": 379.0,
+      "median_line_chars": 53.361111111111114,
+      "periods": 0,
+      "commas": 1,
+      "period_per_100": 0.0,
+      "comma_per_100": 0.13192612137203166,
+      "newline_per_100": 1.4511873350923483,
+      "no_jp_punct_posts": 0.5,
+      "final_period_posts": 0.0,
+      "no_stop_lines": 1.0,
+      "outside_period_per_100": 0.0,
+      "outside_comma_per_100": 0.0,
+      "question_per_100": 0.0
+    },
+    "reference_lines_13773_13799": {
+      "posts": 2,
+      "chars": 350,
+      "lines": 12,
+      "median_chars": 175.0,
+      "median_line_chars": 29.166666666666664,
+      "periods": 0,
+      "commas": 0,
+      "period_per_100": 0.0,
+      "comma_per_100": 0.0,
+      "newline_per_100": 2.857142857142857,
+      "no_jp_punct_posts": 1.0,
+      "final_period_posts": 0.0,
+      "no_stop_lines": 1.0,
+      "outside_period_per_100": 0.0,
+      "outside_comma_per_100": 0.0,
+      "question_per_100": 0.0
+    },
+    "reference_lines_15000_15021": {
+      "posts": 2,
+      "chars": 1365,
+      "lines": 18,
+      "median_chars": 682.5,
+      "median_line_chars": 75.83333333333334,
+      "periods": 14,
+      "commas": 14,
+      "period_per_100": 1.0256410256410255,
+      "comma_per_100": 1.0256410256410255,
+      "newline_per_100": 1.1721611721611722,
+      "no_jp_punct_posts": 0.0,
+      "final_period_posts": 1.0,
+      "no_stop_lines": 0.4444444444444444,
+      "outside_period_per_100": 1.1722272317403066,
+      "outside_comma_per_100": 0.8115419296663661,
+      "question_per_100": 0.29304029304029305
+    }
+  },
+  "punctuation_signature_preserved": {
+    "unchanged": 75,
+    "total": 75
+  },
+  "pca": {
+    "explained_variance": [
+      0.14788984833345473,
+      0.09081053396981471,
+      0.07216849497524659,
+      0.062105807909818865,
+      0.047337579164810295,
+      0.04495577901903331,
+      0.043401968050919525,
+      0.038872214267552385,
+      0.03635510668500999,
+      0.03491920069855153,
+      0.033106951826178815,
+      0.03260070015143735,
+      0.0313587587072961,
+      0.030366219855505888,
+      0.028602897950084825,
+      0.02726936445814516,
+      0.026848463886820353,
+      0.02616840688014934,
+      0.024744635950969502,
+      0.021571103003040232,
+      0.02027517095245222,
+      0.018837606196919432,
+      0.01715469646189397,
+      0.015994767963428035,
+      0.010903681930832904,
+      0.005498874175751012,
+      0.0035412214452905616,
+      0.002434739548882027,
+      0.0018748833249061432,
+      0.0011437147697377654,
+      0.0008388083831404231,
+      4.779910292582794e-05,
+      0.0
+    ],
+    "pc1_length_spearman": 0.9133159941327688,
+    "pc2_length_spearman": 0.3793849632468689
+  },
+  "pca_without_explicit_length": {
+    "explained_variance": [
+      0.11238063439664647,
+      0.08943882091803063,
+      0.07953428999632872,
+      0.05591500931674214,
+      0.05253772934158349,
+      0.04881763642147635,
+      0.04595013625519333,
+      0.04188590681167686,
+      0.04044025671859837,
+      0.03796073865336676,
+      0.03695583551419087,
+      0.03589597570204953,
+      0.03511170479624091,
+      0.033848549061428534,
+      0.032409109696728215,
+      0.030289434993627115,
+      0.03012276977921329,
+      0.02910715107508213,
+      0.02499363452119069,
+      0.023671471333541166,
+      0.021543408341895554,
+      0.01958205935626712,
+      0.018551178858277135,
+      0.01248891738673794,
+      0.0040738736561777315,
+      0.0029057490492899983,
+      0.0021670806806206784,
+      0.0014209373677982625,
+      0.0
+    ],
+    "pc1_length_spearman": -0.33799042771173954,
+    "pc2_length_spearman": -0.2992886842131087
+  },
+  "clustering": {
+    "selected_k": 5,
+    "trials": [
+      {
+        "k": 2,
+        "silhouette_mean": 0.10883621364748064,
+        "silhouette_seeds": [
+          0.10876946618798618,
+          0.10876946618798618,
+          0.10896970856646956
+        ],
+        "stability_ari": 0.9966173394475591
+      },
+      {
+        "k": 3,
+        "silhouette_mean": 0.10976828403513235,
+        "silhouette_seeds": [
+          0.10981817707122334,
+          0.11127279079391021,
+          0.1082138842402635
+        ],
+        "stability_ari": 0.9333554117395364
+      },
+      {
+        "k": 4,
+        "silhouette_mean": 0.11301955740722502,
+        "silhouette_seeds": [
+          0.11378262494380678,
+          0.11263802363893415,
+          0.11263802363893415
+        ],
+        "stability_ari": 0.9729528303228289
+      },
+      {
+        "k": 5,
+        "silhouette_mean": 0.1233294321262541,
+        "silhouette_seeds": [
+          0.12333676900045587,
+          0.1233257636891532,
+          0.1233257636891532
+        ],
+        "stability_ari": 0.9943015234727336
+      },
+      {
+        "k": 6,
+        "silhouette_mean": 0.10875766949912465,
+        "silhouette_seeds": [
+          0.11898005809159828,
+          0.10364647520288785,
+          0.10364647520288785
+        ],
+        "stability_ari": 0.6736504966431683
+      },
+      {
+        "k": 7,
+        "silhouette_mean": 0.09462760427298784,
+        "silhouette_seeds": [
+          0.09070407301323925,
+          0.10060672700369414,
+          0.09257201280203017
+        ],
+        "stability_ari": 0.5230457490884841
+      },
+      {
+        "k": 8,
+        "silhouette_mean": 0.10649999876693166,
+        "silhouette_seeds": [
+          0.08784647045279419,
+          0.10935467857829742,
+          0.12229884726970337
+        ],
+        "stability_ari": 0.5303534674430951
+      }
+    ],
+    "clusters": [
+      {
+        "cluster": 0,
+        "unique_posts": 240,
+        "top_standardized_features": [
+          {
+            "feature": "question_100",
+            "deviation": 2.3826224811146406
+          },
+          {
+            "feature": "be_100",
+            "deviation": 2.231393838438353
+          },
+          {
+            "feature": "no_stop_line_ratio",
+            "deviation": -2.0060560668151735
+          },
+          {
+            "feature": "log_lines",
+            "deviation": -0.9919738927034895
+          },
+          {
+            "feature": "log_chars",
+            "deviation": -0.8877796851186295
+          },
+          {
+            "feature": "log_max_line",
+            "deviation": -0.6191643441820431
+          },
+          {
+            "feature": "katakana_ratio",
+            "deviation": 0.5781504447684324
+          },
+          {
+            "feature": "newline_100",
+            "deviation": -0.47350585642526793
+          }
+        ],
+        "representative_ids": [
+          "raw-L00960",
+          "raw-L00665",
+          "raw-L01973",
+          "raw-L00846",
+          "raw-L01604"
+        ],
+        "representative_lines": [
+          961,
+          666,
+          1974,
+          847,
+          1605
+        ],
+        "statistics": {
+          "posts": 240,
+          "chars": 5533,
+          "lines": 363,
+          "median_chars": 22.0,
+          "median_line_chars": 15.0,
+          "periods": 0,
+          "commas": 9,
+          "period_per_100": 0.0,
+          "comma_per_100": 0.1626604012289897,
+          "newline_per_100": 2.2591722392915234,
+          "no_jp_punct_posts": 0.9625,
+          "final_period_posts": 0.0,
+          "no_stop_lines": 0.3443526170798898,
+          "outside_period_per_100": 0.0,
+          "outside_comma_per_100": 0.16417365924844948,
+          "question_per_100": 4.572564612326044
+        },
+        "years": {
+          "2002": 227,
+          "2003": 3,
+          "2005": 2,
+          "2004": 1,
+          "2006": 4,
+          "2008": 1,
+          "2009": 2
+        }
+      },
+      {
+        "cluster": 1,
+        "unique_posts": 1037,
+        "top_standardized_features": [
+          {
+            "feature": "log_chars",
+            "deviation": 0.7652530291257108
+          },
+          {
+            "feature": "log_max_line",
+            "deviation": 0.7168361923339143
+          },
+          {
+            "feature": "log_mean_line",
+            "deviation": 0.6643487301573355
+          },
+          {
+            "feature": "log_lines",
+            "deviation": 0.6198098139572744
+          },
+          {
+            "feature": "be_100",
+            "deviation": -0.34216684664311536
+          },
+          {
+            "feature": "quotative_100",
+            "deviation": 0.31443299335598884
+          },
+          {
+            "feature": "parenthesis_100",
+            "deviation": 0.26670015946850756
+          },
+          {
+            "feature": "second_person_100",
+            "deviation": -0.2648105407295939
+          }
+        ],
+        "representative_ids": [
+          "raw-L09795",
+          "raw-L09916",
+          "raw-L09673",
+          "raw-L09696",
+          "raw-L13922"
+        ],
+        "representative_lines": [
+          9796,
+          9917,
+          9674,
+          9697,
+          13923
+        ],
+        "statistics": {
+          "posts": 1037,
+          "chars": 146035,
+          "lines": 4945,
+          "median_chars": 105.0,
+          "median_line_chars": 26.0,
+          "periods": 110,
+          "commas": 522,
+          "period_per_100": 0.07532440853220118,
+          "comma_per_100": 0.35744855685280924,
+          "newline_per_100": 2.7411237032218305,
+          "no_jp_punct_posts": 0.733847637415622,
+          "final_period_posts": 0.0048216007714561235,
+          "no_stop_lines": 0.9187057633973711,
+          "outside_period_per_100": 0.06940419716516052,
+          "outside_comma_per_100": 0.34558997145126324,
+          "question_per_100": 0.36840483445749306
+        },
+        "years": {
+          "2002": 54,
+          "2003": 400,
+          "2004": 133,
+          "2005": 279,
+          "non_gregorian": 1,
+          "2006": 88,
+          "2007": 32,
+          "2008": 40,
+          "2009": 7,
+          "2010": 3
+        }
+      },
+      {
+        "cluster": 2,
+        "unique_posts": 940,
+        "top_standardized_features": [
+          {
+            "feature": "log_chars",
+            "deviation": -0.7483364878765332
+          },
+          {
+            "feature": "log_max_line",
+            "deviation": -0.7428622644985133
+          },
+          {
+            "feature": "log_mean_line",
+            "deviation": -0.7267617869555949
+          },
+          {
+            "feature": "log_lines",
+            "deviation": -0.5530184478057687
+          },
+          {
+            "feature": "no_stop_line_ratio",
+            "deviation": 0.4494109308643499
+          },
+          {
+            "feature": "question_100",
+            "deviation": -0.3551380417546476
+          },
+          {
+            "feature": "no_jp_punct_line_ratio",
+            "deviation": 0.3466843519482688
+          },
+          {
+            "feature": "second_person_100",
+            "deviation": 0.30470580074187403
+          }
+        ],
+        "representative_ids": [
+          "raw-L02116",
+          "raw-L00586",
+          "raw-L00572",
+          "raw-L03729",
+          "raw-L02103"
+        ],
+        "representative_lines": [
+          2117,
+          587,
+          573,
+          3730,
+          2104
+        ],
+        "statistics": {
+          "posts": 940,
+          "chars": 27310,
+          "lines": 2036,
+          "median_chars": 26.0,
+          "median_line_chars": 13.5,
+          "periods": 0,
+          "commas": 18,
+          "period_per_100": 0.0,
+          "comma_per_100": 0.06590992310508971,
+          "newline_per_100": 4.027828634199927,
+          "no_jp_punct_posts": 0.9808510638297873,
+          "final_period_posts": 0.0,
+          "no_stop_lines": 0.9724950884086444,
+          "outside_period_per_100": 0.0,
+          "outside_comma_per_100": 0.06647462884998892,
+          "question_per_100": 0.230684730867814
+        },
+        "years": {
+          "2001": 2,
+          "2002": 577,
+          "2003": 252,
+          "2004": 12,
+          "2005": 62,
+          "2006": 11,
+          "2007": 4,
+          "2008": 2,
+          "2009": 18
+        }
+      },
+      {
+        "cluster": 3,
+        "unique_posts": 114,
+        "top_standardized_features": [
+          {
+            "feature": "terminal_period_ratio",
+            "deviation": 3.9559491632481807
+          },
+          {
+            "feature": "periods_100",
+            "deviation": 3.925174972154966
+          },
+          {
+            "feature": "no_jp_punct_line_ratio",
+            "deviation": -2.8767418117773556
+          },
+          {
+            "feature": "no_stop_line_ratio",
+            "deviation": -1.5858858136739102
+          },
+          {
+            "feature": "log_max_line",
+            "deviation": 0.9527183623455117
+          },
+          {
+            "feature": "log_mean_line",
+            "deviation": 0.9323413476547155
+          },
+          {
+            "feature": "log_chars",
+            "deviation": 0.919576282099581
+          },
+          {
+            "feature": "commas_100",
+            "deviation": 0.898423384304877
+          }
+        ],
+        "representative_ids": [
+          "raw-L10984",
+          "raw-L10751",
+          "raw-L11469",
+          "raw-L05581",
+          "raw-L15708"
+        ],
+        "representative_lines": [
+          10985,
+          10753,
+          11470,
+          5583,
+          15709
+        ],
+        "statistics": {
+          "posts": 114,
+          "chars": 20515,
+          "lines": 573,
+          "median_chars": 120.5,
+          "median_line_chars": 32.55,
+          "periods": 373,
+          "commas": 196,
+          "period_per_100": 1.8181818181818181,
+          "comma_per_100": 0.9553984889105532,
+          "newline_per_100": 2.3933707043626615,
+          "no_jp_punct_posts": 0.0,
+          "final_period_posts": 0.5350877192982456,
+          "no_stop_lines": 0.42408376963350786,
+          "outside_period_per_100": 1.842078554754897,
+          "outside_comma_per_100": 0.8931289962447986,
+          "question_per_100": 0.5361930294906166
+        },
+        "years": {
+          "2002": 6,
+          "2003": 7,
+          "2005": 63,
+          "2004": 2,
+          "non_gregorian": 1,
+          "2006": 22,
+          "2007": 9,
+          "2008": 4
+        }
+      },
+      {
+        "cluster": 4,
+        "unique_posts": 32,
+        "top_standardized_features": [
+          {
+            "feature": "space_100",
+            "deviation": 8.090641024028105
+          },
+          {
+            "feature": "digit_ratio",
+            "deviation": 4.064828722808335
+          },
+          {
+            "feature": "hiragana_ratio",
+            "deviation": -3.002556181450343
+          },
+          {
+            "feature": "newline_100",
+            "deviation": 1.5587241810219128
+          },
+          {
+            "feature": "latin_ratio",
+            "deviation": 1.5479027831310372
+          },
+          {
+            "feature": "log_lines",
+            "deviation": 1.2948539218218855
+          },
+          {
+            "feature": "katakana_ratio",
+            "deviation": 0.8565018051729357
+          },
+          {
+            "feature": "log_mean_line",
+            "deviation": -0.539451171317348
+          }
+        ],
+        "representative_ids": [
+          "raw-L01494",
+          "raw-L04652",
+          "raw-L02508",
+          "raw-L01033",
+          "raw-L00693"
+        ],
+        "representative_lines": [
+          1495,
+          4653,
+          2509,
+          1034,
+          694
+        ],
+        "statistics": {
+          "posts": 32,
+          "chars": 3616,
+          "lines": 279,
+          "median_chars": 100.5,
+          "median_line_chars": 13.555555555555557,
+          "periods": 0,
+          "commas": 0,
+          "period_per_100": 0.0,
+          "comma_per_100": 0.0,
+          "newline_per_100": 7.71570796460177,
+          "no_jp_punct_posts": 1.0,
+          "final_period_posts": 0.0,
+          "no_stop_lines": 0.9713261648745519,
+          "outside_period_per_100": 0.0,
+          "outside_comma_per_100": 0.0,
+          "question_per_100": 0.35951327433628316
+        },
+        "years": {
+          "2002": 22,
+          "2003": 4,
+          "2005": 5,
+          "2007": 1
+        }
+      }
+    ],
+    "no_explicit_length_ari": 0.3241847022324764,
+    "no_clipping_ari": 0.8938291521578832
+  },
+  "lexical_svd": {
+    "svd_explained_variance": 0.16510315716065962,
+    "style_cluster_ari": 0.18366547114358997,
+    "topics": [
+      {
+        "cluster": 0,
+        "posts": 590,
+        "terms": [
+          "べ？",
+          "だべ",
+          "ロト",
+          "ロトさん",
+          "ロトさ",
+          "トさん",
+          "だべ？",
+          "トさ",
+          "さん",
+          "不良",
+          "ータ",
+          "ゼー",
+          "ゼータ",
+          "って",
+          "俺は"
+        ]
+      },
+      {
+        "cluster": 1,
+        "posts": 622,
+        "terms": [
+          "おま",
+          "おまえ",
+          "まえ",
+          "まえら",
+          "おまえら",
+          "えら",
+          "馬鹿",
+          "って",
+          "\nおまえ",
+          "\nおま",
+          "ない",
+          "よ\n",
+          "\nお",
+          "てる",
+          "だろ"
+        ]
+      },
+      {
+        "cluster": 2,
+        "posts": 172,
+        "terms": [
+          "ｼﾞ",
+          "侍は",
+          "ﾏｼ",
+          "ﾏｼﾞ",
+          "ﾞｮﾌ",
+          "ﾞｮ",
+          "ｮﾌ",
+          "ｼﾞｮ",
+          "ｼﾞｮﾌ",
+          "ｮﾌﾞ",
+          "ﾞｮﾌﾞ",
+          "ﾌﾞ",
+          "攻撃",
+          "ﾞで",
+          "って"
+        ]
+      },
+      {
+        "cluster": 3,
+        "posts": 826,
+        "terms": [
+          "ない",
+          "って",
+          "から",
+          "して",
+          "った",
+          "てる",
+          "お前",
+          "ナイ",
+          "イト",
+          "ナイト",
+          "てい",
+          "する",
+          "にな",
+          "こと",
+          "だが"
+        ]
+      },
+      {
+        "cluster": 4,
+        "posts": 153,
+        "terms": [
+          "ラットン",
+          "ラット",
+          "グラット",
+          "グラッ",
+          "ットン",
+          "グラ",
+          "ラッ",
+          "ット",
+          "トン",
+          "\nグラッ",
+          "\nグラ",
+          "\nグ",
+          "持っ",
+          "持って",
+          "って"
+        ]
+      }
+    ]
+  },
+  "cosine": {
+    "lexical": {
+      "generated_inputs": 32,
+      "input_mean": 0.0347357278395575,
+      "generated_mean": 0.06915473564322934,
+      "paired_delta": 0.03441900780367184,
+      "descriptive_bootstrap_95": [
+        0.02828343959633642,
+        0.04067529181192877
+      ]
+    },
+    "script_masked": {
+      "generated_inputs": 32,
+      "input_mean": 0.3701098182414926,
+      "generated_mean": 0.47348565185912606,
+      "paired_delta": 0.10337583361763346,
+      "descriptive_bootstrap_95": [
+        0.07961297817207441,
+        0.12880605062221673
+      ]
+    },
+    "without_punctuation": {
+      "generated_inputs": 32,
+      "input_mean": 0.040939771516536376,
+      "generated_mean": 0.07356099751871653,
+      "paired_delta": 0.032621226002180155,
+      "descriptive_bootstrap_95": [
+        0.02573204774307265,
+        0.04001433586646858
+      ]
+    }
+  },
+  "near_duplicate_pairs": 6,
+  "expression_counts": [
+    {
+      "expression": "んだが",
+      "group": "original",
+      "counts": {
+        "comma": 6,
+        "question_exclaim": 31,
+        "continuation": 113,
+        "end_of_post": 6,
+        "newline": 41,
+        "period": 2
+      },
+      "scope": "literal substring, not a morphological ending label; からな includes わからない"
+    },
+    {
+      "expression": "んだが",
+      "group": "generated",
+      "counts": {
+        "period": 25
+      },
+      "scope": "literal substring, not a morphological ending label; からな includes わからない"
+    },
+    {
+      "expression": "からな",
+      "group": "original",
+      "counts": {
+        "end_of_post": 31,
+        "continuation": 102,
+        "newline": 51,
+        "comma": 7,
+        "period": 3
+      },
+      "scope": "literal substring, not a morphological ending label; からな includes わからない"
+    },
+    {
+      "expression": "からな",
+      "group": "generated",
+      "counts": {
+        "period": 30
+      },
+      "scope": "literal substring, not a morphological ending label; からな includes わからない"
+    },
+    {
+      "expression": "ここ大事",
+      "group": "original",
+      "counts": {},
+      "scope": "literal substring, not a morphological ending label; からな includes わからない"
+    },
+    {
+      "expression": "ここ大事",
+      "group": "generated",
+      "counts": {},
+      "scope": "literal substring, not a morphological ending label; からな includes わからない"
+    }
+  ]
+}

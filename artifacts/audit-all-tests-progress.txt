@@ -1,0 +1,218 @@
+
+> buront-language-generator@1.0.0-experimental.2 test
+> npm run build:engine && node --test test/*.test.js test/v1/*.test.js
+
+
+> buront-language-generator@1.0.0-experimental.2 build:engine
+> tsc && node dist/scripts/v1/export-schemas.js && node scripts/build-info.js
+
+✖ T-12: HTTP経由でも候補ID・検証・原文保持が整合する (30127.9046ms)
+✔ 必須failはunknown・高い品質点より優先し、unknownを合格にしない (4.6741ms)
+✔ T-12: 合格0/1/2案を水増しせず、配列順によらない採用IDを返す (5.1716ms)
+✔ 原文の返却や句点の削除だけを有効な変換案に数えない (0.7143ms)
+✔ ログ・倉庫・改変集・名言集を読み込み、LLMを使用しない (8.0094ms)
+✔ 段階的な文章比較を使い、行動と反応を構造ごと改変する (515.2813ms)
+✔ 代表句だけでなく候補比較で文章全体を選ぶ (679.6072ms)
+✔ 数値、URL、メールアドレスを検証で保持する (162.8754ms)
+✔ 否定を含む文章では肯定・否定の検証結果を返す (184.401ms)
+✔ 標準レベルでも語彙、表記、構造を複数次元で変換する (631.9572ms)
+✔ 追加辞書を候補へ適用してから同じ検証を通す (311.2244ms)
+✔ 長文でも未検証の補完を足さず、各文の丁寧形を断定句へ正しく接続する (1332.01ms)
+✔ 実ログの終端傾向に合わせて句点を補わず、複数文は改行で区切る (177.9279ms)
+✔ 短い寒さの報告は悲嘆へ誤分類せず、機能の異なる状態構文を3案返す (574.8327ms)
+✔ 寒さ以外の短文も固定結果にせず、確率的に候補を組み替える (1530.8928ms)
+✔ 実ログでの出現回数を抽選重みに使わず、文末型を均等な袋から一巡させる (1.8032ms)
+✔ 通常変換では使い切るまで直近の同一機能構文を避ける (3699.0062ms)
+✔ 形容詞の丁寧形と否定過去を壊さず、接続語の前へ反応語を置かない (640.7117ms)
+✔ 入力にない否定を付け足した候補は検証不通過にする (4.4515ms)
+✔ 完全ブロントナイズでは長文を自慢話の段落へ再構成する (2128.2602ms)
+✔ 長文は原文の各文を貼らず、節の役割を変えて複数の談話順序へ再構成する (4010.0437ms)
+✔ 長文の依頼文と受付文でも、依頼者の発言・主人公の行動・数値結果を取り違えない (4183.6443ms)
+✔ ログを処理する研究室長文を証拠アンカーと誤認せず救援と後続障害へ分ける (1867.886ms)
+✔ 会話の多い長編でも引用を壊さず、主体交代と介入結果を談話グラフで再構成する (6452.0787ms)
+✔ 談話グラフは怪談専用にせず、登山・会議・台所でも異なる介入主体を抽出する (4793.4308ms)
+✔ 引用を除く通常文が一行でも残れば完全ブロントナイズを不合格にする (785.8417ms)
+✔ 全行表層化は引用内容を保持しつつ行の役割ごとにブロント語構文を与える (0.4263ms)
+✔ 長文検証は原文を貼って語録だけ足した候補を不合格にする (3.0711ms)
+✔ 長文検証は原文へ副詞を挿しただけの中途半端な改変も不合格にする (3.13ms)
+✔ 完全モードと原文寄りモードを同じ入力で分離する (332.7535ms)
+✔ 天候・障害・料理・対戦・長文業務でも成果を取り違えず重複させない (1921.4289ms)
+✔ 異なる入力を連続変換しても名言群と段落構造を連投しない (1902.8434ms)
+✔ 同じ長文を連続変換しても直前の名言群を再利用しない (2840.0105ms)
+✔ 牙を抜いてきたは対抗者への返答だけに使う (1.7939ms)
+✔ 牙を抜いてきたはレスアンカーまで一体で生成し数値・文字アンカーを保持する (1.8808ms)
+✔ 自動アンカーは原文の対抗者から選び、無関係な固定対象を足さない (0.4399ms)
+✔ 数字の語呂は固定語彙表ではなく原文中のかな語から組み立てる (0.2967ms)
+✔ 状態描写を架空の事件解決へ変えず専用の自慢型で展開する (138.7914ms)
+✔ 冒頭の達成事実を介入場面で二重使用せず目的語を片付けた扱いにしない (219.1437ms)
+✔ >>感謝は理解の更新と特定できる情報源が両方ある時だけ使う (1057.6257ms)
+✔ 賛同先と証拠元を同じ固定アンカーにせず入力の役割から選ぶ (1258.6272ms)
+✔ アンカー構文台帳は原ログで観測した10構文と出現数を保持する (0.294ms)
+✔ 複数の参照先がある時は対抗者評価・情報源参照・並列を役割別に展開する (1.6117ms)
+✔ 原文寄りモードは語録を積み重ねず、別の機能構文を複数案として返す (972.5684ms)
+✔ 適当な観察文でも事実を保ったまま3候補を異なる機能構文にする (1126.6443ms)
+✔ 未来・評価・危機・対抗・感謝・賛同・証拠を役割別の3構文へ振り分ける (7745.1097ms)
+✔ 中立観察の完全モードは事件解決や耐性へ捏造せず観察自慢へ再構成する (88.0417ms)
+✔ 利用不能の『なくなった』を物品紛失へ誤分類しない (0.6206ms)
+✔ 締切危機を手遅れ語録へ到達させ生成表現も正しく検出する (1.3497ms)
+✔ 代表文候補から51展開型と10アンカー構文すべてへ到達できる (558.9126ms)
+✔ 監査用のURLクエリを壊さず3候補すべてで完全保持する (87.2849ms)
+✔ 否定済み事故・未解決事故・未来予定・中立観察を別の出来事型へ分類する (0.753ms)
+✔ 否定の言い換え・未解決の言い換え・位置を表す『一番』を誤分類しない (0.548ms)
+✔ 自然文から対抗者・感謝元・賛同先・証拠元を役割付きで抽出する (512.172ms)
+✔ 未来と未解決の完全モードは完了や成功を捏造せず別々の3案を返す (406.9043ms)
+✔ 時間文脈の検証器は未来・未解決を完了扱いした候補を不合格にする (3.4306ms)
+✔ 穏やかな風を含む中立観察は寒さ耐性や架空の解決へ変えない (104.324ms)
+✔ 実装の候補生成を使わない固定オラクルで倉庫系列構文を判定する (192.3549ms)
+✔ 系列・文脈・極性・保護値を壊した候補は正例と同じ検証を通らない (20.0154ms)
+✔ 系列区分はログ倉庫の9ページと本文一致件数を正本にする (4.605ms)
+✔ 各倉庫系列モードは系列内参照だけを使い、一回で異なる3構文を返す (3062.9101ms)
+✔ 長文の完全ブロントナイズでも各倉庫系列3構文と原文の値を保持する (22053.6717ms)
+✔ 未来予定の完全モードでも9系列を使い分け、完了済みの武勇伝へ変えない (11584.6901ms)
+✔ T-01-money: 独立した改変文を合格させない (68.4339ms)
+✔ T-01-count: 独立した改変文を合格させない (11.8691ms)
+✔ T-02-sign: 独立した改変文を合格させない (8.1319ms)
+✔ T-02-role: 独立した改変文を合格させない (8.6279ms)
+✔ T-03-roles: 独立した改変文を合格させない (8.6377ms)
+✔ T-04-scope: 独立した改変文を合格させない (11.6924ms)
+✔ T-05-nouns: 独立した改変文を合格させない (7.9235ms)
+✔ T-06-completion: 独立した改変文を合格させない (11.2299ms)
+✔ T-07-mixed: 独立した改変文を合格させない (11.2081ms)
+✔ T-08-attribution: 独立した改変文を合格させない (7.774ms)
+✔ T-12: faithful経路に合格0案と不合格・unknownを与える (136.995ms)
+✔ T-12: faithful経路に合格1案と不合格・unknownを与える (70.0489ms)
+✔ T-12: faithful経路に合格2案と不合格・unknownを与える (61.9742ms)
+✔ T-12: full経路に合格0案と不合格・unknownを与える (70.1615ms)
+✔ T-12: full経路に合格1案と不合格・unknownを与える (64.5003ms)
+✔ T-12: full経路に合格2案と不合格・unknownを与える (80.1249ms)
+✔ T-09/10: 実エンジンの短文・アンカー・識別子を失わない (525.1725ms)
+✔ T-01/02: 数量全体・符号・単位・出現数を照合する (16.6346ms)
+✔ T-10: URL・メール・識別子・アンカーは原値で照合し、内部の数値を重複登録しない (6.1183ms)
+✔ T-09: 一文字・記号・行頭アンカーを空出力にしない (2.119ms)
+✔ 数量の部分一致を幅広い値で拒否する (23.9724ms)
+✔ T-19: 連打とキーボード実行を同じ実行ガードで抑制する (3.1459ms)
+✔ T-19: クリア・入力変更後の旧応答とfinallyが新しい要求を変更しない (3.468ms)
+✔ 改行と句点の両方で文章を分割する (6.3649ms)
+✔ 引用内の疑問符と感嘆符で会話を切らず、後続の地の文まで保持する (0.5647ms)
+✔ T-09: 利用者入力の先頭の数値・文字アンカーを保持する (0.3685ms)
+✔ コーパス構築だけは明示した清掃規則を適用する (2.1208ms)
+✔ 数値アンカー直後の助詞と述語をアンカー名として消さない (1.3702ms)
+✔ 日本語を内容語へ分割する (6.1147ms)
+✔ 文章の意図を複数分類する (1.623ms)
+✔ 検証対象の数値と識別子を抽出する (1.6787ms)
+✔ URLのクエリ記号を文末と誤認せず後続の日本語とメールを分離して保持する (0.8406ms)
+✔ T-22 only built web files; Host/Origin/token/session boundaries (12455.1124ms)
+✔ M4 API separates invalid input, capacity and unavailable capability (43.3036ms)
+✔ T-12/19 generation result has revision, selected ID, replay, matching spans and no private access (11868.0089ms)
+✔ Partial regeneration authenticates analysis and validates locked plan conflicts (772.317ms)
+✔ M3 API completes independent reanalysis and preserves its signed partial replay (2870.63ms)
+✔ T-20 cancellation during factual reanalysis cannot publish a late completed result (1048.6978ms)
+✔ T-20 queued/running cancellation and completion have a single terminal state (124.7567ms)
+✔ T-21 finite queue and one running request per session; status stays responsive (231.5717ms)
+✔ Only explicit preferences are stored; blind comparisons omit source method/rank/scores (15.9863ms)
+✔ A8 known temporal mismatch survives an unrelated unknown completion (8795.44ms)
+✔ A2 compiler assertion cannot approve itself by updating core and allowed text (12784.1374ms)
+✔ A1 changing source participants changes the recoverable metaphor relation (2518.6363ms)
+✔ A3 supported dictionary edit reaches selected candidates; unknown stays reviewable; assertion is rejected (3144.9069ms)
+✔ A5 features depend exclusively on actual output and ignore declared operator/input syntax (13.2864ms)
+✔ A7 mixed sentence has separate event units without severing conditions or quotations (452.2695ms)
+✔ T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace (21871.5235ms)
+✔ T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion (5.2572ms)
+✔ Protected comparison and range values retain parent-child occurrences and immutable original text (8.832ms)
+✔ T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap (9.646ms)
+✔ Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text (7.3425ms)
+✔ Python validates the same exported Draft 2020-12 schema type boundaries (4694.3579ms)
+✔ T-07 independent fact scopes keep achievement, unresolved and prospective distinct (1.141ms)
+✔ T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained (1789.4271ms)
+✖ T-13 four actual operators, bounded plans, zero required quote count and untrained S/Q (14.5313ms)
+✔ T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass (88.6237ms)
+✔ T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations (1.6233ms)
+✔ T-24 stage RNG, input/assets/history and candidate set reproduce exactly (1606.3958ms)
+✔ Partial replay reconstructs trusted parent candidates and rejects forged locked text (4754.3665ms)
+✔ Whitespace and symbols with no dictionary reading still satisfy the analysis contract (72.2341ms)
+✔ T-15 noun replacement has an identical abstract structure, not unique novelty (0.9048ms)
+✔ T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected (247.8519ms)
+✔ Grouped split prevents thread/family/near duplicate leakage before generation (1.7372ms)
+✔ Finite cache evicts by bytes/count and inactive TTL (1.124ms)
+✔ Optional model rejects prose, fabricated IDs and excessive retries (2.6254ms)
+✔ Register changes retain negative tense, quoted text and URL originals (1040.847ms)
+✖ Full mode changes presentation order while retaining every fact span (1232.4441ms)
+✔ Quote focus does not borrow a topic from an omitted fact (853.8546ms)
+✔ Canonical mode uses attributed corpus quotations, invent mode never silently copies them (101.9205ms)
+✔ Connective and reference tags cannot conceal an unsupported factual assertion (17.3857ms)
+✔ T-03 explicit passive participants have semantic roles; ambiguous potential stays unknown (8566.8986ms)
+✔ T-04 temporal scope distinguishes past negation, ongoing work, and the name Tanaka (440.6799ms)
+✔ M3 explicit anchors retain numeric target, utterance, use and fact bindings (112.2555ms)
+✔ M3 independent sentences get a stable status order and exactly one primary fact mention (12808.9595ms)
+✔ M3 pronouns, quotes, causal links and omitted participants keep source order (558.2723ms)
+✔ M1 explicit speech acts choose a factual target and never invent an addressee (386.414ms)
+✔ M3 every series has corpus-backed vocabulary and frames; citations stay inside the series (9163.5451ms)
+✔ M3 lexical evidence matches a whole word, not the sword character inside serious (191.8988ms)
+✔ M3 repeated source facts are preserved and are not scored as generated rhetoric repetition (3652.1371ms)
+✔ M3 provenance rejects forged frame metadata; frame-only variation has identical novelty (774.4193ms)
+✔ M3 changed narrative order and status labels cannot be self-certified (25.9655ms)
+✔ M3 independent reanalysis rejects every fixed design counterexample using real parsed source and output (1855.5001ms)
+✔ M3 independent checks identify roles, scoped polarity, negative tense and missing reported speaker (168.9078ms)
+✔ M3 register conversion is reanalyzed, deduplicated across candidates and reproduced on replay (2694.6777ms)
+✔ T-22 an assets directory junction cannot escape the public root (18.6961ms)
+✔ T-23 immutable content-addressed snapshots support atomic activation and rollback (2430.0292ms)
+✔ T-21 invalid analyzer stdout is rejected and the persistent process can restart (23567.5705ms)
+✔ T-20/21 deadline fails once while status remains available; retained results obey count and TTL (10227.1951ms)
+✔ ベクトル検索・系列重心・近傍帯の一様抽選を状態として公開する (16.363ms)
+✔ 同じseedは文章・参照・コサイン値まで再現する (625.2657ms)
+✔ seedを変えると近傍帯から参照と生成結果が分散し、一候補へ固定されない (1590.5005ms)
+✔ 生成文の系列コサインを全9系列と比較し、指定系列を多数で上位判定する (3248.7691ms)
+✔ TF-IDF疎ベクトルは同じ内容を近く、直交する内容を遠く測る (4.1961ms)
+✔ 転置索引のコサイン検索と系列重心分類が独立に働く (5.4172ms)
+ℹ tests 158
+ℹ suites 0
+ℹ pass 155
+ℹ fail 2
+ℹ cancelled 1
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 69068.354
+
+✖ failing tests:
+
+test at test\api-contract.test.js:9:1
+✖ T-12: HTTP経由でも候補ID・検証・原文保持が整合する (30127.9046ms)
+  'test timed out after 30000ms'
+
+test at test\v1\core.test.js:91:1
+✖ T-13 four actual operators, bounded plans, zero required quote count and untrained S/Q (14.5313ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  9 !== 12
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:93:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 9,
+    expected: 12,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\v1\core.test.js:166:1
+✖ Full mode changes presentation order while retaining every fact span (1232.4441ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(candidate.text.includes(baseline.ir.source.raw))
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:169:104)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

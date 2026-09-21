@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "analysisId",
+    "candidateId",
+    "lockedNodeIds",
+    "seed",
+    "clientRevision"
+  ],
+  "properties": {
+    "analysisId": {
+      "maxLength": 200,
+      "type": "string"
+    },
+    "candidateId": {
+      "maxLength": 64,
+      "type": "string"
+    },
+    "lockedNodeIds": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "maxLength": 64,
+        "type": "string"
+      }
+    },
+    "seed": {
+      "maxLength": 128,
+      "type": "string"
+    },
+    "operator": {
+      "pattern": "^(OP-(0[1-9]|10)|REWRITE)$",
+      "type": "string"
+    },
+    "series": {
+      "anyOf": [
+        {
+          "const": "all",
+          "type": "string"
+        },
+        {
+          "const": "roto",
+          "type": "string"
+        },
+        {
+          "const": "yorusama",
+          "type": "string"
+        },
+        {
+          "const": "saiko",
+          "type": "string"
+        },
+        {
+          "const": "night",
+          "type": "string"
+        },
+        {
+          "const": "puronohito",
+          "type": "string"
+        },
+        {
+          "const": "nega",
+          "type": "string"
+        },
+        {
+          "const": "katuru",
+          "type": "string"
+        },
+        {
+          "const": "gg",
+          "type": "string"
+        },
+        {
+          "const": "sonota",
+          "type": "string"
+        }
+      ]
+    },
+    "clientRevision": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  }
+}

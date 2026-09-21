@@ -1,0 +1,3416 @@
+{
+  "models": {
+    "lexical": {
+      "features": 12000,
+      "vocabulary_sha256": "9a2d193e7fa5a9bddb500b7bfdd41948caf0e3fd892d7b66c7252307c42a2e3a"
+    },
+    "script_masked": {
+      "features": 3739,
+      "vocabulary_sha256": "05513e0761fd963a81d2ad755381f248347e12b5c8ad367c249fa940afa583c3"
+    },
+    "without_punctuation": {
+      "features": 12000,
+      "vocabulary_sha256": "bc1317632520be01054a10075b790469dfa5d913fba5aea21b8950a5f912ac6c"
+    }
+  },
+  "results": {
+    "lexical": [
+      {
+        "id": "input-01",
+        "centroid_cosine": 0.026207627640640697,
+        "nearest_id": "raw-L02995",
+        "nearest_cosine": 0.3846368410484323,
+        "length_matched_id": "raw-L00713",
+        "length_matched_cosine": 0.21554972078217396,
+        "eligible_posts": 168,
+        "oov_vector": false
+      },
+      {
+        "id": "input-02",
+        "centroid_cosine": 0.04652222424960763,
+        "nearest_id": "raw-L15815",
+        "nearest_cosine": 0.22961228539605327,
+        "length_matched_id": "raw-L02541",
+        "length_matched_cosine": 0.11984737322523978,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-03",
+        "centroid_cosine": 0.027592034156738166,
+        "nearest_id": "raw-L03606",
+        "nearest_cosine": 0.2075421550425462,
+        "length_matched_id": "raw-L02279",
+        "length_matched_cosine": 0.1551664006451581,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-04",
+        "centroid_cosine": 0.06370831757629797,
+        "nearest_id": "raw-L09837",
+        "nearest_cosine": 0.3575101783579255,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.13218230537925046,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-05",
+        "centroid_cosine": 0.009746625570100056,
+        "nearest_id": "raw-L13613",
+        "nearest_cosine": 0.10427564543563157,
+        "length_matched_id": "raw-L02572",
+        "length_matched_cosine": 0.08101710665294751,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-06",
+        "centroid_cosine": 0.014381268287241929,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.907140322616854,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.907140322616854,
+        "eligible_posts": 168,
+        "oov_vector": false
+      },
+      {
+        "id": "input-07",
+        "centroid_cosine": 0.029353521361202586,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.8128402671933672,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.8128402671933672,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "input-08",
+        "centroid_cosine": 0.014997473385966041,
+        "nearest_id": "raw-L02655",
+        "nearest_cosine": 0.25274463003686687,
+        "length_matched_id": "raw-L02655",
+        "length_matched_cosine": 0.25274463003686687,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-09",
+        "centroid_cosine": 0.03308057105353173,
+        "nearest_id": "raw-L15989",
+        "nearest_cosine": 0.14804148048583657,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.11388585286922687,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "input-10",
+        "centroid_cosine": 0.029576447082221336,
+        "nearest_id": "raw-L15524",
+        "nearest_cosine": 0.1338124598000251,
+        "length_matched_id": "raw-L15524",
+        "length_matched_cosine": 0.1338124598000251,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "input-11",
+        "centroid_cosine": 0.056308122673503394,
+        "nearest_id": "raw-L14686",
+        "nearest_cosine": 0.324055486787046,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.26787035399803016,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "input-12",
+        "centroid_cosine": 0.027929876217014614,
+        "nearest_id": "raw-L08757",
+        "nearest_cosine": 0.1649921289988107,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.1649921289988107,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "input-13",
+        "centroid_cosine": 0.049810716180023654,
+        "nearest_id": "raw-L15836",
+        "nearest_cosine": 0.24560751981086582,
+        "length_matched_id": "raw-L02167",
+        "length_matched_cosine": 0.06754693045589781,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-14",
+        "centroid_cosine": 0.02712810314163652,
+        "nearest_id": "raw-L01213",
+        "nearest_cosine": 0.40447532302942835,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.40447532302942835,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "input-15",
+        "centroid_cosine": 0.054198581247171355,
+        "nearest_id": "raw-L05573",
+        "nearest_cosine": 0.23308936723561235,
+        "length_matched_id": "raw-L00277",
+        "length_matched_cosine": 0.05065538771363922,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-16",
+        "centroid_cosine": 0.03053540814353545,
+        "nearest_id": "raw-L01193",
+        "nearest_cosine": 0.1669534914098158,
+        "length_matched_id": "raw-L07655",
+        "length_matched_cosine": 0.10991183754388227,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-17",
+        "centroid_cosine": 0.027203114457809065,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.35848808444489416,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.35848808444489416,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "input-18",
+        "centroid_cosine": 0.023030023959663595,
+        "nearest_id": "raw-L11537",
+        "nearest_cosine": 0.1468717583554029,
+        "length_matched_id": "raw-L00005",
+        "length_matched_cosine": 0.054733575716609445,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-19",
+        "centroid_cosine": 0.06991128148837104,
+        "nearest_id": "raw-L06582",
+        "nearest_cosine": 0.4318026263998903,
+        "length_matched_id": "raw-L03131",
+        "length_matched_cosine": 0.4121820665727725,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "input-20",
+        "centroid_cosine": 0.04054057429006954,
+        "nearest_id": "raw-L15101",
+        "nearest_cosine": 0.23068353697479904,
+        "length_matched_id": "raw-L15101",
+        "length_matched_cosine": 0.23068353697479904,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "input-21",
+        "centroid_cosine": 0.058047330219619594,
+        "nearest_id": "raw-L14686",
+        "nearest_cosine": 0.259374533072252,
+        "length_matched_id": "raw-L01640",
+        "length_matched_cosine": 0.2117653073771256,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "input-22",
+        "centroid_cosine": 0.05938254408079736,
+        "nearest_id": "raw-L02595",
+        "nearest_cosine": 0.25924438451946086,
+        "length_matched_id": "raw-L02595",
+        "length_matched_cosine": 0.25924438451946086,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "input-23",
+        "centroid_cosine": 0.025726711328932603,
+        "nearest_id": "raw-L01315",
+        "nearest_cosine": 0.31005363920897244,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.31005363920897244,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "input-24",
+        "centroid_cosine": 0.051733932684433076,
+        "nearest_id": "raw-L11537",
+        "nearest_cosine": 0.1839491999132788,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.10694385533579913,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "input-25",
+        "centroid_cosine": 0.05384966897557624,
+        "nearest_id": "raw-L08757",
+        "nearest_cosine": 0.32185639176716035,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.32185639176716035,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "input-26",
+        "centroid_cosine": 0.05782310201699856,
+        "nearest_id": "raw-L01229",
+        "nearest_cosine": 0.3784474467026363,
+        "length_matched_id": "raw-L01229",
+        "length_matched_cosine": 0.3784474467026363,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-27",
+        "centroid_cosine": 0.04081357200158157,
+        "nearest_id": "raw-L14686",
+        "nearest_cosine": 0.4173127001879725,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.14751770033640446,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-28",
+        "centroid_cosine": 0.016089821798377087,
+        "nearest_id": "raw-L01210",
+        "nearest_cosine": 0.16915116340589184,
+        "length_matched_id": "raw-L01210",
+        "length_matched_cosine": 0.16915116340589184,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-29",
+        "centroid_cosine": 0.020794634040590617,
+        "nearest_id": "raw-L15989",
+        "nearest_cosine": 0.17005685480505878,
+        "length_matched_id": "raw-L00005",
+        "length_matched_cosine": 0.051638390181992934,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-30",
+        "centroid_cosine": 0.0023013497352800064,
+        "nearest_id": "raw-L00051",
+        "nearest_cosine": 0.20137137682963324,
+        "length_matched_id": "raw-L00005",
+        "length_matched_cosine": 0.0,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-31",
+        "centroid_cosine": 0.026921972242313,
+        "nearest_id": "raw-L15836",
+        "nearest_cosine": 0.10136063749564309,
+        "length_matched_id": "raw-L00239",
+        "length_matched_cosine": 0.06076468085401858,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-32",
+        "centroid_cosine": 0.057408270514994086,
+        "nearest_id": "raw-L15836",
+        "nearest_cosine": 0.38593638509700395,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.38593638509700395,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-33",
+        "centroid_cosine": 0.02652904543232138,
+        "nearest_id": "raw-L01315",
+        "nearest_cosine": 0.287541768440414,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.287541768440414,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "input-34",
+        "centroid_cosine": 0.06485061777658661,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.6429493253829012,
+        "length_matched_id": "raw-L14579",
+        "length_matched_cosine": 0.06832286232053594,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-35",
+        "centroid_cosine": 0.029702744178858747,
+        "nearest_id": "raw-L15909",
+        "nearest_cosine": 0.11743077877268505,
+        "length_matched_id": "raw-L03799",
+        "length_matched_cosine": 0.08475803446694165,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-36",
+        "centroid_cosine": 0.04690870696922497,
+        "nearest_id": "raw-L06874",
+        "nearest_cosine": 0.2967574723159587,
+        "length_matched_id": "raw-L06874",
+        "length_matched_cosine": 0.2967574723159587,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "input-37",
+        "centroid_cosine": 0.05491002288131727,
+        "nearest_id": "raw-L02595",
+        "nearest_cosine": 0.2370927690241176,
+        "length_matched_id": "raw-L02595",
+        "length_matched_cosine": 0.2370927690241176,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "0c7d8d48d955dc60eb1b1f19",
+        "centroid_cosine": 0.05125589923810715,
+        "nearest_id": "raw-L02002",
+        "nearest_cosine": 0.6200821975334915,
+        "length_matched_id": "raw-L02002",
+        "length_matched_cosine": 0.6200821975334915,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "5068b5d2023ea1d0e6dc14a0",
+        "centroid_cosine": 0.10015870155855092,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.41672444001714565,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.41672444001714565,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "4eb0e5a37acadbed160cea90",
+        "centroid_cosine": 0.07938672287358281,
+        "nearest_id": "raw-L10836",
+        "nearest_cosine": 0.26633022151072183,
+        "length_matched_id": "raw-L15458",
+        "length_matched_cosine": 0.1536402860303279,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "d9234388e3e491bf2349cbc8",
+        "centroid_cosine": 0.08661413372650821,
+        "nearest_id": "raw-L08524",
+        "nearest_cosine": 0.20879409755568137,
+        "length_matched_id": "raw-L07263",
+        "length_matched_cosine": 0.19781125691522394,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "9cdd8b27875970fd09044090",
+        "centroid_cosine": 0.04684984984267743,
+        "nearest_id": "raw-L15815",
+        "nearest_cosine": 0.2527588074556549,
+        "length_matched_id": "raw-L02541",
+        "length_matched_cosine": 0.13192882550188262,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "f0df1669300c694366a5e197",
+        "centroid_cosine": 0.024702887212433463,
+        "nearest_id": "raw-L00754",
+        "nearest_cosine": 0.3932456188304345,
+        "length_matched_id": "raw-L02612",
+        "length_matched_cosine": 0.0780716892850878,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "3b37fb0f431270d49cc1fe42",
+        "centroid_cosine": 0.06725232588173675,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.27909955824092075,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.14394293099485694,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "6970657c1aa5abba94f73edb",
+        "centroid_cosine": 0.07859116188825724,
+        "nearest_id": "raw-L09837",
+        "nearest_cosine": 0.34964736680172426,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.12927518658605977,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "904087b6c682009ce696fdc3",
+        "centroid_cosine": 0.12577653621841328,
+        "nearest_id": "raw-L05822",
+        "nearest_cosine": 0.2766389185071456,
+        "length_matched_id": "raw-L00308",
+        "length_matched_cosine": 0.25525150902330507,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "a28e9f1e2d71f81ea8268408",
+        "centroid_cosine": 0.11053691130379259,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.2573495460187471,
+        "length_matched_id": "raw-L03558",
+        "length_matched_cosine": 0.13373457082007442,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "04479d50da9635528e3eadb7",
+        "centroid_cosine": 0.01537451406360258,
+        "nearest_id": "raw-L13613",
+        "nearest_cosine": 0.1346464955796993,
+        "length_matched_id": "raw-L02572",
+        "length_matched_cosine": 0.12364816583406145,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "7c9b4c03ada1c799a5d763ac",
+        "centroid_cosine": 0.06050931317723786,
+        "nearest_id": "raw-L13613",
+        "nearest_cosine": 0.14965712948450527,
+        "length_matched_id": "raw-L00731",
+        "length_matched_cosine": 0.1191797331360735,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "bd08c302a3e84ba876c0bb16",
+        "centroid_cosine": 0.07768067083614277,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.4164219230555039,
+        "length_matched_id": "raw-L01251",
+        "length_matched_cosine": 0.16495862305142978,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "4146e1acb40acb3dccaa7bda",
+        "centroid_cosine": 0.0565302089155699,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.7448187833621794,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.7448187833621794,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "4658cf1c15ce08ebe796b5d6",
+        "centroid_cosine": 0.0745947609148788,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.7387104075811959,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.7387104075811959,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "8b227ab3d843d610524e7a8e",
+        "centroid_cosine": 0.0565302089155699,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.7448187833621794,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.7448187833621794,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "c0aec3982d3b6fe609a40709",
+        "centroid_cosine": 0.0745947609148788,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.7387104075811959,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.7387104075811959,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "dc2a59036253e31e340b435f",
+        "centroid_cosine": 0.06832513165463175,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.1878089705620944,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.1878089705620944,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "a85b95ccde49e8eafad4ab2e",
+        "centroid_cosine": 0.06242680990773986,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.2207593379614307,
+        "length_matched_id": "raw-L02655",
+        "length_matched_cosine": 0.19094629707477007,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "24dae526f57096afb10db831",
+        "centroid_cosine": 0.07425521698881483,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.19451374063795998,
+        "length_matched_id": "raw-L03472",
+        "length_matched_cosine": 0.19451374063795998,
+        "eligible_posts": 1053,
+        "oov_vector": false
+      },
+      {
+        "id": "b0fa7fdcfd7067cb5a38f21b",
+        "centroid_cosine": 0.06829029796602967,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.22561693136324468,
+        "length_matched_id": "raw-L04861",
+        "length_matched_cosine": 0.22561693136324468,
+        "eligible_posts": 1053,
+        "oov_vector": false
+      },
+      {
+        "id": "2492c5af63973a27830c1aee",
+        "centroid_cosine": 0.04329086033440592,
+        "nearest_id": "raw-L15989",
+        "nearest_cosine": 0.1732415754997897,
+        "length_matched_id": "raw-L08185",
+        "length_matched_cosine": 0.16460471775275398,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "2e8c9dfce853e882911a0600",
+        "centroid_cosine": 0.057676040866469644,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.32256846725836946,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.32256846725836946,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "33e9c0376b866baac9fb4bf1",
+        "centroid_cosine": 0.06337166725404453,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.3147270083039302,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.3147270083039302,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "cf6f48a5992dde59addb0590",
+        "centroid_cosine": 0.03964727277572168,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.33059742124042274,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.33059742124042274,
+        "eligible_posts": 961,
+        "oov_vector": false
+      },
+      {
+        "id": "b75deb4cca8e208ba922162e",
+        "centroid_cosine": 0.08638003234597855,
+        "nearest_id": "raw-L10484",
+        "nearest_cosine": 0.14643051965424966,
+        "length_matched_id": "raw-L06067",
+        "length_matched_cosine": 0.10729655628253432,
+        "eligible_posts": 1079,
+        "oov_vector": false
+      },
+      {
+        "id": "f9cf994c482f1a6f7c768535",
+        "centroid_cosine": 0.08031626940006906,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.1603080226894802,
+        "length_matched_id": "raw-L15578",
+        "length_matched_cosine": 0.1603080226894802,
+        "eligible_posts": 1079,
+        "oov_vector": false
+      },
+      {
+        "id": "9c9765a81213f9aa1b2c5570",
+        "centroid_cosine": 0.09020303631741663,
+        "nearest_id": "raw-L10484",
+        "nearest_cosine": 0.1591261251557874,
+        "length_matched_id": "raw-L06067",
+        "length_matched_cosine": 0.11659922592717531,
+        "eligible_posts": 1009,
+        "oov_vector": false
+      },
+      {
+        "id": "03ddc7467fecefdca439d19b",
+        "centroid_cosine": 0.07601510543748544,
+        "nearest_id": "raw-L09716",
+        "nearest_cosine": 0.19448068828600512,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.147948924663812,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "f0c669b452d59066f503ccc5",
+        "centroid_cosine": 0.0815968054772954,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2551424617331828,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.13375144107132828,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "bde0176d7e6d8c507fc17601",
+        "centroid_cosine": 0.03276146078777231,
+        "nearest_id": "raw-L13109",
+        "nearest_cosine": 0.2073412791459111,
+        "length_matched_id": "raw-L01875",
+        "length_matched_cosine": 0.06604160869321794,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "341f741ec31fce94d49ce80c",
+        "centroid_cosine": 0.09487835705046924,
+        "nearest_id": "raw-L08132",
+        "nearest_cosine": 0.18075460077208835,
+        "length_matched_id": "raw-L00952",
+        "length_matched_cosine": 0.11880375634823107,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "d738acb4a2f696ff2120fd27",
+        "centroid_cosine": 0.016758240212547994,
+        "nearest_id": "raw-L01213",
+        "nearest_cosine": 0.22016248169201177,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.22016248169201177,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "8c157b7b06412f089be951bb",
+        "centroid_cosine": 0.0490292628358668,
+        "nearest_id": "raw-L05573",
+        "nearest_cosine": 0.2039053510938129,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.17972817040583708,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "0ad409ec053a0184986ba60e",
+        "centroid_cosine": 0.1032841641641843,
+        "nearest_id": "raw-L05822",
+        "nearest_cosine": 0.28984335504887543,
+        "length_matched_id": "raw-L00308",
+        "length_matched_cosine": 0.20565016018835322,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "daebc811f9093435b78c99db",
+        "centroid_cosine": 0.0873139595844981,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.22456210999057583,
+        "length_matched_id": "raw-L03558",
+        "length_matched_cosine": 0.11669621286160067,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "e692b8eaec24c06b189d8b7b",
+        "centroid_cosine": 0.07188905034184616,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.18065188404916263,
+        "length_matched_id": "raw-L08180",
+        "length_matched_cosine": 0.1014968940990191,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "1c35b460c04544efe79d2884",
+        "centroid_cosine": 0.0875819631256557,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.4000076341012904,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.4000076341012904,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "edc31b0a9049a9621bece27f",
+        "centroid_cosine": 0.028730758072140688,
+        "nearest_id": "raw-L05164",
+        "nearest_cosine": 0.17441284693741727,
+        "length_matched_id": "raw-L07655",
+        "length_matched_cosine": 0.09934274892592276,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "59e001e6ab085fe81cd5beb9",
+        "centroid_cosine": 0.03657382563408153,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.3046683786336918,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.3046683786336918,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "8fb7d6cd490dbad2d8374588",
+        "centroid_cosine": 0.0622295240585804,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.27819866615659333,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.27819866615659333,
+        "eligible_posts": 927,
+        "oov_vector": false
+      },
+      {
+        "id": "c2bfcb86bf2ccdbbe7bf07a3",
+        "centroid_cosine": 0.05703601840291794,
+        "nearest_id": "raw-L01276",
+        "nearest_cosine": 0.28357021455664205,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.28357021455664205,
+        "eligible_posts": 927,
+        "oov_vector": false
+      },
+      {
+        "id": "1d2fd3e1a0aee85c3f141d2d",
+        "centroid_cosine": 0.060084462910064626,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.3224104995478411,
+        "length_matched_id": "raw-L00457",
+        "length_matched_cosine": 0.14996558758921474,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "3d3e7d66562d700e6d922c29",
+        "centroid_cosine": 0.0676136557113677,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2691655343288857,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.16118421730285443,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "4ba3486c499b6a19ca2e136f",
+        "centroid_cosine": 0.07906689302925743,
+        "nearest_id": "raw-L06582",
+        "nearest_cosine": 0.4284590960797278,
+        "length_matched_id": "raw-L03131",
+        "length_matched_cosine": 0.40899046199986056,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "83c46ecc4fe1ca40f941980d",
+        "centroid_cosine": 0.11153325769439221,
+        "nearest_id": "raw-L06936",
+        "nearest_cosine": 0.22831338217247307,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.15430708062509504,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "630baea60fceeb0578858b08",
+        "centroid_cosine": 0.10475366671170822,
+        "nearest_id": "raw-L13095",
+        "nearest_cosine": 0.290452294273191,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.16101082126232197,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "098b620b57582dd36f767bc9",
+        "centroid_cosine": 0.05306146909087131,
+        "nearest_id": "raw-L15101",
+        "nearest_cosine": 0.22741543477240939,
+        "length_matched_id": "raw-L15101",
+        "length_matched_cosine": 0.22741543477240939,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "f2f92e2f8191ddcd5fac1dfe",
+        "centroid_cosine": 0.07033927869786041,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.2795178625288929,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.24333514919015667,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "370ced74890ddbbec6b93afb",
+        "centroid_cosine": 0.07689140063796268,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.23697707866133447,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.23153535589107582,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "55564699f8452b555bc9309a",
+        "centroid_cosine": 0.04081166907094755,
+        "nearest_id": "raw-L01315",
+        "nearest_cosine": 0.3037978953995511,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.3037978953995511,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "a97417e9ea3aea4c342759f7",
+        "centroid_cosine": 0.0950108357323103,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.3470655321364254,
+        "length_matched_id": "raw-L15578",
+        "length_matched_cosine": 0.1921873343051028,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "dba3429ac8d34476f1bc4d3e",
+        "centroid_cosine": 0.09454594060179192,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.28386416320627283,
+        "length_matched_id": "raw-L02159",
+        "length_matched_cosine": 0.2230124862802135,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "a0a8ef828ba112e6d0f70d00",
+        "centroid_cosine": 0.07182767461725904,
+        "nearest_id": "raw-L11537",
+        "nearest_cosine": 0.17633049208975515,
+        "length_matched_id": "raw-L00005",
+        "length_matched_cosine": 0.1132090784886004,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "65f8f45806be513b274d0e75",
+        "centroid_cosine": 0.046776573999578325,
+        "nearest_id": "raw-L10168",
+        "nearest_cosine": 0.1756394594124724,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.10302209211486578,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "82194e41426a7cfe046297b4",
+        "centroid_cosine": 0.02191658520721372,
+        "nearest_id": "raw-L01210",
+        "nearest_cosine": 0.15419519090502568,
+        "length_matched_id": "raw-L01210",
+        "length_matched_cosine": 0.15419519090502568,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "8b17ae36dc41dda0e792a299",
+        "centroid_cosine": 0.06666669398034465,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.1601315489830813,
+        "length_matched_id": "raw-L01210",
+        "length_matched_cosine": 0.1348153072481617,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "18c27da631462029ab0e6038",
+        "centroid_cosine": 0.060662874575974364,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.1824907877591397,
+        "length_matched_id": "raw-L15578",
+        "length_matched_cosine": 0.1824907877591397,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "9fd74965954422d091288be5",
+        "centroid_cosine": 0.06512252549368396,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2618439789807104,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.1567998551995206,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "5e277fb454994996df935fe9",
+        "centroid_cosine": 0.0575399805496174,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.31247687801834967,
+        "length_matched_id": "raw-L00457",
+        "length_matched_cosine": 0.1453450761863657,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "68faef2a12a47cc8049c206b",
+        "centroid_cosine": 0.08313750313645428,
+        "nearest_id": "raw-L15686",
+        "nearest_cosine": 0.2575953825840909,
+        "length_matched_id": "raw-L03074",
+        "length_matched_cosine": 0.15069288208873485,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "1000edcfaba44089832295fa",
+        "centroid_cosine": 0.1108767293122669,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.7148615866290167,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.7148615866290167,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "66dbef94505c5ba041a2cc3b",
+        "centroid_cosine": 0.0754494663235173,
+        "nearest_id": "raw-L00877",
+        "nearest_cosine": 0.2239606578090545,
+        "length_matched_id": "raw-L00098",
+        "length_matched_cosine": 0.11065142304737716,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "cfcd3fcf5c33cb7ef1cfcf4e",
+        "centroid_cosine": 0.091613018294912,
+        "nearest_id": "raw-L07232",
+        "nearest_cosine": 0.2405255928803411,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.16778067185094173,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "44f755efebe1fd5937673221",
+        "centroid_cosine": 0.049544640441293836,
+        "nearest_id": "raw-L00189",
+        "nearest_cosine": 0.12568769509713867,
+        "length_matched_id": "raw-L00189",
+        "length_matched_cosine": 0.12568769509713867,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "fca2386d4769cbe241f14b48",
+        "centroid_cosine": 0.08749321216402162,
+        "nearest_id": "raw-L13095",
+        "nearest_cosine": 0.2741378977891177,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.15196701466105922,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "1c7d67e7f192da20cd18da2b",
+        "centroid_cosine": 0.0947885365918491,
+        "nearest_id": "raw-L06936",
+        "nearest_cosine": 0.21645490770316145,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.1462924537179241,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "2387d96b0e46ace380a2be10",
+        "centroid_cosine": 0.057977112813037475,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.26964213704387524,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.2347378054908451,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "3e0aa1efda6b5289c5805dfd",
+        "centroid_cosine": 0.0649905019948511,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.22935892597236296,
+        "length_matched_id": "raw-L03472",
+        "length_matched_cosine": 0.22935892597236296,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "602f2410c67d0f3094ebee9f",
+        "centroid_cosine": 0.09073762592900823,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.555223531754337,
+        "length_matched_id": "raw-L00098",
+        "length_matched_cosine": 0.09245166217188039,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "71cf283ce550dc7618356890",
+        "centroid_cosine": 0.10458035717938181,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.5561387592072379,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.13067383871948407,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "f92914a4ab68e29872fa2ecd",
+        "centroid_cosine": 0.08369557597756751,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.24660007250321206,
+        "length_matched_id": "raw-L02723",
+        "length_matched_cosine": 0.21201991128753656,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "070c88f21c275d1625904bf3",
+        "centroid_cosine": 0.07333366020095236,
+        "nearest_id": "raw-L03602",
+        "nearest_cosine": 0.28986096692506924,
+        "length_matched_id": "raw-L03602",
+        "length_matched_cosine": 0.28986096692506924,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "e2b2afc844fbcdf70c0d279b",
+        "centroid_cosine": 0.07473456506822913,
+        "nearest_id": "raw-L06874",
+        "nearest_cosine": 0.26291604177068106,
+        "length_matched_id": "raw-L06874",
+        "length_matched_cosine": 0.26291604177068106,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "8f02c51e0e2e3fb6c60603a2",
+        "centroid_cosine": 0.07367190039957348,
+        "nearest_id": "raw-L06874",
+        "nearest_cosine": 0.291323784454689,
+        "length_matched_id": "raw-L06874",
+        "length_matched_cosine": 0.291323784454689,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      }
+    ],
+    "script_masked": [
+      {
+        "id": "input-01",
+        "centroid_cosine": 0.1724717975264773,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.925074652156461,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.925074652156461,
+        "eligible_posts": 168,
+        "oov_vector": false
+      },
+      {
+        "id": "input-02",
+        "centroid_cosine": 0.5096895071195646,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7844366259879474,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7844366259879474,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-03",
+        "centroid_cosine": 0.3006669018124181,
+        "nearest_id": "raw-L15836",
+        "nearest_cosine": 0.5440939791320274,
+        "length_matched_id": "raw-L01893",
+        "length_matched_cosine": 0.49366044673549725,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-04",
+        "centroid_cosine": 0.4551933355190029,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.978936797555465,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.978936797555465,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-05",
+        "centroid_cosine": 0.3568257740026786,
+        "nearest_id": "raw-L00009",
+        "nearest_cosine": 0.5996416363868766,
+        "length_matched_id": "raw-L00009",
+        "length_matched_cosine": 0.5996416363868766,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-06",
+        "centroid_cosine": 0.182893001671339,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.5026134790637827,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.5026134790637827,
+        "eligible_posts": 168,
+        "oov_vector": false
+      },
+      {
+        "id": "input-07",
+        "centroid_cosine": 0.4064591727426667,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8495097659460833,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8495097659460833,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "input-08",
+        "centroid_cosine": 0.3893052596147101,
+        "nearest_id": "raw-L08021",
+        "nearest_cosine": 0.604614838042981,
+        "length_matched_id": "raw-L08021",
+        "length_matched_cosine": 0.604614838042981,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-09",
+        "centroid_cosine": 0.22072910624555792,
+        "nearest_id": "raw-L02591",
+        "nearest_cosine": 0.448887443873016,
+        "length_matched_id": "raw-L00042",
+        "length_matched_cosine": 0.386020145298553,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "input-10",
+        "centroid_cosine": 0.4240823693009057,
+        "nearest_id": "raw-L04527",
+        "nearest_cosine": 0.7188618542023159,
+        "length_matched_id": "raw-L04527",
+        "length_matched_cosine": 0.7188618542023159,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "input-11",
+        "centroid_cosine": 0.4045671682214887,
+        "nearest_id": "raw-L15758",
+        "nearest_cosine": 0.6979350881819222,
+        "length_matched_id": "raw-L00250",
+        "length_matched_cosine": 0.6344983000852673,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "input-12",
+        "centroid_cosine": 0.4509099844333832,
+        "nearest_id": "raw-L08021",
+        "nearest_cosine": 0.629820243314555,
+        "length_matched_id": "raw-L08021",
+        "length_matched_cosine": 0.629820243314555,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "input-13",
+        "centroid_cosine": 0.5081456321766674,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9228170811693324,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9228170811693324,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-14",
+        "centroid_cosine": 0.3330412986899547,
+        "nearest_id": "raw-L01893",
+        "nearest_cosine": 0.5653083275670383,
+        "length_matched_id": "raw-L01893",
+        "length_matched_cosine": 0.5653083275670383,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "input-15",
+        "centroid_cosine": 0.3351687189740824,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7420477122595175,
+        "length_matched_id": "raw-L00415",
+        "length_matched_cosine": 0.47349104407866716,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-16",
+        "centroid_cosine": 0.2614511481473714,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.9864221549153622,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.9864221549153622,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-17",
+        "centroid_cosine": 0.383589873917649,
+        "nearest_id": "raw-L01617",
+        "nearest_cosine": 0.6641825198027151,
+        "length_matched_id": "raw-L01617",
+        "length_matched_cosine": 0.6641825198027151,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "input-18",
+        "centroid_cosine": 0.36125901255971477,
+        "nearest_id": "raw-L00009",
+        "nearest_cosine": 0.596713305069662,
+        "length_matched_id": "raw-L00009",
+        "length_matched_cosine": 0.596713305069662,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-19",
+        "centroid_cosine": 0.5424063084436783,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8093509624445026,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8093509624445026,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "input-20",
+        "centroid_cosine": 0.5287970175889551,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9040779636695859,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9040779636695859,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "input-21",
+        "centroid_cosine": 0.24565180230504238,
+        "nearest_id": "raw-L14212",
+        "nearest_cosine": 0.5190120556321325,
+        "length_matched_id": "raw-L12800",
+        "length_matched_cosine": 0.31716828470738634,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "input-22",
+        "centroid_cosine": 0.5427312911207157,
+        "nearest_id": "raw-L12800",
+        "nearest_cosine": 0.7331018614039844,
+        "length_matched_id": "raw-L12800",
+        "length_matched_cosine": 0.7331018614039844,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "input-23",
+        "centroid_cosine": 0.23761204286618165,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.716619254613772,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.716619254613772,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "input-24",
+        "centroid_cosine": 0.14655631101379954,
+        "nearest_id": "raw-L00424",
+        "nearest_cosine": 0.47487938625520015,
+        "length_matched_id": "raw-L01451",
+        "length_matched_cosine": 0.4321521146160836,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "input-25",
+        "centroid_cosine": 0.48631679942934414,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9264138225455768,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9264138225455768,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "input-26",
+        "centroid_cosine": 0.46014683305765886,
+        "nearest_id": "raw-L14955",
+        "nearest_cosine": 0.9424433835323305,
+        "length_matched_id": "raw-L14955",
+        "length_matched_cosine": 0.9424433835323305,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-27",
+        "centroid_cosine": 0.4863120509433508,
+        "nearest_id": "raw-L00134",
+        "nearest_cosine": 0.6554545053021812,
+        "length_matched_id": "raw-L00134",
+        "length_matched_cosine": 0.6554545053021812,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-28",
+        "centroid_cosine": 0.4038084357517204,
+        "nearest_id": "raw-L15574",
+        "nearest_cosine": 0.6675724093787165,
+        "length_matched_id": "raw-L15574",
+        "length_matched_cosine": 0.6675724093787165,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-29",
+        "centroid_cosine": 0.1975800540570461,
+        "nearest_id": "raw-L04007",
+        "nearest_cosine": 0.519285471004524,
+        "length_matched_id": "raw-L04007",
+        "length_matched_cosine": 0.519285471004524,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-30",
+        "centroid_cosine": 0.16042653250691694,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.7937142163551647,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.7937142163551647,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-31",
+        "centroid_cosine": 0.3311753482605026,
+        "nearest_id": "raw-L15574",
+        "nearest_cosine": 0.561769407145015,
+        "length_matched_id": "raw-L00009",
+        "length_matched_cosine": 0.5413743088789509,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-32",
+        "centroid_cosine": 0.5625304237400296,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8572623868912654,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8572623868912654,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-33",
+        "centroid_cosine": 0.2532378303583016,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.6823290093839233,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.6823290093839233,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "input-34",
+        "centroid_cosine": 0.4996579013580888,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8809814162182578,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8809814162182578,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-35",
+        "centroid_cosine": 0.40964701963434713,
+        "nearest_id": "raw-L08021",
+        "nearest_cosine": 0.5841972015650109,
+        "length_matched_id": "raw-L08021",
+        "length_matched_cosine": 0.5841972015650109,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-36",
+        "centroid_cosine": 0.6273178445292114,
+        "nearest_id": "raw-L12800",
+        "nearest_cosine": 0.8211233811553783,
+        "length_matched_id": "raw-L12800",
+        "length_matched_cosine": 0.8211233811553783,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "input-37",
+        "centroid_cosine": 0.5461335696479543,
+        "nearest_id": "raw-L12800",
+        "nearest_cosine": 0.7455518178386763,
+        "length_matched_id": "raw-L12800",
+        "length_matched_cosine": 0.7455518178386763,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "0c7d8d48d955dc60eb1b1f19",
+        "centroid_cosine": 0.25504015543678016,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.5155089867703901,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.5155089867703901,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "5068b5d2023ea1d0e6dc14a0",
+        "centroid_cosine": 0.4683874445782126,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8508681535655302,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8508681535655302,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "4eb0e5a37acadbed160cea90",
+        "centroid_cosine": 0.5547040086230449,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8238209296044601,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8238209296044601,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "d9234388e3e491bf2349cbc8",
+        "centroid_cosine": 0.5547040086230449,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8238209296044601,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8238209296044601,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "9cdd8b27875970fd09044090",
+        "centroid_cosine": 0.49823166420603615,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7625363690997208,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7625363690997208,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "f0df1669300c694366a5e197",
+        "centroid_cosine": 0.370792029277942,
+        "nearest_id": "raw-L08021",
+        "nearest_cosine": 0.5480341952404651,
+        "length_matched_id": "raw-L08021",
+        "length_matched_cosine": 0.5480341952404651,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "3b37fb0f431270d49cc1fe42",
+        "centroid_cosine": 0.5002426683498723,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8817946468659457,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8817946468659457,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "6970657c1aa5abba94f73edb",
+        "centroid_cosine": 0.4551933355190029,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.978936797555465,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.978936797555465,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "904087b6c682009ce696fdc3",
+        "centroid_cosine": 0.4739016832495129,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9896899356776073,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9896899356776073,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "a28e9f1e2d71f81ea8268408",
+        "centroid_cosine": 0.4739016832495129,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9896899356776073,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9896899356776073,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "04479d50da9635528e3eadb7",
+        "centroid_cosine": 0.3676172825969256,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.8487083624792232,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.8487083624792232,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "7c9b4c03ada1c799a5d763ac",
+        "centroid_cosine": 0.57160280599497,
+        "nearest_id": "raw-L15765",
+        "nearest_cosine": 0.7291612802529785,
+        "length_matched_id": "raw-L15473",
+        "length_matched_cosine": 0.7025435328637663,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "bd08c302a3e84ba876c0bb16",
+        "centroid_cosine": 0.57160280599497,
+        "nearest_id": "raw-L15765",
+        "nearest_cosine": 0.7291612802529785,
+        "length_matched_id": "raw-L15473",
+        "length_matched_cosine": 0.7025435328637663,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "4146e1acb40acb3dccaa7bda",
+        "centroid_cosine": 0.46882424020456553,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.91627780199757,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.91627780199757,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "4658cf1c15ce08ebe796b5d6",
+        "centroid_cosine": 0.46882424020456553,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.91627780199757,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.91627780199757,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "8b227ab3d843d610524e7a8e",
+        "centroid_cosine": 0.46882424020456553,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.91627780199757,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.91627780199757,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "c0aec3982d3b6fe609a40709",
+        "centroid_cosine": 0.46882424020456553,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.91627780199757,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.91627780199757,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "dc2a59036253e31e340b435f",
+        "centroid_cosine": 0.5625304237400296,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8572623868912654,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8572623868912654,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "a85b95ccde49e8eafad4ab2e",
+        "centroid_cosine": 0.5625304237400296,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8572623868912654,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8572623868912654,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "24dae526f57096afb10db831",
+        "centroid_cosine": 0.28373241909026864,
+        "nearest_id": "raw-L02591",
+        "nearest_cosine": 0.4671617016641459,
+        "length_matched_id": "raw-L00042",
+        "length_matched_cosine": 0.41601431102313036,
+        "eligible_posts": 1053,
+        "oov_vector": false
+      },
+      {
+        "id": "b0fa7fdcfd7067cb5a38f21b",
+        "centroid_cosine": 0.28373241909026864,
+        "nearest_id": "raw-L02591",
+        "nearest_cosine": 0.4671617016641459,
+        "length_matched_id": "raw-L00042",
+        "length_matched_cosine": 0.41601431102313036,
+        "eligible_posts": 1053,
+        "oov_vector": false
+      },
+      {
+        "id": "2492c5af63973a27830c1aee",
+        "centroid_cosine": 0.22072910624555792,
+        "nearest_id": "raw-L02591",
+        "nearest_cosine": 0.448887443873016,
+        "length_matched_id": "raw-L00042",
+        "length_matched_cosine": 0.386020145298553,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "2e8c9dfce853e882911a0600",
+        "centroid_cosine": 0.4840674803566164,
+        "nearest_id": "raw-L13125",
+        "nearest_cosine": 0.6305217724815776,
+        "length_matched_id": "raw-L15825",
+        "length_matched_cosine": 0.6048347364822634,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "33e9c0376b866baac9fb4bf1",
+        "centroid_cosine": 0.4840674803566164,
+        "nearest_id": "raw-L13125",
+        "nearest_cosine": 0.6305217724815776,
+        "length_matched_id": "raw-L15825",
+        "length_matched_cosine": 0.6048347364822634,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "cf6f48a5992dde59addb0590",
+        "centroid_cosine": 0.4651100400072814,
+        "nearest_id": "raw-L05869",
+        "nearest_cosine": 0.6245923363334605,
+        "length_matched_id": "raw-L15825",
+        "length_matched_cosine": 0.5934411574508429,
+        "eligible_posts": 961,
+        "oov_vector": false
+      },
+      {
+        "id": "b75deb4cca8e208ba922162e",
+        "centroid_cosine": 0.5328988144420129,
+        "nearest_id": "raw-L06460",
+        "nearest_cosine": 0.7366620081676691,
+        "length_matched_id": "raw-L06460",
+        "length_matched_cosine": 0.7366620081676691,
+        "eligible_posts": 1079,
+        "oov_vector": false
+      },
+      {
+        "id": "f9cf994c482f1a6f7c768535",
+        "centroid_cosine": 0.5328988144420129,
+        "nearest_id": "raw-L06460",
+        "nearest_cosine": 0.7366620081676691,
+        "length_matched_id": "raw-L06460",
+        "length_matched_cosine": 0.7366620081676691,
+        "eligible_posts": 1079,
+        "oov_vector": false
+      },
+      {
+        "id": "9c9765a81213f9aa1b2c5570",
+        "centroid_cosine": 0.47423213992734387,
+        "nearest_id": "raw-L05092",
+        "nearest_cosine": 0.773295616834981,
+        "length_matched_id": "raw-L05092",
+        "length_matched_cosine": 0.773295616834981,
+        "eligible_posts": 1009,
+        "oov_vector": false
+      },
+      {
+        "id": "03ddc7467fecefdca439d19b",
+        "centroid_cosine": 0.5722637722246477,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8164052869761947,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8164052869761947,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "f0c669b452d59066f503ccc5",
+        "centroid_cosine": 0.6005737942675621,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8770880135437757,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8770880135437757,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "bde0176d7e6d8c507fc17601",
+        "centroid_cosine": 0.5106090802546097,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8397419764190269,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8397419764190269,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "341f741ec31fce94d49ce80c",
+        "centroid_cosine": 0.5374892469601857,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9424241933427702,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9424241933427702,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "d738acb4a2f696ff2120fd27",
+        "centroid_cosine": 0.3810953849890458,
+        "nearest_id": "raw-L01893",
+        "nearest_cosine": 0.7068582299461142,
+        "length_matched_id": "raw-L01893",
+        "length_matched_cosine": 0.7068582299461142,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "8c157b7b06412f089be951bb",
+        "centroid_cosine": 0.43222557065599654,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8001722095946215,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8001722095946215,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "0ad409ec053a0184986ba60e",
+        "centroid_cosine": 0.5380320370204326,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9112806290851286,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9112806290851286,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "daebc811f9093435b78c99db",
+        "centroid_cosine": 0.5380320370204326,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9112806290851286,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9112806290851286,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "e692b8eaec24c06b189d8b7b",
+        "centroid_cosine": 0.5096895071195646,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7844366259879474,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7844366259879474,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "1c35b460c04544efe79d2884",
+        "centroid_cosine": 0.5096895071195646,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7844366259879474,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7844366259879474,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "edc31b0a9049a9621bece27f",
+        "centroid_cosine": 0.28471560462228396,
+        "nearest_id": "raw-L15794",
+        "nearest_cosine": 0.9342535497027098,
+        "length_matched_id": "raw-L15794",
+        "length_matched_cosine": 0.9342535497027098,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "59e001e6ab085fe81cd5beb9",
+        "centroid_cosine": 0.46053744178068134,
+        "nearest_id": "raw-L01150",
+        "nearest_cosine": 0.6356035858036284,
+        "length_matched_id": "raw-L01150",
+        "length_matched_cosine": 0.6356035858036284,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "8fb7d6cd490dbad2d8374588",
+        "centroid_cosine": 0.5094316998789191,
+        "nearest_id": "raw-L09702",
+        "nearest_cosine": 0.6488168195067041,
+        "length_matched_id": "raw-L09702",
+        "length_matched_cosine": 0.6488168195067041,
+        "eligible_posts": 927,
+        "oov_vector": false
+      },
+      {
+        "id": "c2bfcb86bf2ccdbbe7bf07a3",
+        "centroid_cosine": 0.5094316998789191,
+        "nearest_id": "raw-L09702",
+        "nearest_cosine": 0.6488168195067041,
+        "length_matched_id": "raw-L09702",
+        "length_matched_cosine": 0.6488168195067041,
+        "eligible_posts": 927,
+        "oov_vector": false
+      },
+      {
+        "id": "1d2fd3e1a0aee85c3f141d2d",
+        "centroid_cosine": 0.5316453311828812,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7538082388480295,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7538082388480295,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "3d3e7d66562d700e6d922c29",
+        "centroid_cosine": 0.5316453311828812,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7538082388480295,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7538082388480295,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "4ba3486c499b6a19ca2e136f",
+        "centroid_cosine": 0.5424063084436783,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8093509624445026,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8093509624445026,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "83c46ecc4fe1ca40f941980d",
+        "centroid_cosine": 0.5369236795716854,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9091878376253684,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9091878376253684,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "630baea60fceeb0578858b08",
+        "centroid_cosine": 0.5369236795716854,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9091878376253684,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9091878376253684,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "098b620b57582dd36f767bc9",
+        "centroid_cosine": 0.5287970175889551,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9040779636695859,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9040779636695859,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "f2f92e2f8191ddcd5fac1dfe",
+        "centroid_cosine": 0.3345266942127964,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.7377736940225185,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.7377736940225185,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "370ced74890ddbbec6b93afb",
+        "centroid_cosine": 0.3345266942127964,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.7377736940225185,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.7377736940225185,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "55564699f8452b555bc9309a",
+        "centroid_cosine": 0.23761204286618165,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.716619254613772,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.716619254613772,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "a97417e9ea3aea4c342759f7",
+        "centroid_cosine": 0.219247418023806,
+        "nearest_id": "raw-L00424",
+        "nearest_cosine": 0.49204427055536676,
+        "length_matched_id": "raw-L01451",
+        "length_matched_cosine": 0.48105546872469035,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "dba3429ac8d34476f1bc4d3e",
+        "centroid_cosine": 0.219247418023806,
+        "nearest_id": "raw-L00424",
+        "nearest_cosine": 0.49204427055536676,
+        "length_matched_id": "raw-L01451",
+        "length_matched_cosine": 0.48105546872469035,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "a0a8ef828ba112e6d0f70d00",
+        "centroid_cosine": 0.14655631101379954,
+        "nearest_id": "raw-L00424",
+        "nearest_cosine": 0.47487938625520015,
+        "length_matched_id": "raw-L01451",
+        "length_matched_cosine": 0.4321521146160836,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "65f8f45806be513b274d0e75",
+        "centroid_cosine": 0.576934951689914,
+        "nearest_id": "raw-L03846",
+        "nearest_cosine": 0.6974159710876533,
+        "length_matched_id": "raw-L03846",
+        "length_matched_cosine": 0.6974159710876533,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "82194e41426a7cfe046297b4",
+        "centroid_cosine": 0.541313002642153,
+        "nearest_id": "raw-L02878",
+        "nearest_cosine": 0.6987754120769185,
+        "length_matched_id": "raw-L02878",
+        "length_matched_cosine": 0.6987754120769185,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "8b17ae36dc41dda0e792a299",
+        "centroid_cosine": 0.593113617712677,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8326932830757117,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8326932830757117,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "18c27da631462029ab0e6038",
+        "centroid_cosine": 0.593113617712677,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8326932830757117,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8326932830757117,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "9fd74965954422d091288be5",
+        "centroid_cosine": 0.3170916146497003,
+        "nearest_id": "raw-L02030",
+        "nearest_cosine": 0.5655156588756406,
+        "length_matched_id": "raw-L02030",
+        "length_matched_cosine": 0.5655156588756406,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "5e277fb454994996df935fe9",
+        "centroid_cosine": 0.3170916146497003,
+        "nearest_id": "raw-L02030",
+        "nearest_cosine": 0.5655156588756406,
+        "length_matched_id": "raw-L02030",
+        "length_matched_cosine": 0.5655156588756406,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "68faef2a12a47cc8049c206b",
+        "centroid_cosine": 0.40092908482074685,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.677073163708013,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.677073163708013,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "1000edcfaba44089832295fa",
+        "centroid_cosine": 0.40092908482074685,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.677073163708013,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.677073163708013,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "66dbef94505c5ba041a2cc3b",
+        "centroid_cosine": 0.5064086487767504,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7723595398228892,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7723595398228892,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "cfcd3fcf5c33cb7ef1cfcf4e",
+        "centroid_cosine": 0.5064086487767504,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.7723595398228892,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.7723595398228892,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "44f755efebe1fd5937673221",
+        "centroid_cosine": 0.3311753482605026,
+        "nearest_id": "raw-L15574",
+        "nearest_cosine": 0.561769407145015,
+        "length_matched_id": "raw-L00009",
+        "length_matched_cosine": 0.5413743088789509,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "fca2386d4769cbe241f14b48",
+        "centroid_cosine": 0.5953979235550724,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8895391890733085,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8895391890733085,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "1c7d67e7f192da20cd18da2b",
+        "centroid_cosine": 0.5953979235550724,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.8895391890733085,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.8895391890733085,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "2387d96b0e46ace380a2be10",
+        "centroid_cosine": 0.3455600191934933,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.7030409218603153,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.7030409218603153,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "3e0aa1efda6b5289c5805dfd",
+        "centroid_cosine": 0.3455600191934933,
+        "nearest_id": "raw-L05989",
+        "nearest_cosine": 0.7030409218603153,
+        "length_matched_id": "raw-L05989",
+        "length_matched_cosine": 0.7030409218603153,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "602f2410c67d0f3094ebee9f",
+        "centroid_cosine": 0.5559899300564378,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9338151941953082,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9338151941953082,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "71cf283ce550dc7618356890",
+        "centroid_cosine": 0.5559899300564378,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.9338151941953082,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.9338151941953082,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "f92914a4ab68e29872fa2ecd",
+        "centroid_cosine": 0.570606752805687,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.899847606303824,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.899847606303824,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "070c88f21c275d1625904bf3",
+        "centroid_cosine": 0.570606752805687,
+        "nearest_id": "raw-L10714",
+        "nearest_cosine": 0.899847606303824,
+        "length_matched_id": "raw-L10714",
+        "length_matched_cosine": 0.899847606303824,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "e2b2afc844fbcdf70c0d279b",
+        "centroid_cosine": 0.6791365795883704,
+        "nearest_id": "raw-L12800",
+        "nearest_cosine": 0.8420537219058335,
+        "length_matched_id": "raw-L12800",
+        "length_matched_cosine": 0.8420537219058335,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "8f02c51e0e2e3fb6c60603a2",
+        "centroid_cosine": 0.6791365795883704,
+        "nearest_id": "raw-L12800",
+        "nearest_cosine": 0.8420537219058335,
+        "length_matched_id": "raw-L12800",
+        "length_matched_cosine": 0.8420537219058335,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      }
+    ],
+    "without_punctuation": [
+      {
+        "id": "input-01",
+        "centroid_cosine": 0.03006454307006493,
+        "nearest_id": "raw-L02995",
+        "nearest_cosine": 0.47639021227660505,
+        "length_matched_id": "raw-L00713",
+        "length_matched_cosine": 0.2475765257498979,
+        "eligible_posts": 168,
+        "oov_vector": false
+      },
+      {
+        "id": "input-02",
+        "centroid_cosine": 0.05391013467512337,
+        "nearest_id": "raw-L08524",
+        "nearest_cosine": 0.2785729965848296,
+        "length_matched_id": "raw-L02541",
+        "length_matched_cosine": 0.148149327007691,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-03",
+        "centroid_cosine": 0.03174521479177741,
+        "nearest_id": "raw-L03606",
+        "nearest_cosine": 0.27676044255080134,
+        "length_matched_id": "raw-L02279",
+        "length_matched_cosine": 0.20134198385992835,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-04",
+        "centroid_cosine": 0.06690864768325322,
+        "nearest_id": "raw-L09837",
+        "nearest_cosine": 0.372166586313561,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.16661933759978462,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-05",
+        "centroid_cosine": 0.010388345962274972,
+        "nearest_id": "raw-L13613",
+        "nearest_cosine": 0.1222612795079496,
+        "length_matched_id": "raw-L02572",
+        "length_matched_cosine": 0.09523413534678143,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-06",
+        "centroid_cosine": 0.011789178856715293,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.9999999999999998,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.9999999999999998,
+        "eligible_posts": 168,
+        "oov_vector": false
+      },
+      {
+        "id": "input-07",
+        "centroid_cosine": 0.03095227769894124,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.8134522214826146,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.8134522214826146,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "input-08",
+        "centroid_cosine": 0.013212196022665124,
+        "nearest_id": "raw-L02655",
+        "nearest_cosine": 0.30833886979804803,
+        "length_matched_id": "raw-L02655",
+        "length_matched_cosine": 0.30833886979804803,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-09",
+        "centroid_cosine": 0.037513921778026996,
+        "nearest_id": "raw-L14909",
+        "nearest_cosine": 0.13591772777985076,
+        "length_matched_id": "raw-L15583",
+        "length_matched_cosine": 0.07808209765567979,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "input-10",
+        "centroid_cosine": 0.03184806748230093,
+        "nearest_id": "raw-L15524",
+        "nearest_cosine": 0.15744114356730846,
+        "length_matched_id": "raw-L15524",
+        "length_matched_cosine": 0.15744114356730846,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "input-11",
+        "centroid_cosine": 0.06784335729216677,
+        "nearest_id": "raw-L14686",
+        "nearest_cosine": 0.43315403429860155,
+        "length_matched_id": "raw-L02941",
+        "length_matched_cosine": 0.12559472312365477,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "input-12",
+        "centroid_cosine": 0.035649694801470976,
+        "nearest_id": "raw-L08757",
+        "nearest_cosine": 0.32441147687203875,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.32441147687203875,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "input-13",
+        "centroid_cosine": 0.055832100822902214,
+        "nearest_id": "raw-L08132",
+        "nearest_cosine": 0.2416358880567405,
+        "length_matched_id": "raw-L00165",
+        "length_matched_cosine": 0.08969917427061154,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-14",
+        "centroid_cosine": 0.016869251818040304,
+        "nearest_id": "raw-L01213",
+        "nearest_cosine": 0.263741250867962,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.263741250867962,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "input-15",
+        "centroid_cosine": 0.06493919267578152,
+        "nearest_id": "raw-L05822",
+        "nearest_cosine": 0.20785923397850536,
+        "length_matched_id": "raw-L00277",
+        "length_matched_cosine": 0.06831087048057892,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-16",
+        "centroid_cosine": 0.0351400562258375,
+        "nearest_id": "raw-L01193",
+        "nearest_cosine": 0.19450674728828105,
+        "length_matched_id": "raw-L07655",
+        "length_matched_cosine": 0.13581256325229168,
+        "eligible_posts": 234,
+        "oov_vector": false
+      },
+      {
+        "id": "input-17",
+        "centroid_cosine": 0.029012626487474855,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.374657349148296,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.35430964514437585,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "input-18",
+        "centroid_cosine": 0.030722174395090604,
+        "nearest_id": "raw-L08757",
+        "nearest_cosine": 0.09512660423076164,
+        "length_matched_id": "raw-L02498",
+        "length_matched_cosine": 0.08656422239779385,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-19",
+        "centroid_cosine": 0.07298068215102049,
+        "nearest_id": "raw-L06582",
+        "nearest_cosine": 0.47783431494635986,
+        "length_matched_id": "raw-L03131",
+        "length_matched_cosine": 0.424672976677333,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "input-20",
+        "centroid_cosine": 0.04186390434539383,
+        "nearest_id": "raw-L15101",
+        "nearest_cosine": 0.24582131378865074,
+        "length_matched_id": "raw-L15101",
+        "length_matched_cosine": 0.24582131378865074,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "input-21",
+        "centroid_cosine": 0.062204453639585405,
+        "nearest_id": "raw-L14686",
+        "nearest_cosine": 0.3138102465508172,
+        "length_matched_id": "raw-L01640",
+        "length_matched_cosine": 0.25462112644978224,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "input-22",
+        "centroid_cosine": 0.06786742432050737,
+        "nearest_id": "raw-L02595",
+        "nearest_cosine": 0.301640905693383,
+        "length_matched_id": "raw-L02595",
+        "length_matched_cosine": 0.301640905693383,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "input-23",
+        "centroid_cosine": 0.0302355682623692,
+        "nearest_id": "raw-L01315",
+        "nearest_cosine": 0.4219546851438033,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.4219546851438033,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "input-24",
+        "centroid_cosine": 0.1246396191760404,
+        "nearest_id": "raw-L08757",
+        "nearest_cosine": 0.1760246339148948,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.1760246339148948,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "input-25",
+        "centroid_cosine": 0.05771596370405243,
+        "nearest_id": "raw-L08757",
+        "nearest_cosine": 0.4164810273060368,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.4164810273060368,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "input-26",
+        "centroid_cosine": 0.05159001220058619,
+        "nearest_id": "raw-L01213",
+        "nearest_cosine": 0.36334295887038304,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.36334295887038304,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-27",
+        "centroid_cosine": 0.04187832880780107,
+        "nearest_id": "raw-L14686",
+        "nearest_cosine": 0.449059516774361,
+        "length_matched_id": "raw-L02941",
+        "length_matched_cosine": 0.13020658059123189,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-28",
+        "centroid_cosine": 0.01454586022572446,
+        "nearest_id": "raw-L01210",
+        "nearest_cosine": 0.20787744631777122,
+        "length_matched_id": "raw-L01210",
+        "length_matched_cosine": 0.20787744631777122,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-29",
+        "centroid_cosine": 0.025178917352658158,
+        "nearest_id": "raw-L15962",
+        "nearest_cosine": 0.09306173539312824,
+        "length_matched_id": "raw-L02498",
+        "length_matched_cosine": 0.07494708941784256,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-30",
+        "centroid_cosine": 0.0,
+        "nearest_id": "raw-L00005",
+        "nearest_cosine": 0.0,
+        "length_matched_id": "raw-L00005",
+        "length_matched_cosine": 0.0,
+        "eligible_posts": 234,
+        "oov_vector": true
+      },
+      {
+        "id": "input-31",
+        "centroid_cosine": 0.02774891723694249,
+        "nearest_id": "raw-L14909",
+        "nearest_cosine": 0.1273397181152723,
+        "length_matched_id": "raw-L00239",
+        "length_matched_cosine": 0.07509312173800335,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "input-32",
+        "centroid_cosine": 0.06777932933013607,
+        "nearest_id": "raw-L01390",
+        "nearest_cosine": 0.2438561511600425,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.22715736678899762,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "input-33",
+        "centroid_cosine": 0.030240991461361187,
+        "nearest_id": "raw-L01315",
+        "nearest_cosine": 0.37408963232869974,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.37408963232869974,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "input-34",
+        "centroid_cosine": 0.07924677962034286,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.8086392859952576,
+        "length_matched_id": "raw-L14579",
+        "length_matched_cosine": 0.09747495346854279,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "input-35",
+        "centroid_cosine": 0.04908582050532412,
+        "nearest_id": "raw-L03799",
+        "nearest_cosine": 0.16228115810596647,
+        "length_matched_id": "raw-L03799",
+        "length_matched_cosine": 0.16228115810596647,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "input-36",
+        "centroid_cosine": 0.05030698751414147,
+        "nearest_id": "raw-L06874",
+        "nearest_cosine": 0.2929097617206597,
+        "length_matched_id": "raw-L06874",
+        "length_matched_cosine": 0.2929097617206597,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "input-37",
+        "centroid_cosine": 0.06084604482472723,
+        "nearest_id": "raw-L02595",
+        "nearest_cosine": 0.26728424166686754,
+        "length_matched_id": "raw-L02595",
+        "length_matched_cosine": 0.26728424166686754,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "0c7d8d48d955dc60eb1b1f19",
+        "centroid_cosine": 0.052708764351008484,
+        "nearest_id": "raw-L02002",
+        "nearest_cosine": 0.6436885077548462,
+        "length_matched_id": "raw-L02002",
+        "length_matched_cosine": 0.6436885077548462,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "5068b5d2023ea1d0e6dc14a0",
+        "centroid_cosine": 0.10624674640405625,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.43872040291367087,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.43872040291367087,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "4eb0e5a37acadbed160cea90",
+        "centroid_cosine": 0.08299664586068978,
+        "nearest_id": "raw-L10836",
+        "nearest_cosine": 0.2765952390205597,
+        "length_matched_id": "raw-L15458",
+        "length_matched_cosine": 0.1588373800421432,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "d9234388e3e491bf2349cbc8",
+        "centroid_cosine": 0.09027560321634243,
+        "nearest_id": "raw-L07263",
+        "nearest_cosine": 0.21996505439443678,
+        "length_matched_id": "raw-L07263",
+        "length_matched_cosine": 0.21996505439443678,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "9cdd8b27875970fd09044090",
+        "centroid_cosine": 0.057076718500980034,
+        "nearest_id": "raw-L08524",
+        "nearest_cosine": 0.3254111739320842,
+        "length_matched_id": "raw-L02541",
+        "length_matched_cosine": 0.17305857714080508,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "f0df1669300c694366a5e197",
+        "centroid_cosine": 0.025407750289573854,
+        "nearest_id": "raw-L00754",
+        "nearest_cosine": 0.46669597948472497,
+        "length_matched_id": "raw-L02612",
+        "length_matched_cosine": 0.08798529469332213,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "3b37fb0f431270d49cc1fe42",
+        "centroid_cosine": 0.06948739613226795,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.3076428026195972,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.14978482553899425,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "6970657c1aa5abba94f73edb",
+        "centroid_cosine": 0.08238035629804268,
+        "nearest_id": "raw-L09837",
+        "nearest_cosine": 0.36395404643540363,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.16294257562052006,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "904087b6c682009ce696fdc3",
+        "centroid_cosine": 0.13505841631807017,
+        "nearest_id": "raw-L05822",
+        "nearest_cosine": 0.2846174407448593,
+        "length_matched_id": "raw-L00308",
+        "length_matched_cosine": 0.27287065061049487,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "a28e9f1e2d71f81ea8268408",
+        "centroid_cosine": 0.1151209189275357,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.297320345152933,
+        "length_matched_id": "raw-L03558",
+        "length_matched_cosine": 0.15996654243553804,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "04479d50da9635528e3eadb7",
+        "centroid_cosine": 0.016678304307433972,
+        "nearest_id": "raw-L13613",
+        "nearest_cosine": 0.15270711143216364,
+        "length_matched_id": "raw-L02572",
+        "length_matched_cosine": 0.14059236940254158,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "7c9b4c03ada1c799a5d763ac",
+        "centroid_cosine": 0.06302873684942281,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.16008422450239315,
+        "length_matched_id": "raw-L02572",
+        "length_matched_cosine": 0.1156710092917176,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "bd08c302a3e84ba876c0bb16",
+        "centroid_cosine": 0.08100704723503517,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.4372552441728512,
+        "length_matched_id": "raw-L01251",
+        "length_matched_cosine": 0.2113907263564551,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "4146e1acb40acb3dccaa7bda",
+        "centroid_cosine": 0.059006608930133146,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.7448187833621794,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.7448187833621794,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "4658cf1c15ce08ebe796b5d6",
+        "centroid_cosine": 0.07831653275239643,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.788053891349713,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.788053891349713,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "8b227ab3d843d610524e7a8e",
+        "centroid_cosine": 0.059006608930133146,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.7448187833621794,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.7448187833621794,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "c0aec3982d3b6fe609a40709",
+        "centroid_cosine": 0.07831653275239643,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.788053891349713,
+        "length_matched_id": "raw-L05970",
+        "length_matched_cosine": 0.788053891349713,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "dc2a59036253e31e340b435f",
+        "centroid_cosine": 0.07182315117768649,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.20190993595398682,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.20190993595398682,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "a85b95ccde49e8eafad4ab2e",
+        "centroid_cosine": 0.0650997349653489,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.2342034711038163,
+        "length_matched_id": "raw-L02655",
+        "length_matched_cosine": 0.19106132955459867,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "24dae526f57096afb10db831",
+        "centroid_cosine": 0.08114092854455615,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.23047419924996895,
+        "length_matched_id": "raw-L03472",
+        "length_matched_cosine": 0.23047419924996895,
+        "eligible_posts": 1053,
+        "oov_vector": false
+      },
+      {
+        "id": "b0fa7fdcfd7067cb5a38f21b",
+        "centroid_cosine": 0.07524691072714157,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.25627965469458686,
+        "length_matched_id": "raw-L04861",
+        "length_matched_cosine": 0.25627965469458686,
+        "eligible_posts": 1053,
+        "oov_vector": false
+      },
+      {
+        "id": "2492c5af63973a27830c1aee",
+        "centroid_cosine": 0.05183887905272032,
+        "nearest_id": "raw-L12719",
+        "nearest_cosine": 0.16826945774122584,
+        "length_matched_id": "raw-L12719",
+        "length_matched_cosine": 0.16826945774122584,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "2e8c9dfce853e882911a0600",
+        "centroid_cosine": 0.061016740965210856,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.3112673450670199,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.29436236290689993,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "33e9c0376b866baac9fb4bf1",
+        "centroid_cosine": 0.06580661312308585,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.3100338255414907,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.29319583603544674,
+        "eligible_posts": 975,
+        "oov_vector": false
+      },
+      {
+        "id": "cf6f48a5992dde59addb0590",
+        "centroid_cosine": 0.042649645640004244,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.3411707045456403,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.322641665874212,
+        "eligible_posts": 961,
+        "oov_vector": false
+      },
+      {
+        "id": "b75deb4cca8e208ba922162e",
+        "centroid_cosine": 0.08988657397592277,
+        "nearest_id": "raw-L12522",
+        "nearest_cosine": 0.18955596218788484,
+        "length_matched_id": "raw-L06067",
+        "length_matched_cosine": 0.11495203907582942,
+        "eligible_posts": 1079,
+        "oov_vector": false
+      },
+      {
+        "id": "f9cf994c482f1a6f7c768535",
+        "centroid_cosine": 0.08432592409092203,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.1736934839814088,
+        "length_matched_id": "raw-L15578",
+        "length_matched_cosine": 0.1736934839814088,
+        "eligible_posts": 1079,
+        "oov_vector": false
+      },
+      {
+        "id": "9c9765a81213f9aa1b2c5570",
+        "centroid_cosine": 0.09449047814064779,
+        "nearest_id": "raw-L12522",
+        "nearest_cosine": 0.20760056983195987,
+        "length_matched_id": "raw-L06067",
+        "length_matched_cosine": 0.1258947940230663,
+        "eligible_posts": 1009,
+        "oov_vector": false
+      },
+      {
+        "id": "03ddc7467fecefdca439d19b",
+        "centroid_cosine": 0.08531987384086405,
+        "nearest_id": "raw-L09716",
+        "nearest_cosine": 0.22865791026270627,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.14513472207525852,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "f0c669b452d59066f503ccc5",
+        "centroid_cosine": 0.08542444155798665,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2828285006291704,
+        "length_matched_id": "raw-L08757",
+        "length_matched_cosine": 0.16234329130854738,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "bde0176d7e6d8c507fc17601",
+        "centroid_cosine": 0.03295845056303776,
+        "nearest_id": "raw-L13109",
+        "nearest_cosine": 0.25658382531852425,
+        "length_matched_id": "raw-L01875",
+        "length_matched_cosine": 0.06947288549536945,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "341f741ec31fce94d49ce80c",
+        "centroid_cosine": 0.09886526599720279,
+        "nearest_id": "raw-L08132",
+        "nearest_cosine": 0.18239233332015986,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.12128406308298045,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "d738acb4a2f696ff2120fd27",
+        "centroid_cosine": 0.014721924206024839,
+        "nearest_id": "raw-L01213",
+        "nearest_cosine": 0.20608739516626537,
+        "length_matched_id": "raw-L01213",
+        "length_matched_cosine": 0.20608739516626537,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "8c157b7b06412f089be951bb",
+        "centroid_cosine": 0.054096818675155804,
+        "nearest_id": "raw-L05822",
+        "nearest_cosine": 0.16654392558950698,
+        "length_matched_id": "raw-L07556",
+        "length_matched_cosine": 0.10325682918744224,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "0ad409ec053a0184986ba60e",
+        "centroid_cosine": 0.10907999186186505,
+        "nearest_id": "raw-L05822",
+        "nearest_cosine": 0.29417152347464837,
+        "length_matched_id": "raw-L00308",
+        "length_matched_cosine": 0.21669256389092875,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "daebc811f9093435b78c99db",
+        "centroid_cosine": 0.09094971616412635,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.25943993570355245,
+        "length_matched_id": "raw-L03558",
+        "length_matched_cosine": 0.13958583783712583,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "e692b8eaec24c06b189d8b7b",
+        "centroid_cosine": 0.07511756991035339,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.20894862988044988,
+        "length_matched_id": "raw-L08180",
+        "length_matched_cosine": 0.1017855532024905,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "1c35b460c04544efe79d2884",
+        "centroid_cosine": 0.08572316287880456,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.3871398491766495,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.3871398491766495,
+        "eligible_posts": 485,
+        "oov_vector": false
+      },
+      {
+        "id": "edc31b0a9049a9621bece27f",
+        "centroid_cosine": 0.029979496090620027,
+        "nearest_id": "raw-L11032",
+        "nearest_cosine": 0.18452506788627887,
+        "length_matched_id": "raw-L07655",
+        "length_matched_cosine": 0.10780658689571102,
+        "eligible_posts": 314,
+        "oov_vector": false
+      },
+      {
+        "id": "59e001e6ab085fe81cd5beb9",
+        "centroid_cosine": 0.03935045948782492,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.3117443716700447,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.2948134821144274,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "8fb7d6cd490dbad2d8374588",
+        "centroid_cosine": 0.06490075837747517,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.27328090226802126,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.258438970241558,
+        "eligible_posts": 927,
+        "oov_vector": false
+      },
+      {
+        "id": "c2bfcb86bf2ccdbbe7bf07a3",
+        "centroid_cosine": 0.06065222945902878,
+        "nearest_id": "raw-L08189",
+        "nearest_cosine": 0.27412456382967715,
+        "length_matched_id": "raw-L01276",
+        "length_matched_cosine": 0.2592368124010986,
+        "eligible_posts": 927,
+        "oov_vector": false
+      },
+      {
+        "id": "1d2fd3e1a0aee85c3f141d2d",
+        "centroid_cosine": 0.06263988818453703,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.33522280690178247,
+        "length_matched_id": "raw-L00457",
+        "length_matched_cosine": 0.14961417168078583,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "3d3e7d66562d700e6d922c29",
+        "centroid_cosine": 0.07026102403923873,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.30011764081291614,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.1696768078148435,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "4ba3486c499b6a19ca2e136f",
+        "centroid_cosine": 0.08304352229062942,
+        "nearest_id": "raw-L06582",
+        "nearest_cosine": 0.47365924627321954,
+        "length_matched_id": "raw-L03131",
+        "length_matched_cosine": 0.42096240423455256,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "83c46ecc4fe1ca40f941980d",
+        "centroid_cosine": 0.11720572936907943,
+        "nearest_id": "raw-L06067",
+        "nearest_cosine": 0.23605136613944144,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.16927895962375256,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "630baea60fceeb0578858b08",
+        "centroid_cosine": 0.10929496955292801,
+        "nearest_id": "raw-L13095",
+        "nearest_cosine": 0.27908631300559944,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.17003681655334424,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "098b620b57582dd36f767bc9",
+        "centroid_cosine": 0.05556654379862956,
+        "nearest_id": "raw-L15101",
+        "nearest_cosine": 0.24193714120735182,
+        "length_matched_id": "raw-L15101",
+        "length_matched_cosine": 0.24193714120735182,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "f2f92e2f8191ddcd5fac1dfe",
+        "centroid_cosine": 0.07392546198458898,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.2905932474121582,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.25608643548948573,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "370ced74890ddbbec6b93afb",
+        "centroid_cosine": 0.08053531727562019,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2608602278813214,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.25399645864273834,
+        "eligible_posts": 850,
+        "oov_vector": false
+      },
+      {
+        "id": "55564699f8452b555bc9309a",
+        "centroid_cosine": 0.04993215643355396,
+        "nearest_id": "raw-L01315",
+        "nearest_cosine": 0.40799064194661505,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.40799064194661505,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "a97417e9ea3aea4c342759f7",
+        "centroid_cosine": 0.0989728464191092,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.3608835515292395,
+        "length_matched_id": "raw-L15578",
+        "length_matched_cosine": 0.20387065482550268,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "dba3429ac8d34476f1bc4d3e",
+        "centroid_cosine": 0.10015608036381633,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.31805869545044313,
+        "length_matched_id": "raw-L02159",
+        "length_matched_cosine": 0.2447017065117335,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "a0a8ef828ba112e6d0f70d00",
+        "centroid_cosine": 0.14819541399504807,
+        "nearest_id": "raw-L00189",
+        "nearest_cosine": 0.25387400603386634,
+        "length_matched_id": "raw-L00005",
+        "length_matched_cosine": 0.22204629693553618,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "65f8f45806be513b274d0e75",
+        "centroid_cosine": 0.048492224415548735,
+        "nearest_id": "raw-L10469",
+        "nearest_cosine": 0.18319180706949711,
+        "length_matched_id": "raw-L01938",
+        "length_matched_cosine": 0.09178706947051121,
+        "eligible_posts": 717,
+        "oov_vector": false
+      },
+      {
+        "id": "82194e41426a7cfe046297b4",
+        "centroid_cosine": 0.02141549900224112,
+        "nearest_id": "raw-L01210",
+        "nearest_cosine": 0.18518695201628502,
+        "length_matched_id": "raw-L01210",
+        "length_matched_cosine": 0.18518695201628502,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "8b17ae36dc41dda0e792a299",
+        "centroid_cosine": 0.06925270725898294,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.16843562357466946,
+        "length_matched_id": "raw-L01210",
+        "length_matched_cosine": 0.15463270413051255,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "18c27da631462029ab0e6038",
+        "centroid_cosine": 0.06333622003764512,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.19356745280579266,
+        "length_matched_id": "raw-L15578",
+        "length_matched_cosine": 0.19356745280579266,
+        "eligible_posts": 803,
+        "oov_vector": false
+      },
+      {
+        "id": "9fd74965954422d091288be5",
+        "centroid_cosine": 0.06744662269834477,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2910531500088146,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.1645520378748261,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "5e277fb454994996df935fe9",
+        "centroid_cosine": 0.060008857604566854,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.32488558130718104,
+        "length_matched_id": "raw-L00457",
+        "length_matched_cosine": 0.145000537366618,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "68faef2a12a47cc8049c206b",
+        "centroid_cosine": 0.08674403736630434,
+        "nearest_id": "raw-L15690",
+        "nearest_cosine": 0.28163144429495324,
+        "length_matched_id": "raw-L02333",
+        "length_matched_cosine": 0.15882970313403244,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "1000edcfaba44089832295fa",
+        "centroid_cosine": 0.1284221493190849,
+        "nearest_id": "raw-L02601",
+        "nearest_cosine": 0.8411286968876241,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.8411286968876241,
+        "eligible_posts": 441,
+        "oov_vector": false
+      },
+      {
+        "id": "66dbef94505c5ba041a2cc3b",
+        "centroid_cosine": 0.07849323493180853,
+        "nearest_id": "raw-L00877",
+        "nearest_cosine": 0.24275226057883206,
+        "length_matched_id": "raw-L00098",
+        "length_matched_cosine": 0.11944578259566778,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "cfcd3fcf5c33cb7ef1cfcf4e",
+        "centroid_cosine": 0.09679035652090345,
+        "nearest_id": "raw-L07232",
+        "nearest_cosine": 0.2685599526538546,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.17747191159999315,
+        "eligible_posts": 567,
+        "oov_vector": false
+      },
+      {
+        "id": "44f755efebe1fd5937673221",
+        "centroid_cosine": 0.055648871881843136,
+        "nearest_id": "raw-L00189",
+        "nearest_cosine": 0.1522281839444774,
+        "length_matched_id": "raw-L00189",
+        "length_matched_cosine": 0.1522281839444774,
+        "eligible_posts": 372,
+        "oov_vector": false
+      },
+      {
+        "id": "fca2386d4769cbe241f14b48",
+        "centroid_cosine": 0.09112488575389736,
+        "nearest_id": "raw-L13095",
+        "nearest_cosine": 0.2630609613869107,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.16027317123500456,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "1c7d67e7f192da20cd18da2b",
+        "centroid_cosine": 0.0986833804218783,
+        "nearest_id": "raw-L06067",
+        "nearest_cosine": 0.22260756569493023,
+        "length_matched_id": "raw-L15836",
+        "length_matched_cosine": 0.15963803870956536,
+        "eligible_posts": 776,
+        "oov_vector": false
+      },
+      {
+        "id": "2387d96b0e46ace380a2be10",
+        "centroid_cosine": 0.061048525090523956,
+        "nearest_id": "raw-L04861",
+        "nearest_cosine": 0.28031964879096305,
+        "length_matched_id": "raw-L01315",
+        "length_matched_cosine": 0.24703278653521388,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "3e0aa1efda6b5289c5805dfd",
+        "centroid_cosine": 0.06754660209859509,
+        "nearest_id": "raw-L03472",
+        "nearest_cosine": 0.2517799887589256,
+        "length_matched_id": "raw-L03472",
+        "length_matched_cosine": 0.2517799887589256,
+        "eligible_posts": 908,
+        "oov_vector": false
+      },
+      {
+        "id": "602f2410c67d0f3094ebee9f",
+        "centroid_cosine": 0.09432049555959184,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.5552511718069345,
+        "length_matched_id": "raw-L00098",
+        "length_matched_cosine": 0.09980450838538084,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "71cf283ce550dc7618356890",
+        "centroid_cosine": 0.10953752982782304,
+        "nearest_id": "raw-L05970",
+        "nearest_cosine": 0.5761121389439158,
+        "length_matched_id": "raw-L02601",
+        "length_matched_cosine": 0.13491704784649206,
+        "eligible_posts": 674,
+        "oov_vector": false
+      },
+      {
+        "id": "f92914a4ab68e29872fa2ecd",
+        "centroid_cosine": 0.08717799166873069,
+        "nearest_id": "raw-L15578",
+        "nearest_cosine": 0.26168844103610195,
+        "length_matched_id": "raw-L02723",
+        "length_matched_cosine": 0.21372348864144552,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "070c88f21c275d1625904bf3",
+        "centroid_cosine": 0.07662731922460715,
+        "nearest_id": "raw-L03602",
+        "nearest_cosine": 0.3221613997379276,
+        "length_matched_id": "raw-L03602",
+        "length_matched_cosine": 0.3221613997379276,
+        "eligible_posts": 616,
+        "oov_vector": false
+      },
+      {
+        "id": "e2b2afc844fbcdf70c0d279b",
+        "centroid_cosine": 0.07681960656288253,
+        "nearest_id": "raw-L06874",
+        "nearest_cosine": 0.24384353845213705,
+        "length_matched_id": "raw-L06874",
+        "length_matched_cosine": 0.24384353845213705,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      },
+      {
+        "id": "8f02c51e0e2e3fb6c60603a2",
+        "centroid_cosine": 0.07659368963887546,
+        "nearest_id": "raw-L06874",
+        "nearest_cosine": 0.2644613101930024,
+        "length_matched_id": "raw-L06874",
+        "length_matched_cosine": 0.2644613101930024,
+        "eligible_posts": 1042,
+        "oov_vector": false
+      }
+    ]
+  },
+  "summary": {
+    "lexical": {
+      "generated_inputs": 32,
+      "input_mean": 0.0347357278395575,
+      "generated_mean": 0.06915473564322934,
+      "paired_delta": 0.03441900780367184,
+      "descriptive_bootstrap_95": [
+        0.02828343959633642,
+        0.04067529181192877
+      ]
+    },
+    "script_masked": {
+      "generated_inputs": 32,
+      "input_mean": 0.3701098182414926,
+      "generated_mean": 0.47348565185912606,
+      "paired_delta": 0.10337583361763346,
+      "descriptive_bootstrap_95": [
+        0.07961297817207441,
+        0.12880605062221673
+      ]
+    },
+    "without_punctuation": {
+      "generated_inputs": 32,
+      "input_mean": 0.040939771516536376,
+      "generated_mean": 0.07356099751871653,
+      "paired_delta": 0.032621226002180155,
+      "descriptive_bootstrap_95": [
+        0.02573204774307265,
+        0.04001433586646858
+      ]
+    }
+  }
+}

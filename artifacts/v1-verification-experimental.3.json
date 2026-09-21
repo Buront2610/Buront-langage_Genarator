@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0-experimental.3",
+  "build": {
+    "schemaVersion": 1,
+    "sourceHash": "6c18928310fc3c759a53b04b2ee383783f1f9a45eee856bc5273ef7adef5c13e",
+    "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "datasetId": "14f96cafd5bcda6bc7f52c776adba1b4071b5096460655788d59c5f98736123a",
+  "tests": {
+    "passed": 167,
+    "failed": 0,
+    "command": "npm test",
+    "log": "artifacts/v1-all-tests-experimental.3.txt"
+  },
+  "typecheck": "passed",
+  "webBuild": "passed",
+  "audit": "artifacts/v1-evaluation-experimental.3/report.json",
+  "cliReplay": {
+    "verified": true,
+    "candidateSetHash": "18993d00c712e968db2c45db753ff8925a8957f8196479064362e6920bfba9cc"
+  },
+  "humanStyleQuality": null,
+  "humanQuoteQuality": null,
+  "scope": "Five source relations and a closed inverse rhetoric grammar; no general semantic or style certification."
+}

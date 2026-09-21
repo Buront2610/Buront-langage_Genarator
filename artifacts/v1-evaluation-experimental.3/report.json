@@ -1,0 +1,507 @@
+{
+  "version": "1.0.0-experimental.3",
+  "build": {
+    "schemaVersion": 1,
+    "sourceHash": "6c18928310fc3c759a53b04b2ee383783f1f9a45eee856bc5273ef7adef5c13e",
+    "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "datasetId": "14f96cafd5bcda6bc7f52c776adba1b4071b5096460655788d59c5f98736123a",
+  "roleSensitivity": {
+    "plans": 9,
+    "identical": 0,
+    "examples": [
+      "田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+      "佐藤から田中へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。"
+    ]
+  },
+  "dictionary": [
+    {
+      "to": "冷え込み",
+      "candidates": 3,
+      "review": 0,
+      "reason": null
+    },
+    {
+      "to": "冷気",
+      "candidates": 0,
+      "review": 3,
+      "reason": "dictionary_needs_review"
+    },
+    {
+      "to": "実際には佐藤が田中を助けた。",
+      "candidates": 0,
+      "review": 0,
+      "reason": "dictionary_rejected"
+    }
+  ],
+  "compilerRegression": {
+    "status": "rejected",
+    "checks": [
+      {
+        "code": "V-span",
+        "status": "pass",
+        "explanation": "出力全体の範囲分割・対応するAST型・一意なnode IDからの再構築を照合",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-coverage",
+        "status": "pass",
+        "explanation": "採用対象の原文範囲が一度ずつ現れ、欠落も事実の二重記載もないことを照合",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-plan",
+        "status": "pass",
+        "explanation": "原文から構成順・節の役割・焦点を再計算し、系列構文の出典と外枠を照合",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-quantity",
+        "status": "pass",
+        "explanation": "原値・符号・比較条件・単位・出現順・役割を事実節ごとに独立抽出して照合",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-roles",
+        "status": "pass",
+        "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-polarity",
+        "status": "pass",
+        "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-temporal",
+        "status": "pass",
+        "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-attribution",
+        "status": "pass",
+        "explanation": "事実節の原文一致または限定した丁寧形変換で保持を確認。任意の言い換えの意味同値性は保証しない",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      },
+      {
+        "code": "V-rhetoric",
+        "status": "fail",
+        "explanation": "比喩作用域に追加の主張がある",
+        "required": true,
+        "factIds": [
+          "fact-0"
+        ],
+        "checkerVersion": "literal-event-and-relation-proof-v2"
+      }
+    ]
+  },
+  "temporal": [
+    {
+      "code": "S-quantity",
+      "status": "pass",
+      "required": true,
+      "explanation": "保護値の原値・単位・符号・出現役割。原文と事実節を別々に解析して照合。",
+      "factIds": [
+        "fact-0",
+        "fact-1"
+      ],
+      "checkerVersion": "independent-factual-reparse-v2"
+    },
+    {
+      "code": "S-coverage",
+      "status": "pass",
+      "required": true,
+      "explanation": "述語の出現数と欠落・追加。原文と事実節を別々に解析して照合。",
+      "factIds": [
+        "fact-0",
+        "fact-1"
+      ],
+      "checkerVersion": "independent-factual-reparse-v2"
+    },
+    {
+      "code": "S-roles",
+      "status": "pass",
+      "required": true,
+      "explanation": "述語ごとの主体・対象・受取手・場所。原文と事実節を別々に解析して照合。",
+      "factIds": [
+        "fact-0",
+        "fact-1"
+      ],
+      "checkerVersion": "independent-factual-reparse-v2"
+    },
+    {
+      "code": "S-polarity",
+      "status": "pass",
+      "required": true,
+      "explanation": "主体と述語に結び付いた否定。原文と事実節を別々に解析して照合。",
+      "factIds": [
+        "fact-0",
+        "fact-1"
+      ],
+      "checkerVersion": "independent-factual-reparse-v2"
+    },
+    {
+      "code": "S-temporal",
+      "status": "fail",
+      "required": true,
+      "explanation": "出来事・時制・予定・完了を個別照合。既知の不一致: fact-0。不確実な出来事: fact-1。",
+      "factIds": [
+        "fact-0",
+        "fact-1"
+      ],
+      "checkerVersion": "independent-factual-reparse-v2"
+    },
+    {
+      "code": "S-attribution",
+      "status": "pass",
+      "required": true,
+      "explanation": "引用・伝聞の話者と主張主体。原文と事実節を別々に解析して照合。",
+      "factIds": [
+        "fact-0",
+        "fact-1"
+      ],
+      "checkerVersion": "independent-factual-reparse-v2"
+    }
+  ],
+  "counterexamples": [
+    {
+      "id": "T-01-money",
+      "status": "rejected",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-01-count",
+      "status": "rejected",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-02-sign",
+      "status": "rejected",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-02-role",
+      "status": "rejected",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-03-roles",
+      "status": "rejected",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-04-scope",
+      "status": "rejected",
+      "failed": [
+        "S-polarity",
+        "S-temporal"
+      ]
+    },
+    {
+      "id": "T-05-nouns",
+      "status": "rejected",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-06-completion",
+      "status": "rejected",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-07-mixed",
+      "status": "rejected",
+      "failed": [
+        "S-quantity",
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-temporal",
+        "S-attribution"
+      ]
+    },
+    {
+      "id": "T-08-attribution",
+      "status": "rejected",
+      "failed": [
+        "S-coverage",
+        "S-roles",
+        "S-polarity",
+        "S-temporal",
+        "S-attribution"
+      ]
+    }
+  ],
+  "abstentions": [
+    {
+      "source": "猫",
+      "candidates": 0,
+      "reason": "unsupported_relation"
+    },
+    {
+      "source": "今日は寒くない。",
+      "candidates": 0,
+      "reason": "unsupported_relation"
+    },
+    {
+      "source": "田中が佐藤を助けたと鈴木が言った。",
+      "candidates": 0,
+      "reason": "unsupported_relation"
+    }
+  ],
+  "mixed": {
+    "units": [
+      {
+        "id": "unit-0",
+        "sourceSpan": {
+          "start": 0,
+          "end": 10
+        },
+        "factIds": [
+          "fact-0"
+        ],
+        "role": "achievement"
+      },
+      {
+        "id": "unit-1",
+        "sourceSpan": {
+          "start": 10,
+          "end": 17
+        },
+        "factIds": [
+          "fact-1"
+        ],
+        "role": "unresolved"
+      },
+      {
+        "id": "unit-2",
+        "sourceSpan": {
+          "start": 17,
+          "end": 26
+        },
+        "factIds": [
+          "fact-2"
+        ],
+        "role": "prospect"
+      }
+    ],
+    "output": "たとえるなら、Bの停止中という状況を、力の大きさと、道が通れるかを分けて考える場面に見立てる。力の大きさと道の通りやすさを同じ目盛りにすると、停止が目盛りから消えてしまう。\n【成果】\n田中がAを復旧した。\n【残件】\nBは停止中だ。\n【予定】\n私は明日確認する。\n\n"
+  },
+  "featureVersion": "output-text-dense-v2",
+  "featureCounts": [
+    44
+  ],
+  "comparisonPairs": 63,
+  "series": [
+    {
+      "id": "all",
+      "candidates": 3,
+      "frames": [
+        "plain"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "roto",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "be_question"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "yorusama",
+      "candidates": 3,
+      "frames": [
+        "digression",
+        "explanation"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "saiko",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "parenthetical",
+        "explanation"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "night",
+      "candidates": 3,
+      "frames": [
+        "explanation",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "puronohito",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "nega",
+      "candidates": 3,
+      "frames": [
+        "question",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "katuru",
+      "candidates": 3,
+      "frames": [
+        "explanation",
+        "parenthetical"
+      ],
+      "discourse": [
+        "criterion_first",
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "gg",
+      "candidates": 3,
+      "frames": [
+        "explanation",
+        "parenthetical"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    },
+    {
+      "id": "sonota",
+      "candidates": 3,
+      "frames": [
+        "digression",
+        "question"
+      ],
+      "discourse": [
+        "mapping_first"
+      ]
+    }
+  ],
+  "timing": [
+    {
+      "size": 500,
+      "milliseconds": 1607.6388000000006,
+      "candidates": 3,
+      "sampleCount": 1
+    },
+    {
+      "size": 5000,
+      "milliseconds": 15056.582199999997,
+      "candidates": 3,
+      "sampleCount": 1
+    }
+  ],
+  "humanStyleQuality": null,
+  "humanQuoteQuality": null,
+  "seriesRecognitionAfterAblation": null,
+  "conceptNoveltyCorpus": null,
+  "limitations": [
+    "Five supported source relations; unsupported and attributed/ambiguous propositions abstain.",
+    "Rhetoric verification recognizes a closed language; it is not a general Japanese semantic verifier.",
+    "Nominal dictionary edits outside the supported synonym pair require review; clause edits are rejected.",
+    "Comparisons and ablations are unlabelled pilot material, not held-out quality evidence.",
+    "Timing is one warm local sample per size, not p95."
+  ]
+}

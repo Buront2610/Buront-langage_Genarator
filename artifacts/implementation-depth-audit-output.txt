@@ -1,0 +1,436 @@
+{
+  "report": "artifacts/implementation-depth-audit.json",
+  "roleSensitivity": {
+    "sources": [
+      "田中が佐藤を助けた。",
+      "佐藤が田中を助けた。"
+    ],
+    "plans": 12,
+    "identicalRhetoricCores": 12,
+    "examples": [
+      "助けることに言葉を装備させると、説明のほうが重装備になる。",
+      "助けることを速度で測るな。物差しのほうに盾が必要になる。",
+      "助けることが時間を評価する側に回ったら、採点表のほうが緊張する。",
+      "助けることのために勝利を磨きすぎると、勝利を磨くための助けることになる。"
+    ],
+    "factualArguments": [
+      [
+        [
+          {
+            "role": "agent",
+            "text": "田中",
+            "span": {
+              "start": 0,
+              "end": 2
+            },
+            "entityId": "entity-0"
+          },
+          {
+            "role": "patient",
+            "text": "佐藤",
+            "span": {
+              "start": 3,
+              "end": 5
+            },
+            "entityId": "entity-1"
+          }
+        ]
+      ],
+      [
+        [
+          {
+            "role": "agent",
+            "text": "佐藤",
+            "span": {
+              "start": 0,
+              "end": 2
+            },
+            "entityId": "entity-0"
+          },
+          {
+            "role": "patient",
+            "text": "田中",
+            "span": {
+              "start": 3,
+              "end": 5
+            },
+            "entityId": "entity-1"
+          }
+        ]
+      ]
+    ],
+    "note": "The copied factual text differs correctly; this isolates the creative part only."
+  },
+  "dictionary": {
+    "originalCandidates": 3,
+    "editedCandidates": 0,
+    "editedReviewCandidates": 0,
+    "fallback": {
+      "text": "今日は寒い。",
+      "reason": "no_novel_candidate"
+    },
+    "diagnostics": [
+      {
+        "operator": "OP-01",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-02",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-06",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-07",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-01",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-02",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-06",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-07",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-01",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-02",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-06",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      },
+      {
+        "operator": "OP-07",
+        "status": "rejected",
+        "failed": [
+          "V-plan",
+          "V-rhetoric"
+        ]
+      }
+    ]
+  },
+  "compilerTrust": {
+    "probeType": "white-box simulated compiler regression; not an API plan-injection claim",
+    "output": "田中が佐藤を助けた。\nたとえるなら、実際には佐藤が田中を助けた。",
+    "status": [
+      {
+        "code": "V-span",
+        "status": "pass"
+      },
+      {
+        "code": "V-coverage",
+        "status": "pass"
+      },
+      {
+        "code": "V-plan",
+        "status": "pass"
+      },
+      {
+        "code": "V-quantity",
+        "status": "pass"
+      },
+      {
+        "code": "V-roles",
+        "status": "pass"
+      },
+      {
+        "code": "V-polarity",
+        "status": "pass"
+      },
+      {
+        "code": "V-temporal",
+        "status": "pass"
+      },
+      {
+        "code": "V-attribution",
+        "status": "pass"
+      },
+      {
+        "code": "V-rhetoric",
+        "status": "pass"
+      }
+    ],
+    "finalSelected": true,
+    "semanticCodes": [
+      "S-literal"
+    ]
+  },
+  "temporal": {
+    "status": "passed",
+    "checks": [
+      {
+        "code": "S-quantity",
+        "status": "pass",
+        "required": true
+      },
+      {
+        "code": "S-coverage",
+        "status": "pass",
+        "required": true
+      },
+      {
+        "code": "S-roles",
+        "status": "pass",
+        "required": true
+      },
+      {
+        "code": "S-polarity",
+        "status": "pass",
+        "required": true
+      },
+      {
+        "code": "S-temporal",
+        "status": "unknown",
+        "required": false
+      },
+      {
+        "code": "S-attribution",
+        "status": "pass",
+        "required": true
+      }
+    ]
+  },
+  "featureLeak": {
+    "sides": 448,
+    "simpleFeaturePresenceCorrect": 448,
+    "structuredFeatureCounts": [
+      48,
+      47,
+      53,
+      56,
+      49,
+      55,
+      58,
+      54,
+      57,
+      61,
+      64,
+      66,
+      37,
+      39,
+      45,
+      52,
+      51
+    ],
+    "controlFeatureCounts": [
+      1
+    ],
+    "inputSyntaxIdenticalAcrossPlans": true
+  },
+  "mixed": {
+    "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+    "facts": [
+      {
+        "id": "fact-0",
+        "predicate": "復旧",
+        "completion": "completed",
+        "realization": "actual"
+      },
+      {
+        "id": "fact-1",
+        "predicate": "停止中",
+        "completion": "not_completed",
+        "realization": "actual"
+      },
+      {
+        "id": "fact-2",
+        "predicate": "確認",
+        "completion": "unknown",
+        "realization": "prospective"
+      }
+    ],
+    "narrative": {
+      "strategy": "source_order",
+      "units": [
+        {
+          "id": "unit-0",
+          "sourceSpan": {
+            "start": 0,
+            "end": 10
+          },
+          "factIds": [
+            "fact-0"
+          ],
+          "role": "achievement"
+        },
+        {
+          "id": "unit-1",
+          "sourceSpan": {
+            "start": 10,
+            "end": 26
+          },
+          "factIds": [
+            "fact-1",
+            "fact-2"
+          ],
+          "role": "unresolved"
+        }
+      ],
+      "sourceOrder": [
+        "unit-0",
+        "unit-1"
+      ],
+      "displayOrder": [
+        "unit-0",
+        "unit-1"
+      ],
+      "preservedRelations": [],
+      "orderingReason": "引用・照応・主体省略・関係の可能性があるため原文順を保持。"
+    }
+  },
+  "novelty": [
+    {
+      "core": "白銀の木の塊",
+      "structure": "<TERM>の<TERM>の<TERM>",
+      "result": {
+        "classification": "adaptation",
+        "text": 0.8333333333333334,
+        "structure": 0,
+        "concept": null,
+        "nearestIds": [
+          "post_01492_d53ec3085d15b7cf_4705",
+          "excerpt_355",
+          "post_00441_ac1607ebab7d30ac_1346"
+        ],
+        "datasetId": "b00a3658f19baf8144b9be0919f1ba753eec5fbaa676854c82eef07d64072053",
+        "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "window": "原ログ・語録の近傍30件と保存履歴0件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。"
+      }
+    },
+    {
+      "core": "白銀の木の塊で出来ている暗黒",
+      "structure": "<TERM>の<TERM>の<TERM>で<TERM>ている<TERM>",
+      "result": {
+        "classification": "adaptation",
+        "text": 0.52,
+        "structure": 0,
+        "concept": null,
+        "nearestIds": [
+          "heading_049",
+          "post_01484_7ac7ba378e7b5ded_4663",
+          "post_01653_8e421a4e4cb481c1_5518"
+        ],
+        "datasetId": "b00a3658f19baf8144b9be0919f1ba753eec5fbaa676854c82eef07d64072053",
+        "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "window": "原ログ・語録の近傍30件と保存履歴0件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。"
+      }
+    },
+    {
+      "core": "白銀の木の塊で出来ている暗黒が紙装備のジョブに遅れをとるはずは無い",
+      "structure": "<TERM>の<TERM>の<TERM>で<TERM>ている<TERM>が<TERM>の<TERM>に<TERM>れをとるはずは<TERM>い",
+      "result": {
+        "classification": "adaptation",
+        "text": 0.33333333333333337,
+        "structure": 0,
+        "concept": null,
+        "nearestIds": [
+          "post_01653_8e421a4e4cb481c1_5518",
+          "excerpt_218",
+          "heading_049"
+        ],
+        "datasetId": "b00a3658f19baf8144b9be0919f1ba753eec5fbaa676854c82eef07d64072053",
+        "historySnapshot": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "window": "原ログ・語録の近傍30件と保存履歴0件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。"
+      }
+    }
+  ],
+  "scores": {
+    "selected": [
+      {
+        "id": "001bf575d2b74f317fa2ee55",
+        "scores": {
+          "S": null,
+          "Q": null,
+          "C": 1,
+          "R": 1
+        },
+        "novelty": "candidate_novel"
+      },
+      {
+        "id": "063654b6520510b41e972b7c",
+        "scores": {
+          "S": null,
+          "Q": null,
+          "C": 1,
+          "R": 1
+        },
+        "novelty": "candidate_novel"
+      },
+      {
+        "id": "29a1c1f95937267ca78c6bce",
+        "scores": {
+          "S": null,
+          "Q": null,
+          "C": 1,
+          "R": 1
+        },
+        "novelty": "candidate_novel"
+      }
+    ],
+    "evaluator": {
+      "S": "untrained",
+      "Q": "untrained",
+      "C": "literal-preservation",
+      "R": "rules-v1"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "text",
+    "factIds",
+    "evidenceIds"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "anyOf": [
+        {
+          "const": "FactClause",
+          "type": "string"
+        },
+        {
+          "const": "ProtectedLiteral",
+          "type": "string"
+        },
+        {
+          "const": "RhetoricalClause",
+          "type": "string"
+        },
+        {
+          "const": "Connective",
+          "type": "string"
+        },
+        {
+          "const": "QuoteBoundary",
+          "type": "string"
+        },
+        {
+          "const": "Reference",
+          "type": "string"
+        }
+      ]
+    },
+    "text": {
+      "maxLength": 12000,
+      "type": "string"
+    },
+    "sourceSpan": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "factIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "evidenceIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "mention": {
+      "anyOf": [
+        {
+          "const": "primary",
+          "type": "string"
+        },
+        {
+          "const": "rhetorical_reference",
+          "type": "string"
+        }
+      ]
+    }
+  }
+}

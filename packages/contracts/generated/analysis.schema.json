@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "parserVersion",
+    "tokens",
+    "sentences",
+    "warnings"
+  ],
+  "properties": {
+    "parserVersion": {
+      "minLength": 1,
+      "maxLength": 2048,
+      "type": "string"
+    },
+    "tokens": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "lemma",
+          "reading",
+          "pos",
+          "tag",
+          "dep",
+          "head",
+          "span",
+          "morphology"
+        ],
+        "properties": {
+          "id": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "text": {
+            "maxLength": 12000,
+            "type": "string"
+          },
+          "lemma": {
+            "maxLength": 12000,
+            "type": "string"
+          },
+          "reading": {
+            "maxLength": 12000,
+            "type": "string"
+          },
+          "pos": {
+            "maxLength": 32,
+            "type": "string"
+          },
+          "tag": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "dep": {
+            "maxLength": 32,
+            "type": "string"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "span": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "morphology": {
+            "maxItems": 32,
+            "type": "array",
+            "items": {
+              "maxLength": 256,
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sentences": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "warnings": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "maxLength": 512,
+        "type": "string"
+      }
+    }
+  }
+}

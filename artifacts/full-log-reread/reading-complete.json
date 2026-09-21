@@ -1,0 +1,22 @@
+{
+  "file": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+  "sha256": "983ba86ddf086d7bc842d91c66a4bc1bab940c126682b436538d5df7a68df752",
+  "lines": 16311,
+  "pagesRead": 45,
+  "coverage": "全行を順に再読。空行以外の本文は省略せず表示。表示が途切れた範囲は再読。",
+  "rereadRanges": [
+    [
+      718,
+      1000
+    ],
+    [
+      2167,
+      2450
+    ],
+    [
+      10753,
+      10756
+    ]
+  ],
+  "checkedAt": "2026-09-21T12:47:59.144Z"
+}

@@ -1,0 +1,54 @@
+{
+  "hashes": {
+    "apps/web/dist/assets/index-CEOsNdT3.js": "b8d2894891cdcce0d21727d4739dfa7414c25880c44d49b05a15370f28a844e5",
+    "docs/invent-mode-defect-20260922.md": "a4622c2338c010b7a7aaa3a5a819d250c96a66fc2fa7056742c5113141f079ad",
+    "test/v1/style-regressions.test.js": "bfed384b9423d39e9af09d739c641163d48ae84bcbfea47a8552c540f63e9381",
+    "test/v1/punctuation-regressions.test.js": "83b09914d4e2594e10c7ce99f0420d17259789d878a1d975dd7091dbcc7fb19a",
+    "apps/web/src/main.tsx": "76f9a8803b44eb14dd553de74e38a80e7f304afdc3a65512f1f5222f00e6bbc9",
+    "docs/lexical-origin-audit-20260922.md": "161a2dc4f9179e22ebd34b19b731bdc6f2f0d455e93349cd3ab740f819f175ea",
+    "packages/core/rewrite-rules.ts": "5951a3ba42455c974a59657071c53d8e81bc2a93f9578062970b01723fd8cefe",
+    "build-info.json": "cb69decc4d5536319b80f3cffaf4b0b571473d2d5b15c8958309b37f97fdeac6"
+  },
+  "remaining": [
+    "Invent generation and full context behavior are missing from the active generation path",
+    "Remaining attested rules are not certified as originating with Buront",
+    "Old lib generation path not modified"
+  ],
+  "checks": {
+    "build": 0,
+    "nodeSyntax": 0,
+    "tests": {
+      "scope": [
+        "test/v1/style-regressions.test.js",
+        "test/v1/punctuation-regressions.test.js"
+      ],
+      "failed": 0,
+      "exitCode": 0,
+      "passed": 16,
+      "log": "tests.log"
+    },
+    "httpDiagnostic": {
+      "meaning": "Confirms a remaining bug: invent selects 0 of 5 drafts; full and faithful outputs identical",
+      "exitCode": 0,
+      "artifact": "live-mode-diagnostic.json"
+    },
+    "typecheck": 0,
+    "scopedDiffCheck": 0
+  },
+  "engine": {
+    "schemaVersion": 1,
+    "sourceHash": "fcc74e14041931bcd44ad1563662088b9cf63f4125a285e54ba8415fe17c0a0f",
+    "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "serverPid": 15024,
+  "humanRatingsSubmitted": false,
+  "recordedAt": "2026-09-22T01:27:47.0923167+09:00",
+  "browserVerification": {
+    "tab": 3,
+    "humanRatingsSubmitted": false,
+    "url": "http://127.0.0.1:4173/#generator",
+    "observed": "3 fresh candidates retain 全員 and 雰囲気; punctuation remains fixed; usage-not-origin notice is visible"
+  }
+}

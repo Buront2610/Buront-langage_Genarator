@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "act",
+    "targetFacts",
+    "targetSpan",
+    "stance",
+    "addressee",
+    "evidence",
+    "forbiddenEffects"
+  ],
+  "properties": {
+    "act": {
+      "anyOf": [
+        {
+          "const": "observation",
+          "type": "string"
+        },
+        {
+          "const": "achievement",
+          "type": "string"
+        },
+        {
+          "const": "unresolved",
+          "type": "string"
+        },
+        {
+          "const": "prospect",
+          "type": "string"
+        },
+        {
+          "const": "gratitude",
+          "type": "string"
+        },
+        {
+          "const": "warning",
+          "type": "string"
+        },
+        {
+          "const": "rebuttal",
+          "type": "string"
+        },
+        {
+          "const": "self_justification",
+          "type": "string"
+        }
+      ]
+    },
+    "targetFacts": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "targetSpan": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "stance": {
+      "anyOf": [
+        {
+          "const": "neutral",
+          "type": "string"
+        },
+        {
+          "const": "cautious",
+          "type": "string"
+        },
+        {
+          "const": "appreciative",
+          "type": "string"
+        }
+      ]
+    },
+    "addressee": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "forbiddenEffects": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    }
+  }
+}

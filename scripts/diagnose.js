@@ -1,0 +1,13 @@
+"use strict";
+const fs = require("node:fs");
+const path = require("node:path");
+const { spawnSync } = require("node:child_process");
+const root = path.resolve(__dirname, "..");
+const checks = [];
+checks.push({ name: "Node.js 24", ok: process.versions.node.split(".")[0] === "24", version: process.version, repair: "Node.js 24系をインストールしてください。" });
+for (const file of ["node_modules/fastify/package.json", "dist/apps/server/index.js", "apps/web/dist/index.html", "data/log-corpus.json", "data/quote-corpus.json", "data/archive-series.json"]) checks.push({ name: file, ok: fs.existsSync(path.join(root, file)), repair: "setup.ps1 を実行してください。データは元のローカル資産を使います。" });
+const python = path.join(root, ".venv", process.platform === "win32" ? "Scripts/python.exe" : "bin/python");
+const result = spawnSync(python, ["-c", "import sys,importlib.metadata as m,json;import spacy;spacy.load('ja_ginza');print(json.dumps({'python':sys.version.split()[0], 'ginza':m.version('ginza'),'model':m.version('ja-ginza'),'dictionary':m.version('SudachiDict-core')}))"], { encoding: "utf8", windowsHide: true, timeout: 45000 });
+checks.push({ name: "Python 3.11 / GiNZA", ok: result.status === 0 && result.stdout.includes('3.11.'), versions: result.status === 0 ? JSON.parse(result.stdout) : null, repair: "setup.ps1 で固定依存をインストールしてください。起動時にモデル取得は行いません。" });
+console.log(JSON.stringify({ platform: process.platform, architecture: process.arch, checks, ready: checks.every(check => check.ok) }, null, 2));
+if (checks.some(check => !check.ok)) process.exitCode = 1;

@@ -1,0 +1,51 @@
+
+> buront-language-generator@1.0.0-experimental.1 test:v1
+> npm run build:engine && node --test test/v1/*.test.js
+
+
+> buront-language-generator@1.0.0-experimental.1 build:engine
+> tsc && node dist/scripts/v1/export-schemas.js && node scripts/build-info.js
+
+✔ T-22 only built web files; Host/Origin/token/session boundaries (2724.0387ms)
+✔ M4 API separates invalid input, capacity and unavailable capability (10.0069ms)
+✔ T-12/19 generation result has revision, selected ID, replay, matching spans and no private access (3232.2393ms)
+✔ Partial regeneration authenticates analysis and validates locked plan conflicts (321.8368ms)
+✔ T-20 queued/running cancellation and completion have a single terminal state (123.5207ms)
+✔ T-21 finite queue and one running request per session; status stays responsive (156.4975ms)
+✔ Only explicit preferences are stored; blind comparisons omit source method/rank/scores (11.1061ms)
+✔ T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace (6168.2491ms)
+✔ T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion (1.3444ms)
+✔ Protected comparison and range values retain parent-child occurrences and immutable original text (2.284ms)
+✔ T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap (3.6285ms)
+✔ Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text (2.2169ms)
+✔ Python validates the same exported Draft 2020-12 schema type boundaries (918.5155ms)
+✔ T-07 independent fact scopes keep achievement, unresolved and prospective distinct (0.4036ms)
+✔ T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained (688.6894ms)
+✔ T-13 four actual operators, bounded plans, zero required quote count and untrained S/Q (1.5449ms)
+✔ T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass (18.442ms)
+✔ T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations (0.309ms)
+✔ T-24 stage RNG, input/assets/history and candidate set reproduce exactly (189.4621ms)
+✔ Partial replay reconstructs trusted parent candidates and rejects forged locked text (731.0985ms)
+✔ Whitespace and symbols with no dictionary reading still satisfy the analysis contract (229.4846ms)
+✔ T-15 noun replacement has an identical abstract structure, not unique novelty (0.2885ms)
+✔ T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected (81.784ms)
+✔ Grouped split prevents thread/family/near duplicate leakage before generation (0.6949ms)
+✔ Finite cache evicts by bytes/count and inactive TTL (0.3436ms)
+✔ Optional model rejects prose, fabricated IDs and excessive retries (0.8762ms)
+✔ Register changes retain negative tense, quoted text and URL originals (213.3531ms)
+✔ Full mode changes presentation order while retaining every fact span (170.3254ms)
+✔ Quote focus does not borrow a topic from an omitted fact (185.5849ms)
+✔ Canonical mode uses attributed corpus quotations, invent mode never silently copies them (195.4848ms)
+✔ Connective and reference tags cannot conceal an unsupported factual assertion (5.5116ms)
+✔ T-22 an assets directory junction cannot escape the public root (5.9215ms)
+✔ T-23 immutable content-addressed snapshots support atomic activation and rollback (591.451ms)
+✔ T-21 invalid analyzer stdout is rejected and the persistent process can restart (5424.0962ms)
+✔ T-20/21 deadline fails once while status remains available; retained results obey count and TTL (3189.9002ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10501.7089

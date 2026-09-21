@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "dfdae7e4306ec244a5681ab8172642b45d26ba5ce200227c77dad501af15b40e",
+  "coldStartupMs": 1917.4896999999996,
+  "records": [
+    {
+      "id": "case-0",
+      "milliseconds": 2638.7915000000003,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-06",
+        "OP-02",
+        "OP-01"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "ea8e15e7c40c1bee9994552735ffa23520644ac0aac98c75786c97cde05c2626"
+    },
+    {
+      "id": "case-1",
+      "milliseconds": 207.76430000000073,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-02",
+        "OP-07",
+        "OP-01"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "75d5e43d0461adbbd966b84e520fca74dd6c56cd6495c95cf3df807427d99b53"
+    },
+    {
+      "id": "case-2",
+      "milliseconds": 198.78250000000025,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-06",
+        "OP-07",
+        "OP-01"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "660d0b51c710fd0beea443cbb8448e832d7d2ad2225eaf61939c9596a027d016"
+    },
+    {
+      "id": "case-3",
+      "milliseconds": 217.21790000000055,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-06",
+        "OP-07",
+        "OP-02"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "8c0ee6b3b38b029014d4f9469ae24c8aed73f7b29be8048e4c8fdef649d01fcf"
+    },
+    {
+      "id": "case-4",
+      "milliseconds": 221.10019999999986,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-02",
+        "OP-01",
+        "OP-07"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "6d5869effd5de5fa72d5efc9194489409b739d189a3f6e0938b97b67e27a8eb1"
+    },
+    {
+      "id": "case-5",
+      "milliseconds": 194.67120000000068,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-07",
+        "OP-06",
+        "OP-02"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "363def7503818aecd45435e777c657f5e559d26235fa7c0e47bae64ca38aab5d"
+    },
+    {
+      "id": "case-6",
+      "milliseconds": 169.87369999999828,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-06",
+        "OP-01",
+        "OP-02"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "c6a3cc35d357e01976b4f104f8322858a4104161e0037594e2087f720f2e00d5"
+    },
+    {
+      "id": "case-7",
+      "milliseconds": 178.3197,
+      "candidates": 3,
+      "review": 0,
+      "fallback": false,
+      "operators": [
+        "OP-01",
+        "OP-02",
+        "OP-06"
+      ],
+      "classifications": [
+        "candidate_novel",
+        "candidate_novel",
+        "candidate_novel"
+      ],
+      "candidateSetHash": "f20636838081b55187e857d140b8f48583c3558f5dd4234130a3b141ec18aff3"
+    }
+  ],
+  "performance": [
+    {
+      "size": 500,
+      "runs": [
+        1001.6607999999997,
+        1278.8340000000007,
+        1083.427600000001,
+        1236.9298,
+        1176.8513999999996
+      ],
+      "p95": 1278.8340000000007,
+      "sampleCount": 5
+    },
+    {
+      "size": 5000,
+      "runs": [
+        8394.1935,
+        5922.061999999998,
+        5370.6437000000005,
+        5741.656600000002,
+        5504.296499999997
+      ],
+      "p95": 8394.1935,
+      "sampleCount": 5
+    }
+  ],
+  "nodeMemory": {
+    "rss": 424071168,
+    "heapTotal": 333545472,
+    "heapUsed": 236763760,
+    "external": 4203021,
+    "arrayBuffers": 2178657
+  },
+  "usefulSupplyRate": 1,
+  "creativeYield": null,
+  "humanPreference": null,
+  "S": "untrained",
+  "Q": "untrained",
+  "releaseQualityGate": "HUMAN_EVALUATION_REQUIRED",
+  "limitations": [
+    "Five warm samples are a smoke measurement, not a statistically stable p95.",
+    "Literal facts with experimental analogy; general semantic paraphrase is not validated.",
+    "No clean-machine or cross-platform certification."
+  ],
+  "optionalModels": {
+    "embedding": "not_adopted_without_measured_benefit",
+    "model": "disabled_pending_comparison",
+    "SFT": "not_justified_without_human_labels"
+  }
+}
