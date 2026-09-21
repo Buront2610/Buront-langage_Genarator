@@ -3,7 +3,7 @@ import { validateRequest } from '../contracts';
 import { Assets, retrievalFor } from './assets';
 import { sourceDocument, hash } from './source';
 import { extractFacts } from './facts';
-import { makePlans, makeCanonicalPlans } from './creation';
+import { makeRewritePlans } from './rewrite';
 import { realize, validateCandidate, verification } from './validator';
 import { applyDictionary } from './dictionary';
 import { evaluateNovelty, HistoryEntry, select, score, ruleQuality, featureVersion } from './evaluation';
@@ -19,9 +19,7 @@ export function generate(request: GenerationRequest, analysis: Analysis, assets:
   const checkpoint = (stage: string) => { if (options.cancelled?.()) throw new Error('CANCELLED'); if (Date.now() > (options.deadline ?? Infinity)) throw new Error('DEADLINE_EXCEEDED'); options.stage?.(stage); };
   checkpoint('planning');
   const source = sourceDocument(request.source), ir = extractFacts(source, analysis, request);
-  const creativePlans = request.noveltyMode === 'canonical' ? [] : makePlans(ir, request, assets, options.experimentalOperators);
-  const canonicalPlans = request.noveltyMode === 'invent' ? [] : makeCanonicalPlans(ir, request, assets);
-  const plans = (request.noveltyMode === 'blend' ? [...creativePlans.slice(0, 9), ...canonicalPlans.slice(0, 3)] : [...creativePlans, ...canonicalPlans]).slice(0, 12).filter(plan => !options.operator || plan.mainOperator === options.operator);
+  const plans = makeRewritePlans(ir, request, assets).filter(plan => !options.operator || plan.mainOperator === options.operator);
   const retrieval = retrievalFor(assets), evidenceIds = new Set(assets.evidence.map(item => item.id));
   const generated: Candidate[] = []; let total = 0;
   checkpoint('generating');
@@ -32,6 +30,10 @@ export function generate(request: GenerationRequest, analysis: Analysis, assets:
       const node = options.lockedPlan?.nodes.find(node => node.id === id), index = plan.nodes.findIndex(node => node.id === id);
       if (!node || index < 0) throw new Error('LOCK_CONFLICT');
       plan.nodes[index] = structuredClone(node);
+      if (plan.rewrite && options.lockedPlan?.rewrite) {
+        plan.rewrite.edits = [...plan.rewrite.edits.filter(edit => edit.nodeId !== id), ...structuredClone(options.lockedPlan.rewrite.edits.filter(edit => edit.nodeId === id))].sort((a, b) => a.sourceSpan.start - b.sourceSpan.start);
+        plan.evidenceIds = [...new Set(plan.rewrite.edits.flatMap(edit => edit.evidenceIds))];
+      }
     }
     if (options.lockedNodeIds?.includes('main-quote') && options.lockedPlan) {
       plan.mainOperator = options.lockedPlan.mainOperator; plan.family = options.lockedPlan.family; plan.mapping = options.lockedPlan.mapping; plan.backTranslation = options.lockedPlan.backTranslation;
@@ -40,6 +42,7 @@ export function generate(request: GenerationRequest, analysis: Analysis, assets:
       plan.evidenceIds = [...new Set(plan.nodes.flatMap(node => node.evidenceIds))];
       if (options.operator && options.operator !== plan.mainOperator) throw new Error('LOCK_CONFLICT');
     }
+    if (plan.rewrite) { plan.family = plan.rewrite.edits.map(edit => edit.ruleId).join('+'); plan.id = hash({ ...plan, id: '' }).slice(0, 24); }
     // Dictionary changes only editable rhetoric; factual, quoted and opaque source
     // nodes remain immutable. Every edit is validated as part of the complete result.
     // Locked rhetoric already includes the parent's edits; never apply twice.
@@ -55,11 +58,12 @@ export function generate(request: GenerationRequest, analysis: Analysis, assets:
     total += length;
     checkpoint('validating');
     const checks = validateCandidate(ir, plan, text, spans, evidenceIds, undefined, new Map(assets.evidence.map(item => [item.id, item.text])), assets.seriesProfiles);
+    if (plan.rewrite && request.customRules?.length) checks.push({ code: 'V-dictionary', status: 'unknown', required: true, explanation: '本文の自由置換は出典付きの有限変換として検証できないため適用していません。辞書を外すか、本文変換とは別に確認してください。', factIds: [], checkerVersion: 'bounded-body-rewrite-v1' });
     const quality = ruleQuality(ir, plan);
-    const candidate: Candidate = { id: hash({ inputHash: source.inputHash, text, datasetId: assets.datasetId }).slice(0, 24), text, plan, spans, checks, verificationStatus: verification(checks), verificationScope: '原文を保持した事実節・型付き修辞の構成検査（修辞の品質は実験段階）',
+    const candidate: Candidate = { id: hash({ inputHash: source.inputHash, text, datasetId: assets.datasetId }).slice(0, 24), text, plan, spans, checks, verificationStatus: verification(checks), verificationScope: plan.rewrite ? '原文範囲・保護値・引用の保持と、出典付き有限変換の適用条件を検査。自然さ・文体の良さは未評価。' : '原文を保持した事実節・型付き修辞の構成検査（修辞の品質は実験段階）',
       scores: { S: null, Q: null, ...quality },
       novelty: { classification: 'undetermined', text: null, structure: null, concept: null, nearestIds: [], datasetId: assets.datasetId, historySnapshot: hash(options.history ?? []), window: '' },
-      evidence: plan.evidenceIds.map(id => assets.evidence.find(item => item.id === id)).filter(item => !!item).map(item => ({ id: item!.id, kind: plan.mainOperator === 'QUOTE' ? 'direct_quote' : (plan.surface?.evidenceIds.includes(item!.id) || plan.rhetoric?.discourseEvidenceIds.includes(item!.id)) ? 'construction_evidence' : 'related_example', text: item!.text, ...(typeof item!.url === 'string' && item!.url ? { url: item!.url } : {}) })) };
+      evidence: plan.evidenceIds.map(id => assets.evidence.find(item => item.id === id)).filter(item => !!item).map(item => ({ id: item!.id, kind: plan.rewrite ? 'construction_evidence' : plan.mainOperator === 'QUOTE' ? 'direct_quote' : (plan.surface?.evidenceIds.includes(item!.id) || plan.rhetoric?.discourseEvidenceIds.includes(item!.id)) ? 'construction_evidence' : 'related_example', text: item!.text, ...(typeof item!.url === 'string' && item!.url ? { url: item!.url } : {}) })) };
     checkpoint('evaluating'); candidate.novelty = evaluateNovelty(candidate, assets, retrieval, options.history ?? []);
     if (plan.mainOperator === 'QUOTE') candidate.novelty = { ...candidate.novelty, classification: 'known_quote', text: 0, structure: 0, concept: null, nearestIds: plan.evidenceIds };
     candidate.scores.S = score(candidate, assets.evaluators?.S); candidate.scores.Q = score(candidate, assets.evaluators?.Q);
@@ -74,7 +78,7 @@ export function generate(request: GenerationRequest, analysis: Analysis, assets:
       engineVersion: options.engineVersion ?? assets.manifest.engine?.sourceHash ?? 'structured-v1', backend: request.backend, profile: 'bounded-12plans-36drafts-3results', deterministic: true, generated: generated.length,
       replayDepth: options.replayParent ? Number(options.replayParent.replayDepth ?? 0) + 1 : 0,
       experimentalOperators: options.experimentalOperators ?? false, regeneration: options.lockedPlan ? { lockedPlan: options.lockedPlan, lockedNodeIds: options.lockedNodeIds, operator: options.operator, parent: options.replayParent, candidateId: options.parentCandidateId } : null,
-      evaluator: { S: assets.evaluators?.S ? { version: hash(assets.evaluators.S), personal: assets.evaluators.S.personal, meaning: 'relative-preference-not-probability' } : 'untrained', Q: assets.evaluators?.Q ? { version: hash(assets.evaluators.Q), personal: assets.evaluators.Q.personal, meaning: 'relative-preference-not-probability' } : 'untrained', C: 'relation-recoverability-v2', R: 'bounded-relation-grammar-v2', featureVersion }, experimental: true } };
+      evaluator: { S: assets.evaluators?.S ? { version: hash(assets.evaluators.S), personal: assets.evaluators.S.personal, meaning: 'relative-preference-not-probability' } : 'untrained', Q: assets.evaluators?.Q ? { version: hash(assets.evaluators.Q), personal: assets.evaluators.Q.personal, meaning: 'relative-preference-not-probability' } : 'untrained', C: 'bounded-body-edit-proof-v1', R: 'bounded-body-size-v1', featureVersion }, experimental: true } };
   if (!validateResult(result)) throw Object.assign(new Error('INVALID_RESULT_CONTRACT'), { validationErrors: validateResult.errors });
   return result;
 }

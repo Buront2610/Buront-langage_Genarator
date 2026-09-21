@@ -43,7 +43,10 @@ export class Coordinator {
     this.pool = new Piscina({ filename: path.join(__dirname, 'worker.js'), minThreads: 1, maxThreads: 1, maxQueue: 8, idleTimeout: 60000 });
     this.sweeper = setInterval(() => this.sweep(), 60000); this.sweeper.unref();
   }
-  async start() { await this.python.start(); this.ready = true; }
+  async start() {
+    await Promise.all([this.python.start(), this.pool.run({ warmup: true, assetPath: this.assetPath })]);
+    this.ready = true;
+  }
   enqueue(session: string, request: GenerationRequest, history: HistoryEntry[] = [], options: GenerationOptions = {}): Job {
     this.sweep();
     this.refreshAssets();

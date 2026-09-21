@@ -2,6 +2,7 @@ import type { Candidate, Novelty, DocumentIR, QuotePlan } from '../contracts';
 import { Assets, Retrieval } from './assets';
 import { hash } from './source';
 import { frameRhetoric } from './series';
+import { validateRewrite } from './rewrite-validation';
 import { validateRhetoric } from './rhetoric-validation';
 import { outputFeatures, featureVersion } from './output-features';
 export { featureVersion, outputFeatures } from './output-features';
@@ -10,6 +11,7 @@ export const grams = (text: string, n = 3) => { const chars = [...text.normalize
 export function similarity(a: string, b: string) { const left = grams(a), right = grams(b); return 2 * [...left].filter(item => right.has(item)).length / Math.max(1, left.size + right.size); }
 export const structure = (text: string) => text.normalize('NFKC').replace(/[+\-]?\d+(?:\.\d+)?/gu, '<NUM>').replace(/[\p{Script=Han}\p{Script=Katakana}ー]+/gu, '<TERM>').replace(/<TERM>(?:<TERM>)+/gu, '<TERM>');
 export function rhetoricalCore(candidate: Pick<Candidate, 'plan'>): string {
+  if (candidate.plan.rewrite) return candidate.plan.nodes.map(node => node.text).join('');
   const surface = candidate.plan.surface, main = candidate.plan.nodes.find(node => node.id === 'main-quote');
   try { if (surface && main?.text === frameRhetoric(surface.coreText, surface.constructionId)) return surface.coreText; } catch { /* Unknown frames cannot supply a trusted novelty core. */ }
   return candidate.plan.nodes.filter(node => node.type === 'RhetoricalClause').map(node => node.text).join('').replace(/^たとえるなら[、,]/u, '');
@@ -23,10 +25,10 @@ export function evaluateNovelty(candidate: Candidate, assets: Assets, retrieval:
   const maxStructure = Math.max(0, ...comparisons.map(item => item.structureScore));
   const concept = history.length ? history.some(item => item.family === candidate.plan.family && item.mapping === hash(candidate.plan.mapping)) ? 1 : 0 : null;
   const exact = records.some(item => item.text.normalize('NFKC').replace(/\s/gu, '') === rhetoric.normalize('NFKC').replace(/\s/gu, ''));
-  return { classification: !rhetoric ? 'undetermined' : exact || maxText > 0.95 ? 'known_quote' : maxText > 0.72 || maxStructure > 0.86 || concept === 1 ? 'adaptation' : 'candidate_novel',
+  return { classification: candidate.plan.rewrite ? 'adaptation' : !rhetoric ? 'undetermined' : exact || maxText > 0.95 ? 'known_quote' : maxText > 0.72 || maxStructure > 0.86 || concept === 1 ? 'adaptation' : 'candidate_novel',
     text: 1 - maxText, structure: 1 - maxStructure, concept: concept === null ? null : 1 - concept,
     nearestIds: comparisons.sort((a, b) => Math.max(b.textScore, b.structureScore) - Math.max(a.textScore, a.structureScore)).slice(0, 3).map(item => item.id),
-    datasetId: assets.datasetId, historySnapshot: hash(history), window: `原ログ・語録の近傍30件と保存履歴${history.length}件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。` };
+    datasetId: assets.datasetId, historySnapshot: hash(history), window: `${candidate.plan.rewrite ? '出典付き構文の応用。入力語の違いを新作性の根拠にはしない。' : ''}原ログ・語録の近傍30件と保存履歴${history.length}件。概念比較は保存履歴内のみ（原ログの概念注釈は未整備）。世界全体の新規性ではない。` };
 }
 export const features = (candidate: { text: string }): Record<string, number> => outputFeatures(candidate.text);
 export type Evaluator = { schemaVersion: 1; featureVersion: string; dimension: 'S' | 'Q'; coefficients: Record<string, number>; intercept: number; trainingManifest: Record<string, unknown>; personal: boolean };
@@ -37,6 +39,10 @@ export function score(candidate: Candidate, evaluator?: Evaluator) {
   return Object.entries(evaluator.coefficients).reduce((sum, [name, coefficient]) => sum + (values[name] || 0) * coefficient, evaluator.intercept);
 }
 export function ruleQuality(ir: DocumentIR, plan: QuotePlan): { C: number | null; R: number } {
+  if (plan.rewrite) {
+    const valid = validateRewrite(ir, plan), length = [...plan.nodes.map(node => node.text).join('')].length;
+    return { C: valid ? 1 : 0, R: valid && length <= Math.max(100, ir.source.scalarToUtf16.length * 2) ? 1 : 0 };
+  }
   if (plan.mainOperator === 'QUOTE') return { C: null, R: 1 }; // Related quotation is not proven contextual fit.
   const meaning = validateRhetoric(ir, plan), text = plan.surface?.coreText ?? '';
   const clauses = text.split(/[、。]/u).filter(Boolean);
@@ -61,7 +67,10 @@ export function select(candidates: Candidate[], noveltyMode: string): Candidate[
     for (const candidate of current) front.set(candidate, level);
     remaining = remaining.filter(candidate => !current.includes(candidate)); level++;
   }
-  usable.sort((a, b) => front.get(a)! - front.get(b)! || (b.scores.R ?? 0) - (a.scores.R ?? 0) || (b.novelty.structure ?? 0) - (a.novelty.structure ?? 0) || a.id.localeCompare(b.id));
+  // Prefer actual body edits over generic ending-only variants. This is an
+  // explicit deterministic presentation rule, not a learned style score.
+  const bodyEdits = (candidate: Candidate) => candidate.plan.rewrite?.edits.filter(edit => !edit.ruleId.startsWith('ending-')).length ?? 0;
+  usable.sort((a, b) => front.get(a)! - front.get(b)! || (b.scores.R ?? 0) - (a.scores.R ?? 0) || bodyEdits(b) - bodyEdits(a) || (b.novelty.structure ?? 0) - (a.novelty.structure ?? 0) || a.id.localeCompare(b.id));
   const selected: Candidate[] = [], signatures = new Set<string>();
   for (const candidate of usable) {
     const signature = candidate.plan.mainOperator + ':' + candidate.plan.family;

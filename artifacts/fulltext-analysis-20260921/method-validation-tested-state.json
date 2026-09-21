@@ -1,0 +1,31 @@
+{
+  "scope": "new paired diagnostic controls; original corpus analysis and generator unchanged",
+  "checks": [
+    {
+      "name": "method-validation-run-02.log with per-pair content invariants",
+      "exit_code": 0
+    },
+    {
+      "name": "method-validation-lint-final.log Ruff E9,F",
+      "exit_code": 0
+    },
+    {
+      "name": "Python py_compile",
+      "exit_code": 0
+    },
+    {
+      "name": "independent pair count, aggregate, reversal and HTTP byte-match checks",
+      "exit_code": 0
+    }
+  ],
+  "files": {
+    "scripts/validate-style-methods.py": "eb7e2eb21efb5ba183f734ac764945f2eee6ecdab16353f288831414eeda6578",
+    "docs/analysis-method-selection-20260921.md": "c43fcb10aa71f0e2834c6a96dadd8680f8df32f35df0a1412fbf8fd10a23a547",
+    "artifacts\\fulltext-analysis-20260921\\checkpoint.md": "7d7092b7d9fa2c13406709e7379e74a90125de4adfdcb219a1152ae6bb925516",
+    "artifacts\\fulltext-analysis-20260921\\method-validation.json": "9ee25f81ec09681418cfbf61fa093f018378587c015886d07f99d9ec093833ab",
+    "artifacts\\fulltext-analysis-20260921\\method-validation-pairs.csv": "2032c29554d06ce5963bbf7aea4972c4d3f84f5c7da4637f3807e826bf8cf2f2",
+    "artifacts\\fulltext-analysis-20260921\\method-validation.html": "925b6a8836bd2ef59ec67e6590fded78fe195eaf0907b3f9ec1b0031b088ab4e"
+  },
+  "human_quality_labels": false,
+  "human_ratings_submitted": false
+}

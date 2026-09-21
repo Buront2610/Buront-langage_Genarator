@@ -7,29 +7,29 @@ import { applicable, relationFor, sourceMapping, targetTerms } from './rhetoric'
 // Semantic roles in the first clause and the effect in the second are checked
 // independently. Expanding the compiler alone cannot expand accepted effects.
 const images: { pattern: RegExp; relation: RhetoricRelation }[] = [
-  { pattern: /^(.+)を差し出す側と、その陰を受け取る側の関係$/u, relation: 'assistance' },
-  { pattern: /^(.+)を外から試す圧力$/u, relation: 'exposure' },
-  { pattern: /^止まった道を通せるようにする(.+)$/u, relation: 'recovery' },
-  { pattern: /^(.+)の大きさと、道が通れるかを分けて考える場面$/u, relation: 'stoppage' },
-  { pattern: /^見えない先を(.+)で確かめる過程$/u, relation: 'verification' },
+  { pattern: /^(.+)を渡す側と守られる側の二人組$/u, relation: 'assistance' },
+  { pattern: /^(.+)に採点を付けに来る試験官$/u, relation: 'exposure' },
+  { pattern: /^通れない道に通行許可を出す(.+)$/u, relation: 'recovery' },
+  { pattern: /^(.+)だけ先に到着して道が置いてけぼりの状態$/u, relation: 'stoppage' },
+  { pattern: /^(.+)を持って分からなさに殴り込みをかける作業$/u, relation: 'verification' },
 ];
 const effects: { pattern: RegExp; relation: RhetoricRelation; operator: string }[] = [
-  { relation: 'assistance', operator: 'OP-01', pattern: /^差し出す側と受け取る側を交換したら、同じ道具でも別の話になる$/u },
-  { relation: 'assistance', operator: 'OP-02', pattern: /^道具の重さを量っても、誰から誰へ届くかは量れない$/u },
-  { relation: 'assistance', operator: 'OP-06', pattern: /^採点するのは道具の見栄えではなく、受け取る側に届く働きだ$/u },
-  { relation: 'exposure', operator: 'OP-01', pattern: /^圧力の話をしたはずが、受け止める側の構えまで試される$/u },
-  { relation: 'exposure', operator: 'OP-02', pattern: /^道具の重さを量っただけでは、寒さの強さを量ったことにならない$/u },
-  { relation: 'exposure', operator: 'OP-06', pattern: /^厚さを誇る側より、冷たさを通すか試す側に採点権がある$/u },
-  { relation: 'recovery', operator: 'OP-01', pattern: /^道を通せることと、速く走れることには別の採点欄が要る$/u },
-  { relation: 'recovery', operator: 'OP-02', pattern: /^力の大きさを量るだけでは、道が通れるかは決まらない$/u },
-  { relation: 'recovery', operator: 'OP-06', pattern: /^道具が立派かを道具に聞くな、道が通れるかに聞け$/u },
-  { relation: 'stoppage', operator: 'OP-01', pattern: /^力があるという説明だけで、通れない道を通ったことにはできない$/u },
-  { relation: 'stoppage', operator: 'OP-02', pattern: /^力の大きさと道の通りやすさを同じ目盛りにすると、停止が目盛りから消えてしまう$/u },
-  { relation: 'stoppage', operator: 'OP-06', pattern: /^力の自慢を採点する前に、通れるかを採点役に戻す必要がある$/u },
-  { relation: 'verification', operator: 'OP-01', pattern: /^見るための道具は、見終えたという証明書の代わりにはならない$/u },
-  { relation: 'verification', operator: 'OP-02', pattern: /^道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう$/u },
-  { relation: 'verification', operator: 'OP-06', pattern: /^道具の立派さより、分からなさが減るかに採点権がある$/u },
-  { relation: 'verification', operator: 'OP-07', pattern: /^確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる$/u },
+  { relation: 'assistance', operator: 'OP-01', pattern: /^渡す側と受け取る側を逆にしたら助けの方向まで逆走するんだが？道具が同じなら同じ話とかあもりにも大ざっぱすぐるでしょう$/u },
+  { relation: 'assistance', operator: 'OP-02', pattern: /^重さを量れば誰を助けたかまで分かるなら体重計が恩人を名乗り出すぞ$/u },
+  { relation: 'assistance', operator: 'OP-06', pattern: /^道具が自分で満点を付けても意味ないからな？守られる側に届いて初めて見事な仕事になる$/u },
+  { relation: 'exposure', operator: 'OP-01', pattern: /^受け止める構えまで試験範囲とか聞いてないんだが？寒さのくせに試験官の仕事まで取るとか汚い$/u },
+  { relation: 'exposure', operator: 'OP-02', pattern: /^重い装備なら寒さも軽くなると思ったか？重さを増やして温度に勝ったつもりとか単位が違いすぐるでしょう$/u },
+  { relation: 'exposure', operator: 'OP-06', pattern: /^厚さを自慢しても採点するのは冷たさだからな？防ぐ側が自分で合格を出したら試験官が深い悲しみに包まれる$/u },
+  { relation: 'recovery', operator: 'OP-01', pattern: /^道が通れるのと速く走れるのは別だべ？通行許可だけで一位を名乗ったら速さの方が置いてけぼりになる$/u },
+  { relation: 'recovery', operator: 'OP-02', pattern: /^力だけで通れる道が決まるなら力自慢が道路地図になるんだが？あもりにも地理をなめすぐでしょう$/u },
+  { relation: 'recovery', operator: 'OP-06', pattern: /^立派かどうかを道具に聞いたら自分で自分に満点を付けるに決まってるだろ？道が通れるかに聞くべきそうすべき$/u },
+  { relation: 'stoppage', operator: 'OP-01', pattern: /^力があるから通れると言い張っても道は空気を読まないからな？説明だけ先にゴールしても本体は置いてけぼりという有様$/u },
+  { relation: 'stoppage', operator: 'OP-02', pattern: /^力と通りやすさを同じ目盛りで量れば停止だけ消えるという計算になるが動いたのは目盛りだけなんだが？$/u },
+  { relation: 'stoppage', operator: 'OP-06', pattern: /^力の自慢に満点を付けても通れなければ採点表だけが走っている事になるな？まず道に聞くべきそうすべき$/u },
+  { relation: 'verification', operator: 'OP-01', pattern: /^見る道具を持っただけで見終わった事になるなら望遠鏡は全知全能なんだが？あもりにも道具に仕事させすぐでしょう$/u },
+  { relation: 'verification', operator: 'OP-02', pattern: /^道具を増やすだけで答えまで増えるなら調べる前に物知りになれるな？それは知識ではなく持ち物検査だろう$/u },
+  { relation: 'verification', operator: 'OP-06', pattern: /^道具の自慢より分からなさを減らすべきそうすべき？疑問だけ無傷で帰したら道具の面目が丸つぶれになる$/u },
+  { relation: 'verification', operator: 'OP-07', pattern: /^道具を磨く方が目的になったら疑問は放置で道具だけぴかぴかとか何のための確認だったんですかねえ？$/u },
 ];
 
 // Decode the source nominal independently of the generator's sourceSubject.
@@ -103,9 +103,9 @@ export function validateRhetoric(ir: DocumentIR, plan: QuotePlan): { valid: bool
   const clauses = core.split('。');
   if (clauses.length !== 3 || clauses[2]) return fail('比喩作用域に追加の主張がある');
   if (program.discourse === 'mapping_first') [mapping, criterion] = clauses;
-  else if (program.discourse === 'criterion_first' && clauses[1].startsWith('これは、') && clauses[1].endsWith('比喩だ')) { criterion = clauses[0]; mapping = clauses[1].slice(4, -3); }
+  else if (program.discourse === 'criterion_first' && clauses[1].startsWith('なぜなら')) { criterion = clauses[0]; mapping = clauses[1].slice(4); }
   else return fail('比較と結論の結合が不正');
-  const nominal = /^(.+)を、(.+)に見立てる$/u.exec(mapping);
+  const nominal = /^(.+)は、(.+)みたいなものなんだが$/u.exec(mapping);
   if (!nominal || !sourceNominalMatches(nominal[1], fact, program.relation)) return fail('修辞を逆解析した参照主体・対象・状態が原文へ戻らない');
   const image = images.find(image => image.relation === program.relation && image.pattern.test(nominal[2]));
   if (!image || image.pattern.exec(nominal[2])![1] !== program.target || !effects.some(effect => effect.relation === program.relation && effect.operator === program.operator && effect.pattern.test(criterion))) return fail('対象の関係または修辞の効果が許可された意味操作ではない');

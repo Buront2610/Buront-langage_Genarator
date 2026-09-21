@@ -10,7 +10,6 @@ const constructions = [
   { id: 'explanation', marker: 'という', pattern: /という/u },
   { id: 'digression', marker: 'なんだが', pattern: /なんだが/u },
   { id: 'inference', marker: 'つまり', pattern: /つまり/u },
-  { id: 'parenthetical', marker: '括弧による補足', pattern: /[（(][^）)\n]{1,12}[）)]/u },
   { id: 'question', marker: 'だろ', pattern: /だろ/u },
 ];
 export function compileSeriesProfiles(evidence: Evidence[], series: string[]): SeriesProfile[] {
@@ -35,23 +34,25 @@ export function compileSeriesProfiles(evidence: Evidence[], series: string[]): S
   });
 }
 export function frameRhetoric(core: string, constructionId: string) {
-  const body = core.replace(/。$/u, '');
+  const spoken = core.replace(/([？！])。/gu, '$1');
+  const body = spoken.replace(/。$/u, '');
   switch (constructionId) {
-    case 'be_question': return `たとえるなら、${body}という話だべ？`;
-    case 'explanation': return `たとえるなら、${body}という話。`;
-    case 'digression': return `たとえるなら、${body}という話なんだが、説明の順番まで重くする必要はない。`;
-    case 'inference': return `たとえるなら、つまり${core}`;
-    case 'parenthetical': return `たとえるなら、${core}（比喩）`;
-    case 'question': return `たとえるなら、${body}という話だろう。`;
-    case 'plain': return `たとえるなら、${core}`;
+    case 'be_question': return `${body}という話だべ？`;
+    case 'explanation': return `${body}という話。`;
+    case 'digression': return `${body}という話なんだが。`;
+    case 'inference': return `つまり${spoken}`;
+    case 'question': return `${body}という話だろう。`;
+    case 'plain': return spoken;
     default: throw new Error('UNKNOWN_CONSTRUCTION');
   }
 }
 export function selectSurface(profile: SeriesProfile | undefined, coreText: string, intensity: number, variant: number): SurfacePlan {
   // Equal consideration among the selected constructions. Duplicate spellings
   // and raw occurrence counts are never sampling weights.
-  const pool = profile?.constructions.slice(0, 3) ?? [];
-  const selected = intensity === 1 || profile?.id === 'all' ? undefined : pool[variant % Math.max(1, pool.length)];
+  // The core already has finite assertions and questions. Nominal ending frames
+  // cannot wrap it: that produces strings such as 「なんだが？という話」.
+  const pool = profile?.constructions.filter(item => item.id === 'inference') ?? [];
+  const selected = intensity === 1 ? undefined : pool[variant % Math.max(1, pool.length)];
   return { seriesId: profile?.id ?? 'all', profileHash: hash(profile ?? null), constructionId: selected?.id ?? 'plain', evidenceIds: selected?.evidenceIds ?? [], coreText };
 }
 export function selectDiscourse(profile: SeriesProfile | undefined, program: RhetoricProgram, intensity: number, variant: number): Pick<RhetoricProgram, 'discourse' | 'discourseEvidenceIds'> {

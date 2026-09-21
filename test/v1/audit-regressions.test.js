@@ -15,7 +15,7 @@ const { makePlans } = require('../../dist/packages/core/creation');
 const { verifyGeneratedResult } = require('../../dist/packages/runtime/semantic-verification');
 const { ruleQuality, select, outputFeatures, featureVersion } = require('../../dist/packages/core/evaluation');
 const { blindPairs } = require('../../dist/packages/evaluation/dataset');
-const request = (source, extra = {}) => ({ source, task: 'rewrite', contextMode: 'faithful', noveltyMode: 'invent', intensity: 2, series: 'all', backend: 'structured', clientRevision: 0, seed: 'audit-fixed', ...extra });
+const request = (source, extra = {}) => ({ source, task: 'rewrite', contextMode: 'faithful', noveltyMode: 'blend', intensity: 2, series: 'all', backend: 'structured', clientRevision: 0, seed: 'audit-fixed', ...extra });
 let python, assets;
 const cache = new Map();
 const analyze = async text => { if (!cache.has(text)) cache.set(text, await python.analyze(text)); return cache.get(text); };
@@ -30,37 +30,29 @@ test('A8 known temporal mismatch survives an unrelated unknown completion', asyn
   assert.equal(verification(checks), 'rejected');
 });
 
-test('A2 compiler assertion cannot approve itself by updating core and allowed text', async () => {
-  const result = await run('田中が佐藤を助けた。');
-  assert.ok(result.candidates.length);
-  for (const core of ['実際には佐藤が田中を助けた。', '佐藤は承認を終えた。', '田中が佐藤を助けなかった。']) {
-    const plan = structuredClone(result.candidates[0].plan);
-    plan.surface.coreText = core;
-    plan.nodes.find(node => node.id === 'main-quote').text = frameRhetoric(core, plan.surface.constructionId);
-    const draft = realize(plan, result.ir);
-    const checks = validateCandidate(result.ir, plan, draft.text, draft.spans, new Set(assets.evidence.map(row => row.id)), new Set(plan.nodes.filter(node => node.type === 'RhetoricalClause').map(node => node.text)), new Map(assets.evidence.map(row => [row.id, row.text])), assets.seriesProfiles);
-    assert.equal(checks.find(check => check.code === 'V-rhetoric').status, 'fail', core);
+test('A2 changing declared body output cannot approve itself', async () => {
+  const result=await run('田中が佐藤を助けた。');assert.ok(result.candidates.length);
+  for(const text of ['佐藤が田中を助けた。','佐藤は承認を終えた。','田中が佐藤を助けなかった。']) {
+    const plan=structuredClone(result.candidates[0].plan);plan.nodes[0].text=text;
+    const draft=realize(plan,result.ir),checks=validateCandidate(result.ir,plan,draft.text,draft.spans,new Set(assets.evidence.map(e=>e.id)),undefined,new Map(assets.evidence.map(e=>[e.id,e.text])),assets.seriesProfiles);
+    assert.equal(checks.find(c=>c.code==='V-rewrite').status,'fail');assert.equal(ruleQuality(result.ir,plan).C,0);
   }
 });
 
-test('A1 changing source participants changes the recoverable metaphor relation', async () => {
+test('A1 changing source participants changes the rewritten body', async () => {
   const left = await run('田中が佐藤を助けた。'), right = await run('佐藤が田中を助けた。');
   assert.ok(left.candidates.length && right.candidates.length);
   assert.ok(left.candidates.every(a => right.candidates.every(b => rhetoricalCore(a) !== rhetoricalCore(b))));
-  assert.ok(left.candidates.every(candidate => candidate.plan.rhetoric?.relation === 'assistance'));
+  assert.ok(left.candidates.every(candidate => candidate.text.includes('田中が佐藤を助けた')));
 });
 
-test('A3 supported dictionary edit reaches selected candidates; unknown stays reviewable; assertion is rejected', async () => {
-  const withRule = to => run('今日は寒い。', { customRules: [{ id: 'cold', from: '寒さ', to, priority: 0 }] });
-  const safe = await withRule('冷え込み');
-  assert.ok(safe.candidates.length > 0);
-  assert.ok(safe.candidates.every(candidate => candidate.text.includes('冷え込み') && !candidate.text.includes('寒さ')));
-  const unknown = await withRule('冷気');
-  assert.equal(unknown.candidates.length, 0); assert.ok(unknown.reviewCandidates.length > 0);
-  assert.equal(unknown.shortfallReason, 'dictionary_needs_review');
-  const dangerous = await withRule('実際には佐藤が田中を助けた。');
-  assert.equal(dangerous.candidates.length, 0); assert.equal(dangerous.reviewCandidates.length, 0);
-  assert.equal(dangerous.shortfallReason, 'dictionary_rejected');
+test('A3 free dictionaries do not bypass the bounded body proof', async () => {
+  for(const to of ['冷え込み','冷気','実際には佐藤が田中を助けた。']) {
+    const result=await run('今日は寒い。',{customRules:[{id:'cold',from:'寒さ',to,priority:0}]});
+    assert.equal(result.candidates.length,0);assert.ok(result.reviewCandidates.length);
+    assert.equal(result.shortfallReason,'dictionary_needs_review');
+    for(const c of result.reviewCandidates){assert.ok(!c.text.includes(to));assert.equal(c.checks.find(x=>x.code==='V-dictionary').status,'unknown')}
+  }
 });
 
 test('A5 features depend exclusively on actual output and ignore declared operator/input syntax', () => {
@@ -81,20 +73,24 @@ test('A7 mixed sentence has separate event units without severing conditions or 
 test('A1 operator applicability and source state affect generation, not just metadata', async () => {
   const past = await run('田中が佐藤を助けた。'), negative = await run('田中が佐藤を助けなかった。');
   assert.ok(negative.candidates.length);
-  assert.ok(negative.candidates.every(c => rhetoricalCore(c).includes('届かなかった助力')));
-  assert.ok(past.candidates.every(c => rhetoricalCore(c).includes('届いた助力')));
+  assert.ok(negative.candidates.every(c => c.text.includes('助けなかった')));
+  assert.ok(past.candidates.every(c => c.text.includes('助けた')));
   assert.ok(past.candidates.every(c => c.plan.mainOperator !== 'OP-07'));
   const futureIR = await irFor('私は明日確認する。');
   assert.ok(makePlans(futureIR, request(futureIR.source.raw), assets).some(plan => plan.mainOperator === 'OP-07'));
-  for (const source of ['今日は寒くない。', '猫', '田中が佐藤を助けたと鈴木が言った。']) {
-    const result = await run(source);
-    assert.equal(result.candidates.length, 0, source); assert.equal(result.fallback.text, source);
+  const topic = await run('猫');
+  assert.equal(topic.candidates.length, 0); assert.equal(topic.fallback.text, '猫');
+  const reported = await run('田中が佐藤を助けたと鈴木が言った。');
+  assert.ok(reported.candidates.length);
+  for (const candidate of reported.candidates) {
+    assert.equal(candidate.text, '田中が佐藤を助けたと鈴木が言った');
+    assert.ok(candidate.plan.rewrite.edits.every(edit => edit.ruleId.startsWith('punctuation-')));
   }
 });
 
-test('A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations', async () => {
-  const result = await run('田中が佐藤を助けた。');
-  const base = result.candidates[0].plan;
+test('Legacy A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations', async () => {
+  const ir=await irFor('田中が佐藤を助けた。'); const result={ir};
+  const base=makePlans(ir,request(ir.source.raw),assets)[0];
   for (const mutate of [
     plan => { plan.rhetoric.participants.reverse(); },
     plan => { plan.rhetoric.polarity = 'negative'; },
@@ -112,21 +108,21 @@ test('A2/A4 inverse grammar rejects role, state, domain and disconnected conclus
 });
 
 test('A1/A2 past ongoing actions never become present ongoing or completed rhetoric', async () => {
-  for (const [source, expected] of [['田中が佐藤を助けていた。', '届いていた助力'], ['担当者が状況を確認していました。', '過去に進行していた確認'], ['担当者が状況を調べた。', '過去の調査']]) {
+  for (const [source, expected] of [['田中が佐藤を助けていた。', /助けていた/u], ['担当者が状況を確認していました。', /確認して(?:いました|いた)/u], ['担当者が状況を調べた。', /調べた/u]]) {
     const result = await run(source); assert.ok(result.candidates.length, source);
-    assert.ok(result.candidates.every(candidate => candidate.plan.surface.coreText.includes(expected)), source);
+    for (const candidate of result.candidates) assert.match(candidate.text, expected, source);
   }
 });
 
 test('A4 selection respects Pareto preference axes and rejects low-quality novel candidates', async () => {
-  const result = await run('今日は寒い。'), base = result.candidates;
+  const result = await run('私は処理の速度をアピールした。'), base = result.candidates;
   assert.equal(base.length, 3);
   const candidates = base.map((c, i) => ({ ...structuredClone(c), id: String(i), scores: { ...c.scores, S: [100, 2, 1][i], Q: [0, 2, 1][i] } }));
-  const selected = select(candidates, 'invent');
+  const selected = select(candidates, 'blend');
   assert.ok(selected.findIndex(c => c.id === '1') < selected.findIndex(c => c.id === '2'));
   assert.ok(selected.findIndex(c => c.id === '0') < selected.findIndex(c => c.id === '2'));
   candidates[0].scores.R = 0;
-  assert.ok(!select(candidates, 'invent').some(c => c.id === '0'));
+  assert.ok(!select(candidates, 'blend').some(c => c.id === '0'));
 });
 
 test('A5 blind pairs recompute a dense common feature schema regardless of supplied method features', () => {
@@ -165,18 +161,19 @@ test('A6 discourse selection changes clause order only with eligible corpus evid
     assert.ok(reversed.length > 0, profile.id);
     for (const plan of reversed) {
       assert.ok(['OP-02', 'OP-06'].includes(plan.mainOperator));
-      assert.ok(plan.surface.coreText.includes('。これは、'));
+      assert.ok(plan.surface.coreText.includes('。なぜなら'));
       assert.ok(plan.rhetoric.discourseEvidenceIds.every(id => assets.evidence.find(row => row.id === id).series.includes(profile.id)));
       assert.equal(ruleQuality(ir, plan).C, 1);
     }
   }
 });
 
-test('A7 closing an independent copular clause is reparsed without loss of events', async () => {
+test('A7 body rewriting keeps linked clauses and every original event', async () => {
   const source = '田中がAを復旧した。Bは停止中で、私は明日確認する。', analysis = await analyze(source);
   const result = await verifyGeneratedResult(generate(request(source, { contextMode: 'full' }), analysis, assets), python, analysis);
-  assert.ok(result.candidates.some(candidate => candidate.text.includes('Bは停止中だ。')));
+  assert.ok(result.candidates.length);
   for (const candidate of result.candidates) {
+    assert.match(candidate.text, /Bは停止中で、?(?:私|俺)は明日確認する/u);
     const nodes = candidate.plan.nodes.filter(node => node.type === 'FactClause');
     assert.equal(nodes.length, 3);
     assert.equal(new Set(nodes.flatMap(node => node.factIds)).size, 3);

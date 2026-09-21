@@ -1,0 +1,226 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>原文全文解析</title><style>body{font:16px/1.8 "Yu Gothic",sans-serif;max-width:1180px;margin:36px auto;padding:0 24px;color:#202b38;background:#fafbfc}h1,h2{line-height:1.4}h2{margin-top:48px}img{width:100%;background:white}table{border-collapse:collapse;font-size:13px;display:block;overflow:auto}td,th{padding:8px 12px;border-bottom:1px solid #ccd3dc;text-align:right;white-space:nowrap}td:first-child{text-align:left}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef1f5;padding:16px;font:13px/1.7 monospace}details{margin:12px 0}summary{cursor:pointer}code{overflow-wrap:anywhere}</style><h1>原文全文・句読点・文体解析</h1><p>原文を全件集計し、原文だけで作った特徴空間に入力・生成文を投影。本人認定・自然さの合格判定ではありません。</p><p><strong>結論：語句の置換では、原文の改行と文のつながりを再現できていません。</strong>原文の82.6%には「。」「、」がない一方、保存済み生成75件は全件が句点で終わります。入力と生成で句読点・改行の並びが75/75件そのままでした。</p><p>「んだが」の直後が「。」になる文字列は原文199例中2例、生成25例中25例。原文の多くは、ここで次の節や次の行に続いています。終助詞風に置換して句点を残す処理に、具体的なずれがあります。</p><p>元ログSHA-256: <code>983ba86ddf086d7bc842d91c66a4bc1bab940c126682b436538d5df7a68df752</code></p><h2>対象と検証範囲</h2><pre>{
+  &quot;line_segments&quot;: 16311,
+  &quot;physical_lines&quot;: 16310,
+  &quot;categories&quot;: {
+    &quot;section_title&quot;: 137,
+    &quot;blank&quot;: 4474,
+    &quot;post_header&quot;: 2407,
+    &quot;body&quot;: 8282,
+    &quot;anchor&quot;: 892,
+    &quot;quoted_line&quot;: 114,
+    &quot;embedded_quote_header&quot;: 4,
+    &quot;editorial_note&quot;: 1
+  },
+  &quot;posts&quot;: 2407,
+  &quot;exact_unique_posts&quot;: 2363,
+  &quot;flagged_source_posts&quot;: 7
+}</pre><p>投稿ヘッダ2,407件のうち、空の投稿と返信番号のみの投稿を除いた2,405件を解析。完全重複をまとめた2,363件から特徴空間を作りました。全体は複数話者の収録で真作ラベルは未検証。初期投稿、模倣、引用を含みます。引用ヘッダは5702・11033・12238・15647行を確認して分離。「天晶暦968」の2投稿は西暦不明として保存しています。</p><h2>句読点と改行</h2><img src="punctuation.png" alt="句読点・改行・末尾句点の比較"><p>生成文の句読点・改行の並びが入力と同じ: 75/75。文字が増えて100文字あたりの句点が減っても、構成が改善したことにはなりません。</p><table><tr><th>集計層</th><th>投稿数</th><th>文字数中央値</th><th>句点/100字</th><th>読点/100字</th><th>改行/100字</th><th>句読点なし投稿%</th><th>末尾句点%</th></tr><tr><td>all_raw_posts</td><td>2405</td><td>49.0</td><td>0.24</td><td>0.36</td><td>3.00</td><td>82.6</td><td>2.7</td></tr><tr><td>unique_raw_posts</td><td>2363</td><td>50.0</td><td>0.24</td><td>0.37</td><td>2.95</td><td>82.4</td><td>2.8</td></tr><tr><td>narration_only</td><td>2401</td><td>49.0</td><td>0.23</td><td>0.34</td><td>3.08</td><td>83.1</td><td>2.7</td></tr><tr><td>archived_posts</td><td>2452</td><td>51.0</td><td>0.22</td><td>0.34</td><td>3.30</td><td>83.4</td><td>2.6</td></tr><tr><td>inputs</td><td>37</td><td>11.0</td><td>8.08</td><td>0.44</td><td>0.00</td><td>2.7</td><td>97.3</td></tr><tr><td>generated</td><td>75</td><td>13.0</td><td>6.88</td><td>0.53</td><td>0.00</td><td>0.0</td><td>100.0</td></tr><tr><td>year_2001</td><td>2</td><td>11.0</td><td>0.00</td><td>0.00</td><td>0.00</td><td>100.0</td><td>0.0</td></tr><tr><td>year_2002</td><td>916</td><td>23.0</td><td>0.04</td><td>0.11</td><td>4.42</td><td>96.7</td><td>0.2</td></tr><tr><td>year_2003</td><td>675</td><td>65.0</td><td>0.08</td><td>0.34</td><td>3.83</td><td>84.3</td><td>0.6</td></tr><tr><td>year_2004</td><td>148</td><td>107.0</td><td>0.08</td><td>0.28</td><td>2.67</td><td>80.4</td><td>0.7</td></tr><tr><td>year_2005</td><td>411</td><td>122.0</td><td>0.42</td><td>0.63</td><td>2.30</td><td>56.4</td><td>7.8</td></tr><tr><td>year_2006</td><td>125</td><td>133.0</td><td>0.21</td><td>0.07</td><td>2.48</td><td>73.6</td><td>15.2</td></tr><tr><td>year_2007</td><td>46</td><td>80.5</td><td>0.69</td><td>0.30</td><td>1.99</td><td>60.9</td><td>10.9</td></tr><tr><td>year_2008</td><td>47</td><td>122.0</td><td>0.31</td><td>0.24</td><td>2.17</td><td>61.7</td><td>6.4</td></tr><tr><td>year_2009</td><td>30</td><td>18.5</td><td>0.12</td><td>0.04</td><td>2.20</td><td>93.3</td><td>0.0</td></tr><tr><td>year_2010</td><td>3</td><td>266.0</td><td>0.00</td><td>0.09</td><td>3.00</td><td>66.7</td><td>0.0</td></tr><tr><td>year_non_gregorian</td><td>2</td><td>335.5</td><td>0.45</td><td>0.89</td><td>1.79</td><td>0.0</td><td>0.0</td></tr><tr><td>chars_1_39</td><td>1019</td><td>21.0</td><td>0.06</td><td>0.18</td><td>3.44</td><td>95.6</td><td>0.8</td></tr><tr><td>chars_40_99</td><td>723</td><td>63.0</td><td>0.13</td><td>0.24</td><td>3.47</td><td>84.0</td><td>2.2</td></tr><tr><td>chars_100_249</td><td>504</td><td>140.0</td><td>0.23</td><td>0.35</td><td>3.22</td><td>66.1</td><td>4.6</td></tr><tr><td>chars_250_99999</td><td>159</td><td>341.0</td><td>0.39</td><td>0.54</td><td>2.21</td><td>45.9</td><td>11.9</td></tr><tr><td>without_flagged_sections</td><td>2398</td><td>49.0</td><td>0.23</td><td>0.37</td><td>3.01</td><td>82.7</td><td>2.7</td></tr><tr><td>reference_lines_12990_13006</td><td>2</td><td>379.0</td><td>0.00</td><td>0.13</td><td>1.45</td><td>50.0</td><td>0.0</td></tr><tr><td>reference_lines_13773_13799</td><td>2</td><td>175.0</td><td>0.00</td><td>0.00</td><td>2.86</td><td>100.0</td><td>0.0</td></tr><tr><td>reference_lines_15000_15021</td><td>2</td><td>682.5</td><td>1.03</td><td>1.03</td><td>1.17</td><td>0.0</td><td>100.0</td></tr></table><h2>PCAとクラスタリング</h2><img src="pca.png" alt="原文の主成分座標と生成文の投影"><img src="diagnostics.png" alt="クラスタ分離とPCA負荷量"><p>最初の2軸が説明する分散は23.9%。PC1と文字数の順位相関は0.913で、長さの影響が強い図です。5クラスタのシルエット平均は0.123と分離が弱く、「本物度の5段階」にはできません。初期値を変えた一致度は高いものの、長さ4特徴を外すとARIは0.324まで変わります。</p><h3>長さ4特徴を除いた再解析</h3><img src="pca-without-length.png" alt="長さの直接特徴を除いたPCA"><p>文字数・行数・平均行長・最大行長を除いた29特徴でも再計算しました。比率特徴にはなお長さの影響が残るため、長さの完全な補正ではありません。</p><p>33個の構造・表記・機能表現の特徴。原文の99パーセンタイルで上側をクリップし標準化。PCAは元の全特徴で実行、クラスタは2次元図ではなく全標準化特徴で推定。K=2〜8、乱数3種、各10初期値。語彙TF-IDFには別途TruncatedSVD（PCAとは別）を使用。</p><pre>{
+  &quot;selected_k&quot;: 5,
+  &quot;trials&quot;: [
+    {
+      &quot;k&quot;: 2,
+      &quot;silhouette_mean&quot;: 0.10883621364748064,
+      &quot;silhouette_seeds&quot;: [
+        0.10876946618798618,
+        0.10876946618798618,
+        0.10896970856646956
+      ],
+      &quot;stability_ari&quot;: 0.9966173394475591
+    },
+    {
+      &quot;k&quot;: 3,
+      &quot;silhouette_mean&quot;: 0.10976828403513235,
+      &quot;silhouette_seeds&quot;: [
+        0.10981817707122334,
+        0.11127279079391021,
+        0.1082138842402635
+      ],
+      &quot;stability_ari&quot;: 0.9333554117395364
+    },
+    {
+      &quot;k&quot;: 4,
+      &quot;silhouette_mean&quot;: 0.11301955740722502,
+      &quot;silhouette_seeds&quot;: [
+        0.11378262494380678,
+        0.11263802363893415,
+        0.11263802363893415
+      ],
+      &quot;stability_ari&quot;: 0.9729528303228289
+    },
+    {
+      &quot;k&quot;: 5,
+      &quot;silhouette_mean&quot;: 0.1233294321262541,
+      &quot;silhouette_seeds&quot;: [
+        0.12333676900045587,
+        0.1233257636891532,
+        0.1233257636891532
+      ],
+      &quot;stability_ari&quot;: 0.9943015234727336
+    },
+    {
+      &quot;k&quot;: 6,
+      &quot;silhouette_mean&quot;: 0.10875766949912465,
+      &quot;silhouette_seeds&quot;: [
+        0.11898005809159828,
+        0.10364647520288785,
+        0.10364647520288785
+      ],
+      &quot;stability_ari&quot;: 0.6736504966431683
+    },
+    {
+      &quot;k&quot;: 7,
+      &quot;silhouette_mean&quot;: 0.09462760427298784,
+      &quot;silhouette_seeds&quot;: [
+        0.09070407301323925,
+        0.10060672700369414,
+        0.09257201280203017
+      ],
+      &quot;stability_ari&quot;: 0.5230457490884841
+    },
+    {
+      &quot;k&quot;: 8,
+      &quot;silhouette_mean&quot;: 0.10649999876693166,
+      &quot;silhouette_seeds&quot;: [
+        0.08784647045279419,
+        0.10935467857829742,
+        0.12229884726970337
+      ],
+      &quot;stability_ari&quot;: 0.5303534674430951
+    }
+  ],
+  &quot;no_explicit_length_ari&quot;: 0.3241847022324764,
+  &quot;no_clipping_ari&quot;: 0.8938291521578832
+}</pre><h3>クラスタ 0：240件 — 短い疑問・「べ？」型</h3><p>question_100: +2.38, be_100: +2.23, no_stop_line_ratio: -2.01, log_lines: -0.99, log_chars: -0.89, log_max_line: -0.62, katakana_ratio: +0.58, newline_100: -0.47</p><details><summary>raw-L00960 / 2002 / 【君が望む】スパロボインパクト152【ﾌｫﾙﾂｧ!】 / 原文961–963行</summary><pre>まだ言ってるのかよ
+タイマンの不良の意味を知らないべ？</pre></details><details><summary>raw-L00665 / 2002 / 【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】 / 原文666–667行</summary><pre>ロトさん強すぎだよな
+これでゼータツー乗ったら最強だべ？</pre></details><details><summary>raw-L01973 / 2002 / 【タカラ】スパロボインパクト166【暴走】 / 原文1974–1974行</summary><pre>ダークってのは黒くて悪って意味だべな？</pre></details><h3>クラスタ 1：1037件 — 比較的長い説明・叙述</h3><p>log_chars: +0.77, log_max_line: +0.72, log_mean_line: +0.66, log_lines: +0.62, be_100: -0.34, quotative_100: +0.31, parenthesis_100: +0.27, second_person_100: -0.26</p><details><summary>raw-L09795 / 2004 / 【弱体】ま　た　ナ　イ　ト　か【必須】 / 原文9796–9800行</summary><pre>調子こき過ぎリアルで痛い目を見たくないならそれ以上は言わない方が吉
+俺はブロントじゃないしブロントはそんなふざけたナイトじゃない
+誇りを持ってナイトしてるナイトは全員高いＰｽｷﾙを所持している
+これはどんなＬＳに入っていても手に入らない神様の贈り物だから一般人は諦めたほうがいいだろう</pre></details><details><summary>raw-L09916 / 2004 / 【廃人の証】ナイトメアソードは最強【ナイトの宝】 / 原文9917–9921行</summary><pre>ナイトメアソードは強い
+ここで微妙だのいってる奴等は欲しいのにLSがしょぼくて取れないだけの雑魚
+本当は羨ましいのに人の武器をけなして価値を下げ様としてるのは
+一人のナイトとして許せない行為
+一般人には手に入らない武器だから正直に羨ましいと言えば見せてやっても良い</pre></details><details><summary>raw-L09673 / 2003 / 【フレ♀】５００万の破壊スキル【沈黙】 / 原文9674–9677行</summary><pre>揚げ足取るバカがいきなり現れたな
+おれは自分の名前を１度も言ったことはないからそうこにはならない
+フレ♀はリアル♀ダと本人から聞いたんだから間違いないと言っている
+利用しようとしてるならわざわざ土のクリスタルや羊の皮は送ってこない</pre></details><h3>クラスタ 2：940件 — 句点を使わない短い応答</h3><p>log_chars: -0.75, log_max_line: -0.74, log_mean_line: -0.73, log_lines: -0.55, no_stop_line_ratio: +0.45, question_100: -0.36, no_jp_punct_line_ratio: +0.35, second_person_100: +0.30</p><details><summary>raw-L02116 / 2002 / 【タカラ】スパロボインパクト166【暴走】 / 原文2117–2118行</summary><pre>風って英語でなんていうか教えろ
+パンチの技が作れない</pre></details><details><summary>raw-L00586 / 2002 / 【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】 / 原文587–588行</summary><pre>ロトさん叩いてる奴は自作自演だろ
+ばれてるんだよ馬鹿</pre></details><details><summary>raw-L00572 / 2002 / 【Ｆ91】スパロボｲﾝﾊﾟｸﾄ146【廃棄処分】 / 原文573–574行</summary><pre>おまえらロトさん馬鹿にしてると死ぬぞ
+ロトさんは喧嘩が最強に強いからよ</pre></details><h3>クラスタ 3：114件 — 句点・読点を多く使う文章</h3><p>terminal_period_ratio: +3.96, periods_100: +3.93, no_jp_punct_line_ratio: -2.88, no_stop_line_ratio: -1.59, log_max_line: +0.95, log_mean_line: +0.93, log_chars: +0.92, commas_100: +0.90</p><details><summary>raw-L10984 / 2004 / 【もう】侍【無理】 / 原文10985–10987行</summary><pre>あー、それとヤメルヤメル言うやつは勝手にやめれば良いよ
+誰も残ってくれなんて言ってないから。各ジョブやるのは本当にそのジョブが好きな奴だけで良い。
+強化云々でやめる止めない言う奴はさっさと止めてくれた方が鯖も軽くなってくれるし楽</pre></details><details><summary>raw-L10751 / 2005 / 【ぜいいん】08:Valefor鯖総合スレ Vol.18【じょうずく】 / 原文10753–10756行</summary><pre>あの判断力の高さはＰスキルの塊だと思ったぞ。
+でも正義感が強いから妬みとか嫉妬とかの対象になりやすいからかわいそうだよな
+普通の奴だったら多分素材狩りの人が死ぬの見てるだけだろうな。
+それにチョコボから降りて助けてくれたしな。ここで死体の近く掘ったとか言うだけで騒いでる奴はただのバカにしか見えないな</pre></details><details><summary>raw-L11469 / 2005 / 【残心】LV4 SAM【斬新】 / 原文11470–11474行</summary><pre>最初から真面目な話をしてるんだが？お前は空気をよめないのか？
+ここにオモシロ半分で書きこんでる奴はリアルでも相手にされないくらい空気読めないんだろうな。
+ここにいるのはﾈｶﾞｷｬﾝで侍強化を狙うｶｽと正しい意見を言う常識人だけ。
+お前みたいな空気読めないやつがまだいた事に驚いたからお前がもうくんなよ。。
+それとも侍の言い分、俺への文句が俺によって破壊されたから俺を追い出そうとしての粘着かな、読まれてるからへたな策はしないほうがいい</pre></details><h3>クラスタ 4：32件 — 数値・空白の多い性能表など</h3><p>space_100: +8.09, digit_ratio: +4.06, hiragana_ratio: -3.00, newline_100: +1.56, latin_ratio: +1.55, log_lines: +1.29, katakana_ratio: +0.86, log_mean_line: -0.54</p><details><summary>raw-L01494 / 2002 / 【ﾘｱ厨】スパロボＩＭＰＡＣＴ157【お断り】 / 原文1495–1508行</summary><pre>ロト（生身）
+HP：８０００　EN：５００
+装甲：１０００　運動性：３５０　限　界 ：１０００
+移動力：　１０　サイズ ： S　地形適応：陸/S 水中/S 空/S 宇宙/S
+
+パンチ[P]　　1000　　１～３
+キック[P]　　1100 １～４
+サンダーキック[P]　1500 １～５
+ダークアタック[P]　1800 １
+ロトの剣[P]　2500 １～２
+回転ソード斬りアタック 3200 １～８
+ギガトンパンチ[P]　4000 １～２
+メガトンパンチ[P]　5000 １～３
+ギガスラッシュ 6500 １～１０</pre></details><details><summary>raw-L04652 / 2002 / 【センチ】ナイト総合スレッド３【ネンタル】 / 原文4653–4658行</summary><pre>王者の剣
+Ｄ120 隔200 Lv30～ ナ
+スーパーソード
+Ｄ170 隔250 Lv40～ ナ
+ロトの剣
+Ｄ250 隔280 Lv50～ ナ</pre></details><details><summary>raw-L02508 / 2002 / 【ﾌﾟﾙ&amp;ﾌﾟﾙﾂｰに】ｽﾊﾟﾛﾎﾞｲﾝﾊﾟｸﾄ173【ｶｯﾄｲﾝを！】 / 原文2509–2515行</summary><pre>ゼータ２（ロト）
+修理費 １００００００
+ＨＰ　　９００００/９００００　　　サイズ Ｍ
+ＥＮ　　１０００/１０００　　　　　移動力 １２
+運動性　６５０　　　　　　　　　　　　　　
+装甲　　３５００　　　　移動 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ
+限界　　２０００　　　　地形 空Ｓ 陸Ｓ 海Ｓ 宇Ｓ 地Ｓ</pre></details><h2>コサイン比較</h2><p>文字2〜4-gram TF-IDF、最大12,000特徴、min_df=2。raw、文字種マスク、句読点・空白除去の3空間。生成できた入力ごとに候補を平均してから比較。区間は32入力の記述的ブートストラップで、未知入力への性能保証ではありません。</p><pre>{
+  &quot;lexical&quot;: {
+    &quot;generated_inputs&quot;: 32,
+    &quot;input_mean&quot;: 0.0347357278395575,
+    &quot;generated_mean&quot;: 0.06915473564322934,
+    &quot;paired_delta&quot;: 0.03441900780367184,
+    &quot;descriptive_bootstrap_95&quot;: [
+      0.02828343959633642,
+      0.04067529181192877
+    ]
+  },
+  &quot;script_masked&quot;: {
+    &quot;generated_inputs&quot;: 32,
+    &quot;input_mean&quot;: 0.3701098182414926,
+    &quot;generated_mean&quot;: 0.47348565185912606,
+    &quot;paired_delta&quot;: 0.10337583361763346,
+    &quot;descriptive_bootstrap_95&quot;: [
+      0.07961297817207441,
+      0.12880605062221673
+    ]
+  },
+  &quot;without_punctuation&quot;: {
+    &quot;generated_inputs&quot;: 32,
+    &quot;input_mean&quot;: 0.040939771516536376,
+    &quot;generated_mean&quot;: 0.07356099751871653,
+    &quot;paired_delta&quot;: 0.032621226002180155,
+    &quot;descriptive_bootstrap_95&quot;: [
+      0.02573204774307265,
+      0.04001433586646858
+    ]
+  }
+}</pre><p>元の入力から生成文への平均コサインは上がりました。しかし、句読点を除いた空間でも上がるため、句読点が改善した証拠にはなりません。語彙空間の群と文体特徴の群の一致度はARI 0.184。語彙ではロト・侍・グラットンなどの話題が強く分かれます。この結果と、以前の別コーパス・別特徴数の点数は直接比較できません。</p><h2>特定文字列の後ろに何が来るか</h2><p>形態素による語尾認定ではなく文字列の全出現です。「からな」には「わからない」なども含まれるため、語尾の使用率とは解釈しません。</p><pre>[
+  {
+    &quot;expression&quot;: &quot;んだが&quot;,
+    &quot;group&quot;: &quot;original&quot;,
+    &quot;counts&quot;: {
+      &quot;comma&quot;: 6,
+      &quot;question_exclaim&quot;: 31,
+      &quot;continuation&quot;: 113,
+      &quot;end_of_post&quot;: 6,
+      &quot;newline&quot;: 41,
+      &quot;period&quot;: 2
+    },
+    &quot;scope&quot;: &quot;literal substring, not a morphological ending label; からな includes わからない&quot;
+  },
+  {
+    &quot;expression&quot;: &quot;んだが&quot;,
+    &quot;group&quot;: &quot;generated&quot;,
+    &quot;counts&quot;: {
+      &quot;period&quot;: 25
+    },
+    &quot;scope&quot;: &quot;literal substring, not a morphological ending label; からな includes わからない&quot;
+  },
+  {
+    &quot;expression&quot;: &quot;からな&quot;,
+    &quot;group&quot;: &quot;original&quot;,
+    &quot;counts&quot;: {
+      &quot;end_of_post&quot;: 31,
+      &quot;continuation&quot;: 102,
+      &quot;newline&quot;: 51,
+      &quot;comma&quot;: 7,
+      &quot;period&quot;: 3
+    },
+    &quot;scope&quot;: &quot;literal substring, not a morphological ending label; からな includes わからない&quot;
+  },
+  {
+    &quot;expression&quot;: &quot;からな&quot;,
+    &quot;group&quot;: &quot;generated&quot;,
+    &quot;counts&quot;: {
+      &quot;period&quot;: 30
+    },
+    &quot;scope&quot;: &quot;literal substring, not a morphological ending label; からな includes わからない&quot;
+  },
+  {
+    &quot;expression&quot;: &quot;ここ大事&quot;,
+    &quot;group&quot;: &quot;original&quot;,
+    &quot;counts&quot;: {},
+    &quot;scope&quot;: &quot;literal substring, not a morphological ending label; からな includes わからない&quot;
+  },
+  {
+    &quot;expression&quot;: &quot;ここ大事&quot;,
+    &quot;group&quot;: &quot;generated&quot;,
+    &quot;counts&quot;: {},
+    &quot;scope&quot;: &quot;literal substring, not a morphological ending label; からな includes わからない&quot;
+  }
+]</pre><h2>方法と限界</h2><ul><li>全行をline-ledger.csvに分類し、本文と見出しを分離。返信番号だけの行は投稿ベクトルから除外。</li><li>完全重複を除いて空間を学習。近似重複は検出して一覧化し、未除去の依存性として扱う。</li><li>「」『』と引用行を外した句読点集計もJSONに保存。括弧は自己注釈を含むため保持。これは構文解析による話者分離ではない。</li><li>コサインは話題・長さ・頻出句でも上がる。マスク後の近さも意味保持・自然さ・本人らしさを保証しない。</li><li>PCAの2軸外にも差は残る。クラスタ番号は作者や本物度ではない。</li><li>生成例は以前の37入力・75出力の固定標本。全文一般の生成能力を代表する無作為標本ではない。人間評価は未実施。</li><li>句点の一律削除は検証していない。本文の意味区切り、引用、疑問、数値、URLを保持した構成変更が必要。</li></ul><h2>再現・全件データ</h2><p><a href="report.json">統計JSON</a> / <a href="post-features.csv">全投稿特徴</a> / <a href="line-ledger.csv">全行台帳</a> / <a href="nearest-neighbors.csv">生成・入力の近傍と原文</a> / <a href="pca-loadings.csv">PCA負荷量</a> / <a href="length-matched-comparison.json">長さを合わせた比較</a></p></html>

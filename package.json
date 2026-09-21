@@ -26,7 +26,8 @@
     "replay": "node dist/scripts/v1/replay.js",
     "assets": "node dist/scripts/v1/assets-command.js",
     "train:preferences": ".venv/Scripts/python.exe services/japanese-analysis/train_preferences.py",
-    "evaluate:audit": "node scripts/evaluate-audit-fixes.cjs"
+    "evaluate:audit": "node scripts/evaluate-audit-fixes.cjs",
+    "evaluate:style": "node dist/scripts/v1/audit-style.js"
   },
   "engines": {
     "node": ">=24 <25"

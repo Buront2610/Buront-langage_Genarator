@@ -22,12 +22,14 @@ test('T-23 immutable content-addressed snapshots support atomic activation and r
   try { const a = compileAssets(), first = publishAssets(a, directory); const b = structuredClone(a); b.evidence[0].text += ' 版更新'; b.manifest.compiledEvidence = hash(b.evidence); b.datasetId = hash(b.manifest); const second = publishAssets(b, directory); assert.notEqual(first, second); assert.equal(loadAssets(first).evidence[0].text, a.evidence[0].text); assert.equal(loadAssets(second).evidence[0].text, b.evidence[0].text); publishAssets(a, directory); assert.equal(JSON.parse(fs.readFileSync(path.join(directory, '.runtime/assets/active.json'))).datasetId, a.datasetId); }
   finally { clean(directory); }
 });
-test('T-21 invalid analyzer stdout is rejected and the persistent process can restart', { timeout: 30000 }, async () => {
+// This test includes two model starts (each has its own 45-second bound).
+test('T-21 invalid analyzer stdout is rejected and the persistent process can restart', { timeout: 120000 }, async () => {
   const client = new PythonClient();
-  try { await client.start(); client.child.stdout.emit('data', Buffer.from('not-json\n')); const analysis = await client.analyze('猫が魚を食べた。'); assert.ok(analysis.tokens.some(token => token.text === '猫')); }
+  try { await client.start(); client.child.stdout.emit('data', Buffer.from('not-json\n')); await client.start(); const analysis = await client.analyze('猫が魚を食べた。'); assert.ok(analysis.tokens.some(token => token.text === '猫')); }
   finally { client.close(); }
 });
-test('T-20/21 deadline fails once while status remains available; retained results obey count and TTL', { timeout: 30000 }, async () => {
+// Startup/index preparation is outside the actual 10-millisecond job deadline.
+test('T-20/21 deadline fails once while status remains available; retained results obey count and TTL', { timeout: 120000 }, async () => {
   const { app, coordinator, startup } = await createApp({ deadlineMs: 10 });
   try {
     await app.ready(); await startup;

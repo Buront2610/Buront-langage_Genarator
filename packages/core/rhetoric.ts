@@ -54,24 +54,24 @@ export type RhetoricClauses = { mapping: string; criterion: string };
 export function clausesFor(subject: string, program: RhetoricProgram): RhetoricClauses {
   const t = program.target, relation = program.relation;
   const images: Record<RhetoricRelation, string> = {
-    assistance: `${t}を差し出す側と、その陰を受け取る側の関係`,
-    exposure: `${t}を外から試す圧力`, recovery: `止まった道を通せるようにする${t}`,
-    stoppage: `${t}の大きさと、道が通れるかを分けて考える場面`, verification: `見えない先を${t}で確かめる過程`,
+    assistance: `${t}を渡す側と守られる側の二人組`,
+    exposure: `${t}に採点を付けに来る試験官`, recovery: `通れない道に通行許可を出す${t}`,
+    stoppage: `${t}だけ先に到着して道が置いてけぼりの状態`, verification: `${t}を持って分からなさに殴り込みをかける作業`,
   };
   const criteria: Record<RhetoricRelation, Record<string, string>> = {
-    assistance: { 'OP-01': '差し出す側と受け取る側を交換したら、同じ道具でも別の話になる', 'OP-02': '道具の重さを量っても、誰から誰へ届くかは量れない', 'OP-06': '採点するのは道具の見栄えではなく、受け取る側に届く働きだ' },
-    exposure: { 'OP-01': '圧力の話をしたはずが、受け止める側の構えまで試される', 'OP-02': '道具の重さを量っただけでは、寒さの強さを量ったことにならない', 'OP-06': '厚さを誇る側より、冷たさを通すか試す側に採点権がある' },
-    recovery: { 'OP-01': '道を通せることと、速く走れることには別の採点欄が要る', 'OP-02': '力の大きさを量るだけでは、道が通れるかは決まらない', 'OP-06': '道具が立派かを道具に聞くな、道が通れるかに聞け' },
-    stoppage: { 'OP-01': '力があるという説明だけで、通れない道を通ったことにはできない', 'OP-02': '力の大きさと道の通りやすさを同じ目盛りにすると、停止が目盛りから消えてしまう', 'OP-06': '力の自慢を採点する前に、通れるかを採点役に戻す必要がある' },
-    verification: { 'OP-01': '見るための道具は、見終えたという証明書の代わりにはならない', 'OP-02': '道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう', 'OP-06': '道具の立派さより、分からなさが減るかに採点権がある', 'OP-07': '確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる' },
+    assistance: { 'OP-01': '渡す側と受け取る側を逆にしたら助けの方向まで逆走するんだが？道具が同じなら同じ話とかあもりにも大ざっぱすぐるでしょう', 'OP-02': '重さを量れば誰を助けたかまで分かるなら体重計が恩人を名乗り出すぞ', 'OP-06': '道具が自分で満点を付けても意味ないからな？守られる側に届いて初めて見事な仕事になる' },
+    exposure: { 'OP-01': '受け止める構えまで試験範囲とか聞いてないんだが？寒さのくせに試験官の仕事まで取るとか汚い', 'OP-02': '重い装備なら寒さも軽くなると思ったか？重さを増やして温度に勝ったつもりとか単位が違いすぐるでしょう', 'OP-06': '厚さを自慢しても採点するのは冷たさだからな？防ぐ側が自分で合格を出したら試験官が深い悲しみに包まれる' },
+    recovery: { 'OP-01': '道が通れるのと速く走れるのは別だべ？通行許可だけで一位を名乗ったら速さの方が置いてけぼりになる', 'OP-02': '力だけで通れる道が決まるなら力自慢が道路地図になるんだが？あもりにも地理をなめすぐでしょう', 'OP-06': '立派かどうかを道具に聞いたら自分で自分に満点を付けるに決まってるだろ？道が通れるかに聞くべきそうすべき' },
+    stoppage: { 'OP-01': '力があるから通れると言い張っても道は空気を読まないからな？説明だけ先にゴールしても本体は置いてけぼりという有様', 'OP-02': '力と通りやすさを同じ目盛りで量れば停止だけ消えるという計算になるが動いたのは目盛りだけなんだが？', 'OP-06': '力の自慢に満点を付けても通れなければ採点表だけが走っている事になるな？まず道に聞くべきそうすべき' },
+    verification: { 'OP-01': '見る道具を持っただけで見終わった事になるなら望遠鏡は全知全能なんだが？あもりにも道具に仕事させすぐでしょう', 'OP-02': '道具を増やすだけで答えまで増えるなら調べる前に物知りになれるな？それは知識ではなく持ち物検査だろう', 'OP-06': '道具の自慢より分からなさを減らすべきそうすべき？疑問だけ無傷で帰したら道具の面目が丸つぶれになる', 'OP-07': '道具を磨く方が目的になったら疑問は放置で道具だけぴかぴかとか何のための確認だったんですかねえ？' },
   };
   const criterion = criteria[relation][program.operator];
   if (!criterion) throw new Error('INAPPLICABLE_RHETORIC_OPERATION');
-  return { mapping: `${subject}を、${images[relation]}に見立てる`, criterion };
+  return { mapping: `${subject}は、${images[relation]}みたいなものなんだが`, criterion };
 }
 export function renderRhetoric(ir: DocumentIR, program: RhetoricProgram): string {
   const { mapping, criterion } = clausesFor(sourceSubject(ir, program), program);
-  return program.discourse === 'criterion_first' ? `${criterion}。これは、${mapping}比喩だ。` : `${mapping}。${criterion}。`;
+  return program.discourse === 'criterion_first' ? `${criterion}。なぜなら${mapping}。` : `${mapping}。${criterion}。`;
 }
 export function sourceMapping(ir: DocumentIR, program: RhetoricProgram) {
   const fact = ir.facts.find(fact => fact.id === program.factId)!;

@@ -1,0 +1,794 @@
+{
+  "summary": {
+    "sourceSha256": "983ba86ddf086d7bc842d91c66a4bc1bab940c126682b436538d5df7a68df752",
+    "corpusSha256": "7911160cbf8240a42072f3bbf99258211d606ffbc9238e3072e76b45501ebdd8",
+    "posts": 2452,
+    "sentences": 9591,
+    "reviewedPosts": 35,
+    "rawMatchedReviewedPosts": 35,
+    "seriesCovered": [
+      "night",
+      "yorusama",
+      "saiko",
+      "katuru",
+      "gg",
+      "roto",
+      "puronohito",
+      "nega",
+      "sonota"
+    ],
+    "medianPostCharacters": 53,
+    "postsAtMost70Characters": 1438,
+    "patternPostCounts": {
+      "explicitAnalogy": 1,
+      "sameGeneratedAnalogyEnding": 0,
+      "syntheticParenthetical": 0,
+      "causal": 1064,
+      "conclusion": 171,
+      "modesty": 23,
+      "refusalOrCorrection": 317
+    },
+    "scope": "Counts are literal pattern observations, not authorship claims or human style labels. Focused examples and deterministic short/long samples are not a representative quality benchmark."
+  },
+  "records": [
+    {
+      "id": "post_01653_8e421a4e4cb481c1",
+      "reasons": [
+        "focused:黄金の鉄の塊"
+      ],
+      "thread": "ナイト弱体スレ",
+      "responseNumber": 889,
+      "name": "既にその名前は使われています",
+      "series": [
+        "night"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 9743,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "32fa72c5224c4e53d4b870bd47e924df688c8d2dc4b47c93c9eecf54785d45cf"
+      },
+      "content": "お前らは馬鹿すぐる\nナイトが強いのは当然に決まっている\n黄金の鉄の塊で出来ているナイトが皮装備のｼﾞｮﾌﾞに遅れをとるはずは無い\n確実にナイトはエクスカリバを手に入れたら高確率で一番最強になる",
+      "anchorTargets": [],
+      "originalExcerpt": "お前らは馬鹿すぐる\r\nナイトが強いのは当然に決まっている\r\n黄金の鉄の塊で出来ているナイトが皮装備のｼﾞｮﾌﾞに遅れをとるはずは無い\r\n確実にナイトはエクスカリバを手に入れたら高確率で一番最強になる"
+    },
+    {
+      "id": "post_01092_7d511557129472bf",
+      "reasons": [
+        "focused:それほどでもない"
+      ],
+      "thread": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+      "responseNumber": 210,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 5780,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "1603a351811ecbd25ca5d070a3ef06b32cc1aec43a7deb0398b1eb4be5056df8"
+      },
+      "content": "それほどでもないが一級廃人として\n一般人から見ると憧れの的なんだろうな\n俺も謙虚だから「すごいですね」と尊敬されて誉められた時は\nそれほどでもないと言う時もある",
+      "anchorTargets": [
+        {
+          "responseNumber": 203,
+          "content": "グラットン使ってる奴は神"
+        }
+      ],
+      "originalExcerpt": "それほどでもないが一級廃人として\r\n一般人から見ると憧れの的なんだろうな\r\n俺も謙虚だから「すごいですね」と尊敬されて誉められた時は\r\nそれほどでもないと言う時もある"
+    },
+    {
+      "id": "post_01500_42c382bbd22a6498",
+      "reasons": [
+        "focused:俺の怒りは有頂天"
+      ],
+      "thread": "そろそろ竜騎士の時代だろ",
+      "responseNumber": 116,
+      "name": "至高の騎士",
+      "series": [
+        "saiko"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 8398,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "e71f374a455e97bfa2bc30391f92a08abe6bdaa32643492802e421f98e679fac"
+      },
+      "content": "それどころじゃない\n俺の怒りは有頂天！\nｽｰﾊﾟｰサイヤ人からスーパー大猿になった感覚\nもう止められない",
+      "anchorTargets": [],
+      "originalExcerpt": "それどころじゃない\r\n俺の怒りは有頂天！\r\nｽｰﾊﾟｰサイヤ人からスーパー大猿になった感覚\r\nもう止められない"
+    },
+    {
+      "id": "post_02225_3cdc00b977942e5b",
+      "reasons": [
+        "focused:どちかというと大反対"
+      ],
+      "thread": "一般的に言ってナイトが最強か",
+      "responseNumber": 91,
+      "name": "既にその名前は使われています",
+      "series": [
+        "katuru"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 14084,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "b6b8d54bb2985ad8ab663a121a0d435bfbc58db3150dabf8135473fba09232ad"
+      },
+      "content": "ナイトに弱体とかお前まじぶっころしょ？\n俺はナイトではないがナイト弱体したらまわりが騒ぎだろうな\n俺はナイト弱体にはどちかというと大反対だな\nナイト自体は強いがやっぱりナイトの性格のよさが武器だよなー憧れる\n弱体となえてる馬鹿のジョブがさっさと弱体されろよカス",
+      "anchorTargets": [],
+      "originalExcerpt": "ナイトに弱体とかお前まじぶっころしょ？\r\n俺はナイトではないがナイト弱体したらまわりが騒ぎだろうな\r\n俺はナイト弱体にはどちかというと大反対だな\r\nナイト自体は強いがやっぱりナイトの性格のよさが武器だよなー憧れる\r\n弱体となえてる馬鹿のジョブがさっさと弱体されろよカス"
+    },
+    {
+      "id": "post_02210_42d0c6e119aa1d10",
+      "reasons": [
+        "focused:今回のでそれが良くわかったよ"
+      ],
+      "thread": "ギルティギアやってる奴ちょっと来い　in ネ実",
+      "responseNumber": 203,
+      "name": "既にその名前は使われています",
+      "series": [
+        "gg"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 15138,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "ad48d43ce45aa0d1611394dec543a65656b1254851b35d91ad304669187333bc"
+      },
+      "content": "やはりカイよりやはりソルだな・・\n今回のでそれが良くわかったよ>>199感謝\nまぁソルの聖騎士はまさしく鬼の力と言ったところかな\n火炎をまとってとぶさまはまさに最強の一文字につきるしかもついに念願のオーラの具現化が実現！\nオーラ爆発させる事によって手を出していないのにもかかわらず「お前そこにいたのか・・」と歩み寄るさまは敵に恐怖を与え敵は上にしか逃げる場所はないのだが\nここもすでにボルカニックの射程内\n敵は画面端から逃げ出したそうにしてるが後ろがないので前門の虎前門の王神状態でなす術なしだしな\nはっきりいって200-202は情報に躍らされてる可哀想な一般人\nあんな氷でできた剣で炎の剣に勝てるわけがない\nしかも腕力もみた感じソルが圧倒的に上で詩かも炎だから負ける要素ないので俺は199に賛成だな",
+      "anchorTargets": [],
+      "originalExcerpt": "やはりカイよりやはりソルだな・・\r\n今回のでそれが良くわかったよ>>199感謝\r\nまぁソルの聖騎士はまさしく鬼の力と言ったところかな\r\n火炎をまとってとぶさまはまさに最強の一文字につきるしかもついに念願のオーラの具現化が実現！\r\nオーラ爆発させる事によって手を出していないのにもかかわらず「お前そこにいたのか・・」と歩み寄るさまは敵に恐怖を与え敵は上にしか逃げる場所はないのだが\r\nここもすでにボルカニックの射程内\r\n敵は画面端から逃げ出したそうにしてるが後ろがないので前門の虎前門の王神状態でなす術なしだしな\r\nはっきりいって200-202は情報に躍らされてる可哀想な一般人\r\nあんな氷でできた剣で炎の剣に勝てるわけがない\r\nしかも腕力もみた感じソルが圧倒的に上で詩かも炎だから負ける要素ないので俺は199に賛成だな"
+    },
+    {
+      "id": "post_02139_b1548a30d4bcfc42",
+      "reasons": [
+        "focused:９枚で良い"
+      ],
+      "thread": "ナイトはヴァナ最強であるべき part2",
+      "responseNumber": 229,
+      "name": "既にその名前は使われています",
+      "series": [
+        "katuru"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 13829,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "6856d129c1d92de798cef3a5eadf167dc60c98c4a536f5fa1dafdc21d66869ad"
+      },
+      "content": "そういえばうちのＬＳの詩人がﾅｲﾄを好きみたいだぞ？\nダボイでトカゲを狩っていたらリンクして逃げているときにすれ違っただけのナイトが助けてくれたらしい\n黄色いトカゲにディアガとばしたら敵が猛威を振るってきた\nところがトカゲの攻撃は圧倒的な戦力を持ったﾅｲﾄに対してあまりにも無力過ぎた\n高位ケアルをほどこしてやると狂ったようにトカゲが牙を剥いて来たらしいが次々と倒されていく仲間のトカゲを見て絶望しながら消えていったらしい\n詩人はそこで溜めてたトカゲの皮を１Ｄトレードしたが９枚で良いといわれたらしい\n今のＬＳではそのﾅｲﾄは謙虚なﾅｲﾄで人気者",
+      "anchorTargets": [],
+      "originalExcerpt": "そういえばうちのＬＳの詩人がﾅｲﾄを好きみたいだぞ？\r\nダボイでトカゲを狩っていたらリンクして逃げているときにすれ違っただけのナイトが助けてくれたらしい\r\n黄色いトカゲにディアガとばしたら敵が猛威を振るってきた\r\nところがトカゲの攻撃は圧倒的な戦力を持ったﾅｲﾄに対してあまりにも無力過ぎた\r\n高位ケアルをほどこしてやると狂ったようにトカゲが牙を剥いて来たらしいが次々と倒されていく仲間のトカゲを見て絶望しながら消えていったらしい\r\n詩人はそこで溜めてたトカゲの皮を１Ｄトレードしたが９枚で良いといわれたらしい\r\n今のＬＳではそのﾅｲﾄは謙虚なﾅｲﾄで人気者"
+    },
+    {
+      "id": "post_01034_700c6df6b11bbbc9",
+      "reasons": [
+        "focused:俺は謙虚だから周り"
+      ],
+      "thread": "【隔528】バーバリアンサイズはファルカストラより弱い【命中-5】",
+      "responseNumber": 529,
+      "name": "名も無き軍師",
+      "series": [
+        "roto"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 5314,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "05b32f56f39456f79afc553bee4e1bd74e363c14e39ffa858f31d5dca5b68b60"
+      },
+      "content": "勘違いするなよ\n俺は謙虚だから周りはみんな低姿勢だが\n俺は威張ったりはしてない\nとにかく俺が言いたいのはヴァサーゴだと\nうらやましがれて尊敬されるという事だ\n最近では俺が通る時は通行人が道を開けてるようにすら思える\nそのくらい羨望の眼差しで見られているという事だ\nデモスラやバーバリでは道は譲らないだろう",
+      "anchorTargets": [],
+      "originalExcerpt": "勘違いするなよ\r\n俺は謙虚だから周りはみんな低姿勢だが\r\n俺は威張ったりはしてない\r\nとにかく俺が言いたいのはヴァサーゴだと\r\nうらやましがれて尊敬されるという事だ\r\n最近では俺が通る時は通行人が道を開けてるようにすら思える\r\nそのくらい羨望の眼差しで見られているという事だ\r\nデモスラやバーバリでは道は譲らないだろう"
+    },
+    {
+      "id": "post_01173_6a539b752054f414",
+      "reasons": [
+        "focused:これが会話ログ"
+      ],
+      "thread": "【廃人の証】グラットンソードは最強2【内藤の証】",
+      "responseNumber": 95,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 6309,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "24f48d6ffe4625d87d01246bed77e22ba3a8e7024f6b02747bc809956ed2daf0"
+      },
+      "content": "これが会話ログ\n\n俺＞ こんにちはBurontさん\nBuront＞ 何か用かな？\n俺＞ ２ｃｈに書きましたか？\nBuront＞ 書いてない\n俺＞ そうですかありがとうグラットンすごいですね\nBuront＞それほどでもない\n\nやはり無実だった\nしかもグラットン持ってるのに謙虚にそれほどでもないと言った",
+      "anchorTargets": [],
+      "originalExcerpt": "これが会話ログ\r\n\r\n俺＞ こんにちはBurontさん\r\nBuront＞ 何か用かな？\r\n俺＞ ２ｃｈに書きましたか？\r\nBuront＞ 書いてない\r\n俺＞ そうですかありがとうグラットンすごいですね\r\nBuront＞それほどでもない\r\n\r\nやはり無実だった\r\nしかもグラットン持ってるのに謙虚にそれほどでもないと言った"
+    },
+    {
+      "id": "post_02184_fa5d195dbb8b7da4",
+      "reasons": [
+        "focused:汚いなさすが"
+      ],
+      "thread": "【ナイト】メリポで時給７０００切った【樽前衛】",
+      "responseNumber": 52,
+      "name": "既にその名前は使われています",
+      "series": [
+        "katuru"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 13923,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "c887adcf9b35decad52af138920129f06b3cc00814d88c2b9c88a061d1aba00b"
+      },
+      "content": "これ立てたの絶対忍者だろ･･汚いなさすが忍者きたない\n俺はこれで忍者きらいになったなあもりにもひきょう過ぎるでしょう？\n俺は中立の立場で見てきたけどやはりナイト中心で行った方が良い事が判明した\n忍はウソついてまでＰＴの盾役を確保したいらしいがナイトに相手されてない事くらいいい加減気づけよ\nナイトは忍者よりも高みにいるからお前らのイタズラにも笑顔だったがいい加減にしろよ",
+      "anchorTargets": [],
+      "originalExcerpt": "これ立てたの絶対忍者だろ･･汚いなさすが忍者きたない\r\n俺はこれで忍者きらいになったなあもりにもひきょう過ぎるでしょう？\r\n俺は中立の立場で見てきたけどやはりナイト中心で行った方が良い事が判明した\r\n忍はウソついてまでＰＴの盾役を確保したいらしいがナイトに相手されてない事くらいいい加減気づけよ\r\nナイトは忍者よりも高みにいるからお前らのイタズラにも笑顔だったがいい加減にしろよ"
+    },
+    {
+      "id": "post_01440_f6c5585c6b2f3635",
+      "reasons": [
+        "focused:致命的な致命傷"
+      ],
+      "thread": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+      "responseNumber": 210,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 7968,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "039cd69a2c8ab9591f2617b1dd57d4ea6daf92525e23278973ec275ef5b6c026"
+      },
+      "content": "もうここまででも十分にグラットンの勝ちは圧勝に決まったのだが\nさらに攻撃は続く\n次は見た目に注目するのだが\nセイブはただのひょろっとした弱そうな形\nあれで斬られてもあまり痛くはない\nしかしグラットンは尖った部分が多くあの部分でさらに敵に致命的な致命傷を与えられる\n色も黒っぽいのでダークパワーが宿ってそうで強い",
+      "anchorTargets": [],
+      "originalExcerpt": "もうここまででも十分にグラットンの勝ちは圧勝に決まったのだが\r\nさらに攻撃は続く\r\n次は見た目に注目するのだが\r\nセイブはただのひょろっとした弱そうな形\r\nあれで斬られてもあまり痛くはない\r\nしかしグラットンは尖った部分が多くあの部分でさらに敵に致命的な致命傷を与えられる\r\n色も黒っぽいのでダークパワーが宿ってそうで強い"
+    },
+    {
+      "id": "post_01326_39cdb5586b736f3f",
+      "reasons": [
+        "focused:稀にだがよくある"
+      ],
+      "thread": "【最狂の証】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最強3【Burontの宝】",
+      "responseNumber": 544,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 7259,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "d4e91eaa84f18adead801b3f1a3b6c7fcdbc1f5c5110b121bb88a539860bbf9a"
+      },
+      "content": "IDはたまたま同じになる事が稀にだがよくあるらしい\n逆にID違ってても自演の可能性はある\nだからIDはあてにならないでしょう",
+      "anchorTargets": [],
+      "originalExcerpt": "IDはたまたま同じになる事が稀にだがよくあるらしい\r\n逆にID違ってても自演の可能性はある\r\nだからIDはあてにならないでしょう"
+    },
+    {
+      "id": "post_01174_31c6636af8fe4be5",
+      "reasons": [
+        "focused:見事な仕事"
+      ],
+      "thread": "【廃人の証】グラットンソードは最強2【内藤の証】",
+      "responseNumber": 112,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 6323,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "79da492696f5540b5235c4bb75aa8a4541f483f51c958a4aeac9a7fb7ece8db7"
+      },
+      "content": ">>95を見て笑ってる奴は何がおかしいんだ？\nちゃんと無実を証明してログを公開しただけじゃん\n見事な仕事だと関心はするがどこもおかしくはない",
+      "anchorTargets": [],
+      "originalExcerpt": ">>95を見て笑ってる奴は何がおかしいんだ？\r\nちゃんと無実を証明してログを公開しただけじゃん\r\n見事な仕事だと関心はするがどこもおかしくはない"
+    },
+    {
+      "id": "post_00050_7911117f148beb34",
+      "reasons": [
+        "focused:俺がどうやって偽者"
+      ],
+      "thread": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+      "responseNumber": 589,
+      "name": "ロト ◆ROTOWt.c",
+      "series": [
+        "roto"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 262,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "23f6e88f6e62cd0b72f2ff61963c300d7bb142b8791c27940f245cb24fc43555"
+      },
+      "content": "俺がどうやって偽者だって証拠あんのかよ？\n調子こくな",
+      "anchorTargets": [
+        {
+          "responseNumber": 586,
+          "content": "偽者禁止だべ"
+        }
+      ],
+      "originalExcerpt": "俺がどうやって偽者だって証拠あんのかよ？\r\n調子こくな"
+    },
+    {
+      "id": "post_00632_109008ebfd62f125",
+      "reasons": [
+        "focused:ギガは雷"
+      ],
+      "thread": "【全裸で】SRWインパクト181【スパロボ】",
+      "responseNumber": 426,
+      "name": "ロト ◆ROTOWt.c",
+      "series": [
+        "roto"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 2855,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "50b4480d0f74ba8f702b6649c02e8478d8945a9619dcf0bb23ee96d6487c77ad"
+      },
+      "content": "ギガは雷って意味なのが知らない奴がいたらしいのは馬鹿だべな\nギガデイン知らないのかよ？\nあれは雷の稲妻が呪文になる",
+      "anchorTargets": [
+        {
+          "responseNumber": 409,
+          "content": "＞ギガトン・パンチ[P] 　　　　５８００　　１～"
+        },
+        {
+          "responseNumber": 3,
+          "content": "メガトン・パンチ[P] 　　　　６４００　　１  さすが伝説の男（藁"
+        }
+      ],
+      "originalExcerpt": "ギガは雷って意味なのが知らない奴がいたらしいのは馬鹿だべな\r\nギガデイン知らないのかよ？\r\nあれは雷の稲妻が呪文になる"
+    },
+    {
+      "id": "post_01112_6f67661088a1d6f6",
+      "reasons": [
+        "focused:もう一眠り"
+      ],
+      "thread": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+      "responseNumber": 529,
+      "name": "Knight",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 5913,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "e1e54852ddede58a010efb815fbeed304bcf1193a4e876249bf76004c43a9895"
+      },
+      "content": "もう一眠りして起きたらまた来るかな\nＰＴの希望出したままうっかり寝てしまったら\nすごい数のテルがきててびっくりしたよ\nバザコメにグラットン　ベヒモスマントあるぜって書いたのが\nそうなってしまった原因かな？\nやはりみんな俺の力を貸してほしいと証明されたな",
+      "anchorTargets": [],
+      "originalExcerpt": "もう一眠りして起きたらまた来るかな\r\nＰＴの希望出したままうっかり寝てしまったら\r\nすごい数のテルがきててびっくりしたよ\r\nバザコメにグラットン　ベヒモスマントあるぜって書いたのが\r\nそうなってしまった原因かな？\r\nやはりみんな俺の力を貸してほしいと証明されたな"
+    },
+    {
+      "id": "post_00661_0f7830155fe111dd",
+      "reasons": [
+        "focused:黒魔が魔法使えるのはずるい"
+      ],
+      "thread": "戦士を語るスレ",
+      "responseNumber": 320,
+      "name": "既にその名前は使われています",
+      "series": [
+        "roto"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 3772,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "05fd37e612b35d48e78707763abd246bd1ead716ef7d121aeab358fca6fbaf51"
+      },
+      "content": "俺は最初から強いのがいいんだよ\nおまえ頭悪ぃな\n黒魔が魔法使えるのはずるい",
+      "anchorTargets": [
+        {
+          "responseNumber": 320,
+          "content": ">>318 勇者だって最初は弱かっただろーが。 信じれ。道を。"
+        }
+      ],
+      "originalExcerpt": "俺は最初から強いのがいいんだよ\r\nおまえ頭悪ぃな\r\n黒魔が魔法使えるのはずるい"
+    },
+    {
+      "id": "post_01156_97a6b152c1e6c480",
+      "reasons": [
+        "focused:おい、やめろ馬鹿"
+      ],
+      "thread": "【廃人の証】グラットンソードは最強2【内藤の証】",
+      "responseNumber": 3,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 6205,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "b4515091b84ce571edd64de14d0a842faaeda46de2b7c1e1d70bfcdcb6746d5e"
+      },
+      "content": "おい、やめろ馬鹿\nこのスレは早くも終了ですね",
+      "anchorTargets": [],
+      "originalExcerpt": "おい、やめろ馬鹿\r\nこのスレは早くも終了ですね"
+    },
+    {
+      "id": "post_00023_59f5c4424bd70835",
+      "reasons": [
+        "series:roto:short"
+      ],
+      "thread": "【まるこ姉】スパロボIMPACＴ141【最狂説】",
+      "responseNumber": 283,
+      "name": "ロト",
+      "series": [
+        "roto"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 158,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "2e80bc26ff55f5fa2f65e3f5ae22588cd3c02b1a2a2238eb56a5d456532daa72"
+      },
+      "content": "地元じゃ伝説の不良と呼ばれて恐れられてる",
+      "anchorTargets": [],
+      "originalExcerpt": "地元じゃ伝説の不良と呼ばれて恐れられてる"
+    },
+    {
+      "id": "post_01027_651bce527aca8098",
+      "reasons": [
+        "series:roto:long"
+      ],
+      "thread": "【隔528】バーバリアンサイズはファルカストラより弱い【命中-5】",
+      "responseNumber": 496,
+      "name": "名も無き軍師",
+      "series": [
+        "roto"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 5244,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "7ec7ece0b174001a017fdb2aabc371a670f56c5eb7acf20e1658cf7a9f2266dd"
+      },
+      "content": "502名前：名も無き軍師投稿日：2003/03/07(金) 15:42 [ u/DXqanE ]\nそろそろヴァサーゴはカンスト暗黒の間では標準装備となりつつあるな\nバーバリはおろかデモスラも今となっては全然うらやましくないなー\n今時得意げにデモスラとか背負ってる奴ってはっきり言って痛い\n「自分は負け組です」って看板ぶらさげて歩いてるようなもの\n本人は周りから羨望の眼差しで見られてると思ってるのかもしれんが\nみんな笑ってるのに気付けよな\n手後れにならないうちにさっさと売ったほうがいいと思うね\n今なら５０万くらいなら買うって奴もいるかもなー",
+      "anchorTargets": [],
+      "originalExcerpt": "502名前：名も無き軍師投稿日：2003/03/07(金) 15:42 [ u/DXqanE ]\r\nそろそろヴァサーゴはカンスト暗黒の間では標準装備となりつつあるな\r\nバーバリはおろかデモスラも今となっては全然うらやましくないなー\r\n今時得意げにデモスラとか背負ってる奴ってはっきり言って痛い\r\n「自分は負け組です」って看板ぶらさげて歩いてるようなもの\r\n本人は周りから羨望の眼差しで見られてると思ってるのかもしれんが\r\nみんな笑ってるのに気付けよな\r\n手後れにならないうちにさっさと売ったほうがいいと思うね\r\n今なら５０万くらいなら買うって奴もいるかもなー"
+    },
+    {
+      "id": "post_01411_8ef27341051d8413",
+      "reasons": [
+        "series:yorusama:short"
+      ],
+      "thread": "【時代は】ｸﾞﾗｯﾄﾝｿｰﾄﾞは最凶５【セイブザクイーン】",
+      "responseNumber": 91,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 7779,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "a6f0429a64fcbcda5fe369c2e5085ca9657363234d43f46d902892d403822fb2"
+      },
+      "content": "別に俺が本人じゃないから送られてるわけじゃないので知らない\nだがやめろという事を言ってるだけ\n大体ただの私怨がここまで行くとはおかしい",
+      "anchorTargets": [],
+      "originalExcerpt": "別に俺が本人じゃないから送られてるわけじゃないので知らない\r\nだがやめろという事を言ってるだけ\r\n大体ただの私怨がここまで行くとはおかしい"
+    },
+    {
+      "id": "post_01245_f3e1984f7dbc89a2",
+      "reasons": [
+        "series:yorusama:long"
+      ],
+      "thread": "【廃人の証】グラットンソードは最強2【内藤の証】",
+      "responseNumber": 651,
+      "name": "既にその名前は使われています",
+      "series": [
+        "yorusama"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 6756,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "389b22c474bdcc548b82ddca595d1c9279c852795fa7f9f52a7e38c7356e950b"
+      },
+      "content": "仕方ないので取っておきの切り札を出す\nこれを見たらおまえらもBurontは無関係で被害者としか思えくなるでしょう\n\n543 名前： 練習相手にならない名無しさん 投稿日： 2003/06/23(月) 22:54 [ 0SUUbEOg ]\n\nBurontに恨みがある奴を考えてみた\n七罪にて\nＡ「おぉ　グラットンでたー」\nＢ「おーロット　ロット」\n粘着真犯人のロットイン　９５６\n粘着真犯人（うはｗｗｗｗｗグラットン俺の物ｗｗｗｗｗｗｗｗ）\nBurontのロットイン　９８９\nBurontはグラットンソードを手に入れた。\n粘着真犯人（晒す！！！！！！！！！！！！！！！！！！）",
+      "anchorTargets": [],
+      "originalExcerpt": "仕方ないので取っておきの切り札を出す\r\nこれを見たらおまえらもBurontは無関係で被害者としか思えくなるでしょう\r\n\r\n543 名前： 練習相手にならない名無しさん 投稿日： 2003/06/23(月) 22:54 [ 0SUUbEOg ]\r\n\r\nBurontに恨みがある奴を考えてみた\r\n七罪にて\r\nＡ「おぉ　グラットンでたー」\r\nＢ「おーロット　ロット」\r\n粘着真犯人のロットイン　９５６\r\n粘着真犯人（うはｗｗｗｗｗグラットン俺の物ｗｗｗｗｗｗｗｗ）\r\nBurontのロットイン　９８９\r\nBurontはグラットンソードを手に入れた。\r\n粘着真犯人（晒す！！！！！！！！！！！！！！！！！！）"
+    },
+    {
+      "id": "post_01542_62ffffc528b696dc",
+      "reasons": [
+        "series:saiko:short"
+      ],
+      "thread": "【取るな】天然素材【ころすぞ】",
+      "responseNumber": 141,
+      "name": "最高の騎士",
+      "series": [
+        "saiko"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 8759,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "2d7bb249f87fb861c03ce260ad340c6b48e23448bbee6c4656e5300bb268bc52"
+      },
+      "content": "感動した\nバカな偽善白魔に鉄槌ありがとう（感涙）",
+      "anchorTargets": [],
+      "originalExcerpt": "感動した\r\nバカな偽善白魔に鉄槌ありがとう（感涙）"
+    },
+    {
+      "id": "post_01514_52085a233e2f8a60",
+      "reasons": [
+        "series:saiko:long"
+      ],
+      "thread": "【合法】天下一武装会【ＭＰＫ】",
+      "responseNumber": 22,
+      "name": "最高の騎士",
+      "series": [
+        "saiko"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 8530,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "b8c8d57014fc0e5255c404fcbdd79523bb34a7eae582d738de0b8a3835afbbc6"
+      },
+      "content": "バカだな\nもちろん２ｈアビは2時間おきにしか使えない\nよって本来の高性能を誇るナイトが有利\nこの話に乗った時点でお前らの敗北は決定（大胆不敵）\nそもそも狩人なんて相手じゃないし（リアル話）\nグラットンを持てばその他のジョブなんてかずり傷程度で\nかたずけられる\n俺は狩る側であって狩られる側じゃないから\n心配は要らない（リアル話）",
+      "anchorTargets": [],
+      "originalExcerpt": "バカだな\r\nもちろん２ｈアビは2時間おきにしか使えない\r\nよって本来の高性能を誇るナイトが有利\r\nこの話に乗った時点でお前らの敗北は決定（大胆不敵）\r\nそもそも狩人なんて相手じゃないし（リアル話）\r\nグラットンを持てばその他のジョブなんてかずり傷程度で\r\nかたずけられる\r\n俺は狩る側であって狩られる側じゃないから\r\n心配は要らない（リアル話）"
+    },
+    {
+      "id": "post_01630_bf3b1a7b5212bf7b",
+      "reasons": [
+        "series:night:short"
+      ],
+      "thread": "【フレ♀】５００万の破壊スキル【沈黙】",
+      "responseNumber": 47,
+      "name": "既にその名前は使われています",
+      "series": [
+        "night"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 9692,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "8985595a51328460026be7f906ea6ba414a1e7c1b5acad7f9251ea029ad53875"
+      },
+      "content": "＞＞４１\n他人の実名を晒したら警察が動くと言うことを知らないのか\n関係ない人を巻き込むなそういう汚い人種が居るからヴァナ世界はだめなって行く",
+      "anchorTargets": [],
+      "originalExcerpt": "＞＞４１\r\n他人の実名を晒したら警察が動くと言うことを知らないのか\r\n関係ない人を巻き込むなそういう汚い人種が居るからヴァナ世界はだめなって行く"
+    },
+    {
+      "id": "post_01610_6f81087f96d7c765",
+      "reasons": [
+        "series:night:long"
+      ],
+      "thread": "【祭り好き共】でで汚祭り再び【ついに来た】",
+      "responseNumber": 238,
+      "name": "既にその名前は使われています",
+      "series": [
+        "night"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 9556,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "5b1693b3ecf9fcfc2e045785ffee3d5415ea45d272694050ef198c6799245f81"
+      },
+      "content": "まあ予想通りの答えが返ってきたか\n全くおまえらは馬鹿すぎる\n今からそれをカウンターで逆転されるとは思ってもないのだろうな\n>>1の内容が本当だという証拠はないだろ\nどうせ記事を見て叩くネタ見つけたから勝手に話を合わせて\n作り話を作ったと見るのが普通の考え\nzLmpDFOLは自分が本心では追いつめられて来てるのを理解してるな\nだからまた釣りとか言い出した",
+      "anchorTargets": [],
+      "originalExcerpt": "まあ予想通りの答えが返ってきたか\r\n全くおまえらは馬鹿すぎる\r\n今からそれをカウンターで逆転されるとは思ってもないのだろうな\r\n>>1の内容が本当だという証拠はないだろ\r\nどうせ記事を見て叩くネタ見つけたから勝手に話を合わせて\r\n作り話を作ったと見るのが普通の考え\r\nzLmpDFOLは自分が本心では追いつめられて来てるのを理解してるな\r\nだからまた釣りとか言い出した"
+    },
+    {
+      "id": "post_01827_0ed1725f8e707b99",
+      "reasons": [
+        "series:puronohito:short"
+      ],
+      "thread": "【ぜいいん】08:Valefor鯖総合スレ Vol.18【じょうずく】",
+      "responseNumber": 169,
+      "name": "プロマシアの名無しさん",
+      "series": [
+        "puronohito"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 10779,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "ccac5175a607910a83b6e9980391cc4aa431bfec8c93be0e23559d66a68651b7"
+      },
+      "content": "なんで単純に凄いと思えないのだろうかね？ｗ",
+      "anchorTargets": [],
+      "originalExcerpt": "なんで単純に凄いと思えないのだろうかね？ｗ"
+    },
+    {
+      "id": "post_01806_4745683f6033c1e9",
+      "reasons": [
+        "series:puronohito:long"
+      ],
+      "thread": "【マジで】08:Valefor鯖総合スレ Vol.17【糞漏れた】",
+      "responseNumber": 1015,
+      "name": "プロマシアの名無しさん",
+      "series": [
+        "puronohito"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 10578,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "660ab94f2fa3f0afcb13850f4b023daf8a1bb1203ee5b263179fca8f43d65c3c"
+      },
+      "content": "俺は他人だけど勝手に名前出すのってどうかと思うな\nあきらかな問題行動を起こしたんなら仕方ないけどこの人の場合は深い考えがあるだろ明らかに。\n前衛・後衛を極めてるＰスキルと最強装備を金揃えてるレアなｶﾞﾙ前衛に考えが追い付かないだけで名前勝手に出すとかバカかと思われるぞ？\nあきらかに時給落してるとか書いてる奴もいるけどお前も含めた回りのＰスキルの低さが原因だとなんで考えない？\n良くも悪くもＦＦはＰＴのチームワークだからＰスキルが飛び出てる人の考えに追い付けなくてその人が一人浮いてるように見えるのは仕方の無い事だろ？\nそもそも手抜き装備のＰＴ面に時給とかいってほしくないな",
+      "anchorTargets": [],
+      "originalExcerpt": "俺は他人だけど勝手に名前出すのってどうかと思うな\r\nあきらかな問題行動を起こしたんなら仕方ないけどこの人の場合は深い考えがあるだろ明らかに。\r\n前衛・後衛を極めてるＰスキルと最強装備を金揃えてるレアなｶﾞﾙ前衛に考えが追い付かないだけで名前勝手に出すとかバカかと思われるぞ？\r\nあきらかに時給落してるとか書いてる奴もいるけどお前も含めた回りのＰスキルの低さが原因だとなんで考えない？\r\n良くも悪くもＦＦはＰＴのチームワークだからＰスキルが飛び出てる人の考えに追い付けなくてその人が一人浮いてるように見えるのは仕方の無い事だろ？\r\nそもそも手抜き装備のＰＴ面に時給とかいってほしくないな"
+    },
+    {
+      "id": "post_02035_5df625b3bff71f08",
+      "reasons": [
+        "series:nega:short"
+      ],
+      "thread": "【みんな】SAMURAI　侍6【興味なし？】",
+      "responseNumber": 596,
+      "name": "既にその名前は使われています",
+      "series": [
+        "nega"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 12179,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "56015f6cadb40bcec3579a2b1ce13f7c6c929b7c19dbe750c1062c85529e3f4c"
+      },
+      "content": "いい加減にウザイぞｶｽが！\n賭けは俺が勝ったんだから約束通り黙ってろ！",
+      "anchorTargets": [],
+      "originalExcerpt": "いい加減にウザイぞｶｽが！\r\n賭けは俺が勝ったんだから約束通り黙ってろ！"
+    },
+    {
+      "id": "post_02198_596ca4ad4e6483f8",
+      "reasons": [
+        "series:nega:long"
+      ],
+      "thread": "侍強すぎ",
+      "responseNumber": 176,
+      "name": "既にその名前は使われています",
+      "series": [
+        "nega"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 12713,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "b6af2a076681365720849352e2cff7db81a4a4279a1adb094b2fe2b665f11f6d"
+      },
+      "content": "違う■がガンなのではなく最強に強いのに弱い弱いネガネガする侍のようなやつらが\nいつまでもクレクレするから強さが１ジョブに偏ってしまうからバランスが取れないだけ\n俺は心を鬼にして自ジョブ侍の弱体を求めているのだからネガ侍も諦めて弱体メールだしてこいよ\nすぐに矛先を■に話を流してるみたいだがいい加減にしておけ",
+      "anchorTargets": [],
+      "originalExcerpt": "違う■がガンなのではなく最強に強いのに弱い弱いネガネガする侍のようなやつらが\r\nいつまでもクレクレするから強さが１ジョブに偏ってしまうからバランスが取れないだけ\r\n俺は心を鬼にして自ジョブ侍の弱体を求めているのだからネガ侍も諦めて弱体メールだしてこいよ\r\nすぐに矛先を■に話を流してるみたいだがいい加減にしておけ"
+    },
+    {
+      "id": "post_02364_211d7f797902ee6d",
+      "reasons": [
+        "series:katuru:short"
+      ],
+      "thread": "ナイズルアサルトに既存NM/HNM配置",
+      "responseNumber": 476,
+      "name": "既にその名前は使われています(1001決めよう！)",
+      "series": [
+        "katuru"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 14798,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "c229500e55777e0aa78f88bf2d0a4a4dc309c7e51f1fa1beb32d76d6a2532765"
+      },
+      "content": "生息域が無茶苦茶なＮＭ倒してなにが面白いんだよお前ら動物園でパンダみて喜ぶタイプだろ",
+      "anchorTargets": [],
+      "originalExcerpt": "生息域が無茶苦茶なＮＭ倒してなにが面白いんだよお前ら動物園でパンダみて喜ぶタイプだろ"
+    },
+    {
+      "id": "post_01964_f9dd7c451c82b571",
+      "reasons": [
+        "series:katuru:long"
+      ],
+      "thread": "ナイトと忍者のＬＳ信頼度は違いすぎた",
+      "responseNumber": 493,
+      "name": "既にその名前は使われています",
+      "series": [
+        "katuru"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 13158,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "8bcf13fa82e8de201bd67d9d629a033b26d98194ee169d0a027adbd67c9ecb07"
+      },
+      "content": "何も悪い事してないのにキャラ削除させられる悲しみをわかってないお前らが、\n勝手にブロントだとかブロントじゃないとか言ってる奴がいい加減うざい\n（>>485みたいな騙りは論外）\n\n最初から言ってる事だが、ブロントの悲しみの心を知らない奴が評論家みたいにブロント語ってんじゃねえって言ってんの",
+      "anchorTargets": [],
+      "originalExcerpt": "何も悪い事してないのにキャラ削除させられる悲しみをわかってないお前らが、\r\n勝手にブロントだとかブロントじゃないとか言ってる奴がいい加減うざい\r\n（>>485みたいな騙りは論外）\r\n\r\n最初から言ってる事だが、ブロントの悲しみの心を知らない奴が評論家みたいにブロント語ってんじゃねえって言ってんの"
+    },
+    {
+      "id": "post_02073_06a2c3fa73f67784",
+      "reasons": [
+        "series:gg:short"
+      ],
+      "thread": "【ギルティ】恥知らずなカイ使いがいた！！【ギア】",
+      "responseNumber": 269,
+      "name": "ゲームセンター名無し",
+      "series": [
+        "gg"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 15102,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "d0282aad2c8ff038c74c29db990011f38e6939594c4242fde29034f91c2d1104"
+      },
+      "content": "ばかかこいつ【練習相手になりません】",
+      "anchorTargets": [],
+      "originalExcerpt": "ばかかこいつ【練習相手になりません】"
+    },
+    {
+      "id": "post_02416_5e5a6d3b9535cc65",
+      "reasons": [
+        "series:gg:long"
+      ],
+      "thread": "最近の格ゲーって何でつまんないの？",
+      "responseNumber": 610,
+      "name": "既にその名前は使われています",
+      "series": [
+        "gg"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 15272,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "59d89907e948eee35f535f1888c5f738242539e2b1c825a4b36cc91d4b97ecfe"
+      },
+      "content": "それは一般レベルの話ではないか？\nグランドバイパーはたしかに隙が少なく最高出力の荒技だが以前みたいにボルカニックが付いてないので魅力半減してるぞ\nそれよりも上級者は低空ダッシュ使われても前ハイスラで撃退出来る事を相手にわからせれば相手を地上に抑えつけられるが\nそれも実は罠で相手は飛べないのに俺は飛べて空中圏は完全支配となる\nそこで出てくるのがダッシュ慣性をつけた空中ハイスラだがこれが実は二段ハイスラで下への攻撃判定が強く鬼と化す\n仮にガードされてもそこから硬直の前ハイスラでさらに二段ハイスラをするとだいたいガードゲージが光るぞ\n落下キャンセル見越してのグランドバイパーは俺もよくつかうのでお前だけのオリジナルと思っているなら大きな間違いなので",
+      "anchorTargets": [],
+      "originalExcerpt": "それは一般レベルの話ではないか？\r\nグランドバイパーはたしかに隙が少なく最高出力の荒技だが以前みたいにボルカニックが付いてないので魅力半減してるぞ\r\nそれよりも上級者は低空ダッシュ使われても前ハイスラで撃退出来る事を相手にわからせれば相手を地上に抑えつけられるが\r\nそれも実は罠で相手は飛べないのに俺は飛べて空中圏は完全支配となる\r\nそこで出てくるのがダッシュ慣性をつけた空中ハイスラだがこれが実は二段ハイスラで下への攻撃判定が強く鬼と化す\r\n仮にガードされてもそこから硬直の前ハイスラでさらに二段ハイスラをするとだいたいガードゲージが光るぞ\r\n落下キャンセル見越してのグランドバイパーは俺もよくつかうのでお前だけのオリジナルと思っているなら大きな間違いなので"
+    },
+    {
+      "id": "post_02117_efaf41ef9e4eb449",
+      "reasons": [
+        "series:sonota:short"
+      ],
+      "thread": "◆神羅万象チョコ◇80枚目◆",
+      "responseNumber": 499,
+      "name": "名無しのコレクター",
+      "series": [
+        "sonota"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 15521,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "91fab78a7a644a0fa1028e5790964d110f7bdb73770ab3513feeae32978f44db"
+      },
+      "content": "俺、光の友人なんだけど\nこの前光に聞いたけど2ｃｈ見たことないって言ってたぞ",
+      "anchorTargets": [],
+      "originalExcerpt": "俺、光の友人なんだけど\r\nこの前光に聞いたけど2ｃｈ見たことないって言ってたぞ"
+    },
+    {
+      "id": "post_02178_7e92da6547e23ac9",
+      "reasons": [
+        "series:sonota:long"
+      ],
+      "thread": "不明",
+      "responseNumber": 514,
+      "name": "※名前は開発中のものです",
+      "series": [
+        "sonota"
+      ],
+      "source": {
+        "path": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+        "line": 15648,
+        "exactTextIgnoringWhitespace": true,
+        "contentHash": "238e267573198b5406a427e0ef220182cebd139adf3ccf7916f8be25b16eb240"
+      },
+      "content": "弟がXBOX360を購入した\n弟は凄いｹﾞｰﾑがあると言うが俺にそのｹﾞｰﾑをやらせてくれない\nいい加減やらせないとﾎﾞｺるぞと言ったら泣きながら本当はまだ発売されてないと行ってきた\n罪悪感に営まれた俺は弟にワビ入れてそのｹﾞｰﾑを発売日に絶対買ってやる事を約束することにしたが面白くないｹﾞｰﾑには興味が無いからつまらないなら買わない\nだがきっとﾌｧｲﾅﾙﾌｧﾝﾀｼﾞｰ11は多分ﾋｯﾄするだろう\n俺が言う事は絶対だ必ず売れる\n俺は流行に機敏だからつまらないｹﾞｰﾑに興味ないからな\n面白いｹﾞｰﾑが出ることを切実に祈る",
+      "anchorTargets": [],
+      "originalExcerpt": "弟がXBOX360を購入した\r\n弟は凄いｹﾞｰﾑがあると言うが俺にそのｹﾞｰﾑをやらせてくれない\r\nいい加減やらせないとﾎﾞｺるぞと言ったら泣きながら本当はまだ発売されてないと行ってきた\r\n罪悪感に営まれた俺は弟にワビ入れてそのｹﾞｰﾑを発売日に絶対買ってやる事を約束することにしたが面白くないｹﾞｰﾑには興味が無いからつまらないなら買わない\r\nだがきっとﾌｧｲﾅﾙﾌｧﾝﾀｼﾞｰ11は多分ﾋｯﾄするだろう\r\n俺が言う事は絶対だ必ず売れる\r\n俺は流行に機敏だからつまらないｹﾞｰﾑに興味ないからな\r\n面白いｹﾞｰﾑが出ることを切実に祈る"
+    }
+  ]
+}

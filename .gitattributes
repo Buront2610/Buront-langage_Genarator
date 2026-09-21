@@ -1,0 +1,2 @@
+# Analysis provenance hashes refer to exact saved bytes, including line endings.
+artifacts/** -text

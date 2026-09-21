@@ -1,0 +1,19 @@
+{
+  "build": {
+    "schemaVersion": 1,
+    "sourceHash": "17f3fd25f37dd3a8f467283a89552fe08ad47d7720acc48bac5be8cb1206cc83",
+    "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "scope": "focused tests and full-tests-01 use this frozen dist; subsequent source edits require rebuild and rerun",
+  "compiled": {
+    "rewrite-rules": "908c5a679d01c9c7e5f3e39a0cd8a6dd391b3374f978b030b029b436ddfd5659",
+    "rewrite": "3145a7465a7e0152430e4786c1976623b9b6c383ca269c433a06d046747b0153",
+    "rewrite-validation": "d7c1f7641770709466a5e5b6a6434feec542e53ab23709fac7d035f5a97dc99e",
+    "engine": "62f85afde58db40daaf618d5c97b62659a138739a17a9d7d32cffb97a6393d6a",
+    "validator": "d25d835a1b7df22103e1df16c303fe65b73847d2667db99e5ddc673f7c09461a",
+    "evaluation": "449dd3a50712fae17982dbff957cbf5c13750ce0937fd9980dae16c640be43ee",
+    "semantic": "57bf2e878e3581cb3ab76dfe51f7a11975307935f70e2551bc8ccd9d0d567d89"
+  }
+}

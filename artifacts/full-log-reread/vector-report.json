@@ -1,0 +1,2160 @@
+{
+  "schemaVersion": 1,
+  "engine": {
+    "schemaVersion": 1,
+    "sourceHash": "b57f2b7ec999bd260c9e15aa098f949ec33bcc4cc8ab4660ac2a851997c46270",
+    "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "referenceSplitHash": "6a967145f7a9e8ab01ebf379015bee6d94d2d0045d64920ae1a71bbc8473cb63",
+  "caseCount": 37,
+  "generatedCases": 32,
+  "outputCount": 75,
+  "meanExpansion": 1.2768215428599057,
+  "comparison": {
+    "raw": {
+      "matchedInputs": 12,
+      "previousMean": 0.19328923161173905,
+      "currentMean": 0.11239690967816711,
+      "ordinaryExplanationMean": 0.20453312459361142,
+      "incoherentMean": 0.18308531312240953
+    },
+    "script_masked": {
+      "matchedInputs": 12,
+      "previousMean": 0.3086504574553758,
+      "currentMean": 0.16938688069700544,
+      "ordinaryExplanationMean": 0.3009390595338552,
+      "incoherentMean": 0.300004351555666
+    },
+    "phrase_masked": {
+      "matchedInputs": 12,
+      "previousMean": 0.3103390647384389,
+      "currentMean": 0.16940012870611335,
+      "ordinaryExplanationMean": 0.30089611478868,
+      "incoherentMean": 0.29994467183183354
+    }
+  },
+  "rows": [
+    {
+      "source": "私は最強だ。",
+      "plain": {
+        "raw": 0.016550827210407106,
+        "script_masked": 0.16811196885963425,
+        "phrase_masked": 0.16819797803712605
+      },
+      "outputs": [
+        {
+          "text": "俺は最強に強い。",
+          "vector": {
+            "raw": 0.052324139828986586,
+            "script_masked": 0.17635094486375077,
+            "phrase_masked": 0.17644285226105963
+          },
+          "expansion": 1.3333333333333333,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "最強だ",
+              "to": "最強に強い",
+              "evidenceIds": [
+                "post_00131_5a2310ec15e6e767_195"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は最強だからな。",
+          "vector": {
+            "raw": 0.13192621488163958,
+            "script_masked": 0.17126792151227122,
+            "phrase_masked": 0.1713871471993792
+          },
+          "expansion": 1.5,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "だ",
+              "to": "だからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "すでに時間切れだった。",
+      "plain": {
+        "raw": 0.06422418887460252,
+        "script_masked": 0.0592633482083613,
+        "phrase_masked": 0.059249104523900344
+      },
+      "outputs": [
+        {
+          "text": "時既に時間切れだったんだが。",
+          "vector": {
+            "raw": 0.0952861413244622,
+            "script_masked": 0.10752351166036217,
+            "phrase_masked": 0.10756634640322715
+          },
+          "expansion": 1.2727272727272727,
+          "edits": [
+            {
+              "from": "すでに時間切れ",
+              "to": "時既に時間切れ",
+              "evidenceIds": [
+                "post_01944_f7cb32dab8e25e5a_7155"
+              ]
+            },
+            {
+              "from": "だった",
+              "to": "だったんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "時既に時間切れだったからな。",
+          "vector": {
+            "raw": 0.11806456953133745,
+            "script_masked": 0.12121075009489875,
+            "phrase_masked": 0.12125478443181234
+          },
+          "expansion": 1.2727272727272727,
+          "edits": [
+            {
+              "from": "すでに時間切れ",
+              "to": "時既に時間切れ",
+              "evidenceIds": [
+                "post_01944_f7cb32dab8e25e5a_7155"
+              ]
+            },
+            {
+              "from": "だった",
+              "to": "だったからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "時既に時間切れだった。",
+          "vector": {
+            "raw": 0.06933785188262703,
+            "script_masked": 0.09907618960760711,
+            "phrase_masked": 0.09910013327279123
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "すでに時間切れ",
+              "to": "時既に時間切れ",
+              "evidenceIds": [
+                "post_01944_f7cb32dab8e25e5a_7155"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "敵を瞬殺した。",
+      "plain": {
+        "raw": 0.045924620042564424,
+        "script_masked": 0.130147094488098,
+        "phrase_masked": 0.13009696291696335
+      },
+      "outputs": [
+        {
+          "text": "敵を瞬殺で倒した。",
+          "vector": {
+            "raw": 0.03918626776116405,
+            "script_masked": 0.14236147957103049,
+            "phrase_masked": 0.14230940894860686
+          },
+          "expansion": 1.2857142857142858,
+          "edits": [
+            {
+              "from": "瞬殺した",
+              "to": "瞬殺で倒した",
+              "evidenceIds": [
+                "post_00183_b6f4c9698d481765_516"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "敵を瞬殺したからな。",
+          "vector": {
+            "raw": 0.10408687747711169,
+            "script_masked": 0.13071071242534524,
+            "phrase_masked": 0.13069432616243742
+          },
+          "expansion": 1.4285714285714286,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "私は動かないです。",
+      "plain": {
+        "raw": 0.09122002232956554,
+        "script_masked": 0.11433885401668185,
+        "phrase_masked": 0.11433584643355757
+      },
+      "outputs": [
+        {
+          "text": "俺は動かないです。",
+          "vector": {
+            "raw": 0.1094660816453289,
+            "script_masked": 0.11433885401668185,
+            "phrase_masked": 0.11433584643355757
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は動かないからな。",
+          "vector": {
+            "raw": 0.1617096819639377,
+            "script_masked": 0.14104120591571542,
+            "phrase_masked": 0.1412716279471393
+          },
+          "expansion": 1.1111111111111112,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "ないです",
+              "to": "ないからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は動かないんだが。",
+          "vector": {
+            "raw": 0.12437603081599946,
+            "script_masked": 0.12238603772956977,
+            "phrase_masked": 0.12242858039559892
+          },
+          "expansion": 1.1111111111111112,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "ないです",
+              "to": "ないんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "存在感が桁外れだ。",
+      "plain": {
+        "raw": 0.009287530016688942,
+        "script_masked": 0.09119201557121148,
+        "phrase_masked": 0.09116423351868302
+      },
+      "outputs": [
+        {
+          "text": "存在感が桁外れな存在感だ。",
+          "vector": {
+            "raw": 0.018895184481938103,
+            "script_masked": 0.11881147978731715,
+            "phrase_masked": 0.11878684570924966
+          },
+          "expansion": 1.4444444444444444,
+          "edits": [
+            {
+              "from": "存在感が桁外れ",
+              "to": "存在感が桁外れな存在感",
+              "evidenceIds": [
+                "post_02043_9c60365c91c5d963_7604"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "存在感が桁外れな存在感なんだが。",
+          "vector": {
+            "raw": 0.08844356035222263,
+            "script_masked": 0.1265885554903135,
+            "phrase_masked": 0.12657213383631832
+          },
+          "expansion": 1.7777777777777777,
+          "edits": [
+            {
+              "from": "存在感が桁外れ",
+              "to": "存在感が桁外れな存在感",
+              "evidenceIds": [
+                "post_02043_9c60365c91c5d963_7604"
+              ]
+            },
+            {
+              "from": "だ",
+              "to": "なんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "存在感が桁外れな存在感だからな。",
+          "vector": {
+            "raw": 0.11742300337864783,
+            "script_masked": 0.15550870938220196,
+            "phrase_masked": 0.155554883198307
+          },
+          "expansion": 1.7777777777777777,
+          "edits": [
+            {
+              "from": "存在感が桁外れ",
+              "to": "存在感が桁外れな存在感",
+              "evidenceIds": [
+                "post_02043_9c60365c91c5d963_7604"
+              ]
+            },
+            {
+              "from": "だ",
+              "to": "だからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "今日は寒い。",
+      "plain": {
+        "raw": 0.012997456432990486,
+        "script_masked": 0.13455076079747283,
+        "phrase_masked": 0.13461397076595888
+      },
+      "outputs": [
+        {
+          "text": "今日は寒いんだが。",
+          "vector": {
+            "raw": 0.07608381869694472,
+            "script_masked": 0.1196242332038152,
+            "phrase_masked": 0.11970699889575082
+          },
+          "expansion": 1.5,
+          "edits": [
+            {
+              "from": "い",
+              "to": "いんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "今日は寒いからな。",
+          "vector": {
+            "raw": 0.11203241327944775,
+            "script_masked": 0.14267778680494497,
+            "phrase_masked": 0.1428538844457236
+          },
+          "expansion": 1.5,
+          "edits": [
+            {
+              "from": "い",
+              "to": "いからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "今日は寒いです。",
+      "plain": {
+        "raw": 0.042641087596002734,
+        "script_masked": 0.11992464790431077,
+        "phrase_masked": 0.11997657390449404
+      },
+      "outputs": [
+        {
+          "text": "今日は寒いんだが。",
+          "vector": {
+            "raw": 0.07608381869694472,
+            "script_masked": 0.1196242332038152,
+            "phrase_masked": 0.11970699889575082
+          },
+          "expansion": 1.125,
+          "edits": [
+            {
+              "from": "いです",
+              "to": "いんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "今日は寒いからな。",
+          "vector": {
+            "raw": 0.11203241327944775,
+            "script_masked": 0.14267778680494497,
+            "phrase_masked": 0.1428538844457236
+          },
+          "expansion": 1.125,
+          "edits": [
+            {
+              "from": "いです",
+              "to": "いからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "田中が佐藤を助けた。",
+      "plain": {
+        "raw": 0.02153400619170948,
+        "script_masked": 0.11454089016637581,
+        "phrase_masked": 0.11449194511969567
+      },
+      "outputs": [
+        {
+          "text": "田中が佐藤を助けたからな。",
+          "vector": {
+            "raw": 0.10245498514277843,
+            "script_masked": 0.13753117349473418,
+            "phrase_masked": 0.13750429486944554
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "た",
+              "to": "たからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "田中が佐藤を助けたんだが。",
+          "vector": {
+            "raw": 0.0659693575798158,
+            "script_masked": 0.12234650547550774,
+            "phrase_masked": 0.1223210207414548
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "た",
+              "to": "たんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+      "plain": {
+        "raw": 0.06481541697197869,
+        "script_masked": 0.22339459927417815,
+        "phrase_masked": 0.22338995098295605
+      },
+      "outputs": [
+        {
+          "text": "田中がAを復旧したからな。Bは停止中で、俺は明日確認する。",
+          "vector": {
+            "raw": 0.12825677356024368,
+            "script_masked": 0.22159054816063894,
+            "phrase_masked": 0.22159845548504686
+          },
+          "expansion": 1.1153846153846154,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "田中がAを復旧したんだが。Bは停止中で、俺は明日確認する。",
+          "vector": {
+            "raw": 0.10758573033775141,
+            "script_masked": 0.22200731845593982,
+            "phrase_masked": 0.22201679867088428
+          },
+          "expansion": 1.1153846153846154,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            },
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "田中がAを復旧した。Bは停止中で、俺は明日確認する。",
+          "vector": {
+            "raw": 0.08595245807398134,
+            "script_masked": 0.22339459927417815,
+            "phrase_masked": 0.22338995098295605
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "私は処理の速度をアピールしました。",
+      "plain": {
+        "raw": 0.05316946317582916,
+        "script_masked": 0.2335200350557282,
+        "phrase_masked": 0.2335195474185583
+      },
+      "outputs": [
+        {
+          "text": "俺は処理の速さとスピードをアッピルしたんだが。",
+          "vector": {
+            "raw": 0.08911611153105016,
+            "script_masked": 0.22649169747597517,
+            "phrase_masked": 0.22650776010427684
+          },
+          "expansion": 1.3529411764705883,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "速度",
+              "to": "速さとスピード",
+              "evidenceIds": [
+                "post_02421_ef97fdc26a351d5a_9490"
+              ]
+            },
+            {
+              "from": "アピール",
+              "to": "アッピル",
+              "evidenceIds": [
+                "post_01729_3578425f6701ad48_5839"
+              ]
+            },
+            {
+              "from": "しました",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は処理の速さとスピードをアッピルしたからな。",
+          "vector": {
+            "raw": 0.10882977244566487,
+            "script_masked": 0.22419691313535775,
+            "phrase_masked": 0.22421072892629265
+          },
+          "expansion": 1.3529411764705883,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "速度",
+              "to": "速さとスピード",
+              "evidenceIds": [
+                "post_02421_ef97fdc26a351d5a_9490"
+              ]
+            },
+            {
+              "from": "アピール",
+              "to": "アッピル",
+              "evidenceIds": [
+                "post_01729_3578425f6701ad48_5839"
+              ]
+            },
+            {
+              "from": "しました",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は処理の速さとスピードをアッピルしました。",
+          "vector": {
+            "raw": 0.06608884234770059,
+            "script_masked": 0.21596720237694925,
+            "phrase_masked": 0.2159898266114703
+          },
+          "expansion": 1.2941176470588236,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "速度",
+              "to": "速さとスピード",
+              "evidenceIds": [
+                "post_02421_ef97fdc26a351d5a_9490"
+              ]
+            },
+            {
+              "from": "アピール",
+              "to": "アッピル",
+              "evidenceIds": [
+                "post_01729_3578425f6701ad48_5839"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "全員に助言したが、雰囲気は悪かった。",
+      "plain": {
+        "raw": 0.08477971789679077,
+        "script_masked": 0.15901534124650935,
+        "phrase_masked": 0.1590491462574723
+      },
+      "outputs": [
+        {
+          "text": "ぜいいんにアドバイスを助言したが、ふいんきは悪かったからな。",
+          "vector": {
+            "raw": 0.13331143095787676,
+            "script_masked": 0.16698060097411419,
+            "phrase_masked": 0.1669775033878461
+          },
+          "expansion": 1.6666666666666667,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            },
+            {
+              "from": "助言",
+              "to": "アドバイスを助言",
+              "evidenceIds": [
+                "post_01805_0227b0b27aaf7c48_6214"
+              ]
+            },
+            {
+              "from": "雰囲気",
+              "to": "ふいんき",
+              "evidenceIds": [
+                "post_02212_b32699bc7773619d_8422"
+              ]
+            },
+            {
+              "from": "かった",
+              "to": "かったからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "ぜいいんにアドバイスを助言したが、ふいんきは悪かったんだが。",
+          "vector": {
+            "raw": 0.11468167494126968,
+            "script_masked": 0.15658822054581428,
+            "phrase_masked": 0.15658540633175727
+          },
+          "expansion": 1.6666666666666667,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            },
+            {
+              "from": "助言",
+              "to": "アドバイスを助言",
+              "evidenceIds": [
+                "post_01805_0227b0b27aaf7c48_6214"
+              ]
+            },
+            {
+              "from": "雰囲気",
+              "to": "ふいんき",
+              "evidenceIds": [
+                "post_02212_b32699bc7773619d_8422"
+              ]
+            },
+            {
+              "from": "かった",
+              "to": "かったんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "ぜいいんに助言したが、ふいんきは悪かったからな。",
+          "vector": {
+            "raw": 0.13672696494215653,
+            "script_masked": 0.13772867532296856,
+            "phrase_masked": 0.1377418459604642
+          },
+          "expansion": 1.3333333333333333,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            },
+            {
+              "from": "雰囲気",
+              "to": "ふいんき",
+              "evidenceIds": [
+                "post_02212_b32699bc7773619d_8422"
+              ]
+            },
+            {
+              "from": "かった",
+              "to": "かったからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "私は怒りが頂点に達した。",
+      "plain": {
+        "raw": 0.04971876277934165,
+        "script_masked": 0.16739040276039713,
+        "phrase_masked": 0.16744032969993689
+      },
+      "outputs": [
+        {
+          "text": "俺は怒りが有頂天になった。",
+          "vector": {
+            "raw": 0.10206155470660361,
+            "script_masked": 0.13236403072201983,
+            "phrase_masked": 0.1323710202979396
+          },
+          "expansion": 1.0833333333333333,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "怒りが頂点に達した",
+              "to": "怒りが有頂天になった",
+              "evidenceIds": [
+                "post_01635_41e56849e981c8e0_5432"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は怒りが頂点に達したからな。",
+          "vector": {
+            "raw": 0.12173403314736284,
+            "script_masked": 0.1715310585471081,
+            "phrase_masked": 0.171585254335915
+          },
+          "expansion": 1.25,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "私はとても悲しかった。",
+      "plain": {
+        "raw": 0.09448806950335874,
+        "script_masked": 0.1106673350727866,
+        "phrase_masked": 0.11064506371238443
+      },
+      "outputs": [
+        {
+          "text": "俺は深い悲しみに包まれた。",
+          "vector": {
+            "raw": 0.05540849321197626,
+            "script_masked": 0.12972653854323307,
+            "phrase_masked": 0.14847065035846344
+          },
+          "expansion": 1.1818181818181819,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "とても悲しかった",
+              "to": "深い悲しみに包まれた",
+              "evidenceIds": [
+                "post_01958_a99dd6788275096d_7231"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺はとても悲しかったからな。",
+          "vector": {
+            "raw": 0.14415712484550766,
+            "script_masked": 0.12559277263957241,
+            "phrase_masked": 0.12559819209989923
+          },
+          "expansion": 1.2727272727272727,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "かった",
+              "to": "かったからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "資料は貴重です。",
+      "plain": {
+        "raw": 0.02405694544899129,
+        "script_masked": 0.16024417352842063,
+        "phrase_masked": 0.1602963311143988
+      },
+      "outputs": [
+        {
+          "text": "資料は貴重に大切です。",
+          "vector": {
+            "raw": 0.020926609248848357,
+            "script_masked": 0.18745468945387253,
+            "phrase_masked": 0.18754080064126016
+          },
+          "expansion": 1.375,
+          "edits": [
+            {
+              "from": "貴重",
+              "to": "貴重に大切",
+              "evidenceIds": [
+                "post_01561_67ee10dc8b7f3d90_5087"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "全然動かない。",
+      "plain": {
+        "raw": 0.07044194974399595,
+        "script_masked": 0.05616237405195217,
+        "phrase_masked": 0.056102279317437075
+      },
+      "outputs": [
+        {
+          "text": "全然全く動かない。",
+          "vector": {
+            "raw": 0.07044194974399595,
+            "script_masked": 0.06670745673297995,
+            "phrase_masked": 0.06665545988519836
+          },
+          "expansion": 1.2857142857142858,
+          "edits": [
+            {
+              "from": "全然",
+              "to": "全然全く",
+              "evidenceIds": [
+                "post_02029_95798251b01b7494_7533"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "全然全く動かないからな。",
+          "vector": {
+            "raw": 0.1407419982594004,
+            "script_masked": 0.10654560590372397,
+            "phrase_masked": 0.10675188961511259
+          },
+          "expansion": 1.7142857142857142,
+          "edits": [
+            {
+              "from": "全然",
+              "to": "全然全く",
+              "evidenceIds": [
+                "post_02029_95798251b01b7494_7533"
+              ]
+            },
+            {
+              "from": "ない",
+              "to": "ないからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "全然全く動かないんだが。",
+          "vector": {
+            "raw": 0.10528665401747181,
+            "script_masked": 0.08788372308520716,
+            "phrase_masked": 0.08789994017586371
+          },
+          "expansion": 1.7142857142857142,
+          "edits": [
+            {
+              "from": "全然",
+              "to": "全然全く",
+              "evidenceIds": [
+                "post_02029_95798251b01b7494_7533"
+              ]
+            },
+            {
+              "from": "ない",
+              "to": "ないんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "それは確実だ。",
+      "plain": {
+        "raw": 0.048061331198286504,
+        "script_masked": 0.08926551840029363,
+        "phrase_masked": 0.08895269311529298
+      },
+      "outputs": [
+        {
+          "text": "それは確定的なんだが。",
+          "vector": {
+            "raw": 0.11180663096352869,
+            "script_masked": 0.10670442041717286,
+            "phrase_masked": 0.1064809462305733
+          },
+          "expansion": 1.5714285714285714,
+          "edits": [
+            {
+              "from": "確実",
+              "to": "確定的",
+              "evidenceIds": [
+                "post_01674_cb7c3a70cfcf77ea_5602"
+              ]
+            },
+            {
+              "from": "だ",
+              "to": "なんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "それは確定的だからな。",
+          "vector": {
+            "raw": 0.1413095901769765,
+            "script_masked": 0.13359782691175084,
+            "phrase_masked": 0.13343940947607896
+          },
+          "expansion": 1.5714285714285714,
+          "edits": [
+            {
+              "from": "確実",
+              "to": "確定的",
+              "evidenceIds": [
+                "post_01674_cb7c3a70cfcf77ea_5602"
+              ]
+            },
+            {
+              "from": "だ",
+              "to": "だからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "それは確定的だ。",
+          "vector": {
+            "raw": 0.060868526299299765,
+            "script_masked": 0.08926551840029363,
+            "phrase_masked": 0.08895269311529298
+          },
+          "expansion": 1.1428571428571428,
+          "edits": [
+            {
+              "from": "確実",
+              "to": "確定的",
+              "evidenceIds": [
+                "post_01674_cb7c3a70cfcf77ea_5602"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "全員が速さとスピードを比較した。",
+      "plain": {
+        "raw": 0.042721145435323994,
+        "script_masked": 0.1677717202200565,
+        "phrase_masked": 0.16773994136525464
+      },
+      "outputs": [
+        {
+          "text": "ぜいいんが速さとスピードを比較した。",
+          "vector": {
+            "raw": 0.06246827324046533,
+            "script_masked": 0.1390184130249695,
+            "phrase_masked": 0.13900484726572848
+          },
+          "expansion": 1.125,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "ぜいいんが速さとスピードを比較したからな。",
+          "vector": {
+            "raw": 0.10785061805509404,
+            "script_masked": 0.14762565647161666,
+            "phrase_masked": 0.14762771573856026
+          },
+          "expansion": 1.3125,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "ぜいいんが速さとスピードを比較したんだが。",
+          "vector": {
+            "raw": 0.08859356443216374,
+            "script_masked": 0.14446864972099152,
+            "phrase_masked": 0.14447211839519417
+          },
+          "expansion": 1.3125,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "速度制限を確認した。",
+      "plain": {
+        "raw": 0.04540085665613744,
+        "script_masked": 0.130147094488098,
+        "phrase_masked": 0.13009696291696335
+      },
+      "outputs": [
+        {
+          "text": "速度制限を確認したんだが。",
+          "vector": {
+            "raw": 0.07950545818648722,
+            "script_masked": 0.12894695791064759,
+            "phrase_masked": 0.12893018081521385
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "速度制限を確認したからな。",
+          "vector": {
+            "raw": 0.10378039508389013,
+            "script_masked": 0.13071071242534524,
+            "phrase_masked": 0.13069432616243742
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "私は明日確認するかもしれない。",
+      "plain": {
+        "raw": 0.08534646077624239,
+        "script_masked": 0.10740952763726952,
+        "phrase_masked": 0.10738248185192444
+      },
+      "outputs": [
+        {
+          "text": "俺は明日確認するかもしれない。",
+          "vector": {
+            "raw": 0.0972817648402714,
+            "script_masked": 0.10740952763726952,
+            "phrase_masked": 0.10738248185192444
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "私は確認しませんでした。",
+      "plain": {
+        "raw": 0.07342968012284892,
+        "script_masked": 0.11893560413444494,
+        "phrase_masked": 0.11896255380097805
+      },
+      "outputs": [
+        {
+          "text": "俺は確認しなかったからな。",
+          "vector": {
+            "raw": 0.1390768964362647,
+            "script_masked": 0.13598792675913246,
+            "phrase_masked": 0.13601410480126516
+          },
+          "expansion": 1.0833333333333333,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "しませんでした",
+              "to": "しなかったからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は確認しなかったんだが。",
+          "vector": {
+            "raw": 0.11809624645202123,
+            "script_masked": 0.12347988535415984,
+            "phrase_masked": 0.12350568225260238
+          },
+          "expansion": 1.0833333333333333,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "しませんでした",
+              "to": "しなかったんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は確認しませんでした。",
+          "vector": {
+            "raw": 0.09050704276611866,
+            "script_masked": 0.11893560413444494,
+            "phrase_masked": 0.11896255380097805
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "田中は「私は全員に助言します」と言った。",
+      "plain": {
+        "raw": 0.08216444963686384,
+        "script_masked": 0.16827872320125215,
+        "phrase_masked": 0.1705571777143858
+      },
+      "outputs": [],
+      "abstention": true,
+      "reason": "unsupported_relation"
+    },
+    {
+      "source": "私は助言したと田中が言った。",
+      "plain": {
+        "raw": 0.09196931484243905,
+        "script_masked": 0.17987406543779647,
+        "phrase_masked": 0.179877991509801
+      },
+      "outputs": [],
+      "abstention": true,
+      "reason": "unsupported_relation"
+    },
+    {
+      "source": "私は100件の記録を確認した。",
+      "plain": {
+        "raw": 0.08858017272008846,
+        "script_masked": 0.2566851515044358,
+        "phrase_masked": 0.25665757577549836
+      },
+      "outputs": [
+        {
+          "text": "俺は100件の記録を確認したんだが。",
+          "vector": {
+            "raw": 0.12342810736091502,
+            "script_masked": 0.24177496715533026,
+            "phrase_masked": 0.2417688716018456
+          },
+          "expansion": 1.2,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は100件の記録を確認したからな。",
+          "vector": {
+            "raw": 0.1415579154952762,
+            "script_masked": 0.236235084145181,
+            "phrase_masked": 0.2362281841935038
+          },
+          "expansion": 1.2,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は100件の記録を確認した。",
+          "vector": {
+            "raw": 0.10491333897114423,
+            "script_masked": 0.2566851515044358,
+            "phrase_masked": 0.25665757577549836
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "私はAからBへ3個を渡した。",
+      "plain": {
+        "raw": 0.11219906675370397,
+        "script_masked": 0.20064921582695702,
+        "phrase_masked": 0.2007758434473777
+      },
+      "outputs": [
+        {
+          "text": "俺はAからBへ3個を渡したんだが。",
+          "vector": {
+            "raw": 0.13257503621355415,
+            "script_masked": 0.1980074115735824,
+            "phrase_masked": 0.19812952321692226
+          },
+          "expansion": 1.2142857142857142,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺はAからBへ3個を渡したからな。",
+          "vector": {
+            "raw": 0.1427116929116103,
+            "script_masked": 0.19300197915571882,
+            "phrase_masked": 0.19310677309466093
+          },
+          "expansion": 1.2142857142857142,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺はAからBへ3個を渡した。",
+          "vector": {
+            "raw": 0.13667855456459974,
+            "script_masked": 0.20064921582695702,
+            "phrase_masked": 0.2007758434473777
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "確認してくれてありがとうございます。",
+      "plain": {
+        "raw": 0.06629474282910072,
+        "script_masked": 0.062481421698066524,
+        "phrase_masked": 0.062463270195189
+      },
+      "outputs": [],
+      "abstention": true,
+      "reason": "unsupported_relation"
+    },
+    {
+      "source": "どうすればいいですか？",
+      "plain": {
+        "raw": 0.07401237570860085,
+        "script_masked": 0.05015017969908217,
+        "phrase_masked": 0.05013728412012103
+      },
+      "outputs": [],
+      "abstention": true,
+      "reason": "unsupported_relation"
+    },
+    {
+      "source": "もし全員が来れば確認する。",
+      "plain": {
+        "raw": 0.053156205159059916,
+        "script_masked": 0.11328655559798942,
+        "phrase_masked": 0.11325573070355334
+      },
+      "outputs": [
+        {
+          "text": "もしぜいいんが来れば確認する。",
+          "vector": {
+            "raw": 0.07543821516452176,
+            "script_masked": 0.08286448791577274,
+            "phrase_masked": 0.08285330228648868
+          },
+          "expansion": 1.1538461538461537,
+          "edits": [
+            {
+              "from": "全員",
+              "to": "ぜいいん",
+              "evidenceIds": [
+                "post_01694_7cde927e1222c449_5687"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "私立学校で雰囲気を調べた。",
+      "plain": {
+        "raw": 0.01846571524586127,
+        "script_masked": 0.1275450387241269,
+        "phrase_masked": 0.12748885789467465
+      },
+      "outputs": [
+        {
+          "text": "私立学校でふいんきを調べた。",
+          "vector": {
+            "raw": 0.025061188698055417,
+            "script_masked": 0.05604872669490911,
+            "phrase_masked": 0.05603059525340875
+          },
+          "expansion": 1.0769230769230769,
+          "edits": [
+            {
+              "from": "雰囲気",
+              "to": "ふいんき",
+              "evidenceIds": [
+                "post_02212_b32699bc7773619d_8422"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "私立学校でふいんきを調べたからな。",
+          "vector": {
+            "raw": 0.09237587155907191,
+            "script_masked": 0.09044326268729827,
+            "phrase_masked": 0.09044904176219097
+          },
+          "expansion": 1.3076923076923077,
+          "edits": [
+            {
+              "from": "雰囲気",
+              "to": "ふいんき",
+              "evidenceIds": [
+                "post_02212_b32699bc7773619d_8422"
+              ]
+            },
+            {
+              "from": "た",
+              "to": "たからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "私立学校でふいんきを調べたんだが。",
+          "vector": {
+            "raw": 0.06345516694332726,
+            "script_masked": 0.07307683710532722,
+            "phrase_masked": 0.0730828201081836
+          },
+          "expansion": 1.3076923076923077,
+          "edits": [
+            {
+              "from": "雰囲気",
+              "to": "ふいんき",
+              "evidenceIds": [
+                "post_02212_b32699bc7773619d_8422"
+              ]
+            },
+            {
+              "from": "た",
+              "to": "たんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "田中がAを復旧した。",
+      "plain": {
+        "raw": 0.05740536743864609,
+        "script_masked": 0.15405459892059153,
+        "phrase_masked": 0.15399829113876973
+      },
+      "outputs": [
+        {
+          "text": "田中がAを復旧したからな。",
+          "vector": {
+            "raw": 0.11095515301389522,
+            "script_masked": 0.15607310351103562,
+            "phrase_masked": 0.15604449155770514
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "田中がAを復旧したんだが。",
+          "vector": {
+            "raw": 0.08572400761713289,
+            "script_masked": 0.15473475468835943,
+            "phrase_masked": 0.1547049829069587
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "Bは停止中だ。",
+      "plain": {
+        "raw": null,
+        "script_masked": 0.16811196885963425,
+        "phrase_masked": 0.16819797803712605
+      },
+      "outputs": [
+        {
+          "text": "Bは停止中なんだが。",
+          "vector": {
+            "raw": 0.09888834572668803,
+            "script_masked": 0.12841238801035038,
+            "phrase_masked": 0.12845592904275213
+          },
+          "expansion": 1.4285714285714286,
+          "edits": [
+            {
+              "from": "だ",
+              "to": "なんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Bは停止中だからな。",
+          "vector": {
+            "raw": 0.1298696549398741,
+            "script_masked": 0.17126792151227122,
+            "phrase_masked": 0.1713871471993792
+          },
+          "expansion": 1.4285714285714286,
+          "edits": [
+            {
+              "from": "だ",
+              "to": "だからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "私は明日確認する。",
+      "plain": {
+        "raw": 0.039808062419375706,
+        "script_masked": 0.13489391698304598,
+        "phrase_masked": 0.13494906254249908
+      },
+      "outputs": [
+        {
+          "text": "俺は明日確認するんだが。",
+          "vector": {
+            "raw": 0.12622601800864033,
+            "script_masked": 0.15398478682716654,
+            "phrase_masked": 0.15404410207833882
+          },
+          "expansion": 1.3333333333333333,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "する",
+              "to": "するんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は明日確認するからな。",
+          "vector": {
+            "raw": 0.15094712101906663,
+            "script_masked": 0.16455005434888098,
+            "phrase_masked": 0.1646066280222523
+          },
+          "expansion": 1.3333333333333333,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            },
+            {
+              "from": "する",
+              "to": "するからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "俺は明日確認する。",
+          "vector": {
+            "raw": 0.07117263705542334,
+            "script_masked": 0.13489391698304598,
+            "phrase_masked": 0.13494906254249908
+          },
+          "expansion": 1,
+          "edits": [
+            {
+              "from": "私",
+              "to": "俺",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": null
+    },
+    {
+      "source": "田中は佐藤を助けなかった。",
+      "plain": {
+        "raw": 0.08298337602510639,
+        "script_masked": 0.1410215511644188,
+        "phrase_masked": 0.14100359689708816
+      },
+      "outputs": [
+        {
+          "text": "田中は佐藤を助けなかったんだが。",
+          "vector": {
+            "raw": 0.10189879839162562,
+            "script_masked": 0.14143999778597527,
+            "phrase_masked": 0.1414441828378589
+          },
+          "expansion": 1.2307692307692308,
+          "edits": [
+            {
+              "from": "かった",
+              "to": "かったんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "田中は佐藤を助けなかったからな。",
+          "vector": {
+            "raw": 0.12246790939228841,
+            "script_masked": 0.15289131880201337,
+            "phrase_masked": 0.15289533445424772
+          },
+          "expansion": 1.2307692307692308,
+          "edits": [
+            {
+              "from": "かった",
+              "to": "かったからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "担当者が100件の記録を確認した。",
+      "plain": {
+        "raw": 0.09517894083591023,
+        "script_masked": 0.22571188750945284,
+        "phrase_masked": 0.22563701305114467
+      },
+      "outputs": [
+        {
+          "text": "担当者が100件の記録を確認したんだが。",
+          "vector": {
+            "raw": 0.11510303439730021,
+            "script_masked": 0.21776267899522544,
+            "phrase_masked": 0.21771487133411863
+          },
+          "expansion": 1.1764705882352942,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "担当者が100件の記録を確認したからな。",
+          "vector": {
+            "raw": 0.1345981225975043,
+            "script_masked": 0.21496834515773647,
+            "phrase_masked": 0.21492286517404557
+          },
+          "expansion": 1.1764705882352942,
+          "edits": [
+            {
+              "from": "した",
+              "to": "したからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "今日は雨が降っている。",
+      "plain": {
+        "raw": 0.1244376248521297,
+        "script_masked": 0.20777302087565053,
+        "phrase_masked": 0.2077638001216134
+      },
+      "outputs": [
+        {
+          "text": "今日は雨が降っているんだが。",
+          "vector": {
+            "raw": 0.16333269127258288,
+            "script_masked": 0.22156008249902912,
+            "phrase_masked": 0.22156163897823292
+          },
+          "expansion": 1.2727272727272727,
+          "edits": [
+            {
+              "from": "いる",
+              "to": "いるんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "今日は雨が降っているからな。",
+          "vector": {
+            "raw": 0.1831906426945298,
+            "script_masked": 0.22860905639032944,
+            "phrase_masked": 0.2286100112250551
+          },
+          "expansion": 1.2727272727272727,
+          "edits": [
+            {
+              "from": "いる",
+              "to": "いるからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "会議が長くて疲れた。",
+      "plain": {
+        "raw": 0.052238686420463816,
+        "script_masked": 0.11530409193490826,
+        "phrase_masked": 0.11526257299469601
+      },
+      "outputs": [
+        {
+          "text": "会議が長くて疲れたんだが。",
+          "vector": {
+            "raw": 0.08385220754089186,
+            "script_masked": 0.12304952906875652,
+            "phrase_masked": 0.12303028567265473
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "た",
+              "to": "たんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "会議が長くて疲れたからな。",
+          "vector": {
+            "raw": 0.12083158925987317,
+            "script_masked": 0.13817018316717858,
+            "phrase_masked": 0.138149788063265
+          },
+          "expansion": 1.3,
+          "edits": [
+            {
+              "from": "た",
+              "to": "たからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "念のため資料を何度も見直したので提出が遅れた。",
+      "plain": {
+        "raw": 0.07545394288852056,
+        "script_masked": 0.17660855309853676,
+        "phrase_masked": 0.17656679762314756
+      },
+      "outputs": [
+        {
+          "text": "念のため資料を何度も見直したので提出が遅れたからな。",
+          "vector": {
+            "raw": 0.12127525322469244,
+            "script_masked": 0.19237001140863205,
+            "phrase_masked": 0.19234235404862815
+          },
+          "expansion": 1.1304347826086956,
+          "edits": [
+            {
+              "from": "た",
+              "to": "たからな",
+              "evidenceIds": [
+                "post_00016_82d78e65bd643a54_22"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "念のため資料を何度も見直したので提出が遅れたんだが。",
+          "vector": {
+            "raw": 0.09885710945303793,
+            "script_masked": 0.18137484270238524,
+            "phrase_masked": 0.18134800971746654
+          },
+          "expansion": 1.1304347826086956,
+          "edits": [
+            {
+              "from": "た",
+              "to": "たんだが",
+              "evidenceIds": [
+                "post_01070_78dae12f12200485_3356"
+              ]
+            }
+          ]
+        }
+      ],
+      "abstention": false,
+      "reason": "candidate_shortage"
+    },
+    {
+      "source": "田中が確認したと佐藤が言った。",
+      "plain": {
+        "raw": 0.09196931484243905,
+        "script_masked": 0.16772247694398718,
+        "phrase_masked": 0.16768431341880902
+      },
+      "outputs": [],
+      "abstention": true,
+      "reason": "unsupported_relation"
+    }
+  ],
+  "styleConfirmed": false,
+  "humanLabels": 0,
+  "limitations": [
+    "文字n-gram TF-IDFであり意味埋め込みではない。",
+    "以前と同じ参照ベクトルで測定。元ログ全体を利用する生成器の未知スレッドへの汎化検証ではない。",
+    "候補数と棄権が異なるため平均値を品質向上率と読まない。",
+    "普通の説明文や支離滅裂な対照にも近くなる指標。人間の文体判断を代替しない。",
+    "このスクリプトは人間評価パック・評価回答を書き込まない。"
+  ]
+}

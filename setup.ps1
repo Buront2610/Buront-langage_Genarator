@@ -2,7 +2,8 @@ param([switch]$Offline)
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 if (-not (Get-Command node -ErrorAction SilentlyContinue)) { throw 'Node.js 24 が必要です。インストール後に再実行してください。' }
-if ((node -p 'process.versions.node.substring(0,2)') -ne '24') { throw '対応環境は Node.js 24 です。' }
+$nodeMajor = & node -p "process.versions.node.split('.')[0]"
+if ($nodeMajor -ne '24') { throw '対応環境は Node.js 24 です。' }
 if (-not (Get-Command uv -ErrorAction SilentlyContinue)) { throw 'uv が必要です。公式の uv インストーラーを使い、再実行してください。' }
 if ($Offline) {
   npm ci --offline

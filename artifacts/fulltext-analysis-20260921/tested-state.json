@@ -1,0 +1,70 @@
+{
+  "scope": "full raw-log descriptive analysis and saved generated-output comparison; no generation implementation changes",
+  "recorded_at": "2026-09-21T13:18:16.042004+00:00",
+  "checks": [
+    {
+      "name": "full analysis execution",
+      "exit_code": 0,
+      "log": "artifacts/full-log-reread/fulltext-analysis-final.log"
+    },
+    {
+      "name": "Ruff E9,F for both new Python files",
+      "exit_code": 0,
+      "log": "artifacts/full-log-reread/fulltext-lint-final.log"
+    },
+    {
+      "name": "independent artifact tests",
+      "tests": 5,
+      "exit_code": 0,
+      "log": "artifacts/full-log-reread/fulltext-tests-final.log"
+    },
+    {
+      "name": "py_compile both new Python files",
+      "exit_code": 0
+    },
+    {
+      "name": "git diff --check",
+      "exit_code": 0
+    },
+    {
+      "name": "HTTP report plus four PNGs equal local file bytes",
+      "exit_code": 0
+    }
+  ],
+  "plots_visually_inspected": [
+    "pca.png",
+    "punctuation.png",
+    "pca-without-length.png"
+  ],
+  "human_ratings_submitted_by_agent": false,
+  "style_quality_confirmed": false,
+  "files": {
+    "scripts/analyze-fulltext.py": "308ba94d6b2c9022bf3adc18e22d328316952c3d82d6a213fb90dfe8d36f6bdf",
+    "test/fulltext_analysis_test.py": "981b9f09e7330821e9a4d9660c35b0bcad0e866670ad543b18834229e52d3016",
+    "docs/fulltext-analysis-20260921.md": "6768b7a1d502076bd472ee2f74f528e990bca5ed0f7209db278fb0a62de7b79d",
+    "artifacts\\fulltext-analysis-20260921\\checkpoint.md": "8b43f7a38f983f18bde7f2eeb778eb74029afcbb7dc638e87966d5538681a6b3",
+    "artifacts\\fulltext-analysis-20260921\\cluster-trials.csv": "50bf4b046753754b3520f16c58c67fb6025e683fe5fecad587522c6ea1e2969f",
+    "artifacts\\fulltext-analysis-20260921\\diagnostics.png": "468ab54a83c6abb065479c6b03f6f8f2acf6d11be3f3e22cc394fd5a01a7153c",
+    "artifacts\\fulltext-analysis-20260921\\diagnostics.svg": "019269901c74bbaa481d571f9e10901a7ae900e8005a4cdcad5f8d5560f99ff3",
+    "artifacts\\fulltext-analysis-20260921\\expression-contexts.json": "d90bcbbda3863c5396ee4284b004e51307b0912e4fc9d0100f6744b742349acf",
+    "artifacts\\fulltext-analysis-20260921\\length-matched-comparison.json": "2bff943fb0ba20eedfa015f5069d9b3234b882ec16eedd07e6771a4dc8840f9c",
+    "artifacts\\fulltext-analysis-20260921\\line-ledger.csv": "7593bada804c47c73ed0897d81c5cb4dd4e4ba37d2dbb6e5cad472eda9f3f66a",
+    "artifacts\\fulltext-analysis-20260921\\manifest.json": "bbcb093947bcbc55bf241d4458af81836cd78f5415fdacc06d41a05a3b111294",
+    "artifacts\\fulltext-analysis-20260921\\near-duplicates.json": "7d53f64098aff2cfc5c9baa45a7fb87ed913a1c15da76283b38a2d1ef8b90fff",
+    "artifacts\\fulltext-analysis-20260921\\nearest-neighbors.csv": "ff5c3e5aed661fc4cc18607459e01ef5349d92c641ededc534957c196669a0d1",
+    "artifacts\\fulltext-analysis-20260921\\pca-loadings.csv": "01b760769b7467f25406d45ad2a2c8eba488c89af254c8c23eb09a7858c71080",
+    "artifacts\\fulltext-analysis-20260921\\pca-without-length.png": "d07ee5a00fb52c15123d66ac901ad8ebaa7ca430478aafe75bf979b481f697e3",
+    "artifacts\\fulltext-analysis-20260921\\pca-without-length.svg": "7789d777e47ec696f9e0895b74f493e6eac84e96d6c8cfa468d3340b1eae136f",
+    "artifacts\\fulltext-analysis-20260921\\pca.png": "a0c0cb9ecf98503c7611ef0c371fbde5606fec2512a4aa68ed353658b02d77a4",
+    "artifacts\\fulltext-analysis-20260921\\pca.svg": "5eaeb9d62601d95e3920b38d9b71740a2e032fb147c4595f7aa89175e872fc6c",
+    "artifacts\\fulltext-analysis-20260921\\post-features.csv": "85f8bd6dd73abb4e17e07948e9e74c050032d76a5c2b76ed457abb920d69607d",
+    "artifacts\\fulltext-analysis-20260921\\posts.jsonl": "6fd58af7426f24e817851814c795dee4c7f2d0a2ae18a45ce3664ab4a8a9987e",
+    "artifacts\\fulltext-analysis-20260921\\probe-features.csv": "84369be30ec5f024d773d9dae7c4c92394e0f7358e160a58d0f56b93774acb86",
+    "artifacts\\fulltext-analysis-20260921\\punctuation.png": "b44dc91386f7c6faad519d9dfd509b95ae350cffd52921af172e5a6dd832888f",
+    "artifacts\\fulltext-analysis-20260921\\punctuation.svg": "11477bbdb5db3e32dfec36e32e27b70c525e37ab80717a7e526cd4ebf4c098b2",
+    "artifacts\\fulltext-analysis-20260921\\report.html": "e6990edb42d847f98eaefc07afb60d474d3d5e4b0d1cdcf0907e7fbd613f8dbf",
+    "artifacts\\fulltext-analysis-20260921\\report.json": "7c804f5f6ca9a8b1ff526c6699ff63e160d49ccf0b5287ad3343685209e5e75a",
+    "artifacts\\fulltext-analysis-20260921\\sections.csv": "8b0fbaeea0d743980f85fe052c54c45b4e15dcb3c28a772b34e34be88bb28280",
+    "artifacts\\fulltext-analysis-20260921\\vectors.json": "13746de6b57f0a3345bcfc5e5d5b0299f6eb258c0a4c7485371feb9931124573"
+  }
+}

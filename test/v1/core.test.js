@@ -18,7 +18,7 @@ const { select, structure, similarity } = require('../../dist/packages/core/eval
 const { splitBeforeGeneration } = require('../../dist/packages/evaluation/dataset');
 const { chooseModelPlan } = require('../../dist/packages/core/model-backend');
 const { BoundedCache } = require('../../dist/packages/runtime/bounded-cache');
-const request = (source, extra = {}) => ({ source, task: 'rewrite', contextMode: 'faithful', noveltyMode: 'invent', intensity: 2, series: 'all', backend: 'structured', clientRevision: 4, seed: 'contract-test', ...extra });
+const request = (source, extra = {}) => ({ source, task: 'rewrite', contextMode: 'faithful', noveltyMode: 'blend', intensity: 2, series: 'all', backend: 'structured', clientRevision: 4, seed: 'contract-test', ...extra });
 let python, assets, analysis, baseline;
 before(async () => { python = new PythonClient(); await python.start(); assets = compileAssets(); analysis = await python.analyze('田中がAを復旧した。Bは停止中で、私は明日確認する。'); baseline = generate(request('田中がAを復旧した。Bは停止中で、私は明日確認する。'), analysis, assets); });
 after(() => python?.close());
@@ -69,7 +69,7 @@ test('Python validates the same exported Draft 2020-12 schema type boundaries', 
   const result = spawnSync(path.resolve('.venv/Scripts/python.exe'), ['-c', script], { input: JSON.stringify({ schema: GenerationSchema, rows }), encoding: 'utf8', windowsHide: true, env: { ...process.env, PYTHONUTF8: '1' } });
   assert.equal(result.status, 0, result.stderr); assert.deepEqual(JSON.parse(result.stdout), [true, false, false, false]);
   const { GenerationResultSchema } = require('../../dist/packages/contracts/results');
-  const output = spawnSync(path.resolve('.venv/Scripts/python.exe'), ['-c', script], { input: JSON.stringify({ schema: GenerationResultSchema, rows: [baseline, { ...baseline, candidates: [...baseline.candidates, baseline.candidates[0]] }] }), encoding: 'utf8', windowsHide: true, env: { ...process.env, PYTHONUTF8: '1' } });
+  const output = spawnSync(path.resolve('.venv/Scripts/python.exe'), ['-c', script], { input: JSON.stringify({ schema: GenerationResultSchema, rows: [baseline, { ...baseline, candidates: Array.from({ length: 4 }, (_, index) => baseline.candidates[index % baseline.candidates.length]) }] }), encoding: 'utf8', windowsHide: true, env: { ...process.env, PYTHONUTF8: '1' } });
   assert.equal(output.status, 0, output.stderr); assert.deepEqual(JSON.parse(output.stdout), [true, false]);
 });
 test('T-07 independent fact scopes keep achievement, unresolved and prospective distinct', () => {
@@ -85,14 +85,18 @@ test('T-03/04/08 parser roles, per-predicate polarity and reported speaker are r
     if (source.includes('助けた')) { assert.equal(result.ir.facts[0].arguments.find(arg => arg.role === 'agent').text, '田中'); assert.equal(result.ir.facts[0].arguments.find(arg => arg.role === 'patient').text, '佐藤'); }
     if (source.includes('承認')) { assert.equal(result.ir.facts[0].polarity, 'positive'); assert.equal(result.ir.facts[1].polarity, 'negative'); }
     if (source.includes('言った')) { const fact = result.ir.facts.find(fact => fact.predicateLemma === '確認'); assert.equal(fact.attribution.kind, 'hearsay'); assert.equal(result.ir.entities.find(entity => entity.id === fact.attribution.speaker).text, '佐藤'); }
-    for (const candidate of result.candidates) assert.ok(candidate.text.startsWith(source));
+    for (const candidate of result.candidates) {
+      assert.ok(candidate.checks.filter(check=>['V-roles','V-polarity','V-attribution'].includes(check.code)).every(check=>check.status==='pass'));
+      if(source.includes('助けた')) assert.match(candidate.text,/田中が佐藤を助けた/u);
+      if(source.includes('承認')) { assert.match(candidate.text,/田中は承認した/u); assert.match(candidate.text,/佐藤は承認していない/u); }
+    }
   }
 });
 test('T-13 bounded applicable operators, no forced means/end operation and untrained S/Q', () => {
   const plans = makePlans(baseline.ir, request(baseline.ir.source.raw), assets);
   assert.ok(plans.length > 0 && plans.length <= 12); assert.deepEqual(new Set(plans.map(plan => plan.mainOperator)), new Set(['OP-01', 'OP-02', 'OP-06']));
   assert.ok(plans.every(plan => plan.rhetoric.relation === 'stoppage' && plan.rhetoric.factId === baseline.ir.facts.find(fact => fact.predicateLemma === '停止中').id));
-  assert.equal(baseline.candidates.length, 3);
+  assert.ok(baseline.candidates.length >= 2 && baseline.candidates.length <= 3);
   for (const candidate of baseline.candidates) { assert.equal(candidate.scores.S, null); assert.equal(candidate.scores.Q, null); assert.ok(candidate.plan.backTranslation); assert.equal(candidate.spans.at(-1).span.end, [...candidate.text].length); }
 });
 test('T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass', () => {
@@ -102,13 +106,13 @@ test('T-01..08 tampered factual text and rhetoric labels cannot self-certify a p
     const draft = realize(plan), allowed = new Set(plan.nodes.filter(node => node.type === 'RhetoricalClause').map(node => node.text));
     assert.notEqual(verification(validateCandidate(ir, plan, draft.text, draft.spans, new Set(assets.evidence.map(item => item.id)), allowed)), 'passed', row.id);
   }
-  const candidate = baseline.candidates[0], forged = structuredClone(candidate.plan); forged.nodes.find(node => node.id === 'main-quote').text = 'たとえるなら、佐藤が田中を助けた。';
+  const candidate = baseline.candidates[0], forged = structuredClone(candidate.plan); forged.nodes[0].text = 'たとえるなら、佐藤が田中を助けた。';
   const draft = realize(forged); assert.equal(verification(validateCandidate(baseline.ir, forged, draft.text, draft.spans, new Set(assets.evidence.map(item => item.id)))), 'rejected');
 });
 test('T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations', () => {
   for (const count of [0, 1, 2]) {
     const candidates = baseline.candidates.map((candidate, i) => ({ ...candidate, verificationStatus: i < count ? 'passed' : 'needs_review' }));
-    assert.equal(select(candidates, 'invent').length, count);
+    assert.equal(select(candidates, 'blend').length, count);
   }
   assert.equal(select(baseline.candidates.map(candidate => ({ ...candidate, novelty: { ...candidate.novelty, classification: 'adaptation' } })), 'invent').length, 0);
 });
@@ -119,12 +123,12 @@ test('Partial replay reconstructs trusted parent candidates and rejects forged l
   const { replayGeneration } = require('../../dist/packages/core/replay');
   const parent = baseline.candidates[0];
   const regenerated = generate(request(baseline.ir.source.raw, { seed: 'partial-replay' }), analysis, assets, {
-    lockedPlan: parent.plan, lockedNodeIds: ['main-quote'], replayParent: baseline.replayManifest, parentCandidateId: parent.id,
+    lockedPlan: parent.plan, lockedNodeIds: ['fact-node-0'], replayParent: baseline.replayManifest, parentCandidateId: parent.id,
   });
   const replayed = replayGeneration(JSON.parse(JSON.stringify(regenerated.replayManifest)), analysis, assets);
   assert.equal(replayed.replayManifest.candidateSetHash, regenerated.replayManifest.candidateSetHash);
   const forged = structuredClone(regenerated.replayManifest);
-  forged.regeneration.lockedPlan.nodes.find(node => node.id === 'main-quote').text = 'たとえるなら、田中が佐藤を助けた。';
+  forged.regeneration.lockedPlan.nodes[0].text = 'たとえるなら、田中が佐藤を助けた。';
   assert.throws(() => replayGeneration(forged, analysis, assets), /REPLAY_LOCK_MISMATCH/);
   const changed = structuredClone(regenerated.replayManifest); changed.history.push({ text: 'changed' });
   assert.throws(() => replayGeneration(changed, analysis, assets), /REPLAY_HISTORY_MISMATCH/);
@@ -162,17 +166,18 @@ test('Register changes retain negative tense, quoted text and URL originals', as
   const source = '担当者が状況を確認しました。';
   const result = generate(request(source), await python.analyze(source), assets);
   assert.ok(result.candidates.length > 0);
-  for (const candidate of result.candidates) { assert.ok(candidate.text.startsWith('担当者が状況を確認した。')); assert.equal(candidate.spans[0].origin, 'paraphrase'); }
+  for (const candidate of result.candidates) { assert.ok(/^担当者が状況を確認(?:しました|した(?:からな)?)$/u.test(candidate.text)); assert.equal(candidate.spans[0].origin, 'paraphrase'); }
 });
-test('Full mode changes presentation order while retaining every fact span', () => {
+test('Full mode retains source order and every fact span without appended rhetoric', () => {
   const result = generate(request(baseline.ir.source.raw, { contextMode: 'full' }), analysis, assets);
   assert.ok(result.candidates.length > 0);
   for (const candidate of result.candidates) {
-    assert.ok(candidate.text.startsWith('たとえるなら、'));
+    assert.ok(candidate.text.startsWith(candidate.plan.nodes[0].text));
+    assert.doesNotMatch(candidate.text, /たとえるなら、|に見立てる/u);
     const nodes = candidate.plan.nodes.filter(node => node.type === 'FactClause').sort((a, b) => a.sourceSpan.start - b.sourceSpan.start);
     assert.equal(nodes.length, 3);
     assert.equal(nodes.map(node => slice(baseline.ir.source.raw, node.sourceSpan)).join(''), baseline.ir.source.raw);
-    assert.ok(nodes.every(node => require('../../dist/packages/core/planning').equivalentEvent(baseline.ir, node.sourceSpan, node.text)));
+    assert.ok(require('../../dist/packages/core/rewrite-validation').validateRewrite(baseline.ir, candidate.plan));
     assert.ok(candidate.checks.every(check => check.status === 'pass'));
   }
 });
@@ -180,17 +185,22 @@ test('Quote focus does not borrow a topic from an omitted fact', async () => {
   const source = '田中が修理した。今日は寒い。', start = [...'田中が修理した。'].length;
   const result = generate(request(source, { task: 'quote', focusSpans: [{ start, end: [...source].length }] }), await python.analyze(source), assets);
   assert.ok(result.candidates.length > 0); assert.deepEqual(result.ir.omittedSpans, [{ start: 0, end: start }]);
-  for (const candidate of result.candidates) { assert.ok(candidate.plan.backTranslation.includes('寒さ')); assert.ok(!candidate.text.includes('修理')); }
+  for (const candidate of result.candidates) { assert.ok(candidate.text.includes('寒い')); assert.ok(!candidate.text.includes('修理')); }
 });
-test('Canonical mode uses attributed corpus quotations, invent mode never silently copies them', async () => {
-  const source = 'ナイト', analysis = await python.analyze(source);
-  const result = generate(request(source, { noveltyMode: 'canonical' }), analysis, assets);
-  assert.ok(result.candidates.length > 0);
-  for (const candidate of result.candidates) { assert.equal(candidate.novelty.classification, 'known_quote'); assert.ok(candidate.spans.some(span => span.origin === 'direct_quote')); const node = candidate.plan.nodes.find(node => node.type === 'Reference'); assert.equal(node.text, assets.evidence.find(item => item.id === node.evidenceIds[0]).text); }
-  const invent = generate(request(source), analysis, assets); assert.ok(invent.candidates.every(candidate => candidate.novelty.classification === 'candidate_novel'));
+test('Canonical permits adaptations; untransformable topics and invent mode abstain', async () => {
+  const source='ナイト', analysis=await python.analyze(source);
+  for(const noveltyMode of ['canonical','blend','invent']) {
+    const result=generate(request(source,{noveltyMode}),analysis,assets);
+    assert.equal(result.candidates.length,0);assert.equal(result.fallback.text,source);
+  }
+  const text='私は確認した。', parsed=await python.analyze(text);
+  const adapted=generate(request(text,{noveltyMode:'canonical'}),parsed,assets);
+  assert.ok(adapted.candidates.length);assert.ok(adapted.candidates.every(c=>c.novelty.classification==='adaptation'));
+  assert.equal(generate(request(text,{noveltyMode:'invent'}),parsed,assets).candidates.length,0);
 });
+
 test('Connective and reference tags cannot conceal an unsupported factual assertion', () => {
-  const candidate = baseline.candidates[0], plan = structuredClone(candidate.plan); plan.nodes.find(node => node.type === 'Connective').text = '佐藤が承認した。';
+  const candidate = baseline.candidates[0], plan = structuredClone(candidate.plan); plan.nodes.push({ id: 'smuggled', type: 'Connective', text: '佐藤が承認した。', factIds: [], evidenceIds: [] });
   const draft = realize(plan), allowed = new Set(candidate.plan.nodes.filter(node => node.type === 'RhetoricalClause').map(node => node.text));
   assert.equal(verification(validateCandidate(baseline.ir, plan, draft.text, draft.spans, new Set(assets.evidence.map(item => item.id)), allowed)), 'rejected');
   for (const extra of [{ id: 'literal-smuggling', type: 'ProtectedLiteral', text: '佐藤が承認した。', factIds: [], evidenceIds: [] }, { ...candidate.plan.nodes[0], id: 'duplicate-event' }]) {

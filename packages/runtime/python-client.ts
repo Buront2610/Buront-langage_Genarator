@@ -46,7 +46,21 @@ export class PythonClient {
   }
   async request(operation: string, payload: unknown, deadline: number, signal?: AbortSignal): Promise<any> {
     if (this.restarts > 2) throw new Error('ANALYZER_RESTART_LIMIT');
-    await this.start();
+    if (signal?.aborted) throw new Error('CANCELLED');
+    if (Date.now() >= deadline) throw new Error('DEADLINE_EXCEEDED');
+    // Cancellation must also release a coordinator waiting for a restarted
+    // analyzer's ready frame. Waiting for start() first can block its queue for
+    // the full model load even after the job has already been cancelled.
+    const startup = this.start();
+    await new Promise<void>((resolve, reject) => {
+      const fail = (code: string) => { cleanup(); this.abortProcess(code); reject(new Error(code)); };
+      const onAbort = () => fail('CANCELLED');
+      const timer = setTimeout(() => fail('DEADLINE_EXCEEDED'), Math.max(1, deadline - Date.now()));
+      const cleanup = () => { clearTimeout(timer); signal?.removeEventListener('abort', onAbort); };
+      signal?.addEventListener('abort', onAbort, { once: true });
+      if (signal?.aborted) onAbort();
+      startup.then(() => { cleanup(); resolve(); }, error => { cleanup(); reject(error); });
+    });
     if (signal?.aborted) throw new Error('CANCELLED');
     if (Date.now() >= deadline) throw new Error('DEADLINE_EXCEEDED');
     const requestId = randomUUID();

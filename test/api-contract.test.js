@@ -6,7 +6,7 @@ const { fork } = require("node:child_process");
 const { once } = require("node:events");
 const path = require("node:path");
 
-test("T-12: HTTP経由でも候補ID・検証・原文保持が整合する", { timeout: 30000 }, async (t) => {
+test("T-12: HTTP経由でも候補ID・検証・原文保持が整合する", { timeout: 120000 }, async (t) => {
   const child = fork("-e", [
     "require('./server').ready.then(app=>process.send({port:app.server.address().port}));",
   ], { cwd: path.resolve(__dirname, ".."), env: { ...process.env, PORT: "0" }, silent: true });
@@ -29,11 +29,14 @@ test("T-12: HTTP経由でも候補ID・検証・原文保持が整合する", { 
   const sessionResponse = await fetch(`http://127.0.0.1:${port}/api/v1/session`, { method: "POST", headers: { "X-Buront-Client": "1", "Content-Type": "application/json" }, body: "{}" });
   const token = (await sessionResponse.json()).token;
   const headers = { "Content-Type": "application/json", Authorization: `Bearer ${token}`, Cookie: sessionResponse.headers.get("set-cookie").split(";")[0] };
-  for (let i = 0; i < 100; i++) {
+  let engineReady = false;
+  const startupDeadline = Date.now() + 60000;
+  while (Date.now() < startupDeadline) {
     const status = await fetch(`http://127.0.0.1:${port}/api/v1/status`, { headers });
-    if ((await status.json()).ready) break;
+    if ((await status.json()).ready) { engineReady = true; break; }
     await new Promise(resolve => setTimeout(resolve, 100));
   }
+  assert.equal(engineReady, true, 'Parser and search index must be ready before testing conversion');
   const post = async (body) => {
     const response = await fetch(`http://127.0.0.1:${port}/api/convert`, {
       method: "POST", headers, body: JSON.stringify(body),

@@ -1,0 +1,10 @@
+{
+  "engineHash": "9dbc24fadcbe4b51bf81eafef0e3694b58b058f67ca7a93c73eb4db5b88afdca",
+  "files": {
+    "packages/core/series.ts": "696aff4a2fd94bce0f1e418377021f2c2d7783bcd34fecf6edba91a8d89c9b6e",
+    "apps/web/src/ReviewPanel.tsx": "6ca9fc5069b2f92ec4a96b91c9047a450c190790e1c7d93554f43db0f04543fa",
+    "test/v1/series-regressions.test.js": "32fbfb19fe6910f6ef907f8874f02656ca0eb92bcbe0ed7832637864e52930e5",
+    "test/v1/style-regressions.test.js": "266e682ecb15814c91198f47f951249f7bad604f1d98526db93f8869b30d98f8"
+  },
+  "reviewWithdrawn": true
+}

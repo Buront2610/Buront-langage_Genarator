@@ -1,0 +1,141 @@
+{
+  "recordedAt": "2026-09-21T12:48:42.514Z",
+  "build": {
+    "schemaVersion": 1,
+    "sourceHash": "119170ce5f1aee4c61bc89eb2bfc1d5edb5ef826a81af6be8277f7f10a091cf3",
+    "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "checks": [
+    {
+      "log": "v1-tests-final.log",
+      "total": 85,
+      "passed": 83,
+      "failed": 2,
+      "exitCode": 1
+    },
+    {
+      "log": "api-final.log",
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "exitCode": 0
+    },
+    {
+      "log": "runtime-final.log",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "exitCode": 0
+    }
+  ],
+  "typecheck": {
+    "log": "typecheck-04.log",
+    "exitCode": 0
+  },
+  "buildCheck": {
+    "log": "build-04.log",
+    "exitCode": 0
+  },
+  "coverage": "85 distinct current v1 cases covered by successful results, including API/runtime reruns after fixture warmup fixes. Not a passing single full-suite run. Legacy lib full-suite run was interrupted.",
+  "changedFiles": {
+    "apps/server/index.ts": "78261c53a5390536bef46979d780725d4bc18032997fddbe06acc8ae48d0b763",
+    "apps/web/src/main.tsx": "3b395999a4a34dd1ec192a687f15967aa7a94d0ab805fa3855542c0b7f02ec0e",
+    "packages/contracts/generated/CandidateResultSchema.schema.json": "8ec51eb74cf592bc578a7e5987106c3c4f3ae8163f6f2e57957b6bc96a82219a",
+    "packages/contracts/generated/GenerationResultSchema.schema.json": "955de3b3c758ebd06dfba1baecabac38b8ef6a45772d3c968e772db742c24be8",
+    "packages/contracts/generated/QuotePlanSchema.schema.json": "ba4fd7fcdfe0cf2891843fae6a265fb22b830c17fdeb9f1d20831da41409a496",
+    "packages/contracts/generated/regeneration.schema.json": "a7e0a96f9c49243c900e63f04661416ea793094fac83a5812fb23961875fdff4",
+    "packages/contracts/index.ts": "894400808a30acc1a407732f0cb4fc29e026a1ea6be8a8c9a56019e86fa2b344",
+    "packages/contracts/results.ts": "60d84518f49ac36c73a6ef25947e61d663c5f93f6a499cb1a13166b06ab4694a",
+    "packages/core/engine.ts": "b20613913b9dd4b84183ebc66851e00f81ab64869d57246f00e2de2c4dcf6959",
+    "packages/core/evaluation.ts": "49d96f163b715aee06c795007da91768ebe2134ad0d4ef046d94c7d200f0ae84",
+    "packages/core/rhetoric-validation.ts": "5391fc92af2b0c0cb24c50ec1774341b0bf27712a97f7299fdc98e0edba8c885",
+    "packages/core/rhetoric.ts": "61c7b2953c48ea34ae545c2efe392ad7d1559a3b3b07e7ff335ce880f95fdeff",
+    "packages/core/semantic.ts": "2e7cc470a1cd63937d4a666ba931e43133d136d408cc07b86f18c9f2c1099d16",
+    "packages/core/series.ts": "696aff4a2fd94bce0f1e418377021f2c2d7783bcd34fecf6edba91a8d89c9b6e",
+    "packages/core/validator.ts": "0e4399fb17e0cad2df685207198e259d19b4c20464e755b1c43a83be4d61036e",
+    "packages/runtime/coordinator.ts": "ca28a05afc6b00b736b3c533e2c89c0e414602c9849595c19f4cbb5e190292ed",
+    "packages/runtime/python-client.ts": "7b0a99bd745d7ebab155e01e1f768bd806561471573c27538e9fe5b66d8425d2",
+    "packages/runtime/worker.ts": "c3cd61723330e33897e21f17caec350d6d51456a27b9361e882d5156b6f9574d",
+    "test/api-contract.test.js": "34e3c22e7228e473f89af721cad868023c04afb97d0a1d0cb4be6e12db641af7",
+    "test/v1/api.test.js": "5d2e42e782630f535c751c1ff889b48fb065aec40cf43ce76b87432dc2400564",
+    "test/v1/audit-regressions.test.js": "1d5f22f8c6ba486d7989ba61ff1d5ee1daa1bd423fd78091a5f7ea288e81cf5e",
+    "test/v1/core.test.js": "268f54c3e87a4914cccf457019d8668e9c70b81a8b6750a406532ca01245f9ca",
+    "test/v1/planning.test.js": "6d164c797af681c0f0ef397c70b152bdcceb5074926e11d71aeed425ae0a0f93",
+    "test/v1/runtime.test.js": "96fecce382d9166f9f217ff0cbf79046fc998ad9ed238f3ffe1ed6c7f8427888",
+    "apps/web/src/ReviewPanel.tsx": "6ca9fc5069b2f92ec4a96b91c9047a450c190790e1c7d93554f43db0f04543fa",
+    "docs/full-log-reread-20260921.md": "37440702ecf0116c54c6c90dae10187a0716f4784b78890f1b38930c8a8977df",
+    "docs/generation-vector-audit-20260921.md": "a61f8bcfdd7ebf3b24aa0509c8269428c18a7804c1e0431783ad7b17778a394b",
+    "docs/original-log-reread-20260921.md": "126f8dce8e996eedc317d0f323b98f3c6910219b6aad04bf82e7e0b135794737",
+    "docs/style-fix-20260921.md": "9da7d8c4951aae49efcd7e1cd311bc46dbc630052cff9f056a85641ec6dcd602",
+    "packages/contracts/generated/RewriteProgramSchema.schema.json": "bf09ac9f2ab70ceeed0cc0a03b4aa96ec35573988c1da1de24048d86fa85786d",
+    "packages/core/rewrite-rules.ts": "70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c",
+    "packages/core/rewrite-validation.ts": "ccea464449f3aa6ebb7a703115305edb4b23d9ebe68a49a0b8e7b32cf0a65da3",
+    "packages/core/rewrite.ts": "959fe0978dbbeb0336c70ed60e25be1bc79069d92d5464671f042e2014c6da4f",
+    "packages/evaluation/review-types.ts": "879a4eeccb72dbbd43d3cc0d75ddd302535ed366018f28441ae37e67fa228308",
+    "packages/evaluation/style-vector.ts": "40bf223f1447cce6e920557223ebe1f9a3e0892a780c905b58cf68d323cffdc1",
+    "packages/runtime/review-routes.ts": "753a98f1be5c80068e6c3b2c82f2e1af76d9954d2e0102fc166bb6e8a46d8fa0",
+    "packages/runtime/review-store.ts": "ef756e6646769756570e11cbd00420d66d7bb59b8718cb373e6506e70134ca14",
+    "scripts/v1/audit-style.ts": "e3289cc6fcbee889c87e61a307d66031f109bdb353fc2538671cac52d9140eeb",
+    "test/v1/analyzer-startup.test.js": "17a684513bf9706d5aa29441f21fc9cd1235df3c349041ffd1ccd6010b5ef6e5",
+    "test/v1/human-review.test.js": "a28feba70386e72da49295df55d6dc6390b605dfe9167b83e0704b1a45dfc768",
+    "test/v1/series-regressions.test.js": "32fbfb19fe6910f6ef907f8874f02656ca0eb92bcbe0ed7832637864e52930e5",
+    "test/v1/style-regressions.test.js": "db24b98a645def1200ce111b123572b8d5b24c52aa73f20ea411e69f97fa9793",
+    "test/v1/style-vector.test.js": "110679b96b176c5e4d0dc1b7c1be1ce04c1cde0fc48409a538df42be72ae5690"
+  },
+  "generationOutputAndVectorSourceHashes": {
+    "packages/core/rewrite-rules.ts": "70f669a209fc7bd476ce1ae5627c2d23d0060475fa8aca7a0dc5c3276317870c",
+    "packages/core/rewrite.ts": "959fe0978dbbeb0336c70ed60e25be1bc79069d92d5464671f042e2014c6da4f",
+    "packages/core/rewrite-validation.ts": "ccea464449f3aa6ebb7a703115305edb4b23d9ebe68a49a0b8e7b32cf0a65da3",
+    "packages/core/engine.ts": "b20613913b9dd4b84183ebc66851e00f81ab64869d57246f00e2de2c4dcf6959",
+    "packages/core/validator.ts": "0e4399fb17e0cad2df685207198e259d19b4c20464e755b1c43a83be4d61036e",
+    "packages/core/evaluation.ts": "49d96f163b715aee06c795007da91768ebe2134ad0d4ef046d94c7d200f0ae84",
+    "packages/core/semantic.ts": "2e7cc470a1cd63937d4a666ba931e43133d136d408cc07b86f18c9f2c1099d16"
+  },
+  "rawLog": {
+    "file": "C:/Users/Glutt/OneDrive/デスクトップ/burontlog.txt",
+    "sha256": "983ba86ddf086d7bc842d91c66a4bc1bab940c126682b436538d5df7a68df752",
+    "lines": 16311,
+    "pagesRead": 45,
+    "coverage": "全行を順に再読。空行以外の本文は省略せず表示。表示が途切れた範囲は再読。",
+    "rereadRanges": [
+      [
+        718,
+        1000
+      ],
+      [
+        2167,
+        2450
+      ],
+      [
+        10753,
+        10756
+      ]
+    ],
+    "checkedAt": "2026-09-21T12:47:59.144Z"
+  },
+  "server": {
+    "url": "http://127.0.0.1:4173",
+    "ready": true,
+    "datasetId": "f1ab5a485e5177ae23e66d6e48d153dffef50ab673a24fdfe0f7038300eed1d3",
+    "engine": {
+      "schemaVersion": 1,
+      "sourceHash": "119170ce5f1aee4c61bc89eb2bfc1d5edb5ef826a81af6be8277f7f10a091cf3",
+      "toolCommit": "4c883d6feb1fd3ae76ea71515742b2f2100c7785",
+      "runtime": "node24-python3.11",
+      "safetyContract": "v1"
+    },
+    "capabilities": {
+      "structured": true,
+      "model": false,
+      "semanticSearch": false,
+      "learnedStyle": false,
+      "learnedQuoteability": false,
+      "partialRegeneration": true
+    },
+    "checkedAt": "2026-09-21T12:40:30.332Z"
+  },
+  "humanRatingsSubmittedByAgent": false,
+  "styleConfirmed": false
+}
