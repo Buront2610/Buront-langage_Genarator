@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "raw",
+    "inputHash",
+    "scalarToUtf16",
+    "normalized",
+    "normalizationMap",
+    "protectedValues",
+    "opaqueSpans"
+  ],
+  "properties": {
+    "raw": {
+      "maxLength": 5000,
+      "type": "string"
+    },
+    "inputHash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "scalarToUtf16": {
+      "maxItems": 5001,
+      "type": "array",
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "normalized": {
+      "maxLength": 120000,
+      "type": "string"
+    },
+    "normalizationMap": {
+      "maxItems": 120000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "protectedValues": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "raw",
+          "span",
+          "role"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "raw": {
+            "type": "string"
+          },
+          "span": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "decimal": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "sign": {
+            "type": "string"
+          },
+          "comparator": {
+            "anyOf": [
+              {
+                "const": "eq",
+                "type": "string"
+              },
+              {
+                "const": "lt",
+                "type": "string"
+              },
+              {
+                "const": "le",
+                "type": "string"
+              },
+              {
+                "const": "gt",
+                "type": "string"
+              },
+              {
+                "const": "ge",
+                "type": "string"
+              }
+            ]
+          },
+          "role": {
+            "type": "string"
+          },
+          "parentId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "opaqueSpans": {
+      "maxItems": 5000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

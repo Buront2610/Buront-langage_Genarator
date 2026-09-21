@@ -1,0 +1,836 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "source",
+    "parserVersion",
+    "facts",
+    "entities",
+    "sentences",
+    "anchors",
+    "times",
+    "conditions",
+    "relations",
+    "adoptedSpans",
+    "omittedSpans",
+    "topicOnly",
+    "tokens"
+  ],
+  "properties": {
+    "source": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "raw",
+        "inputHash",
+        "scalarToUtf16",
+        "normalized",
+        "normalizationMap",
+        "protectedValues",
+        "opaqueSpans"
+      ],
+      "properties": {
+        "raw": {
+          "maxLength": 5000,
+          "type": "string"
+        },
+        "inputHash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "scalarToUtf16": {
+          "maxItems": 5001,
+          "type": "array",
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "normalized": {
+          "maxLength": 120000,
+          "type": "string"
+        },
+        "normalizationMap": {
+          "maxItems": 120000,
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "protectedValues": {
+          "maxItems": 12000,
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "raw",
+              "span",
+              "role"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "raw": {
+                "type": "string"
+              },
+              "span": {
+                "additionalProperties": false,
+                "type": "object",
+                "required": [
+                  "start",
+                  "end"
+                ],
+                "properties": {
+                  "start": {
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "end": {
+                    "minimum": 0,
+                    "type": "integer"
+                  }
+                }
+              },
+              "decimal": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "sign": {
+                "type": "string"
+              },
+              "comparator": {
+                "anyOf": [
+                  {
+                    "const": "eq",
+                    "type": "string"
+                  },
+                  {
+                    "const": "lt",
+                    "type": "string"
+                  },
+                  {
+                    "const": "le",
+                    "type": "string"
+                  },
+                  {
+                    "const": "gt",
+                    "type": "string"
+                  },
+                  {
+                    "const": "ge",
+                    "type": "string"
+                  }
+                ]
+              },
+              "role": {
+                "type": "string"
+              },
+              "parentId": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "opaqueSpans": {
+          "maxItems": 5000,
+          "type": "array",
+          "items": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "parserVersion": {
+      "type": "string"
+    },
+    "facts": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "sourceSpan",
+          "predicateSpan",
+          "predicateLemma",
+          "arguments",
+          "polarity",
+          "realization",
+          "completion",
+          "tense",
+          "voice",
+          "attribution",
+          "protectedValueIds",
+          "resolution"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sourceSpan": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "predicateSpan": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "predicateLemma": {
+            "type": "string"
+          },
+          "arguments": {
+            "type": "array",
+            "items": {
+              "additionalProperties": false,
+              "type": "object",
+              "required": [
+                "role",
+                "entityId",
+                "text",
+                "span"
+              ],
+              "properties": {
+                "role": {
+                  "anyOf": [
+                    {
+                      "const": "agent",
+                      "type": "string"
+                    },
+                    {
+                      "const": "patient",
+                      "type": "string"
+                    },
+                    {
+                      "const": "recipient",
+                      "type": "string"
+                    },
+                    {
+                      "const": "location",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "entityId": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "text": {
+                  "type": "string"
+                },
+                "span": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "required": [
+                    "start",
+                    "end"
+                  ],
+                  "properties": {
+                    "start": {
+                      "minimum": 0,
+                      "type": "integer"
+                    },
+                    "end": {
+                      "minimum": 0,
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "polarity": {
+            "anyOf": [
+              {
+                "const": "positive",
+                "type": "string"
+              },
+              {
+                "const": "negative",
+                "type": "string"
+              },
+              {
+                "const": "unknown",
+                "type": "string"
+              }
+            ]
+          },
+          "realization": {
+            "anyOf": [
+              {
+                "const": "actual",
+                "type": "string"
+              },
+              {
+                "const": "prospective",
+                "type": "string"
+              },
+              {
+                "const": "hypothetical",
+                "type": "string"
+              },
+              {
+                "const": "unknown",
+                "type": "string"
+              }
+            ]
+          },
+          "completion": {
+            "anyOf": [
+              {
+                "const": "completed",
+                "type": "string"
+              },
+              {
+                "const": "ongoing",
+                "type": "string"
+              },
+              {
+                "const": "not_completed",
+                "type": "string"
+              },
+              {
+                "const": "unknown",
+                "type": "string"
+              }
+            ]
+          },
+          "tense": {
+            "anyOf": [
+              {
+                "const": "past",
+                "type": "string"
+              },
+              {
+                "const": "nonpast",
+                "type": "string"
+              },
+              {
+                "const": "unknown",
+                "type": "string"
+              }
+            ]
+          },
+          "voice": {
+            "anyOf": [
+              {
+                "const": "active",
+                "type": "string"
+              },
+              {
+                "const": "passive",
+                "type": "string"
+              },
+              {
+                "const": "unknown",
+                "type": "string"
+              }
+            ]
+          },
+          "attribution": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "kind",
+              "speaker"
+            ],
+            "properties": {
+              "kind": {
+                "anyOf": [
+                  {
+                    "const": "narrator",
+                    "type": "string"
+                  },
+                  {
+                    "const": "quotation",
+                    "type": "string"
+                  },
+                  {
+                    "const": "hearsay",
+                    "type": "string"
+                  }
+                ]
+              },
+              "speaker": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          },
+          "protectedValueIds": {
+            "maxItems": 12000,
+            "type": "array",
+            "items": {
+              "maxLength": 12000,
+              "type": "string"
+            }
+          },
+          "resolution": {
+            "anyOf": [
+              {
+                "const": "resolved",
+                "type": "string"
+              },
+              {
+                "const": "partial",
+                "type": "string"
+              },
+              {
+                "const": "opaque",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "mentions"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "mentions": {
+            "type": "array",
+            "items": {
+              "additionalProperties": false,
+              "type": "object",
+              "required": [
+                "start",
+                "end"
+              ],
+              "properties": {
+                "start": {
+                  "minimum": 0,
+                  "type": "integer"
+                },
+                "end": {
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "anchors": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "raw",
+          "span",
+          "utteranceSpan",
+          "target",
+          "usage",
+          "factIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "raw": {
+            "type": "string"
+          },
+          "span": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "utteranceSpan": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "target": {
+            "type": "string"
+          },
+          "usage": {
+            "anyOf": [
+              {
+                "const": "reply",
+                "type": "string"
+              },
+              {
+                "const": "evaluation",
+                "type": "string"
+              },
+              {
+                "const": "agreement",
+                "type": "string"
+              },
+              {
+                "const": "evidence",
+                "type": "string"
+              },
+              {
+                "const": "vocative",
+                "type": "string"
+              },
+              {
+                "const": "gratitude",
+                "type": "string"
+              },
+              {
+                "const": "unknown",
+                "type": "string"
+              }
+            ]
+          },
+          "factIds": {
+            "maxItems": 12000,
+            "type": "array",
+            "items": {
+              "maxLength": 12000,
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "times": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "text",
+          "span"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "span": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "adoptedSpans": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "omittedSpans": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "start",
+          "end"
+        ],
+        "properties": {
+          "start": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "end": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "topicOnly": {
+      "type": "boolean"
+    },
+    "tokens": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "lemma",
+          "reading",
+          "pos",
+          "tag",
+          "dep",
+          "head",
+          "span",
+          "morphology"
+        ],
+        "properties": {
+          "id": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "text": {
+            "maxLength": 12000,
+            "type": "string"
+          },
+          "lemma": {
+            "maxLength": 12000,
+            "type": "string"
+          },
+          "reading": {
+            "maxLength": 12000,
+            "type": "string"
+          },
+          "pos": {
+            "maxLength": 32,
+            "type": "string"
+          },
+          "tag": {
+            "maxLength": 256,
+            "type": "string"
+          },
+          "dep": {
+            "maxLength": 32,
+            "type": "string"
+          },
+          "head": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "span": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          },
+          "morphology": {
+            "maxItems": 32,
+            "type": "array",
+            "items": {
+              "maxLength": 256,
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

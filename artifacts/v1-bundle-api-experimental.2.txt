@@ -1,0 +1,17 @@
+✔ T-22 only built web files; Host/Origin/token/session boundaries (3359.4986ms)
+✔ M4 API separates invalid input, capacity and unavailable capability (15.0951ms)
+✔ T-12/19 generation result has revision, selected ID, replay, matching spans and no private access (2718.4953ms)
+✔ Partial regeneration authenticates analysis and validates locked plan conflicts (246.7822ms)
+✔ M3 API completes independent reanalysis and preserves its signed partial replay (676.9601ms)
+✔ T-20 cancellation during factual reanalysis cannot publish a late completed result (238.6312ms)
+✔ T-20 queued/running cancellation and completion have a single terminal state (109.7224ms)
+✔ T-21 finite queue and one running request per session; status stays responsive (140.7062ms)
+✔ Only explicit preferences are stored; blind comparisons omit source method/rank/scores (6.8717ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22308.4451

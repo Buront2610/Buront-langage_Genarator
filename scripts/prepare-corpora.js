@@ -203,7 +203,7 @@ async function main() {
 
   const sentences = [];
   for (const post of posts) {
-    for (const sentence of splitSentences(post.content)) {
+    for (const sentence of splitSentences(post.content, { corpusCleanup: true })) {
       if (sentence.length < 4 || sentence.length > 700) continue;
       sentences.push({
         id: `${post.id}_${sentences.length}`,

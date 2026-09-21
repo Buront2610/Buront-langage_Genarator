@@ -1,0 +1,1136 @@
+[
+  {
+    "comparisonId": "274e89ef2cbf2f7f50e3b332",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。圧力の話をしたはずが、受け止める側の構えまで試される。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、盾を外から試す圧力に見立てる。道具の重さを量っただけでは、寒さの強さを量ったことにならない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2975a35ba129cfd6153b8e10",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。厚さを誇る側より、冷たさを通すか試す側に採点権がある。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、盾を外から試す圧力に見立てる。道具の重さを量っただけでは、寒さの強さを量ったことにならない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9d38169990b2c263d9b00dbb",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+    "right": "今日は寒い。\nたとえるなら、寒さを、盾を外から試す圧力に見立てる。道具の重さを量っただけでは、寒さの強さを量ったことにならない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7592fd8101a51fd4ceae2864",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、盾を外から試す圧力に見立てる。道具の重さを量っただけでは、寒さの強さを量ったことにならない。",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "fac35f00e8db9014f4bd0047",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。説明書にも説明書が必要だ。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、盾を外から試す圧力に見立てる。道具の重さを量っただけでは、寒さの強さを量ったことにならない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b01407f9d665403a25523cb1",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。逆さの意味が意味して椅子する。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、盾を外から試す圧力に見立てる。道具の重さを量っただけでは、寒さの強さを量ったことにならない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "031068073b8d35fd4044dabe",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。圧力の話をしたはずが、受け止める側の構えまで試される。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。厚さを誇る側より、冷たさを通すか試す側に採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "af04c224bae663877f7797c7",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+    "right": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。圧力の話をしたはずが、受け止める側の構えまで試される。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "81d937f71a372a2e9b356e26",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。圧力の話をしたはずが、受け止める側の構えまで試される。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "974be998bbd156dd0fbad0f6",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。圧力の話をしたはずが、受け止める側の構えまで試される。",
+    "right": "今日は寒い。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "0373d1b47b2a84f3df54fbc9",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。逆さの意味が意味して椅子する。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。圧力の話をしたはずが、受け止める側の構えまで試される。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f1f0d0ad6e14f623baad3f40",
+    "source": "今日は寒い。",
+    "left": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+    "right": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。厚さを誇る側より、冷たさを通すか試す側に採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "9a40a664e37ec05d3542272a",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。",
+    "right": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。厚さを誇る側より、冷たさを通すか試す側に採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "79e9a4e69c03756cce60fbe2",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。厚さを誇る側より、冷たさを通すか試す側に採点権がある。",
+    "right": "今日は寒い。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2b8a3278b161be9931ac17a5",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。\nたとえるなら、寒さを、防御を外から試す圧力に見立てる。厚さを誇る側より、冷たさを通すか試す側に採点権がある。",
+    "right": "今日は寒い。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a7e72ce6be6a51c2896921d2",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。",
+    "right": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "26a65c0b2e63f75356ef1e97",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。説明書にも説明書が必要だ。",
+    "right": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b314a79c5854da0dd8451ed4",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。逆さの意味が意味して椅子する。",
+    "right": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2d5bf377ea72b48f7c0a4208",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。説明書にも説明書が必要だ。",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "85197b0f13c3ab23e8ddeef4",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。逆さの意味が意味して椅子する。",
+    "right": "今日は寒い。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d27573d68da56844333e7940",
+    "source": "今日は寒い。",
+    "left": "今日は寒い。逆さの意味が意味して椅子する。",
+    "right": "今日は寒い。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "301daa1ca36d68bbd155b560",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。採点するのは道具の見栄えではなく、受け取る側に届く働きだ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b205b7418ba5e5f52d0bd443",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。採点するのは道具の見栄えではなく、受け取る側に届く働きだ。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。道具の重さを量っても、誰から誰へ届くかは量れない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "4ca663d80f54740f9dabb030",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた（ﾘｱﾙ話）",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。採点するのは道具の見栄えではなく、受け取る側に届く働きだ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "30db2f7aa580cefa357de037",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。採点するのは道具の見栄えではなく、受け取る側に届く働きだ。",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "a524f2893733adf16e856090",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。説明書にも説明書が必要だ。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。採点するのは道具の見栄えではなく、受け取る側に届く働きだ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ea84e1f4ada2ccffc1dc5c6e",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。採点するのは道具の見栄えではなく、受け取る側に届く働きだ。",
+    "right": "田中が佐藤を助けた。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "47ecd37a964da15c89d6bbc9",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。道具の重さを量っても、誰から誰へ届くかは量れない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3a612c01bd0a0482f877cca0",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+    "right": "田中が佐藤を助けた（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7623d1680842f0404c1b6c96",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "28f878c2ef4faa08867e5214",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。説明書にも説明書が必要だ。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "fd2a8c1a0c83614bb8d9e427",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、防御を差し出す側と、その陰を受け取る側の関係に見立てる。差し出す側と受け取る側を交換したら、同じ道具でも別の話になる。",
+    "right": "田中が佐藤を助けた。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "90dacca3b338e112ff54abd4",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。道具の重さを量っても、誰から誰へ届くかは量れない。",
+    "right": "田中が佐藤を助けた（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ac1269fd72425ba62482713f",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。",
+    "right": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。道具の重さを量っても、誰から誰へ届くかは量れない。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "52bb16f0b2b9c3c397c8a918",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。道具の重さを量っても、誰から誰へ届くかは量れない。",
+    "right": "田中が佐藤を助けた。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "415028b926a9d0152add289e",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。\nたとえるなら、田中から佐藤へ届いた助力を、盾を差し出す側と、その陰を受け取る側の関係に見立てる。道具の重さを量っても、誰から誰へ届くかは量れない。",
+    "right": "田中が佐藤を助けた。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "96de3eb79f45efbdc60a5773",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた（ﾘｱﾙ話）",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "095955d700baccc488dcb387",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。説明書にも説明書が必要だ。",
+    "right": "田中が佐藤を助けた（ﾘｱﾙ話）",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "15a4c5dda0d4dc96a70762eb",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた（ﾘｱﾙ話）",
+    "right": "田中が佐藤を助けた。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "dbb49b29f863a53d87eadeeb",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。",
+    "right": "田中が佐藤を助けた。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "28473621a44571776fa6af6d",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。逆さの意味が意味して椅子する。",
+    "right": "田中が佐藤を助けた。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b878177e8c190a469c9bfc1e",
+    "source": "田中が佐藤を助けた。",
+    "left": "田中が佐藤を助けた。説明書にも説明書が必要だ。",
+    "right": "田中が佐藤を助けた。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1117925e3cf04e8ea6c3e5a0",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる。",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を知識で確かめる過程に見立てる。道具の立派さより、分からなさが減るかに採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "d10599a4c47fe918beec94c3",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう。",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を知識で確かめる過程に見立てる。道具の立派さより、分からなさが減るかに採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ac0d90781637a2cb709959e0",
+    "source": "私は明日確認する。",
+    "left": "俺は明日確認する\n準備の段階で格の違いが出るのは確定的に明らか",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を知識で確かめる過程に見立てる。道具の立派さより、分からなさが減るかに採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "55e78f955e0bd8cf0fe96432",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を知識で確かめる過程に見立てる。道具の立派さより、分からなさが減るかに採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1b3868cc4298ea4c471a514d",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を知識で確かめる過程に見立てる。道具の立派さより、分からなさが減るかに採点権がある。",
+    "right": "私は明日確認する。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "c38cb98b35827c8d12458a81",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。逆さの意味が意味して椅子する。",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を知識で確かめる過程に見立てる。道具の立派さより、分からなさが減るかに採点権がある。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "3fd0f3252a9b653a0e01e08c",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる。",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7f4abac13549cfda146d36d0",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる。",
+    "right": "俺は明日確認する\n準備の段階で格の違いが出るのは確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "df758eb9ee752a519abdc4a5",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。",
+    "right": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "00c5ef5edd2b9ad0b783cac1",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる。",
+    "right": "私は明日確認する。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "1dcd5d760329ccb7748aa28b",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。確かめるための道具を磨くことが目的になると、確かめたいものだけが置き去りになる。",
+    "right": "私は明日確認する。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ed1fafee2e4ea5f8c4d86ee8",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう。",
+    "right": "俺は明日確認する\n準備の段階で格の違いが出るのは確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "b09bcfea673232fba27e70a3",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう。",
+    "right": "私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "ca21fb2abef9fa460bdfb18f",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう。",
+    "right": "私は明日確認する。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "2275c557f791eeddb2f50aa3",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。\nたとえるなら、私によるこれから行う確認を、見えない先を証拠で確かめる過程に見立てる。道具を数えただけで確かさを量ると、調べる前に答えが増えてしまう。",
+    "right": "私は明日確認する。逆さの意味が意味して椅子する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e8fd2043a4c2da337509d28c",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。",
+    "right": "俺は明日確認する\n準備の段階で格の違いが出るのは確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "60737a951325e287132bce43",
+    "source": "私は明日確認する。",
+    "left": "俺は明日確認する\n準備の段階で格の違いが出るのは確定的に明らか",
+    "right": "私は明日確認する。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "7f06e7fd6646dbe6abf0c60a",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。逆さの意味が意味して椅子する。",
+    "right": "俺は明日確認する\n準備の段階で格の違いが出るのは確定的に明らか",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "e0620cdf88433fff3ab1568b",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。説明書にも説明書が必要だ。",
+    "right": "私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "76341b67fe7cf9b5eceecf1c",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。逆さの意味が意味して椅子する。",
+    "right": "私は明日確認する。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  },
+  {
+    "comparisonId": "f73b4d84e49525cc29ec4ead",
+    "source": "私は明日確認する。",
+    "left": "私は明日確認する。逆さの意味が意味して椅子する。",
+    "right": "私は明日確認する。説明書にも説明書が必要だ。",
+    "dimensions": [
+      "S",
+      "Q",
+      "C"
+    ],
+    "allowedChoices": [
+      "left",
+      "right",
+      "tie",
+      "both_bad",
+      "cannot_judge"
+    ]
+  }
+]

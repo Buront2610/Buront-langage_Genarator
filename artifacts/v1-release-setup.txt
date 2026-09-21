@@ -1,0 +1,15 @@
+
+added 88 packages, and audited 89 packages in 4s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Using CPython 3.11.15
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+Resolved 62 packages in 62ms
+  × Failed to download `sudachidict-core==20260723`
+  ╰─▶ Network connectivity is disabled, but the
+      requested data wasn't found in the cache for:
+      `https://files.pythonhosted.org/packages/46/fe/68a146fced55319af40d25a4fe19b94c3a988406ce4674a8b2f0237fbc9f/sudachidict_core-20260723-py3-none-any.whl`

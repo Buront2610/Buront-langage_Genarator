@@ -1,0 +1,11 @@
+{
+  "source": "田中がAを復旧した。Bは停止中で、私は明日確認する。",
+  "task": "rewrite",
+  "contextMode": "faithful",
+  "noveltyMode": "invent",
+  "intensity": 2,
+  "series": "all",
+  "backend": "structured",
+  "clientRevision": 1,
+  "seed": "design-v1"
+}

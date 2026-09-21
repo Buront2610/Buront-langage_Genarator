@@ -1,0 +1,1003 @@
+diff --git a/lib/context-narrative.js b/lib/context-narrative.js
+index 9f38c12..a0fbef0 100644
+--- a/lib/context-narrative.js
++++ b/lib/context-narrative.js
+@@ -5,6 +5,8 @@ const { AnchorGrammar } = require("./grammar/anchor-grammar");
+ const { AnchorFrameComposer } = require("./grammar/anchor-frames");
+ const { ObservationFrameComposer } = require("./grammar/observation-frames");
+ const { PendingFrameComposer } = require("./grammar/pending-frames");
++const { DiscoursePlanner } = require("./grammar/discourse-planner");
++const { LongFormComposer, rewriteFactList } = require("./grammar/long-form-planner");
+ const { ContextModelExtractor, stripLeadingConnective } = require("./grammar/context-model");
+ const { pick, shuffle } = require("./grammar/random-utils");
+ 
+@@ -15,6 +17,8 @@ class ContextNarrativeGenerator {
+     this.anchorFrameComposer = new AnchorFrameComposer(this.anchorGrammar);
+     this.observationFrameComposer = new ObservationFrameComposer(this.quoteGrammar);
+     this.pendingFrameComposer = new PendingFrameComposer(this.quoteGrammar);
++    this.discoursePlanner = new DiscoursePlanner(this.quoteGrammar);
++    this.longFormComposer = new LongFormComposer(this.quoteGrammar, this.anchorGrammar);
+     this.modelExtractor = new ContextModelExtractor(this.anchorGrammar);
+   }
+ 
+@@ -38,7 +42,9 @@ class ContextNarrativeGenerator {
+       : model.facts[Math.min(1, model.facts.length - 1)];
+     const problemFact = model.problemIndex >= 0 ? stripLeadingConnective(model.facts[model.problemIndex]) : null;
+     const futureFact = model.futureIndex >= 0 ? model.facts[model.futureIndex] : null;
+-    const actionFact = model.actionIndex >= 0 ? stripLeadingConnective(model.facts[model.actionIndex]) : null;
++    const actionFact = model.actionIndex >= 0 && model.actionIndex !== model.achievementIndex
++      ? stripLeadingConnective(model.facts[model.actionIndex])
++      : null;
+     const backgroundFacts = model.facts.filter((fact, index) => (
+       index > 0
+       && index < model.achievementIndex
+@@ -138,6 +144,21 @@ class ContextNarrativeGenerator {
+     const conclusionFor = (hero, family) => this.quoteGrammar
+       .pick("conclusion", quoteContext(hero, family), random).text;
+ 
++    const composerHelpers = {
++      random,
++      heroAliases,
++      quoteContext,
++      openerFor,
++      crisisFor,
++      reactionFor,
++      conclusionFor,
++    };
++    const discourseCandidates = this.discoursePlanner.compose(model, composerHelpers);
++    if (discourseCandidates) return discourseCandidates;
++
++    const longFormCandidates = this.longFormComposer.compose(model, composerHelpers);
++    if (longFormCandidates) return longFormCandidates;
++
+     const anchorCandidates = this.anchorFrameComposer.compose(model, {
+       random,
+       heroAliases,
+@@ -163,7 +184,9 @@ class ContextNarrativeGenerator {
+     if (observationCandidates) return observationCandidates;
+ 
+     if (!model.hasAchievement) {
+-      const stateFacts = model.facts.map(stripLeadingConnective);
++      const stateFacts = model.facts.length >= 4
++        ? rewriteFactList(model, "俺").map((item) => item.text)
++        : model.facts.map(stripLeadingConnective);
+       const stateCandidates = new Set();
+       const stateAliases = [
+         { hero: "俺", family: "self" },
+diff --git a/lib/corpus-engine.js b/lib/corpus-engine.js
+index 0a26042..b83618a 100644
+--- a/lib/corpus-engine.js
++++ b/lib/corpus-engine.js
+@@ -6,6 +6,7 @@ const {
+   extractFeatures,
+   extractProtectedValues,
+   intentTags,
++  normalizeForPresence,
+   normalizeForSearch,
+   scoreNgrams,
+   splitSentences,
+@@ -15,6 +16,8 @@ const { VariationGrammar, createRandom } = require("./variation-grammar");
+ const { ContextNarrativeGenerator } = require("./context-narrative");
+ const { FaithfulQuoteGrammar } = require("./grammar/faithful-quote-grammar");
+ const { EraGrammar } = require("./grammar/era-grammar");
++const { burontLineCoverage, burontizeText } = require("./grammar/buront-surface");
++const { rewriteFact } = require("./grammar/long-form-planner");
+ const { EraProfileRegistry } = require("./era-profiles");
+ const { TfidfCentroidClassifier, TfidfKnnClassifier, TfidfSearchIndex } = require("./vector-space");
+ 
+@@ -232,6 +235,97 @@ function characterNgrams(value, sizes = [2, 3]) {
+   return terms;
+ }
+ 
++function surfaceSimilarity(left, right) {
++  const leftTerms = new Set(characterNgrams(normalizeForPresence(left), [3]));
++  const rightTerms = new Set(characterNgrams(normalizeForPresence(right), [3]));
++  if (!leftTerms.size || !rightTerms.size) return 0;
++  let overlap = 0;
++  for (const term of leftTerms) if (rightTerms.has(term)) overlap += 1;
++  return 2 * overlap / (leftTerms.size + rightTerms.size);
++}
++
++function factOrderMovement(sourceSentences, candidateLines) {
++  const lineTerms = candidateLines.map((line) => new Set(
++    tokenize(line, { contentOnly: true }).map(canonicalToken).filter((term) => term.length >= 2),
++  ));
++  const positions = sourceSentences.map((sentence) => {
++    const sourceTerms = new Set(
++      tokenize(sentence, { contentOnly: true }).map(canonicalToken).filter((term) => term.length >= 2),
++    );
++    if (!sourceTerms.size) return -1;
++    let bestIndex = -1;
++    let bestScore = 0;
++    lineTerms.forEach((terms, index) => {
++      let overlap = 0;
++      for (const term of sourceTerms) if (terms.has(term)) overlap += 1;
++      const score = overlap / sourceTerms.size;
++      if (score > bestScore) {
++        bestScore = score;
++        bestIndex = index;
++      }
++    });
++    return bestScore >= 0.5 ? bestIndex : -1;
++  });
++  const matched = positions.filter((position) => position >= 0);
++  let inversions = 0;
++  for (let left = 0; left < matched.length; left += 1) {
++    for (let right = left + 1; right < matched.length; right += 1) {
++      if (matched[left] > matched[right]) inversions += 1;
++    }
++  }
++  const pairs = matched.length * (matched.length - 1) / 2;
++  return {
++    positions,
++    matchedCount: matched.length,
++    score: pairs ? inversions / pairs : 0,
++  };
++}
++
++function dialogueUtterances(value) {
++  return (String(value ?? "").match(/「[^」]*」|『[^』]*』/g) || [])
++    .map((quote) => quote.slice(1, -1).trim())
++    .filter((quote) => quote.length >= 2);
++}
++
++function dialogueCoverage(value) {
++  const normalized = normalizeForPresence(value);
++  if (!normalized.length) return 0;
++  const quotedLength = dialogueUtterances(value)
++    .reduce((sum, utterance) => sum + normalizeForPresence(utterance).length, 0);
++  return quotedLength / normalized.length;
++}
++
++function narrationOnly(value) {
++  return String(value ?? "")
++    .replace(/「[^」]*」|『[^』]*』/g, " ")
++    .replace(/[\s　]+/g, " ")
++    .trim();
++}
++
++function fragmentRetention(sourceSentence, candidateNarration, size = 8) {
++  const source = normalizeForPresence(narrationOnly(sourceSentence));
++  if (source.length < size + 4) return 0;
++  const fragments = new Set();
++  for (let index = 0; index <= source.length - size; index += 1) {
++    fragments.add(source.slice(index, index + size));
++  }
++  if (!fragments.size) return 0;
++  let retained = 0;
++  for (const fragment of fragments) if (candidateNarration.includes(fragment)) retained += 1;
++  return retained / fragments.size;
++}
++
++function countOccurrences(text, needle) {
++  if (!needle) return 0;
++  let count = 0;
++  let offset = 0;
++  while ((offset = text.indexOf(needle, offset)) >= 0) {
++    count += 1;
++    offset += needle.length;
++  }
++  return count;
++}
++
+ function retrievalVectorTerms(document) {
+   const text = typeof document === "string" ? document : document?.text || "";
+   const canonicalTokens = tokenize(text, { contentOnly: true })
+@@ -935,7 +1029,7 @@ class CorpusEngine {
+         warnings.push("括弧の対応不一致");
+       }
+     }
+-    if (candidate.length > 900) {
++    if (candidate.split(/\n+/).some((line) => line.length > 260)) {
+       score -= 0.15;
+       warnings.push("一文が長すぎる");
+     }
+@@ -1148,8 +1242,9 @@ class CorpusEngine {
+ 
+   transformSentence(source, options) {
+     const random = options.random || Math.random;
++    const generationSource = options.generationSource || source;
+     const references = this.retrieve(source, 6, options.era, random);
+-    const candidates = this.generateCandidates(source, references, options.level, options.customRules, random, options.era);
++    const candidates = this.generateCandidates(generationSource, references, options.level, options.customRules, random, options.era);
+     const ranked = candidates
+       .map((text) => ({ text, validation: this.validate(source, text, options.level, options.era) }))
+       .sort((left, right) => right.validation.total - left.validation.total);
+@@ -1217,7 +1312,7 @@ class CorpusEngine {
+ 
+     if (!selected.validation.passed || selected.validation.style < 0.42) {
+       verificationPasses += 1;
+-      const conservative = cleanCandidate(this.applyEraSurface(replaceAll(source, safeReplacements), options.era));
++      const conservative = cleanCandidate(this.applyEraSurface(replaceAll(generationSource, safeReplacements), options.era));
+       const conservativeResult = { text: formatCorpusEnding(conservative), validation: this.validate(source, formatCorpusEnding(conservative), 1, options.era) };
+       if (!selected.validation.passed && conservativeResult.validation.semantic > selected.validation.semantic) {
+         selected = conservativeResult;
+@@ -1271,11 +1366,65 @@ class CorpusEngine {
+ 
+   validateNarrative(source, candidate, level, eraId = "all") {
+     const base = this.validate(source, candidate, Math.max(2, level), eraId);
++    const burontCoverage = burontLineCoverage(candidate);
+     const quoteSignatures = this.contextNarrative.quoteGrammar.signatures(candidate);
+     const quoteFunctionalRoles = this.contextNarrative.quoteGrammar.roles(candidate);
+     const anchorSignatures = this.contextNarrative.anchorGrammar.signatures(candidate);
+     const sourceModel = this.contextNarrative.extractModel(source, splitSentences(source));
+     const normalizedCandidate = normalizeForSearch(candidate);
++    const normalizedCandidatePresence = normalizeForPresence(candidate);
++    const sourceSentences = splitSentences(source);
++    const structuralSourceSentences = sourceSentences.filter((sentence) => dialogueCoverage(sentence) < 0.75);
++    const candidateLines = candidate.split(/\n+/).filter(Boolean);
++    const normalizedCandidateNarration = normalizeForPresence(narrationOnly(candidate));
++    const sourceDialogue = dialogueUtterances(source);
++    const normalizedCandidateDialogue = normalizeForPresence(candidate);
++    const dialogueGroups = new Map();
++    for (const utterance of sourceDialogue) {
++      const key = normalizeForPresence(utterance);
++      const group = dialogueGroups.get(key) || { utterance, count: 0 };
++      group.count += 1;
++      dialogueGroups.set(key, group);
++    }
++    const retainedDialogueCount = Array.from(dialogueGroups.values()).reduce((sum, group) => {
++      const utterance = group.utterance;
++      const casual = replaceAll(utterance, safeReplacements);
++      const styled = replaceAll(casual, mediumReplacements);
++      const variants = [utterance, styled, this.applyEraSurface(styled, eraId)]
++        .map(normalizeForPresence)
++        .filter(Boolean);
++      const retained = Math.max(...variants.map((variant) => countOccurrences(normalizedCandidateDialogue, variant)));
++      return sum + Math.min(group.count, retained);
++    }, 0);
++    const dialogueIntegrityScore = sourceDialogue.length
++      ? retainedDialogueCount / sourceDialogue.length
++      : 1;
++    const hasBrokenDialogueLine = /「[^」]*\n[^」]*」|『[^』]*\n[^』]*』/.test(candidate);
++    const reusedSourceSentences = structuralSourceSentences.filter((sentence) => {
++      const needle = normalizeForPresence(sentence);
++      return needle.length >= 12 && normalizedCandidatePresence.includes(needle);
++    });
++    const lightlyRewrittenSourceSentences = structuralSourceSentences.filter((sentence) => {
++      const needle = normalizeForPresence(sentence);
++      return needle.length >= 12 && candidateLines.some((line) => surfaceSimilarity(sentence, line) >= 0.9);
++    });
++    const fragmentRetentionRates = structuralSourceSentences.map((sentence) => (
++      fragmentRetention(sentence, normalizedCandidateNarration)
++    ));
++    const retainedSourceFragmentRate = fragmentRetentionRates.length
++      ? fragmentRetentionRates.reduce((sum, rate) => sum + rate, 0) / fragmentRetentionRates.length
++      : 0;
++    const highlyRetainedSourceFragmentCount = fragmentRetentionRates.filter((rate) => rate >= 0.72).length;
++    const requiresStructuralRewrite = structuralSourceSentences.length >= 4;
++    const structuralRewriteScore = requiresStructuralRewrite
++      ? 1 - (
++        reusedSourceSentences.length
++        + Math.max(0, lightlyRewrittenSourceSentences.length - reusedSourceSentences.length) * 0.5
++      ) / structuralSourceSentences.length
++      : 1;
++    const movement = requiresStructuralRewrite
++      ? factOrderMovement(sourceSentences, candidateLines)
++      : { positions: [], matchedCount: 0, score: 0 };
+     const repeatedFacts = splitSentences(source).filter((sentence) => {
+       const casual = replaceAll(sentence, safeReplacements);
+       const styled = replaceAll(casual, mediumReplacements);
+@@ -1284,7 +1433,6 @@ class CorpusEngine {
+       const first = normalizedCandidate.indexOf(needle);
+       return first >= 0 && normalizedCandidate.indexOf(needle, first + needle.length) >= 0;
+     });
+-    const candidateLines = candidate.split(/\n+/);
+     const repeatedRhetoricalMoves = [
+       { id: "perception", pattern: /見切|見落と/ },
+       { id: "nonfiction", pattern: /ノンフィクション/ },
+@@ -1409,6 +1557,17 @@ class CorpusEngine {
+     if (anchorApplicable && !anchorSignatures.includes(requiredAnchor)) warnings.push("入力中の参照先に対応するアンカー構文が不足");
+     if (repeatedFacts.length) warnings.push("原文の同一事実を重複して使用");
+     if (repeatedRhetoricalMoves.length) warnings.push("同じ談話機能を近接して反復");
++    if (dialogueIntegrityScore < 0.95) warnings.push("原文の会話内容が欠落または破損");
++    if (hasBrokenDialogueLine) warnings.push("引用符の途中で改行");
++    if (requiresStructuralRewrite && structuralRewriteScore < 0.6) {
++      warnings.push("長文の文構造が原文の並びに残りすぎている");
++    }
++    if (requiresStructuralRewrite && (retainedSourceFragmentRate > 0.55 || highlyRetainedSourceFragmentCount > 0)) {
++      warnings.push("引用以外の原文断片が再叙述されずに残っている");
++    }
++    if (burontCoverage.uncoveredLines.length) {
++      warnings.push("ブロント語化されていない通常文が残っている");
++    }
+ 
+     return {
+       ...base,
+@@ -1427,6 +1586,24 @@ class CorpusEngine {
+       grammarPatternCount: quoteSignatures.length + anchorSignatures.length,
+       repeatedFactCount: repeatedFacts.length,
+       repeatedRhetoricalMoveCount: repeatedRhetoricalMoves.length,
++      reusedSourceSentenceCount: reusedSourceSentences.length,
++      lightlyRewrittenSourceSentenceCount: lightlyRewrittenSourceSentences.length,
++      structuralRewriteScore,
++      retainedSourceFragmentRate,
++      highlyRetainedSourceFragmentCount,
++      fragmentRetentionRates,
++      factOrderPositions: movement.positions,
++      matchedFactOrderCount: movement.matchedCount,
++      factOrderMovementScore: movement.score,
++      structuralSourceSentenceCount: structuralSourceSentences.length,
++      sourceDialogueCount: sourceDialogue.length,
++      retainedDialogueCount,
++      dialogueIntegrityScore,
++      hasBrokenDialogueLine,
++      burontLineCount: burontCoverage.lineCount,
++      burontCoveredLineCount: burontCoverage.coveredLineCount,
++      burontLineCoverageScore: burontCoverage.coverage,
++      unconvertedBurontLines: burontCoverage.uncoveredLines,
+       warnings,
+       passed: !missingProtected.length
+         && adjustedSemantic >= 0.62
+@@ -1436,6 +1613,14 @@ class CorpusEngine {
+         && quoteSignatures.length >= 3
+         && quoteFunctionalRoles.length >= 3
+         && repeatedRhetoricalMoves.length === 0
++        && dialogueIntegrityScore >= 0.95
++        && !hasBrokenDialogueLine
++        && burontCoverage.uncoveredLines.length === 0
++        && (!requiresStructuralRewrite || structuralRewriteScore >= 0.6)
++        && (!requiresStructuralRewrite || (
++          retainedSourceFragmentRate <= 0.55
++          && highlyRetainedSourceFragmentCount === 0
++        ))
+         && base.temporalContextMatch
+         && base.eraContextMatch
+         && (!anchorApplicable || anchorSignatures.includes(requiredAnchor)),
+@@ -1470,7 +1655,7 @@ class CorpusEngine {
+         const to = String(rule.to || "").trim();
+         if (from && to) candidate = candidate.split(from).join(to);
+       }
+-      return cleanCandidate(candidate);
++      return cleanCandidate(burontizeText(candidate, options.random));
+     }).filter(Boolean)));
+     const ranked = candidates
+       .map((text) => ({ text, validation: this.validateNarrative(source, text, options.level, options.era) }))
+@@ -1596,7 +1781,10 @@ class CorpusEngine {
+     for (const paragraph of source.split(/\n{2,}/)) {
+       const sentences = splitSentences(paragraph);
+       if (!sentences.length) continue;
+-      const paragraphComparisons = sentences.map((sentence) => {
++      const longModel = sentences.length >= 4
++        ? this.contextNarrative.extractModel(paragraph, sentences)
++        : null;
++      const paragraphComparisons = sentences.map((sentence, index) => {
+         const comparison = this.transformSentence(sentence, {
+           level,
+           customRules,
+@@ -1604,6 +1792,7 @@ class CorpusEngine {
+           avoidRepeat,
+           usedFaithfulSignatures,
+           era,
++          generationSource: longModel ? rewriteFact(longModel, index, "俺").text : sentence,
+         });
+         comparisons.push(comparison);
+         return comparison;
+@@ -1622,12 +1811,23 @@ class CorpusEngine {
+     };
+     const suggestions = [];
+     for (let optionIndex = 0; optionIndex < 3; optionIndex += 1) {
+-      const chosen = comparisonParagraphs.flatMap((paragraph) => paragraph.map((comparison) => (
+-        comparison.options[optionIndex] || comparison.options[0]
+-      )));
+-      const suggestionText = comparisonParagraphs.map((paragraph) => paragraph.map((comparison) => (
+-        comparison.options[optionIndex] || comparison.options[0]
+-      ).text).join("\n")).join("\n\n");
++      const usedSignatures = new Set();
++      const chosenParagraphs = comparisonParagraphs.map((paragraph) => paragraph.map((comparison) => {
++        const available = comparison.options.length ? comparison.options : [{
++          text: comparison.output,
++          validation: comparison.validation,
++        }];
++        const ordered = available.map((_, offset) => available[(optionIndex + offset) % available.length]);
++        const selected = ordered.find((candidate) => (
++          (candidate.validation.faithfulQuoteSignatures || []).every((signature) => !usedSignatures.has(signature))
++        )) || ordered[0];
++        for (const signature of selected.validation.faithfulQuoteSignatures || []) usedSignatures.add(signature);
++        return selected;
++      }));
++      const chosen = chosenParagraphs.flat();
++      const suggestionText = chosenParagraphs
++        .map((paragraph) => paragraph.map((candidate) => candidate.text).join("\n"))
++        .join("\n\n");
+       if (!suggestionText || suggestions.some((suggestion) => suggestion.text === suggestionText)) continue;
+       suggestions.push({
+         text: suggestionText,
+diff --git a/lib/grammar/anchor-frames.js b/lib/grammar/anchor-frames.js
+index 0fc05fb..cc00b04 100644
+--- a/lib/grammar/anchor-frames.js
++++ b/lib/grammar/anchor-frames.js
+@@ -1,6 +1,7 @@
+ "use strict";
+ 
+ const { stripLeadingConnective } = require("./context-model");
++const { rewriteFactList } = require("./long-form-planner");
+ const { pick } = require("./random-utils");
+ 
+ const frameDefinitions = Object.freeze({
+@@ -38,12 +39,14 @@ class AnchorFrameComposer {
+     if (!selectedTarget.target) return null;
+ 
+     const candidates = new Set();
+-    const facts = model.facts.map(stripLeadingConnective);
+     const anchorLine = this.anchorGrammar.render(frame.construction, {
+       target: selectedTarget.target,
+     });
+     for (let round = 0; round < 30; round += 1) {
+       const alias = pick(helpers.random, helpers.heroAliases);
++      const facts = model.facts.length >= 4
++        ? rewriteFactList(model, alias.hero).map((item) => item.text)
++        : model.facts.map(stripLeadingConnective);
+       const lines = [
+         helpers.openerFor(alias.hero, alias.family),
+         ...facts,
+diff --git a/lib/grammar/anchor-grammar.js b/lib/grammar/anchor-grammar.js
+index 3031769..c5fba1a 100644
+--- a/lib/grammar/anchor-grammar.js
++++ b/lib/grammar/anchor-grammar.js
+@@ -46,7 +46,10 @@ function cleanTarget(value) {
+     .replace(/[「『].*$/, "")
+     .replace(/(?:が|は|から|に)$/, "")
+     .trim();
+-  if (!cleaned || cleaned.length > 20 || /^(?:俺|私|僕|自分|こちら)$/.test(cleaned)) return null;
++  if (!cleaned
++    || cleaned.length > 20
++    || /^[ぁ-んァ-ヶー]$/.test(cleaned)
++    || /^(?:俺|私|僕|自分|こちら|一部|全部|全体|すべて|結果|原因|情報|データ|記録|ログ|機能)$/.test(cleaned)) return null;
+   return cleaned;
+ }
+ 
+@@ -80,7 +83,7 @@ class AnchorGrammar {
+       const explanationSource = content.match(/^(.{1,24}?)(?:の説明|の解説|の助言|の案内|の手ほどき|のおかげ|の話|の情報|の指摘)(?=.{0,60}(?:わか|分か|理解|判明|気づ|助か|解決|納得))/);
+       const teachingSource = content.match(/^(.{1,20}?)(?:から|に)(?:教え|聞い|説明され|助けられ)/);
+       const opinionSource = content.match(/^(.{1,24}?)(?:の意見|の提案|の考え|の案)(?=.{0,50}(?:賛成|同意|納得|正しい|支持))/);
+-      const evidenceSource = content.match(/^(.{1,24}?)(?:のデータ|のログ|の記録|の証言|の結果)|^([A-Za-z一-龠々ァ-ヶー]{1,12}(?:の[A-Za-z一-龠々ァ-ヶー]{1,12})?)(?:が|は).{0,35}(?:証明|示し|確認)/);
++      const evidenceSource = content.match(/^(.{1,24}?)(?:のデータ|のログ|の記録|の証言)(?=.{0,50}(?:原因|障害|停止|事実|結果).{0,24}(?:証明|示|確認|判明))|^([A-Za-z一-龠々ァ-ヶー]{1,12}(?:の[A-Za-z一-龠々ァ-ヶー]{1,12})?)(?:が|は).{0,35}(?:証明|示し|(?:原因|事実|結果).{0,15}確認)/);
+       const evidenceRecord = content.match(/^(.{1,24}?(?:ログ|記録|データ))(?:には|に|が|は).{0,80}(?:記録|示|確認|原因)/);
+       if (challenger) addTarget(targets, challenger[1], ["opponent"], content);
+       if (passiveCritic) addTarget(targets, passiveCritic[1], ["opponent"], content);
+diff --git a/lib/grammar/context-model.js b/lib/grammar/context-model.js
+index 9c67e21..d041889 100644
+--- a/lib/grammar/context-model.js
++++ b/lib/grammar/context-model.js
+@@ -28,24 +28,40 @@ function stripUnrealizedAchievements(value) {
+ function achievementScore(sentence) {
+   const value = stripUnrealizedAchievements(sentence);
+   let score = 0;
+-  if (/完了|成功|完成|提出|解決|復旧|回復|改善|短縮|勝利|達成|修理|修正|直した|解消|到着|満点|100点|一番(?:に|を)?(?:なった|取った)|一位|首位/.test(value)) score += 6;
+-  if (/間に合った|使える状態に戻った|取り返し|おかわり|感謝|評価|褒め|早かったと言われ/.test(value)) score += 5;
++  if (/完了|成功|完成|提出|解決|復旧|回復|改善|短縮|勝利|達成|修理|修正|直した|解消|到着|決まった|まとまった|消え|収ま|落ち着|全滅|撃退|退け|消滅|救出|切り抜け|満点|100点|一番(?:に|を)?(?:なった|取った)|一位|首位/.test(value)) score += 6;
++  if (/間に合った|提出できた|予定より早|使える状態に戻った|取り返し|おかわり|感謝|評価|褒め|早かったと言われ/.test(value)) score += 5;
+   if (/わかった|分かった|理解でき|判明|納得|助かった/.test(value)) score += 4;
+-  if (/\d+(?:分|時間|件|人|秒).{0,18}(?:から|より).{0,18}\d+(?:分|時間|件|人|秒)/.test(value)) score += 4;
++  if (/\d+(?:分|時間|件|人|秒).{0,18}(?:から|より).{0,18}\d+(?:分|時間|件|人|秒)/.test(value)) score += 6;
++  if (/作った|作成した|実装した|導入した|用意した|切り替えた|完成させた/.test(value)) score += 4;
++  if (/作りました|作成しました|実装しました|導入しました|用意しました|切り替えました|完成させました/.test(value)) score += 6;
+   if (/導入|実装|作成|作った|行った|実行|開始/.test(value)) score += 2;
++  if (/^(?:その結果|結果として)/.test(value)) score += 3;
+   if (/原因は|設定ミス|できな|間に合わな|停止|遅れ|倒され|奪われ|焦げ|誤っ|失敗|残って/.test(value)) score -= 5;
+-  if (/予定|明日|来週|来月|来年|後日|今後|これから/.test(value)) score -= 8;
++  if (/予定(?!(?:より|していた|しており|通り|どおり))|明日|来週|来月|来年|後日|今後|これから/.test(value)) score -= 8;
++  return score;
++}
++
++function actionScore(sentence) {
++  const value = stripEnding(sentence);
++  if (!/導入|実装|作成|分類|修正|復旧作業|対策|調整|組み立て|作った|作り|用意|切り替え|構築|開発|自動化|追加|組ん|画面を作/.test(value)) {
++    return -Infinity;
++  }
++  let score = 1;
++  if (/(?:俺|私|僕|自分)(?:は|が).{0,80}(?:導入|実装|作成|修正|対策|調整|作った|作り|用意|切り替え|構築|開発|自動化|追加|組ん|画面を作)/.test(value)) score += 8;
++  if (/作った|作成した|実装した|導入した|用意した|切り替えた|修正した|組んだ/.test(value)) score += 3;
++  if (/早く.{0,8}(?:作って|用意して).{0,8}(?:と|って)|(?:作って|用意して)と(?:頼|叫|言)/.test(value)) score -= 8;
++  if (isProblemFact(value) && !/(?:俺|私|僕|自分)(?:は|が)/.test(value)) score -= 6;
+   return score;
+ }
+ 
+ function isProblemFact(sentence) {
+-  return /できな|間に合わ|問題|失敗|遅れ|遅延|処理待ち|原因.{0,12}(?:分から|わから)|停止|切れ|残って|倒され|奪われ|焦げ|誤っ|不具合|障害|不足|壊れ|剥がれ|寒|かじか|紛失/.test(
++  return /できな|できそうにな|分からな|まとまらな|間に合わ|間に合いそうにな|間に合いそうもない|終わっていな|未完了|追われ|混雑|長い列|待ち時間.{0,12}(?:長|増)|問題|失敗|衝突|見失|迷っ|視界|濃霧|煙|火が上|遅れ|遅延|処理待ち|原因.{0,12}(?:分から|わから)|停止|切れ|切断|消え|残って|倒され|奪われ|焦げ|誤っ|警告|エラー|異常|不具合|障害|不足|壊れ|剥がれ|寒気|恐怖|恐い|怖い|違和感|おかしい|死体|襲|吊ろう|吊り上げ|かじか|紛失/.test(
+     stripNegatedProblemExpressions(sentence),
+   );
+ }
+ 
+ function personaFor(text) {
+-  if (/開発|ツール|システム|プログラ|コード|修正版|サーバー|復旧|監視/.test(text)) return "ﾌﾟﾛｸﾞﾗﾏｰ";
++  if (/開発|ツール|システム|プログラ|コード|修正版|サーバー|復旧|監視|自動|タブレット|受付画面|データ/.test(text)) return "ﾌﾟﾛｸﾞﾗﾏｰ";
+   if (/ゲーム|武器|攻撃|プレイヤー|勝|負け/.test(text)) return "ﾌﾟﾚｲﾔｰ";
+   if (/料理|カレー|炒め|煮込|焼い|鍋/.test(text)) return "料理人";
+   if (/会社|会議|仕事|報告|資料|担当/.test(text)) return "会社員";
+@@ -90,11 +106,14 @@ class ContextModelExtractor {
+     const audienceBase = text.match(/事務|社員|担当者|開発チーム|チーム|営業部|同僚|仲間|家族/)?.[0]
+       || (/報告書|資料|会議/.test(text) ? "事務" : "一般人");
+     const anchorAnalysis = this.anchorGrammar.analyze(text, audienceBase);
+-    const futureIndex = sentences.findIndex((sentence) => /予定(?!より)|明日|来週|来月|来年|後日|今後|これから|対策|公開/.test(sentence));
++    const futureIndex = sentences.findIndex((sentence) => (
++      /予定(?!(?:より|していた|しており|通り|どおり))|明日|来週|来月|来年|次回|後日|今後|これから|対策|公開/.test(sentence)
++      && !/予定.{0,16}(?:キャンセル|中止|なくな|消え)/.test(sentence)
++    ));
+     const scoredAchievements = sentences
+       .map((sentence, index) => ({ index, score: achievementScore(sentence) }))
+       .sort((left, right) => right.score - left.score || left.index - right.index);
+-    const hasAchievement = scoredAchievements[0]?.score > 0;
++    const hasAchievement = scoredAchievements[0]?.score >= 4;
+     const achievementIndex = hasAchievement ? scoredAchievements[0].index : -1;
+     const problemIndex = sentences.findIndex((sentence, index) => (
+       index > achievementIndex && index !== futureIndex && isProblemFact(sentence)
+@@ -102,33 +121,35 @@ class ContextModelExtractor {
+     const initialProblemIndex = sentences.findIndex((sentence, index) => (
+       index <= (achievementIndex >= 0 ? achievementIndex : sentences.length - 1) && isProblemFact(sentence)
+     ));
+-    const actionIndex = sentences.findIndex((sentence, index) => (
+-      index > 0
+-      && index < achievementIndex
+-      && /導入|実装|作成|分類|修正|復旧作業|対策|調整|組み立て|作った/.test(sentence)
+-      && !isProblemFact(sentence)
+-    ));
++    const scoredActions = sentences
++      .map((sentence, index) => ({ index, score: actionScore(sentence) }))
++      .filter(({ index }) => index > 0 && (achievementIndex < 0 || index <= achievementIndex))
++      .sort((left, right) => right.score - left.score || left.index - right.index);
++    const actionIndex = scoredActions[0]?.score > 0 ? scoredActions[0].index : -1;
+     const protectedValues = extractProtectedValues(source);
+     const hasChallenge = /相手|対戦|批判|反対|文句|否定|言い争|勝負|ライバル|敵|挑発|張り合|競争/.test(text)
+       || /(?:自分|俺|私|僕)の方が.{0,18}(?:速|早|強|上手|優|できる|正しい).{0,18}(?:言|主張|豪語)/.test(text);
+     const hasGratitude = /感謝|ありがと|助かった|おかげ|礼を言/.test(text);
+     const hasRecognition = /わか(?:った|って|り)|分か(?:った|って|り)|理解|判明|気づ|知った|納得|原因が見え/.test(text);
+     const hasAgreement = /賛成|同意|支持|同じ意見|正しいと思|納得/.test(text);
+-    const evidenceScanText = text.replace(/確認でき(?:ない|ず|なく|なかった|ていない)/g, "");
+-    const hasEvidence = /証拠|証明|データ|ログ|記録|結果が示|確認でき|明らか/.test(evidenceScanText);
++    const hasEvidence = sentences.some((sentence) => {
++      const evidenceScanText = sentence.replace(/確認でき(?:ない|ず|なく|なかった|ていない)/g, "");
++      return /証拠|証明|結果が示|確認でき|明らか|(?:データ|ログ|記録).{0,35}(?:原因|障害|停止|事実|結果).{0,20}(?:確認|判明|示)/.test(evidenceScanText);
++    });
+     const hasRoleTarget = (role) => anchorAnalysis.targets.some((target) => target.roles.has(role));
+     const hasExplicitTarget = Boolean(anchorAnalysis.explicitTarget);
+     const hasDeadline = /残り\d|締切|期限|間に合|時間切れ|今日中|明日まで|予定(?!より)/.test(text);
+     const problemScanText = stripNegatedProblemExpressions(text);
+     const missingScanText = problemScanText.replace(/(?:でき|使え|見られ|確認でき)なくな/g, "");
+-    const hasMissing = /不足|なくな|紛失|消え|見つから|いくえ/.test(missingScanText);
+-    const hasDanger = /危険|障害|停止|壊れ|倒され|奪われ|できな|失敗|切れ/.test(problemScanText);
++    const hasMissing = /不足|紛失|消え|見つから|いくえ|(?:ファイル|商品|データ|在庫|鍵|書類|資料|荷物|部品|記録|保存内容).{0,12}なくな/.test(missingScanText);
++    const hasDanger = /危険|障害|停止|壊れ|倒され|奪われ|できな|失敗|切れ|恐怖|恐い|怖い|死体|襲|吊ろう|吊り上げ/.test(problemScanText);
++    const hasPressure = /追われ|混雑|長い列|待ち時間.{0,12}(?:長|増)|作業.{0,16}(?:遅れ|遅延)/.test(problemScanText);
+     const hasUnresolved = /(?:まだ|引き続き).{0,30}(?:できない|分からない|わからない|未解決|処理待ち)|(?:復旧|解決)(?:の)?(?:予定|時刻|見込み|見通し|目処|めど)?.{0,16}(?:決まっていない|立っていない|立たない|未定|していない|できない|なく|ない)|原因(?:は|が|も)?(?:まだ)?(?:分から|わから|分かっていない|わかっていない)/.test(text);
+     const hasFuture = futureIndex >= 0;
+     const topic = topicFor(text);
+     const evaluation = evaluationFor(text);
+     const hasCrisis = (initialProblemIndex >= 0 || hasUnresolved)
+-      && (hasDeadline || hasMissing || hasDanger || hasUnresolved);
++      && (hasDeadline || hasMissing || hasDanger || hasUnresolved || hasPressure);
+     const eventFrame = hasChallenge
+       ? "challenge"
+       : hasGratitude && hasRecognition && (hasRoleTarget("source") || hasExplicitTarget)
+@@ -177,6 +198,7 @@ class ContextModelExtractor {
+       hasDeadline,
+       hasMissing,
+       hasDanger,
++      hasPressure,
+       hasUnresolved,
+       hasFuture,
+       hasCrisis,
+@@ -195,6 +217,7 @@ class ContextModelExtractor {
+ module.exports = {
+   ContextModelExtractor,
+   achievementScore,
++  actionScore,
+   isProblemFact,
+   stripEnding,
+   stripLeadingConnective,
+diff --git a/lib/grammar/observation-frames.js b/lib/grammar/observation-frames.js
+index ee8d158..eba5286 100644
+--- a/lib/grammar/observation-frames.js
++++ b/lib/grammar/observation-frames.js
+@@ -1,6 +1,7 @@
+ "use strict";
+ 
+ const { stripLeadingConnective } = require("./context-model");
++const { rewriteFactList } = require("./long-form-planner");
+ const { pick } = require("./random-utils");
+ 
+ class ObservationFrameComposer {
+@@ -41,9 +42,13 @@ class ObservationFrameComposer {
+           : `普通の一般人ならただ眺めて終わるところを${alias.hero}は数も動きも正確に把握していた`;
+       }
+ 
++      const facts = model.facts.length >= 4
++        ? rewriteFactList(model, alias.hero).map((item) => item.text)
++        : model.facts.map(stripLeadingConnective);
++
+       candidates.add([
+         helpers.openerFor(alias.hero, alias.family),
+-        ...model.facts.map(stripLeadingConnective),
++        ...facts,
+         interpretation,
+         contrast,
+         reaction,
+diff --git a/lib/grammar/pending-frames.js b/lib/grammar/pending-frames.js
+index 62fd18a..d0d21a8 100644
+--- a/lib/grammar/pending-frames.js
++++ b/lib/grammar/pending-frames.js
+@@ -1,6 +1,7 @@
+ "use strict";
+ 
+ const { stripLeadingConnective } = require("./context-model");
++const { rewriteFactList } = require("./long-form-planner");
+ const { pick } = require("./random-utils");
+ 
+ class PendingFrameComposer {
+@@ -62,10 +63,13 @@ class PendingFrameComposer {
+       const contextualizedInsight = mode === "future"
+         ? this.quoteGrammar.render("intervention_simulation", { ...context, payload: insight })
+         : insight;
++      const facts = model.facts.length >= 4
++        ? rewriteFactList(model, alias.hero).map((item) => item.text)
++        : model.facts.map(stripLeadingConnective);
+       const lines = mode === "future"
+         ? [
+           opener,
+-          ...model.facts.map(stripLeadingConnective),
++          ...facts,
+           contrast,
+           contextualizedInsight,
+           pick(helpers.random, futureRestraints),
+@@ -73,7 +77,7 @@ class PendingFrameComposer {
+         ]
+         : [
+           opener,
+-          ...model.facts.map(stripLeadingConnective),
++          ...facts,
+           helpers.crisisFor(alias.hero, alias.family),
+           contrast,
+           contextualizedInsight,
+diff --git a/lib/text-analysis.js b/lib/text-analysis.js
+index 4333b49..d914103 100644
+--- a/lib/text-analysis.js
++++ b/lib/text-analysis.js
+@@ -63,11 +63,29 @@ function splitSentences(value) {
+   for (const line of source.split(/\n+/)) {
+     const trimmed = line.trim();
+     if (!trimmed) continue;
+-    const chunks = trimmed.match(/[^。！？!?]+[。！？!?]?/g) || [trimmed];
+-    for (const chunk of chunks) {
++    let chunk = "";
++    const quoteStack = [];
++    for (let index = 0; index < trimmed.length; index += 1) {
++      const character = trimmed[index];
++      chunk += character;
++      if (character === "「" || character === "『") quoteStack.push(character);
++      if (character === "」" && quoteStack.at(-1) === "「") quoteStack.pop();
++      if (character === "』" && quoteStack.at(-1) === "『") quoteStack.pop();
++      if (quoteStack.length || !/[。！？!?]/.test(character)) continue;
++
++      while (index + 1 < trimmed.length && /[。！？!?]/.test(trimmed[index + 1])) {
++        chunk += trimmed[index + 1];
++        index += 1;
++      }
++      const next = trimmed[index + 1] || "";
++      const continuesClause = character !== "。" && /^[とってのがをはにもでへやか]/.test(next);
++      if (continuesClause) continue;
+       const sentence = restore(chunk.trim());
+       if (sentence.length >= 2) sentences.push(sentence);
++      chunk = "";
+     }
++    const tail = restore(chunk.trim());
++    if (tail.length >= 2) sentences.push(tail);
+   }
+   return sentences;
+ }
+@@ -199,7 +217,7 @@ function extractProtectedValues(value) {
+   const patterns = [
+     /https?:\/\/[A-Za-z0-9._~:/?#[\]@!$&'()*+,;=%-]+/gi,
+     /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/g,
+-    /[0-9０-９]+(?:[.,．，][0-9０-９]+)?(?:[%％円年月日時分秒個枚人回点件歳才])?/g,
++    /[0-9０-９]+(?:[.,．，][0-9０-９]+)?(?:時間|[%％円年月日時分秒個枚人回点件歳才])?/g,
+     /[A-ZＡ-Ｚ]{2,}[A-ZＡ-Ｚ0-9０-９_-]*/g,
+   ];
+   return patterns.flatMap((pattern) => text.match(pattern) || []);
+diff --git a/test/corpus-engine.test.js b/test/corpus-engine.test.js
+index acf5387..00f2f18 100644
+--- a/test/corpus-engine.test.js
++++ b/test/corpus-engine.test.js
+@@ -1,8 +1,10 @@
+ const test = require("node:test");
+ const assert = require("node:assert/strict");
+ const { CorpusEngine } = require("../lib/corpus-engine");
+-const { splitSentences } = require("../lib/text-analysis");
++const { normalizeForPresence, splitSentences } = require("../lib/text-analysis");
+ const { createRandom } = require("../lib/variation-grammar");
++const { buildDiscourseGraph } = require("../lib/grammar/discourse-graph");
++const { burontLineCoverage, burontizeText } = require("../lib/grammar/buront-surface");
+ 
+ const engine = new CorpusEngine();
+ 
+@@ -214,10 +216,248 @@ test("完全ブロントナイズでは長文を自慢話の段落へ再構成
+   assert.match(candidates, /2時間/);
+   assert.match(candidates, /45分/);
+   assert.match(candidates, /3人/);
+-  assert.match(candidates, /保存できない/);
++  assert.match(candidates, /保存(?:できない|不能|に失敗)/);
+   assert.doesNotMatch(candidates, /LSでLSで|扱いやすいだ|ませんだった/);
+ });
+ 
++test("長文は原文の各文を貼らず、節の役割を変えて複数の談話順序へ再構成する", () => {
++  const source = "事務部では毎週月曜日に売上報告書を作成している。今週は担当者が二人休んだため、入力作業が大幅に遅れていた。昼の時点で全体の半分しか終わっていなかったが、締切は午後三時だった。私はCSVから表とグラフを自動作成するツールを作った。その結果、報告書は45分で完成し、予定より一時間早く提出できた。ところが直後にネットワークが切断されたため、保存処理を修正した。";
++  const sourceSentences = splitSentences(source);
++  const faithful = engine.convert(source, { level: 3, contextMode: "faithful", seed: "long-rewrite" });
++  const full = engine.convert(source, { level: 3, contextMode: "full", seed: "audit-0" });
++  const faithfulOutputs = faithful.suggestions.map((suggestion) => suggestion.text);
++  const fullOptions = full.comparisons[0].options;
++  const malformed = /すると[^\n]{0,80}すると|見つけとそのまま|その後直後|だったがという時点|分類しとそのまま|を因みに/;
++
++  assert.equal(faithful.suggestions.length, 3);
++  assert.equal(full.suggestions.length, 3);
++  for (const output of faithfulOutputs) {
++    const reused = sourceSentences.filter((sentence) => (
++      normalizeForPresence(output).includes(normalizeForPresence(sentence))
++    ));
++    assert.ok(reused.length <= 1);
++    assert.doesNotMatch(output, malformed);
++  }
++  for (const option of fullOptions) {
++    assert.equal(option.validation.passed, true);
++    assert.ok(option.validation.structuralRewriteScore >= 0.8);
++    assert.ok(option.validation.lightlyRewrittenSourceSentenceCount <= 1);
++    assert.doesNotMatch(option.text, malformed);
++    assert.doesNotMatch(option.text, />>(?:一部|そ)(?:\s|$)/);
++  }
++  assert.ok(fullOptions.some((option) => option.validation.factOrderMovementScore >= 0.15));
++  assert.match(fullOptions.map((option) => option.text).join("\n"), /原因らしい|という有様/);
++  assert.match(fullOptions.map((option) => option.text).join("\n"), /ｶｶッっと/);
++  assert.match(fullOptions.map((option) => option.text).join("\n"), /超状現象/);
++});
++
++test("長文の依頼文と受付文でも、依頼者の発言・主人公の行動・数値結果を取り違えない", () => {
++  const cases = [
++    {
++      source: "俺はしがないプログラマーなんだが事務どもが泣き叫んでるっぽいのをSlackの会話で見つけた。俺は席にいたので急いだ。どうやら報告書が間に合いそうにないらしく、事務どもは早く作ってと泣き叫んでいた。俺は急遽ツールを作り、報告書は45分で完成した。部長は見事な仕事だと評価した。ところが直後にネットワークが切断されたため、俺は保存処理を修正した。",
++      action: /ｶｶッっと[^\n]{0,50}(?:急遽ツール|対象は急遽ツール)/,
++      values: ["45分"],
++    },
++    {
++      source: "駅前の受付には朝から長い列ができていた。予約確認に時間がかかり、開始時刻までに全員を案内できそうになかった。私はタブレットで名簿を検索できる画面を作った。その結果、待ち時間は20分から5分に減り、開会前に受付が終わった。終了後、担当者から次回も使いたいと連絡があった。",
++      action: /ｶｶッっと[^\n]{0,80}(?:タブレット|名簿).*(?:画面|対象)/,
++      values: ["20分", "5分"],
++    },
++  ];
++
++  for (const [index, item] of cases.entries()) {
++    const result = engine.convert(item.source, { level: 3, contextMode: "full", seed: `long-role-${index}` });
++    for (const option of result.comparisons[0].options) {
++      assert.equal(option.validation.passed, true);
++      assert.match(option.text, item.action);
++      assert.doesNotMatch(option.text, /いくえ不明|状況を一瞬で見切って必要な一手だけ/);
++      for (const value of item.values) assert.match(option.text, new RegExp(value));
++    }
++  }
++});
++
++test("ログを処理する研究室長文を証拠アンカーと誤認せず救援と後続障害へ分ける", () => {
++  const source = "研究室では毎晩センサーの記録を手作業で確認していた。昨夜は異常値が120件に増え、二人の担当者では朝までに調査できそうになかった。私はログを種類別に分けるスクリプトを作った。調査時間は3時間から25分に短縮され、原因となった装置を特定できた。ところが予備装置でも同じ警告が出たため、判定条件を修正した。翌週は新しい監視手順を三人で確認する予定だ。";
++  const model = engine.contextNarrative.extractModel(source, splitSentences(source));
++  const result = engine.convert(source, { level: 3, contextMode: "full", seed: "research-long" });
++
++  assert.equal(model.eventFrame, "rescue");
++  assert.equal(model.hasEvidence, false);
++  assert.equal(model.problemIndex, 4);
++  for (const option of result.comparisons[0].options) {
++    assert.equal(option.validation.passed, true);
++    assert.equal(option.validation.reusedSourceSentenceCount, 0);
++    assert.match(option.text, /3時間/);
++    assert.match(option.text, /25分/);
++    assert.match(option.text, /超状現象/);
++    assert.doesNotMatch(option.text, />>(?:研究室|翌週)/);
++  }
++});
++
++test("会話の多い長編でも引用を壊さず、主体交代と介入結果を談話グラフで再構成する", () => {
++  const source = `俺は夜釣りに出かけた
++ある日、遊びの予定がキャンセルになった俺は秘密の釣り場で夜釣りを楽しむ事にした
++街から少し離れた所にある橋で、静かでよくつれる俺の穴場
++その日も良く釣れ、しばらくした頃、全身に寒気が。
++何か恐いな・・・そう思いつつも入れ食い状態のその場を離れる気にもならず夜釣りを楽しんだ
++「あなたも釣りですか？」後ろから声をかけられた、振り返るとそこにはサラリーマン風の中年男性が
++「えぇ、ここよく釣れるんです」「えぇそうらしいですね」
++「あなたも釣りですか？」「・・・まぁそうですね」話していくうちに段々と俺は違和感を感じた
++男性はどう見てもスーツ姿、とても釣りを楽しむ格好じゃない、こんな所でなにを・・・
++「あなた、つらないんですか・・・」男性の声・・・いやおかしい、明らかに上から聞こえてきた
++「つりましょうよ、あなたも・・・」俺は恐怖に震えながらも上を見上げた・・・
++そこには、今話をしていた男性の首吊り死体が！！男が言っていたのは「釣り」ではなく「吊り」だったのだ！！
++気が付くと俺の目の前には無数の人影が「吊ろう・・・一緒に吊ろう・・・」と俺に囁いている
++「そこまでだ」聞いたことのある声、寺生まれで霊感の強いTさんだ
++影によって今にも吊り上げられそうな俺の前に来ると、自前の釣竿を振り回し
++「破ぁ！！」と叫ぶ、すると釣竿の糸が眩く光り、振り回した糸が剣のように次々と影を引き裂いてゆく！
++ある程度影を振り払うと、Tさんの呪文によって周りには光が走り、アッー！と言う間に影は全滅した。
++「Tさんも夜釣りですか？」そう尋ねるとTさんは俺を指差し「まあな、随分と小物を釣り上げちまったがな・・・」
++帰り道で聞いた話によるとあそこは自殺の名所で首吊りが首吊りを呼ぶ恐怖の橋らしい。
++「すっかり日も上がっちまったな、どれ、街で女の子でも釣りに行くか」
++そう言って車に飛び乗り爽やかに笑ってみせるTさんを見て
++寺生まれはスゴイ、俺はいろんな意味で思った。`;
++  const facts = splitSentences(source);
++  const model = engine.contextNarrative.extractModel(source, facts);
++  const graph = buildDiscourseGraph(model.facts);
++  const result = engine.convert(source, { level: 3, contextMode: "full", seed: "dialogue-narrative" });
++  const malformed = /でという時点ですでにすか|言っていたのは\s+ではなく|とそのまますると|引用符の途中で改行/;
++
++  assert.equal(facts.length, 23);
++  assert.equal(graph.hasNarrativeArc, true);
++  assert.equal(graph.focalActor, "Tさん");
++  assert.equal(result.suggestions.length, 3);
++  assert.equal(new Set(result.suggestions.map((suggestion) => suggestion.text)).size, 3);
++  for (const option of result.comparisons[0].options) {
++    assert.equal(option.validation.passed, true);
++    assert.equal(option.validation.dialogueIntegrityScore, 1);
++    assert.equal(option.validation.hasBrokenDialogueLine, false);
++    assert.equal(option.validation.reusedSourceSentenceCount, 0);
++    assert.ok(option.validation.structuralRewriteScore >= 0.9);
++    assert.match(option.text, /Tさん.{0,40}(?:封印|武の心|雷属性|ﾉｰﾘｽｸ|見事なｶｳﾝﾀｰ|扱えない技量|準備運動|一手だけ|１０％|シュミレート)/s);
++    assert.match(option.text, /影.{0,20}(?:全滅|消滅|片付)/);
++    assert.match(option.text, /「釣り」ではなく「吊り」/);
++    assert.doesNotMatch(option.text, malformed);
++    assert.doesNotMatch(option.text, /俺が選んだのは違和感|話の前提は声の主は|についての状況は|選んだのは[^\n]{0,50}方を選んだ|かなり釣り用/);
++    assert.doesNotMatch(option.text, /ダイヤモンド・パワー.*寒さ|長寿ﾀｲﾌﾟ.*寒さ/);
++    assert.ok(option.validation.retainedSourceFragmentRate <= 0.55);
++    assert.equal(option.validation.highlyRetainedSourceFragmentCount, 0);
++    assert.equal(option.validation.burontLineCoverageScore, 1);
++    assert.deepEqual(option.validation.unconvertedBurontLines, []);
++  }
++
++  const corruptedDialogue = result.comparisons[0].options[0].text
++    .replace("釣りですか？", "釣りでという時点ですでにすか？");
++  const corruptedValidation = engine.validateNarrative(source, corruptedDialogue, 3);
++  assert.equal(corruptedValidation.passed, false);
++  assert.ok(corruptedValidation.dialogueIntegrityScore < 1);
++  assert.match(corruptedValidation.warnings.join(" "), /会話内容が欠落または破損/);
++});
++
++test("談話グラフは怪談専用にせず、登山・会議・台所でも異なる介入主体を抽出する", () => {
++  const cases = [
++    {
++      actor: "友人",
++      source: "私は友人と山へ出かけた\n朝は晴れていて登山道もよく見えていた\n山道の途中で急に濃霧が出て視界が悪くなった\n目印を見失い戻る道も分からなくなった\n友人は地図とコンパスを確認した\n谷から聞こえる川の音を基準に進む方角を決めた\n二人で30分歩くと予定していた避難小屋に到着した\n管理人はこの時期は霧が出やすいと教えてくれた\n翌朝は安全な道を通って下山した",
++    },
++    {
++      actor: "委員長",
++      source: "放課後に文化祭の企画会議が始まった\nクラスでは喫茶店と展示の二つの案が出ていた\n意見が衝突し話がまったくまとまらなかった\n誰も譲らず時間だけが過ぎていった\n委員長は両方の案の費用と必要人数を表に整理した\n全員で数字を確認して実現できる部分を組み合わせた\n最後には展示付きの喫茶店という案が決まった\n先生も現実的で面白い企画だと評価した\n翌日から担当を分けて準備を始めた",
++    },
++    {
++      actor: "姉",
++      source: "家族の夕食を作るため台所に立った\n鍋では油を温めていた\n別の料理を切っていると鍋から煙が出て火が上がった\n家族は驚いて声を上げた\n姉は濡れた布を持ってきて火元を止めた\n私は消火器を用意して周りの安全を確認した\n数分後には火が消えて台所も落ち着いた\n料理は作り直したが予定より少し遅い夕食になった\n翌日には消火器の期限と置き場所を家族で確認した",
++    },
++  ];
++
++  for (const [index, item] of cases.entries()) {
++    const model = engine.contextNarrative.extractModel(item.source, splitSentences(item.source));
++    const graph = buildDiscourseGraph(model.facts);
++    const result = engine.convert(item.source, { level: 3, contextMode: "full", seed: `graph-holdout-${index}` });
++
++    assert.equal(graph.hasNarrativeArc, true);
++    assert.equal(graph.focalActor, item.actor);
++    assert.equal(result.comparisons[0].options.length, 3);
++    assert.ok(result.comparisons[0].options.every((option) => option.validation.passed));
++    assert.ok(result.comparisons[0].options.every((option) => option.validation.structuralRewriteScore >= 0.7));
++    assert.ok(result.comparisons[0].options.every((option) => option.validation.burontLineCoverageScore === 1));
++  }
++});
++
++test("引用を除く通常文が一行でも残れば完全ブロントナイズを不合格にする", () => {
++  const source = "事務部では毎週月曜日に売上報告書を作成している。今週は担当者が二人休んだため、入力作業が大幅に遅れていた。昼の時点で全体の半分しか終わっていなかったが、締切は午後三時だった。私はCSVから表とグラフを自動作成するツールを作った。その結果、報告書は45分で完成し、予定より一時間早く提出できた。ところが直後にネットワークが切断されたため、保存処理を修正した。";
++  const result = engine.convert(source, { level: 3, contextMode: "full", seed: "audit-0" });
++  const passing = result.comparisons[0].options[0];
++  const ordinaryLine = "私はそのあと静かに席へ戻った";
++  const contaminated = `${passing.text}\n${ordinaryLine}`;
++  const validation = engine.validateNarrative(source, contaminated, 3);
++
++  assert.equal(passing.validation.passed, true);
++  assert.equal(passing.validation.burontLineCoverageScore, 1);
++  assert.equal(validation.passed, false);
++  assert.ok(validation.burontLineCoverageScore < 1);
++  assert.deepEqual(validation.unconvertedBurontLines, [ordinaryLine]);
++  assert.match(validation.warnings.join(" "), /ブロント語化されていない通常文/);
++});
++
++test("全行表層化は引用内容を保持しつつ行の役割ごとにブロント語構文を与える", () => {
++  const source = [
++    "山道で急に霧が出て戻る道が分からなくなった",
++    "友人は地図を確認した",
++    "二人は避難小屋へ到着した",
++    "友人が「もう大丈夫だ」と言った",
++  ].join("\n");
++  const random = createRandom("surface-role-test");
++  const converted = burontizeText(source, random);
++  const coverage = burontLineCoverage(converted);
++
++  assert.equal(coverage.coverage, 1);
++  assert.deepEqual(coverage.uncoveredLines, []);
++  assert.match(converted, /異変|アワレ|一般人|リアルでビビ/);
++  assert.match(converted, /ｶｶッ|ｶｳﾝﾀｰ|扱えない技量/);
++  assert.match(converted, /圧倒的な結果|勝負はついていた|グーの音/);
++  assert.match(converted, /「もう大丈夫だ」/);
++  assert.equal(burontLineCoverage("「もう大丈夫だ」").coverage, 0);
++  assert.equal(burontLineCoverage("おいィ？「もう大丈夫だ」").coverage, 1);
++});
++
++test("長文検証は原文を貼って語録だけ足した候補を不合格にする", () => {
++  const source = "事務部では報告書を作成している。担当者が休んだため入力が遅れていた。締切まで残り一時間しかなかった。私は集計ツールを作った。その結果、報告書は45分で完成した。部長から良い仕事だと評価された。";
++  const pasted = [
++    "俺は一級プログラマーなんだが",
++    ...splitSentences(source),
++    "ここで俺の封印がとけられた！",
++    "事務どもから「これで勝つる！」という声が上がった",
++    "見事な仕事だと感心はするがどこもおかしくはない",
++  ].join("\n");
++  const validation = engine.validateNarrative(source, pasted, 3);
++
++  assert.ok(validation.reusedSourceSentenceCount >= 5);
++  assert.ok(validation.lightlyRewrittenSourceSentenceCount >= 5);
++  assert.ok(validation.structuralRewriteScore <= 0.2);
++  assert.equal(validation.passed, false);
++  assert.match(validation.warnings.join(" "), /長文の文構造/);
++});
++
++test("長文検証は原文へ副詞を挿しただけの中途半端な改変も不合格にする", () => {
++  const source = "私は駅へ向かった。朝のホームには大勢の利用客がいた。事故のため電車は運転を見合わせていた。駅員は別の路線を案内した。私は案内に従って移動した。その結果、会議の開始前に会社へ到着した。";
++  const shallow = [
++    "英語でいうとノンフィクションの話なんだが",
++    "私はすでに駅へ向かった",
++    "朝のホームにはアワレにも大勢の利用客がいた",
++    "事故のため電車はその時点ですでに運転を見合わせていた",
++    "駅員はｶｶッっと別の路線を案内した",
++    "私は案内に従ってそのまま移動した",
++    "その結果、会議の開始前に会社へ到着した",
++    "見事な仕事だと感心はするがどこもおかしくはない",
++  ].join("\n");
++  const validation = engine.validateNarrative(source, shallow, 3);
++
++  assert.ok(validation.highlyRetainedSourceFragmentCount > 0);
++  assert.equal(validation.passed, false);
++  assert.match(validation.warnings.join(" "), /原文断片が再叙述されず/);
++});
++
+ test("完全モードと原文寄りモードを同じ入力で分離する", () => {
+   const source = "仕事で新しい資料を作成しました。同僚がとても驚きました。";
+   const faithful = engine.convert(source, { level: 2, contextMode: "faithful", seed: "mode-test" });
+@@ -261,6 +501,7 @@ test("天候・障害・料理・対戦・長文業務でも成果を取り違
+       seed: 7,
+       source: "今月の問い合わせは先月より28件増え、担当5人では返信が遅れ始めていた。そこで回答履歴を分類し、よくある質問への下書きを自動作成するツールを金曜日に導入した。平均返信時間は18分から6分に短縮され、未処理件数も42件から7件まで減った。一方で専門用語を含む質問では誤った候補が出ることがある。来週は担当者2人で内容を確認し、誤りが多い分野を除外する予定だ。",
+       achievement: "平均返信時間は18分から6分に短縮され、未処理件数も42件から7件まで減った",
++      achievementNeedle: "平均返信時間は18分から6分に短縮され",
+       values: ["28件", "5人", "18分", "6分", "42件", "7件", "2人"],
+     },
+     {
+@@ -275,7 +516,10 @@ test("天候・障害・料理・対戦・長文業務でも成果を取り違
+     const result = engine.convert(item.source, { contextMode: "full", seed: item.seed });
+     assert.equal(result.comparisons[0].validation.passed, true);
+     assert.ok(result.comparisons[0].candidateCount >= 20);
+-    assert.equal(result.text.split(item.achievement).length - 1, 1);
++    if (splitSentences(item.source).length >= 4) {
++      assert.equal(result.comparisons[0].validation.reusedSourceSentenceCount, 0);
++      assert.equal(result.comparisons[0].validation.highlyRetainedSourceFragmentCount, 0);
++    }
+     for (const value of item.values) assert.match(result.text, new RegExp(value));
+     assert.doesNotMatch(result.text, /しかもただし|ｶｶッっとそこで|だが一方で|最初に結果だけ言うと原因|手を出すと俺が/);
+   }
+diff --git a/test/text-analysis.test.js b/test/text-analysis.test.js
+index 31a0234..91d629a 100644
+--- a/test/text-analysis.test.js
++++ b/test/text-analysis.test.js
+@@ -16,6 +16,15 @@ test("改行と句点の両方で文章を分割する", () => {
+   ]);
+ });
+ 
++test("引用内の疑問符と感嘆符で会話を切らず、後続の地の文まで保持する", () => {
++  const source = "「あなたも釣りですか？」後ろから声をかけられた\n「破ぁ！！」と叫ぶ、すると糸が光った！";
++
++  assert.deepEqual(splitSentences(source), [
++    "「あなたも釣りですか？」後ろから声をかけられた",
++    "「破ぁ！！」と叫ぶ、すると糸が光った！",
++  ]);
++});
++
+ test("先頭の数値・文字アンカーだけを外して後続本文を残す", () => {
+   assert.deepEqual(splitSentences(">>412 数値アンカーの本文です。\n>>社員 文字アンカーの本文です。"), [
+     "数値アンカーの本文です。",

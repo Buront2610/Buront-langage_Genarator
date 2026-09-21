@@ -53,6 +53,8 @@
   let selectedSeries = "all";
   let toastTimer;
   let engineReady = false;
+  const requestState = new window.BurontRequestState();
+  let currentResult = null;
   const originalConvertLabel = "ブロント語に変換";
   const seriesLabels = {
     all: "全系列",
@@ -98,14 +100,15 @@
   }
 
   function percent(value) {
-    return `${Math.round(Math.max(0, Math.min(1, Number(value) || 0)) * 100)}%`;
+    return Number.isFinite(value) ? `${Math.round(Math.max(0, Math.min(1, value)) * 100)}%` : "未評価";
   }
 
   function updateInputCount() {
-    elements.inputCount.textContent = `${elements.inputText.value.length.toLocaleString("ja-JP")}文字`;
+    elements.inputCount.textContent = `${Array.from(elements.inputText.value).length.toLocaleString("ja-JP")}文字`;
   }
 
   function setLevel(level) {
+    if (selectedLevel !== Number(level)) invalidateInput();
     selectedLevel = Number(level);
     elements.levelButtons.forEach((button) => {
       button.setAttribute("aria-pressed", String(Number(button.dataset.level) === selectedLevel));
@@ -114,6 +117,7 @@
   }
 
   function setContextMode(mode) {
+    if (selectedContextMode !== mode) invalidateInput();
     selectedContextMode = mode === "full" ? "full" : "faithful";
     elements.contextModeButtons.forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.contextMode === selectedContextMode));
@@ -122,6 +126,7 @@
   }
 
   function setSeries(series) {
+    if (selectedSeries !== series) invalidateInput();
     selectedSeries = Object.hasOwn(seriesLabels, series) ? series : "all";
     elements.seriesSelect.value = selectedSeries;
     writeStorage(STORAGE_KEYS.series, selectedSeries);
@@ -161,7 +166,7 @@
     const list = makeElement("dl", "validation-scores");
     const values = [
       ["総合", validation.total],
-      ["意味保持", validation.semantic],
+      ["内容の参考値", validation.semantic],
       ["実ログ近似", validation.logAffinity],
       ["長文近似", validation.novelAffinity],
       ["接続品質", validation.fluency],
@@ -190,7 +195,7 @@
       const meta = makeElement("p", "reference-meta", `${reference.board} / ${reference.threadTitle}${cosineLabel}`);
       const quote = makeElement("blockquote", "", reference.text);
       item.append(meta, quote);
-      if (reference.postUrl) {
+      if (/^https?:\/\//i.test(reference.postUrl || "")) {
         const link = makeElement("a", "reference-link", "投稿元を開く");
         link.href = reference.postUrl;
         link.target = "_blank";
@@ -211,7 +216,7 @@
       const item = document.createElement("li");
       item.append(
         makeElement("p", "", alternative.text),
-        makeElement("span", "", `総合 ${percent(alternative.total)} / 意味 ${percent(alternative.semantic)} / 文体 ${percent(alternative.style)}`),
+        makeElement("span", "", `${statusLabel(alternative.verificationStatus)} / 総合 ${percent(alternative.total)} / 内容参考 ${percent(alternative.semantic)} / 文体 ${percent(alternative.style)}`),
       );
       list.append(item);
     }
@@ -219,27 +224,50 @@
     return details;
   }
 
-  function renderSuggestions(suggestions) {
+  function statusLabel(status) {
+    return { passed: "現行の規則検査を通過", needs_review: "要確認", rejected: "不合格" }[status] || "要確認";
+  }
+
+  function selectCandidate(id) {
+    const candidate = currentResult?.candidates.find((item) => item.id === id && item.verificationStatus === "passed");
+    if (!candidate) return;
+    renderResult({ ...currentResult, selectedCandidateId: id, text: candidate.text, comparisons: candidate.comparisons, summary: candidate.summary, fallback: null });
+  }
+
+  function renderSuggestions(result) {
+    const suggestions = result.candidates || [];
     elements.suggestionList.replaceChildren();
-    if (!suggestions?.length) return;
+    if (result.shortfallReason) {
+      elements.suggestionList.append(makeElement("p", "warning-list", suggestions.length
+        ? `規則検査を通過した変換候補は${suggestions.length}案です。候補を水増しせず表示しています。`
+        : "採用できる変換候補がないため、原文を保持しました。変換の成功には数えません。"));
+    }
+    if (!suggestions.length) return;
 
     const heading = makeElement("div", "suggestion-heading");
     heading.append(
-      makeElement("h3", "", `検証通過候補 ${suggestions.length}案`),
-      makeElement("span", "", "今回の抽選"),
+      makeElement("h3", "", `規則検査を通過した候補 ${suggestions.length}案`),
+      makeElement("span", "", "意味全体の保証ではありません"),
     );
     elements.suggestionList.append(heading);
 
     suggestions.forEach((suggestion, index) => {
-      const article = makeElement("article", `suggestion-item${index === 0 ? " is-selected" : ""}`);
+      const selected = suggestion.id === result.selectedCandidateId;
+      const article = makeElement("article", `suggestion-item${selected ? " is-selected" : ""}`);
+      article.dataset.candidateId = suggestion.id;
       const header = makeElement("div", "suggestion-item-header");
       header.append(
         makeElement("strong", "", `案 ${index + 1}`),
-        makeElement("span", index === 0 ? "suggestion-adopted" : "", index === 0 ? "採用" : `総合 ${percent(suggestion.averageTotal)}`),
+        makeElement("span", selected ? "suggestion-adopted" : "", selected ? "採用" : `総合 ${percent(suggestion.averageTotal)}`),
       );
       const candidateText = makeElement("p", "suggestion-text", suggestion.text);
       const footer = makeElement("div", "suggestion-footer");
-      footer.append(makeElement("span", "", `意味 ${percent(suggestion.averageSemantic)} / 文体 ${percent(suggestion.averageStyle)}`));
+      footer.append(makeElement("span", "", `内容参考 ${percent(suggestion.averageSemantic)} / 文体 ${percent(suggestion.averageStyle)}`));
+      const choose = makeElement("button", "suggestion-copy", selected ? "採用中" : "この案を採用");
+      choose.type = "button";
+      choose.setAttribute("aria-pressed", String(selected));
+      choose.addEventListener("click", () => selectCandidate(suggestion.id));
+      footer.append(choose);
       const copy = makeElement("button", "suggestion-copy", "この案をコピー");
       copy.type = "button";
       copy.addEventListener("click", async () => {
@@ -268,7 +296,7 @@
         makeElement(
           "span",
           comparison.validation.passed ? "verification-pass" : "verification-warning",
-          comparison.validation.passed ? "検証通過" : "要確認",
+          comparison.fallback ? "原文保持" : statusLabel(comparison.validation.verificationStatus || (comparison.validation.passed ? "passed" : "rejected")),
         ),
       );
 
@@ -280,7 +308,7 @@
       sourceBox.append(sourceText);
 
       const outputBox = makeElement("div", "sentence-box");
-      outputBox.append(makeElement("h4", "", "採用文"));
+      outputBox.append(makeElement("h4", "", comparison.fallback ? "保持した原文" : "採用文"));
       const outputText = makeElement("p", "diff-text");
       renderDiff(outputText, comparison.diff, "output");
       outputBox.append(outputText);
@@ -317,20 +345,23 @@
 
     const summary = result.summary;
     const unit = summary.unit === "paragraph" ? "段落" : "文";
-    elements.verificationSummary.textContent = `${summary.passedCount}/${summary.sentenceCount}${unit}が検証通過、合計${summary.verificationPasses}回検証`;
+    elements.verificationSummary.textContent = result.fallback
+      ? "原文保持 — 採用できる変換候補がありません"
+      : `${summary.passedCount}/${summary.sentenceCount}${unit}が現行の規則検査を通過、合計${summary.verificationPasses}回検証`;
     elements.comparisonPanel.hidden = false;
   }
 
   function renderResult(result) {
+    currentResult = result;
     elements.outputText.value = result.text;
-    elements.outputCount.textContent = `${result.text.length.toLocaleString("ja-JP")}文字`;
+    elements.outputCount.textContent = `${Array.from(result.text).length.toLocaleString("ja-JP")}文字`;
     const unit = result.summary.unit === "paragraph" ? "段落" : "文";
     elements.changeCount.textContent = `${result.summary.sentenceCount}${unit}を比較・検証`;
     elements.techniqueList.replaceChildren();
 
     const scores = [
       `総合 ${percent(result.summary.averageTotal)}`,
-      `意味保持 ${percent(result.summary.averageSemantic)}`,
+      `内容の参考値 ${percent(result.summary.averageSemantic)}`,
       `ブロント語らしさ ${percent(result.summary.averageStyle)}`,
       `接続品質 ${percent(result.summary.averageFluency)}`,
       "LLM不使用",
@@ -349,7 +380,7 @@
       scores.push(`原文寄り機能構文 ${offeredFrames.size}型を比較`);
     }
     scores.forEach((score) => elements.techniqueList.append(makeElement("span", "", score)));
-    renderSuggestions(result.suggestions);
+    renderSuggestions(result);
 
     elements.emptyOutput.hidden = true;
     elements.resultArea.hidden = false;
@@ -359,6 +390,7 @@
   }
 
   function clearResult() {
+    currentResult = null;
     elements.outputText.value = "";
     elements.emptyOutput.hidden = false;
     elements.resultArea.hidden = true;
@@ -366,6 +398,12 @@
     elements.comparisonList.replaceChildren();
     elements.suggestionList.replaceChildren();
     elements.copyButton.disabled = true;
+  }
+
+  function invalidateInput() {
+    requestState.invalidate();
+    setLoading(false);
+    clearResult();
   }
 
   function setLoading(loading) {
@@ -379,10 +417,15 @@
   }
 
   async function convertText() {
+    if (requestState.active) return;
     const input = elements.inputText.value;
     if (!input.trim()) {
       showToast("変換する文章を入力してください。");
       elements.inputText.focus();
+      return;
+    }
+    if (Array.from(input).length > 5000) {
+      showToast("文章は5000文字以内にしてください。");
       return;
     }
     if (!engineReady) {
@@ -390,26 +433,27 @@
       return;
     }
 
+    const pending = requestState.begin({
+      text: input, level: selectedLevel, contextMode: selectedContextMode,
+      series: selectedSeries, customRules: parseDictionary(elements.customDictionary.value),
+    });
+    if (!pending) return;
     setLoading(true);
     try {
       const response = await fetch("/api/convert", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          text: input,
-          level: selectedLevel,
-          contextMode: selectedContextMode,
-          series: selectedSeries,
-          customRules: parseDictionary(elements.customDictionary.value),
-        }),
+        body: JSON.stringify(pending.snapshot),
+        signal: pending.controller.signal,
       });
       const result = await response.json();
+      if (!requestState.isCurrent(pending)) return;
       if (!response.ok) throw new Error(result.error || "変換に失敗しました");
       renderResult(result);
     } catch (error) {
-      showToast(error.message);
+      if (requestState.isCurrent(pending) && error.name !== "AbortError") showToast(error.message);
     } finally {
-      setLoading(false);
+      if (requestState.finish(pending)) setLoading(false);
     }
   }
 
@@ -471,6 +515,7 @@
   elements.seriesSelect.addEventListener("change", () => setSeries(elements.seriesSelect.value));
   elements.sampleButtons.forEach((button) => {
     button.addEventListener("click", () => {
+      invalidateInput();
       elements.inputText.value = samples[button.dataset.sample] || "";
       updateInputCount();
       writeStorage(STORAGE_KEYS.input, elements.inputText.value);
@@ -478,10 +523,12 @@
     });
   });
   elements.inputText.addEventListener("input", () => {
+    invalidateInput();
     updateInputCount();
     writeStorage(STORAGE_KEYS.input, elements.inputText.value);
   });
   elements.customDictionary.addEventListener("input", () => {
+    invalidateInput();
     const dictionary = elements.customDictionary.value;
     const ruleCount = parseDictionary(dictionary).length;
     writeStorage(STORAGE_KEYS.dictionary, dictionary);
@@ -493,6 +540,7 @@
   elements.copyButton.addEventListener("click", copyResult);
   elements.themeButton.addEventListener("click", cycleTheme);
   elements.clearButton.addEventListener("click", () => {
+    invalidateInput();
     elements.inputText.value = "";
     writeStorage(STORAGE_KEYS.input, "");
     updateInputCount();

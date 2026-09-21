@@ -1,18 +1,53 @@
 {
   "name": "buront-language-generator",
-  "version": "0.2.0",
+  "version": "1.0.0-experimental.3",
   "private": true,
   "description": "普通の日本語をブロント語へ変換するローカルWebアプリ",
   "scripts": {
+    "audit:m0": "node scripts/audit-design-counterexamples.js",
     "analyze:novel": "node scripts/analyze-novel.js",
     "analyze:grammar": "node scripts/analyze-phrase-grammar.js",
     "build:corpus": "node scripts/prepare-corpora.js && node scripts/prepare-archive-series.js",
     "build:series": "node scripts/prepare-archive-series.js",
     "build:quotes": "node scripts/prepare-quote-corpus.js",
     "start": "node server.js",
-    "test": "node --test"
+    "test": "npm run build:engine && node --test --test-concurrency=2 test/*.test.js test/v1/*.test.js",
+    "build:engine": "tsc && node dist/scripts/v1/export-schemas.js && node scripts/build-info.js",
+    "build:web": "vite build --config apps/web/vite.config.mjs",
+    "build": "npm run build:engine && npm run build:web",
+    "build:assets": "node dist/scripts/v1/build-assets.js",
+    "generate": "node dist/scripts/v1/generate.js",
+    "test:v1": "npm run build:engine && node --test --test-concurrency=2 test/v1/*.test.js",
+    "typecheck": "tsc --noEmit && tsc -p apps/web/tsconfig.json",
+    "diagnose": "node scripts/diagnose.js",
+    "evaluate": "node dist/scripts/v1/evaluate.js",
+    "evaluate:planning": "node dist/scripts/v1/evaluate-planning.js",
+    "release:bundle": "node scripts/package-release.js",
+    "replay": "node dist/scripts/v1/replay.js",
+    "assets": "node dist/scripts/v1/assets-command.js",
+    "train:preferences": ".venv/Scripts/python.exe services/japanese-analysis/train_preferences.py",
+    "evaluate:audit": "node scripts/evaluate-audit-fixes.cjs"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "0.34.52",
+    "ajv": "8.20.0",
+    "fastify": "5.12.5",
+    "minisearch": "7.2.0",
+    "piscina": "5.3.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "fast-check": "4.10.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
   }
 }

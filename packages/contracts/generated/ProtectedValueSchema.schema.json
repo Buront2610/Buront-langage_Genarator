@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "raw",
+    "span",
+    "role"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "raw": {
+      "type": "string"
+    },
+    "span": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "decimal": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "sign": {
+      "type": "string"
+    },
+    "comparator": {
+      "anyOf": [
+        {
+          "const": "eq",
+          "type": "string"
+        },
+        {
+          "const": "lt",
+          "type": "string"
+        },
+        {
+          "const": "le",
+          "type": "string"
+        },
+        {
+          "const": "gt",
+          "type": "string"
+        },
+        {
+          "const": "ge",
+          "type": "string"
+        }
+      ]
+    },
+    "role": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "string"
+    }
+  }
+}

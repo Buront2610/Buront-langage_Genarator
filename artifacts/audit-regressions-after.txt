@@ -1,0 +1,47 @@
+✔ T-22 only built web files; Host/Origin/token/session boundaries (5178.9239ms)
+✔ M4 API separates invalid input, capacity and unavailable capability (22.956ms)
+✔ T-12/19 generation result has revision, selected ID, replay, matching spans and no private access (6065.6228ms)
+✔ Partial regeneration authenticates analysis and validates locked plan conflicts (385.9049ms)
+✔ M3 API completes independent reanalysis and preserves its signed partial replay (1367.7127ms)
+✔ T-20 cancellation during factual reanalysis cannot publish a late completed result (474.3106ms)
+✔ T-20 queued/running cancellation and completion have a single terminal state (108.6027ms)
+✔ T-21 finite queue and one running request per session; status stays responsive (169.8293ms)
+✔ Only explicit preferences are stored; blind comparisons omit source method/rank/scores (9.879ms)
+✔ A3 dictionary edits pass through HTTP, worker and reanalysis with meaningful outcomes (3679.7519ms)
+✔ A8 known temporal mismatch survives an unrelated unknown completion (5805.8474ms)
+✔ A2 compiler assertion cannot approve itself by updating core and allowed text (5905.9916ms)
+✔ A1 changing source participants changes the recoverable metaphor relation (852.0232ms)
+✔ A3 supported dictionary edit reaches selected candidates; unknown stays reviewable; assertion is rejected (1057.4212ms)
+✔ A5 features depend exclusively on actual output and ignore declared operator/input syntax (2.4934ms)
+✔ A7 mixed sentence has separate event units without severing conditions or quotations (185.009ms)
+✔ A1 operator applicability and source state affect generation, not just metadata (1025.9067ms)
+✔ A2/A4 inverse grammar rejects role, state, domain and disconnected conclusion mutations (435.0059ms)
+✔ A4 selection respects Pareto preference axes and rejects low-quality novel candidates (293.1181ms)
+✔ A5 blind pairs recompute a dense common feature schema regardless of supplied method features (1.9173ms)
+✖ A6 discourse selection changes clause order only with eligible corpus evidence (3.0341ms)
+✔ A7 closing an independent copular clause is reparsed without loss of events (538.9846ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 21
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24378.499
+
+✖ failing tests:
+
+test at test\v1\audit-regressions.test.js:136:1
+✖ A6 discourse selection changes clause order only with eligible corpus evidence (3.0341ms)
+  AssertionError [ERR_ASSERTION]: all
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:143:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

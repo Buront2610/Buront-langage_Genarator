@@ -1,0 +1,22 @@
+✔ T-03 explicit passive participants have semantic roles; ambiguous potential stays unknown (2373.8598ms)
+✔ T-04 temporal scope distinguishes past negation, ongoing work, and the name Tanaka (104.1123ms)
+✔ M3 explicit anchors retain numeric target, utterance, use and fact bindings (23.5585ms)
+✔ M3 independent sentences get a stable status order and exactly one primary fact mention (2430.9108ms)
+✔ M3 pronouns, quotes, causal links and omitted participants keep source order (119.5466ms)
+✔ M1 explicit speech acts choose a factual target and never invent an addressee (88.7377ms)
+✔ M3 every series has corpus-backed vocabulary and frames; citations stay inside the series (2014.4896ms)
+✔ M3 lexical evidence matches a whole word, not the sword character inside serious (50.3275ms)
+✔ M3 repeated source facts are preserved and are not scored as generated rhetoric repetition (947.865ms)
+✔ M3 provenance rejects forged frame metadata; frame-only variation has identical novelty (213.7634ms)
+✔ M3 changed narrative order and status labels cannot be self-certified (7.8219ms)
+✔ M3 independent reanalysis rejects every fixed design counterexample using real parsed source and output (509.8756ms)
+✔ M3 independent checks identify roles, scoped polarity, negative tense and missing reported speaker (37.7746ms)
+✔ M3 register conversion is reanalyzed, deduplicated across candidates and reproduced on replay (572.8651ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10036.273

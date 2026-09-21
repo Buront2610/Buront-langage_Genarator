@@ -1,0 +1,151 @@
+✖ A8 known temporal mismatch survives an unrelated unknown completion (2811.8437ms)
+✖ A2 compiler assertion cannot approve itself by updating core and allowed text (2968.6138ms)
+✖ A1 changing source participants changes the recoverable metaphor relation (511.4091ms)
+✖ A3 supported dictionary edit reaches selected candidates; unknown stays reviewable; assertion is rejected (245.4832ms)
+✖ A5 features depend exclusively on actual output and ignore declared operator/input syntax (3.7092ms)
+✖ A7 mixed sentence has separate event units without severing conditions or quotations (46.9905ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7236.0454
+
+✖ failing tests:
+
+test at test\v1\audit-regressions.test.js:23:1
+✖ A8 known temporal mismatch survives an unrelated unknown completion (2811.8437ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'unknown' !== 'fail'
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:25:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'unknown',
+    expected: 'fail',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\v1\audit-regressions.test.js:29:1
+✖ A2 compiler assertion cannot approve itself by updating core and allowed text (2968.6138ms)
+  AssertionError [ERR_ASSERTION]: 実際には佐藤が田中を助けた。
+  
+  'pass' !== 'fail'
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:38:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'pass',
+    expected: 'fail',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\v1\audit-regressions.test.js:42:1
+✖ A1 changing source participants changes the recoverable metaphor relation (511.4091ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(left.candidates.every(a => right.candidates.every(b => rhetoricalCore(a) !== rhetoricalCore(b))))
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:45:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test\v1\audit-regressions.test.js:49:1
+✖ A3 supported dictionary edit reaches selected candidates; unknown stays reviewable; assertion is rejected (245.4832ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(safe.candidates.length > 0)
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:52:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test\v1\audit-regressions.test.js:62:1
+✖ A5 features depend exclusively on actual output and ignore declared operator/input syntax (3.7092ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+  +   'intent:achievement': 1,
+  -   'intent:unknown': 1,
+      'ngram:<T': 1,
+      'ngram:>じ': 1,
+      'ngram:>の': 1,
+      'ngram:ER': 1,
+      'ngram:M>': 1,
+  ...
+      'ngram:れは': 1,
+  +   'op:OP-01': 1,
+  +   'pos:NOUN': 1,
+  -   'op:LEGACY': 1,
+      analogy: 0,
+  +   backTranslation: 1,
+  -   backTranslation: 0,
+      clauses: 1,
+      length: 0.058333333333333334,
+      repetition: 0
+    }
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:64:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { length: 0.058333333333333334, clauses: 1, repetition: 0, analogy: 0, backTranslation: 1, 'op:OP-01': 1, 'intent:achievement': 1, 'ngram:これ': 1, 'ngram:れは': 1, 'ngram:は<': 1, 'ngram:<T': 1, 'ngram:TE': 1, 'ngram:ER': 1, 'ngram:RM': 1, 'ngram:M>': 1, 'ngram:>の': 1, 'ngram:のた': 1, 'ngram:ため': 1, 'ngram:めの': 1, 'ngram:の<': 1, 'ngram:>じ': 1, 'ngram:じ<': 1, 'pos:NOUN': 1 },
+    expected: { length: 0.058333333333333334, clauses: 1, repetition: 0, analogy: 0, backTranslation: 0, 'op:LEGACY': 1, 'intent:unknown': 1, 'ngram:これ': 1, 'ngram:れは': 1, 'ngram:は<': 1, 'ngram:<T': 1, 'ngram:TE': 1, 'ngram:ER': 1, 'ngram:RM': 1, 'ngram:M>': 1, 'ngram:>の': 1, 'ngram:のた': 1, 'ngram:ため': 1, 'ngram:めの': 1, 'ngram:の<': 1, 'ngram:>じ': 1, 'ngram:じ<': 1 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at test\v1\audit-regressions.test.js:67:1
+✖ A7 mixed sentence has separate event units without severing conditions or quotations (46.9905ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'achievement',
+      'unresolved',
+  -   'prospect'
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\audit-regressions.test.js:70:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'achievement', 'unresolved' ],
+    expected: [ 'achievement', 'unresolved', 'prospect' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

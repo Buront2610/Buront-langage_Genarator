@@ -7,3 +7,12 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+.venv/
+dist/
+apps/web/dist/
+.runtime/
+playwright-report/
+test-results/
+__pycache__/
+artifacts/buront-local*/
+artifacts/buront-local*.zip

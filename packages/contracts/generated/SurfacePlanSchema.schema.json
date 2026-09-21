@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "seriesId",
+    "profileHash",
+    "constructionId",
+    "evidenceIds",
+    "coreText"
+  ],
+  "properties": {
+    "seriesId": {
+      "type": "string"
+    },
+    "profileHash": {
+      "type": "string"
+    },
+    "constructionId": {
+      "type": "string"
+    },
+    "evidenceIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "coreText": {
+      "maxLength": 12000,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "sourceHash": "6c18928310fc3c759a53b04b2ee383783f1f9a45eee856bc5273ef7adef5c13e",
+  "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+  "runtime": "node24-python3.11",
+  "safetyContract": "v1"
+}

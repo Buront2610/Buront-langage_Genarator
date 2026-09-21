@@ -1,0 +1,1419 @@
+{
+  "observations": [
+    {
+      "id": "T-01",
+      "source": "100円を支払った。",
+      "candidate": "1100円を支払ったのは確定的に明らか",
+      "semantic": {
+        "score": 1,
+        "contentRetention": 1,
+        "polarityMatch": 1,
+        "missingProtected": [],
+        "lengthRatio": 1.9
+      },
+      "validation": {
+        "total": 0.8170723319689774,
+        "semantic": 1,
+        "contentRetention": 1,
+        "polarity": 1,
+        "style": 0.5538349560218961,
+        "logAffinity": 0.7718701999318971,
+        "novelAffinity": 0.9927399058412096,
+        "styleDimensions": [
+          "certainty"
+        ],
+        "fluency": 1,
+        "lengthRatio": 1.9,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.7718701999318971,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [],
+        "passed": true
+      }
+    },
+    {
+      "id": "T-02",
+      "source": "気温は-5度だった。",
+      "candidate": "気温は5度だったのは確定的に明らか",
+      "semantic": {
+        "score": 1,
+        "contentRetention": 1,
+        "polarityMatch": 1,
+        "missingProtected": [],
+        "lengthRatio": 1.7
+      },
+      "validation": {
+        "total": 0.6413862363438207,
+        "semantic": 1,
+        "contentRetention": 1,
+        "polarity": 1,
+        "style": 0.564356674009319,
+        "logAffinity": 0.7890334393847073,
+        "novelAffinity": 0.997793538235785,
+        "styleDimensions": [
+          "certainty"
+        ],
+        "fluency": 1,
+        "lengthRatio": 1.7,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.7890334393847073,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [],
+        "passed": true
+      }
+    },
+    {
+      "id": "T-03",
+      "source": "田中が佐藤を助けた。",
+      "candidate": "佐藤が田中を助けたのは確定的に明らか",
+      "semantic": {
+        "score": 1,
+        "contentRetention": 1,
+        "polarityMatch": 1,
+        "missingProtected": [],
+        "lengthRatio": 1.8
+      },
+      "validation": {
+        "total": 0.6357508202449988,
+        "semantic": 1,
+        "contentRetention": 1,
+        "polarity": 1,
+        "style": 0.5506117566951191,
+        "logAffinity": 0.6839047374275298,
+        "novelAffinity": 0.9932252607315117,
+        "styleDimensions": [
+          "certainty"
+        ],
+        "fluency": 1,
+        "lengthRatio": 1.8,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.6839047374275298,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [],
+        "passed": true
+      }
+    },
+    {
+      "id": "T-04",
+      "source": "田中は承認した。佐藤は承認していない。",
+      "candidate": "田中は承認していない。佐藤は承認した。",
+      "semantic": {
+        "score": 1,
+        "contentRetention": 1,
+        "polarityMatch": 1,
+        "missingProtected": [],
+        "lengthRatio": 1
+      },
+      "validation": {
+        "total": 0.7468295423599367,
+        "semantic": 1,
+        "contentRetention": 1,
+        "polarity": 1,
+        "style": 0.38251107892667485,
+        "logAffinity": 0.7878050334604689,
+        "novelAffinity": 0.8662173385042048,
+        "styleDimensions": [],
+        "fluency": 1,
+        "lengthRatio": 1,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.7878050334604689,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [],
+        "passed": true
+      }
+    },
+    {
+      "id": "T-05",
+      "source": "猫が魚を食べた。",
+      "candidate": "犬が肉を食べたのは確定的に明らか",
+      "semantic": {
+        "score": 1,
+        "contentRetention": 1,
+        "polarityMatch": 1,
+        "missingProtected": [],
+        "lengthRatio": 2
+      },
+      "validation": {
+        "total": 0.6368638479297226,
+        "semantic": 1,
+        "contentRetention": 1,
+        "polarity": 1,
+        "style": 0.5533264583651774,
+        "logAffinity": 0.6753678917036237,
+        "novelAffinity": 0.9936774354869481,
+        "styleDimensions": [
+          "certainty"
+        ],
+        "fluency": 1,
+        "lengthRatio": 2,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.6753678917036237,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [],
+        "passed": true
+      }
+    },
+    {
+      "id": "T-06",
+      "source": "サーバーは復旧していません。",
+      "candidate": "サーバーは復旧したのは確定的に明らか",
+      "semantic": {
+        "score": 0.517,
+        "contentRetention": 0.5,
+        "polarityMatch": 0.35,
+        "missingProtected": [],
+        "lengthRatio": 1.2857142857142858
+      },
+      "validation": {
+        "total": 0.42144074132724413,
+        "semantic": 0.517,
+        "contentRetention": 0.5,
+        "polarity": 0.35,
+        "style": 0.5462457105542539,
+        "logAffinity": 0.7298939137055076,
+        "novelAffinity": 0.9926809579992221,
+        "styleDimensions": [
+          "certainty"
+        ],
+        "fluency": 1,
+        "lengthRatio": 1.2857142857142858,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.7298939137055076,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [
+          "肯定・否定が変化した可能性",
+          "内容語の保持率が低い"
+        ],
+        "passed": false
+      }
+    },
+    {
+      "id": "T-08",
+      "source": "田中が確認したと佐藤が言った。",
+      "candidate": "田中が確認したのは確定的に明らか",
+      "semantic": {
+        "score": 0.83,
+        "contentRetention": 0.75,
+        "polarityMatch": 1,
+        "missingProtected": [],
+        "lengthRatio": 1.0666666666666667
+      },
+      "validation": {
+        "total": 0.5610230495512152,
+        "semantic": 0.83,
+        "contentRetention": 0.75,
+        "polarity": 1,
+        "style": 0.5507879257346714,
+        "logAffinity": 0.7279057063073713,
+        "novelAffinity": 0.9953455721812012,
+        "styleDimensions": [
+          "certainty"
+        ],
+        "fluency": 1,
+        "lengthRatio": 1.0666666666666667,
+        "faithfulQuoteCount": 0,
+        "faithfulQuoteSignatures": [],
+        "faithfulQuotePriority": 0,
+        "faithfulQuoteRoles": [],
+        "faithfulQuoteEvidence": [],
+        "faithfulContextMatch": true,
+        "temporalContextMatch": true,
+        "era": "all",
+        "eraAffinity": 0.7279057063073713,
+        "seriesVectorAffinity": 0,
+        "seriesVectorCosine": 0,
+        "seriesCentroidCosine": 0,
+        "seriesNeighborCosine": 0,
+        "seriesVectorRank": null,
+        "seriesVectorTop": null,
+        "seriesVectorScores": {},
+        "eraSignatureCount": 0,
+        "eraSignatures": [],
+        "eraRoles": [],
+        "eraContextMatch": true,
+        "warnings": [],
+        "passed": true
+      }
+    }
+  ],
+  "generations": [
+    {
+      "source": "今日は寒い",
+      "options": {
+        "seed": "m0-baseline",
+        "level": 2
+      },
+      "result": {
+        "text": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+        "suggestions": [
+          {
+            "text": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+            "averageTotal": 0.7633805810804792,
+            "averageSemantic": 0.744,
+            "averageStyle": 0.6976111733670226
+          },
+          {
+            "text": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+            "averageTotal": 0.6950960938671481,
+            "averageSemantic": 0.776,
+            "averageStyle": 0.4967221801637758
+          },
+          {
+            "text": "今日は寒い\nだが俺は黄金の鉄の塊なので寒さ程度ではﾉｰﾀﾞﾒｰｼﾞ",
+            "averageTotal": 0.7352842163104844,
+            "averageSemantic": 0.712,
+            "averageStyle": 0.6634249178304494
+          }
+        ],
+        "level": 2,
+        "contextMode": "faithful",
+        "series": "all",
+        "era": "all",
+        "engine": "corpus-comparison",
+        "usesLlm": false,
+        "summary": {
+          "sentenceCount": 1,
+          "passedCount": 1,
+          "verificationPasses": 1,
+          "averageTotal": 0.7633805810804792,
+          "averageSemantic": 0.744,
+          "averageStyle": 0.6976111733670226,
+          "averageFluency": 1
+        },
+        "comparisons": [
+          {
+            "source": "今日は寒い",
+            "output": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+            "candidateCount": 27,
+            "verificationPasses": 1,
+            "requiredFaithfulQuoteCount": 1,
+            "validation": {
+              "total": 0.7633805810804792,
+              "semantic": 0.744,
+              "contentRetention": 1,
+              "polarity": 1,
+              "style": 0.6976111733670226,
+              "logAffinity": 0.6365406059479964,
+              "novelAffinity": 0.9336224743086505,
+              "styleDimensions": [
+                "orthography",
+                "reaction",
+                "rank"
+              ],
+              "fluency": 1,
+              "lengthRatio": 6.2,
+              "faithfulQuoteCount": 1,
+              "faithfulQuoteSignatures": [
+                "state_ordinary_damage"
+              ],
+              "faithfulQuotePriority": 3,
+              "faithfulQuoteRoles": [
+                "ordinary-person-counterfactual"
+              ],
+              "faithfulQuoteEvidence": [
+                {
+                  "frame": "state_ordinary_damage",
+                  "lexemes": [
+                    "寿命"
+                  ],
+                  "observed": [
+                    "寿命"
+                  ],
+                  "linked": true
+                }
+              ],
+              "faithfulContextMatch": true,
+              "temporalContextMatch": true,
+              "era": "all",
+              "eraAffinity": 0.6365406059479964,
+              "seriesVectorAffinity": 0,
+              "seriesVectorCosine": 0,
+              "seriesCentroidCosine": 0,
+              "seriesNeighborCosine": 0,
+              "seriesVectorRank": null,
+              "seriesVectorTop": null,
+              "seriesVectorScores": {},
+              "eraSignatureCount": 0,
+              "eraSignatures": [],
+              "eraRoles": [],
+              "eraContextMatch": true,
+              "warnings": [],
+              "passed": true
+            },
+            "diff": [
+              {
+                "type": "same",
+                "value": "今日は寒い"
+              },
+              {
+                "type": "added",
+                "value": "\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる"
+              }
+            ],
+            "references": [
+              {
+                "postId": "post_02404_ec5901c8d31c65b3",
+                "text": "通報とかﾏｼﾞで震えてきやがった…怖いです…辞めてください…",
+                "score": 3.2509,
+                "cosineSimilarity": 0.588,
+                "board": "Download",
+                "threadTitle": "【DQ5】NDS雑談163【キター】",
+                "postUrl": "https://changi.5ch.net/test/read.cgi/download/1216213130/365",
+                "date": "2008-07-16",
+                "era": "all",
+                "local": true
+              },
+              {
+                "postId": "post_01121_a673eaa5582a6d12",
+                "text": "今日は休み",
+                "score": 3.7262,
+                "cosineSimilarity": 0.2836,
+                "board": "ネトゲ実況",
+                "threadTitle": "【廃人の証】グラットンソードは最強【ナイトの宝】",
+                "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1055827983/580",
+                "date": "2003-06-18",
+                "era": "all",
+                "local": false
+              },
+              {
+                "postId": "post_02383_b2b07dc64aa5f7b7",
+                "text": "今日もサーチしてしまった・・・",
+                "score": 2.6782,
+                "cosineSimilarity": 0.2274,
+                "board": "ネトゲ実況",
+                "threadTitle": "布団の中で全体サーチをしてしまう",
+                "postUrl": "https://live27.5ch.net/test/read.cgi/ogame/1203323218/42",
+                "date": "2008-02-19",
+                "era": "all",
+                "local": true
+              }
+            ],
+            "alternatives": [
+              {
+                "text": "今日は寒いという事実は確定的に明らか",
+                "total": 0.8329257170535791,
+                "semantic": 0.952,
+                "style": 0.6440139440331198
+              },
+              {
+                "text": "今日は寒いという話を聞いたんだが？",
+                "total": 0.8024566457820056,
+                "semantic": 0.968,
+                "style": 0.5525284043463551
+              },
+              {
+                "text": "今日の寒気は普通の寒さの域を超えているんだが？",
+                "total": 0.7716902189627676,
+                "semantic": 0.872,
+                "style": 0.5805127291774818
+              }
+            ],
+            "options": [
+              {
+                "text": "今日は寒い\n貧弱一般人なら手足の感覚が消えて寿命がﾏｯﾊになる",
+                "validation": {
+                  "total": 0.7633805810804792,
+                  "semantic": 0.744,
+                  "contentRetention": 1,
+                  "polarity": 1,
+                  "style": 0.6976111733670226,
+                  "logAffinity": 0.6365406059479964,
+                  "novelAffinity": 0.9336224743086505,
+                  "styleDimensions": [
+                    "orthography",
+                    "reaction",
+                    "rank"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 6.2,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "state_ordinary_damage"
+                  ],
+                  "faithfulQuotePriority": 3,
+                  "faithfulQuoteRoles": [
+                    "ordinary-person-counterfactual"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "state_ordinary_damage",
+                      "lexemes": [
+                        "寿命"
+                      ],
+                      "observed": [
+                        "寿命"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.6365406059479964,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [],
+                  "passed": true
+                }
+              },
+              {
+                "text": "今日は寒い\nこの寒さは普通の寒さの域を超えているでしょう？",
+                "validation": {
+                  "total": 0.6950960938671481,
+                  "semantic": 0.776,
+                  "contentRetention": 1,
+                  "polarity": 1,
+                  "style": 0.4967221801637758,
+                  "logAffinity": 0.8314186566941484,
+                  "novelAffinity": 0.9582062432378259,
+                  "styleDimensions": [
+                    "amplification"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 5.8,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "state_threshold"
+                  ],
+                  "faithfulQuotePriority": 3,
+                  "faithfulQuoteRoles": [
+                    "state-scale"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "state_threshold",
+                      "lexemes": [
+                        "でしょう"
+                      ],
+                      "observed": [
+                        "でしょう"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.8314186566941484,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [],
+                  "passed": true
+                }
+              },
+              {
+                "text": "今日は寒い\nだが俺は黄金の鉄の塊なので寒さ程度ではﾉｰﾀﾞﾒｰｼﾞ",
+                "validation": {
+                  "total": 0.7352842163104844,
+                  "semantic": 0.712,
+                  "contentRetention": 1,
+                  "polarity": 1,
+                  "style": 0.6634249178304494,
+                  "logAffinity": 0.7683127832571076,
+                  "novelAffinity": 0.9549882505807147,
+                  "styleDimensions": [
+                    "viewpoint",
+                    "orthography",
+                    "connective"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 6.6,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "state_knight_resistance"
+                  ],
+                  "faithfulQuotePriority": 3,
+                  "faithfulQuoteRoles": [
+                    "self-resistance"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "state_knight_resistance",
+                      "lexemes": [
+                        "黄金の鉄の塊"
+                      ],
+                      "observed": [
+                        "黄金の鉄の塊"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.7683127832571076,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [],
+                  "passed": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "猫",
+      "options": {
+        "seed": "m0-baseline",
+        "level": 2
+      },
+      "result": {
+        "text": "",
+        "suggestions": [],
+        "level": 2,
+        "contextMode": "faithful",
+        "series": "all",
+        "era": "all",
+        "engine": "corpus-comparison",
+        "usesLlm": false,
+        "summary": {
+          "sentenceCount": 0,
+          "passedCount": 0,
+          "verificationPasses": 0,
+          "averageTotal": 0,
+          "averageSemantic": 0,
+          "averageStyle": 0,
+          "averageFluency": 0
+        },
+        "comparisons": []
+      }
+    },
+    {
+      "source": ">>123 確認しました。",
+      "options": {
+        "seed": "m0-baseline",
+        "level": 2
+      },
+      "result": {
+        "text": "確認したという事実は確定的に明らか",
+        "suggestions": [
+          {
+            "text": "確認したという事実は確定的に明らか",
+            "averageTotal": 0.7520632817340639,
+            "averageSemantic": 0.7733333333333333,
+            "averageStyle": 0.6385283294326763
+          },
+          {
+            "text": "確認したという話を聞いたんだが？",
+            "averageTotal": 0.7156745135657553,
+            "averageSemantic": 0.7733333333333333,
+            "averageStyle": 0.5497752363392406
+          },
+          {
+            "text": "確認した（ﾘｱﾙ話）",
+            "averageTotal": 0.5460033447751393,
+            "averageSemantic": 0.7733333333333333,
+            "averageStyle": 0.5749675075816405
+          }
+        ],
+        "level": 2,
+        "contextMode": "faithful",
+        "series": "all",
+        "era": "all",
+        "engine": "corpus-comparison",
+        "usesLlm": false,
+        "summary": {
+          "sentenceCount": 1,
+          "passedCount": 1,
+          "verificationPasses": 1,
+          "averageTotal": 0.7520632817340639,
+          "averageSemantic": 0.7733333333333333,
+          "averageStyle": 0.6385283294326763,
+          "averageFluency": 1
+        },
+        "comparisons": [
+          {
+            "source": "確認しました。",
+            "output": "確認したという事実は確定的に明らか",
+            "candidateCount": 17,
+            "verificationPasses": 1,
+            "requiredFaithfulQuoteCount": 1,
+            "validation": {
+              "total": 0.7520632817340639,
+              "semantic": 0.7733333333333333,
+              "contentRetention": 0.6666666666666666,
+              "polarity": 1,
+              "style": 0.6385283294326763,
+              "logAffinity": 0.8490111184928906,
+              "novelAffinity": 0.9985404278980422,
+              "styleDimensions": [
+                "certainty"
+              ],
+              "fluency": 1,
+              "lengthRatio": 2.4285714285714284,
+              "faithfulQuoteCount": 1,
+              "faithfulQuoteSignatures": [
+                "fact_assertion"
+              ],
+              "faithfulQuotePriority": 1,
+              "faithfulQuoteRoles": [
+                "assertion"
+              ],
+              "faithfulQuoteEvidence": [
+                {
+                  "frame": "fact_assertion",
+                  "lexemes": [
+                    "確定的に明らか"
+                  ],
+                  "observed": [
+                    "確定的に明らか"
+                  ],
+                  "linked": true
+                }
+              ],
+              "faithfulContextMatch": true,
+              "temporalContextMatch": true,
+              "era": "all",
+              "eraAffinity": 0.8490111184928906,
+              "seriesVectorAffinity": 0,
+              "seriesVectorCosine": 0,
+              "seriesCentroidCosine": 0,
+              "seriesNeighborCosine": 0,
+              "seriesVectorRank": null,
+              "seriesVectorTop": null,
+              "seriesVectorScores": {},
+              "eraSignatureCount": 0,
+              "eraSignatures": [],
+              "eraRoles": [],
+              "eraContextMatch": true,
+              "warnings": [
+                "内容語の保持率が低い"
+              ],
+              "passed": true
+            },
+            "diff": [
+              {
+                "type": "same",
+                "value": "確認"
+              },
+              {
+                "type": "removed",
+                "value": "しま"
+              },
+              {
+                "type": "same",
+                "value": "した"
+              },
+              {
+                "type": "removed",
+                "value": "。"
+              },
+              {
+                "type": "added",
+                "value": "という事実は確定的に明らか"
+              }
+            ],
+            "references": [
+              {
+                "postId": "post_01542_62ffffc528b696dc",
+                "text": "感動した",
+                "score": 3.9235,
+                "cosineSimilarity": 0.1658,
+                "board": "ネトゲ実況",
+                "threadTitle": "【取るな】天然素材【ころすぞ】",
+                "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1061442635/141",
+                "date": "2003-08-21",
+                "era": "all",
+                "local": true
+              },
+              {
+                "postId": "post_00593_12773bc490d3e9e7",
+                "text": "どうした？",
+                "score": 4.1671,
+                "cosineSimilarity": 0.216,
+                "board": "家ゲー攻略",
+                "threadTitle": "【ご奉仕】スパロボＩＭＰＡＣＴ178【するにゃん】",
+                "postUrl": "http://game.5ch.net/test/read.cgi/gameover/1021887946/752",
+                "date": "2002-05-20",
+                "era": "all",
+                "local": true
+              },
+              {
+                "postId": "post_01172_8515a1e12a21efc4",
+                "text": "今tellで確認して来たぞ",
+                "score": 4.414,
+                "cosineSimilarity": 0.3642,
+                "board": "ネトゲ実況",
+                "threadTitle": "【廃人の証】グラットンソードは最強2【内藤の証】",
+                "postUrl": "https://live4.5ch.net/test/read.cgi/ogame/1056081739/75",
+                "date": "2003-06-20",
+                "era": "all",
+                "local": true
+              }
+            ],
+            "alternatives": [
+              {
+                "text": "確認したという事実は確定的に明らか",
+                "total": 0.7520632817340639,
+                "semantic": 0.7733333333333333,
+                "style": 0.6385283294326763
+              },
+              {
+                "text": "確認したという現実に俺の驚きがﾏｯﾊになった",
+                "total": 0.7395643074986545,
+                "semantic": 0.764495238095238,
+                "style": 0.6175278115530485
+              },
+              {
+                "text": "確認したという時点で確定的に明らか",
+                "total": 0.7158938218437977,
+                "semantic": 0.7733333333333333,
+                "style": 0.5503101345783683
+              }
+            ],
+            "options": [
+              {
+                "text": "確認したという事実は確定的に明らか",
+                "validation": {
+                  "total": 0.7520632817340639,
+                  "semantic": 0.7733333333333333,
+                  "contentRetention": 0.6666666666666666,
+                  "polarity": 1,
+                  "style": 0.6385283294326763,
+                  "logAffinity": 0.8490111184928906,
+                  "novelAffinity": 0.9985404278980422,
+                  "styleDimensions": [
+                    "certainty"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 2.4285714285714284,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "fact_assertion"
+                  ],
+                  "faithfulQuotePriority": 1,
+                  "faithfulQuoteRoles": [
+                    "assertion"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "fact_assertion",
+                      "lexemes": [
+                        "確定的に明らか"
+                      ],
+                      "observed": [
+                        "確定的に明らか"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.8490111184928906,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [
+                    "内容語の保持率が低い"
+                  ],
+                  "passed": true
+                }
+              },
+              {
+                "text": "確認したという話を聞いたんだが？",
+                "validation": {
+                  "total": 0.7156745135657553,
+                  "semantic": 0.7733333333333333,
+                  "contentRetention": 0.6666666666666666,
+                  "polarity": 1,
+                  "style": 0.5497752363392406,
+                  "logAffinity": 0.9555815799157691,
+                  "novelAffinity": 0.9979961415218201,
+                  "styleDimensions": [
+                    "connective"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 2.2857142857142856,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "account_hearsay"
+                  ],
+                  "faithfulQuotePriority": 1,
+                  "faithfulQuoteRoles": [
+                    "report"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "account_hearsay",
+                      "lexemes": [
+                        "話"
+                      ],
+                      "observed": [
+                        "話"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.9555815799157691,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [
+                    "内容語の保持率が低い"
+                  ],
+                  "passed": true
+                }
+              },
+              {
+                "text": "確認した（ﾘｱﾙ話）",
+                "validation": {
+                  "total": 0.5460033447751393,
+                  "semantic": 0.7733333333333333,
+                  "contentRetention": 0.6666666666666666,
+                  "polarity": 1,
+                  "style": 0.5749675075816405,
+                  "logAffinity": 0.9794359836191653,
+                  "novelAffinity": 0.9961430305792346,
+                  "styleDimensions": [
+                    "orthography"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 1.4285714285714286,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "observation_real"
+                  ],
+                  "faithfulQuotePriority": 1,
+                  "faithfulQuoteRoles": [
+                    "attestation"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "observation_real",
+                      "lexemes": [
+                        "リアル話"
+                      ],
+                      "observed": [
+                        "リアル話"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.9794359836191653,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [
+                    "内容語の保持率が低い"
+                  ],
+                  "passed": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "  333円を777円に変更しました。  ",
+      "options": {
+        "seed": "m0-baseline",
+        "level": 2
+      },
+      "result": {
+        "text": "333円を777円に変更した（ﾘｱﾙ話）",
+        "suggestions": [
+          {
+            "text": "333円を777円に変更した（ﾘｱﾙ話）",
+            "averageTotal": 0.7492878377576125,
+            "averageSemantic": 0.864,
+            "averageStyle": 0.5344581408722255
+          },
+          {
+            "text": "英語でいうとノンフィクションの話なんだが\n333円を777円に変更した",
+            "averageTotal": 0.7253810791238925,
+            "averageSemantic": 0.864,
+            "averageStyle": 0.4761489734729084
+          },
+          {
+            "text": "333円を777円に変更したという事実は確定的に明らか",
+            "averageTotal": 0.7828323330944373,
+            "averageSemantic": 0.864,
+            "averageStyle": 0.6162739831571642
+          }
+        ],
+        "level": 2,
+        "contextMode": "faithful",
+        "series": "all",
+        "era": "all",
+        "engine": "corpus-comparison",
+        "usesLlm": false,
+        "summary": {
+          "sentenceCount": 1,
+          "passedCount": 1,
+          "verificationPasses": 1,
+          "averageTotal": 0.7492878377576125,
+          "averageSemantic": 0.864,
+          "averageStyle": 0.5344581408722255,
+          "averageFluency": 1
+        },
+        "comparisons": [
+          {
+            "source": "333円を777円に変更しました。",
+            "output": "333円を777円に変更した（ﾘｱﾙ話）",
+            "candidateCount": 17,
+            "verificationPasses": 1,
+            "requiredFaithfulQuoteCount": 1,
+            "validation": {
+              "total": 0.7492878377576125,
+              "semantic": 0.864,
+              "contentRetention": 0.8,
+              "polarity": 1,
+              "style": 0.5344581408722255,
+              "logAffinity": 0.8575882978895459,
+              "novelAffinity": 0.9487825138801899,
+              "styleDimensions": [
+                "orthography"
+              ],
+              "fluency": 1,
+              "lengthRatio": 1.1764705882352942,
+              "faithfulQuoteCount": 1,
+              "faithfulQuoteSignatures": [
+                "observation_real"
+              ],
+              "faithfulQuotePriority": 1,
+              "faithfulQuoteRoles": [
+                "attestation"
+              ],
+              "faithfulQuoteEvidence": [
+                {
+                  "frame": "observation_real",
+                  "lexemes": [
+                    "リアル話"
+                  ],
+                  "observed": [
+                    "リアル話"
+                  ],
+                  "linked": true
+                }
+              ],
+              "faithfulContextMatch": true,
+              "temporalContextMatch": true,
+              "era": "all",
+              "eraAffinity": 0.8575882978895459,
+              "seriesVectorAffinity": 0,
+              "seriesVectorCosine": 0,
+              "seriesCentroidCosine": 0,
+              "seriesNeighborCosine": 0,
+              "seriesVectorRank": null,
+              "seriesVectorTop": null,
+              "seriesVectorScores": {},
+              "eraSignatureCount": 0,
+              "eraSignatures": [],
+              "eraRoles": [],
+              "eraContextMatch": true,
+              "warnings": [],
+              "passed": true
+            },
+            "diff": [
+              {
+                "type": "same",
+                "value": "333円を777円に変更"
+              },
+              {
+                "type": "removed",
+                "value": "しま"
+              },
+              {
+                "type": "same",
+                "value": "した"
+              },
+              {
+                "type": "removed",
+                "value": "。"
+              },
+              {
+                "type": "added",
+                "value": "（ﾘｱﾙ話）"
+              }
+            ],
+            "references": [
+              {
+                "postId": "post_01739_f5aedff49682d6cb",
+                "text": "白／ｔ「ですね、今気づきました」",
+                "score": 4.9503,
+                "cosineSimilarity": 0.5401,
+                "board": "ネトゲ実況",
+                "threadTitle": "【迷惑】低ﾚﾍﾞﾙはﾏｼﾞ糞【考えるべき】",
+                "postUrl": "https://game7.5ch.net/test/read.cgi/ogame/1098755797/1",
+                "date": "2004-10-26",
+                "era": "all",
+                "local": true
+              },
+              {
+                "postId": "post_02058_345db13dd20c5204",
+                "text": "国家権力をナメてると住所もとくていされて痛い目に会ってしまいｍすよ！",
+                "score": 3.4025,
+                "cosineSimilarity": 0.3165,
+                "board": "アーケード",
+                "threadTitle": "【ギルティ】恥知らずなカイ使いがいた！！【ギア】",
+                "postUrl": "https://game10.5ch.net/test/read.cgi/arc/1116227644/224",
+                "date": "2005-06-29",
+                "era": "all",
+                "local": true
+              },
+              {
+                "postId": "post_01010_677f644533d0b315",
+                "text": "わかったらバーバリなんて売ってしまえ、捨て値で出しても誰も買わないがな",
+                "score": 3.4318,
+                "cosineSimilarity": 0.3123,
+                "board": "ジョブ戦術？",
+                "threadTitle": "【隔528】バーバリアンサイズはファルカストラより弱い【命中-5】",
+                "postUrl": null,
+                "date": "2003-02-01",
+                "era": "all",
+                "local": true
+              }
+            ],
+            "alternatives": [
+              {
+                "text": "333円を777円に変更したという事実は確定的に明らか",
+                "total": 0.7828323330944373,
+                "semantic": 0.864,
+                "style": 0.6162739831571642
+              },
+              {
+                "text": "333円を777円に変更したという現実に俺の驚きがﾏｯﾊになった",
+                "total": 0.7780964646500315,
+                "semantic": 0.864,
+                "style": 0.6047230845122717
+              },
+              {
+                "text": "333円を777円に変更したという事実",
+                "total": 0.7549609486189958,
+                "semantic": 0.864,
+                "style": 0.5482949966316969
+              }
+            ],
+            "options": [
+              {
+                "text": "333円を777円に変更した（ﾘｱﾙ話）",
+                "validation": {
+                  "total": 0.7492878377576125,
+                  "semantic": 0.864,
+                  "contentRetention": 0.8,
+                  "polarity": 1,
+                  "style": 0.5344581408722255,
+                  "logAffinity": 0.8575882978895459,
+                  "novelAffinity": 0.9487825138801899,
+                  "styleDimensions": [
+                    "orthography"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 1.1764705882352942,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "observation_real"
+                  ],
+                  "faithfulQuotePriority": 1,
+                  "faithfulQuoteRoles": [
+                    "attestation"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "observation_real",
+                      "lexemes": [
+                        "リアル話"
+                      ],
+                      "observed": [
+                        "リアル話"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.8575882978895459,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [],
+                  "passed": true
+                }
+              },
+              {
+                "text": "英語でいうとノンフィクションの話なんだが\n333円を777円に変更した",
+                "validation": {
+                  "total": 0.7253810791238925,
+                  "semantic": 0.864,
+                  "contentRetention": 0.8,
+                  "polarity": 1,
+                  "style": 0.4761489734729084,
+                  "logAffinity": 0.6311506628655947,
+                  "novelAffinity": 0.9451423675975996,
+                  "styleDimensions": [
+                    "connective"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 2.0588235294117645,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "account_nonfiction"
+                  ],
+                  "faithfulQuotePriority": 1,
+                  "faithfulQuoteRoles": [
+                    "report"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "account_nonfiction",
+                      "lexemes": [
+                        "ノンフィクション"
+                      ],
+                      "observed": [
+                        "ノンフィクション"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.6311506628655947,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [],
+                  "passed": true
+                }
+              },
+              {
+                "text": "333円を777円に変更したという事実は確定的に明らか",
+                "validation": {
+                  "total": 0.7828323330944373,
+                  "semantic": 0.864,
+                  "contentRetention": 0.8,
+                  "polarity": 1,
+                  "style": 0.6162739831571642,
+                  "logAffinity": 0.7335061704305874,
+                  "novelAffinity": 0.9855343024358594,
+                  "styleDimensions": [
+                    "certainty"
+                  ],
+                  "fluency": 1,
+                  "lengthRatio": 1.588235294117647,
+                  "faithfulQuoteCount": 1,
+                  "faithfulQuoteSignatures": [
+                    "fact_assertion"
+                  ],
+                  "faithfulQuotePriority": 1,
+                  "faithfulQuoteRoles": [
+                    "assertion"
+                  ],
+                  "faithfulQuoteEvidence": [
+                    {
+                      "frame": "fact_assertion",
+                      "lexemes": [
+                        "確定的に明らか"
+                      ],
+                      "observed": [
+                        "確定的に明らか"
+                      ],
+                      "linked": true
+                    }
+                  ],
+                  "faithfulContextMatch": true,
+                  "temporalContextMatch": true,
+                  "era": "all",
+                  "eraAffinity": 0.7335061704305874,
+                  "seriesVectorAffinity": 0,
+                  "seriesVectorCosine": 0,
+                  "seriesCentroidCosine": 0,
+                  "seriesNeighborCosine": 0,
+                  "seriesVectorRank": null,
+                  "seriesVectorTop": null,
+                  "seriesVectorScores": {},
+                  "eraSignatureCount": 0,
+                  "eraSignatures": [],
+                  "eraRoles": [],
+                  "eraContextMatch": true,
+                  "warnings": [],
+                  "passed": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source": "私は明日確認します。佐藤は修理していません。田中が復旧しました。",
+  "task": "rewrite",
+  "contextMode": "full",
+  "noveltyMode": "invent",
+  "intensity": 2,
+  "series": "roto",
+  "backend": "structured",
+  "clientRevision": 1,
+  "seed": "document-planning-v2"
+}

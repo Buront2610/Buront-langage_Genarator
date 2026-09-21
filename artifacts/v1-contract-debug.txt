@@ -1,0 +1,241 @@
+✖ T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace (4140.0022ms)
+✖ T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion (0.7709ms)
+✖ T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap (0.0595ms)
+✖ Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text (0.0373ms)
+✖ Python validates the same exported Draft 2020-12 schema type boundaries (0.0539ms)
+✖ T-07 independent fact scopes keep achievement, unresolved and prospective distinct (0.0297ms)
+✖ T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained (0.0342ms)
+✖ T-13 four actual operators, bounded plans, zero required quote count and untrained S/Q (0.0312ms)
+✖ T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass (0.0525ms)
+✖ T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations (0.0746ms)
+✖ T-24 stage RNG, input/assets/history and candidate set reproduce exactly (0.0308ms)
+✖ T-15 noun replacement has an identical abstract structure, not unique novelty (0.0247ms)
+✖ T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected (0.0247ms)
+✖ Grouped split prevents thread/family/near duplicate leakage before generation (0.0513ms)
+✖ Finite cache evicts by bytes/count and inactive TTL (0.0242ms)
+✖ Optional model rejects prose, fabricated IDs and excessive retries (0.0272ms)
+✖ Register changes retain negative tense, quoted text and URL originals (0.0229ms)
+✖ Full mode changes presentation order while retaining every fact span (0.0207ms)
+✖ Quote focus does not borrow a topic from an omitted fact (0.0327ms)
+✖ Canonical mode uses attributed corpus quotations, invent mode never silently copies them (0.0206ms)
+✖ Connective and reference tags cannot conceal an unsupported factual assertion (0.0207ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 0
+ℹ fail 21
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4536.7767
+
+✖ failing tests:
+
+test at test\v1\core.test.js:25:1
+✖ T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace (4140.0022ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:34:1
+✖ T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion (0.7709ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:40:1
+✖ T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap (0.0595ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:48:1
+✖ Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text (0.0373ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:52:1
+✖ Python validates the same exported Draft 2020-12 schema type boundaries (0.0539ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:61:1
+✖ T-07 independent fact scopes keep achievement, unresolved and prospective distinct (0.0297ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:68:1
+✖ T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained (0.0342ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:77:1
+✖ T-13 four actual operators, bounded plans, zero required quote count and untrained S/Q (0.0312ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:83:1
+✖ T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass (0.0525ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:93:1
+✖ T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations (0.0746ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:100:1
+✖ T-24 stage RNG, input/assets/history and candidate set reproduce exactly (0.0308ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:103:1
+✖ T-15 noun replacement has an identical abstract structure, not unique novelty (0.0247ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:104:1
+✖ T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected (0.0247ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:109:1
+✖ Grouped split prevents thread/family/near duplicate leakage before generation (0.0513ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:113:1
+✖ Finite cache evicts by bytes/count and inactive TTL (0.0242ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:116:1
+✖ Optional model rejects prose, fabricated IDs and excessive retries (0.0272ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:121:1
+✖ Register changes retain negative tense, quoted text and URL originals (0.0229ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:131:1
+✖ Full mode changes presentation order while retaining every fact span (0.0207ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:136:1
+✖ Quote focus does not borrow a topic from an omitted fact (0.0327ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:142:1
+✖ Canonical mode uses attributed corpus quotations, invent mode never silently copies them (0.0206ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }
+
+test at test\v1\core.test.js:149:1
+✖ Connective and reference tags cannot conceal an unsupported factual assertion (0.0207ms)
+  Error: INVALID_RESULT_CONTRACT
+      at generate (C:\Users\Glutt\Documents\Buront_language_genelator\dist\packages\core\engine.js:88:29)
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:23:173)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestHook.run (node:internal/test_runner/test:1208:7) {
+    validationErrors: [ { instancePath: '/candidates/0/evidence/2/url', schemaPath: '#/properties/candidates/items/properties/evidence/items/properties/url/type', keyword: 'type', params: [Object], message: 'must be string' } ]
+  }

@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-21",
+  "build": {
+    "schemaVersion": 1,
+    "sourceHash": "6b6cd18eec3b9d7034b0d0adf4a9b400b8d252d3801e1aa3d0185bd5adb7d7f8",
+    "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "automated": {
+    "tests": 136,
+    "passed": 136,
+    "failed": 0,
+    "log": "artifacts/v1-all-tests.txt",
+    "typecheck": "passed",
+    "m0Counterexamples": "10/10 rejected by faithful/full legacy guards; new contract does not pass the counterexamples",
+    "cliReplay": "verified exact candidateSetHash"
+  },
+  "browser": {
+    "url": "http://127.0.0.1:4186/",
+    "generation": true,
+    "candidateSwitch": true,
+    "partialMainQuoteLock": true,
+    "canonicalCitation": true,
+    "inputStorageDefault": false,
+    "viewport375": {
+      "innerWidth": 375,
+      "scrollWidth": 360,
+      "horizontalOverflow": false
+    },
+    "consoleErrors": 0,
+    "limitations": [
+      "No screen-reader hardware audit.",
+      "Cancellation/revision races covered by API and unit tests; not every interleaving manually reproduced."
+    ]
+  },
+  "isolatedInstall": {
+    "platform": "Windows x64, same host",
+    "directory": "artifacts/buront-local-1.0.0-experimental.1-1",
+    "mode": "setup.ps1 -Offline",
+    "source": "fresh folder with fresh node_modules and .venv using warm local caches",
+    "setup": "passed",
+    "apiSmoke": "passed",
+    "cliReplay": "passed",
+    "log": "artifacts/v1-final-bundle-setup.txt",
+    "limitations": [
+      "Offline flags were used; system networking was not disabled.",
+      "This is not certification on a separate clean machine."
+    ]
+  },
+  "performanceSmoke": [
+    {
+      "size": 500,
+      "runs": [
+        1001.6607999999997,
+        1278.8340000000007,
+        1083.427600000001,
+        1236.9298,
+        1176.8513999999996
+      ],
+      "p95": 1278.8340000000007,
+      "sampleCount": 5
+    },
+    {
+      "size": 5000,
+      "runs": [
+        8394.1935,
+        5922.061999999998,
+        5370.6437000000005,
+        5741.656600000002,
+        5504.296499999997
+      ],
+      "p95": 8394.1935,
+      "sampleCount": 5
+    }
+  ],
+  "quality": {
+    "experimental": true,
+    "humanLabels": 0,
+    "styleModel": "untrained",
+    "quoteabilityModel": "untrained",
+    "publicReleaseApproved": false
+  },
+  "scope": "See docs/implementation-status-v1.0.md for all 47 acceptance conditions and remaining work."
+}

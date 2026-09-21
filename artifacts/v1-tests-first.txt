@@ -1,0 +1,67 @@
+
+> buront-language-generator@1.0.0-experimental.1 test:v1
+> npm run build:engine && node --test test/v1/*.test.js
+
+
+> buront-language-generator@1.0.0-experimental.1 build:engine
+> tsc && node dist/scripts/v1/export-schemas.js
+
+✔ T-22 only built web files; Host/Origin/token/session boundaries (2918.4318ms)
+✔ M4 API separates invalid input, capacity and unavailable capability (24.1986ms)
+✔ T-12/19 generation result has revision, selected ID, replay, matching spans and no private access (2620.2687ms)
+✔ Partial regeneration authenticates analysis and validates locked plan conflicts (1749.105ms)
+✔ T-20 queued/running cancellation and completion have a single terminal state (111.8574ms)
+✔ T-21 finite queue and one running request per session; status stays responsive (123.4994ms)
+✔ Only explicit preferences are stored; blind comparisons omit source method/rank/scores (6.511ms)
+✔ T-10 scalar maps survive emoji, combining marks, fullwidth and original whitespace (6905.2155ms)
+✔ T-02 quantity sign, exact decimals and role occurrence are preserved without floating-point conversion (0.5822ms)
+✔ T-11 dictionary chooses longest/priority/ID once; protected source and preallocation cap (1.7954ms)
+✔ Node schema rejects coercion, extras, duplicate IDs, invalid focus, empty and surrogate text (1.1223ms)
+✖ Python validates the same exported Draft 2020-12 schema type boundaries (1257.482ms)
+✔ T-07 independent fact scopes keep achievement, unresolved and prospective distinct (0.2598ms)
+✔ T-03/04/08 parser roles, per-predicate polarity and reported speaker are retained (6112.7757ms)
+✔ T-13 four actual operators, bounded plans, zero required quote count and untrained S/Q (1.9021ms)
+✔ T-01..08 tampered factual text and rhetoric labels cannot self-certify a pass (13.9213ms)
+✔ T-12 selector keeps only 0/1/2 valid candidates and invent never pads adaptations (0.4258ms)
+✔ T-24 stage RNG, input/assets/history and candidate set reproduce exactly (1925.0007ms)
+✔ T-15 noun replacement has an identical abstract structure, not unique novelty (0.3145ms)
+✔ T-23 content hashes detect changed text with the same record IDs and count; corrupt assets rejected (90.6617ms)
+✔ Grouped split prevents thread/family/near duplicate leakage before generation (0.9249ms)
+✔ Finite cache evicts by bytes/count and inactive TTL (0.4356ms)
+✔ Optional model rejects prose, fabricated IDs and excessive retries (0.9414ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 22
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17215.0894
+
+✖ failing tests:
+
+test at test\v1\core.test.js:52:1
+✖ Python validates the same exported Draft 2020-12 schema type boundaries (1257.482ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  -   true,
+      false,
+      false,
+      false,
+  +   false
+    ]
+  
+      at TestContext.<anonymous> (C:\Users\Glutt\Documents\Buront_language_genelator\test\v1\core.test.js:56:57)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ false, false, false, false ],
+    expected: [ true, false, false, false ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

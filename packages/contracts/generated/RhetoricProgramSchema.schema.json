@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "version",
+    "factId",
+    "relation",
+    "participants",
+    "polarity",
+    "tense",
+    "realization",
+    "completion",
+    "target",
+    "operator",
+    "discourse",
+    "discourseEvidenceIds"
+  ],
+  "properties": {
+    "version": {
+      "const": 1,
+      "type": "number"
+    },
+    "factId": {
+      "type": "string"
+    },
+    "relation": {
+      "anyOf": [
+        {
+          "const": "assistance",
+          "type": "string"
+        },
+        {
+          "const": "exposure",
+          "type": "string"
+        },
+        {
+          "const": "recovery",
+          "type": "string"
+        },
+        {
+          "const": "stoppage",
+          "type": "string"
+        },
+        {
+          "const": "verification",
+          "type": "string"
+        }
+      ]
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "role",
+          "entityId",
+          "text",
+          "span"
+        ],
+        "properties": {
+          "role": {
+            "anyOf": [
+              {
+                "const": "agent",
+                "type": "string"
+              },
+              {
+                "const": "patient",
+                "type": "string"
+              },
+              {
+                "const": "recipient",
+                "type": "string"
+              },
+              {
+                "const": "location",
+                "type": "string"
+              }
+            ]
+          },
+          "entityId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "span": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "end": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "polarity": {
+      "anyOf": [
+        {
+          "const": "positive",
+          "type": "string"
+        },
+        {
+          "const": "negative",
+          "type": "string"
+        },
+        {
+          "const": "unknown",
+          "type": "string"
+        }
+      ]
+    },
+    "tense": {
+      "anyOf": [
+        {
+          "const": "past",
+          "type": "string"
+        },
+        {
+          "const": "nonpast",
+          "type": "string"
+        },
+        {
+          "const": "unknown",
+          "type": "string"
+        }
+      ]
+    },
+    "realization": {
+      "anyOf": [
+        {
+          "const": "actual",
+          "type": "string"
+        },
+        {
+          "const": "prospective",
+          "type": "string"
+        },
+        {
+          "const": "hypothetical",
+          "type": "string"
+        },
+        {
+          "const": "unknown",
+          "type": "string"
+        }
+      ]
+    },
+    "completion": {
+      "anyOf": [
+        {
+          "const": "completed",
+          "type": "string"
+        },
+        {
+          "const": "ongoing",
+          "type": "string"
+        },
+        {
+          "const": "not_completed",
+          "type": "string"
+        },
+        {
+          "const": "unknown",
+          "type": "string"
+        }
+      ]
+    },
+    "target": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "string"
+    },
+    "discourse": {
+      "anyOf": [
+        {
+          "const": "mapping_first",
+          "type": "string"
+        },
+        {
+          "const": "criterion_first",
+          "type": "string"
+        }
+      ]
+    },
+    "discourseEvidenceIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "date": "2026-09-21",
+  "version": "1.0.0-experimental.2",
+  "build": {
+    "schemaVersion": 1,
+    "sourceHash": "dd1044404bdf9d10fe548ee0be221df41c2d911e45646db04daeb2d2329e3e84",
+    "toolCommit": "4989292a142a6803d35f05f3266281d488d9e729",
+    "runtime": "node24-python3.11",
+    "safetyContract": "v1"
+  },
+  "automated": {
+    "tests": 152,
+    "passed": 152,
+    "failed": 0,
+    "log": "artifacts/v1-all-tests-experimental.2.txt",
+    "typecheck": "passed",
+    "webBuild": "passed",
+    "diagnose": "ready",
+    "counterexamples": {
+      "source": "test/fixtures/design-counterexamples.json",
+      "method": "independently parse each original and each fixed negative example; no baseline IR substitution",
+      "rejected": 10,
+      "total": 10
+    },
+    "cliReplay": "candidateSetHash and semanticVerification selectionHash reproduced"
+  },
+  "scope": [
+    "Sentence-based narrative units; source order and display order are separate",
+    "Explicit intent target and anchor utterance bindings",
+    "Supported explicit passive roles and past/nonpast",
+    "Corpus-backed frames for nine series and all; whole-word lexical evidence",
+    "Plan validation and independent factual-text reanalysis in API, CLI and replay",
+    "Original source repetitions do not count as added rhetorical repetition"
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:4186/",
+    "finalEngineGeneration": true,
+    "statusOrder": true,
+    "originalOrderExplanation": true,
+    "lexicalVsConstructionEvidence": true,
+    "reanalysisChecksVisible": true,
+    "unknownTemporalShownAsUnknown": true,
+    "inputStorageDefault": false,
+    "viewport375": {
+      "innerWidth": 375,
+      "scrollWidth": 360,
+      "horizontalOverflow": false
+    },
+    "consoleErrors": 0,
+    "limitations": [
+      "No screen-reader hardware audit."
+    ]
+  },
+  "isolatedInstall": {
+    "version": "1.0.0-experimental.2",
+    "platform": "Windows x64, same host",
+    "directory": "artifacts/buront-local-1.0.0-experimental.2",
+    "mode": "setup.ps1 -Offline",
+    "source": "Fresh node_modules and .venv using warm local caches",
+    "setup": "passed",
+    "apiTests": 9,
+    "apiPassed": 9,
+    "cliReplay": "passed, same candidateSetHash and selected ID as workspace",
+    "setupLog": "artifacts/v1-bundle-setup-experimental.2.txt",
+    "apiLog": "artifacts/v1-bundle-api-experimental.2.txt",
+    "limitations": [
+      "Offline flags were used; system networking was not disabled.",
+      "Not separate-machine or cross-platform certification."
+    ]
+  },
+  "seriesSmoke": {
+    "input": "今日は寒い。",
+    "nineSeriesAndAll": true,
+    "candidatesPerSeries": 3,
+    "evidenceWithinSelectedSeries": true
+  },
+  "performanceSmoke": [
+    {
+      "sourceScalars": 500,
+      "milliseconds": 1130.8009000000002,
+      "candidates": 3,
+      "reanalysis": true
+    },
+    {
+      "sourceScalars": 5000,
+      "milliseconds": 11244.0977,
+      "candidates": 3,
+      "reanalysis": true
+    }
+  ],
+  "performanceLimit": "One observation per length; not a p95 or a stable performance guarantee.",
+  "quality": {
+    "experimental": true,
+    "humanLabels": 0,
+    "styleModel": "untrained",
+    "quoteabilityModel": "untrained",
+    "publicReleaseApproved": false
+  },
+  "remaining": "See docs/implementation-status-v1.0.md. General semantic paraphrases, implicit coreference, full clause rearrangement, human style/quality approval and public redistribution remain incomplete."
+}

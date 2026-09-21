@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "type": "object",
+  "required": [
+    "code",
+    "status",
+    "required",
+    "explanation",
+    "factIds",
+    "checkerVersion"
+  ],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "status": {
+      "anyOf": [
+        {
+          "const": "pass",
+          "type": "string"
+        },
+        {
+          "const": "fail",
+          "type": "string"
+        },
+        {
+          "const": "unknown",
+          "type": "string"
+        }
+      ]
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "sourceSpan": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "outputSpan": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      }
+    },
+    "factIds": {
+      "maxItems": 12000,
+      "type": "array",
+      "items": {
+        "maxLength": 12000,
+        "type": "string"
+      }
+    },
+    "checkerVersion": {
+      "type": "string"
+    }
+  }
+}
